@@ -1,0 +1,37 @@
+segment,yield_kwh_kwp,tariff,payback_years
+"household, small roof",1446,domestic,12.207399579741526
+"household, small roof",1446,commercial,18.216093081281684
+"household, small roof",1446,medium industrial,33.07083056862815
+"household, small roof",1446,large industrial,42.89655679772883
+"household, small roof",1446,diesel back-up (low),6.847822703644909
+"household, small roof",1446,diesel back-up (high),4.969123672453438
+"household, small roof",1510,domestic,11.599972524880801
+"household, small roof",1510,commercial,17.244312289834944
+"household, small roof",1510,medium industrial,31.017015157184634
+"household, small roof",1510,large industrial,39.98787591182428
+"household, small roof",1510,diesel back-up (low),6.529158628876688
+"household, small roof",1510,diesel back-up (high),4.743526164859096
+household with 1 kWh/kWp battery,1446,domestic,7.0150498643866
+household with 1 kWh/kWp battery,1446,commercial,10.139429918348768
+household with 1 kWh/kWp battery,1446,medium industrial,17.082391254579846
+household with 1 kWh/kWp battery,1446,large industrial,21.150404607437256
+household with 1 kWh/kWp battery,1446,diesel back-up (low),4.0522601830503735
+household with 1 kWh/kWp battery,1446,diesel back-up (high),2.971524597051018
+household with 1 kWh/kWp battery,1510,domestic,6.687895905673867
+household with 1 kWh/kWp battery,1510,commercial,9.647489022946727
+household with 1 kWh/kWp battery,1510,medium industrial,16.18262080032335
+household with 1 kWh/kWp battery,1510,large industrial,19.985229927928383
+household with 1 kWh/kWp battery,1510,diesel back-up (low),3.870537203870537
+household with 1 kWh/kWp battery,1510,diesel back-up (high),2.8402135057049116
+"commercial, daytime load",1446,domestic,3.028366661408768
+"commercial, daytime load",1446,commercial,4.27414860461524
+"commercial, daytime load",1446,medium industrial,6.843039031363017
+"commercial, daytime load",1446,large industrial,8.232938214602349
+"commercial, daytime load",1446,diesel back-up (low),1.7902538579970642
+"commercial, daytime load",1446,diesel back-up (high),1.3240894237033194
+"commercial, daytime load",1510,domestic,2.8944393283273615
+"commercial, daytime load",1510,commercial,4.081900727144647
+"commercial, daytime load",1510,medium industrial,6.524617322376993
+"commercial, daytime load",1510,large industrial,7.842941077467485
+"commercial, daytime load",1510,diesel back-up (low),1.7124265083623496
+"commercial, daytime load",1510,diesel back-up (high),1.2669025920827033

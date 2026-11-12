@@ -1,0 +1,7 @@
+segment,capex_usd_per_kwp,yield_kwh_kwp,self_consumed,lcoe_usd_kwh
+"household, small roof",1100,1446,0.35,0.1150478543322026
+"household, small roof",1100,1510,0.35,0.1101716538836854
+household with 1 kWh/kWp battery,1450,1446,0.75,0.16436574773665313
+household with 1 kWh/kWp battery,1450,1510,0.75,0.15739925246834466
+"commercial, daytime load",750,1446,0.85,0.07844171886286541
+"commercial, daytime load",750,1510,0.85,0.07511703673887642

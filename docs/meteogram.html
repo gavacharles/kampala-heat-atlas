@@ -1,0 +1,27 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kampala Heat Atlas · Meteogram</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@800&family=Inter:wght@400;500&display=swap">
+<style>
+:root{--bg:#f6f6f3;--surface:#fff;--ink:#0b0b0b;--ink-2:#52514e;--line:#e1e0d9;--blue:#2a78d6}
+@media (prefers-color-scheme: dark){:root{--bg:#111312;--surface:#1a1c1b;--ink:#ecedea;--ink-2:#b6b9b2;--line:#2d302e;--blue:#6da7ec;color-scheme:dark}}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 Inter,Arial,sans-serif;padding:24px max(16px,env(safe-area-inset-left))}
+main{max-width:1100px;margin:0 auto;display:grid;gap:20px} h1{font:800 34px/1.05 Archivo,Arial,sans-serif;margin:0} h2{font:800 24px/1.1 Archivo,Arial,sans-serif;margin:0}
+.lede{color:var(--ink-2);max-width:70ch;margin:0} nav{display:flex;gap:8px;flex-wrap:wrap}
+nav a,.links a{color:var(--ink);text-decoration:none;border:1px solid var(--line);background:var(--surface);padding:6px 12px;border-radius:999px;font-size:13px}
+section{display:grid;gap:12px;border-top:1px solid var(--line);padding-top:16px}
+.media{display:grid;grid-template-columns:minmax(0,540px) minmax(0,1fr);gap:16px;align-items:start} video{width:100%;border-radius:8px;background:#f6f6f3}
+.links{display:flex;flex-direction:column;gap:8px;align-items:flex-start} .cards{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px} .cards img{width:180px;border-radius:6px;border:1px solid var(--line)}
+.swipe{position:relative;max-width:900px;user-select:none;touch-action:none;border-radius:8px;overflow:hidden;border:1px solid var(--line)}
+.swipe img{display:block;width:100%;height:auto} .swipe .top{position:absolute;inset:0} .swipe .bar{position:absolute;top:0;bottom:0;width:3px;background:#fff;box-shadow:0 0 0 1px #0003;transform:translateX(-1px)}
+.tag{position:absolute;top:10px;background:#fffd;color:#0b0b0b;font-size:12px;padding:3px 8px;border-radius:4px} .tag.l{left:10px} .tag.r{right:10px}
+input[type=range]{max-width:900px;width:100%;accent-color:var(--blue)}
+@media (max-width:700px){.media{grid-template-columns:1fr}}
+</style></head><body><main>
+<nav><a href="index.html">Atlas</a><a href="3d.html">3D model</a><a href="stories.html">Stories</a><a href="daynight.html">Day vs night</a><a href="meteogram.html">Meteogram</a><a href="gallery.html">Figures</a><a href="https://github.com/gavacharles/kampala-heat-atlas">Code</a></nav>
+<h1>Heat &amp; solar meteogram</h1>
+<p class="lede">The next seven days in central Kampala, translated through the 3D model: felt heat (UTCI) for someone in an open street
+and under a street tree, cloud and rain, the lake breeze, and rooftop solar output. Refreshed every morning at 06:00 from the
+Open-Meteo forecast. Under a tree the felt heat is a few degrees lower by day and slightly higher at night, because the canopy
+holds in the warmth that would otherwise radiate to the sky.</p>
+<img src="figures/meteogram_latest.png" alt="Seven-day meteogram for Kampala: felt heat, cloud and rain, wind, rooftop solar" style="width:100%;height:auto;border:1px solid var(--line);border-radius:8px;background:#fff">
+<p class="lede"><a href="figures/meteogram_latest.csv">Download the hourly numbers (CSV)</a></p></main></body></html>

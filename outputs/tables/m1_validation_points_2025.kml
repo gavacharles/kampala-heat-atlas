@@ -9,6 +9,10 @@
       <SimpleField name="map_class" type="string"/>
       <SimpleField name="ref_class" type="string"/>
     </Schema>
+    <Schema id="m1_validation_points_2025.schema">
+      <SimpleField name="map_class" type="string"/>
+      <SimpleField name="ref_class" type="string"/>
+    </Schema>
     <Document id="m1_validation_points_2025">
       <name>m1_validation_points_2025</name>
       <Placemark id="m1_validation_points_2025.1">

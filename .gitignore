@@ -16,3 +16,9 @@ notes/
 
 # figures are published via docs/figures (built by scripts/17_build_site.py)
 outputs/figures/
+
+# private research notes (thesis plan, paper framings) - not published
+notes/
+# local labelling tool (holds validation points)
+tools/
+logs/

@@ -49,7 +49,7 @@ section{{display:grid;gap:12px;border-top:1px solid var(--line);padding-top:16px
 input[type=range]{{max-width:900px;width:100%;accent-color:var(--blue)}}
 @media (max-width:700px){{.media{{grid-template-columns:1fr}}}}
 </style></head><body><main>
-<nav><a href="index.html">Atlas</a><a href="3d.html">3D model</a><a href="stories.html">Stories</a><a href="daynight.html">Day vs night</a><a href="gallery.html">Figures</a><a href="https://github.com/gavacharles/kampala-heat-atlas">Code</a></nav>
+<nav><a href="index.html">Atlas</a><a href="3d.html">3D model</a><a href="stories.html">Stories</a><a href="daynight.html">Day vs night</a><a href="meteogram.html">Meteogram</a><a href="gallery.html">Figures</a><a href="https://github.com/gavacharles/kampala-heat-atlas">Code</a></nav>
 """
 
 # ---------------------------------------------------------------- 2D atlas
@@ -232,6 +232,18 @@ for slug, title, intro in STORIES:
 (DOCS / "stories.html").write_text(PAGE_HEAD.format(title="Stories") + """<h1>Stories</h1>
 <p class="lede">Three short stories, one for each open research gap. Every dot is real data: a 90 m block, about 1,000 residents, or about 1,000 roofs.
 Free to share with credit to Gava Charles.</p>""" + "".join(blocks) + "</main></body></html>")
+
+# ---------------------------------------------------------------- meteogram
+for f in ("meteogram_latest.png", "meteogram_latest.csv"):
+    if (FIGURES / f).exists():
+        shutil.copy(FIGURES / f, DOCS / "figures" / f)
+(DOCS / "meteogram.html").write_text(PAGE_HEAD.format(title="Meteogram") + """<h1>Heat &amp; solar meteogram</h1>
+<p class="lede">The next seven days in central Kampala, translated through the 3D model: felt heat (UTCI) for someone in an open street
+and under a street tree, cloud and rain, the lake breeze, and rooftop solar output. Refreshed every morning at 06:00 from the
+Open-Meteo forecast. Under a tree the felt heat is a few degrees lower by day and slightly higher at night, because the canopy
+holds in the warmth that would otherwise radiate to the sky.</p>
+<img src="figures/meteogram_latest.png" alt="Seven-day meteogram for Kampala: felt heat, cloud and rain, wind, rooftop solar" style="width:100%;height:auto;border:1px solid var(--line);border-radius:8px;background:#fff">
+<p class="lede"><a href="figures/meteogram_latest.csv">Download the hourly numbers (CSV)</a></p></main></body></html>""")
 
 (DOCS / ".nojekyll").write_text("")
 print("site built:", sorted(p.name for p in DOCS.iterdir()))
