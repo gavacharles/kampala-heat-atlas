@@ -18,6 +18,8 @@ is **for non-commercial use only (CC BY-NC-SA 4.0)**.
 | MODIS MYD11A2 | NASA LP DAAC | Public domain | Day/night LST |
 | GHS-POP R2023A | European Commission JRC | CC BY 4.0 | Population |
 | Global LCZ map | Demuzere et al. 2022 | CC BY 4.0 | Local Climate Zones |
+| Kampala Slum Profiles map book (23 Aug 2014) | SDI / NSDFU / ACTogether Uganda | © the publishers; cited, not redistributed | Validation of the settlement layer (outlines shown in one check figure) |
+| PVGIS-ERA5 | European Commission JRC | Free use with attribution | Validation of solar yield |
 
 © OpenStreetMap contributors. Contains modified Copernicus Sentinel data (2016–2025) and Copernicus
 Climate Change Service information. Electricity sales: Umeme Annual Report 2024.

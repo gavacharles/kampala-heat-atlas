@@ -1,0 +1,9 @@
+{
+ "buildings": 2710,
+ "ew_aligned_before_pct": 31.29151291512915,
+ "wall_penalty_before": 51.97029537035204,
+ "wall_penalty_after": 0.0,
+ "wall_sun_saved_mwh_per_yr": 65903.25928606352,
+ "stagnant_open_before_pct": 23.51556085697024,
+ "stagnant_open_after_pct": 34.48279323272423
+}

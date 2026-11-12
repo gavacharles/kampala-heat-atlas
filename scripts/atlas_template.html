@@ -95,7 +95,7 @@ footer { font-size: 12px; color: var(--muted); display: grid; gap: 6px; }
 
 <div class="wrap">
   <header>
-    <nav class="nav"><a href="3d.html">3D model</a><a href="gallery.html">Figures &amp; animations</a><a href="https://github.com/gavacharles/kampala-heat-atlas">Code</a></nav>
+    <nav class="nav"><a href="3d.html">3D model</a><a href="stories.html">Stories</a><a href="daynight.html">Day vs night</a><a href="gallery.html">Figures &amp; animations</a><a href="https://github.com/gavacharles/kampala-heat-atlas">Code</a></nav>
     <span class="eyebrow">PhD research · first full run · dry seasons {{y0}}, {{y1}}, {{y2}}</span>
     <h1>Kampala Heat Atlas</h1>
     <p class="lede">How Kampala grew, where it is hottest, who lives in the heat, and what trees and rooftops could do about it. Six analyses on one 30 m grid covering the city and its growth frontier.</p>
@@ -103,7 +103,7 @@ footer { font-size: 12px; color: var(--muted); display: grid; gap: 6px; }
     <div class="facts">
       <div class="fact"><span class="tag">Growth</span><b>+{{builtpct}}%</b><span>built-up land, {{built0}} → {{built2}} km² ({{y0}}–{{y2}})</span></div>
       <div class="fact"><span class="tag">Heat</span><b class="hot">{{hot2}} km²</b><span>in the hottest class in {{y2}} ({{hot0}} km² in {{y0}})</span></div>
-      <div class="fact"><span class="tag">People</span><b class="hot">+{{inf}} °C</b><span>informal-type areas vs the city land mean (formal dense +{{formal}} °C)</span></div>
+      <div class="fact"><span class="tag">Form</span><b class="hot">+{{inf}} °C</b><span>packed low-rise blocks vs the city land mean (other dense +{{formal}} °C)</span></div>
       <div class="fact"><span class="tag">Trees</span><b class="cool">−{{treecool}} °C</b><span>average cooling from {{newcanopy}} km² of new canopy, for about {{treepeople}},000 people</span></div>
       <div class="fact"><span class="tag">Solar</span><b>{{twh}} TWh</b><span>a year from {{roofs}} M roofs ({{gwp}} GWp technical potential)</span></div>
     </div>
@@ -144,16 +144,16 @@ footer { font-size: 12px; color: var(--muted); display: grid; gap: 6px; }
   </section>
 
   <section class="mod" id="people">
-    <div class="mod-head"><span class="eyebrow">Module 3 · Informal settlements</span><h2>The newest informal areas warmed fastest</h2></div>
+    <div class="mod-head"><span class="eyebrow">Module 3 · Settlements</span><h2>Blocks that packed in fastest warmed most</h2></div>
     <div class="cols">
       <ul class="find">
-        <li>Informal-type morphology sits <span class="num">+{{inf}} °C</span> above the city land mean, about 1 °C hotter than formal dense fabric (+{{formal}} °C).</li>
-        <li>Cells that became informal-type between {{y0}} and {{y2}} warmed <span class="num">{{became}} °C</span> relative to the city. Stable formal dense cells warmed {{formalchg}} °C.</li>
+        <li>Small, tightly packed low-rise blocks sit <span class="num">+{{inf}} °C</span> above the city land mean, about 1 °C hotter than other dense fabric (+{{formal}} °C).</li>
+        <li>Blocks that densified into packed low-rise fabric between {{y0}} and {{y2}} warmed <span class="num">{{became}} °C</span> relative to the city. Blocks already dense in {{y0}} warmed {{formalchg}} °C.</li>
         <li>Detected well: Kawempe Mbogo, Kazo Angola, Kifumbira, Kalerwe.</li>
       </ul>
       <figure class="plate"><img src="" data-chart="traj" alt="Line chart of mean LST anomaly by settlement trajectory, three epochs"><figcaption>Thermal trajectories by settlement type.</figcaption></figure>
     </div>
-    <p class="caveat"><b>Before citing.</b> The settlement layer is a morphology rule, not a survey boundary. It agrees with an independent footprint source on 42 % of its area, misses mixed-use areas such as Kisenyi and Kivulu, and its 2017–2025 growth is inflated by building-count noise.</p>
+    <p class="caveat"><b>Checked against the literature.</b> Against the 58 informal settlements mapped by the slum dwellers' federation (SDI/NSDFU/ACTogether, 2014), georeferenced from their map book: established informal settlements are as hot as other dense fabric (+5.2 to +5.9 °C vs +5.4 to +5.5 °C) and warmed less since 2017 (+0.35 to +0.54 vs +0.62 to +0.66 °C; ranges over ±250 m georeferencing shifts). The fast warming belongs to blocks that densified, not to informality as such. The morphology layer covers 21–29 % of the federation's settlements.</p>
   </section>
 
   <section class="mod" id="trees">

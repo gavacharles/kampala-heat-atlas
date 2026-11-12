@@ -30,6 +30,28 @@ crs = config.load()["study_area"]["crs"]
 to_wgs = Transformer.from_crs(crs, "EPSG:4326", always_xy=True)
 LABELS = {"cbd": "CBD", "informal": "Informal (Kawempe)", "frontier": "Growth frontier"}
 
+PAGE_HEAD = """<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kampala Heat Atlas · {title}</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@800&family=Inter:wght@400;500&display=swap">
+<style>
+:root{{--bg:#f6f6f3;--surface:#fff;--ink:#0b0b0b;--ink-2:#52514e;--line:#e1e0d9;--blue:#2a78d6}}
+@media (prefers-color-scheme: dark){{:root{{--bg:#111312;--surface:#1a1c1b;--ink:#ecedea;--ink-2:#b6b9b2;--line:#2d302e;--blue:#6da7ec;color-scheme:dark}}}}
+body{{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 Inter,Arial,sans-serif;padding:24px max(16px,env(safe-area-inset-left))}}
+main{{max-width:1100px;margin:0 auto;display:grid;gap:20px}} h1{{font:800 34px/1.05 Archivo,Arial,sans-serif;margin:0}} h2{{font:800 24px/1.1 Archivo,Arial,sans-serif;margin:0}}
+.lede{{color:var(--ink-2);max-width:70ch;margin:0}} nav{{display:flex;gap:8px;flex-wrap:wrap}}
+nav a,.links a{{color:var(--ink);text-decoration:none;border:1px solid var(--line);background:var(--surface);padding:6px 12px;border-radius:999px;font-size:13px}}
+section{{display:grid;gap:12px;border-top:1px solid var(--line);padding-top:16px}}
+.media{{display:grid;grid-template-columns:minmax(0,540px) minmax(0,1fr);gap:16px;align-items:start}} video{{width:100%;border-radius:8px;background:#f6f6f3}}
+.links{{display:flex;flex-direction:column;gap:8px;align-items:flex-start}} .cards{{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px}} .cards img{{width:180px;border-radius:6px;border:1px solid var(--line)}}
+.swipe{{position:relative;max-width:900px;user-select:none;touch-action:none;border-radius:8px;overflow:hidden;border:1px solid var(--line)}}
+.swipe img{{display:block;width:100%;height:auto}} .swipe .top{{position:absolute;inset:0}} .swipe .bar{{position:absolute;top:0;bottom:0;width:3px;background:#fff;box-shadow:0 0 0 1px #0003;transform:translateX(-1px)}}
+.tag{{position:absolute;top:10px;background:#fffd;color:#0b0b0b;font-size:12px;padding:3px 8px;border-radius:4px}} .tag.l{{left:10px}} .tag.r{{right:10px}}
+input[type=range]{{max-width:900px;width:100%;accent-color:var(--blue)}}
+@media (max-width:700px){{.media{{grid-template-columns:1fr}}}}
+</style></head><body><main>
+<nav><a href="index.html">Atlas</a><a href="3d.html">3D model</a><a href="stories.html">Stories</a><a href="daynight.html">Day vs night</a><a href="gallery.html">Figures</a><a href="https://github.com/gavacharles/kampala-heat-atlas">Code</a></nav>
+"""
+
 # ---------------------------------------------------------------- 2D atlas
 subprocess.run([sys.executable, str(ROOT / "scripts" / "14_atlas.py"), str(DOCS)], check=True)
 (DOCS / "kampala_heat_atlas.html").replace(DOCS / "index.html")
@@ -85,6 +107,11 @@ html = (ROOT / "scripts" / "site_3d_template.html").read_text().replace("__DISTR
 
 # ---------------------------------------------------------------- gallery
 items = [
+    ("fig7_walking_heat_maps.png", "Street trees take about 4 °C off the felt heat (UTCI) where they shade, 14:30"),
+    ("fig7_trees_before_after_3d.png", "Informal district before and after 600 street trees, ground coloured by walking heat"),
+    ("anim7_trees_shadows.gif", "An equinox day with the new street trees"),
+    ("fig7_frontier_rotation.png", "The orientation trade-off: east–west turns cut wall sun but block the lake breeze"),
+    ("anim7_solar_day.gif", "Solar over a day: CBD roofs and the city's output against average demand"),
     ("fig_m0_cube_cbd.png", "The Kampala cube: central Kampala terrain and buildings coloured by surface heat"),
     ("anim3d_cbd_shadows_m03.gif", "Equinox day in the CBD: shadows and the sun's path"),
     ("anim3d_informal_shadows_m03.gif", "Equinox day in the informal district (Kawempe): almost no shade at midday"),
@@ -110,7 +137,8 @@ items = [
     ("fig_m1_landcover_growth.png", "Land cover 2025 and where the city grew"),
     ("anim_m1_growth.gif", "Urban growth 2017–2025"),
     ("fig_m1_class_change.png", "Land-cover change by class"),
-    ("fig_m3_informal_on_heat.png", "Informal-type settlement on 2025 surface heat"),
+    ("fig_m3_informal_on_heat.png", "Packed low-rise morphology on 2025 surface heat"),
+    ("fig_m3_sdi_georef_check.png", "Literature check: the 58 informal settlements mapped by SDI/NSDFU/ACTogether (2014, red), georeferenced from their map book, against the morphology layer (blue)"),
     ("fig_m3_trajectories.png", "Thermal trajectories by settlement type"),
     ("fig_m4_tree_priority.png", "Tree-planting priority"),
     ("fig_m4_priority_bars.png", "Residents and plantable land per priority class"),
@@ -150,9 +178,60 @@ nav{{display:flex;gap:8px;flex-wrap:wrap}} nav a{{color:var(--ink);text-decorati
 figure{{margin:0;background:#fff;border:1px solid var(--line);border-radius:8px;padding:8px;display:grid;gap:6px;align-content:start}}
 figure img{{width:100%;height:auto;display:block}} figcaption{{font-size:13px;color:#4f524d;padding:0 4px 4px}}
 </style></head><body><main>
-<nav><a href="index.html">Atlas</a><a href="3d.html">3D model</a><a href="https://github.com/gavacharles/kampala-heat-atlas">Code</a></nav>
+<nav><a href="index.html">Atlas</a><a href="3d.html">3D model</a><a href="stories.html">Stories</a><a href="daynight.html">Day vs night</a><a href="https://github.com/gavacharles/kampala-heat-atlas">Code</a></nav>
 <h1>Figures &amp; animations</h1><p style="color:var(--ink-2);margin:0">Kampala Heat Atlas, first full run. Click any image for full size.</p>
 <div class="grid">{''.join(cards)}</div></main></body></html>"""
 (DOCS / "gallery.html").write_text(gallery)
+# ---------------------------------------------------------------- day/night swipe
+for nm in ("day", "night"):
+    shutil.copy(FIGURES / f"modis_{nm}_2025.png", DOCS / "figures" / f"modis_{nm}_2025.png")
+(DOCS / "daynight.html").write_text(PAGE_HEAD.format(title="Day vs night") + """
+<h1>Day vs night</h1>
+<p class="lede">Surface temperature over greater Kampala in the 2025 dry season, from the same sensor (MODIS Aqua, 1 km):
+about 13:30 against about 01:30. Each map is shown relative to its own median, blue cooler and red warmer. Drag the handle.</p>
+<div class="swipe" id="swipe" role="img" aria-label="Day and night surface temperature compared with a slider">
+  <img src="figures/modis_night_2025.png" alt="Night-time surface temperature">
+  <div class="top" id="top"><img src="figures/modis_day_2025.png" alt="Daytime surface temperature"></div>
+  <div class="bar" id="bar"></div><span class="tag l">13:30 · day</span><span class="tag r">01:30 · night</span>
+</div>
+<input type="range" id="pos" min="0" max="100" value="50" aria-label="Swipe position">
+<p class="lede">By day, the lake and wetlands are cool and the built-up core is hot. By night, the lake is the warmest surface and the dense
+core stays warmer than the hills around it. The night heat is what keeps people in single-room houses from cooling down.</p>
+<script>
+const r = document.getElementById("pos"), top = document.getElementById("top"), bar = document.getElementById("bar");
+const set = v => { top.style.clipPath = `inset(0 ${100 - v}% 0 0)`; bar.style.left = v + "%"; };
+r.addEventListener("input", e => set(e.target.value)); set(50);
+const sw = document.getElementById("swipe");
+const drag = e => { const b = sw.getBoundingClientRect(); const x = ((e.touches ? e.touches[0].clientX : e.clientX) - b.left) / b.width * 100;
+  r.value = Math.max(0, Math.min(100, x)); set(r.value); };
+sw.addEventListener("pointermove", e => { if (e.buttons) drag(e); }); sw.addEventListener("pointerdown", drag);
+</script></main></body></html>""")
+
+# ---------------------------------------------------------------- stories
+STORIES = [("heat", "Hotter by design", "Kampala's most tightly packed blocks are its hottest, and the ones that packed in fastest warmed most. A 3D model shows why."),
+           ("trees", "Where the next 8,000 trees go", "Target planting to heat, people and open ground, and street trees take about 4 °C off the felt heat."),
+           ("solar", "Roofs are not the constraint", "Kampala's roofs could make several times Uganda's electricity. The question is what the grid can take at noon.")]
+blocks = []
+for slug, title, intro in STORIES:
+    src = FIGURES / f"social_{slug}"
+    if not src.exists():
+        continue
+    dst = DOCS / "story" / slug; dst.mkdir(parents=True, exist_ok=True)
+    for f in ("highlight.gif", "reel_square.mp4", "reel_vertical.mp4", f"film_{slug}.mp4"):
+        shutil.copy(src / f, dst / f)
+    cards = sorted((src / "carousel").glob("C*.png"))
+    for c in cards:
+        Image.open(c).convert("RGB").resize((540, 675), Image.LANCZOS).save(dst / c.name.replace(".png", ".jpg"), quality=85)
+    shutil.copy(src / "carousel" / f"{slug}_carousel.pdf", dst / f"{slug}_carousel.pdf")
+    thumbs = "".join(f'<img src="story/{slug}/{c.name.replace(".png", ".jpg")}" alt="Card {i + 1}" loading="lazy">' for i, c in enumerate(cards))
+    blocks.append(f"""<section><h2>{title}</h2><p class="lede">{intro}</p>
+<div class="media"><video src="story/{slug}/reel_square.mp4" controls muted loop playsinline poster="story/{slug}/{cards[1].name.replace('.png', '.jpg')}"></video>
+<div class="links"><a href="story/{slug}/film_{slug}.mp4">Landscape film (1280×720)</a><a href="story/{slug}/reel_vertical.mp4">Vertical reel (1080×1920)</a>
+<a href="story/{slug}/highlight.gif">Highlight GIF</a><a href="story/{slug}/{slug}_carousel.pdf">Carousel PDF</a></div></div>
+<div class="cards">{thumbs}</div></section>""")
+(DOCS / "stories.html").write_text(PAGE_HEAD.format(title="Stories") + """<h1>Stories</h1>
+<p class="lede">Three short stories, one for each open research gap. Every dot is real data: a 90 m block, about 1,000 residents, or about 1,000 roofs.
+Free to share with credit to Gava Charles.</p>""" + "".join(blocks) + "</main></body></html>")
+
 (DOCS / ".nojekyll").write_text("")
 print("site built:", sorted(p.name for p in DOCS.iterdir()))

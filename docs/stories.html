@@ -1,0 +1,35 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kampala Heat Atlas · Stories</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@800&family=Inter:wght@400;500&display=swap">
+<style>
+:root{--bg:#f6f6f3;--surface:#fff;--ink:#0b0b0b;--ink-2:#52514e;--line:#e1e0d9;--blue:#2a78d6}
+@media (prefers-color-scheme: dark){:root{--bg:#111312;--surface:#1a1c1b;--ink:#ecedea;--ink-2:#b6b9b2;--line:#2d302e;--blue:#6da7ec;color-scheme:dark}}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 Inter,Arial,sans-serif;padding:24px max(16px,env(safe-area-inset-left))}
+main{max-width:1100px;margin:0 auto;display:grid;gap:20px} h1{font:800 34px/1.05 Archivo,Arial,sans-serif;margin:0} h2{font:800 24px/1.1 Archivo,Arial,sans-serif;margin:0}
+.lede{color:var(--ink-2);max-width:70ch;margin:0} nav{display:flex;gap:8px;flex-wrap:wrap}
+nav a,.links a{color:var(--ink);text-decoration:none;border:1px solid var(--line);background:var(--surface);padding:6px 12px;border-radius:999px;font-size:13px}
+section{display:grid;gap:12px;border-top:1px solid var(--line);padding-top:16px}
+.media{display:grid;grid-template-columns:minmax(0,540px) minmax(0,1fr);gap:16px;align-items:start} video{width:100%;border-radius:8px;background:#f6f6f3}
+.links{display:flex;flex-direction:column;gap:8px;align-items:flex-start} .cards{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px} .cards img{width:180px;border-radius:6px;border:1px solid var(--line)}
+.swipe{position:relative;max-width:900px;user-select:none;touch-action:none;border-radius:8px;overflow:hidden;border:1px solid var(--line)}
+.swipe img{display:block;width:100%;height:auto} .swipe .top{position:absolute;inset:0} .swipe .bar{position:absolute;top:0;bottom:0;width:3px;background:#fff;box-shadow:0 0 0 1px #0003;transform:translateX(-1px)}
+.tag{position:absolute;top:10px;background:#fffd;color:#0b0b0b;font-size:12px;padding:3px 8px;border-radius:4px} .tag.l{left:10px} .tag.r{right:10px}
+input[type=range]{max-width:900px;width:100%;accent-color:var(--blue)}
+@media (max-width:700px){.media{grid-template-columns:1fr}}
+</style></head><body><main>
+<nav><a href="index.html">Atlas</a><a href="3d.html">3D model</a><a href="stories.html">Stories</a><a href="daynight.html">Day vs night</a><a href="gallery.html">Figures</a><a href="https://github.com/gavacharles/kampala-heat-atlas">Code</a></nav>
+<h1>Stories</h1>
+<p class="lede">Three short stories, one for each open research gap. Every dot is real data: a 90 m block, about 1,000 residents, or about 1,000 roofs.
+Free to share with credit to Gava Charles.</p><section><h2>Hotter by design</h2><p class="lede">Kampala's most tightly packed blocks are its hottest, and the ones that packed in fastest warmed most. A 3D model shows why.</p>
+<div class="media"><video src="story/heat/reel_square.mp4" controls muted loop playsinline poster="story/heat/C02.jpg"></video>
+<div class="links"><a href="story/heat/film_heat.mp4">Landscape film (1280×720)</a><a href="story/heat/reel_vertical.mp4">Vertical reel (1080×1920)</a>
+<a href="story/heat/highlight.gif">Highlight GIF</a><a href="story/heat/heat_carousel.pdf">Carousel PDF</a></div></div>
+<div class="cards"><img src="story/heat/C01.jpg" alt="Card 1" loading="lazy"><img src="story/heat/C02.jpg" alt="Card 2" loading="lazy"><img src="story/heat/C03.jpg" alt="Card 3" loading="lazy"><img src="story/heat/C04.jpg" alt="Card 4" loading="lazy"><img src="story/heat/C05.jpg" alt="Card 5" loading="lazy"><img src="story/heat/C06.jpg" alt="Card 6" loading="lazy"><img src="story/heat/C07.jpg" alt="Card 7" loading="lazy"></div></section><section><h2>Where the next 8,000 trees go</h2><p class="lede">Target planting to heat, people and open ground, and street trees take about 4 °C off the felt heat.</p>
+<div class="media"><video src="story/trees/reel_square.mp4" controls muted loop playsinline poster="story/trees/C02.jpg"></video>
+<div class="links"><a href="story/trees/film_trees.mp4">Landscape film (1280×720)</a><a href="story/trees/reel_vertical.mp4">Vertical reel (1080×1920)</a>
+<a href="story/trees/highlight.gif">Highlight GIF</a><a href="story/trees/trees_carousel.pdf">Carousel PDF</a></div></div>
+<div class="cards"><img src="story/trees/C01.jpg" alt="Card 1" loading="lazy"><img src="story/trees/C02.jpg" alt="Card 2" loading="lazy"><img src="story/trees/C03.jpg" alt="Card 3" loading="lazy"><img src="story/trees/C04.jpg" alt="Card 4" loading="lazy"><img src="story/trees/C05.jpg" alt="Card 5" loading="lazy"><img src="story/trees/C06.jpg" alt="Card 6" loading="lazy"><img src="story/trees/C07.jpg" alt="Card 7" loading="lazy"></div></section><section><h2>Roofs are not the constraint</h2><p class="lede">Kampala's roofs could make several times Uganda's electricity. The question is what the grid can take at noon.</p>
+<div class="media"><video src="story/solar/reel_square.mp4" controls muted loop playsinline poster="story/solar/C02.jpg"></video>
+<div class="links"><a href="story/solar/film_solar.mp4">Landscape film (1280×720)</a><a href="story/solar/reel_vertical.mp4">Vertical reel (1080×1920)</a>
+<a href="story/solar/highlight.gif">Highlight GIF</a><a href="story/solar/solar_carousel.pdf">Carousel PDF</a></div></div>
+<div class="cards"><img src="story/solar/C01.jpg" alt="Card 1" loading="lazy"><img src="story/solar/C02.jpg" alt="Card 2" loading="lazy"><img src="story/solar/C03.jpg" alt="Card 3" loading="lazy"><img src="story/solar/C04.jpg" alt="Card 4" loading="lazy"><img src="story/solar/C05.jpg" alt="Card 5" loading="lazy"><img src="story/solar/C06.jpg" alt="Card 6" loading="lazy"><img src="story/solar/C07.jpg" alt="Card 7" loading="lazy"></div></section></main></body></html>
