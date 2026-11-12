@@ -1,73 +1,45 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Site Weather · Mbale</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@800&family=Inter:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap">
 <style>
-:root{--bg:#f6f6f3;--surface:#fff;--ink:#0b0b0b;--ink-2:#52514e;--line:#e1e0d9;--blue:#2a78d6}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#111312;--surface:#1a1c1b;--ink:#ecedea;--ink-2:#b6b9b2;--line:#2d302e;--blue:#6da7ec;color-scheme:dark}}
-body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 Inter,Arial,sans-serif;padding:24px 16px}
-main{max-width:1100px;margin:0 auto;display:grid;gap:20px} h1{font:800 34px/1.05 Archivo,Arial,sans-serif;margin:0}
-h2{font:800 24px/1.1 Archivo,Arial,sans-serif;margin:0} h3{margin:14px 0 4px;font-size:17px} a{color:var(--blue)}
+:root{--bg:#ffffff;--surface:#fafaf9;--ink:#0a0a0b;--ink-2:#606061;--line:#e1e1e0;--accent:#fbca0c;--eyebrow:#8a6100;--tint:#fdf6dc;--link:#2a6fc4;
+--go-bg:#e8f4eb;--go:#1f7a35;--lim-bg:#fdf3d7;--lim:#8a6100;--stop-bg:#f9eaea;--stop:#b42318;--s0:#2f8f3a;--s1:#e0a526;--s2:#c23434}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#0d0d0e;--surface:#17171a;--ink:#f2f2ef;--ink-2:#a8a8a4;--line:#2a2a2e;--eyebrow:#e3b341;
+--tint:#2a2410;--link:#7fb0ef;--go-bg:#11281a;--go:#7fd394;--lim-bg:#2b2410;--lim:#f0c75e;--stop-bg:#2e1414;--stop:#f08a80;color-scheme:dark}}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 Manrope,Arial,sans-serif;padding:28px 16px 48px}
+main{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr);gap:28px}
+h1{font:800 clamp(30px,5vw,44px)/1.05 Manrope,Arial,sans-serif;letter-spacing:-.02em;margin:0}
+h2{font:800 24px/1.15 Manrope,Arial,sans-serif;letter-spacing:-.01em;margin:0} a{color:var(--link)}
 .lede{color:var(--ink-2);max-width:72ch;margin:0} nav{display:flex;gap:8px;flex-wrap:wrap}
-nav a{color:var(--ink);text-decoration:none;border:1px solid var(--line);background:var(--surface);padding:6px 12px;border-radius:999px;font-size:13px}
-section{display:grid;gap:10px;border-top:1px solid var(--line);padding-top:16px} .note{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:8px 20px}
-.note li{margin:3px 0} .wrap{overflow-x:auto} table{border-collapse:collapse;font-size:13px;min-width:640px}
-th,td{border-bottom:1px solid var(--line);padding:6px 10px;text-align:right} th:first-child,td:first-child{text-align:left}
-img{width:100%;height:auto;border:1px solid var(--line);border-radius:8px;background:#fff}
+nav a{color:var(--ink);text-decoration:none;border:1px solid var(--line);background:var(--bg);padding:7px 14px;border-radius:999px;font-size:13px;font-weight:600}
+nav a:hover{background:var(--accent);border-color:var(--accent);color:#0a0a0b}
+section{display:grid;gap:12px;border-top:1px solid var(--line);padding-top:24px}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--eyebrow);margin:0}
+.sn{display:grid;gap:16px} .hl{font:800 clamp(26px,4.2vw,40px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.02em;max-width:24ch}
+mark{background:var(--accent);color:#0a0a0b;padding:0 .18em;border-radius:6px}
+.chips{display:flex;gap:8px;flex-wrap:wrap} .chips span{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:6px 12px;font-size:13px;font-weight:600;color:var(--ink-2)}
+.tgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.tc{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px;display:grid;gap:10px;align-content:start}
+.tc h3{margin:0;font-size:19px;font-weight:800;letter-spacing:-.01em} .tc p{margin:0;color:var(--ink-2);font-size:14px}
+.tc-top{display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+.pill{display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:4px 10px;font-size:12px;font-weight:800}
+.pill i{width:7px;height:7px;border-radius:50%;background:currentColor}
+.pill.stop{background:var(--stop-bg);color:var(--stop)} .pill.lim{background:var(--lim-bg);color:var(--lim)} .pill.go{background:var(--go-bg);color:var(--go)}
+.hrs{display:flex;gap:3px} .h.gap{margin-left:7px} .h{flex:1 1 0;min-width:0;text-align:center;border-radius:7px;padding:3px 0;font-size:12px;font-weight:800;color:#fff}
+.h.s0{background:var(--s0)} .h.s1{background:var(--s1)} .h.s2{background:var(--s2)}
+.extras{margin:0;padding-left:18px;color:var(--ink-2)} .steps{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.step{border:1px solid var(--line);border-radius:16px;padding:16px;display:grid;gap:6px;background:var(--bg)} .step p{margin:0;font-weight:600}
+.fine{font-size:12px;color:var(--ink-2);margin:0}
+.wrap{overflow-x:auto} table{border-collapse:collapse;font-size:13px;min-width:640px}
+th,td{border-bottom:1px solid var(--line);padding:8px 10px;text-align:right} th:first-child,td:first-child{text-align:left}
+img{width:100%;height:auto;border:1px solid var(--line);border-radius:16px;background:#fff}
 </style></head><body><main>
 <nav><a href="../../index.html">Atlas</a><a href="../../3d.html">3D model</a><a href="../../stories.html">Stories</a><a href="../../daynight.html">Day vs night</a><a href="../../meteogram.html">Meteogram</a><a href="../">Site weather</a><a href="../map.html">Map</a><a href="../share.html">Share today</a><a href="../../gallery.html">Figures</a><a href="https://github.com/gavacharles/kampala-heat-atlas">Code</a></nav>
 <h1>Site weather · Mbale</h1>
 <p class="lede">For contractors and site managers: the next seven days as workable hours per trade, with a short site note,
 refreshed every morning at 06:00. Every day is also archived, so the record of what the weather did, month by month and
 compared with the site's 1991-2020 climate, builds up on its own.</p>
-<section><h2>Today's site note</h2><div class="note"><p>Issued Friday 13 November 2026, 01:59 (Africa/Kampala). Site 1.0821, 34.1750. Working hours 08:00-17:00, lunch break excluded (8 h).</p>
-<h3>Friday 13 November</h3>
-<p><strong>Wet day (7 mm): no concrete or asphalt window.</strong></p>
-<p>Rain 7 mm (chance up to 80 %) · storms low · WBGT peak 24.9 °C · gusts 5 m/s at hook height</p>
-<ul>
-<li><strong>Concrete pour — STOP.</strong> Limited by rain. No pour window: postpone, or pour under cover.</li>
-<li><strong>Asphalt &amp; surfacing — STOP.</strong> Limited by rain or wet surface. No dry window: do not lay or spray.</li>
-<li><strong>Painting &amp; coatings — STOP.</strong> Limited by rain, humidity or dew. Too humid or wet for painting and coatings.</li>
-<li><strong>Work at height — go 15-17 h only.</strong> Limited by rain. Clear roofs and scaffolds before storms.</li>
-<li><strong>Earthworks — go with care.</strong> Limited by wet ground, rain. Ground soft: protect formation and stockpiles. Ground wet after 10 mm in 24 h.</li>
-<li><strong>No weather limits:</strong> Outdoor labour, Crane lifts.</li>
-<li>Dust: PM2.5 up to 63 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.</li>
-</ul>
-<h3>Saturday 14 November</h3>
-<p><strong>Storms likely from 11:00: finish lifts, roof and asphalt work before then.</strong></p>
-<p>Rain 11 mm (chance up to 100 %) · storms likely · WBGT peak 26.2 °C · gusts 7 m/s at hook height</p>
-<ul>
-<li><strong>Concrete pour — STOP.</strong> Limited by rain, storms. No pour window: postpone, or pour under cover.</li>
-<li><strong>Asphalt &amp; surfacing — STOP.</strong> Limited by rain or wet surface, storms. No dry window: do not lay or spray.</li>
-<li><strong>Painting &amp; coatings — STOP.</strong> Limited by rain, humidity or dew. Too humid or wet for painting and coatings.</li>
-<li><strong>Crane lifts — go 08-10 h only.</strong> Limited by storms. Check the anemometer before each lift.</li>
-<li><strong>Work at height — go 08-10 h only.</strong> Limited by storms, rain. Clear roofs and scaffolds before storms.</li>
-<li><strong>Earthworks — go 08-11 h only.</strong> Limited by rain, wet ground. Protect formation and stockpiles. Ground wet after 8 mm in 24 h.</li>
-<li><strong>No weather limits:</strong> Outdoor labour.</li>
-<li>UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.</li>
-<li>Dust: PM2.5 up to 60 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.</li>
-</ul>
-<h3>Sunday 15 November</h3>
-<p><strong>Storms likely from 15:00: finish lifts, roof and asphalt work before then.</strong></p>
-<p>Rain 8 mm (chance up to 100 %) · storms likely · WBGT peak 27.3 °C · gusts 6 m/s at hook height</p>
-<ul>
-<li><strong>Earthworks — STOP.</strong> Limited by wet ground, rain. Ground too wet: protect formation, keep plant off soft ground. Ground wet after 12 mm in 24 h.</li>
-<li><strong>Concrete pour — go 08-10 h only.</strong> Limited by rain, storms. Keep covers ready outside this window.</li>
-<li><strong>Asphalt &amp; surfacing — go 08-09 h only.</strong> Limited by rain or wet surface, storms. Never lay or spray on a wet surface.</li>
-<li><strong>Crane lifts — go 08-12 h only.</strong> Limited by storms. Check the anemometer before each lift.</li>
-<li><strong>Work at height — go 08-11 h only.</strong> Limited by rain, storms. Clear roofs and scaffolds before storms.</li>
-<li><strong>Painting &amp; coatings — go 10-11 h only.</strong> Limited by rain, humidity or dew. Check the surface is 3 °C above dew point.</li>
-<li><strong>No weather limits:</strong> Outdoor labour.</li>
-<li>UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.</li>
-<li>Dust: PM2.5 up to 45 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.</li>
-</ul>
-<h3>Outlook</h3>
-<ul>
-<li><strong>Monday 16 November</strong>: Storms likely from 16:00: finish lifts, roof and asphalt work before then. Rain 9 mm (97 %); concrete 1 h go.</li>
-<li><strong>Tuesday 17 November</strong>: Storms likely from 14:00: finish lifts, roof and asphalt work before then. Rain 8 mm (98 %); concrete 2 h go.</li>
-<li><strong>Wednesday 18 November</strong>: Storms likely from 14:00: finish lifts, roof and asphalt work before then. Rain 4 mm (94 %); concrete 2 h go.</li>
-<li><strong>Thursday 19 November</strong>: Storms likely from 16:00: finish lifts, roof and asphalt work before then. Rain 10 mm (85 %); concrete 3 h go.</li>
-</ul>
-<p><em>Screening guidance from a weather forecast, not an instruction. The contract specification, the crane manufacturer&#x27;s limits and the site health-and-safety plan take precedence; check conditions on site (WBGT meter, anemometer, the 30-30 rule for lightning) before each activity. Thresholds used: thresholds.json.</em></p></div></section>
+<section><div class='sn'><p class='eyebrow'>Site note · Friday 13 November · issued 02:12</p><h2 class='hl'>Wet day (<mark>7 mm</mark>): no concrete or asphalt window.</h2><div class='chips'><span>Rain 7 mm · 80%</span><span>Storms low</span><span>Heat (WBGT) 25 °C</span><span>Gusts 5 m/s at hook height</span></div><div class='tgrid'><article class='tc'><div class='tc-top'><span class='eyebrow'>Concrete pour</span><span class='pill stop'><i></i>Stop</span></div><h3>No window today</h3><div class='hrs'><span class='h s2' title='08:00'>08</span><span class='h s2' title='09:00'>09</span><span class='h s2' title='10:00'>10</span><span class='h s1' title='11:00'>11</span><span class='h s1' title='12:00'>12</span><span class='h s2 gap' title='14:00'>14</span><span class='h s2' title='15:00'>15</span><span class='h s2' title='16:00'>16</span></div><p>Limited by rain. No pour window: postpone, or pour under cover.</p></article><article class='tc'><div class='tc-top'><span class='eyebrow'>Asphalt &amp; surfacing</span><span class='pill stop'><i></i>Stop</span></div><h3>No window today</h3><div class='hrs'><span class='h s2' title='08:00'>08</span><span class='h s2' title='09:00'>09</span><span class='h s2' title='10:00'>10</span><span class='h s2' title='11:00'>11</span><span class='h s2' title='12:00'>12</span><span class='h s2 gap' title='14:00'>14</span><span class='h s2' title='15:00'>15</span><span class='h s2' title='16:00'>16</span></div><p>Limited by rain or wet surface. No dry window: do not lay or spray.</p></article><article class='tc'><div class='tc-top'><span class='eyebrow'>Painting &amp; coatings</span><span class='pill stop'><i></i>Stop</span></div><h3>No window today</h3><div class='hrs'><span class='h s2' title='08:00'>08</span><span class='h s2' title='09:00'>09</span><span class='h s2' title='10:00'>10</span><span class='h s2' title='11:00'>11</span><span class='h s2' title='12:00'>12</span><span class='h s2 gap' title='14:00'>14</span><span class='h s1' title='15:00'>15</span><span class='h s1' title='16:00'>16</span></div><p>Limited by rain, humidity or dew. Too humid or wet for painting and coatings.</p></article><article class='tc'><div class='tc-top'><span class='eyebrow'>Work at height</span><span class='pill lim'><i></i>Limited</span></div><h3>Go 15-17 h</h3><div class='hrs'><span class='h s2' title='08:00'>08</span><span class='h s2' title='09:00'>09</span><span class='h s2' title='10:00'>10</span><span class='h s2' title='11:00'>11</span><span class='h s2' title='12:00'>12</span><span class='h s2 gap' title='14:00'>14</span><span class='h s0' title='15:00'>15</span><span class='h s0' title='16:00'>16</span></div><p>Limited by rain. Clear roofs and scaffolds before storms.</p></article><article class='tc'><div class='tc-top'><span class='eyebrow'>Earthworks</span><span class='pill lim'><i></i>Go with care</span></div><h3>Go with care</h3><div class='hrs'><span class='h s1' title='08:00'>08</span><span class='h s1' title='09:00'>09</span><span class='h s1' title='10:00'>10</span><span class='h s1' title='11:00'>11</span><span class='h s1' title='12:00'>12</span><span class='h s1 gap' title='14:00'>14</span><span class='h s1' title='15:00'>15</span><span class='h s1' title='16:00'>16</span></div><p>Limited by wet ground, rain. Ground soft: protect formation and stockpiles. Ground wet after 10 mm in 24 h.</p></article><article class='tc ok'><div class='tc-top'><span class='eyebrow'>No weather limits</span><span class='pill go'><i></i>Go</span></div><h3>Outdoor labour, Crane lifts</h3><p>Work as planned; keep an eye on the sky.</p></article></div><ul class='extras'><li>Dust: PM2.5 up to 63 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.</li></ul><p class='eyebrow' style='margin-top:8px'>Next days</p><div class='steps'><article class='step'><span class='eyebrow'>Saturday 14 November</span><p>Storms likely from 11:00: finish lifts, roof and asphalt work before then.</p></article><article class='step'><span class='eyebrow'>Sunday 15 November</span><p>Storms likely from 15:00: finish lifts, roof and asphalt work before then.</p></article><article class='step'><span class='eyebrow'>Monday 16 November</span><p>Storms likely from 16:00: finish lifts, roof and asphalt work before then.</p></article></div><p class='fine'>Hours are go hours, 08:00-17:00 with lunch excluded; 08-13 means from 08:00 until the lunch break. Screening guidance from a forecast: the contract, crane manufacturer's limits and site H&amp;S plan come first.</p></div></section>
 <section><h2>Seven-day site meteogram</h2>
 <img src="site_meteogram_latest.png" alt="Seven-day site meteogram: heat stress, rain and storms, wind at crane height, concrete evaporation, coating conditions, workable hours per trade">
 <p class="lede"><a href="site_forecast_latest.csv">Hourly numbers and per-trade status (CSV)</a> · <a href="../thresholds.json">Thresholds used</a> ·

@@ -2,7 +2,7 @@
  "site": "Jinja",
  "lat": 0.4244,
  "lon": 33.2042,
- "issued": "2026-11-13 01:59",
+ "issued": "2026-11-13 02:12",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -21,7 +21,41 @@
       "rain",
       "storms"
      ],
-     "action": "Keep covers ready outside this window."
+     "action": "Keep covers ready outside this window.",
+     "hours": [
+      [
+       8,
+       0
+      ],
+      [
+       9,
+       0
+      ],
+      [
+       10,
+       0
+      ],
+      [
+       11,
+       0
+      ],
+      [
+       12,
+       1
+      ],
+      [
+       14,
+       1
+      ],
+      [
+       15,
+       1
+      ],
+      [
+       16,
+       2
+      ]
+     ]
     },
     {
      "key": "asphalt",
@@ -34,7 +68,41 @@
       "rain or wet surface",
       "storms"
      ],
-     "action": "Never lay or spray on a wet surface."
+     "action": "Never lay or spray on a wet surface.",
+     "hours": [
+      [
+       8,
+       0
+      ],
+      [
+       9,
+       0
+      ],
+      [
+       10,
+       0
+      ],
+      [
+       11,
+       0
+      ],
+      [
+       12,
+       2
+      ],
+      [
+       14,
+       2
+      ],
+      [
+       15,
+       2
+      ],
+      [
+       16,
+       2
+      ]
+     ]
     },
     {
      "key": "crane",
@@ -46,7 +114,41 @@
      "causes": [
       "storms"
      ],
-     "action": "Check the anemometer before each lift."
+     "action": "Check the anemometer before each lift.",
+     "hours": [
+      [
+       8,
+       0
+      ],
+      [
+       9,
+       0
+      ],
+      [
+       10,
+       0
+      ],
+      [
+       11,
+       0
+      ],
+      [
+       12,
+       0
+      ],
+      [
+       14,
+       1
+      ],
+      [
+       15,
+       1
+      ],
+      [
+       16,
+       0
+      ]
+     ]
     },
     {
      "key": "height",
@@ -59,7 +161,41 @@
       "rain",
       "storms"
      ],
-     "action": "Clear roofs and scaffolds before storms."
+     "action": "Clear roofs and scaffolds before storms.",
+     "hours": [
+      [
+       8,
+       0
+      ],
+      [
+       9,
+       0
+      ],
+      [
+       10,
+       0
+      ],
+      [
+       11,
+       0
+      ],
+      [
+       12,
+       0
+      ],
+      [
+       14,
+       2
+      ],
+      [
+       15,
+       1
+      ],
+      [
+       16,
+       2
+      ]
+     ]
     },
     {
      "key": "coatings",
@@ -72,7 +208,41 @@
       "humidity or dew",
       "rain"
      ],
-     "action": "Check the surface is 3 \u00b0C above dew point."
+     "action": "Check the surface is 3 \u00b0C above dew point.",
+     "hours": [
+      [
+       8,
+       2
+      ],
+      [
+       9,
+       1
+      ],
+      [
+       10,
+       1
+      ],
+      [
+       11,
+       0
+      ],
+      [
+       12,
+       0
+      ],
+      [
+       14,
+       2
+      ],
+      [
+       15,
+       1
+      ],
+      [
+       16,
+       2
+      ]
+     ]
     },
     {
      "key": "earthworks",
@@ -85,7 +255,41 @@
       "wet ground",
       "rain"
      ],
-     "action": "Protect formation and stockpiles. Ground wet after 7 mm in 24 h."
+     "action": "Protect formation and stockpiles. Ground wet after 7 mm in 24 h.",
+     "hours": [
+      [
+       8,
+       1
+      ],
+      [
+       9,
+       1
+      ],
+      [
+       10,
+       1
+      ],
+      [
+       11,
+       1
+      ],
+      [
+       12,
+       1
+      ],
+      [
+       14,
+       0
+      ],
+      [
+       15,
+       0
+      ],
+      [
+       16,
+       2
+      ]
+     ]
     },
     {
      "key": "labour",
@@ -95,7 +299,41 @@
      "go_hours": 8,
      "windows": "",
      "causes": [],
-     "action": "No heat limits; keep water and shade available."
+     "action": "No heat limits; keep water and shade available.",
+     "hours": [
+      [
+       8,
+       0
+      ],
+      [
+       9,
+       0
+      ],
+      [
+       10,
+       0
+      ],
+      [
+       11,
+       0
+      ],
+      [
+       12,
+       0
+      ],
+      [
+       14,
+       0
+      ],
+      [
+       15,
+       0
+      ],
+      [
+       16,
+       0
+      ]
+     ]
     }
    ],
    "extras": [],
@@ -133,7 +371,41 @@
       "rain",
       "humidity or dew"
      ],
-     "action": "Too humid or wet for painting and coatings."
+     "action": "Too humid or wet for painting and coatings.",
+     "hours": [
+      [
+       8,
+       2
+      ],
+      [
+       9,
+       2
+      ],
+      [
+       10,
+       2
+      ],
+      [
+       11,
+       2
+      ],
+      [
+       12,
+       1
+      ],
+      [
+       14,
+       2
+      ],
+      [
+       15,
+       1
+      ],
+      [
+       16,
+       1
+      ]
+     ]
     },
     {
      "key": "concrete",
@@ -146,7 +418,41 @@
       "rain",
       "storms"
      ],
-     "action": "Keep covers ready outside this window."
+     "action": "Keep covers ready outside this window.",
+     "hours": [
+      [
+       8,
+       0
+      ],
+      [
+       9,
+       0
+      ],
+      [
+       10,
+       0
+      ],
+      [
+       11,
+       1
+      ],
+      [
+       12,
+       2
+      ],
+      [
+       14,
+       2
+      ],
+      [
+       15,
+       2
+      ],
+      [
+       16,
+       2
+      ]
+     ]
     },
     {
      "key": "asphalt",
@@ -159,7 +465,41 @@
       "rain or wet surface",
       "storms"
      ],
-     "action": "Never lay or spray on a wet surface."
+     "action": "Never lay or spray on a wet surface.",
+     "hours": [
+      [
+       8,
+       0
+      ],
+      [
+       9,
+       2
+      ],
+      [
+       10,
+       2
+      ],
+      [
+       11,
+       2
+      ],
+      [
+       12,
+       2
+      ],
+      [
+       14,
+       2
+      ],
+      [
+       15,
+       2
+      ],
+      [
+       16,
+       2
+      ]
+     ]
     },
     {
      "key": "crane",
@@ -171,7 +511,41 @@
      "causes": [
       "storms"
      ],
-     "action": "Check the anemometer before each lift."
+     "action": "Check the anemometer before each lift.",
+     "hours": [
+      [
+       8,
+       0
+      ],
+      [
+       9,
+       0
+      ],
+      [
+       10,
+       0
+      ],
+      [
+       11,
+       0
+      ],
+      [
+       12,
+       0
+      ],
+      [
+       14,
+       1
+      ],
+      [
+       15,
+       1
+      ],
+      [
+       16,
+       1
+      ]
+     ]
     },
     {
      "key": "height",
@@ -184,7 +558,41 @@
       "rain",
       "storms"
      ],
-     "action": "Clear roofs and scaffolds before storms."
+     "action": "Clear roofs and scaffolds before storms.",
+     "hours": [
+      [
+       8,
+       0
+      ],
+      [
+       9,
+       2
+      ],
+      [
+       10,
+       2
+      ],
+      [
+       11,
+       2
+      ],
+      [
+       12,
+       0
+      ],
+      [
+       14,
+       2
+      ],
+      [
+       15,
+       1
+      ],
+      [
+       16,
+       1
+      ]
+     ]
     },
     {
      "key": "earthworks",
@@ -196,7 +604,41 @@
      "causes": [
       "rain"
      ],
-     "action": "Protect formation and stockpiles."
+     "action": "Protect formation and stockpiles.",
+     "hours": [
+      [
+       8,
+       0
+      ],
+      [
+       9,
+       1
+      ],
+      [
+       10,
+       0
+      ],
+      [
+       11,
+       0
+      ],
+      [
+       12,
+       0
+      ],
+      [
+       14,
+       0
+      ],
+      [
+       15,
+       0
+      ],
+      [
+       16,
+       0
+      ]
+     ]
     },
     {
      "key": "labour",
@@ -206,7 +648,41 @@
      "go_hours": 8,
      "windows": "",
      "causes": [],
-     "action": "No heat limits; keep water and shade available."
+     "action": "No heat limits; keep water and shade available.",
+     "hours": [
+      [
+       8,
+       0
+      ],
+      [
+       9,
+       0
+      ],
+      [
+       10,
+       0
+      ],
+      [
+       11,
+       0
+      ],
+      [
+       12,
+       0
+      ],
+      [
+       14,
+       0
+      ],
+      [
+       15,
+       0
+      ],
+      [
+       16,
+       0
+      ]
+     ]
     }
    ],
    "extras": [
@@ -247,7 +723,41 @@
       "rain",
       "storms"
      ],
-     "action": "No pour window: postpone, or pour under cover."
+     "action": "No pour window: postpone, or pour under cover.",
+     "hours": [
+      [
+       8,
+       2
+      ],
+      [
+       9,
+       2
+      ],
+      [
+       10,
+       1
+      ],
+      [
+       11,
+       2
+      ],
+      [
+       12,
+       2
+      ],
+      [
+       14,
+       2
+      ],
+      [
+       15,
+       2
+      ],
+      [
+       16,
+       1
+      ]
+     ]
     },
     {
      "key": "asphalt",
@@ -260,7 +770,41 @@
       "rain or wet surface",
       "storms"
      ],
-     "action": "No dry window: do not lay or spray."
+     "action": "No dry window: do not lay or spray.",
+     "hours": [
+      [
+       8,
+       2
+      ],
+      [
+       9,
+       2
+      ],
+      [
+       10,
+       2
+      ],
+      [
+       11,
+       2
+      ],
+      [
+       12,
+       2
+      ],
+      [
+       14,
+       2
+      ],
+      [
+       15,
+       2
+      ],
+      [
+       16,
+       2
+      ]
+     ]
     },
     {
      "key": "height",
@@ -273,7 +817,41 @@
       "storms",
       "rain"
      ],
-     "action": "Keep off roofs and scaffolds."
+     "action": "Keep off roofs and scaffolds.",
+     "hours": [
+      [
+       8,
+       2
+      ],
+      [
+       9,
+       2
+      ],
+      [
+       10,
+       2
+      ],
+      [
+       11,
+       1
+      ],
+      [
+       12,
+       1
+      ],
+      [
+       14,
+       2
+      ],
+      [
+       15,
+       1
+      ],
+      [
+       16,
+       1
+      ]
+     ]
     },
     {
      "key": "coatings",
@@ -286,7 +864,41 @@
       "humidity or dew",
       "rain"
      ],
-     "action": "Too humid or wet for painting and coatings."
+     "action": "Too humid or wet for painting and coatings.",
+     "hours": [
+      [
+       8,
+       2
+      ],
+      [
+       9,
+       2
+      ],
+      [
+       10,
+       2
+      ],
+      [
+       11,
+       2
+      ],
+      [
+       12,
+       1
+      ],
+      [
+       14,
+       2
+      ],
+      [
+       15,
+       1
+      ],
+      [
+       16,
+       1
+      ]
+     ]
     },
     {
      "key": "earthworks",
@@ -299,7 +911,41 @@
       "wet ground",
       "rain"
      ],
-     "action": "Ground too wet: protect formation, keep plant off soft ground. Ground wet after 12 mm in 24 h."
+     "action": "Ground too wet: protect formation, keep plant off soft ground. Ground wet after 12 mm in 24 h.",
+     "hours": [
+      [
+       8,
+       2
+      ],
+      [
+       9,
+       2
+      ],
+      [
+       10,
+       1
+      ],
+      [
+       11,
+       1
+      ],
+      [
+       12,
+       1
+      ],
+      [
+       14,
+       1
+      ],
+      [
+       15,
+       1
+      ],
+      [
+       16,
+       1
+      ]
+     ]
     },
     {
      "key": "crane",
@@ -311,7 +957,41 @@
      "causes": [
       "storms"
      ],
-     "action": "Check the anemometer before each lift."
+     "action": "Check the anemometer before each lift.",
+     "hours": [
+      [
+       8,
+       0
+      ],
+      [
+       9,
+       0
+      ],
+      [
+       10,
+       1
+      ],
+      [
+       11,
+       1
+      ],
+      [
+       12,
+       1
+      ],
+      [
+       14,
+       1
+      ],
+      [
+       15,
+       1
+      ],
+      [
+       16,
+       1
+      ]
+     ]
     },
     {
      "key": "labour",
@@ -321,7 +1001,41 @@
      "go_hours": 8,
      "windows": "",
      "causes": [],
-     "action": "No heat limits; keep water and shade available."
+     "action": "No heat limits; keep water and shade available.",
+     "hours": [
+      [
+       8,
+       0
+      ],
+      [
+       9,
+       0
+      ],
+      [
+       10,
+       0
+      ],
+      [
+       11,
+       0
+      ],
+      [
+       12,
+       0
+      ],
+      [
+       14,
+       0
+      ],
+      [
+       15,
+       0
+      ],
+      [
+       16,
+       0
+      ]
+     ]
     }
    ],
    "extras": [
@@ -362,7 +1076,41 @@
       "rain",
       "storms"
      ],
-     "action": "No pour window: postpone, or pour under cover."
+     "action": "No pour window: postpone, or pour under cover.",
+     "hours": [
+      [
+       8,
+       2
+      ],
+      [
+       9,
+       2
+      ],
+      [
+       10,
+       2
+      ],
+      [
+       11,
+       2
+      ],
+      [
+       12,
+       2
+      ],
+      [
+       14,
+       1
+      ],
+      [
+       15,
+       1
+      ],
+      [
+       16,
+       1
+      ]
+     ]
     },
     {
      "key": "asphalt",
@@ -375,7 +1123,41 @@
       "rain or wet surface",
       "storms"
      ],
-     "action": "No dry window: do not lay or spray."
+     "action": "No dry window: do not lay or spray.",
+     "hours": [
+      [
+       8,
+       2
+      ],
+      [
+       9,
+       2
+      ],
+      [
+       10,
+       2
+      ],
+      [
+       11,
+       2
+      ],
+      [
+       12,
+       2
+      ],
+      [
+       14,
+       2
+      ],
+      [
+       15,
+       1
+      ],
+      [
+       16,
+       2
+      ]
+     ]
     },
     {
      "key": "height",
@@ -388,7 +1170,41 @@
       "storms",
       "rain"
      ],
-     "action": "Keep off roofs and scaffolds."
+     "action": "Keep off roofs and scaffolds.",
+     "hours": [
+      [
+       8,
+       2
+      ],
+      [
+       9,
+       2
+      ],
+      [
+       10,
+       2
+      ],
+      [
+       11,
+       2
+      ],
+      [
+       12,
+       2
+      ],
+      [
+       14,
+       1
+      ],
+      [
+       15,
+       1
+      ],
+      [
+       16,
+       1
+      ]
+     ]
     },
     {
      "key": "coatings",
@@ -401,7 +1217,41 @@
       "humidity or dew",
       "rain"
      ],
-     "action": "Too humid or wet for painting and coatings."
+     "action": "Too humid or wet for painting and coatings.",
+     "hours": [
+      [
+       8,
+       2
+      ],
+      [
+       9,
+       2
+      ],
+      [
+       10,
+       2
+      ],
+      [
+       11,
+       2
+      ],
+      [
+       12,
+       2
+      ],
+      [
+       14,
+       1
+      ],
+      [
+       15,
+       1
+      ],
+      [
+       16,
+       1
+      ]
+     ]
     },
     {
      "key": "earthworks",
@@ -414,7 +1264,41 @@
       "wet ground",
       "rain"
      ],
-     "action": "Ground too wet: protect formation, keep plant off soft ground. Ground wet after 16 mm in 24 h."
+     "action": "Ground too wet: protect formation, keep plant off soft ground. Ground wet after 16 mm in 24 h.",
+     "hours": [
+      [
+       8,
+       2
+      ],
+      [
+       9,
+       2
+      ],
+      [
+       10,
+       1
+      ],
+      [
+       11,
+       1
+      ],
+      [
+       12,
+       1
+      ],
+      [
+       14,
+       1
+      ],
+      [
+       15,
+       1
+      ],
+      [
+       16,
+       1
+      ]
+     ]
     },
     {
      "key": "crane",
@@ -426,7 +1310,41 @@
      "causes": [
       "storms"
      ],
-     "action": "Check the anemometer before each lift."
+     "action": "Check the anemometer before each lift.",
+     "hours": [
+      [
+       8,
+       1
+      ],
+      [
+       9,
+       0
+      ],
+      [
+       10,
+       1
+      ],
+      [
+       11,
+       1
+      ],
+      [
+       12,
+       1
+      ],
+      [
+       14,
+       1
+      ],
+      [
+       15,
+       1
+      ],
+      [
+       16,
+       1
+      ]
+     ]
     },
     {
      "key": "labour",
@@ -436,7 +1354,41 @@
      "go_hours": 8,
      "windows": "",
      "causes": [],
-     "action": "No heat limits; keep water and shade available."
+     "action": "No heat limits; keep water and shade available.",
+     "hours": [
+      [
+       8,
+       0
+      ],
+      [
+       9,
+       0
+      ],
+      [
+       10,
+       0
+      ],
+      [
+       11,
+       0
+      ],
+      [
+       12,
+       0
+      ],
+      [
+       14,
+       0
+      ],
+      [
+       15,
+       0
+      ],
+      [
+       16,
+       0
+      ]
+     ]
     }
    ],
    "extras": [
@@ -476,7 +1428,41 @@
       "rain",
       "storms"
      ],
-     "action": "No pour window: postpone, or pour under cover."
+     "action": "No pour window: postpone, or pour under cover.",
+     "hours": [
+      [
+       8,
+       2
+      ],
+      [
+       9,
+       2
+      ],
+      [
+       10,
+       1
+      ],
+      [
+       11,
+       1
+      ],
+      [
+       12,
+       1
+      ],
+      [
+       14,
+       1
+      ],
+      [
+       15,
+       1
+      ],
+      [
+       16,
+       1
+      ]
+     ]
     },
     {
      "key": "asphalt",
@@ -489,7 +1475,41 @@
       "rain or wet surface",
       "storms"
      ],
-     "action": "No dry window: do not lay or spray."
+     "action": "No dry window: do not lay or spray.",
+     "hours": [
+      [
+       8,
+       2
+      ],
+      [
+       9,
+       2
+      ],
+      [
+       10,
+       2
+      ],
+      [
+       11,
+       2
+      ],
+      [
+       12,
+       1
+      ],
+      [
+       14,
+       2
+      ],
+      [
+       15,
+       2
+      ],
+      [
+       16,
+       1
+      ]
+     ]
     },
     {
      "key": "height",
@@ -502,7 +1522,41 @@
       "storms",
       "rain"
      ],
-     "action": "Keep off roofs and scaffolds."
+     "action": "Keep off roofs and scaffolds.",
+     "hours": [
+      [
+       8,
+       2
+      ],
+      [
+       9,
+       2
+      ],
+      [
+       10,
+       1
+      ],
+      [
+       11,
+       1
+      ],
+      [
+       12,
+       1
+      ],
+      [
+       14,
+       1
+      ],
+      [
+       15,
+       1
+      ],
+      [
+       16,
+       1
+      ]
+     ]
     },
     {
      "key": "coatings",
@@ -515,7 +1569,41 @@
       "rain",
       "humidity or dew"
      ],
-     "action": "Too humid or wet for painting and coatings."
+     "action": "Too humid or wet for painting and coatings.",
+     "hours": [
+      [
+       8,
+       2
+      ],
+      [
+       9,
+       2
+      ],
+      [
+       10,
+       1
+      ],
+      [
+       11,
+       1
+      ],
+      [
+       12,
+       1
+      ],
+      [
+       14,
+       1
+      ],
+      [
+       15,
+       1
+      ],
+      [
+       16,
+       1
+      ]
+     ]
     },
     {
      "key": "crane",
@@ -527,7 +1615,41 @@
      "causes": [
       "storms"
      ],
-     "action": "Check the anemometer before each lift."
+     "action": "Check the anemometer before each lift.",
+     "hours": [
+      [
+       8,
+       0
+      ],
+      [
+       9,
+       0
+      ],
+      [
+       10,
+       1
+      ],
+      [
+       11,
+       1
+      ],
+      [
+       12,
+       1
+      ],
+      [
+       14,
+       1
+      ],
+      [
+       15,
+       1
+      ],
+      [
+       16,
+       1
+      ]
+     ]
     },
     {
      "key": "earthworks",
@@ -539,7 +1661,41 @@
      "causes": [
       "rain"
      ],
-     "action": "Protect formation and stockpiles."
+     "action": "Protect formation and stockpiles.",
+     "hours": [
+      [
+       8,
+       1
+      ],
+      [
+       9,
+       1
+      ],
+      [
+       10,
+       0
+      ],
+      [
+       11,
+       0
+      ],
+      [
+       12,
+       0
+      ],
+      [
+       14,
+       0
+      ],
+      [
+       15,
+       0
+      ],
+      [
+       16,
+       0
+      ]
+     ]
     },
     {
      "key": "labour",
@@ -549,7 +1705,41 @@
      "go_hours": 8,
      "windows": "",
      "causes": [],
-     "action": "No heat limits; keep water and shade available."
+     "action": "No heat limits; keep water and shade available.",
+     "hours": [
+      [
+       8,
+       0
+      ],
+      [
+       9,
+       0
+      ],
+      [
+       10,
+       0
+      ],
+      [
+       11,
+       0
+      ],
+      [
+       12,
+       0
+      ],
+      [
+       14,
+       0
+      ],
+      [
+       15,
+       0
+      ],
+      [
+       16,
+       0
+      ]
+     ]
     }
    ],
    "extras": [
@@ -588,7 +1778,41 @@
      "causes": [
       "rain or wet surface"
      ],
-     "action": "No dry window: do not lay or spray."
+     "action": "No dry window: do not lay or spray.",
+     "hours": [
+      [
+       8,
+       2
+      ],
+      [
+       9,
+       2
+      ],
+      [
+       10,
+       2
+      ],
+      [
+       11,
+       2
+      ],
+      [
+       12,
+       2
+      ],
+      [
+       14,
+       2
+      ],
+      [
+       15,
+       2
+      ],
+      [
+       16,
+       2
+      ]
+     ]
     },
     {
      "key": "coatings",
@@ -601,7 +1825,41 @@
       "humidity or dew",
       "rain"
      ],
-     "action": "Too humid or wet for painting and coatings."
+     "action": "Too humid or wet for painting and coatings.",
+     "hours": [
+      [
+       8,
+       2
+      ],
+      [
+       9,
+       2
+      ],
+      [
+       10,
+       2
+      ],
+      [
+       11,
+       2
+      ],
+      [
+       12,
+       2
+      ],
+      [
+       14,
+       2
+      ],
+      [
+       15,
+       2
+      ],
+      [
+       16,
+       1
+      ]
+     ]
     },
     {
      "key": "height",
@@ -613,7 +1871,41 @@
      "causes": [
       "rain"
      ],
-     "action": "Clear roofs and scaffolds before storms."
+     "action": "Clear roofs and scaffolds before storms.",
+     "hours": [
+      [
+       8,
+       2
+      ],
+      [
+       9,
+       2
+      ],
+      [
+       10,
+       2
+      ],
+      [
+       11,
+       2
+      ],
+      [
+       12,
+       2
+      ],
+      [
+       14,
+       2
+      ],
+      [
+       15,
+       2
+      ],
+      [
+       16,
+       0
+      ]
+     ]
     },
     {
      "key": "earthworks",
@@ -625,7 +1917,41 @@
      "causes": [
       "rain"
      ],
-     "action": "Protect formation and stockpiles."
+     "action": "Protect formation and stockpiles.",
+     "hours": [
+      [
+       8,
+       1
+      ],
+      [
+       9,
+       1
+      ],
+      [
+       10,
+       0
+      ],
+      [
+       11,
+       0
+      ],
+      [
+       12,
+       0
+      ],
+      [
+       14,
+       0
+      ],
+      [
+       15,
+       0
+      ],
+      [
+       16,
+       0
+      ]
+     ]
     },
     {
      "key": "labour",
@@ -635,7 +1961,41 @@
      "go_hours": 8,
      "windows": "",
      "causes": [],
-     "action": "No heat limits; keep water and shade available."
+     "action": "No heat limits; keep water and shade available.",
+     "hours": [
+      [
+       8,
+       0
+      ],
+      [
+       9,
+       0
+      ],
+      [
+       10,
+       0
+      ],
+      [
+       11,
+       0
+      ],
+      [
+       12,
+       0
+      ],
+      [
+       14,
+       0
+      ],
+      [
+       15,
+       0
+      ],
+      [
+       16,
+       0
+      ]
+     ]
     },
     {
      "key": "concrete",
@@ -645,7 +2005,41 @@
      "go_hours": 8,
      "windows": "08-13 h, 14-17 h",
      "causes": [],
-     "action": "No weather limits."
+     "action": "No weather limits.",
+     "hours": [
+      [
+       8,
+       0
+      ],
+      [
+       9,
+       0
+      ],
+      [
+       10,
+       0
+      ],
+      [
+       11,
+       0
+      ],
+      [
+       12,
+       0
+      ],
+      [
+       14,
+       0
+      ],
+      [
+       15,
+       0
+      ],
+      [
+       16,
+       0
+      ]
+     ]
     },
     {
      "key": "crane",
@@ -655,7 +2049,41 @@
      "go_hours": 8,
      "windows": "08-13 h, 14-17 h",
      "causes": [],
-     "action": "No weather limits."
+     "action": "No weather limits.",
+     "hours": [
+      [
+       8,
+       0
+      ],
+      [
+       9,
+       0
+      ],
+      [
+       10,
+       0
+      ],
+      [
+       11,
+       0
+      ],
+      [
+       12,
+       0
+      ],
+      [
+       14,
+       0
+      ],
+      [
+       15,
+       0
+      ],
+      [
+       16,
+       0
+      ]
+     ]
     }
    ],
    "extras": [
@@ -695,7 +2123,41 @@
       "rain or wet surface",
       "storms"
      ],
-     "action": "No dry window: do not lay or spray."
+     "action": "No dry window: do not lay or spray.",
+     "hours": [
+      [
+       8,
+       2
+      ],
+      [
+       9,
+       2
+      ],
+      [
+       10,
+       2
+      ],
+      [
+       11,
+       2
+      ],
+      [
+       12,
+       2
+      ],
+      [
+       14,
+       2
+      ],
+      [
+       15,
+       2
+      ],
+      [
+       16,
+       1
+      ]
+     ]
     },
     {
      "key": "concrete",
@@ -708,7 +2170,41 @@
       "rain",
       "storms"
      ],
-     "action": "Keep covers ready outside this window."
+     "action": "Keep covers ready outside this window.",
+     "hours": [
+      [
+       8,
+       2
+      ],
+      [
+       9,
+       2
+      ],
+      [
+       10,
+       1
+      ],
+      [
+       11,
+       1
+      ],
+      [
+       12,
+       1
+      ],
+      [
+       14,
+       1
+      ],
+      [
+       15,
+       1
+      ],
+      [
+       16,
+       0
+      ]
+     ]
     },
     {
      "key": "crane",
@@ -720,7 +2216,41 @@
      "causes": [
       "storms"
      ],
-     "action": "Check the anemometer before each lift."
+     "action": "Check the anemometer before each lift.",
+     "hours": [
+      [
+       8,
+       0
+      ],
+      [
+       9,
+       1
+      ],
+      [
+       10,
+       1
+      ],
+      [
+       11,
+       1
+      ],
+      [
+       12,
+       1
+      ],
+      [
+       14,
+       1
+      ],
+      [
+       15,
+       1
+      ],
+      [
+       16,
+       0
+      ]
+     ]
     },
     {
      "key": "height",
@@ -733,7 +2263,41 @@
       "storms",
       "rain"
      ],
-     "action": "Clear roofs and scaffolds before storms."
+     "action": "Clear roofs and scaffolds before storms.",
+     "hours": [
+      [
+       8,
+       2
+      ],
+      [
+       9,
+       2
+      ],
+      [
+       10,
+       1
+      ],
+      [
+       11,
+       1
+      ],
+      [
+       12,
+       1
+      ],
+      [
+       14,
+       1
+      ],
+      [
+       15,
+       1
+      ],
+      [
+       16,
+       0
+      ]
+     ]
     },
     {
      "key": "coatings",
@@ -746,7 +2310,41 @@
       "rain",
       "humidity or dew"
      ],
-     "action": "Check the surface is 3 \u00b0C above dew point."
+     "action": "Check the surface is 3 \u00b0C above dew point.",
+     "hours": [
+      [
+       8,
+       2
+      ],
+      [
+       9,
+       2
+      ],
+      [
+       10,
+       2
+      ],
+      [
+       11,
+       2
+      ],
+      [
+       12,
+       1
+      ],
+      [
+       14,
+       1
+      ],
+      [
+       15,
+       1
+      ],
+      [
+       16,
+       0
+      ]
+     ]
     },
     {
      "key": "earthworks",
@@ -758,7 +2356,41 @@
      "causes": [
       "rain"
      ],
-     "action": "Protect formation and stockpiles."
+     "action": "Protect formation and stockpiles.",
+     "hours": [
+      [
+       8,
+       1
+      ],
+      [
+       9,
+       1
+      ],
+      [
+       10,
+       0
+      ],
+      [
+       11,
+       0
+      ],
+      [
+       12,
+       0
+      ],
+      [
+       14,
+       0
+      ],
+      [
+       15,
+       0
+      ],
+      [
+       16,
+       0
+      ]
+     ]
     },
     {
      "key": "labour",
@@ -768,7 +2400,41 @@
      "go_hours": 8,
      "windows": "",
      "causes": [],
-     "action": "No heat limits; keep water and shade available."
+     "action": "No heat limits; keep water and shade available.",
+     "hours": [
+      [
+       8,
+       0
+      ],
+      [
+       9,
+       0
+      ],
+      [
+       10,
+       0
+      ],
+      [
+       11,
+       0
+      ],
+      [
+       12,
+       0
+      ],
+      [
+       14,
+       0
+      ],
+      [
+       15,
+       0
+      ],
+      [
+       16,
+       0
+      ]
+     ]
     }
    ],
    "extras": [],
