@@ -290,17 +290,32 @@ def pill(d, x, y, status, w=128, h=38, size=20):
     text(d, (x + w / 2, y + h / 2), word, F(size, True), (255, 255, 255), "mm")
 
 
-def strip(d, x, y, key, cell=24, h=26):
+CELL, GAP, LUNCH = 31, 3, 12
+
+
+def cell_x(x, i):
+    """x of hour cell i; a wider gap marks the lunch break."""
+    brk = sum(1 for j in range(1, i + 1) if WORK[j] != WORK[j - 1] + 1)
+    return x + i * (CELL + GAP) + brk * LUNCH
+
+
+def strip_width():
+    return cell_x(0, len(WORK) - 1) + CELL
+
+
+def strip(d, x, y, key, h=30):
+    """One cell per working hour with the hour written in it, so the go hours can be read directly."""
     st = w[f"st_{key}"].values
-    for i, v in enumerate(st):
-        d.rounded_rectangle((x + i * (cell + 3), y, x + i * (cell + 3) + cell, y + h), 4, fill=COL[int(v)])
-    return x + len(st) * (cell + 3)
+    for i, (v, hh) in enumerate(zip(st, WORK)):
+        cx = cell_x(x, i)
+        d.rounded_rectangle((cx, y, cx + CELL, y + h), 5, fill=COL[int(v)])
+        text(d, (cx + CELL / 2, y + h / 2 + 1), f"{hh:02d}", F(15, True), (255, 255, 255), "mm")
+    return x + strip_width()
 
 
-def strip_axis(d, x, y, cell=24):
-    for i, hh in enumerate(WORK):
-        if i in (0, len(WORK) - 1) or hh == 14:
-            text(d, (x + i * (cell + 3) + cell / 2, y), f"{hh:02d}", F(16), MUT, "ma")
+def strip_axis(d, x, y):
+    lunch = [i for i in range(1, len(WORK)) if WORK[i] != WORK[i - 1] + 1]
+    text(d, (x + strip_width(), y), "hour of day" + ("  ·  gap = lunch" if lunch else ""), F(16), MUT, "ra")
 
 
 def headline_box(d, x, y, W, size=34):
@@ -323,7 +338,7 @@ def facts_line(d, x, y):
 
 def briefing_rows(d, x, y, W, ymax, size=28, small=22, show_go=False):
     """Problem trades first: pill, trade, hour strip; then label, reason and action. Clear trades on one line."""
-    sx = W - x - len(WORK) * 27 + 3
+    sx = W - x - strip_width()
     strip_axis(d, sx, y)
     y += 26
     for r in B["rows"]:
@@ -339,7 +354,7 @@ def briefing_rows(d, x, y, W, ymax, size=28, small=22, show_go=False):
             break
         pill(d, x, y + 2, r["status"])
         text(d, (x + 150, y), r["trade"], F(size, True))
-        strip(d, sx, y + 6, r["key"])
+        strip(d, sx, y + 2, r["key"])
         for k, ln in enumerate(lines):
             text(d, (x + 150, y + 42 + k * (small + 8)), ln, F(small), INK2)
         y += hgt

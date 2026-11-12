@@ -265,7 +265,7 @@ ax[0].set_ylim(ylo, yhi); ax[0].set_ylabel("°C")
 ax[0].legend(loc="upper left", ncol=3, frameon=False, fontsize=8)
 ax[0].set_title(f"Site weather · {A.name} ({A.lat:.3f}, {A.lon:.3f}) · issued {now:%a %d %b %Y %H:%M}",
                 loc="left", fontsize=12, fontweight="bold", color=INK)
-ax[0].text(0.005, 0.04, "work/rest bands: moderate work, acclimatised workers; heavier work or new workers need lower limits",
+ax[0].text(0.005, 0.04, "grey bands = working hours · work/rest bands: moderate work, acclimatised workers; heavier work or new workers need lower limits",
            transform=ax[0].transAxes, fontsize=7.5, color=INK2)
 ax[1].bar(t, fc.precipitation, width=0.035, color=BLUE)
 rmax = max(5, fc.precipitation.max() * 1.25)
@@ -274,9 +274,9 @@ for lv, col in ((1, AMBER), (2, RED)):
     k = fc.thunder.values == lv
     ax[1].scatter(t[k], np.full(k.sum(), rmax * 0.92), marker="v", s=22, color=col, zorder=3)
 daily = fc.precipitation.resample("D").sum(); pmax = fc.precipitation_probability.resample("D").max()
-ax[1].set_title("Rain · triangles: thunderstorm risk (amber possible, red likely) · daily total (chance): " +
+ax[1].set_title("Rain · triangles = storm risk (amber possible, red likely) · " +
                 "  ".join(f"{d:%a} {v:.0f} mm ({p:.0f}%)" for (d, v), p in zip(daily.items(), pmax.values)),
-                loc="left", fontsize=8.5, color=INK2)
+                loc="left", fontsize=7.8, color=INK2)
 cr = TH["crane"]
 ax[2].plot(t, fc.wind_speed_10m, color=MUTED, lw=1.2, label="mean wind, 10 m")
 ax[2].plot(t, fc.gust_hook, color=INK, lw=1.6, label=f"gust at {cr['hook_height_m']} m hook height")
@@ -302,12 +302,29 @@ edges = mdates.date2num(list(t) + [t[-1] + pd.Timedelta(hours=1)])
 ax[5].pcolormesh(edges, np.arange(len(KEYS) + 1), grid, cmap=ListedColormap([OFF, GREEN, AMBER, RED]), vmin=0, vmax=3,
                  edgecolors="#ffffff", linewidth=0.3)
 ax[5].set_yticks(np.arange(len(KEYS)) + 0.5); ax[5].set_yticklabels(TRADES, fontsize=8); ax[5].invert_yaxis(); ax[5].grid(False)
-ax[5].set_title(f"Workable hours {W0:02d}-{W1:02d} h · green go · amber caution · red stop · grey outside working hours",
+ax[5].set_title(f"Go hours per trade, written in each day (working hours {W0:02d}-{W1:02d} h, lunch excluded) · green go · amber caution · red stop · grey not working",
                 loc="left", fontsize=8.5, color=INK2)
-ax[5].xaxis.set_major_locator(mdates.DayLocator(tz=t.tz)); ax[5].xaxis.set_major_formatter(mdates.DateFormatter("%a %d %b", tz=t.tz))
+ax[5].xaxis.set_major_locator(mdates.DayLocator(tz=t.tz)); ax[5].xaxis.set_major_formatter(mdates.DateFormatter("\n%a %d %b", tz=t.tz))
+ax[5].xaxis.set_minor_locator(mdates.HourLocator(byhour=[W0, 12, W1], tz=t.tz))
+ax[5].xaxis.set_minor_formatter(mdates.DateFormatter("%H", tz=t.tz)); ax[5].tick_params(axis="x", which="minor", labelsize=6.5, colors=MUTED)
+ax[5].tick_params(axis="x", which="major", length=0)
+# write each day's go windows in the strip, so the hours can be read without counting cells
+for dday, gday in fc.groupby(fc.index.normalize()):
+    wd = gday[gday.work_hour]
+    if not len(wd):
+        continue
+    xc = mdates.date2num(dday + pd.Timedelta(hours=(W0 + W1) / 2))
+    for r_i, k in enumerate(KEYS):
+        go = runs(wd[f"st_{k}"].values == 0, wd.index)
+        lab = "all day" if (wd[f"st_{k}"] == 0).all() else ", ".join(x.replace(" h", "") for x in go) if go else "none"
+        ax[5].text(xc, r_i + 0.5, lab, ha="center", va="center", fontsize=6.3, color=INK, fontweight="bold" if lab != "none" else "normal",
+                   bbox=dict(boxstyle="round,pad=0.15", fc="white", ec="none", alpha=0.8))
 for a in ax:
     for d in pd.date_range(today, periods=8, freq="D"):
         a.axvline(d, color="#c3c2b7", lw=0.6)
+        if a is not ax[5]:                                   # working hours shaded lightly on every panel
+            a.axvspan(d + pd.Timedelta(hours=W0), d + pd.Timedelta(hours=W1), color="#8a8478", alpha=0.07, lw=0)
+    a.set_xlim(t[0], t[-1] + pd.Timedelta(hours=1))
 fig.text(0.01, -0.012, "Screening guidance from the Open-Meteo forecast (open-meteo.com). Thresholds: docs/site-weather/thresholds.json; "
          "the contract specification, crane manufacturer's limits and site H&S plan take precedence. Kampala Heat Atlas · Gava Charles",
          fontsize=7, color=MUTED)
