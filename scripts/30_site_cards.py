@@ -205,7 +205,7 @@ def today_card(W, H, path):
 def week_card(path):
     W, H = 1080, 1350
     im = Image.new("RGB", (W, H), BG); d = ImageDraw.Draw(im)
-    header(d, W, "The week on site", f"Workable hours per trade, {days[0][0]:%d %b} to {days[-1][0]:%d %b}")
+    header(d, W, "The week on site", f"Hours each trade can go ahead, out of the {W1 - W0}-hour working day")
     x0, y0, lab_w = 64, 260, 290
     cw = (W - 128 - lab_w) / len(days)
     for j, (dd, gg) in enumerate(days):
@@ -221,7 +221,8 @@ def week_card(path):
             col = GO if share >= 0.66 else CAU if share >= 0.33 else STOP
             cx = x0 + lab_w + j * cw
             d.rounded_rectangle((cx + 5, y + 8, cx + cw - 5, y + 80), 10, fill=col)
-            text(d, (cx + cw / 2, y + 44), f"{n}h", F(30, True), (255, 255, 255), "mm")
+            text(d, (cx + cw / 2, y + 36), f"{n}h", F(30, True), (255, 255, 255), "mm")
+            text(d, (cx + cw / 2, y + 64), "go", F(16, True), (255, 255, 255), "mm")
         y += 92
     y += 10
     text(d, (x0, y + 30), "Rain", F(26, True), INK, "lm")
@@ -234,10 +235,10 @@ def week_card(path):
         text(d, (cx, y + 96), ["low", "possible", "likely"][lvl], F(22, True), [INK2, (150, 100, 0), STOP][lvl], "mm")
     y += 140
     lx = x0
-    for col, lab in ((GO, "2/3 of hours or more"), (CAU, "1/3 to 2/3"), (STOP, "under 1/3")):
+    for col, lab in ((GO, "most of the day (8h+)"), (CAU, "part of the day (4-7h)"), (STOP, "little or none (0-3h)")):
         d.rounded_rectangle((lx, y, lx + 26, y + 26), 5, fill=col)
         text(d, (lx + 36, y + 13), lab, F(20), INK2, "lm"); lx += 36 + d.textlength(lab, font=F(20)) + 36
-    text(d, (x0, y + 60), "Numbers are go hours in the 11-hour working day (07-18 h).", F(20), MUT)
+    text(d, (x0, y + 60), f"Example: 3h = only 3 of the {W1 - W0} hours ({W0:02d}-{W1:02d} h) are clear of rain, storm, wind and heat limits for that trade.", F(20), MUT)
     footer(d, W, H)
     im.save(path)
     return im
