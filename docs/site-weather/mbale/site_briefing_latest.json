@@ -2,14 +2,26 @@
  "site": "Mbale",
  "lat": 1.0821,
  "lon": 34.175,
- "issued": "2026-11-13 01:40",
+ "issued": "2026-11-13 01:49",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
    "date": "2026-11-13",
    "day": "Friday 13 November",
-   "headline": "Pour concrete 11-12 h; rain limits the rest of the day.",
+   "headline": "Wet day (7 mm): no concrete or asphalt window.",
    "rows": [
+    {
+     "key": "concrete",
+     "trade": "Concrete pour",
+     "status": "STOP",
+     "label": "STOP",
+     "go_hours": 0,
+     "windows": "",
+     "causes": [
+      "rain"
+     ],
+     "action": "No pour window: postpone, or pour under cover."
+    },
     {
      "key": "asphalt",
      "trade": "Asphalt & surfacing",
@@ -34,18 +46,6 @@
       "humidity or dew"
      ],
      "action": "Too humid or wet for painting and coatings."
-    },
-    {
-     "key": "concrete",
-     "trade": "Concrete pour",
-     "status": "LIMITED",
-     "label": "go 11-12 h only",
-     "go_hours": 1,
-     "windows": "11-12 h",
-     "causes": [
-      "rain"
-     ],
-     "action": "Keep covers ready outside this window."
     },
     {
      "key": "height",
@@ -98,15 +98,15 @@
    ],
    "facts": {
     "rain_mm": 6.6,
-    "rain_chance": 60,
+    "rain_chance": 80,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 24.9,
     "gust_hook_max": 4.9,
     "go_hours": {
+     "concrete": 0,
      "asphalt": 0,
      "coatings": 0,
-     "concrete": 1,
      "height": 2,
      "earthworks": 0,
      "labour": 8,
@@ -251,9 +251,9 @@
      "key": "concrete",
      "trade": "Concrete pour",
      "status": "LIMITED",
-     "label": "go 08-09 h only",
-     "go_hours": 1,
-     "windows": "08-09 h",
+     "label": "go 08-10 h only",
+     "go_hours": 2,
+     "windows": "08-10 h",
      "causes": [
       "rain",
       "storms"
@@ -277,9 +277,9 @@
      "key": "crane",
      "trade": "Crane lifts",
      "status": "LIMITED",
-     "label": "go 08-11 h only",
-     "go_hours": 3,
-     "windows": "08-11 h",
+     "label": "go 08-12 h only",
+     "go_hours": 4,
+     "windows": "08-12 h",
      "causes": [
       "storms"
      ],
@@ -335,9 +335,9 @@
     "gust_hook_max": 6.4,
     "go_hours": {
      "earthworks": 0,
-     "concrete": 1,
+     "concrete": 2,
      "asphalt": 1,
-     "crane": 3,
+     "crane": 4,
      "height": 3,
      "coatings": 1,
      "labour": 8
@@ -443,7 +443,7 @@
    ],
    "facts": {
     "rain_mm": 9.1,
-    "rain_chance": 98,
+    "rain_chance": 97,
     "storm": "likely",
     "storm_from": "16",
     "wbgt_peak": 26.6,
@@ -494,9 +494,9 @@
      "key": "concrete",
      "trade": "Concrete pour",
      "status": "LIMITED",
-     "label": "go 08-09 h only",
-     "go_hours": 1,
-     "windows": "08-09 h",
+     "label": "go 08-10 h only",
+     "go_hours": 2,
+     "windows": "08-10 h",
      "causes": [
       "rain",
       "storms"
@@ -507,9 +507,9 @@
      "key": "asphalt",
      "trade": "Asphalt & surfacing",
      "status": "LIMITED",
-     "label": "go 08-09 h only",
-     "go_hours": 1,
-     "windows": "08-09 h",
+     "label": "go 08-10 h only",
+     "go_hours": 2,
+     "windows": "08-10 h",
      "causes": [
       "rain or wet surface",
       "storms"
@@ -520,9 +520,9 @@
      "key": "crane",
      "trade": "Crane lifts",
      "status": "LIMITED",
-     "label": "go 08-11 h only",
-     "go_hours": 3,
-     "windows": "08-11 h",
+     "label": "go 08-12 h only",
+     "go_hours": 4,
+     "windows": "08-12 h",
      "causes": [
       "storms"
      ],
@@ -565,9 +565,9 @@
     "go_hours": {
      "coatings": 0,
      "earthworks": 0,
-     "concrete": 1,
-     "asphalt": 1,
-     "crane": 3,
+     "concrete": 2,
+     "asphalt": 2,
+     "crane": 4,
      "height": 2,
      "labour": 8
     }
@@ -671,7 +671,7 @@
    ],
    "facts": {
     "rain_mm": 4.5,
-    "rain_chance": 95,
+    "rain_chance": 94,
     "storm": "likely",
     "storm_from": "14",
     "wbgt_peak": 27.0,
@@ -709,9 +709,9 @@
      "key": "concrete",
      "trade": "Concrete pour",
      "status": "LIMITED",
-     "label": "go 08-10 h only",
-     "go_hours": 2,
-     "windows": "08-10 h",
+     "label": "go 08-11 h only",
+     "go_hours": 3,
+     "windows": "08-11 h",
      "causes": [
       "rain",
       "storms"
@@ -735,9 +735,9 @@
      "key": "crane",
      "trade": "Crane lifts",
      "status": "LIMITED",
-     "label": "go 08-12 h only",
-     "go_hours": 4,
-     "windows": "08-12 h",
+     "label": "go 08-13 h only",
+     "go_hours": 5,
+     "windows": "08-13 h",
      "causes": [
       "storms"
      ],
@@ -782,16 +782,16 @@
    "extras": [],
    "facts": {
     "rain_mm": 9.6,
-    "rain_chance": 88,
+    "rain_chance": 85,
     "storm": "likely",
     "storm_from": "16",
     "wbgt_peak": 27.6,
     "gust_hook_max": 6.4,
     "go_hours": {
      "coatings": 0,
-     "concrete": 2,
+     "concrete": 3,
      "asphalt": 2,
-     "crane": 4,
+     "crane": 5,
      "height": 2,
      "earthworks": 2,
      "labour": 8

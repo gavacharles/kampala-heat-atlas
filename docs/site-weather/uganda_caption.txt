@@ -1,11 +1,11 @@
 Site weather, Uganda: Friday 13 November.
 
 • Kampala: concrete go 08-13 h only
-• Mbarara: concrete go 08-13 h only
-• Hoima: concrete go 08-09 h only; storms possible
-• Mbale: concrete go 11-12 h only
-• Jinja: concrete go 08-13 h only
-• Gulu: concrete go 12-13 h, 14-17 h only
+• Mbarara: concrete go 08-12 h only
+• Hoima: concrete go with care; storms possible
+• Mbale: concrete STOP
+• Jinja: concrete go 08-12 h only; storms possible
+• Gulu: concrete go 14-17 h only
 • Arua: concrete go 08-13 h, 15-17 h only
 
 Hour-by-hour briefing for your town, the week ahead and the monthly record: gavacharles.github.io/kampala-heat-atlas/site-weather

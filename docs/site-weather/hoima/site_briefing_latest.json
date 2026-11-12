@@ -2,7 +2,7 @@
  "site": "Hoima",
  "lat": 1.4331,
  "lon": 31.3524,
- "issued": "2026-11-13 01:39",
+ "issued": "2026-11-13 01:47",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -31,23 +31,10 @@
      "go_hours": 0,
      "windows": "",
      "causes": [
-      "humidity or dew",
-      "rain"
+      "rain",
+      "humidity or dew"
      ],
      "action": "Too humid or wet for painting and coatings."
-    },
-    {
-     "key": "concrete",
-     "trade": "Concrete pour",
-     "status": "LIMITED",
-     "label": "go 08-09 h only",
-     "go_hours": 1,
-     "windows": "08-09 h",
-     "causes": [
-      "rain",
-      "storms"
-     ],
-     "action": "Keep covers ready outside this window."
     },
     {
      "key": "crane",
@@ -75,6 +62,19 @@
      "action": "Clear roofs and scaffolds before storms."
     },
     {
+     "key": "concrete",
+     "trade": "Concrete pour",
+     "status": "CAUTION",
+     "label": "go with care",
+     "go_hours": 0,
+     "windows": "",
+     "causes": [
+      "rain",
+      "storms"
+     ],
+     "action": "Pour with care: covers and curing ready."
+    },
+    {
      "key": "labour",
      "trade": "Outdoor labour",
      "status": "GO",
@@ -100,7 +100,7 @@
    ],
    "facts": {
     "rain_mm": 1.9,
-    "rain_chance": 69,
+    "rain_chance": 73,
     "storm": "possible",
     "storm_from": "15",
     "wbgt_peak": 23.8,
@@ -108,9 +108,9 @@
     "go_hours": {
      "asphalt": 0,
      "coatings": 0,
-     "concrete": 1,
      "crane": 6,
      "height": 4,
+     "concrete": 0,
      "labour": 8,
      "earthworks": 8
     }
@@ -324,7 +324,7 @@
    ],
    "facts": {
     "rain_mm": 0.9,
-    "rain_chance": 84,
+    "rain_chance": 93,
     "storm": "possible",
     "storm_from": "14",
     "wbgt_peak": 26.6,
@@ -438,7 +438,7 @@
    ],
    "facts": {
     "rain_mm": 8.7,
-    "rain_chance": 93,
+    "rain_chance": 96,
     "storm": "likely",
     "storm_from": "16",
     "wbgt_peak": 25.7,
@@ -548,7 +548,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 2.4,
-    "rain_chance": 85,
+    "rain_chance": 90,
     "storm": "possible",
     "storm_from": "14",
     "wbgt_peak": 26.1,
@@ -658,7 +658,7 @@
    ],
    "facts": {
     "rain_mm": 2.3,
-    "rain_chance": 75,
+    "rain_chance": 71,
     "storm": "possible",
     "storm_from": "14",
     "wbgt_peak": 26.1,
@@ -696,9 +696,9 @@
      "key": "concrete",
      "trade": "Concrete pour",
      "status": "LIMITED",
-     "label": "go 08-11 h only",
-     "go_hours": 3,
-     "windows": "08-11 h",
+     "label": "go 08-12 h only",
+     "go_hours": 4,
+     "windows": "08-12 h",
      "causes": [
       "rain",
       "storms"
@@ -769,14 +769,14 @@
    "extras": [],
    "facts": {
     "rain_mm": 2.8,
-    "rain_chance": 69,
+    "rain_chance": 57,
     "storm": "possible",
     "storm_from": "14",
     "wbgt_peak": 26.3,
     "gust_hook_max": 8.7,
     "go_hours": {
      "coatings": 0,
-     "concrete": 3,
+     "concrete": 4,
      "asphalt": 2,
      "crane": 5,
      "height": 2,
