@@ -40,18 +40,9 @@ for s in SITES:
 
 
 # ---------------------------------------------------------------- national cards: one per activity, actual go hours
-def F(sz, b=False):
-    for c in ("/System/Library/Fonts/Supplemental/Arial Bold.ttf" if b else "/System/Library/Fonts/Supplemental/Arial.ttf",
-              "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf" if b else "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"):
-        try:
-            return ImageFont.truetype(c, sz)
-        except OSError:
-            pass
-    return ImageFont.load_default(sz)
+sys.path.insert(0, str(HERE))
+from card_style import BG, INK, INK2, MUT, SHARE_TINT, F, footer, header, spaced, text  # noqa: E402
 
-
-BG, INK, INK2, MUT, LINE, BLUE = (246, 246, 243), (11, 11, 11), (82, 81, 78), (137, 135, 129), (225, 224, 217), (42, 120, 214)
-GO, CAU, STOP = (47, 143, 58), (224, 165, 38), (194, 52, 52)
 SITE_URL = "gavacharles.github.io/kampala-heat-atlas/site-weather"
 ACTS = [("concrete", "Concrete pour", "a pour can go ahead"), ("asphalt", "Asphalt & surfacing", "laying or spraying can go ahead"),
         ("crane", "Crane lifts", "lifts can go ahead"), ("height", "Work at height", "roof and scaffold work can go ahead"),
@@ -97,45 +88,42 @@ days = [d for d in days if d > now.normalize() or now.hour < W1][:6]
 for k, name, verb in ACTS:
     W, H = 1080, 1350
     im = Image.new("RGB", (W, H), BG); d = ImageDraw.Draw(im)
-    d.text((64, 64), "SITE WEATHER · UGANDA", font=F(26, True), fill=BLUE)
-    d.text((64, 104), f"{name.split(' (')[0]}: this week", font=F(54, True), fill=INK)
-    d.text((64, 174), f"The hours {verb}, {W0:02d}-{W1:02d} h with lunch excluded, and daily rain", font=F(24), fill=INK2)
-    x0, lab_w, y = 64, 230, 240
+    header(d, "Site weather · Uganda", f"{name.split(' (')[0]}: this week", f"The hours {verb}, {W0:02d}-{W1:02d} h, lunch excluded",
+           title_size=50 if len(name) < 22 else 44)
+    x0, lab_w, y = 64, 210, 236
     cw = (W - 128 - lab_w) / max(len(days), 1)
     for j, dd in enumerate(days):
-        d.text((x0 + lab_w + (j + 0.5) * cw, y), f"{dd:%a}", font=F(26, True), fill=INK, anchor="ma")
-        d.text((x0 + lab_w + (j + 0.5) * cw, y + 34), f"{dd:%d %b}", font=F(18), fill=MUT, anchor="ma")
-    y += 76
+        text(d, (x0 + lab_w + (j + 0.5) * cw, y), f"{dd:%a}", F(24, 800), INK, "ma")
+        text(d, (x0 + lab_w + (j + 0.5) * cw, y + 32), f"{dd:%d %b}", F(16, 600), MUT, "ma")
+    y += 70
     region = None
-    for s, df in rows:
-        if s["region"] != region:
-            region = s["region"]
-            d.text((x0, y + 4), region.upper(), font=F(18, True), fill=BLUE); y += 28
-        d.text((x0, y + 42), s["name"].replace("Central ", ""), font=F(28, True), fill=INK, anchor="lm")
+    for s_, df in rows:
+        if s_["region"] != region:
+            region = s_["region"]
+            spaced(d, (x0, y + 4), region, size=15); y += 30
+        text(d, (x0, y + 40), s_["name"].replace("Central ", ""), F(25, 800), INK, "lm")
         for j, dd in enumerate(days):
             lab, n, nw = day_windows(df, dd, k)
             share = n / max(nw, 1)
-            col = GO if share >= 0.66 else CAU if share >= 0.33 else STOP
+            bg, fg = SHARE_TINT[0 if share >= 0.66 else 1 if share >= 0.33 else 2]
             cx = x0 + lab_w + j * cw
-            d.rounded_rectangle((cx + 4, y + 4, cx + cw - 4, y + 82), 10, fill=col)
+            d.rounded_rectangle((cx + 3, y + 4, cx + cw - 3, y + 80), 12, fill=bg)
             parts = lab.split(", ")
             parts = parts[:2] if len(parts) <= 2 else [parts[0], parts[1] + "+"]
             for li, ptxt in enumerate(parts):
-                yy = y + (30 if len(parts) == 1 else 20 + li * 24)
-                d.text((cx + cw / 2, yy), ptxt, font=F(22 if len(ptxt) <= 6 else 19, True), fill=(255, 255, 255), anchor="mm")
+                yy = y + (32 if len(parts) == 1 else 20 + li * 23)
+                text(d, (cx + cw / 2, yy), ptxt, F(19 if len(ptxt) <= 6 else 17, 800), fg, "mm")
             g = df[df.index.normalize() == dd]
-            d.text((cx + cw / 2, y + 68), f"{g.precipitation.sum():.0f} mm", font=F(15, True), fill=(255, 255, 255), anchor="mm")
-        y += 88
-    y += 12
+            text(d, (cx + cw / 2, y + 66), f"{g.precipitation.sum():.0f} mm", F(14, 600), INK2, "mm")
+        y += 86
+    y += 10
     lx = x0
-    for col, lab in ((GO, "go most of the day"), (CAU, "part of the day"), (STOP, "little or none")):
-        d.rounded_rectangle((lx, y, lx + 26, y + 26), 5, fill=col)
-        d.text((lx + 36, y + 13), lab, font=F(20), fill=INK2, anchor="lm"); lx += 36 + d.textlength(lab, font=F(20)) + 36
-    d.text((x0, y + 44), "Times are the go windows: 08-13 = from 08:00 until the lunch break.", font=F(19), fill=MUT)
-    d.line((64, H - 140, W - 64, H - 140), fill=LINE, width=2)
-    d.text((64, H - 118), "Screening guidance from a forecast. Your contract and site H&S plan come first.", font=F(20), fill=MUT)
-    d.text((64, H - 86), SITE_URL, font=F(22, True), fill=INK2)
-    d.text((64, H - 54), "Gava Charles · Kampala Heat Atlas · forecast data Open-Meteo", font=F(20), fill=MUT)
+    for s0, lab in ((0, "go most of the day"), (1, "part of the day"), (2, "little or none")):
+        bg, fg = SHARE_TINT[s0]
+        d.rounded_rectangle((lx, y, lx + 26, y + 26), 7, fill=bg); d.ellipse((lx + 9, y + 9, lx + 17, y + 17), fill=fg)
+        text(d, (lx + 36, y + 13), lab, F(19, 600), INK2, "lm"); lx += 36 + d.textlength(lab, font=F(19, 600)) + 30
+    text(d, (x0, y + 44), "Times are go windows: 08-13 = from 08:00 until the lunch break. Grey figure: daily rain.", F(18, 400), MUT)
+    footer(d, W, H, SITE_URL)
     im.save(OUT / f"uganda_{k}_4x5.png")
     # captions: long (WhatsApp, LinkedIn, Facebook) and X (280 characters, links count as 23)
     d0 = days[0]

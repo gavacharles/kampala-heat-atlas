@@ -3,26 +3,29 @@
     python scripts/30_site_cards.py docs/site-weather/central-kampala
 
 Writes <site>/social/:
-  today_4x5.png     1080 x 1350  the site briefing: headline, problem trades first (status, window, reason,
-                                 action, hour strip), clear trades on one line
+  today_4x5.png     1080 x 1350  the site briefing: label, headline with the key time marked, fact chips, a card per
+                                 trade with limits (status pill, go window, hour chips, reason and action), clear trades
   today_9x16.png    1080 x 1920  the same for WhatsApp Status / Stories, with the next three days
   today_hours_4x5.png            the full hour-by-hour grid for all trades
   briefing_A4.pdf/.png           printable morning briefing (toolbox talk) with a sign-off box
-  week_4x5.png      1080 x 1350  seven days: workable hours per trade, rain, storm risk
-  howto_4x5.png     1080 x 1350  how to read the card (pin this once)
+  week_4x5.png      1080 x 1350  seven days: the go windows per trade, rain, storm risk
+  howto_4x5.png     1080 x 1350  how to read the cards (pin this once)
   carousel.pdf      today + week + how-to, for LinkedIn document posts
   caption.txt       a ready-to-post caption with the link (WhatsApp, LinkedIn, Facebook)
   caption_x.txt     the same within X's 280 characters
-House style as src/kampala/story.py (light background, Arial, one hook / one number), standalone so the
-daily GitHub Action can run it (falls back to DejaVu Sans where Arial is missing).
+Look: scripts/card_style.py (same as the site note on the town pages). Standalone so the daily Action can run it.
 """
 import json
+import math
 import sys
 from pathlib import Path
 
-import numpy as np
 import pandas as pd
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw
+
+sys.path.insert(0, str(Path(__file__).parent))
+from card_style import (ACCENT, BG, CARD, CAU, EYEBROW, GO, INK, INK2, LINE, MUT, SHARE_TINT, STOP, TINTED, F,  # noqa: E402
+                        card, chips, footer, header, marked_headline, pill, spaced, text, wrap)
 
 SITE = Path(sys.argv[1] if len(sys.argv) > 1 else "docs/site-weather/central-kampala")
 OUTD = SITE / "social"; OUTD.mkdir(parents=True, exist_ok=True)
@@ -31,28 +34,9 @@ W0, W1 = TH["working_hours"]
 WORK = [h for h in range(W0, W1) if h not in TH.get("break_hours", [])]     # e.g. 8 working hours, lunch excluded
 NW = len(WORK)
 NAME = (SITE / "site_note_latest.md").read_text().splitlines()[0].split("· ", 1)[1].strip()
+TOWN = NAME.replace("Central ", "")
 LINK = f"gavacharles.github.io/kampala-heat-atlas/site-weather/{SITE.name}"
-
-
-def _font(cands, s):
-    for c in cands:
-        try:
-            return ImageFont.truetype(c, s)
-        except OSError:
-            continue
-    return ImageFont.load_default(s)
-
-
-def F(s, b=False):
-    return _font(["/System/Library/Fonts/Supplemental/Arial Bold.ttf" if b else "/System/Library/Fonts/Supplemental/Arial.ttf",
-                  "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf" if b else "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
-                  "DejaVuSans-Bold.ttf" if b else "DejaVuSans.ttf"], s)
-
-
-BG, CARD, INK, INK2, MUT, LINE = (246, 246, 243), (255, 255, 255), (11, 11, 11), (82, 81, 78), (137, 135, 129), (225, 224, 217)
-GO, CAU, STOP, OFF, BLUE = (47, 143, 58), (224, 165, 38), (194, 52, 52), (236, 235, 230), (42, 120, 214)
 COL = {0: GO, 1: CAU, 2: STOP}
-WORD = {0: "GO", 1: "CAUTION", 2: "STOP"}
 TRADES = [("labour", "Outdoor labour"), ("concrete", "Concrete pour"), ("asphalt", "Asphalt & surfacing"), ("crane", "Crane lifts"),
           ("height", "Work at height"), ("coatings", "Painting & coatings"), ("earthworks", "Earthworks")]
 
@@ -64,6 +48,8 @@ if issued.hour >= W1:
     days = days[1:]
 day, g = days[0]
 w = g[g.index.hour.isin(WORK)]
+BJ = json.loads((SITE / "site_briefing_latest.json").read_text())
+B = BJ["days"][0]
 
 
 def runs(mask, idx):
@@ -78,138 +64,157 @@ def runs(mask, idx):
     return out
 
 
-def best(mask, idx):
-    r = runs(mask, idx)
-    return max(r, key=lambda x: x[1] - x[0]) if r else None
+def go_windows(st, idx):
+    if len(st) and (st == 0).all():
+        return ["all day"]
+    return [f"{a:02d}-{b:02d}" for a, b in runs(st == 0, idx)] or ["none"]
 
 
-def text(d, xy, s, f, fill=INK, anchor="la"):
-    d.text(xy, s, font=f, fill=fill, anchor=anchor)
+def fact_items(b=B):
+    f = b["facts"]
+    return [f"Rain {f['rain_mm']:.0f} mm · {f['rain_chance']}%", "Storms " + f["storm"] + (f" from {f['storm_from']}:00" if f["storm_from"] else ""),
+            f"Heat {f['wbgt_peak']:.0f} °C WBGT", f"Gusts {f['gust_hook_max']:.0f} m/s"]
 
 
-def wrap(d, s, f, width):
-    lines, cur = [], ""
-    for wd in s.split():
-        t = (cur + " " + wd).strip()
-        if d.textlength(t, font=f) <= width:
-            cur = t
-        else:
-            lines.append(cur); cur = wd
-    return lines + [cur]
+def hour_chips(d, x, y, width, hours, h=34, size=15):
+    """One chip per working hour, coloured by status, hour written in; a wider gap at lunch."""
+    n = len(hours); gaps = sum(1 for i in range(1, n) if hours[i][0] != hours[i - 1][0] + 1)
+    gap, lunch = 4, 10
+    cw = (width - gap * (n - 1) - lunch * gaps) / max(n, 1)
+    xx = x
+    for i, (hh, v) in enumerate(hours):
+        if i and hh != hours[i - 1][0] + 1:
+            xx += lunch
+        d.rounded_rectangle((xx, y, xx + cw, y + h), 8, fill=COL[int(v)])
+        text(d, (xx + cw / 2, y + h / 2 + 1), f"{hh:02d}", F(size, 800), (255, 255, 255), "mm")
+        xx += cw + gap
+    return y + h
 
 
-def header(d, W, title, sub, top=0):
-    text(d, (64, 64 + top), "SITE WEATHER · " + NAME.upper(), F(26, True), BLUE)
-    text(d, (64, 104 + top), title, F(60, True))
-    text(d, (64, 178 + top), sub, F(28), INK2)
+def trade_title(r):
+    if r["status"] == "STOP":
+        return "No window today"
+    if r["key"] == "labour":
+        return "Work/rest cycles"
+    return f"Go {r['windows']}" if r["windows"] else "Go with care"
 
 
-def footer(d, W, H):
-    d.line((64, H - 140, W - 64, H - 140), fill=LINE, width=2)
-    text(d, (64, H - 118), "Screening guidance from a forecast. Your contract, crane limits and site H&S plan come first.", F(20), MUT)
-    text(d, (64, H - 86), LINK, F(22, True), INK2)
-    text(d, (64, H - 54), "Gava Charles · Kampala Heat Atlas · forecast data Open-Meteo", F(20), MUT)
+def trade_body(r):
+    why = ("Limited by " + ", ".join(r["causes"]) + ". ") if r["causes"] and r["key"] != "labour" and r["status"] != "GO" else ""
+    return why + r["action"]
 
 
-def day_facts():
-    rain, pm = g.precipitation.sum(), g.precipitation_probability.max()
-    storm = runs(g.thunder.values >= 1, g.index)
-    pour = best(w.st_concrete.values == 0, w.index)
-    return [("RAIN", f"{rain:.0f} mm", f"chance up to {pm:.0f}%"),
-            ("STORM RISK", f"{storm[0][0]:02d}-{storm[-1][1]:02d} h" if storm else "low", "stop exposed work at first thunder" if storm else "keep an eye on the sky"),
-            ("HEAT (WBGT, SUN)", f"{g.wbgt_sun.max():.1f} °C", "continuous work OK" if w.st_labour.max() == 0 else "use work/rest cycles"),
-            ("BEST POUR", f"{pour[0]:02d}-{pour[1]:02d} h" if pour else "none", "longest clear concrete window")]
+def trade_cards(d, x, y, W, ymax, rows, cols=2, gap=16):
+    """A card per trade: spaced trade label, tinted pill + go window, hour chips, reason and action."""
+    rows = list(rows)
+    if not rows:
+        return y
+    nrow = math.ceil(len(rows) / cols)
+    cw = (W - 2 * x - gap * (cols - 1)) / cols
+    ch = min(262, (ymax - y - gap * (nrow - 1)) / nrow)
+    body_lines = max(1, int((ch - 24 - 26 - 16 - 36 - 14 - 34 - 20) // 26))
+    for i, r in enumerate(rows):
+        cx = x + (i % cols) * (cw + gap); cy = y + (i // cols) * (ch + gap)
+        card(d, (cx, cy, cx + cw, cy + ch))
+        spaced(d, (cx + 22, cy + 22), r["trade"], size=15)
+        px = pill(d, cx + 22, cy + 52, r["status"], size=16, h=32)
+        title = trade_title(r)
+        tf = F(24 if d.textlength(title, font=F(24, 800)) < cw - (px - cx) - 36 else 20, 800)
+        text(d, (px + 12, cy + 68), title, tf, INK, "lm")
+        yy = hour_chips(d, cx + 22, cy + 100, cw - 44, r.get("hours", []))
+        for k, ln in enumerate(wrap(d, trade_body(r), F(19, 400), cw - 44)[:body_lines]):
+            text(d, (cx + 22, yy + 14 + k * 26), ln, F(19, 400), INK2)
+    return y + nrow * ch + (nrow - 1) * gap
 
 
-def advice():
-    out = []
-    storm = runs(w.thunder.values >= 1, w.index)
-    pour = best(w.st_concrete.values == 0, w.index)
-    if w.st_labour.max() >= 1:
-        hot = runs(w.st_labour.values >= 1, w.index)
-        out.append(f"Heat stress {hot[0][0]:02d}-{hot[-1][1]:02d} h: rest breaks in shade, water every 20 minutes, heavy tasks early.")
-    if storm:
-        out.append(f"Thunderstorms possible {storm[0][0]:02d}-{storm[-1][1]:02d} h: plan lifts and roof work before then.")
-    if pour:
-        out.append(f"Pour concrete {pour[0]:02d}-{pour[1]:02d} h; have curing cover ready.")
-    else:
-        out.append("No clear concrete window today: postpone pours or protect against rain.")
-    asp = best(w.st_asphalt.values == 0, w.index)
-    out.append(f"Asphalt: dry window {asp[0]:02d}-{asp[1]:02d} h." if asp else "Asphalt: no dry window; don't lay on a wet surface.")
-    if w.rain_prev24.max() >= TH["earthworks"]["rain_prev24h_caution_mm"] if "rain_prev24" in w else False:
-        out.append("Ground is wet from recent rain: protect formation and stockpiles.")
-    ok = runs(w.st_coatings.values == 0, w.index)
-    out.append(f"Painting window {ok[0][0]:02d}-{ok[-1][1]:02d} h." if ok else "Too humid for painting and coatings.")
-    return out[:4]
+def clear_card(d, x, y, W, names):
+    """One card for the trades with no weather limits."""
+    if not names:
+        return y
+    lines = wrap(d, ", ".join(names) + ".", F(22, 800), W - 2 * x - 44)
+    h = 70 + 30 * len(lines)
+    card(d, (x, y, W - x, y + h))
+    px = pill(d, x + 22, y + 18, "GO", size=16, h=32)
+    spaced(d, (px + 14, y + 26), "No weather limits", size=15)
+    for k, ln in enumerate(lines):
+        text(d, (x + 22, y + 62 + k * 30), ln, F(22, 800))
+    return y + h
 
 
-def facts_block(d, x, y, W):
-    cw = (W - 2 * x - 3 * 16) // 4
-    for k, (lab, big, sub) in enumerate(day_facts()):
-        cx = x + k * (cw + 16)
-        d.rounded_rectangle((cx, y, cx + cw, y + 170), 14, fill=CARD, outline=LINE, width=2)
-        text(d, (cx + 18, y + 18), lab, F(18, True), MUT)
-        text(d, (cx + 18, y + 50), big, F(44, True))
-        for i, ln in enumerate(wrap(d, sub, F(18), cw - 36)[:2]):
-            text(d, (cx + 18, y + 112 + 24 * i), ln, F(18), INK2)
-    return y + 170
-
-
-def trade_grid(d, x, y, W, row_h=78):
-    hrs = WORK
-    lab_w = 300; gx = x + lab_w; gw = W - x - gx
-    cw = gw / len(hrs)
-    for i, hh in enumerate(hrs):
-        if hh % 2 == 1:
-            text(d, (gx + (i + 0.5) * cw, y), f"{hh:02d}", F(20), MUT, "ma")
-    y += 34
-    for name_k, name in TRADES:
-        st = w[f"st_{name_k}"].values
-        ngo = int((st == 0).sum())
-        text(d, (x, y + row_h / 2 - 14), name, F(28, True), INK, "lm")
-        text(d, (x, y + row_h / 2 + 18), f"{ngo} of {len(hrs)} h go", F(20), INK2, "lm")
-        for i, s in enumerate(st):
-            d.rounded_rectangle((gx + i * cw + 2, y + 10, gx + (i + 1) * cw - 2, y + row_h - 10), 6, fill=COL[int(s)])
-        y += row_h
-    # legend with words, so colour is never the only cue
-    lx = x
-    for s in (0, 1, 2):
-        d.rounded_rectangle((lx, y + 14, lx + 26, y + 40), 5, fill=COL[s])
-        text(d, (lx + 36, y + 27), WORD[s], F(20, True), INK2, "lm")
-        lx += 36 + d.textlength(WORD[s], font=F(20, True)) + 40
-    text(d, (W - 64, y + 27), f"working hours {W0:02d}-{W1:02d}, lunch excluded", F(20), MUT, "rm")
-    return y + 54
-
-
-def today_card(W, H, path):
+def briefing_card(W, H, path):
     im = Image.new("RGB", (W, H), BG); d = ImageDraw.Draw(im)
-    top = 110 if H >= 1600 else 0                            # clear the Stories profile bar
-    header(d, W, f"{day:%A %d %B}", f"Hour-by-hour: what can go ahead on site · issued {issued:%H:%M}", top)
-    y = facts_block(d, 64, 240 + top, W) + 44
-    y = trade_grid(d, 64, y, W, row_h=62 if H < 1600 else 88) + 28
-    text(d, (64, y), "ON SITE TODAY", F(22, True), BLUE); y += 40
-    for a in advice():
-        if y + 36 > H - 150:
+    top = 110 if H >= 1600 else 0
+    spaced(d, (64, 60 + top), f"Site weather · {TOWN} · {B['day']}")
+    y = marked_headline(d, 64, 100 + top, B["headline"], W - 128, size=44 if H >= 1600 else 40) + 10
+    y = chips(d, 64, y, fact_items(), W - 128) + 22
+    limited = [r for r in B["rows"] if r["status"] != "GO"]
+    clear = [r["trade"] for r in B["rows"] if r["status"] == "GO"]
+    bottom = H - 170 - (380 if H >= 1600 else 0) - (90 if clear else 0)
+    y = trade_cards(d, 64, y, W, bottom, limited) + 16
+    y = clear_card(d, 64, y, W, clear) + 12
+    if H >= 1600:
+        y = max(y + 10, H - 170 - 360)
+        spaced(d, (64, y), "Next days"); y += 36
+        for b in BJ["days"][1:4]:
+            card(d, (64, y, W - 64, y + 96), fill=BG)
+            spaced(d, (86, y + 18), b["day"], size=14)
+            text(d, (86, y + 46), wrap(d, b["headline"], F(22, 700), W - 172)[0], F(22, 700))
+            y += 108
+    footer(d, W, H, LINK)
+    im.save(path)
+    return im
+
+
+def a4_sheet(path_pdf, path_png):
+    W, H = 1240, 1754                                          # A4 at 150 dpi
+    im = Image.new("RGB", (W, H), BG); d = ImageDraw.Draw(im)
+    spaced(d, (64, 60), f"Morning site briefing · {TOWN} · {B['day']} · issued {BJ['issued'][-5:]}")
+    y = marked_headline(d, 64, 100, B["headline"], W - 128, size=40) + 10
+    y = chips(d, 64, y, fact_items(), W - 128) + 22
+    box = H - 372                                              # briefing record sits above the footer
+    y = trade_cards(d, 64, y, W, box - 260, B["rows"]) + 16
+    for e in B["extras"]:
+        text(d, (64, y), e, F(19, 400), INK2); y += 28
+    y += 12
+    spaced(d, (64, y), "The week"); y += 34
+    for b in BJ["days"][1:6]:
+        if y + 28 > box - 12:
             break
-        for i, ln in enumerate(wrap(d, a, F(26), W - 128 - 30)):
-            if i == 0:
-                d.ellipse((64, y + 10, 76, y + 22), fill=INK)
-            text(d, (94, y), ln, F(26), INK); y += 36
-        y += 8
-        if y > H - 150:
-            break
-    if H >= 1600:                                            # vertical: a short outlook fills the lower third
-        y += 30
-        text(d, (64, y), "NEXT DAYS", F(22, True), BLUE); y += 44
-        for dd, gg in days[1:4]:
-            ww = gg[gg.index.hour.isin(WORK)]
-            lvl = int(gg.thunder.max())
-            text(d, (64, y), f"{dd:%a %d}", F(28, True))
-            text(d, (230, y), f"rain {gg.precipitation.sum():.0f} mm", F(26), BLUE)
-            text(d, (450, y), ["storms low", "storms possible", "storms likely"][lvl], F(26), [INK2, (150, 100, 0), STOP][lvl])
-            text(d, (W - 64, y), f"concrete {int((ww.st_concrete == 0).sum())} h go", F(26), INK2, "ra")
-            y += 50
-    footer(d, W, H)
+        text(d, (64, y), b["day"], F(19, 800))
+        text(d, (330, y), wrap(d, b["headline"], F(19, 400), W - 394)[0], F(19, 400), INK2)
+        y += 28
+    y = box
+    card(d, (64, y, W - 64, y + 172))
+    spaced(d, (88, y + 20), "Briefing record", size=15)
+    for k, lab in enumerate(["Briefing given by", "Date and time", "Workers present (number)", "Signature"]):
+        cx, cy = 88 + (k % 2) * 560, y + 64 + (k // 2) * 54
+        text(d, (cx, cy), lab, F(19, 600), INK2)
+        d.line((cx + d.textlength(lab, font=F(19, 600)) + 12, cy + 22, cx + 520, cy + 22), fill=MUT, width=1)
+    footer(d, W, H, LINK)
+    im.save(path_png)
+    im.save(path_pdf, resolution=150)
+    return im
+
+
+def hours_card(path):
+    """Every trade, hour by hour, today."""
+    W, H = 1080, 1350
+    im = Image.new("RGB", (W, H), BG); d = ImageDraw.Draw(im)
+    header(d, f"Site weather · {TOWN}", f"{day:%A %d %B}", "Hour by hour: what can go ahead on site")
+    y = chips(d, 64, 250, fact_items(), W - 128) + 30
+    for k, name in TRADES:
+        r = next(x for x in B["rows"] if x["key"] == k)
+        card(d, (64, y, W - 64, y + 104))
+        spaced(d, (88, y + 20), name, size=15)
+        pill(d, 88, y + 52, r["status"], size=15, h=30)
+        hour_chips(d, 400, y + 34, W - 64 - 24 - 400, r.get("hours", []), h=40, size=16)
+        y += 116
+    lx = 64
+    for col, lab in ((GO, "Go"), (CAU, "Care / limited"), (STOP, "Stop")):
+        d.rounded_rectangle((lx, y + 12, lx + 24, y + 36), 6, fill=col)
+        text(d, (lx + 34, y + 24), lab, F(19, 600), INK2, "lm"); lx += 34 + d.textlength(lab, font=F(19, 600)) + 30
+    text(d, (W - 64, y + 24), f"{W0:02d}-{W1:02d} h, lunch excluded", F(18, 400), MUT, "rm")
+    footer(d, W, H, LINK)
     im.save(path)
     return im
 
@@ -217,44 +222,50 @@ def today_card(W, H, path):
 def week_card(path):
     W, H = 1080, 1350
     im = Image.new("RGB", (W, H), BG); d = ImageDraw.Draw(im)
-    header(d, W, "The week on site", f"When each trade can go ahead ({W0:02d}-{W1:02d} h, lunch excluded)")
-    x0, y0, lab_w = 64, 260, 290
+    header(d, f"Site weather · {TOWN}", "The week on site", f"When each trade can go ahead, {W0:02d}-{W1:02d} h, lunch excluded")
+    x0, y0, lab_w = 64, 250, 250
     cw = (W - 128 - lab_w) / len(days)
     for j, (dd, gg) in enumerate(days):
         cx = x0 + lab_w + (j + 0.5) * cw
-        text(d, (cx, y0), f"{dd:%a}", F(26, True), INK, "ma")
-        text(d, (cx, y0 + 34), f"{dd:%d}", F(20), MUT, "ma")
-    y = y0 + 80
+        text(d, (cx, y0), f"{dd:%a}", F(24, 800), INK, "ma")
+        text(d, (cx, y0 + 32), f"{dd:%d}", F(18, 600), MUT, "ma")
+    y = y0 + 74
     for k, name in TRADES:
-        text(d, (x0, y + 40), name, F(26, True), INK, "lm")
+        text(d, (x0, y + 38), name, F(22, 800), INK, "lm")
         for j, (dd, gg) in enumerate(days):
             ww = gg[gg.index.hour.isin(WORK)]
             st = ww[f"st_{k}"].values
-            n = int((st == 0).sum()); share = n / max(len(ww), 1)
-            col = GO if share >= 0.66 else CAU if share >= 0.33 else STOP
+            share = (st == 0).sum() / max(len(ww), 1)
+            bg, fg = SHARE_TINT[0 if share >= 0.66 else 1 if share >= 0.33 else 2]
             cx = x0 + lab_w + j * cw
-            d.rounded_rectangle((cx + 4, y + 5, cx + cw - 4, y + 75), 10, fill=col)
-            win = ["all day"] if len(ww) and n == len(ww) else [f"{a:02d}-{b:02d}" for a, b in runs(st == 0, ww.index)] or ["none"]
+            d.rounded_rectangle((cx + 3, y + 4, cx + cw - 3, y + 72), 12, fill=bg)
+            win = go_windows(st, ww.index)
             win = win[:2] if len(win) <= 2 else [win[0], win[1] + "+"]
             for li, wtxt in enumerate(win):
-                text(d, (cx + cw / 2, y + (40 if len(win) == 1 else 26 + li * 26)), wtxt, F(23 if len(wtxt) <= 6 else 20, True), (255, 255, 255), "mm")
-        y += 80
-    y += 10
-    text(d, (x0, y + 30), "Rain", F(26, True), INK, "lm")
-    text(d, (x0, y + 90), "Storm risk", F(26, True), INK, "lm")
+                text(d, (cx + cw / 2, y + (38 if len(win) == 1 else 24 + li * 26)), wtxt, F(19 if len(wtxt) <= 6 else 17, 800), fg, "mm")
+        y += 78
+    y += 8
+    text(d, (x0, y + 26), "Rain", F(22, 800), INK, "lm")
+    text(d, (x0, y + 82), "Storms", F(22, 800), INK, "lm")
     for j, (dd, gg) in enumerate(days):
         cx = x0 + lab_w + (j + 0.5) * cw
-        text(d, (cx, y + 30), f"{gg.precipitation.sum():.0f} mm", F(24, True), BLUE, "mm")
-        text(d, (cx, y + 58), f"{gg.precipitation_probability.max():.0f}%", F(18), MUT, "mm")
+        text(d, (cx, y + 22), f"{gg.precipitation.sum():.0f} mm", F(21, 800), INK, "mm")
+        text(d, (cx, y + 46), f"{gg.precipitation_probability.max():.0f}%", F(16, 600), MUT, "mm")
         lvl = int(gg.thunder.max())
-        text(d, (cx, y + 96), ["low", "possible", "likely"][lvl], F(22 if len(days) <= 6 else 18, True), [INK2, (150, 100, 0), STOP][lvl], "mm")
-    y += 140
+        bg, fg = [TINTED["GO"], TINTED["LIMITED"], TINTED["STOP"]][lvl]
+        word = ["low", "possible", "likely"][lvl]
+        tw = d.textlength(word, font=F(15, 800)) + 20
+        d.rounded_rectangle((cx - tw / 2, y + 68, cx + tw / 2, y + 96), 14, fill=bg)
+        text(d, (cx, y + 82), word, F(15, 800), fg, "mm")
+    y += 124
     lx = x0
-    for col, lab in ((GO, "go most of the day"), (CAU, "part of the day"), (STOP, "little or none")):
-        d.rounded_rectangle((lx, y, lx + 26, y + 26), 5, fill=col)
-        text(d, (lx + 36, y + 13), lab, F(20), INK2, "lm"); lx += 36 + d.textlength(lab, font=F(20)) + 36
-    text(d, (x0, y + 60), "Times are the go windows: 08-13 = from 08:00 until the lunch break; + = more windows that day.", F(20), MUT)
-    footer(d, W, H)
+    for s, lab in ((0, "go most of the day"), (1, "part of the day"), (2, "little or none")):
+        bg, fg = SHARE_TINT[s]
+        d.rounded_rectangle((lx, y, lx + 26, y + 26), 7, fill=bg)
+        d.ellipse((lx + 9, y + 9, lx + 17, y + 17), fill=fg)
+        text(d, (lx + 36, y + 13), lab, F(19, 600), INK2, "lm"); lx += 36 + d.textlength(lab, font=F(19, 600)) + 30
+    text(d, (x0, y + 54), "Times are go windows: 08-13 = from 08:00 until the lunch break; + = more windows that day.", F(18, 400), MUT)
+    footer(d, W, H, LINK)
     im.save(path)
     return im
 
@@ -262,174 +273,38 @@ def week_card(path):
 def howto_card(path):
     W, H = 1080, 1350
     im = Image.new("RGB", (W, H), BG); d = ImageDraw.Draw(im)
-    header(d, W, "How to read the card", "A daily weather check for contractors and site managers")
-    y = 270
-    items = [("The headline is the one thing to plan around", "Then each trade, problems first: STOP, LIMITED (go only in the hours shown), CARE, and GO."),
-             ("Each small block is an hour", f"{NW} working hours, {W0:02d}:00 to {W1:02d}:00 with lunch excluded. Green: go. Amber: go with care. Red: stop or reschedule."),
-             ("Heat uses WBGT", "Wet-bulb globe temperature, the standard for heat stress at work. It sets work/rest cycles."),
-             ("Concrete looks at rain and drying", "Rain in the next hours, and evaporation fast enough to crack fresh concrete (ACI 305)."),
-             ("Cranes use gusts at hook height", "Gusts scaled to 30 m, against typical tower-crane limits, plus thunderstorm risk."),
-             ("Painting needs dry air", "Surface 3 °C above dew point and humidity under 85 % (ISO 8502-4)."),
-             ("Every day is kept on record", "Month by month against the 1991-2020 climate, for programme reviews and delay claims.")]
-    for h, s in items:
-        text(d, (64, y), h, F(30, True)); y += 42
-        for ln in wrap(d, s, F(24), W - 128):
-            text(d, (64, y), ln, F(24), INK2); y += 32
-        y += 22
-    footer(d, W, H)
+    header(d, "Site weather · how it works", "How to read the cards", "A daily weather check for contractors and site managers")
+    items = [("The headline", "The one thing to plan the day around. The key time is marked in yellow."),
+             ("A card per trade", "Problems first: Stop, Limited (go only in the hours shown), Care. Trades with no limits share one card."),
+             ("Hour chips", f"{NW} working hours, {W0:02d}:00-{W1:02d}:00, lunch excluded. Green go, amber care, red stop."),
+             ("Heat uses WBGT", "The standard for heat stress at work; it sets work/rest cycles."),
+             ("Concrete and asphalt", "Rain now or within three hours, wet surfaces, and drying fast enough to crack fresh concrete (ACI 305)."),
+             ("Cranes and painting", "Gusts at 30 m hook height and storms; painting needs the surface 3 °C above dew point (ISO 8502-4)."),
+             ("Every day on record", "Month by month against the 1991-2020 climate, for programme reviews and delay claims.")]
+    y = 250; cw = (W - 128 - 16) / 2
+    for i, (h, s) in enumerate(items):
+        cx = 64 + (i % 2) * (cw + 16)
+        if i % 2 == 0 and i:
+            y += 186
+        if i == len(items) - 1 and i % 2 == 0:
+            cw2 = W - 128
+        else:
+            cw2 = cw
+        card(d, (cx, y, cx + cw2, y + 172))
+        spaced(d, (cx + 22, y + 20), f"Step {i + 1:02d}", size=14)
+        d.rounded_rectangle((cx + cw2 - 58, y + 16, cx + cw2 - 22, y + 52), 9, fill=(237, 224, 182))
+        text(d, (cx + cw2 - 40, y + 34), str(i + 1), F(17, 800), EYEBROW, "mm")
+        text(d, (cx + 22, y + 52), h, F(23, 800))
+        for k, ln in enumerate(wrap(d, s, F(18, 400), cw2 - 44)[:3]):
+            text(d, (cx + 22, y + 90 + k * 24), ln, F(18, 400), INK2)
+    footer(d, W, H, LINK)
     im.save(path)
-    return im
-
-
-# ---------------------------------------------------------------- briefing card and A4 sheet (from site_briefing_latest.json)
-BJ = json.loads((SITE / "site_briefing_latest.json").read_text())
-B = BJ["days"][0]
-PILL = {"STOP": (STOP, "STOP"), "LIMITED": (CAU, "LIMITED"), "CAUTION": (CAU, "CARE"), "GO": (GO, "GO")}
-WORST = min(B["rows"], key=lambda r: ["STOP", "LIMITED", "CAUTION", "GO"].index(r["status"]))["status"]
-
-
-def pill(d, x, y, status, w=128, h=38, size=20):
-    col, word = PILL[status]
-    d.rounded_rectangle((x, y, x + w, y + h), h // 2, fill=col)
-    text(d, (x + w / 2, y + h / 2), word, F(size, True), (255, 255, 255), "mm")
-
-
-CELL, GAP, LUNCH = 31, 3, 12
-
-
-def cell_x(x, i):
-    """x of hour cell i; a wider gap marks the lunch break."""
-    brk = sum(1 for j in range(1, i + 1) if WORK[j] != WORK[j - 1] + 1)
-    return x + i * (CELL + GAP) + brk * LUNCH
-
-
-def strip_width():
-    return cell_x(0, len(WORK) - 1) + CELL
-
-
-def strip(d, x, y, key, h=30):
-    """One cell per working hour with the hour written in it, so the go hours can be read directly."""
-    st = w[f"st_{key}"].values
-    for i, (v, hh) in enumerate(zip(st, WORK)):
-        cx = cell_x(x, i)
-        d.rounded_rectangle((cx, y, cx + CELL, y + h), 5, fill=COL[int(v)])
-        text(d, (cx + CELL / 2, y + h / 2 + 1), f"{hh:02d}", F(15, True), (255, 255, 255), "mm")
-    return x + strip_width()
-
-
-def strip_axis(d, x, y):
-    lunch = [i for i in range(1, len(WORK)) if WORK[i] != WORK[i - 1] + 1]
-    text(d, (x + strip_width(), y), "hour of day" + ("  ·  gap = lunch" if lunch else ""), F(16), MUT, "ra")
-
-
-def headline_box(d, x, y, W, size=34):
-    lines = wrap(d, B["headline"], F(size, True), W - 2 * x - 60)
-    hgt = 36 + len(lines) * (size + 10)
-    d.rounded_rectangle((x, y, W - x, y + hgt), 14, fill=CARD, outline=LINE, width=2)
-    d.rounded_rectangle((x, y, x + 12, y + hgt), 6, fill=PILL[WORST][0])
-    for k, ln in enumerate(lines):
-        text(d, (x + 36, y + 18 + k * (size + 10)), ln, F(size, True))
-    return y + hgt
-
-
-def facts_line(d, x, y):
-    f = B["facts"]
-    s = (f"Rain {f['rain_mm']:.0f} mm ({f['rain_chance']}%)  ·  Storms {f['storm']}" + (f" from {f['storm_from']}:00" if f["storm_from"] else "")
-         + f"  ·  Heat (WBGT) {f['wbgt_peak']:.0f} °C  ·  Gusts {f['gust_hook_max']:.0f} m/s")
-    text(d, (x, y), s, F(24), INK2)
-    return y + 40
-
-
-def briefing_rows(d, x, y, W, ymax, size=28, small=22, show_go=False):
-    """Problem trades first: pill, trade, hour strip; then label, reason and action. Clear trades on one line."""
-    sx = W - x - strip_width()
-    strip_axis(d, sx, y)
-    y += 26
-    for r in B["rows"]:
-        if r["status"] == "GO" and not show_go:
-            continue
-        sub = r["label"][0].upper() + r["label"][1:] + (" · limited by " + ", ".join(r["causes"]) if r["causes"] and r["key"] != "labour" else "")
-        if r["status"] == "STOP":
-            sub = ("Stopped by " + ", ".join(r["causes"])) if r["causes"] else "No window"
-        body = r["action"] if r["status"] == "GO" else sub + ". " + r["action"]
-        lines = wrap(d, body, F(small), sx - x - 158 - 20)[:3]
-        hgt = 46 + len(lines) * (small + 8) + 14
-        if y + hgt > ymax:
-            break
-        pill(d, x, y + 2, r["status"])
-        text(d, (x + 150, y), r["trade"], F(size, True))
-        strip(d, sx, y + 2, r["key"])
-        for k, ln in enumerate(lines):
-            text(d, (x + 150, y + 42 + k * (small + 8)), ln, F(small), INK2)
-        y += hgt
-        d.line((x, y - 7, W - x, y - 7), fill=LINE, width=1)
-    clear = [r["trade"] for r in B["rows"] if r["status"] == "GO"]
-    if clear and not show_go and y + 50 < ymax:
-        pill(d, x, y + 4, "GO")
-        for k, ln in enumerate(wrap(d, "No weather limits: " + ", ".join(clear) + ".", F(size - 2, True), W - 2 * x - 150)[:2]):
-            text(d, (x + 150, y + 6 + k * (size + 4)), ln, F(size - 2, True))
-        y += 56 + (size + 4) * (len(wrap(d, "No weather limits: " + ", ".join(clear) + ".", F(size - 2, True), W - 2 * x - 150)[:2]) - 1)
-    return y
-
-
-def briefing_card(W, H, path):
-    im = Image.new("RGB", (W, H), BG); d = ImageDraw.Draw(im)
-    top = 110 if H >= 1600 else 0
-    header(d, W, B["day"], f"Site briefing · issued {BJ['issued'][-5:]} · {NW}-hour day, lunch excluded", top)
-    y = headline_box(d, 64, 236 + top, W) + 18
-    y = facts_line(d, 64, y) + 10
-    y = briefing_rows(d, 64, y, W, H - 160 - (330 if H >= 1600 else 0))
-    for e in B["extras"]:
-        lines = wrap(d, e, F(22), W - 128)
-        if y + 30 * len(lines) > H - 160 - (330 if H >= 1600 else 0):
-            break
-        for ln in lines:
-            text(d, (64, y), ln, F(22), MUT); y += 30
-        y += 6
-    if H >= 1600:
-        y = H - 160 - 300
-        text(d, (64, y), "NEXT DAYS", F(22, True), BLUE); y += 44
-        for b in BJ["days"][1:4]:
-            text(d, (64, y), b["day"].split()[0][:3] + " " + b["day"].split()[1], F(26, True))
-            for k, ln in enumerate(wrap(d, b["headline"], F(23), W - 128 - 140)[:2]):
-                text(d, (200, y + 2 + k * 30), ln, F(23), INK2)
-            y += 76
-    footer(d, W, H)
-    im.save(path)
-    return im
-
-
-def a4_sheet(path_pdf, path_png):
-    W, H = 1240, 1754                                         # A4 at 150 dpi
-    im = Image.new("RGB", (W, H), (255, 255, 255)); d = ImageDraw.Draw(im)
-    header(d, W, B["day"], f"Morning site briefing · {NAME} · issued {BJ['issued']}")
-    y = headline_box(d, 64, 236, W) + 18
-    y = facts_line(d, 64, y) + 8
-    y = briefing_rows(d, 64, y, W, H - 560, show_go=True)
-    for e in B["extras"]:
-        text(d, (64, y), e, F(21), INK2); y += 30
-    y += 14
-    text(d, (64, y), "THE WEEK", F(20, True), BLUE); y += 34
-    for b in BJ["days"][1:6]:
-        text(d, (64, y), b["day"], F(21, True))
-        text(d, (330, y), wrap(d, b["headline"], F(21), W - 394)[0], F(21), INK2)
-        y += 32
-    y = max(y + 20, H - 330)
-    d.rounded_rectangle((64, y, W - 64, y + 170), 10, outline=INK2, width=2)
-    text(d, (84, y + 16), "BRIEFING RECORD", F(18, True), MUT)
-    for k, lab in enumerate(["Briefing given by", "Date and time", "Workers present (number)", "Signature"]):
-        cx, cy = 84 + (k % 2) * 560, y + 58 + (k // 2) * 56
-        text(d, (cx, cy), lab, F(20), INK2)
-        d.line((cx + d.textlength(lab, font=F(20)) + 12, cy + 22, cx + 520, cy + 22), fill=MUT, width=1)
-    footer(d, W, H)
-    im.save(path_png)
-    im.save(path_pdf, resolution=150)
     return im
 
 
 a = briefing_card(1080, 1350, OUTD / "today_4x5.png")
 briefing_card(1080, 1920, OUTD / "today_9x16.png")
-today_card(1080, 1350, OUTD / "today_hours_4x5.png")          # the full hour-by-hour grid, for the detail-minded
+hours_card(OUTD / "today_hours_4x5.png")                       # the full hour-by-hour grid, for the detail-minded
 a4_sheet(OUTD / "briefing_A4.pdf", OUTD / "briefing_A4.png")
 b = week_card(OUTD / "week_4x5.png")
 c = howto_card(OUTD / "howto_4x5.png")
