@@ -1,0 +1,284 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Site Weather Map</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@800&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<style>
+:root{--bg:#f6f6f3;--surface:#fff;--ink:#0b0b0b;--ink-2:#52514e;--muted:#898781;--line:#e1e0d9;--blue:#2a78d6;--go:#2f8f3a;--cau:#e0a526;--stop:#c23434;--off:#ecebe6;--rain:#2a78d6}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#111312;--surface:#1a1c1b;--ink:#ecedea;--ink-2:#b6b9b2;--muted:#8f928c;--line:#2d302e;--blue:#6da7ec;--off:#2a2c2b;--rain:#6da7ec;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#111312;--surface:#1a1c1b;--ink:#ecedea;--ink-2:#b6b9b2;--muted:#8f928c;--line:#2d302e;--blue:#6da7ec;--off:#2a2c2b;--rain:#6da7ec;color-scheme:dark}
+*{box-sizing:border-box} html,body{margin:0;height:100%} body{background:var(--bg);color:var(--ink);font:14px/1.45 Inter,Arial,sans-serif}
+.wrap{display:grid;grid-template-columns:minmax(0,1fr) 460px;height:100vh}
+#map{height:100%;min-height:320px;background:#e8e6df} .leaflet-tile-pane{filter:saturate(.35) brightness(1.04)}
+aside{overflow-y:auto;padding:16px;border-left:1px solid var(--line);display:flex;flex-direction:column;gap:12px}
+h1{font:800 24px/1.1 Archivo,Arial,sans-serif;margin:0} h2{font:800 20px/1.15 Archivo,Arial,sans-serif;margin:0}
+.lede{color:var(--ink-2);margin:0} a{color:var(--blue)} .small{font-size:12px;color:var(--muted)}
+nav{display:flex;gap:6px;flex-wrap:wrap} nav a{color:var(--ink);text-decoration:none;border:1px solid var(--line);background:var(--surface);padding:5px 10px;border-radius:999px;font-size:12px}
+.head{background:var(--surface);border:1px solid var(--line);border-left:8px solid var(--cau);border-radius:10px;padding:10px 14px;font-weight:600;font-size:16px}
+.tabs{display:flex;gap:4px;flex-wrap:wrap} .tabs button{font:600 12px Inter,Arial,sans-serif;padding:6px 9px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}
+.tabs button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.row{display:grid;grid-template-columns:76px 1fr;gap:4px 10px;padding:8px 0;border-bottom:1px solid var(--line);align-items:center}
+.pill{display:inline-block;text-align:center;font:700 11px Inter,Arial,sans-serif;color:#fff;border-radius:999px;padding:4px 0;width:72px}
+.trade{font-weight:600} .label{grid-column:2;color:var(--ink-2);font-size:13px}
+.cells{grid-column:2;display:flex;gap:3px} .cells span{width:30px;height:22px;border-radius:4px;color:#fff;font:700 11px/22px Inter,Arial,sans-serif;text-align:center}
+.cells span.gap{margin-left:9px}
+.facts{color:var(--ink-2)} svg text{fill:var(--muted);font:10px Inter,Arial,sans-serif}
+.tip{position:fixed;pointer-events:none;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:6px 9px;font-size:12px;box-shadow:0 2px 10px #0002;display:none;z-index:999}
+.legend{display:flex;gap:10px;flex-wrap:wrap;font-size:12px;color:var(--ink-2)} .legend i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:4px;vertical-align:-2px}
+.leaflet-tooltip.town{background:var(--surface);color:var(--ink);border:1px solid var(--line);font:600 12px Inter,Arial,sans-serif;box-shadow:none}
+@media (max-width:860px){.wrap{grid-template-columns:1fr;height:auto} #map{height:52vh} aside{border-left:0;border-top:1px solid var(--line)}}
+</style></head><body>
+<div class="wrap"><div id="map" role="application" aria-label="Map of Uganda: click a town or any point for a site weather check"></div>
+<aside>
+<nav><a href="../index.html">Atlas</a><a href="./">Site weather</a><a href="map.html">Map</a><a href="share.html">Share today</a></nav>
+<h1>Site weather map</h1>
+<p class="lede">Tap a town for this morning's briefing, or tap <strong>anywhere</strong> for a live check of that spot:
+go hours per trade and a seven-day meteogram, worked out in your browser with the same rules and
+<a href="thresholds.json">thresholds</a> as the daily service.</p>
+<div class="legend"><span><i style="background:var(--go)"></i>GO</span><span><i style="background:var(--cau)"></i>LIMITED / CARE</span><span><i style="background:var(--stop)"></i>STOP</span><span><i style="background:var(--off)"></i>not working</span></div>
+<div id="panel"><p class="lede">Nothing selected yet.</p></div>
+<p class="small">Live checks send only the tapped coordinates to Open-Meteo (open-meteo.com, CC BY 4.0). Screening guidance from a
+forecast: the contract, crane manufacturer's limits and site H&amp;S plan come first.</p>
+</aside></div>
+<div class="tip" id="tip"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const COLOR = () => ({STOP: css("--stop"), LIMITED: css("--cau"), CAUTION: css("--cau"), GO: css("--go")});
+const STCOL = () => [css("--go"), css("--cau"), css("--stop")];
+const KEYS = ["labour","concrete","asphalt","crane","height","coatings","earthworks"];
+const NAMES = {labour:"Outdoor labour",concrete:"Concrete pour",asphalt:"Asphalt & surfacing",crane:"Crane lifts",height:"Work at height",coatings:"Painting & coatings",earthworks:"Earthworks"};
+const WORD = {STOP:"STOP",LIMITED:"LIMITED",CAUTION:"CARE",GO:"GO"};
+let TH, WORK, W0, W1, live = null, liveMarker = null;
+const panel = document.getElementById("panel"), tip = document.getElementById("tip");
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+const map = L.map("map", {zoomControl: true}).setView([1.35, 32.4], 7);
+L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {maxZoom: 19,
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
+
+// ------------------------------------------------------------------ the daily town briefings
+async function init(){
+  TH = await (await fetch("thresholds.json", {cache: "no-store"})).json();
+  [W0, W1] = TH.working_hours; WORK = []; for (let h = W0; h < W1; h++) if (!(TH.break_hours || []).includes(h)) WORK.push(h);
+  let towns = [];
+  try { towns = (await (await fetch("towns_today.json", {cache: "no-store"})).json()).towns; } catch(e){}
+  towns.forEach(t => {
+    const m = L.circleMarker([t.lat, t.lon], {radius: 11, color: "#fff", weight: 2, fillColor: COLOR()[t.worst], fillOpacity: 1}).addTo(map);
+    const left = t.slug === "central-kampala";                // Jinja sits just east of Kampala
+    m.bindTooltip(t.name.replace("Central ", ""), {permanent: true, direction: left ? "left" : "right", offset: [left ? -10 : 10, 0], className: "town"});
+    m.on("click", e => { L.DomEvent.stopPropagation(e); showTown(t); });
+  });
+  const q = new URLSearchParams(location.search), qlat = parseFloat(q.get("lat")), qlon = parseFloat(q.get("lon"));
+  if (isFinite(qlat) && isFinite(qlon)) { map.setView([qlat, qlon], 10); runLive(qlat, qlon, q.get("name")); return; }
+  const k = towns.find(t => t.slug === "central-kampala"); if (k) showTown(k);
+}
+
+function showTown(t){
+  const rows = t.rows.map(r => `<div class="row"><span class="pill" style="background:${COLOR()[r.status]}">${WORD[r.status]}</span>
+    <span class="trade">${esc(r.trade)}</span><span class="label">${esc(r.label)}</span></div>`).join("");
+  const f = t.facts;
+  panel.innerHTML = `<h2>${esc(t.name)} · ${esc(t.day)}</h2>
+    <div class="head" style="border-left-color:${COLOR()[t.worst]}">${esc(t.headline)}</div>
+    <div class="facts">Rain ${f.rain_mm.toFixed(0)} mm (${f.rain_chance}%) · storms ${f.storm} · WBGT ${f.wbgt_peak.toFixed(0)} °C · gusts ${f.gust_hook_max.toFixed(0)} m/s</div>
+    ${rows}
+    <p class="small">Issued ${esc(t.issued)}. ${t.outlook.map(o => `<br><strong>${esc(o.day)}:</strong> ${esc(o.headline)}`).join("")}</p>
+    <p><a href="${t.slug}/">Town page</a> · <a href="${t.slug}/social/today_4x5.png">Card</a> · <a href="${t.slug}/social/briefing_A4.pdf">A4 briefing</a> ·
+    <a href="${t.slug}/site_meteogram_latest.png">Meteogram</a></p>
+    <button class="btnlive" style="font:600 13px Inter,Arial,sans-serif;padding:8px 12px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer">
+    Live meteogram for ${esc(t.name.replace("Central ", ""))}</button>`;
+  panel.querySelector(".btnlive").onclick = () => runLive(t.lat, t.lon, t.name);
+}
+
+map.on("click", e => runLive(e.latlng.lat, e.latlng.lng, null));
+
+// ------------------------------------------------------------------ live check: same rules as scripts/29_site_weather.py
+const SIGMA = 5.67e-8, rad = Math.PI / 180;
+function solarElev(lat, lon, utcMs){
+  const d = utcMs / 86400000 + 2440587.5 - 2451545.0;
+  const g = (357.529 + 0.98560028 * d) * rad, q = 280.459 + 0.98564736 * d;
+  const L_ = (q + 1.915 * Math.sin(g) + 0.020 * Math.sin(2 * g)) * rad, e = (23.439 - 0.00000036 * d) * rad;
+  const ra = Math.atan2(Math.cos(e) * Math.sin(L_), Math.cos(L_)) / rad, dec = Math.asin(Math.sin(e) * Math.sin(L_));
+  const gmst = ((18.697374558 + 24.06570982441908 * d) % 24 + 24) % 24;
+  const ha = (gmst * 15 + lon - ra) * rad;
+  return Math.asin(Math.sin(lat * rad) * Math.sin(dec) + Math.cos(lat * rad) * Math.cos(dec) * Math.cos(ha)) / rad;
+}
+function tmrt(ta, dni, dhi, ghi, elev, shaded, svf){
+  const fp = 0.308 * Math.cos(elev * rad * (1 - elev * elev / 48402));
+  const S = 0.7 * (fp * dni * (shaded ? 0 : 1) * (elev > 0 ? 1 : 0) + 0.5 * dhi * svf + 0.5 * 0.2 * ghi);
+  const tk = ta + 273.15, tg = tk + ((shaded || elev <= 0) ? 2 : 2 + 13 * Math.min(Math.max(ghi / 900, 0), 1));
+  const Lw = 0.97 * (0.5 * (0.85 * SIGMA * tk ** 4 * svf + SIGMA * (tk + 2) ** 4 * (1 - svf)) + 0.5 * 0.95 * SIGMA * tg ** 4);
+  return Math.pow((S + Lw) / (0.97 * SIGMA), 0.25) - 273.15;
+}
+function globeTemp(tr, ta, v){
+  const k = 1.1e8 * v ** 0.6 / (0.95 * 0.15 ** 0.4); let lo = Math.min(ta, tr) - 5, hi = Math.max(ta, tr) + 5;
+  for (let i = 0; i < 50; i++){ const m = (lo + hi) / 2, f = (m + 273.15) ** 4 + k * (m - ta) - (tr + 273.15) ** 4; if (f > 0) hi = m; else lo = m; }
+  return (lo + hi) / 2;
+}
+const stull = (t, rh) => t * Math.atan(0.151977 * Math.sqrt(rh + 8.313659)) + Math.atan(t + rh) - Math.atan(rh - 1.676331)
+  + 0.00391838 * rh ** 1.5 * Math.atan(0.023101 * rh) - 4.686035;
+const lvl = (stop, cau) => stop ? 2 : cau ? 1 : 0;
+
+function derive(H, offset, lat, lon){
+  const n = H.time.length, out = [];
+  const g = k => H[k] || new Array(n).fill(0);
+  const P = g("precipitation"), PP = g("precipitation_probability"), C = g("cape");
+  for (let i = 0; i < n; i++){
+    const t = H.time[i], hour = +t.slice(11, 13), utc = Date.parse(t + ":00Z") - offset * 1000;
+    const elev = Math.max(0, solarElev(lat, lon, utc - 1800000));
+    const ta = H.temperature_2m[i], rh = H.relative_humidity_2m[i], v = Math.min(Math.max(H.wind_speed_10m[i] * 0.6, 0.5), 17);
+    const dni = H.direct_normal_irradiance[i] || 0, dhi = H.diffuse_radiation[i] || 0, ghi = H.shortwave_radiation[i] || 0;
+    const tw = stull(ta, rh), wb = {};
+    for (const [lab, sh, svf] of [["sun", false, 0.8], ["shade", true, 0.3]]){
+      const tg = globeTemp(tmrt(ta, dni, dhi, ghi, elev, sh, svf), ta, v);
+      wb[lab] = 0.7 * (tw + 0.2 * Math.max(tg - ta, 0)) + 0.2 * tg + 0.1 * ta;
+    }
+    const c = TH.concrete, tc = ta + c.concrete_minus_air_C, V = v * 3.6;
+    const evap = Math.max(0, 5 * ((tc + 18) ** 2.5 - rh / 100 * (ta + 18) ** 2.5) * (V + 4) * 1e-6);
+    const surf = ta - (elev > 0 ? 0 : (H.cloud_cover[i] < 50 ? 2 : 1)), margin = surf - H.dew_point_2m[i];
+    const g10 = H.wind_gusts_10m[i] ?? H.wind_speed_10m[i] * 1.6, gh = g10 * (TH.crane.hook_height_m / 10) ** (1 / 7);
+    const lt = TH.lightning, pr = P[i] || 0, prob = PP[i] || 0, cape = C[i] || 0;
+    const thunder = (cape >= lt.cape_stop && prob >= lt.prob_stop_pct && pr >= lt.rain_stop_mm_h) ? 2 : (cape >= lt.cape_caution && prob >= lt.prob_caution_pct) ? 1 : 0;
+    let p24 = 0; for (let j = Math.max(0, i - 23); j <= i; j++) p24 += P[j] || 0;
+    let p3 = 0; for (let j = Math.max(0, i - 3); j < i; j++) p3 += P[j] || 0;
+    let pn3 = 0; for (let j = i; j < Math.min(n, i + 3); j++) pn3 = Math.max(pn3, PP[j] || 0);
+    const h = TH.heat_wbgt_moderate_work_acclimatised_C, cr = TH.crane, wh = TH.work_at_height, co = TH.coatings, ew = TH.earthworks, asp = TH.asphalt;
+    out.push({t, day: t.slice(0, 10), hour, ta, rh, pr, prob, wbgt: wb.sun, wbgtShade: wb.shade, evap, margin, g10, gh, thunder, p24, p3,
+      work: WORK.includes(hour),
+      st: {
+        labour: lvl(wb.sun > h.work25_rest75, wb.sun > h.continuous),
+        concrete: lvl(pr >= c.rain_stop_mm_h || pn3 >= c.rain_prob_stop_pct || evap >= c.evap_stop_kg_m2_h || thunder === 2,
+                      pn3 >= c.rain_prob_caution_pct || evap >= c.evap_caution_kg_m2_h || thunder === 1),
+        asphalt: lvl(pr >= asp.rain_stop_mm_h || p3 >= asp.wet_surface_prev3h_mm || pn3 >= asp.rain_prob_next3_stop_pct || thunder === 2 || ta < asp.min_air_C,
+                     p3 > 0 || pn3 >= asp.rain_prob_next3_caution_pct || thunder === 1 || H.wind_speed_10m[i] >= asp.wind_caution_ms),
+        crane: lvl(gh >= cr.gust_stop_ms || thunder === 2, gh >= cr.gust_caution_ms || thunder === 1),
+        height: lvl(g10 >= wh.gust_stop_ms || pr >= wh.rain_stop_mm_h || thunder === 2, g10 >= wh.gust_caution_ms || thunder === 1),
+        coatings: lvl(margin < co.dewpoint_margin_stop_C || rh > co.rh_stop_pct || pr > 0.1, margin < co.dewpoint_margin_caution_C || rh > co.rh_caution_pct || prob >= 50),
+        earthworks: lvl(p24 >= ew.rain_prev24h_stop_mm || pr >= ew.rain_stop_mm_h, p24 >= ew.rain_prev24h_caution_mm || pr > 0.2)}});
+  }
+  return out;
+}
+function runsOf(hours, ok){                       // [[startHour, endHour]] with breaks (lunch) closing a run
+  const r = []; let s = null, prev = null;
+  hours.forEach((x, i) => {
+    if (ok[i] && s !== null && x.hour !== prev + 1){ r.push([s, prev + 1]); s = null; }
+    if (ok[i] && s === null) s = x.hour;
+    if (!ok[i] && s !== null){ r.push([s, prev + 1]); s = null; }
+    prev = x.hour;
+  });
+  if (s !== null) r.push([s, prev + 1]);
+  return r;
+}
+const fmt = r => r.map(([a, b]) => `${String(a).padStart(2, "0")}-${String(b).padStart(2, "0")} h`).join(", ");
+
+function dayBrief(rows){
+  const w = rows.filter(x => x.work);
+  const trades = KEYS.map(k => {
+    const st = w.map(x => x.st[k]), n = st.filter(s => s === 0).length, mx = Math.max(...st);
+    const status = n === w.length ? "GO" : (mx === 1 && n === 0) ? "CAUTION" : n === 0 ? "STOP" : "LIMITED";
+    const win = fmt(runsOf(w, st.map(s => s === 0)));
+    let label = {GO: "no limits", STOP: "STOP", CAUTION: "go with care", LIMITED: `go ${win} only`}[status];
+    if (k === "labour" && status !== "GO") label = status === "STOP" ? "STOP moderate work in sun" : "work/rest needed";
+    return {k, status, label, st, n};
+  }).sort((a, b) => ["STOP","LIMITED","CAUTION","GO"].indexOf(a.status) - ["STOP","LIMITED","CAUTION","GO"].indexOf(b.status));
+  const T = Object.fromEntries(trades.map(x => [x.k, x]));
+  const stl = runsOf(w, w.map(x => x.thunder === 2)), stp = runsOf(w, w.map(x => x.thunder >= 1));
+  const rain = rows.reduce((a, x) => a + x.pr, 0), pour = runsOf(w, T.concrete.st.map(s => s === 0)).sort((a, b) => (b[1] - b[0]) - (a[1] - a[0]))[0];
+  let head;
+  if (stl.length) head = `Storms likely from ${String(stl[0][0]).padStart(2, "0")}:00: finish lifts, roof and asphalt work before then.`;
+  else if (w.some(x => x.st.labour === 2)) head = "Heat stress: stop moderate work in the sun at the hottest hours.";
+  else if (T.concrete.status === "STOP" && T.asphalt.status === "STOP") head = `Wet day (${rain.toFixed(0)} mm): no concrete or asphalt window.`;
+  else if (stp.length) head = `Storms possible from ${String(stp[0][0]).padStart(2, "0")}:00: do exposed work in the morning.`;
+  else if (T.concrete.status === "LIMITED") head = `Pour concrete ${fmt([pour])}.`;
+  else if (trades.every(x => x.status === "GO")) head = "Good working day: no weather limits on any trade.";
+  else head = "Some limits today: check your trade below.";
+  const worst = trades[0].status;
+  return {w, trades, head, worst, rain, prob: Math.max(...rows.map(x => x.prob)), storm: stl.length ? "likely" : stp.length ? "possible" : "low",
+          wbgt: Math.max(...rows.map(x => x.wbgt)), gust: Math.max(...rows.map(x => x.gh))};
+}
+
+async function runLive(lat, lon, name){
+  if (liveMarker) map.removeLayer(liveMarker);
+  liveMarker = L.circleMarker([lat, lon], {radius: 8, color: css("--ink"), weight: 2, fillColor: css("--surface"), fillOpacity: 1}).addTo(map);
+  panel.innerHTML = `<p class="lede">Fetching the forecast for ${lat.toFixed(3)}, ${lon.toFixed(3)}…</p>`;
+  const vars = "temperature_2m,relative_humidity_2m,dew_point_2m,precipitation,cloud_cover,wind_speed_10m,wind_direction_10m,wind_gusts_10m,shortwave_radiation,direct_normal_irradiance,diffuse_radiation,precipitation_probability,cape";
+  try {
+    const js = await (await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat.toFixed(4)}&longitude=${lon.toFixed(4)}&hourly=${vars}&timezone=auto&past_days=1&forecast_days=7&wind_speed_unit=ms`)).json();
+    if (js.error) throw new Error(js.reason);
+    const all = derive(js.hourly, js.utc_offset_seconds, lat, lon);
+    const nowLocal = new Date(Date.now() + js.utc_offset_seconds * 1000).toISOString();
+    const today = nowLocal.slice(0, 10), nowHour = +nowLocal.slice(11, 13);
+    const rows = all.filter(x => x.day >= today);
+    let days = [...new Set(rows.map(x => x.day))]; if (nowHour >= W1) days = days.slice(1);
+    live = {name: name || `${lat.toFixed(3)}, ${lon.toFixed(3)}`, lat, lon, rows, days, sel: days[0], elev: js.elevation};
+    renderLive();
+  } catch(e){ panel.innerHTML = `<p class="lede">Could not get the forecast: ${esc(e.message)}. Try again in a minute.</p>`; }
+}
+
+function renderLive(){
+  const {name, rows, days, sel} = live, dr = rows.filter(x => x.day === sel), b = dayBrief(dr), C = COLOR(), S = STCOL();
+  const dname = d => new Date(d + "T12:00:00Z").toLocaleDateString("en-GB", {weekday: "short", day: "numeric", timeZone: "UTC"});
+  const trades = b.trades.map(t => `<div class="row"><span class="pill" style="background:${C[t.status]}">${WORD[t.status]}</span>
+    <span class="trade">${NAMES[t.k]}</span><span class="label">${esc(t.label)}</span>
+    <span class="cells">${b.w.map((x, i) => `<span${i && x.hour !== b.w[i - 1].hour + 1 ? ' class="gap"' : ""} style="background:${S[t.st[i]]}" title="${NAMES[t.k]} ${String(x.hour).padStart(2, "0")}:00">${String(x.hour).padStart(2, "0")}</span>`).join("")}</span></div>`).join("");
+  panel.innerHTML = `<h2>Live check · ${esc(name)}</h2>
+    <div class="small"><a href="?lat=${live.lat.toFixed(4)}&lon=${live.lon.toFixed(4)}">Link to this spot</a> (bookmark it for your site) · Elevation ${Math.round(live.elev)} m · ${WORK.length}-hour day ${String(W0).padStart(2, "0")}-${String(W1).padStart(2, "0")}, lunch excluded</div>
+    <div class="tabs">${days.map(d => `<button aria-pressed="${d === sel}" data-d="${d}">${dname(d)}</button>`).join("")}</div>
+    <div class="head" style="border-left-color:${C[b.worst]}">${esc(b.head)}</div>
+    <div class="facts">Rain ${b.rain.toFixed(0)} mm (${b.prob}%) · storms ${b.storm} · WBGT ${b.wbgt.toFixed(0)} °C · gusts ${b.gust.toFixed(0)} m/s at hook height</div>
+    ${trades}
+    <h2 style="margin-top:6px">Seven-day meteogram</h2>
+    <div class="small">Grey bands: working hours. Darker band: the day selected above. Hover or tap for values.</div>
+    <div id="mg"></div>`;
+  panel.querySelectorAll(".tabs button").forEach(bt => bt.onclick = () => { live.sel = bt.dataset.d; renderLive(); });
+  drawMeteogram(document.getElementById("mg"), rows, sel);
+}
+
+function drawMeteogram(el, rows, sel){
+  const Wd = 430, pad = 52, ph = 88, gap = 30, n = rows.length, H = 3 * ph + 2 * gap + 22 + 7 * 10 + 14;
+  const x = i => pad + (Wd - pad - 4) * i / n, bw = (Wd - pad - 4) / n;
+  const h = TH.heat_wbgt_moderate_work_acclimatised_C, cr = TH.crane;
+  const wMin = Math.min(15, ...rows.map(r => r.ta)), wMax = Math.max(h.continuous + 1, ...rows.map(r => r.wbgt)) + 1;
+  const rMax = Math.max(5, ...rows.map(r => r.pr)) * 1.15, gMax = Math.max(cr.gust_stop_ms + 2, ...rows.map(r => r.gh)) + 1;
+  const y0 = 16, y1 = y0 + ph + gap, y2 = y1 + ph + gap, y3 = y2 + ph + 22;
+  const sy = (v, lo, hi, top) => top + ph - (v - lo) / (hi - lo) * ph;
+  let s = `<svg viewBox="0 0 ${Wd} ${H}" width="100%" role="img" aria-label="Seven-day meteogram: heat stress, rain, gusts and go hours">`;
+  rows.forEach((r, i) => { if (r.work) s += `<rect x="${x(i)}" y="${y0}" width="${bw + 0.3}" height="${y3 - y0}" fill="${css("--ink")}" opacity="${r.day === sel ? 0.10 : 0.04}"/>`; });
+  // heat
+  [[h.continuous, "continuous-work limit"]].forEach(([v, l]) => {
+    const yy = sy(v, wMin, wMax, y0); if (yy > y0) s += `<line x1="${pad}" x2="${Wd - 4}" y1="${yy}" y2="${yy}" stroke="${css("--stop")}" stroke-dasharray="3 3" opacity=".6"/><text x="${Wd - 6}" y="${yy - 2}" text-anchor="end">${l}</text>`; });
+  const line = (key, lo, hi, top, col, wdt) => `<polyline fill="none" stroke="${col}" stroke-width="${wdt}" points="${rows.map((r, i) => `${(x(i) + bw / 2).toFixed(1)},${sy(r[key], lo, hi, top).toFixed(1)}`).join(" ")}"/>`;
+  s += line("ta", wMin, wMax, y0, css("--muted"), 1) + line("wbgtShade", wMin, wMax, y0, css("--go"), 1.6) + line("wbgt", wMin, wMax, y0, css("--stop"), 2);
+  s += `<text x="${pad}" y="${y0 - 5}">Heat: WBGT in sun (red), shade (green), air (grey), °C</text><text x="${pad - 4}" y="${y0 + ph}" text-anchor="end">${wMin.toFixed(0)}</text><text x="${pad - 4}" y="${y0 + 10}" text-anchor="end">${wMax.toFixed(0)}</text>`;
+  // rain + storms
+  rows.forEach((r, i) => { if (r.pr > 0) s += `<rect x="${x(i)}" y="${sy(r.pr, 0, rMax, y1)}" width="${Math.max(bw - 0.5, 1)}" height="${y1 + ph - sy(r.pr, 0, rMax, y1)}" fill="${css("--rain")}"/>`;
+    if (r.thunder) s += `<path d="M${x(i)} ${y1 + 2}h${bw + 2}l${-(bw + 2) / 2} 6z" fill="${r.thunder === 2 ? css("--stop") : css("--cau")}"/>`; });
+  s += `<text x="${pad}" y="${y1 - 5}">Rain, mm/h · triangles: storm risk</text><text x="${pad - 4}" y="${y1 + 10}" text-anchor="end">${rMax.toFixed(0)}</text><text x="${pad - 4}" y="${y1 + ph}" text-anchor="end">0</text>`;
+  // gusts
+  [[cr.gust_caution_ms, css("--cau"), "crane caution"], [cr.gust_stop_ms, css("--stop"), "crane stop"]].forEach(([v, c, l]) => { const yy = sy(v, 0, gMax, y2);
+    s += `<line x1="${pad}" x2="${Wd - 4}" y1="${yy}" y2="${yy}" stroke="${c}" stroke-dasharray="3 3"/><text x="${Wd - 6}" y="${yy - 2}" text-anchor="end">${l}</text>`; });
+  s += line("gh", 0, gMax, y2, css("--ink"), 1.6) + `<text x="${pad}" y="${y2 - 5}">Gust at ${cr.hook_height_m} m hook height, m/s</text><text x="${pad - 4}" y="${y2 + ph}" text-anchor="end">0</text>`;
+  // per-trade go strip
+  KEYS.forEach((k, j) => { rows.forEach((r, i) => s += `<rect x="${x(i)}" y="${y3 + j * 10}" width="${bw + 0.3}" height="9" fill="${r.work ? STCOL()[r.st[k]] : css("--off")}"/>`);
+    s += `<text x="${pad - 4}" y="${y3 + j * 10 + 8}" text-anchor="end" style="font-size:8px">${{labour:"Labour",concrete:"Concrete",asphalt:"Asphalt",crane:"Crane",height:"Height",coatings:"Painting",earthworks:"Earthworks"}[k]}</text>`; });
+  s += `<text x="${pad}" y="${y3 - 5}">Go hours per trade (green go, amber care, red stop)</text>`;
+  // day labels
+  rows.forEach((r, i) => { if (r.hour === 0) s += `<line x1="${x(i)}" x2="${x(i)}" y1="${y0}" y2="${y3 + 70}" stroke="${css("--line")}"/>`;
+    if (r.hour === 12) s += `<text x="${x(i)}" y="${y3 + 82}" text-anchor="middle" style="font-weight:600">${new Date(r.day + "T12:00:00Z").toLocaleDateString("en-GB", {weekday: "short", day: "numeric", timeZone: "UTC"})}</text>`; });
+  s += `<line id="xh" x1="0" x2="0" y1="${y0}" y2="${y3 + 70}" stroke="${css("--ink")}" opacity="0"/></svg>`;
+  el.innerHTML = s;
+  const svg = el.querySelector("svg"), xh = svg.querySelector("#xh");
+  const move = ev => {
+    const pt = ev.touches ? ev.touches[0] : ev, bb = svg.getBoundingClientRect(), vx = (pt.clientX - bb.left) / bb.width * Wd;
+    const i = Math.min(n - 1, Math.max(0, Math.floor((vx - pad) / bw))), r = rows[i]; if (!r) return;
+    xh.setAttribute("x1", x(i) + bw / 2); xh.setAttribute("x2", x(i) + bw / 2); xh.setAttribute("opacity", .5);
+    const go = KEYS.filter(k => r.st[k] === 0).map(k => NAMES[k].split(" ")[0]);
+    tip.innerHTML = `<strong>${new Date(r.day + "T12:00:00Z").toLocaleDateString("en-GB", {weekday: "short", day: "numeric", month: "short", timeZone: "UTC"})} ${String(r.hour).padStart(2, "0")}:00</strong><br>
+      WBGT sun ${r.wbgt.toFixed(1)} °C · air ${r.ta.toFixed(1)} °C<br>rain ${r.pr.toFixed(1)} mm (${r.prob}%)${r.thunder ? " · storm risk" : ""}<br>gust ${r.gh.toFixed(0)} m/s at hook height<br>
+      ${r.work ? (go.length ? "Go: " + go.join(", ") : "No trade can go") : "Outside working hours"}`;
+    tip.style.display = "block"; tip.style.left = Math.min(pt.clientX + 14, innerWidth - 230) + "px"; tip.style.top = (pt.clientY + 14) + "px";
+  };
+  svg.addEventListener("mousemove", move); svg.addEventListener("touchmove", move, {passive: true});
+  svg.addEventListener("mouseleave", () => { tip.style.display = "none"; xh.setAttribute("opacity", 0); });
+}
+init();
+</script></body></html>

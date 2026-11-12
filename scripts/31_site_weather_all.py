@@ -99,6 +99,29 @@ d.text((64, H - 86), "gavacharles.github.io/kampala-heat-atlas/site-weather", fo
 d.text((64, H - 54), "Gava Charles · Kampala Heat Atlas · forecast data Open-Meteo", font=F(20), fill=MUT)
 im.save(OUT / "uganda_week_4x5.png")
 
+# ---------------------------------------------------------------- data for map.html and share.html
+RANK = {"STOP": 0, "LIMITED": 1, "CAUTION": 2, "GO": 3}
+towns, cap_lines = [], []
+for s in SITES:
+    sl = slug(s["name"]); bp = OUT / sl / "site_briefing_latest.json"
+    if not bp.exists():
+        continue
+    bj = json.loads(bp.read_text()); b0 = bj["days"][0]
+    worst = min((r["status"] for r in b0["rows"]), key=RANK.get)
+    towns.append(dict(name=s["name"], region=s["region"], lat=s["lat"], lon=s["lon"], slug=sl, issued=bj["issued"], day=b0["day"],
+                      headline=b0["headline"], worst=worst, facts=b0["facts"],
+                      rows=[dict(trade=r["trade"], status=r["status"], label=r["label"]) for r in b0["rows"]],
+                      outlook=[dict(day=b["day"], headline=b["headline"]) for b in bj["days"][1:4]]))
+    conc = next(r for r in b0["rows"] if r["key"] == "concrete")
+    cap_lines.append(f"• {s['name'].replace('Central ', '')}: concrete {conc['label']}" + (f"; storms {b0['facts']['storm']}" if b0["facts"]["storm"] != "low" else ""))
+(OUT / "towns_today.json").write_text(json.dumps(dict(issued=f"{pd.Timestamp.now(tz='Africa/Kampala'):%Y-%m-%d %H:%M}", towns=towns), indent=1))
+(OUT / "uganda_caption.txt").write_text("\n".join(
+    [f"Site weather, Uganda: {towns[0]['day'] if towns else ''}.", ""] + cap_lines +
+    ["", "Hour-by-hour briefing for your town, the week ahead and the monthly record: gavacharles.github.io/kampala-heat-atlas/site-weather",
+     "Send us your site location to add it.", "",
+     "Screening guidance from a forecast; your contract, crane limits and H&S plan come first.",
+     "#Uganda #Construction #SiteSafety #Weather #Kampala #Gulu #Mbarara #Mbale"]) + "\n")
+
 # ---------------------------------------------------------------- landing page
 cards = ""
 for reg in dict.fromkeys(s["region"] for s, _ in rows):
@@ -122,11 +145,13 @@ nav{{display:flex;gap:8px;flex-wrap:wrap}} nav a{{color:var(--ink);text-decorati
 .row{{display:flex;gap:12px;overflow-x:auto;padding-bottom:6px}} .site{{flex:none;width:260px;text-decoration:none;color:var(--ink);font-weight:500}}
 .site img,.nat{{width:100%;height:auto;border:1px solid var(--line);border-radius:8px;background:#fff;display:block;margin-bottom:6px}} .nat{{max-width:520px}}
 </style></head><body><main>
-<nav><a href="../index.html">Atlas</a><a href="../3d.html">3D model</a><a href="../stories.html">Stories</a><a href="../daynight.html">Day vs night</a><a href="../meteogram.html">Meteogram</a><a href="./">Site weather</a><a href="../gallery.html">Figures</a><a href="https://github.com/gavacharles/kampala-heat-atlas">Code</a></nav>
+<nav><a href="../index.html">Atlas</a><a href="../3d.html">3D model</a><a href="../stories.html">Stories</a><a href="../daynight.html">Day vs night</a><a href="../meteogram.html">Meteogram</a><a href="./">Site weather</a><a href="map.html">Map</a><a href="share.html">Share today</a><a href="../gallery.html">Figures</a><a href="https://github.com/gavacharles/kampala-heat-atlas">Code</a></nav>
 <h1>Site weather · Uganda</h1>
 <p class="lede">For contractors and site managers: hour-by-hour workable time for seven trades, a daily site note and a
 month-by-month weather record against each town's 1991-2020 climate. Refreshed every morning at 06:00. Pick the town nearest
 your site; to add a site, send its coordinates.</p>
+<p><a href="map.html"><strong>Open the map</strong></a> (click any town, or anywhere in Uganda, for a live site check) ·
+<a href="share.html"><strong>Share today</strong></a> (cards and captions, one tap to WhatsApp)</p>
 <img class="nat" src="uganda_week_4x5.png" alt="Concrete pour windows this week across Uganda">
 {cards}
 <p class="lede" style="font-size:13px">Screening guidance from a weather forecast, not an instruction. The contract specification,

@@ -622,7 +622,7 @@ section{{display:grid;gap:10px;border-top:1px solid var(--line);padding-top:16px
 th,td{{border-bottom:1px solid var(--line);padding:6px 10px;text-align:right}} th:first-child,td:first-child{{text-align:left}}
 img{{width:100%;height:auto;border:1px solid var(--line);border-radius:8px;background:#fff}}
 </style></head><body><main>
-<nav><a href="../../index.html">Atlas</a><a href="../../3d.html">3D model</a><a href="../../stories.html">Stories</a><a href="../../daynight.html">Day vs night</a><a href="../../meteogram.html">Meteogram</a><a href="../">Site weather</a><a href="../../gallery.html">Figures</a><a href="https://github.com/gavacharles/kampala-heat-atlas">Code</a></nav>
+<nav><a href="../../index.html">Atlas</a><a href="../../3d.html">3D model</a><a href="../../stories.html">Stories</a><a href="../../daynight.html">Day vs night</a><a href="../../meteogram.html">Meteogram</a><a href="../">Site weather</a><a href="../map.html">Map</a><a href="../share.html">Share today</a><a href="../../gallery.html">Figures</a><a href="https://github.com/gavacharles/kampala-heat-atlas">Code</a></nav>
 <h1>Site weather · {html.escape(A.name)}</h1>
 <p class="lede">For contractors and site managers: the next seven days as workable hours per trade, with a short site note,
 refreshed every morning at 06:00. Every day is also archived, so the record of what the weather did, month by month and

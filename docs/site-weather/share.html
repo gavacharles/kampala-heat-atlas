@@ -1,0 +1,83 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Share Today</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@800&family=Inter:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#f6f6f3;--surface:#fff;--ink:#0b0b0b;--ink-2:#52514e;--line:#e1e0d9;--blue:#2a78d6;--go:#2f8f3a}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#111312;--surface:#1a1c1b;--ink:#ecedea;--ink-2:#b6b9b2;--line:#2d302e;--blue:#6da7ec;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#111312;--surface:#1a1c1b;--ink:#ecedea;--ink-2:#b6b9b2;--line:#2d302e;--blue:#6da7ec;color-scheme:dark}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 Inter,Arial,sans-serif;padding:20px 16px 48px}
+main{max-width:720px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr);gap:16px} h1{font:800 30px/1.05 Archivo,Arial,sans-serif;margin:0}
+.lede{color:var(--ink-2);margin:0} a{color:var(--blue)}
+nav{display:flex;gap:8px;flex-wrap:wrap} nav a{color:var(--ink);text-decoration:none;border:1px solid var(--line);background:var(--surface);padding:6px 12px;border-radius:999px;font-size:13px}
+select{font:600 16px Inter,Arial,sans-serif;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--ink);width:100%}
+.item{min-width:0;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px;display:grid;gap:10px}
+.item h2{font:600 16px Inter,Arial,sans-serif;margin:0} .item img{width:100%;height:auto;border-radius:8px;border:1px solid var(--line);background:#fff}
+.btns{display:flex;gap:8px;flex-wrap:wrap} button,.btn{font:600 15px Inter,Arial,sans-serif;padding:11px 16px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;text-decoration:none}
+button.primary{background:var(--go);border-color:var(--go);color:#fff} textarea{width:100%;min-height:170px;font:14px/1.45 Inter,Arial,sans-serif;padding:10px;border-radius:10px;border:1px solid var(--line);background:var(--surface);color:var(--ink)}
+.status{font-size:13px;color:var(--ink-2);min-height:1.2em}
+</style></head><body><main>
+<nav><a href="../index.html">Atlas</a><a href="./">Site weather</a><a href="map.html">Map</a><a href="share.html">Share today</a></nav>
+<h1>Share today</h1>
+<p class="lede">Pick a town, tap <strong>Share</strong> and choose WhatsApp (Channel, Status or a group). Then paste the caption.
+Refreshed every morning at 06:00.</p>
+<select id="town" aria-label="Town"></select>
+<div class="item"><h2>Caption</h2><textarea id="cap" readonly></textarea>
+<div class="btns"><button class="primary" id="copy">Copy caption</button></div><div class="status" id="capst"></div></div>
+<div id="cards" style="display:grid;grid-template-columns:minmax(0,1fr);gap:16px"></div>
+<p class="lede" style="font-size:13px">Screening guidance from a forecast. The contract, crane limits and site H&amp;S plan come first.</p>
+</main>
+<script>
+const $ = s => document.querySelector(s);
+const store = { get(k){ try { return localStorage.getItem(k); } catch(e){ return null; } }, set(k,v){ try { localStorage.setItem(k,v); } catch(e){} } };
+const NATIONAL = [{title:"Uganda: concrete windows this week (post daily to the Channel)", file:"uganda_week_4x5.png"}];
+const TOWN = s => [
+  {title:"Today's briefing (feed, Channel, groups)", file:`${s}/social/today_4x5.png`},
+  {title:"Today, vertical (WhatsApp Status, Stories)", file:`${s}/social/today_9x16.png`},
+  {title:"The week on site (Mondays)", file:`${s}/social/week_4x5.png`},
+  {title:"Printable A4 briefing (site board)", file:`${s}/social/briefing_A4.pdf`, pdf:true}];
+
+async function load(){
+  let towns = [];
+  try { towns = (await (await fetch("towns_today.json", {cache:"no-store"})).json()).towns; } catch(e){}
+  const sel = $("#town");
+  sel.innerHTML = `<option value="uganda">Uganda (all towns)</option>` + towns.map(t => `<option value="${t.slug}">${t.name} · ${t.region}</option>`).join("");
+  const saved = store.get("shareTown"); if (saved && [...sel.options].some(o => o.value === saved)) sel.value = saved;
+  sel.onchange = () => { store.set("shareTown", sel.value); render(sel.value); };
+  render(sel.value);
+}
+
+async function render(slug){
+  const items = slug === "uganda" ? NATIONAL : TOWN(slug);
+  const capUrl = slug === "uganda" ? "uganda_caption.txt" : `${slug}/social/caption.txt`;
+  try { $("#cap").value = await (await fetch(capUrl, {cache:"no-store"})).text(); } catch(e){ $("#cap").value = ""; }
+  $("#capst").textContent = "";
+  $("#cards").innerHTML = items.map((it, i) => `<div class="item"><h2>${it.title}</h2>
+    ${it.pdf ? "" : `<img src="${it.file}?v=${Date.now()}" alt="${it.title}" loading="lazy">`}
+    <div class="btns">${it.pdf ? "" : `<button class="primary" data-i="${i}">Share</button>`}
+    <a class="btn" href="${it.file}" download>${it.pdf ? "Open the PDF" : "Download"}</a></div><div class="status" id="st${i}"></div></div>`).join("");
+  document.querySelectorAll("button[data-i]").forEach(b => b.onclick = () => share(items[+b.dataset.i], +b.dataset.i));
+}
+
+async function share(it, i){
+  const st = $("#st" + i);
+  try {
+    const blob = await (await fetch(it.file, {cache:"no-store"})).blob();
+    const file = new File([blob], it.file.split("/").pop(), {type: blob.type || "image/png"});
+    const text = $("#cap").value;
+    if (navigator.canShare && navigator.canShare({files:[file]})) {
+      try { await navigator.clipboard.writeText(text); } catch(e){}
+      await navigator.share({files:[file], text});
+      st.textContent = "Shared. The caption is also on your clipboard if the app dropped it.";
+    } else {
+      const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = file.name; a.click();
+      st.textContent = "This browser can't share files directly, so the image was downloaded. Attach it in WhatsApp and paste the caption.";
+    }
+  } catch(e){ if (e.name !== "AbortError") st.textContent = "Could not share: " + e.message; }
+}
+
+$("#copy").onclick = async () => {
+  try { await navigator.clipboard.writeText($("#cap").value); $("#capst").textContent = "Copied."; }
+  catch(e){ $("#cap").select(); $("#capst").textContent = "Select all and copy."; }
+};
+load();
+</script></body></html>
