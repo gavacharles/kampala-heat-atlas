@@ -4,6 +4,7 @@ on:
     - cron: "0 3 * * *"        # 06:00 in Uganda, daily
   push:
     branches: [main]
+    paths: ["scripts/**", "docs/**", ".github/workflows/**"]
   workflow_dispatch:
 permissions:
   contents: write
@@ -27,7 +28,16 @@ jobs:
           git config user.name "meteogram-bot"
           git config user.email "actions@users.noreply.github.com"
           git add docs/figures/meteogram_latest.png docs/figures/meteogram_latest.csv docs/site-weather
-          git diff --cached --quiet || (git commit -m "Refresh meteograms and site weather record" && git push)
+          git diff --cached --quiet && exit 0
+          git commit -m "Refresh meteograms and site weather record"
+          # someone may have pushed while this ran: rebase onto it (our freshly generated files win) and retry
+          for i in 1 2 3 4; do
+            git push && exit 0
+            git fetch origin main
+            git rebase -X theirs origin/main || { git rebase --abort; git reset --soft origin/main; git commit -m "Refresh meteograms and site weather record"; }
+            sleep $((i * 5))
+          done
+          echo "push failed after retries" && exit 1
       - uses: actions/upload-pages-artifact@v3
         with:
           path: docs
