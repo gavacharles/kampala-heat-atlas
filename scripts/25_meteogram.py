@@ -41,7 +41,15 @@ plt.rcParams.update({"font.family": ["Helvetica Neue", "Arial", "DejaVu Sans"], 
 vars_ = "temperature_2m,relative_humidity_2m,wind_speed_10m,wind_direction_10m,shortwave_radiation,direct_normal_irradiance,diffuse_radiation,cloud_cover,precipitation"
 url = (f"https://api.open-meteo.com/v1/forecast?latitude={LAT}&longitude={LON}&hourly={vars_}"
        "&timezone=Africa%2FKampala&forecast_days=7&wind_speed_unit=ms")
-h = json.loads(urllib.request.urlopen(url, timeout=60).read())["hourly"]
+for _try in range(5):                                       # the forecast service occasionally times out
+    try:
+        h = json.loads(urllib.request.urlopen(url, timeout=90).read())["hourly"]
+        break
+    except Exception:  # noqa: BLE001
+        if _try == 4:
+            raise
+        import time
+        time.sleep(10 * (_try + 1))
 df = pd.DataFrame(h); df["time"] = pd.to_datetime(df["time"]).dt.tz_localize("Africa/Kampala")
 df = df.set_index("time")
 sp = pvlib.location.Location(LAT, LON, tz="Africa/Kampala", altitude=ALT).get_solarposition(df.index - pd.Timedelta(minutes=30))

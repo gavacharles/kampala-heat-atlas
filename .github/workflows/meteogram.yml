@@ -21,6 +21,7 @@ jobs:
           python-version: "3.12"
       - run: pip install numpy pandas matplotlib pvlib pythermalcomfort pillow
       - run: python scripts/25_meteogram.py docs/figures
+        continue-on-error: true      # a failed heat meteogram must not block site weather or the deploy
       # every site in docs/site-weather/sites.json: meteogram, site note, cards, daily/monthly record
       - run: python scripts/31_site_weather_all.py docs/site-weather
       - name: Commit the record (text only; images are deployed, not committed)
