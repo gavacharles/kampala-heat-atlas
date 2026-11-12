@@ -2,7 +2,7 @@
  "site": "Central Kampala",
  "lat": 0.3136,
  "lon": 32.5811,
- "issued": "2026-11-13 01:46",
+ "issued": "2026-11-13 01:55",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -50,9 +50,9 @@
      "key": "coatings",
      "trade": "Painting & coatings",
      "status": "LIMITED",
-     "label": "go 10-13 h, 14-16 h only",
-     "go_hours": 5,
-     "windows": "10-13 h, 14-16 h",
+     "label": "go 10-13 h, 14-15 h only",
+     "go_hours": 4,
+     "windows": "10-13 h, 14-15 h",
      "causes": [
       "humidity or dew",
       "rain"
@@ -99,7 +99,7 @@
    ],
    "facts": {
     "rain_mm": 3.8,
-    "rain_chance": 57,
+    "rain_chance": 67,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 24.8,
@@ -108,7 +108,7 @@
      "concrete": 5,
      "asphalt": 4,
      "height": 7,
-     "coatings": 5,
+     "coatings": 4,
      "earthworks": 2,
      "labour": 8,
      "crane": 8
@@ -269,8 +269,8 @@
      "go_hours": 0,
      "windows": "",
      "causes": [
-      "humidity or dew",
-      "rain"
+      "rain",
+      "humidity or dew"
      ],
      "action": "Too humid or wet for painting and coatings."
     },
@@ -328,7 +328,7 @@
    ],
    "facts": {
     "rain_mm": 6.1,
-    "rain_chance": 93,
+    "rain_chance": 85,
     "storm": "likely",
     "storm_from": "15",
     "wbgt_peak": 25.4,
@@ -443,7 +443,7 @@
    ],
    "facts": {
     "rain_mm": 8.2,
-    "rain_chance": 91,
+    "rain_chance": 96,
     "storm": "possible",
     "storm_from": "11",
     "wbgt_peak": 25.7,
@@ -557,7 +557,7 @@
    ],
    "facts": {
     "rain_mm": 4.2,
-    "rain_chance": 79,
+    "rain_chance": 89,
     "storm": "possible",
     "storm_from": "10",
     "wbgt_peak": 26.3,
@@ -671,7 +671,7 @@
    ],
    "facts": {
     "rain_mm": 5.1,
-    "rain_chance": 66,
+    "rain_chance": 71,
     "storm": "possible",
     "storm_from": "10",
     "wbgt_peak": 25.8,
@@ -690,7 +690,7 @@
   {
    "date": "2026-11-19",
    "day": "Thursday 19 November",
-   "headline": "Wet day (6 mm): no concrete or asphalt window.",
+   "headline": "Storms likely from 10:00: finish lifts, roof and asphalt work before then.",
    "rows": [
     {
      "key": "concrete",
@@ -719,6 +719,18 @@
      "action": "No dry window: do not lay or spray."
     },
     {
+     "key": "crane",
+     "trade": "Crane lifts",
+     "status": "STOP",
+     "label": "STOP",
+     "go_hours": 0,
+     "windows": "",
+     "causes": [
+      "storms"
+     ],
+     "action": "No safe lift window: leave the crane in free slew."
+    },
+    {
      "key": "height",
      "trade": "Work at height",
      "status": "STOP",
@@ -743,18 +755,6 @@
       "humidity or dew"
      ],
      "action": "Too humid or wet for painting and coatings."
-    },
-    {
-     "key": "crane",
-     "trade": "Crane lifts",
-     "status": "CAUTION",
-     "label": "go with care",
-     "go_hours": 0,
-     "windows": "",
-     "causes": [
-      "storms"
-     ],
-     "action": "Lift with care: check the anemometer before each lift."
     },
     {
      "key": "earthworks",
@@ -785,17 +785,17 @@
    ],
    "facts": {
     "rain_mm": 6.0,
-    "rain_chance": 67,
-    "storm": "possible",
-    "storm_from": "08",
+    "rain_chance": 81,
+    "storm": "likely",
+    "storm_from": "10",
     "wbgt_peak": 26.2,
     "gust_hook_max": 10.3,
     "go_hours": {
      "concrete": 0,
      "asphalt": 0,
+     "crane": 0,
      "height": 0,
      "coatings": 0,
-     "crane": 0,
      "earthworks": 0,
      "labour": 8
     }
