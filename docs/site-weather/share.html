@@ -18,27 +18,38 @@ button.primary{background:var(--go);border-color:var(--go);color:#fff} textarea{
 </style></head><body><main>
 <nav><a href="../index.html">Atlas</a><a href="./">Site weather</a><a href="map.html">Map</a><a href="share.html">Share today</a></nav>
 <h1>Share today</h1>
-<p class="lede">Pick a town, tap <strong>Share</strong> and choose WhatsApp (Channel, Status or a group). Then paste the caption.
-Refreshed every morning at 06:00.</p>
+<p class="lede">Pick a town (or Uganda and an activity), tap <strong>Share</strong> and choose WhatsApp, LinkedIn or X.
+Paste the matching caption: the long one for WhatsApp, LinkedIn and Facebook, the short one for X. Refreshed every morning at 06:00.</p>
 <select id="town" aria-label="Town"></select>
-<div class="item"><h2>Caption</h2><textarea id="cap" readonly></textarea>
-<div class="btns"><button class="primary" id="copy">Copy caption</button></div><div class="status" id="capst"></div></div>
+<select id="act" aria-label="Activity" style="display:none"></select>
+<div class="item"><h2>Caption for WhatsApp, LinkedIn, Facebook</h2><textarea id="cap" readonly></textarea>
+<div class="btns"><button class="primary" data-copy="cap">Copy caption</button></div><div class="status" id="capst"></div></div>
+<div class="item"><h2>Caption for X <span id="xn" style="font-weight:400;color:var(--ink-2);font-size:13px"></span></h2><textarea id="capx" readonly style="min-height:120px"></textarea>
+<div class="btns"><button class="primary" data-copy="capx">Copy X caption</button></div><div class="status" id="capxst"></div></div>
 <div id="cards" style="display:grid;grid-template-columns:minmax(0,1fr);gap:16px"></div>
 <p class="lede" style="font-size:13px">Screening guidance from a forecast. The contract, crane limits and site H&amp;S plan come first.</p>
 </main>
 <script>
 const $ = s => document.querySelector(s);
 const store = { get(k){ try { return localStorage.getItem(k); } catch(e){ return null; } }, set(k,v){ try { localStorage.setItem(k,v); } catch(e){} } };
-const NATIONAL = [{title:"Uganda: concrete windows this week (post daily to the Channel)", file:"uganda_week_4x5.png"}];
+let ACTS = [];
+const NATIONAL = a => [{title:`Uganda: ${a.name}, go hours this week`, file:`uganda_${a.key}_4x5.png`}];
 const TOWN = s => [
   {title:"Today's briefing (feed, Channel, groups)", file:`${s}/social/today_4x5.png`},
   {title:"Today, vertical (WhatsApp Status, Stories)", file:`${s}/social/today_9x16.png`},
-  {title:"The week on site (Mondays)", file:`${s}/social/week_4x5.png`},
+  {title:"The week on site: go hours for every activity", file:`${s}/social/week_4x5.png`},
+  {title:"Today hour by hour, every activity", file:`${s}/social/today_hours_4x5.png`},
+  {title:"Seven-day meteogram: heat, rain and storms, wind, concrete drying, painting, every activity", file:`${s}/site_meteogram_latest.png`},
   {title:"Printable A4 briefing (site board)", file:`${s}/social/briefing_A4.pdf`, pdf:true}];
 
 async function load(){
   let towns = [];
-  try { towns = (await (await fetch("towns_today.json", {cache:"no-store"})).json()).towns; } catch(e){}
+  try { const tj = await (await fetch("towns_today.json", {cache:"no-store"})).json(); towns = tj.towns; ACTS = tj.activities || []; } catch(e){}
+  if (!ACTS.length) ACTS = [{key:"concrete", name:"Concrete pour"}];
+  const act = $("#act");
+  act.innerHTML = ACTS.map(a => `<option value="${a.key}">${a.name}</option>`).join("");
+  const sa = store.get("shareAct"); if (sa && ACTS.some(a => a.key === sa)) act.value = sa;
+  act.onchange = () => { store.set("shareAct", act.value); render($("#town").value); };
   const sel = $("#town");
   sel.innerHTML = `<option value="uganda">Uganda (all towns)</option>` + towns.map(t => `<option value="${t.slug}">${t.name} · ${t.region}</option>`).join("");
   const saved = store.get("shareTown"); if (saved && [...sel.options].some(o => o.value === saved)) sel.value = saved;
@@ -47,10 +58,15 @@ async function load(){
 }
 
 async function render(slug){
-  const items = slug === "uganda" ? NATIONAL : TOWN(slug);
-  const capUrl = slug === "uganda" ? "uganda_caption.txt" : `${slug}/social/caption.txt`;
-  try { $("#cap").value = await (await fetch(capUrl, {cache:"no-store"})).text(); } catch(e){ $("#cap").value = ""; }
-  $("#capst").textContent = "";
+  const nat = slug === "uganda", a = ACTS.find(x => x.key === $("#act").value) || ACTS[0];
+  $("#act").style.display = nat ? "" : "none";
+  const items = nat ? NATIONAL(a) : TOWN(slug);
+  const base = nat ? `uganda_${a.key}_caption` : `${slug}/social/caption`;
+  const get = async u => { try { const r = await fetch(u, {cache:"no-store"}); return r.ok ? (await r.text()).trim() : ""; } catch(e){ return ""; } };
+  $("#cap").value = await get(base + ".txt"); $("#capx").value = await get(base + "_x.txt");
+  const xl = $("#capx").value.replace(/\S*github\.io\S*/g, "x".repeat(23)).length;
+  $("#xn").textContent = `(${xl} of 280 characters, links count as 23)`;
+  $("#capst").textContent = ""; $("#capxst").textContent = "";
   $("#cards").innerHTML = items.map((it, i) => `<div class="item"><h2>${it.title}</h2>
     ${it.pdf ? "" : `<img src="${it.file}?v=${Date.now()}" alt="${it.title}" loading="lazy">`}
     <div class="btns">${it.pdf ? "" : `<button class="primary" data-i="${i}">Share</button>`}
@@ -63,7 +79,7 @@ async function share(it, i){
   try {
     const blob = await (await fetch(it.file, {cache:"no-store"})).blob();
     const file = new File([blob], it.file.split("/").pop(), {type: blob.type || "image/png"});
-    const text = $("#cap").value;
+    const text = $("#cap").value;   // X: use the X caption box (X strips text shared with an image on some phones)
     if (navigator.canShare && navigator.canShare({files:[file]})) {
       try { await navigator.clipboard.writeText(text); } catch(e){}
       await navigator.share({files:[file], text});
@@ -75,9 +91,10 @@ async function share(it, i){
   } catch(e){ if (e.name !== "AbortError") st.textContent = "Could not share: " + e.message; }
 }
 
-$("#copy").onclick = async () => {
-  try { await navigator.clipboard.writeText($("#cap").value); $("#capst").textContent = "Copied."; }
-  catch(e){ $("#cap").select(); $("#capst").textContent = "Select all and copy."; }
-};
+document.querySelectorAll("button[data-copy]").forEach(b => b.onclick = async () => {
+  const id = b.dataset.copy, st = $("#" + id + "st");
+  try { await navigator.clipboard.writeText($("#" + id).value); st.textContent = "Copied."; }
+  catch(e){ $("#" + id).select(); st.textContent = "Select all and copy."; }
+});
 load();
 </script></body></html>

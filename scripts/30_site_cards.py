@@ -11,7 +11,8 @@ Writes <site>/social/:
   week_4x5.png      1080 x 1350  seven days: workable hours per trade, rain, storm risk
   howto_4x5.png     1080 x 1350  how to read the card (pin this once)
   carousel.pdf      today + week + how-to, for LinkedIn document posts
-  caption.txt       a ready-to-post caption with the link
+  caption.txt       a ready-to-post caption with the link (WhatsApp, LinkedIn, Facebook)
+  caption_x.txt     the same within X's 280 characters
 House style as src/kampala/story.py (light background, Arial, one hook / one number), standalone so the
 daily GitHub Action can run it (falls back to DejaVu Sans where Arial is missing).
 """
@@ -216,7 +217,7 @@ def today_card(W, H, path):
 def week_card(path):
     W, H = 1080, 1350
     im = Image.new("RGB", (W, H), BG); d = ImageDraw.Draw(im)
-    header(d, W, "The week on site", f"Hours each trade can go ahead, out of the {NW}-hour working day")
+    header(d, W, "The week on site", f"When each trade can go ahead ({W0:02d}-{W1:02d} h, lunch excluded)")
     x0, y0, lab_w = 64, 260, 290
     cw = (W - 128 - lab_w) / len(days)
     for j, (dd, gg) in enumerate(days):
@@ -228,12 +229,15 @@ def week_card(path):
         text(d, (x0, y + 40), name, F(26, True), INK, "lm")
         for j, (dd, gg) in enumerate(days):
             ww = gg[gg.index.hour.isin(WORK)]
-            n = int((ww[f"st_{k}"] == 0).sum()); share = n / max(len(ww), 1)
+            st = ww[f"st_{k}"].values
+            n = int((st == 0).sum()); share = n / max(len(ww), 1)
             col = GO if share >= 0.66 else CAU if share >= 0.33 else STOP
             cx = x0 + lab_w + j * cw
-            d.rounded_rectangle((cx + 5, y + 6, cx + cw - 5, y + 74), 10, fill=col)
-            text(d, (cx + cw / 2, y + 32), f"{n}h", F(30, True), (255, 255, 255), "mm")
-            text(d, (cx + cw / 2, y + 60), "go", F(16, True), (255, 255, 255), "mm")
+            d.rounded_rectangle((cx + 4, y + 5, cx + cw - 4, y + 75), 10, fill=col)
+            win = ["all day"] if len(ww) and n == len(ww) else [f"{a:02d}-{b:02d}" for a, b in runs(st == 0, ww.index)] or ["none"]
+            win = win[:2] if len(win) <= 2 else [win[0], win[1] + "+"]
+            for li, wtxt in enumerate(win):
+                text(d, (cx + cw / 2, y + (40 if len(win) == 1 else 26 + li * 26)), wtxt, F(23 if len(wtxt) <= 6 else 20, True), (255, 255, 255), "mm")
         y += 80
     y += 10
     text(d, (x0, y + 30), "Rain", F(26, True), INK, "lm")
@@ -243,13 +247,13 @@ def week_card(path):
         text(d, (cx, y + 30), f"{gg.precipitation.sum():.0f} mm", F(24, True), BLUE, "mm")
         text(d, (cx, y + 58), f"{gg.precipitation_probability.max():.0f}%", F(18), MUT, "mm")
         lvl = int(gg.thunder.max())
-        text(d, (cx, y + 96), ["low", "possible", "likely"][lvl], F(22, True), [INK2, (150, 100, 0), STOP][lvl], "mm")
+        text(d, (cx, y + 96), ["low", "possible", "likely"][lvl], F(22 if len(days) <= 6 else 18, True), [INK2, (150, 100, 0), STOP][lvl], "mm")
     y += 140
     lx = x0
-    for col, lab in ((GO, "most of the day (8h+)"), (CAU, "part of the day (4-7h)"), (STOP, "little or none (0-3h)")):
+    for col, lab in ((GO, "go most of the day"), (CAU, "part of the day"), (STOP, "little or none")):
         d.rounded_rectangle((lx, y, lx + 26, y + 26), 5, fill=col)
         text(d, (lx + 36, y + 13), lab, F(20), INK2, "lm"); lx += 36 + d.textlength(lab, font=F(20)) + 36
-    text(d, (x0, y + 60), f"Example: 3h = only 3 of the {NW} hours ({W0:02d}-{W1:02d} h) are clear of rain, storm, wind and heat limits for that trade.", F(20), MUT)
+    text(d, (x0, y + 60), "Times are the go windows: 08-13 = from 08:00 until the lunch break; + = more windows that day.", F(20), MUT)
     footer(d, W, H)
     im.save(path)
     return im
@@ -437,4 +441,14 @@ cap = [f"Site weather, {NAME}: {B['day']}.", "", B["headline"], ""] + [
     "Screening guidance from a forecast; your contract, crane limits and H&S plan come first.",
     "#Kampala #Construction #SiteSafety #HeatStress #Uganda #Weather"]
 (OUTD / "caption.txt").write_text("\n".join(cap) + "\n")
+# X: 280 characters, a link counts as 23
+short = {"labour": "Labour", "concrete": "Concrete", "asphalt": "Asphalt", "crane": "Cranes", "height": "Height", "coatings": "Painting", "earthworks": "Earthworks"}
+go = [f"{short[r['key']]} {('all day' if r['status'] == 'GO' else 'none' if r['status'] == 'STOP' else (r['windows'].replace(' h', '') or 'with care'))}" for r in B["rows"]]
+tag = " #" + NAME.replace("Central ", "").replace(" ", "") + " #Construction"
+for m in range(len(go), 0, -1):
+    xt = (f"{NAME.replace('Central ', '')} site weather, {day:%a %d %b}: {B['headline']}\nGo today: " + "; ".join(go[:m]) + ("…" if m < len(go) else "")
+          + f"\n{LINK}" + tag)
+    if len(xt.replace(LINK, "x" * 23)) <= 280:
+        break
+(OUTD / "caption_x.txt").write_text(xt + "\n")
 print("wrote", OUTD, "for", f"{day:%a %d %b}")

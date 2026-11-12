@@ -39,7 +39,7 @@ for s in SITES:
         failed.append(s["name"])
 
 
-# ---------------------------------------------------------------- national card: concrete windows this week
+# ---------------------------------------------------------------- national cards: one per activity, actual go hours
 def F(sz, b=False):
     for c in ("/System/Library/Fonts/Supplemental/Arial Bold.ttf" if b else "/System/Library/Fonts/Supplemental/Arial.ttf",
               "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf" if b else "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"):
@@ -52,6 +52,38 @@ def F(sz, b=False):
 
 BG, INK, INK2, MUT, LINE, BLUE = (246, 246, 243), (11, 11, 11), (82, 81, 78), (137, 135, 129), (225, 224, 217), (42, 120, 214)
 GO, CAU, STOP = (47, 143, 58), (224, 165, 38), (194, 52, 52)
+SITE_URL = "gavacharles.github.io/kampala-heat-atlas/site-weather"
+ACTS = [("concrete", "Concrete pour", "a pour can go ahead"), ("asphalt", "Asphalt & surfacing", "laying or spraying can go ahead"),
+        ("crane", "Crane lifts", "lifts can go ahead"), ("height", "Work at height", "roof and scaffold work can go ahead"),
+        ("coatings", "Painting & coatings", "painting can go ahead"), ("earthworks", "Earthworks", "earthworks can go ahead"),
+        ("labour", "Outdoor labour (heat)", "work can go on without heat work/rest cycles")]
+
+
+def windows(st, hours):
+    """Go windows from hourly status (0 = go) over working hours, split at gaps (lunch): ['08-13', '14-16']."""
+    out, s0, prev = [], None, None
+    for v, hh in zip(list(st) + [1], list(hours) + [None]):
+        if s0 is not None and (v != 0 or hh != prev + 1):
+            out.append(f"{s0:02d}-{prev + 1:02d}"); s0 = None
+        if v == 0 and hh is not None and s0 is None:
+            s0 = hh
+        prev = hh
+    return out
+
+
+def day_windows(df, dd, k):
+    w = df[(df.index.normalize() == dd) & df.index.hour.isin(WORK)]
+    st = w[f"st_{k}"].values
+    if len(w) and (st == 0).all():
+        return "all day", len(w), len(w)
+    win = windows(st, w.index.hour)
+    return (", ".join(win) if win else "none"), int((st == 0).sum()), len(w)
+
+
+def x_len(txt):                                              # X counts any link as 23 characters
+    return len(txt.replace(SITE_URL, "x" * 23))
+
+
 rows = []
 for s in SITES:
     p = OUT / slug(s["name"]) / "site_forecast_latest.csv"
@@ -62,46 +94,71 @@ for s in SITES:
 now = pd.Timestamp.now(tz="Africa/Kampala").tz_localize(None)
 days = sorted({d for _, df in rows for d in df.index.normalize().unique()})
 days = [d for d in days if d > now.normalize() or now.hour < W1][:6]
-W, H = 1080, 1350
-im = Image.new("RGB", (W, H), BG); d = ImageDraw.Draw(im)
-d.text((64, 64), "SITE WEATHER · UGANDA", font=F(26, True), fill=BLUE)
-d.text((64, 104), "Concrete windows this week", font=F(56, True), fill=INK)
-d.text((64, 176), f"Hours a pour can go ahead, out of the {NW}-hour working day, and daily rain", font=F(26), fill=INK2)
-x0, lab_w, y = 64, 250, 250
-cw = (W - 128 - lab_w) / max(len(days), 1)
-for j, dd in enumerate(days):
-    d.text((x0 + lab_w + (j + 0.5) * cw, y), f"{dd:%a}", font=F(26, True), fill=INK, anchor="ma")
-    d.text((x0 + lab_w + (j + 0.5) * cw, y + 34), f"{dd:%d}", font=F(20), fill=MUT, anchor="ma")
-y += 82
-region = None
-for s, df in rows:
-    if s["region"] != region:
-        region = s["region"]
-        d.text((x0, y + 4), region.upper(), font=F(18, True), fill=BLUE); y += 30
-    d.text((x0, y + 40), s["name"].replace("Central ", ""), font=F(28, True), fill=INK, anchor="lm")
+for k, name, verb in ACTS:
+    W, H = 1080, 1350
+    im = Image.new("RGB", (W, H), BG); d = ImageDraw.Draw(im)
+    d.text((64, 64), "SITE WEATHER · UGANDA", font=F(26, True), fill=BLUE)
+    d.text((64, 104), f"{name.split(' (')[0]}: this week", font=F(54, True), fill=INK)
+    d.text((64, 174), f"The hours {verb}, {W0:02d}-{W1:02d} h with lunch excluded, and daily rain", font=F(24), fill=INK2)
+    x0, lab_w, y = 64, 230, 240
+    cw = (W - 128 - lab_w) / max(len(days), 1)
     for j, dd in enumerate(days):
-        g = df[df.index.normalize() == dd]; w = g[g.index.hour.isin(WORK)]
-        n = int((w.st_concrete == 0).sum()); share = n / max(len(w), 1)
-        col = GO if share >= 0.66 else CAU if share >= 0.33 else STOP
-        cx = x0 + lab_w + j * cw
-        d.rounded_rectangle((cx + 5, y + 6, cx + cw - 5, y + 76), 10, fill=col)
-        d.text((cx + cw / 2, y + 30), f"{n}h", font=F(28, True), fill=(255, 255, 255), anchor="mm")
-        d.text((cx + cw / 2, y + 60), f"{g.precipitation.sum():.0f} mm", font=F(17, True), fill=(255, 255, 255), anchor="mm")
-    y += 84
-y += 16
-lx = x0
-for col, lab in ((GO, "most of the day (8h+)"), (CAU, "part of the day (4-7h)"), (STOP, "little or none (0-3h)")):
-    d.rounded_rectangle((lx, y, lx + 26, y + 26), 5, fill=col)
-    d.text((lx + 36, y + 13), lab, font=F(20), fill=INK2, anchor="lm"); lx += 36 + d.textlength(lab, font=F(20)) + 36
-d.line((64, H - 140, W - 64, H - 140), fill=LINE, width=2)
-d.text((64, H - 118), "Screening guidance from a forecast. Your contract and site H&S plan come first.", font=F(20), fill=MUT)
-d.text((64, H - 86), "gavacharles.github.io/kampala-heat-atlas/site-weather", font=F(22, True), fill=INK2)
-d.text((64, H - 54), "Gava Charles · Kampala Heat Atlas · forecast data Open-Meteo", font=F(20), fill=MUT)
-im.save(OUT / "uganda_week_4x5.png")
+        d.text((x0 + lab_w + (j + 0.5) * cw, y), f"{dd:%a}", font=F(26, True), fill=INK, anchor="ma")
+        d.text((x0 + lab_w + (j + 0.5) * cw, y + 34), f"{dd:%d %b}", font=F(18), fill=MUT, anchor="ma")
+    y += 76
+    region = None
+    for s, df in rows:
+        if s["region"] != region:
+            region = s["region"]
+            d.text((x0, y + 4), region.upper(), font=F(18, True), fill=BLUE); y += 28
+        d.text((x0, y + 42), s["name"].replace("Central ", ""), font=F(28, True), fill=INK, anchor="lm")
+        for j, dd in enumerate(days):
+            lab, n, nw = day_windows(df, dd, k)
+            share = n / max(nw, 1)
+            col = GO if share >= 0.66 else CAU if share >= 0.33 else STOP
+            cx = x0 + lab_w + j * cw
+            d.rounded_rectangle((cx + 4, y + 4, cx + cw - 4, y + 82), 10, fill=col)
+            parts = lab.split(", ")
+            parts = parts[:2] if len(parts) <= 2 else [parts[0], parts[1] + "+"]
+            for li, ptxt in enumerate(parts):
+                yy = y + (30 if len(parts) == 1 else 20 + li * 24)
+                d.text((cx + cw / 2, yy), ptxt, font=F(22 if len(ptxt) <= 6 else 19, True), fill=(255, 255, 255), anchor="mm")
+            g = df[df.index.normalize() == dd]
+            d.text((cx + cw / 2, y + 68), f"{g.precipitation.sum():.0f} mm", font=F(15, True), fill=(255, 255, 255), anchor="mm")
+        y += 88
+    y += 12
+    lx = x0
+    for col, lab in ((GO, "go most of the day"), (CAU, "part of the day"), (STOP, "little or none")):
+        d.rounded_rectangle((lx, y, lx + 26, y + 26), 5, fill=col)
+        d.text((lx + 36, y + 13), lab, font=F(20), fill=INK2, anchor="lm"); lx += 36 + d.textlength(lab, font=F(20)) + 36
+    d.text((x0, y + 44), "Times are the go windows: 08-13 = from 08:00 until the lunch break.", font=F(19), fill=MUT)
+    d.line((64, H - 140, W - 64, H - 140), fill=LINE, width=2)
+    d.text((64, H - 118), "Screening guidance from a forecast. Your contract and site H&S plan come first.", font=F(20), fill=MUT)
+    d.text((64, H - 86), SITE_URL, font=F(22, True), fill=INK2)
+    d.text((64, H - 54), "Gava Charles · Kampala Heat Atlas · forecast data Open-Meteo", font=F(20), fill=MUT)
+    im.save(OUT / f"uganda_{k}_4x5.png")
+    # captions: long (WhatsApp, LinkedIn, Facebook) and X (280 characters, links count as 23)
+    d0 = days[0]
+    today = [(s["name"].replace("Central ", ""), day_windows(df, d0, k)[0]) for s, df in rows]
+    short = name.split(" (")[0]
+    long_ = ([f"Site weather, Uganda: {d0:%A %d %B}. {short}, go hours today:", ""] + [f"• {t}: {w_}" for t, w_ in today] +
+             ["", f"Hour-by-hour for seven trades and your town's week ahead: {SITE_URL}", "Send us your site location to add it.", "",
+              "Screening guidance from a forecast; your contract, crane limits and H&S plan come first.",
+              "#Uganda #Construction #SiteSafety #Weather"])
+    (OUT / f"uganda_{k}_caption.txt").write_text("\n".join(long_) + "\n")
+    tags = " #Uganda #Construction"
+    for m in range(len(today), 0, -1):
+        xt = f"{short} go hours today ({d0:%a %d %b}): " + "; ".join(f"{t} {w_}" for t, w_ in today[:m]) + \
+             ("…" if m < len(today) else "") + f"\nAll towns, all trades: {SITE_URL}" + tags
+        if x_len(xt) <= 280:
+            break
+    (OUT / f"uganda_{k}_caption_x.txt").write_text(xt + "\n")
+for src, dst in (("uganda_concrete_4x5.png", "uganda_week_4x5.png"), ("uganda_concrete_caption.txt", "uganda_caption.txt")):
+    (OUT / dst).write_bytes((OUT / src).read_bytes())            # older links keep working
 
 # ---------------------------------------------------------------- data for map.html and share.html
 RANK = {"STOP": 0, "LIMITED": 1, "CAUTION": 2, "GO": 3}
-towns, cap_lines = [], []
+towns = []
 for s in SITES:
     sl = slug(s["name"]); bp = OUT / sl / "site_briefing_latest.json"
     if not bp.exists():
@@ -112,15 +169,8 @@ for s in SITES:
                       headline=b0["headline"], worst=worst, facts=b0["facts"],
                       rows=[dict(trade=r["trade"], status=r["status"], label=r["label"]) for r in b0["rows"]],
                       outlook=[dict(day=b["day"], headline=b["headline"]) for b in bj["days"][1:4]]))
-    conc = next(r for r in b0["rows"] if r["key"] == "concrete")
-    cap_lines.append(f"• {s['name'].replace('Central ', '')}: concrete {conc['label']}" + (f"; storms {b0['facts']['storm']}" if b0["facts"]["storm"] != "low" else ""))
-(OUT / "towns_today.json").write_text(json.dumps(dict(issued=f"{pd.Timestamp.now(tz='Africa/Kampala'):%Y-%m-%d %H:%M}", towns=towns), indent=1))
-(OUT / "uganda_caption.txt").write_text("\n".join(
-    [f"Site weather, Uganda: {towns[0]['day'] if towns else ''}.", ""] + cap_lines +
-    ["", "Hour-by-hour briefing for your town, the week ahead and the monthly record: gavacharles.github.io/kampala-heat-atlas/site-weather",
-     "Send us your site location to add it.", "",
-     "Screening guidance from a forecast; your contract, crane limits and H&S plan come first.",
-     "#Uganda #Construction #SiteSafety #Weather #Kampala #Gulu #Mbarara #Mbale"]) + "\n")
+(OUT / "towns_today.json").write_text(json.dumps(dict(issued=f"{pd.Timestamp.now(tz='Africa/Kampala'):%Y-%m-%d %H:%M}", towns=towns,
+                                                     activities=[dict(key=k, name=n) for k, n, _ in ACTS]), indent=1))
 
 # ---------------------------------------------------------------- landing page
 cards = ""
