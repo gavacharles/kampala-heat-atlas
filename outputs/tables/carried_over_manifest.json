@@ -1,0 +1,141 @@
+{
+  "date": "2026-11-11",
+  "items": [
+    {
+      "file": "carried/uganda-rainfall-climate/sat_lst.nc",
+      "source_repo": "uganda-rainfall-climate",
+      "source_path": "data/kd/sat_lst.nc",
+      "script": "src/kd_heat.py + kd_satellite.py",
+      "description": "Landsat 8/9 dry-season LST + NDVI, early 2014-16 / late 2023-25, 30 m",
+      "used_in": "M2,M3"
+    },
+    {
+      "file": "carried/uganda-rainfall-climate/sat_modis_lst.nc",
+      "source_repo": "uganda-rainfall-climate",
+      "source_path": "data/kd/sat_modis_lst.nc",
+      "script": "src/kd_heat.py",
+      "description": "MODIS day/night LST medians 2013-16 / 2022-25, 1 km",
+      "used_in": "M2,M3"
+    },
+    {
+      "file": "carried/uganda-rainfall-climate/sat_iolulc.nc",
+      "source_repo": "uganda-rainfall-climate",
+      "source_path": "data/kd/sat_iolulc.nc",
+      "script": "src/kd_satellite.py",
+      "description": "Impact Observatory 10 m LULC 2017-2023",
+      "used_in": "M1 (reference)"
+    },
+    {
+      "file": "carried/uganda-rainfall-climate/kampala_ghsl_built.nc",
+      "source_repo": "uganda-rainfall-climate",
+      "source_path": "data/processed/kampala_ghsl_built.nc",
+      "script": "src/fetch_kampala.py",
+      "description": "JRC GHSL built-up surface 1975-2030 (100 m)",
+      "used_in": "M1 (long-term context)"
+    },
+    {
+      "file": "carried/uganda-rainfall-climate/kampala_ghs_pop.nc",
+      "source_repo": "uganda-rainfall-climate",
+      "source_path": "data/processed/kampala_ghs_pop.nc",
+      "script": "src/fetch_kampala.py",
+      "description": "JRC GHS-POP 1975-2030 (100 m)",
+      "used_in": "M3,M4"
+    },
+    {
+      "file": "carried/uganda-rainfall-climate/kampala_catchments.tif",
+      "source_repo": "uganda-rainfall-climate",
+      "source_path": "data/processed/kampala_catchments.tif",
+      "script": "src/kampala_catchments.py",
+      "description": "Catchments + HAND from D8 routing (30 m)",
+      "used_in": "M3 (valley vs hill), M4"
+    },
+    {
+      "file": "carried/uganda-rainfall-climate/kampala_worldcover.tif",
+      "source_repo": "uganda-rainfall-climate",
+      "source_path": "data/processed/kampala_worldcover.tif",
+      "script": "src/fetch_kampala.py",
+      "description": "ESA WorldCover 2021 (10 m)",
+      "used_in": "M1 (reference labels)"
+    },
+    {
+      "file": "carried/uganda-rainfall-climate/kampala_waterways.geojson",
+      "source_repo": "uganda-rainfall-climate",
+      "source_path": "data/processed/kampala_waterways.geojson",
+      "script": "src/fetch_kampala.py",
+      "description": "OSM drainage channels",
+      "used_in": "M3,M4"
+    },
+    {
+      "file": "carried/uganda-rainfall-climate/kd_heat_summary.csv",
+      "source_repo": "uganda-rainfall-climate",
+      "source_path": "results/kd_heat_summary.csv",
+      "script": "src/kd_heat.py",
+      "description": "P3 heat-flood exposure results",
+      "used_in": "M3 (comparison)"
+    },
+    {
+      "file": "carried/uganda-rainfall-climate/kd_heat_regression.csv",
+      "source_repo": "uganda-rainfall-climate",
+      "source_path": "results/kd_heat_regression.csv",
+      "script": "src/kd_heat.py",
+      "description": "P3 LST regression (low ground vs hills)",
+      "used_in": "M3 (comparison)"
+    },
+    {
+      "file": "carried/uganda-rainfall-climate/kd_heat_by_density.csv",
+      "source_repo": "uganda-rainfall-climate",
+      "source_path": "results/kd_heat_by_density.csv",
+      "script": "src/kd_heat.py",
+      "description": "P3 heat by built-up quintile",
+      "used_in": "M3 (comparison)"
+    },
+    {
+      "file": "carried/uganda-rainfall-climate/kd_lulc_valley.csv",
+      "source_repo": "uganda-rainfall-climate",
+      "source_path": "results/kd_lulc_valley.csv",
+      "script": "src/kd_satellite.py",
+      "description": "Valley-floor built/wetland change 2017-23",
+      "used_in": "M1 (comparison)"
+    },
+    {
+      "file": "carried/kampala-cbd-fire-safety/building_heights.csv",
+      "source_repo": "kampala-cbd-fire-safety",
+      "source_path": "data/gis/building_heights.csv",
+      "script": "scripts/gee/01_building_heights.py",
+      "description": "Open Buildings 2.5D p90 height per footprint, 2016 & 2023, CBD",
+      "used_in": "M0 (height calibration)"
+    },
+    {
+      "file": "carried/kampala-cbd-fire-safety/building_heights_yearly.csv",
+      "source_repo": "kampala-cbd-fire-safety",
+      "source_path": "data/gis/building_heights_yearly.csv",
+      "script": "scripts/gee/04_extra_layers.py",
+      "description": "p90 height per footprint, yearly 2016-2023, CBD",
+      "used_in": "M0"
+    },
+    {
+      "file": "carried/kampala-cbd-fire-safety/height_validation.csv",
+      "source_repo": "kampala-cbd-fire-safety",
+      "source_path": "data/gis/height_validation.csv",
+      "script": "scripts/gis/04_heights_standards.py",
+      "description": "Height vs OSM building:levels (r = 0.86)",
+      "used_in": "M0 (calibration)"
+    },
+    {
+      "file": "carried/kampala-cbd-fire-safety/landsat_lst_dry.tif",
+      "source_repo": "kampala-cbd-fire-safety",
+      "source_path": "data/gis/landsat_lst_dry.tif",
+      "script": "scripts/gee/03_remote_sensing.py",
+      "description": "Landsat LST dry-season median 2019-25, CBD",
+      "used_in": "M2 (CBD check)"
+    },
+    {
+      "file": "carried/kampala-cbd-fire-safety/lst_summary.json",
+      "source_repo": "kampala-cbd-fire-safety",
+      "source_path": "data/gis/lst_summary.json",
+      "script": "scripts/gee/03_remote_sensing.py",
+      "description": "CBD LST summary",
+      "used_in": "M2"
+    }
+  ]
+}

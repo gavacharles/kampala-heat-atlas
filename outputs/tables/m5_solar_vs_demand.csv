@@ -1,0 +1,4 @@
+benchmark,demand_GWh,10% of roofs (largest first) %,25% of roofs (largest first) %,50% of roofs (largest first) %,100% of roofs (largest first) %
+national distribution sales 2024 (Umeme),4674.0,267.81303431903456,438.4079783949487,600.1423641704807,713.8825265025527
+"study area, low (25 % of national)",1168.5,1071.2521372761382,1753.6319135797949,2400.569456681923,2855.5301060102106
+"study area, high (50 % of national)",2337.0,535.6260686380691,876.8159567898974,1200.2847283409615,1427.7650530051053

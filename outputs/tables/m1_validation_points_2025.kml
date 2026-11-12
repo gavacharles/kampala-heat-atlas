@@ -1,0 +1,4566 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document id="root_doc">
+    <Schema id="m1_validation_points_2025" name="m1_validation_points_2025">
+      <SimpleField name="map_class" type="string"/>
+      <SimpleField name="ref_class" type="string"/>
+    </Schema>
+    <Schema id="m1_validation_points_2025.schema">
+      <SimpleField name="map_class" type="string"/>
+      <SimpleField name="ref_class" type="string"/>
+    </Schema>
+    <Document id="m1_validation_points_2025">
+      <name>m1_validation_points_2025</name>
+      <Placemark id="m1_validation_points_2025.1">
+        <name>built_dense</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">1</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5563653978353,0.351070369195011,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.2">
+        <name>built_dense</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">1</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7032079419448,0.367270688473565,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.3">
+        <name>built_dense</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">1</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.532195484221,0.255080433119109,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.4">
+        <name>built_dense</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">1</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6480305826152,0.326556549266076,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.5">
+        <name>built_dense</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">1</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5615811596258,0.265304635762684,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.6">
+        <name>built_dense</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">1</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5511547246102,0.316239048929058,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.7">
+        <name>built_dense</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">1</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5977045179911,0.340487161186749,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.8">
+        <name>built_dense</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">1</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5982467032859,0.258520573028786,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.9">
+        <name>built_dense</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">1</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5727216207031,0.339581373437479,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.10">
+        <name>built_dense</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">1</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5875514544274,0.292899115145103,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.11">
+        <name>built_dense</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">1</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5441399376374,0.419465258396577,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.12">
+        <name>built_dense</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">1</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7541602827036,0.463715664652638,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.13">
+        <name>built_dense</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">1</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6151418131336,0.249926348728407,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.14">
+        <name>built_dense</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">1</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7866008129502,0.538537428223431,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.15">
+        <name>built_dense</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">1</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5120533048404,0.482339806370541,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.16">
+        <name>built_dense</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">1</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4993028618668,0.302123398743673,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.17">
+        <name>built_dense</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">1</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.459042148633,0.325552939948097,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.18">
+        <name>built_dense</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">1</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5334529697403,0.271998387448571,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.19">
+        <name>built_dense</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">1</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5232949243111,0.345097714011691,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.20">
+        <name>built_dense</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">1</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.556552279163,0.129236977012705,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.21">
+        <name>built_dense</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">1</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5206067578029,0.106709303355615,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.22">
+        <name>built_dense</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">1</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5072071605994,0.378027871180584,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.23">
+        <name>built_dense</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">1</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.707072267784,0.367361288716266,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.24">
+        <name>built_dense</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">1</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5756880924122,0.318863735405629,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.25">
+        <name>built_dense</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">1</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5948314445913,0.269196022956589,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.26">
+        <name>built_dense</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">1</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5777580677381,0.232283416157104,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.27">
+        <name>built_dense</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">1</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7028470373366,0.40834490558974,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.28">
+        <name>built_dense</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">1</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5222200049297,0.266569748018944,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.29">
+        <name>built_dense</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">1</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5646361469729,0.277880142078783,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.30">
+        <name>built_dense</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">1</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5590686088757,0.122723149759528,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.31">
+        <name>built_dense</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">1</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4552666155383,0.347355761777657,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.32">
+        <name>built_dense</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">1</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.3743896877969,0.331428409363852,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.33">
+        <name>built_dense</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">1</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6243976953538,0.261959282989217,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.34">
+        <name>built_dense</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">1</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5957309980568,0.2406072638451,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.35">
+        <name>built_dense</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">1</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5428010864317,0.208850533230118,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.36">
+        <name>built_dense</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">1</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4895987107951,0.27308223460453,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.37">
+        <name>built_dense</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">1</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5808080523763,0.374051052894325,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.38">
+        <name>built_dense</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">1</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.512960538598,0.341297454803938,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.39">
+        <name>built_dense</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">1</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.643626344051,0.347093388101727,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.40">
+        <name>built_dense</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">1</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6320322657852,0.376767502120188,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.41">
+        <name>built_dense</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">1</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6820846610021,0.473574188092735,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.42">
+        <name>built_dense</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">1</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7638674424948,0.424541487547836,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.43">
+        <name>built_dense</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">1</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7058146347971,0.351076304994138,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.44">
+        <name>built_dense</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">1</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6072320198345,0.29796620134549,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.45">
+        <name>built_dense</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">1</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7410417378535,0.391970774101178,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.46">
+        <name>built_dense</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">1</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6387746042107,0.316875789809013,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.47">
+        <name>built_dense</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">1</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6240341935474,0.373600668577328,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.48">
+        <name>built_dense</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">1</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6813677493369,0.426528885210838,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.49">
+        <name>built_dense</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">1</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5943775668636,0.382827363887061,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.50">
+        <name>built_dense</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">1</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7389748291183,0.389708905767391,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.51">
+        <name>built_sparse</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">2</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5017272215749,0.343287208098036,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.52">
+        <name>built_sparse</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">2</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5755036816651,0.41774809310594,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.53">
+        <name>built_sparse</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">2</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6247516326302,0.407436906365974,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.54">
+        <name>built_sparse</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">2</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6712166087796,0.318595838042507,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.55">
+        <name>built_sparse</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">2</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5817911974619,0.474473533685387,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.56">
+        <name>built_sparse</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">2</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7294486275638,0.393870318815147,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.57">
+        <name>built_sparse</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">2</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5560875411296,0.496184802763816,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.58">
+        <name>built_sparse</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">2</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4945357352802,0.383545780684248,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.59">
+        <name>built_sparse</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">2</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5888050729734,0.397845241101877,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.60">
+        <name>built_sparse</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">2</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.3982943282866,0.316593134318468,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.61">
+        <name>built_sparse</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">2</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7850770156679,0.408438014511508,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.62">
+        <name>built_sparse</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">2</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7157928821253,0.236267657444593,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.63">
+        <name>built_sparse</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">2</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5650892576508,0.140545939107322,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.64">
+        <name>built_sparse</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">2</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7546129857662,0.353068112273175,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.65">
+        <name>built_sparse</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">2</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5595984140474,0.394858200522283,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.66">
+        <name>built_sparse</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">2</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.552950623643,0.347903743887741,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.67">
+        <name>built_sparse</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">2</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6327501219953,0.401828061696555,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.68">
+        <name>built_sparse</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">2</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5869249401701,0.212108710244402,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.69">
+        <name>built_sparse</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">2</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6456012555957,0.401195333646794,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.70">
+        <name>built_sparse</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">2</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4669498160648,0.333966996281893,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.71">
+        <name>built_sparse</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">2</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5715537178709,0.331258029929775,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.72">
+        <name>built_sparse</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">2</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6759800491315,0.303215808802482,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.73">
+        <name>built_sparse</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">2</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5215928818962,0.210568826828799,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.74">
+        <name>built_sparse</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">2</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.3885881685649,0.331157898205024,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.75">
+        <name>built_sparse</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">2</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6055182233367,0.441453050599318,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.76">
+        <name>built_sparse</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">2</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4062061528908,0.240690753370894,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.77">
+        <name>built_sparse</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">2</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5841321013035,0.395311825891443,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.78">
+        <name>built_sparse</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">2</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.3774445992294,0.338575553782974,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.79">
+        <name>built_sparse</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">2</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4536404316697,0.474193134091004,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.80">
+        <name>built_sparse</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">2</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6433583553517,0.300952992768293,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.81">
+        <name>built_sparse</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">2</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.516006346198,0.497991369607447,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.82">
+        <name>built_sparse</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">2</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.3850812157177,0.3660782730535,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.83">
+        <name>built_sparse</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">2</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6570182826758,0.296429859759545,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.84">
+        <name>built_sparse</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">2</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7370929744289,0.128334782452943,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.85">
+        <name>built_sparse</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">2</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.784627908285,0.399390757570481,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.86">
+        <name>built_sparse</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">2</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6076707185407,0.517629695182689,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.87">
+        <name>built_sparse</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">2</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.379235807454,0.423343952402421,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.88">
+        <name>built_sparse</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">2</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5340805166545,0.308910213572663,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.89">
+        <name>built_sparse</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">2</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5970735368285,0.383822671130063,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.90">
+        <name>built_sparse</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">2</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.512861527313,0.490482144849514,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.91">
+        <name>built_sparse</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">2</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6500926576973,0.445707451618226,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.92">
+        <name>built_sparse</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">2</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7099475693034,0.381927364043065,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.93">
+        <name>built_sparse</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">2</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6385951761091,0.307919124997079,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.94">
+        <name>built_sparse</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">2</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.453657071483,0.153480648256867,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.95">
+        <name>built_sparse</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">2</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4014466241346,0.149227237916757,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.96">
+        <name>built_sparse</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">2</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5172612606853,0.540602752168117,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.97">
+        <name>built_sparse</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">2</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.507119875333,0.329083740921815,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.98">
+        <name>built_sparse</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">2</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.3668323210009,0.449488057039817,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.99">
+        <name>built_sparse</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">2</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7899258145093,0.544870615544341,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.100">
+        <name>built_sparse</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">2</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7717730372849,0.51383793927922,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.101">
+        <name>tree_cover</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">3</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4698328056003,0.142986627201519,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.102">
+        <name>tree_cover</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">3</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.3547826356455,0.531269430829704,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.103">
+        <name>tree_cover</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">3</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.8496010535029,0.509226150620822,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.104">
+        <name>tree_cover</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">3</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7097713927364,0.254542866396072,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.105">
+        <name>tree_cover</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">3</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.630675546737,0.545677147553047,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.106">
+        <name>tree_cover</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">3</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7530889692975,0.156200406895808,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.107">
+        <name>tree_cover</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">3</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4719792481601,0.386348955783352,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.108">
+        <name>tree_cover</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">3</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7038339979138,0.449781058383862,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.109">
+        <name>tree_cover</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">3</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7885840628252,0.315522870690545,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.110">
+        <name>tree_cover</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">3</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.3771814727745,0.214544272798918,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.111">
+        <name>tree_cover</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">3</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.8277654399291,0.382111499017779,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.112">
+        <name>tree_cover</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">3</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.3859894195969,0.176276711015881,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.113">
+        <name>tree_cover</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">3</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7472476306665,0.155114670061472,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.114">
+        <name>tree_cover</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">3</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7565911285623,0.310546190866789,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.115">
+        <name>tree_cover</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">3</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.8225517768952,0.439199636521744,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.116">
+        <name>tree_cover</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">3</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.3734022999018,0.313244346501151,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.117">
+        <name>tree_cover</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">3</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6854200122505,0.100559364776065,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.118">
+        <name>tree_cover</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">3</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5053281430537,0.183698805514494,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.119">
+        <name>tree_cover</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">3</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5068453269289,0.417924996833845,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.120">
+        <name>tree_cover</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">3</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6548630730955,0.239251826725068,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.121">
+        <name>tree_cover</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">3</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.752366730237,0.335516435139341,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.122">
+        <name>tree_cover</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">3</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.8222860338126,0.221612864693849,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.123">
+        <name>tree_cover</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">3</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4015310069888,0.287733985194178,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.124">
+        <name>tree_cover</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">3</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6918002704599,0.124172569952518,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.125">
+        <name>tree_cover</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">3</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7051891612537,0.206140286415949,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.126">
+        <name>tree_cover</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">3</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7029416169103,0.24884298044065,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.127">
+        <name>tree_cover</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">3</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6674443961785,0.239704497452264,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.128">
+        <name>tree_cover</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">3</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7059077115619,0.226134595040503,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.129">
+        <name>tree_cover</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">3</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4075369712654,0.499068072319583,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.130">
+        <name>tree_cover</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">3</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.3965825855845,0.384263137121636,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.131">
+        <name>tree_cover</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">3</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4998466379935,0.175194504074409,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.132">
+        <name>tree_cover</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">3</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.8467303056083,0.196914065509393,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.133">
+        <name>tree_cover</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">3</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4226340399904,0.504135656643277,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.134">
+        <name>tree_cover</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">3</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.8032341291028,0.21862702690271,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.135">
+        <name>tree_cover</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">3</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7490449348174,0.158009803802294,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.136">
+        <name>tree_cover</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">3</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5127672184012,0.548473260151795,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.137">
+        <name>tree_cover</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">3</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4169034450594,0.133576620100406,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.138">
+        <name>tree_cover</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">3</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.8143778777083,0.204875327473902,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.139">
+        <name>tree_cover</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">3</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.3673736714683,0.423614389880361,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.140">
+        <name>tree_cover</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">3</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7370930374885,0.122001730291033,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.141">
+        <name>tree_cover</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">3</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4666778491792,0.37540185514707,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.142">
+        <name>tree_cover</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">3</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.8407076574388,0.318780824777629,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.143">
+        <name>tree_cover</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">3</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6267336441071,0.280867830670337,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.144">
+        <name>tree_cover</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">3</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5616734574781,0.183609815848931,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.145">
+        <name>tree_cover</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">3</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.3549832338093,0.26158636881216,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.146">
+        <name>tree_cover</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">3</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7623362792433,0.523880015867516,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.147">
+        <name>tree_cover</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">3</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.3572230533081,0.371232946293804,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.148">
+        <name>tree_cover</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">3</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.804043478,0.171943179223835,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.149">
+        <name>tree_cover</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">3</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7591993746431,0.198722470463864,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.150">
+        <name>tree_cover</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">3</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4774519328461,0.514453815139893,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.151">
+        <name>grass_cropland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">4</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5154711455951,0.439728766184267,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.152">
+        <name>grass_cropland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">4</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4988544521901,0.281405832775197,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.153">
+        <name>grass_cropland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">4</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.424522191723,0.493098671005241,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.154">
+        <name>grass_cropland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">4</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7320493878833,0.537630539407446,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.155">
+        <name>grass_cropland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">4</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6650184299107,0.221067295411694,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.156">
+        <name>grass_cropland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">4</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6970078686742,0.341938367027983,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.157">
+        <name>grass_cropland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">4</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5189880609074,0.164338618289951,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.158">
+        <name>grass_cropland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">4</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4705518920192,0.135115819771395,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.159">
+        <name>grass_cropland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">4</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.8378277545746,0.518815969392235,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.160">
+        <name>grass_cropland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">4</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7823840378931,0.269834151580433,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.161">
+        <name>grass_cropland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">4</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.8147353794204,0.334974988355256,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.162">
+        <name>grass_cropland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">4</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6480223940922,0.510303899934693,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.163">
+        <name>grass_cropland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">4</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4019693215248,0.452114614144295,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.164">
+        <name>grass_cropland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">4</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7877754739606,0.304213793417246,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.165">
+        <name>grass_cropland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">4</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4214866182415,0.126701123947459,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.166">
+        <name>grass_cropland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">4</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4621007875064,0.257429872593284,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.167">
+        <name>grass_cropland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">4</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7700671438341,0.465616121971585,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.168">
+        <name>grass_cropland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">4</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5646241474066,0.509303587318089,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.169">
+        <name>grass_cropland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">4</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4834917141369,0.160538010015469,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.170">
+        <name>grass_cropland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">4</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.8360307653445,0.501988002070127,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.171">
+        <name>grass_cropland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">4</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4408040319846,0.231645347270032,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.172">
+        <name>grass_cropland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">4</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4292963578088,0.335864708366464,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.173">
+        <name>grass_cropland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">4</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6012893370925,0.528485797293096,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.174">
+        <name>grass_cropland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">4</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.640747647438,0.417841839821398,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.175">
+        <name>grass_cropland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">4</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6597995024446,0.422366267725353,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.176">
+        <name>grass_cropland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">4</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.8132065610186,0.386634823371191,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.177">
+        <name>grass_cropland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">4</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.375559450578,0.305916592305742,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.178">
+        <name>grass_cropland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">4</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5799938133165,0.474835306589434,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.179">
+        <name>grass_cropland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">4</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.3831005467877,0.416197305962587,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.180">
+        <name>grass_cropland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">4</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5359585445136,0.475194352621932,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.181">
+        <name>grass_cropland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">4</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4745794457613,0.472837727152456,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.182">
+        <name>grass_cropland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">4</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.8327108649242,0.205508839882338,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.183">
+        <name>grass_cropland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">4</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4870672190826,0.520968398294447,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.184">
+        <name>grass_cropland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">4</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4461964059782,0.217351479239538,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.185">
+        <name>grass_cropland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">4</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6535050124369,0.499176217223343,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.186">
+        <name>grass_cropland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">4</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6543216457077,0.315971609285959,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.187">
+        <name>grass_cropland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">4</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7714205077695,0.251015691356822,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.188">
+        <name>grass_cropland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">4</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4411478714961,0.488214785031036,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.189">
+        <name>grass_cropland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">4</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.3601001141669,0.350877986660118,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.190">
+        <name>grass_cropland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">4</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4337882625287,0.358120260863457,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.191">
+        <name>grass_cropland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">4</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.8241716462793,0.331084838237403,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.192">
+        <name>grass_cropland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">4</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.3630611145851,0.412034199203536,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.193">
+        <name>grass_cropland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">4</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.494795600991,0.523864051520075,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.194">
+        <name>grass_cropland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">4</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.3875173399795,0.168315584292711,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.195">
+        <name>grass_cropland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">4</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4007154945115,0.396386157146275,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.196">
+        <name>grass_cropland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">4</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4194936582165,0.444878573356521,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.197">
+        <name>grass_cropland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">4</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.8059296254834,0.256716026322392,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.198">
+        <name>grass_cropland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">4</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4757638551756,0.141629724533803,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.199">
+        <name>grass_cropland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">4</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4194998338343,0.357214676861847,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.200">
+        <name>grass_cropland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">4</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5643569587715,0.47193927829807,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.201">
+        <name>bare_soil</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">5</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.375022212356,0.270272288734642,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.202">
+        <name>bare_soil</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">5</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5283325809373,0.21626864598252,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.203">
+        <name>bare_soil</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">5</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5486369833254,0.349079650755456,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.204">
+        <name>bare_soil</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">5</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.594823965091,0.441000117713438,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.205">
+        <name>bare_soil</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">5</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4559037094197,0.151671325438121,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.206">
+        <name>bare_soil</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">5</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4005315061605,0.451752622399065,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.207">
+        <name>bare_soil</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">5</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7911904921208,0.302675827873774,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.208">
+        <name>bare_soil</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">5</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4542856137238,0.17220774707118,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.209">
+        <name>bare_soil</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">5</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5326461430962,0.215002198988571,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.210">
+        <name>bare_soil</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">5</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.3865275188786,0.20658347737556,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.211">
+        <name>bare_soil</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">5</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6501780446347,0.532288559843639,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.212">
+        <name>bare_soil</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">5</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.8153643687499,0.339770049831564,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.213">
+        <name>bare_soil</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">5</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5271640262817,0.226039371752694,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.214">
+        <name>bare_soil</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">5</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5309386705296,0.21617825721149,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.215">
+        <name>bare_soil</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">5</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5421719404917,0.211926502171787,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.216">
+        <name>bare_soil</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">5</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4615638063399,0.19799165055431,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.217">
+        <name>bare_soil</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">5</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5347930161961,0.432130516551861,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.218">
+        <name>bare_soil</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">5</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5499849481929,0.349713007848834,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.219">
+        <name>bare_soil</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">5</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6261937896433,0.300771471845603,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.220">
+        <name>bare_soil</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">5</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.3902911507085,0.397109134629958,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.221">
+        <name>bare_soil</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">5</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.8288434418036,0.403101184307571,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.222">
+        <name>bare_soil</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">5</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5412559383357,0.543047318405984,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.223">
+        <name>bare_soil</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">5</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7422105522138,0.374509680727713,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.224">
+        <name>bare_soil</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">5</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.627987088265,0.402732556473021,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.225">
+        <name>bare_soil</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">5</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5125129186327,0.305471386638275,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.226">
+        <name>bare_soil</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">5</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4048557511849,0.291805229300795,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.227">
+        <name>bare_soil</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">5</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7342157432818,0.231653945287335,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.228">
+        <name>bare_soil</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">5</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6999742767131,0.316153981197435,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.229">
+        <name>bare_soil</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">5</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4274948410223,0.401997114293656,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.230">
+        <name>bare_soil</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">5</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.439986326154,0.398831580327935,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.231">
+        <name>bare_soil</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">5</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.8088062114006,0.194289965116586,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.232">
+        <name>bare_soil</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">5</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7195617471082,0.432139645318333,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.233">
+        <name>bare_soil</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">5</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.3809339797345,0.527291543430252,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.234">
+        <name>bare_soil</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">5</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4178726110226,0.48712717657548,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.235">
+        <name>bare_soil</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">5</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.8490630264473,0.454852011253925,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.236">
+        <name>bare_soil</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">5</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6700487885606,0.303939401270962,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.237">
+        <name>bare_soil</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">5</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5294867517192,0.494464022184821,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.238">
+        <name>bare_soil</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">5</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7395184153109,0.202160112859435,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.239">
+        <name>bare_soil</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">5</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7233340633624,0.488684794875223,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.240">
+        <name>bare_soil</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">5</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5214139741559,0.181618437645728,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.241">
+        <name>bare_soil</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">5</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7990072073276,0.388896310313997,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.242">
+        <name>bare_soil</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">5</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4437708091623,0.196453089044098,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.243">
+        <name>bare_soil</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">5</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7939758690044,0.32981763763779,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.244">
+        <name>bare_soil</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">5</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4038665887128,0.304108849419705,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.245">
+        <name>bare_soil</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">5</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4684803388297,0.276609611916336,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.246">
+        <name>bare_soil</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">5</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.3829302699793,0.268282403433072,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.247">
+        <name>bare_soil</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">5</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7900179702998,0.474302105127229,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.248">
+        <name>bare_soil</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">5</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.8237238412668,0.227945970423396,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.249">
+        <name>bare_soil</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">5</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.3638784482665,0.284384636688311,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.250">
+        <name>bare_soil</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">5</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7414963556678,0.137020159320079,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.251">
+        <name>wetland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">6</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4177932615207,0.343372902819181,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.252">
+        <name>wetland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">6</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6926959002806,0.284036277198187,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.253">
+        <name>wetland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">6</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4766606623577,0.207853293757672,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.254">
+        <name>wetland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">6</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.3622651166508,0.193193328104771,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.255">
+        <name>wetland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">6</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7119272394029,0.294893411380281,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.256">
+        <name>wetland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">6</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4369376327369,0.283031426440176,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.257">
+        <name>wetland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">6</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.3637912814032,0.229923194604179,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.258">
+        <name>wetland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">6</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6620422751405,0.505328725302466,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.259">
+        <name>wetland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">6</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.8419635713177,0.442185675392826,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.260">
+        <name>wetland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">6</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7522800986684,0.161900150869481,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.261">
+        <name>wetland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">6</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7512016937756,0.161990609847972,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.262">
+        <name>wetland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">6</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4365837768283,0.120006772936987,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.263">
+        <name>wetland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">6</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7224446077648,0.136929472684052,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.264">
+        <name>wetland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">6</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4740486293389,0.343828531459835,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.265">
+        <name>wetland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">6</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6912573271138,0.309187396303294,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.266">
+        <name>wetland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">6</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.758211201854,0.171671233315624,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.267">
+        <name>wetland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">6</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7394221454142,0.450868090489835,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.268">
+        <name>wetland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">6</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.389405586759,0.126881318720235,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.269">
+        <name>wetland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">6</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4807966299164,0.122812204944182,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.270">
+        <name>wetland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">6</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7043781725949,0.302311907936572,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.271">
+        <name>wetland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">6</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.3805991104445,0.124890816147009,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.272">
+        <name>wetland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">6</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6926959668873,0.281503066665052,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.273">
+        <name>wetland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">6</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4661485663861,0.13502525358781,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.274">
+        <name>wetland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">6</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5081152735786,0.126069637054651,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.275">
+        <name>wetland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">6</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4178019913371,0.137104910307947,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.276">
+        <name>wetland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">6</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6400275412147,0.442630939633753,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.277">
+        <name>wetland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">6</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7051865343887,0.318415929083942,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.278">
+        <name>wetland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">6</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6876635732981,0.274988965184893,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.279">
+        <name>wetland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">6</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7301709904948,0.267390351666272,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.280">
+        <name>wetland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">6</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.3542685870633,0.157729825179807,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.281">
+        <name>wetland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">6</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4966126510871,0.125798006893093,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.282">
+        <name>wetland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">6</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4088069664844,0.341110641224992,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.283">
+        <name>wetland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">6</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5512498611656,0.149592709307589,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.284">
+        <name>wetland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">6</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6733768197105,0.181169487069036,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.285">
+        <name>wetland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">6</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7781617623631,0.16669549224673,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.286">
+        <name>wetland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">6</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4382906771162,0.142533528316372,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.287">
+        <name>wetland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">6</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5019146597705,0.124802942716902,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.288">
+        <name>wetland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">6</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4329886964289,0.144252302273867,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.289">
+        <name>wetland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">6</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.50631796614,0.127155239829676,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.290">
+        <name>wetland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">6</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4749555237799,0.120278949436571,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.291">
+        <name>wetland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">6</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6929649046565,0.305839989439185,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.292">
+        <name>wetland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">6</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7222626783136,0.266485453650936,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.293">
+        <name>wetland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">6</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7180387876397,0.271913677893145,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.294">
+        <name>wetland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">6</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5792866604957,0.200528257376075,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.295">
+        <name>wetland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">6</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7208239049044,0.303669426581311,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.296">
+        <name>wetland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">6</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4875351338628,0.178360601145042,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.297">
+        <name>wetland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">6</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7415836642218,0.290189590490686,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.298">
+        <name>wetland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">6</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7499415528453,0.281413971634017,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.299">
+        <name>wetland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">6</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.8402599087971,0.188861927589531,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.300">
+        <name>wetland</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">6</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.753268948795,0.133491865078234,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.301">
+        <name>water</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">7</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6760735488554,0.133490963373652,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.302">
+        <name>water</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">7</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6892835526131,0.15873276486841,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.303">
+        <name>water</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">7</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5766821440177,0.12435190786039,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.304">
+        <name>water</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">7</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7130980018059,0.172394381377222,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.305">
+        <name>water</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">7</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5819832343952,0.175015588628588,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.306">
+        <name>water</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">7</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6622330581218,0.198087460186746,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.307">
+        <name>water</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">7</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4619254740842,0.109693807274531,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.308">
+        <name>water</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">7</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6598076077404,0.144618739970608,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.309">
+        <name>water</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">7</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6212536929478,0.213376190202929,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.310">
+        <name>water</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">7</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7806785475544,0.1122310971698,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.311">
+        <name>water</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">7</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6222431944354,0.168773939113962,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.312">
+        <name>water</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">7</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6740065469212,0.139281121959363,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.313">
+        <name>water</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">7</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5507112177307,0.119737488779314,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.314">
+        <name>water</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">7</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6829018071061,0.225319861933263,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.315">
+        <name>water</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">7</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.8347785367833,0.116664620159693,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.316">
+        <name>water</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">7</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6235912244545,0.166602657495365,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.317">
+        <name>water</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">7</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6673554929921,0.195735303123179,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.318">
+        <name>water</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">7</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.584679264484,0.172030114641914,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.319">
+        <name>water</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">7</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6681655813253,0.112320501608575,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.320">
+        <name>water</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">7</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6370695882581,0.235903926639745,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.321">
+        <name>water</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">7</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6685235268803,0.207134748191665,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.322">
+        <name>water</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">7</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6241304454827,0.165245600315984,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.323">
+        <name>water</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">7</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6563898709567,0.274264328386427,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.324">
+        <name>water</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">7</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.669689991327,0.280959603885326,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.325">
+        <name>water</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">7</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6099318712055,0.153212679203481,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.326">
+        <name>water</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">7</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6057988481199,0.100468023619851,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.327">
+        <name>water</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">7</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7317909543867,0.1165733495061,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.328">
+        <name>water</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">7</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6366192048137,0.273449499005689,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.329">
+        <name>water</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">7</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6151439477358,0.160631402277286,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.330">
+        <name>water</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">7</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6135272145001,0.106077322409347,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.331">
+        <name>water</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">7</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.8179733396024,0.120102477358724,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.332">
+        <name>water</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">7</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6000474388853,0.102186900640819,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.333">
+        <name>water</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">7</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6543260583182,0.124353046354423,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.334">
+        <name>water</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">7</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6589061051722,0.275621473372121,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.335">
+        <name>water</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">7</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6713101509274,0.16615115888746,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.336">
+        <name>water</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">7</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6536961730801,0.1765550744774,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.337">
+        <name>water</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">7</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4622848630401,0.113312578675936,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.338">
+        <name>water</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">7</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6609759662586,0.137833392295426,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.339">
+        <name>water</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">7</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.807728575133,0.10562678744767,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.340">
+        <name>water</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">7</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.8299255106852,0.145344446753629,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.341">
+        <name>water</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">7</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.8138394615495,0.118112050978984,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.342">
+        <name>water</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">7</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6618733990835,0.207406021378253,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.343">
+        <name>water</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">7</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6200865014898,0.164159869347523,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.344">
+        <name>water</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">7</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.4499734270569,0.119826109410236,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.345">
+        <name>water</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">7</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6053484930806,0.165245233624546,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.346">
+        <name>water</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">7</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.7092339527918,0.157195033664748,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.347">
+        <name>water</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">7</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6153231546,0.186596604433028,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.348">
+        <name>water</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">7</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.6588178746991,0.210391515199521,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.349">
+        <name>water</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">7</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.8461018058716,0.118836032109777,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="m1_validation_points_2025.350">
+        <name>water</name>
+        <ExtendedData>
+          <SchemaData schemaUrl="#m1_validation_points_2025.schema">
+            <SimpleData name="map_class">7</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            32.5729962314653,0.19428562223097,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Document>
+  </Document>
+</kml>

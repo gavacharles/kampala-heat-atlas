@@ -1,0 +1,7 @@
+,built_dense,built_sparse,tree_cover,grass_cropland,wetland,water
+built_dense,332,82,1,5,0,0
+built_sparse,97,281,12,60,0,0
+tree_cover,0,5,408,23,14,0
+grass_cropland,3,41,19,367,20,0
+wetland,0,1,18,13,254,0
+water,0,0,0,0,1,449

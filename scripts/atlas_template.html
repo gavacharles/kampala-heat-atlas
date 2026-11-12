@@ -1,0 +1,262 @@
+<title>Kampala Heat Atlas</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/*LEAFLET_CSS*/
+/* Layout: map-first atlas. A header strip with the five headline findings, the map with its layer
+   panel, then one section per module (figure plates + findings + caveats). */
+:root {
+  --bg: #f3f4f1; --surface: #ffffff; --ink: #141516; --ink-2: #4f524d; --muted: #7c7f78;
+  --line: #d9dbd4; --heat: #c23434; --cool: #256abf; --chip: #e9ebe5; --map-bg: #d4d5cf;
+  --f-display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --f-body: "Inter", "Helvetica Neue", Arial, sans-serif;
+  --f-data: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #111312; --surface: #1a1c1b; --ink: #ecedea; --ink-2: #b6b9b2; --muted: #8b8e87;
+  --line: #2d302e; --heat: #ec7372; --cool: #6da7ec; --chip: #242725; --map-bg: #2a2c2b; color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #111312; --surface: #1a1c1b; --ink: #ecedea; --ink-2: #b6b9b2; --muted: #8b8e87;
+  --line: #2d302e; --heat: #ec7372; --cool: #6da7ec; --chip: #242725; --map-bg: #2a2c2b; color-scheme: dark; }
+
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font: 15px/1.55 var(--f-body);
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.wrap { max-width: 1240px; margin: 0 auto; padding-block: 28px 64px; display: grid; gap: 28px; }
+h1, h2, h3 { font-family: var(--f-display); text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(30px, 4.4vw, 50px); font-weight: 800; letter-spacing: -0.02em; line-height: 1.02; }
+h2 { font-size: 24px; font-weight: 700; letter-spacing: -0.01em; }
+h3 { font-size: 15px; font-weight: 700; }
+p { margin: 0; max-width: 68ch; }
+.eyebrow { font: 500 12px/1 var(--f-data); color: var(--muted); letter-spacing: 0.06em; text-transform: uppercase; }
+.coords { font-family: var(--f-data); color: var(--ink-2); font-size: 13px; }
+
+header { display: grid; gap: 14px; }
+.nav { display: flex; flex-wrap: wrap; gap: 8px; }
+.nav a { font: 500 13px var(--f-body); color: var(--ink); text-decoration: none; border: 1px solid var(--line); background: var(--surface); padding: 6px 12px; border-radius: 999px; }
+.nav a:hover { background: var(--chip); }
+.lede { color: var(--ink-2); font-size: 16px; }
+.facts { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1px; background: var(--line);
+  border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+.fact { background: var(--surface); padding: 14px 16px; display: grid; gap: 4px; align-content: start; min-width: 0; }
+.fact b { font: 700 26px/1.1 var(--f-display); font-variant-numeric: tabular-nums; }
+.fact b.hot { color: var(--heat); } .fact b.cool { color: var(--cool); }
+.fact span { font-size: 13px; color: var(--ink-2); }
+.fact .tag { font: 500 11px/1 var(--f-data); color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+
+.atlas { display: grid; grid-template-columns: 280px minmax(0, 1fr); background: var(--surface);
+  border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+.panel { padding: 16px; display: grid; gap: 16px; align-content: start; border-right: 1px solid var(--line); min-width: 0; }
+.group { display: grid; gap: 4px; }
+.group .eyebrow { margin-bottom: 4px; }
+.layer { display: flex; align-items: center; gap: 8px; padding: 6px 8px; border-radius: 6px; cursor: pointer; font-size: 14px; }
+.layer:hover { background: var(--chip); }
+.layer input { accent-color: var(--heat); margin: 0; }
+.layer:has(input:checked) { background: var(--chip); font-weight: 600; }
+.layer input:focus-visible { outline: 2px solid var(--cool); outline-offset: 2px; }
+.ctrl { display: grid; gap: 6px; font-size: 13px; color: var(--ink-2); }
+.ctrl input[type=range] { width: 100%; accent-color: var(--ink); }
+.mapcol { display: grid; grid-template-rows: auto minmax(0, 1fr) auto; min-width: 0; }
+#map { height: clamp(420px, 66vh, 760px); background: var(--map-bg); }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 14px; padding: 12px 16px; border-bottom: 1px solid var(--line); font-size: 13px; align-items: center; min-height: 46px; }
+.legend .sw { display: inline-flex; align-items: center; gap: 6px; }
+.legend i { width: 14px; height: 14px; border-radius: 3px; display: inline-block; border: 1px solid rgba(0,0,0,.15); }
+.legend .ramp { display: grid; grid-template-columns: auto minmax(160px, 260px) auto; gap: 8px; align-items: center; font-family: var(--f-data); font-size: 12px; color: var(--ink-2); }
+.legend .bar { height: 12px; border-radius: 3px; }
+.caption { padding: 12px 16px; font-size: 13px; color: var(--ink-2); border-top: 1px solid var(--line); }
+.leaflet-container { font-family: var(--f-body); background: var(--map-bg); }
+.leaflet-control-zoom a { color: #141516; }
+
+section.mod { display: grid; gap: 16px; padding-top: 8px; border-top: 1px solid var(--line); }
+.mod-head { display: grid; gap: 6px; }
+.cols { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; align-items: start; }
+.plate { background: #ffffff; border: 1px solid var(--line); border-radius: 8px; padding: 10px; margin: 0; }
+.plate img { display: block; width: 100%; height: auto; }
+.plate figcaption { font-size: 12px; color: #4f524d; padding: 8px 4px 2px; }
+ul.find { margin: 0; padding-left: 18px; display: grid; gap: 8px; max-width: 70ch; }
+ul.find li::marker { color: var(--muted); }
+.caveat { font-size: 13px; color: var(--ink-2); background: var(--chip); border-radius: 8px; padding: 10px 12px; max-width: 76ch; }
+.caveat b { color: var(--ink); }
+.num { font-family: var(--f-data); font-variant-numeric: tabular-nums; }
+footer { font-size: 12px; color: var(--muted); display: grid; gap: 6px; }
+
+@media (max-width: 980px) { .facts { grid-template-columns: repeat(2, minmax(0, 1fr)); } .fact:last-child { grid-column: 1 / -1; } }
+@media (max-width: 820px) {
+  .atlas { grid-template-columns: minmax(0, 1fr); }
+  .panel { border-right: 0; border-bottom: 1px solid var(--line); grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .panel .ctrl { grid-column: 1 / -1; }
+  .cols { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 460px) { .panel { grid-template-columns: minmax(0, 1fr); } .facts { grid-template-columns: minmax(0, 1fr); } }
+@media (prefers-reduced-motion: reduce) { .anim { display: none; } .anim-still { display: block !important; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <nav class="nav"><a href="3d.html">3D model</a><a href="gallery.html">Figures &amp; animations</a><a href="https://github.com/gavacharles/kampala-heat-atlas">Code</a></nav>
+    <span class="eyebrow">PhD research · first full run · dry seasons {{y0}}, {{y1}}, {{y2}}</span>
+    <h1>Kampala Heat Atlas</h1>
+    <p class="lede">How Kampala grew, where it is hottest, who lives in the heat, and what trees and rooftops could do about it. Six analyses on one 30 m grid covering the city and its growth frontier.</p>
+    <span class="coords">0.10–0.55° N · 32.35–32.85° E · UTM 36N · Landsat 8/9, Sentinel-2, Open Buildings 2.5D, Overture, ERA5-Land, FABDEM</span>
+    <div class="facts">
+      <div class="fact"><span class="tag">Growth</span><b>+{{builtpct}}%</b><span>built-up land, {{built0}} → {{built2}} km² ({{y0}}–{{y2}})</span></div>
+      <div class="fact"><span class="tag">Heat</span><b class="hot">{{hot2}} km²</b><span>in the hottest class in {{y2}} ({{hot0}} km² in {{y0}})</span></div>
+      <div class="fact"><span class="tag">People</span><b class="hot">+{{inf}} °C</b><span>informal-type areas vs the city land mean (formal dense +{{formal}} °C)</span></div>
+      <div class="fact"><span class="tag">Trees</span><b class="cool">−{{treecool}} °C</b><span>average cooling from {{newcanopy}} km² of new canopy, for about {{treepeople}},000 people</span></div>
+      <div class="fact"><span class="tag">Solar</span><b>{{twh}} TWh</b><span>a year from {{roofs}} M roofs ({{gwp}} GWp technical potential)</span></div>
+    </div>
+  </header>
+
+  <div class="atlas" aria-label="Interactive map">
+    <div class="panel" id="panel"></div>
+    <div class="mapcol">
+      <div class="legend" id="legend" aria-live="polite"></div>
+      <div id="map" role="img" aria-label="Map of the selected layer over terrain"></div>
+      <div class="caption" id="caption"></div>
+    </div>
+  </div>
+
+  <section class="mod" id="growth">
+    <div class="mod-head"><span class="eyebrow">Module 1 · Urban growth</span><h2>The city added a third more built-up land in eight years</h2></div>
+    <div class="cols">
+      <ul class="find">
+        <li>Built-up land rose from <span class="num">{{built0}}</span> to <span class="num">{{built2}}</span> km² between {{y0}} and {{y2}}. Growth runs east along the Jinja Road and north into Wakiso.</li>
+        <li>The core densified: sparse fabric turned dense across about 112 km².</li>
+        <li>Classifier agreement with its training labels is {{agree}} % (kappa 0.78–0.80) on held-out samples.</li>
+      </ul>
+      <figure class="plate"><img src="" data-chart="class" alt="Slope chart of land-cover area by class for the three epochs"><figcaption>Area of each land-cover class, three epochs.</figcaption></figure>
+    </div>
+    <p class="caveat"><b>Before citing.</b> Agreement with training labels is not map accuracy. 350 validation points still need to be labelled by eye. Tree-cover gains probably include seasonal cropland confusion.</p>
+  </section>
+
+  <section class="mod" id="heat">
+    <div class="mod-head"><span class="eyebrow">Module 2 · Thermal classification</span><h2>Compact neighbourhoods run 5 to 7 °C above the city</h2></div>
+    <div class="cols">
+      <ul class="find">
+        <li>The hottest class covers <span class="num">{{hot2}}</span> km² in {{y2}}. About 132 km² are hot in all three epochs: these are the persistent hotspots.</li>
+        <li>Compact mid- and low-rise zones are the hottest Local Climate Zones. Large low-rise sheds and warehouses warm fastest. Dense tree cover sits about 2 °C below the mean.</li>
+        <li>Surface temperature covers 100 % of the area, against about 60 % for the standard product, and agrees with it at r = {{r_min}}–{{r_max}}.</li>
+      </ul>
+      <figure class="plate"><img src="" data-chart="lcz" alt="Dumbbell chart of LST anomaly by Local Climate Zone, 2017 and 2025"><figcaption>Surface heat by Local Climate Zone, {{y0}} and {{y2}}.</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="mod" id="people">
+    <div class="mod-head"><span class="eyebrow">Module 3 · Informal settlements</span><h2>The newest informal areas warmed fastest</h2></div>
+    <div class="cols">
+      <ul class="find">
+        <li>Informal-type morphology sits <span class="num">+{{inf}} °C</span> above the city land mean, about 1 °C hotter than formal dense fabric (+{{formal}} °C).</li>
+        <li>Cells that became informal-type between {{y0}} and {{y2}} warmed <span class="num">{{became}} °C</span> relative to the city. Stable formal dense cells warmed {{formalchg}} °C.</li>
+        <li>Detected well: Kawempe Mbogo, Kazo Angola, Kifumbira, Kalerwe.</li>
+      </ul>
+      <figure class="plate"><img src="" data-chart="traj" alt="Line chart of mean LST anomaly by settlement trajectory, three epochs"><figcaption>Thermal trajectories by settlement type.</figcaption></figure>
+    </div>
+    <p class="caveat"><b>Before citing.</b> The settlement layer is a morphology rule, not a survey boundary. It agrees with an independent footprint source on 42 % of its area, misses mixed-use areas such as Kisenyi and Kivulu, and its 2017–2025 growth is inflated by building-count noise.</p>
+  </section>
+
+  <section class="mod" id="trees">
+    <div class="mod-head"><span class="eyebrow">Module 4 · Where to plant</span><h2>{{vh_km2}} km² where heat, people and bare ground meet</h2></div>
+    <div class="cols">
+      <ul class="find">
+        <li>Each extra 10 % of canopy goes with <span class="num">{{cool10}} °C</span> cooler surfaces in built-up cells.</li>
+        <li>The very-high priority class holds about {{vh_people}},000 residents and almost no trees today (0.3 % canopy).</li>
+        <li>Planting half the open land in high and very-high cells adds {{newcanopy}} km² of canopy and cools those cells by about {{treecool}} °C.</li>
+      </ul>
+      <figure class="plate"><img src="" data-chart="trees" alt="Bar charts of residents and plantable land by priority class"><figcaption>Residents and plantable land per priority class.</figcaption></figure>
+    </div>
+    <p class="caveat"><b>Before citing.</b> The cooling model explains about a third of the variation in surface temperature (R² 0.32). Surface cooling is larger than air-temperature cooling.</p>
+  </section>
+
+  <section class="mod" id="cube">
+    <div class="mod-head"><span class="eyebrow">Module 0 · The cube</span><h2>Sun overhead, breeze from the lake</h2></div>
+    <div class="cols">
+      <ul class="find">
+        <li>At 0.3° N the noon sun never drops below 66°. Flat or 5–10° panels are best; tilt changes yield by under 1.5 %.</li>
+        <li>East and west walls take about 2.1 times the direct sun of north and south walls. Long axes should run east–west.</li>
+        <li>From 09:00 the Lake Victoria breeze builds from the south, peaking at 15:00 (74 % of hours from S or SE). Long south facades catch it; north–south gaps let it through.</li>
+      </ul>
+      <figure class="plate"><img src="" data-anim="wind" alt="Animated wind rose cycling through 24 hours"><figcaption>Wind direction through the day, ERA5-Land 2015–2024.</figcaption></figure>
+    </div>
+    <figure class="plate"><img class="anim" src="" data-anim="cube" alt="Rotating 3D model of central Kampala terrain and buildings coloured by surface heat"><img class="anim-still" src="" data-chart="cube" alt="3D model of central Kampala" hidden><figcaption>Central Kampala, 5.4 × 5.4 km: FABDEM terrain plus Open Buildings heights, coloured by {{y2}} surface heat relative to the window.</figcaption></figure>
+  </section>
+
+  <section class="mod" id="solar">
+    <div class="mod-head"><span class="eyebrow">Module 5 · Rooftop solar</span><h2>Roof space is not the constraint</h2></div>
+    <div class="cols">
+      <ul class="find">
+        <li>{{roofs}} million roofs could host about <span class="num">{{gwp}} GWp</span> and generate <span class="num">{{twh}} TWh</span> a year, at {{yield_}} kWh per kWp.</li>
+        <li>The largest tenth of roofs alone exceeds Uganda's 2024 distribution sales of 4.7 TWh (Umeme).</li>
+        <li>The real limits are daytime demand, grid absorption, storage and finance. That is the question for the solar chapter.</li>
+      </ul>
+      <figure class="plate"><img src="" data-chart="solar" alt="Bar chart of generation under adoption scenarios against national sales"><figcaption>Generation under adoption scenarios.</figcaption></figure>
+    </div>
+  </section>
+
+  <footer>
+    <span>Sources: Landsat 8/9 C2 (USGS), Sentinel-2 + Cloud Score+ (ESA, Google), Dynamic World, ESA WorldCover, Open Buildings 2.5D Temporal, Overture Maps 2026-10-21.0, FABDEM V1-2, ERA5-Land (ECMWF), GHS-POP R2023A (JRC), global LCZ map (Demuzere et al. 2022), Umeme Annual Report 2024.</span>
+    <span>First-pass results. Several layers carry open validation items, listed with each module.</span>
+  </footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+<script>
+const DATA = __DATA__;
+const CHARTS = __CHARTS__;
+const ANIMS = __ANIMS__;
+document.querySelectorAll("[data-chart]").forEach(el => { el.src = CHARTS[el.dataset.chart]; });
+document.querySelectorAll("[data-anim]").forEach(el => { el.src = ANIMS[el.dataset.anim]; });
+
+const [H, W] = DATA.size;
+const bounds = [[0, 0], [H, W]];
+const map = L.map("map", { crs: L.CRS.Simple, minZoom: -3, maxZoom: 3, zoomSnap: 0.25, attributionControl: false });
+L.imageOverlay(DATA.base, bounds).addTo(map);
+map.fitBounds(bounds);
+let overlay = null;
+let opacity = 0.85;
+
+const panel = document.getElementById("panel");
+const groups = [...new Set(DATA.meta.map(m => m.group))];
+groups.forEach(g => {
+  const box = document.createElement("div");
+  box.className = "group";
+  box.innerHTML = `<span class="eyebrow">${g}</span>`;
+  DATA.meta.filter(m => m.group === g).forEach(m => {
+    const lab = document.createElement("label");
+    lab.className = "layer";
+    lab.innerHTML = `<input type="radio" name="layer" id="l-${m.id}" value="${m.id}"> ${m.label}`;
+    box.appendChild(lab);
+  });
+  panel.appendChild(box);
+});
+const ctrl = document.createElement("div");
+ctrl.className = "ctrl";
+ctrl.innerHTML = `<label for="opacity">Layer opacity</label><input type="range" id="opacity" min="0" max="100" value="85">`;
+panel.appendChild(ctrl);
+
+function legend(m) {
+  const el = document.getElementById("legend");
+  if (m.kind === "classes") {
+    el.innerHTML = m.legend.map(([c, n]) => `<span class="sw"><i style="background:${c}"></i>${n}</span>`).join("");
+  } else {
+    const [lo, mid, hi, ramp] = m.legend;
+    el.innerHTML = `<div class="ramp"><span>${lo}</span><div class="bar" style="background:${DATA.ramps[ramp]}"></div><span>${hi}</span></div><span class="coords">${mid}</span>`;
+  }
+  document.getElementById("caption").textContent = m.caption;
+}
+
+function show(id) {
+  const m = DATA.meta.find(x => x.id === id);
+  if (overlay) map.removeLayer(overlay);
+  overlay = L.imageOverlay(DATA.layers[id], bounds, { opacity }).addTo(map);
+  legend(m);
+  document.getElementById(`l-${id}`).checked = true;
+}
+panel.addEventListener("change", e => {
+  if (e.target.name === "layer") show(e.target.value);
+  if (e.target.id === "opacity") { opacity = e.target.value / 100; overlay && overlay.setOpacity(opacity); }
+});
+document.getElementById("opacity").addEventListener("input", e => { opacity = e.target.value / 100; overlay && overlay.setOpacity(opacity); });
+show("thermal-2025");
+</script>

@@ -1,0 +1,18 @@
+# data and big outputs (keep out of git)
+data/**
+!data/**/.gitkeep
+outputs/**/*.tif
+outputs/**/*.gpkg
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+*.egg-info/
+logs/
+
+# private research notes (thesis plan, paper framings) - not published
+notes/
+*.egg-info/
+
+# figures are published via docs/figures (built by scripts/17_build_site.py)
+outputs/figures/

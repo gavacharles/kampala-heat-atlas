@@ -1,0 +1,17 @@
+{
+  "epoch": "t3",
+  "year": 2025,
+  "n_train": 5828,
+  "n_test": 2499,
+  "label_agreement": 0.8315326130452181,
+  "kappa": 0.796499040503128,
+  "f1_per_class": {
+    "built_dense": 0.7720430107526882,
+    "built_sparse": 0.6858457997698504,
+    "tree_cover": 0.8733624454148472,
+    "grass_cropland": 0.8175675675675675,
+    "wetland": 0.8404040404040404,
+    "water": 1.0
+  },
+  "note": "agreement with Dynamic World weak labels, not independent map accuracy"
+}

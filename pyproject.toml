@@ -1,0 +1,16 @@
+[project]
+name = "kampala"
+version = "0.1.0"
+description = "Kampala urban climate PhD: thermal zones, informal settlements, trees, urban growth, 3D cube, rooftop solar"
+requires-python = ">=3.10"
+dependencies = [
+  "earthengine-api", "geemap", "geopandas", "rasterio", "rioxarray", "xarray",
+  "pvlib", "scikit-learn", "matplotlib", "pyyaml", "pandas", "numpy",
+]
+
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
