@@ -386,7 +386,8 @@ def trade_row(k, w):
     label = {"GO": "no limits", "STOP": "STOP", "CAUTION": "go with care", "LIMITED": f"go {gw} only"}[status]
     if k == "labour" and status != "GO":
         label = "work/rest needed" if status != "STOP" else "STOP moderate work in sun"
-    return dict(key=k, trade=NAMES[k], status=status, label=label, go_hours=n, windows=gw, causes=why, action=act)
+    return dict(key=k, trade=NAMES[k], status=status, label=label, go_hours=n, windows=gw, causes=why, action=act,
+                hours=[[int(h_), int(v)] for h_, v in zip(w.index.hour, st)])
 
 
 def briefing(d, g):
@@ -475,6 +476,43 @@ def md_to_html(lines):
 
 
 note_html = md_to_html(md)
+
+
+def note_cards(BR):
+    """The site note as a web page section: label, headline with the key time marked, fact chips, a card per trade,
+    then the next days. Style: white space, Manrope, one yellow accent, tinted status pills."""
+    e = html.escape
+    b = BR[0]; f = b["facts"]
+    head = re.sub(r"(\d{2}(?::\d{2})?-\d{2} h|from \d{2}:00|\d+ mm)", r"<mark>\1</mark>", e(b["headline"]), count=1)
+    chips = [f"Rain {f['rain_mm']:.0f} mm · {f['rain_chance']}%", "Storms " + f["storm"] + (f" from {f['storm_from']}:00" if f["storm_from"] else ""),
+             f"Heat (WBGT) {f['wbgt_peak']:.0f} °C", f"Gusts {f['gust_hook_max']:.0f} m/s at hook height"]
+    WORDS = {"STOP": ("stop", "Stop"), "LIMITED": ("lim", "Limited"), "CAUTION": ("lim", "Go with care"), "GO": ("go", "Go")}
+    cards = []
+    for r in b["rows"]:
+        if r["status"] == "GO":
+            continue
+        cls, word = WORDS[r["status"]]
+        title = ("No window today" if r["status"] == "STOP" else
+                 "Work/rest cycles" if r["key"] == "labour" else
+                 f"Go {r['windows']}" if r["windows"] else "Go with care")
+        why = ("Limited by " + ", ".join(r["causes"]) + ". ") if r["causes"] and r["key"] != "labour" else ""
+        hl = r.get("hours", [])
+        hrs = "".join(f"<span class='h s{v}{' gap' if i and h_ != hl[i - 1][0] + 1 else ''}' title='{h_:02d}:00'>{h_:02d}</span>" for i, (h_, v) in enumerate(hl))
+        cards.append(f"<article class='tc'><div class='tc-top'><span class='eyebrow'>{e(r['trade'])}</span>"
+                     f"<span class='pill {cls}'><i></i>{word}</span></div><h3>{e(title)}</h3><div class='hrs'>{hrs}</div>"
+                     f"<p>{e(why + r['action'])}</p></article>")
+    clear = [r["trade"] for r in b["rows"] if r["status"] == "GO"]
+    if clear:
+        cards.append(f"<article class='tc ok'><div class='tc-top'><span class='eyebrow'>No weather limits</span><span class='pill go'><i></i>Go</span></div>"
+                     f"<h3>{e(', '.join(clear))}</h3><p>Work as planned; keep an eye on the sky.</p></article>")
+    extras = "".join(f"<li>{e(x)}</li>" for x in b["extras"])
+    nxt = "".join(f"<article class='step'><span class='eyebrow'>{e(d['day'])}</span><p>{e(d['headline'])}</p></article>" for d in BR[1:4])
+    return (f"<div class='sn'><p class='eyebrow'>Site note · {e(b['day'])} · issued {now:%H:%M}</p><h2 class='hl'>{head}</h2>"
+            f"<div class='chips'>{''.join(f'<span>{e(c)}</span>' for c in chips)}</div>"
+            f"<div class='tgrid'>{''.join(cards)}</div>" + (f"<ul class='extras'>{extras}</ul>" if extras else "") +
+            f"<p class='eyebrow' style='margin-top:8px'>Next days</p><div class='steps'>{nxt}</div>"
+            f"<p class='fine'>Hours are go hours, {W0:02d}:00-{W1:02d}:00 with lunch excluded; 08-13 means from 08:00 until the lunch break. "
+            "Screening guidance from a forecast: the contract, crane manufacturer's limits and site H&amp;S plan come first.</p></div>")
 (SITE / "site_note_latest.html").write_text(note_html)
 cols = ["temperature_2m", "relative_humidity_2m", "dew_point_2m", "precipitation", "precipitation_probability", "cape", "wind_speed_10m",
         "wind_gusts_10m", "gust_hook", "uv_index", "wbgt_sun", "wbgt_shade", "evap_kg_m2_h", "dewpoint_margin", "rain_prev24", "rain_prev3", "thunder"] + [f"st_{k}" for k in KEYS]
@@ -608,26 +646,46 @@ months_html = "".join(f"<tr><td><a href='archive/monthly/{r['month']}.md'>{r['mo
                       for r in reversed(rows)) or "<tr><td colspan='9'>The record starts tomorrow.</td></tr>"
 page = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Site Weather · {html.escape(A.name)}</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@800&family=Inter:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap">
 <style>
-:root{{--bg:#f6f6f3;--surface:#fff;--ink:#0b0b0b;--ink-2:#52514e;--line:#e1e0d9;--blue:#2a78d6}}
-@media (prefers-color-scheme: dark){{:root:not([data-theme="light"]){{--bg:#111312;--surface:#1a1c1b;--ink:#ecedea;--ink-2:#b6b9b2;--line:#2d302e;--blue:#6da7ec;color-scheme:dark}}}}
-body{{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 Inter,Arial,sans-serif;padding:24px 16px}}
-main{{max-width:1100px;margin:0 auto;display:grid;gap:20px}} h1{{font:800 34px/1.05 Archivo,Arial,sans-serif;margin:0}}
-h2{{font:800 24px/1.1 Archivo,Arial,sans-serif;margin:0}} h3{{margin:14px 0 4px;font-size:17px}} a{{color:var(--blue)}}
+:root{{--bg:#ffffff;--surface:#fafaf9;--ink:#0a0a0b;--ink-2:#606061;--line:#e1e1e0;--accent:#fbca0c;--eyebrow:#8a6100;--tint:#fdf6dc;--link:#2a6fc4;
+--go-bg:#e8f4eb;--go:#1f7a35;--lim-bg:#fdf3d7;--lim:#8a6100;--stop-bg:#f9eaea;--stop:#b42318;--s0:#2f8f3a;--s1:#e0a526;--s2:#c23434}}
+@media (prefers-color-scheme: dark){{:root:not([data-theme="light"]){{--bg:#0d0d0e;--surface:#17171a;--ink:#f2f2ef;--ink-2:#a8a8a4;--line:#2a2a2e;--eyebrow:#e3b341;
+--tint:#2a2410;--link:#7fb0ef;--go-bg:#11281a;--go:#7fd394;--lim-bg:#2b2410;--lim:#f0c75e;--stop-bg:#2e1414;--stop:#f08a80;color-scheme:dark}}}}
+*{{box-sizing:border-box}} body{{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 Manrope,Arial,sans-serif;padding:28px 16px 48px}}
+main{{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr);gap:28px}}
+h1{{font:800 clamp(30px,5vw,44px)/1.05 Manrope,Arial,sans-serif;letter-spacing:-.02em;margin:0}}
+h2{{font:800 24px/1.15 Manrope,Arial,sans-serif;letter-spacing:-.01em;margin:0}} a{{color:var(--link)}}
 .lede{{color:var(--ink-2);max-width:72ch;margin:0}} nav{{display:flex;gap:8px;flex-wrap:wrap}}
-nav a{{color:var(--ink);text-decoration:none;border:1px solid var(--line);background:var(--surface);padding:6px 12px;border-radius:999px;font-size:13px}}
-section{{display:grid;gap:10px;border-top:1px solid var(--line);padding-top:16px}} .note{{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:8px 20px}}
-.note li{{margin:3px 0}} .wrap{{overflow-x:auto}} table{{border-collapse:collapse;font-size:13px;min-width:640px}}
-th,td{{border-bottom:1px solid var(--line);padding:6px 10px;text-align:right}} th:first-child,td:first-child{{text-align:left}}
-img{{width:100%;height:auto;border:1px solid var(--line);border-radius:8px;background:#fff}}
+nav a{{color:var(--ink);text-decoration:none;border:1px solid var(--line);background:var(--bg);padding:7px 14px;border-radius:999px;font-size:13px;font-weight:600}}
+nav a:hover{{background:var(--accent);border-color:var(--accent);color:#0a0a0b}}
+section{{display:grid;gap:12px;border-top:1px solid var(--line);padding-top:24px}}
+.eyebrow{{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--eyebrow);margin:0}}
+.sn{{display:grid;gap:16px}} .hl{{font:800 clamp(26px,4.2vw,40px)/1.12 Manrope,Arial,sans-serif;letter-spacing:-.02em;max-width:24ch}}
+mark{{background:var(--accent);color:#0a0a0b;padding:0 .18em;border-radius:6px}}
+.chips{{display:flex;gap:8px;flex-wrap:wrap}} .chips span{{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:6px 12px;font-size:13px;font-weight:600;color:var(--ink-2)}}
+.tgrid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}}
+.tc{{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px;display:grid;gap:10px;align-content:start}}
+.tc h3{{margin:0;font-size:19px;font-weight:800;letter-spacing:-.01em}} .tc p{{margin:0;color:var(--ink-2);font-size:14px}}
+.tc-top{{display:flex;flex-direction:column;gap:8px;align-items:flex-start}}
+.pill{{display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:4px 10px;font-size:12px;font-weight:800}}
+.pill i{{width:7px;height:7px;border-radius:50%;background:currentColor}}
+.pill.stop{{background:var(--stop-bg);color:var(--stop)}} .pill.lim{{background:var(--lim-bg);color:var(--lim)}} .pill.go{{background:var(--go-bg);color:var(--go)}}
+.hrs{{display:flex;gap:3px}} .h.gap{{margin-left:7px}} .h{{flex:1 1 0;min-width:0;text-align:center;border-radius:7px;padding:3px 0;font-size:12px;font-weight:800;color:#fff}}
+.h.s0{{background:var(--s0)}} .h.s1{{background:var(--s1)}} .h.s2{{background:var(--s2)}}
+.extras{{margin:0;padding-left:18px;color:var(--ink-2)}} .steps{{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}}
+.step{{border:1px solid var(--line);border-radius:16px;padding:16px;display:grid;gap:6px;background:var(--bg)}} .step p{{margin:0;font-weight:600}}
+.fine{{font-size:12px;color:var(--ink-2);margin:0}}
+.wrap{{overflow-x:auto}} table{{border-collapse:collapse;font-size:13px;min-width:640px}}
+th,td{{border-bottom:1px solid var(--line);padding:8px 10px;text-align:right}} th:first-child,td:first-child{{text-align:left}}
+img{{width:100%;height:auto;border:1px solid var(--line);border-radius:16px;background:#fff}}
 </style></head><body><main>
 <nav><a href="../../index.html">Atlas</a><a href="../../3d.html">3D model</a><a href="../../stories.html">Stories</a><a href="../../daynight.html">Day vs night</a><a href="../../meteogram.html">Meteogram</a><a href="../">Site weather</a><a href="../map.html">Map</a><a href="../share.html">Share today</a><a href="../../gallery.html">Figures</a><a href="https://github.com/gavacharles/kampala-heat-atlas">Code</a></nav>
 <h1>Site weather · {html.escape(A.name)}</h1>
 <p class="lede">For contractors and site managers: the next seven days as workable hours per trade, with a short site note,
 refreshed every morning at 06:00. Every day is also archived, so the record of what the weather did, month by month and
 compared with the site's 1991-2020 climate, builds up on its own.</p>
-<section><h2>Today's site note</h2><div class="note">{note_html}</div></section>
+<section>{note_cards(BR)}</section>
 <section><h2>Seven-day site meteogram</h2>
 <img src="site_meteogram_latest.png" alt="Seven-day site meteogram: heat stress, rain and storms, wind at crane height, concrete evaporation, coating conditions, workable hours per trade">
 <p class="lede"><a href="site_forecast_latest.csv">Hourly numbers and per-trade status (CSV)</a> · <a href="../thresholds.json">Thresholds used</a> ·
