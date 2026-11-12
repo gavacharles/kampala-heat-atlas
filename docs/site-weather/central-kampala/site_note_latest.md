@@ -1,6 +1,6 @@
 # Site note · Central Kampala
 
-Issued Thursday 12 November 2026, 21:06 (Africa/Kampala). Site 0.3136, 32.5811. Working hours 07:00-18:00.
+Issued Thursday 12 November 2026, 21:17 (Africa/Kampala). Site 0.3136, 32.5811. Working hours 07:00-18:00.
 
 ## Friday 13 November
 
@@ -12,7 +12,6 @@ Issued Thursday 12 November 2026, 21:06 (Africa/Kampala). Site 0.3136, 32.5811. 
 - Work at height: caution or stop at 16-17 h (rain, gusts or storms).
 - Coatings: suitable 10-14 h.
 - Earthworks: up to 9 mm in the previous 24 h, so expect soft, wet ground; protect formation and stockpiles.
-- UV index up to 8 (very high): hats with neck cover, long sleeves, sunscreen.
 - Dust/air quality: PM2.5 up to 66 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 - Workable hours (go): outdoor labour 11, concrete pour 5, crane lifts 11, work at height / roofing 10, painting & coatings 4, earthworks 5 of 11.
 
@@ -26,7 +25,6 @@ Issued Thursday 12 November 2026, 21:06 (Africa/Kampala). Site 0.3136, 32.5811. 
 - Work at height: caution or stop at 12-18 h (rain, gusts or storms).
 - Coatings: no suitable window (humidity, dew point or rain).
 - Earthworks: ground conditions not limited by recent rain.
-- UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.
 - Dust/air quality: PM2.5 up to 66 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 - Workable hours (go): outdoor labour 11, concrete pour 2, crane lifts 5, work at height / roofing 5, painting & coatings 0, earthworks 9 of 11.
 

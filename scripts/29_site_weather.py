@@ -388,7 +388,7 @@ def md_to_html(lines):
 note_html = md_to_html(md)
 (SITE / "site_note_latest.html").write_text(note_html)
 cols = ["temperature_2m", "relative_humidity_2m", "dew_point_2m", "precipitation", "precipitation_probability", "cape", "wind_speed_10m",
-        "wind_gusts_10m", "gust_hook", "uv_index", "wbgt_sun", "wbgt_shade", "evap_kg_m2_h", "dewpoint_margin", "thunder"] + [f"st_{k}" for k in KEYS]
+        "wind_gusts_10m", "gust_hook", "uv_index", "wbgt_sun", "wbgt_shade", "evap_kg_m2_h", "dewpoint_margin", "rain_prev24", "thunder"] + [f"st_{k}" for k in KEYS]
 fc[cols].round(2).to_csv(SITE / "site_forecast_latest.csv")
 
 # ---------------------------------------------------------------- archive: forecast as issued
@@ -543,6 +543,12 @@ compared with the site's 1991-2020 climate, builds up on its own.</p>
 <img src="site_meteogram_latest.png" alt="Seven-day site meteogram: heat stress, rain and storms, wind at crane height, concrete evaporation, coating conditions, workable hours per trade">
 <p class="lede"><a href="site_forecast_latest.csv">Hourly numbers and per-trade status (CSV)</a> · <a href="../thresholds.json">Thresholds used</a> ·
 <a href="archive/forecasts/">Forecasts as issued</a></p></section>
+<section><h2>Cards to share</h2>
+<p class="lede">The same forecast as images for WhatsApp, LinkedIn, X, Instagram and Facebook, refreshed each morning.
+<a href="social/today_4x5.png">Today</a> · <a href="social/today_9x16.png">Today (Status / Stories)</a> ·
+<a href="social/week_4x5.png">The week</a> · <a href="social/carousel.pdf">LinkedIn carousel (PDF)</a> · <a href="social/caption.txt">Caption</a></p>
+<div style="display:flex;gap:12px;overflow-x:auto"><img src="social/today_4x5.png" alt="Today's site card" style="width:300px;flex:none">
+<img src="social/week_4x5.png" alt="The week on site card" style="width:300px;flex:none"><img src="social/howto_4x5.png" alt="How to read the card" style="width:300px;flex:none"></div></section>
 <section><h2>Monthly record</h2>
 <p class="lede">Rain against the 1991-2020 normal, heavy and exceptional days, and working hours lost. Days start as preliminary
 model analysis and are replaced by ERA5 about a week later. Useful as supporting evidence for extension-of-time claims

@@ -14,10 +14,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install numpy pandas matplotlib pvlib pythermalcomfort
+      - run: pip install numpy pandas matplotlib pvlib pythermalcomfort pillow
       - run: python scripts/25_meteogram.py docs/figures
       # construction site weather: meteogram, site note, and the daily/monthly record (add more sites as extra lines)
       - run: python scripts/29_site_weather.py docs/site-weather --name "Central Kampala" --lat 0.3136 --lon 32.5811
+      - run: python scripts/30_site_cards.py docs/site-weather/central-kampala
       - name: Commit if changed
         run: |
           git config user.name "meteogram-bot"
