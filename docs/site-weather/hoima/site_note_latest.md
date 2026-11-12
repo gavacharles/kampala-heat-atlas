@@ -1,53 +1,55 @@
 # Site note · Hoima
 
-Issued Thursday 12 November 2026, 21:43 (Africa/Kampala). Site 1.4331, 31.3524. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Friday 13 November 2026, 01:00 (Africa/Kampala). Site 1.4331, 31.3524. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Friday 13 November
 
-**Rain 6 mm (chance up to 69 %), thunderstorm risk 11-16 h; gusts to 9 m/s at hook height; WBGT in sun peaks 25.8 °C at 14:00.**
+**Storms possible from 15:00: do exposed work in the morning.**
 
-- Heat: continuous moderate work is fine through the day; keep water and shade available.
-- Concrete: best pour window 08-09 h (1 h).
-- Asphalt & surfacing: dry window 08-09 h (1 h); no laying or spraying on a wet surface.
-- Cranes: check wind and storms before lifts at 11-13 h, 14-16 h.
-- Work at height: caution or stop at 11-13 h, 14-17 h (rain, gusts or storms).
-- Coatings: no suitable window (humidity, dew point or rain).
-- Earthworks: up to 6 mm in the previous 24 h, so expect soft, wet ground; protect formation and stockpiles.
-- Dust/air quality: PM2.5 up to 36 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
-- Workable hours (go): outdoor labour 8, concrete pour 1, asphalt & surfacing 1, crane lifts 4, work at height / roofing 3, painting & coatings 0, earthworks 5 of 8.
+Rain 2 mm (chance up to 69 %) · storms possible · WBGT peak 23.8 °C · gusts 8 m/s at hook height
+
+- **Asphalt & surfacing — STOP.** Limited by rain or wet surface, storms. No dry window: do not lay or spray.
+- **Painting & coatings — STOP.** Limited by humidity or dew, rain. Too humid or wet for painting and coatings.
+- **Concrete pour — go 08-09 h only.** Limited by rain, storms. Keep covers ready outside this window.
+- **Crane lifts — go 08-13 h, 14-15 h only.** Limited by storms. Check the anemometer before each lift.
+- **Work at height — go 08-12 h only.** Limited by rain, storms. Clear roofs and scaffolds before storms.
+- **No weather limits:** Outdoor labour, Earthworks.
+- Dust: PM2.5 up to 36 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Saturday 14 November
 
-**Rain 1 mm (chance up to 100 %), thunderstorm risk 14-16 h, 17-20 h; gusts to 8 m/s at hook height; WBGT in sun peaks 25.3 °C at 15:00.**
+**Storms possible from 14:00: do exposed work in the morning.**
 
-- Heat: continuous moderate work is fine through the day; keep water and shade available.
-- Concrete: best pour window 08-12 h (4 h).
-- Asphalt & surfacing: dry window 08-12 h (4 h); no laying or spraying on a wet surface.
-- Cranes: check wind and storms before lifts at 14-16 h.
-- Work at height: caution or stop at 12-13 h, 14-16 h (rain, gusts or storms).
-- Coatings: no suitable window (humidity, dew point or rain).
-- Earthworks: up to 6 mm in the previous 24 h, so expect soft, wet ground; protect formation and stockpiles.
+Rain 2 mm (chance up to 100 %) · storms possible · WBGT peak 26.2 °C · gusts 8 m/s at hook height
+
+- **Concrete pour — go 08-12 h only.** Limited by rain, storms. Keep covers ready outside this window.
+- **Asphalt & surfacing — go 08-12 h only.** Limited by rain or wet surface, storms. Never lay or spray on a wet surface.
+- **Crane lifts — go 08-13 h only.** Limited by storms. Check the anemometer before each lift.
+- **Work at height — go 08-13 h only.** Limited by storms, rain. Clear roofs and scaffolds before storms.
+- **Painting & coatings — go 12-13 h only.** Limited by humidity or dew, rain. Check the surface is 3 °C above dew point.
+- **Earthworks — go 08-13 h, 14-16 h only.** Limited by rain. Protect formation and stockpiles.
+- **No weather limits:** Outdoor labour.
 - UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.
-- Workable hours (go): outdoor labour 8, concrete pour 4, asphalt & surfacing 4, crane lifts 6, work at height / roofing 5, painting & coatings 0, earthworks 1 of 8.
 
 ## Sunday 15 November
 
-**Rain 1 mm (chance up to 84 %), thunderstorm risk 14-19 h; gusts to 8 m/s at hook height; WBGT in sun peaks 26.4 °C at 13:00.**
+**Storms possible from 14:00: do exposed work in the morning.**
 
-- Heat: continuous moderate work is fine through the day; keep water and shade available.
-- Concrete: best pour window 08-12 h (4 h).
-- Asphalt & surfacing: dry window 08-11 h (3 h); no laying or spraying on a wet surface.
-- Cranes: check wind and storms before lifts at 14-17 h.
-- Work at height: caution or stop at 14-17 h (rain, gusts or storms).
-- Coatings: suitable 12-13 h.
-- Earthworks: ground conditions not limited by recent rain.
+Rain 1 mm (chance up to 84 %) · storms possible · WBGT peak 26.6 °C · gusts 8 m/s at hook height
+
+- **Concrete pour — go 08-12 h only.** Limited by rain, storms. Keep covers ready outside this window.
+- **Asphalt & surfacing — go 08-12 h only.** Limited by rain or wet surface, storms. Never lay or spray on a wet surface.
+- **Crane lifts — go 08-13 h only.** Limited by storms. Check the anemometer before each lift.
+- **Work at height — go 08-13 h only.** Limited by storms, rain. Clear roofs and scaffolds before storms.
+- **Painting & coatings — go 12-13 h only.** Limited by humidity or dew, rain. Check the surface is 3 °C above dew point.
+- **No weather limits:** Outdoor labour, Earthworks.
 - UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.
-- Workable hours (go): outdoor labour 8, concrete pour 4, asphalt & surfacing 3, crane lifts 5, work at height / roofing 5, painting & coatings 1, earthworks 7 of 8.
 
 ## Outlook
 
-- **Mon 16 Nov**: rain 8 mm (93 %), thunderstorm risk; WBGT peak 25.5 °C; concrete window 08-11 h.
-- **Tue 17 Nov**: rain 3 mm (85 %), thunderstorm risk; WBGT peak 25.4 °C; concrete window 08-11 h.
-- **Wed 18 Nov**: rain 4 mm (75 %), thunderstorm risk; WBGT peak 25.1 °C; concrete window 08-10 h.
+- **Monday 16 November**: Storms likely from 16:00: finish lifts, roof and asphalt work before then. Rain 9 mm (93 %); concrete 2 h go.
+- **Tuesday 17 November**: Storms possible from 14:00: do exposed work in the morning. Rain 2 mm (85 %); concrete 3 h go.
+- **Wednesday 18 November**: Storms possible from 14:00: do exposed work in the morning. Rain 2 mm (75 %); concrete 3 h go.
+- **Thursday 19 November**: Storms possible from 14:00: do exposed work in the morning. Rain 3 mm (69 %); concrete 3 h go.
 
 *Screening guidance from a weather forecast, not an instruction. The contract specification, the crane manufacturer's limits and the site health-and-safety plan take precedence; check conditions on site (WBGT meter, anemometer, the 30-30 rule for lightning) before each activity. Thresholds used: thresholds.json.*

@@ -314,63 +314,123 @@ fig.text(0.01, -0.012, "Screening guidance from the Open-Meteo forecast (open-me
 fig.savefig(SITE / "site_meteogram_latest.png", dpi=130, bbox_inches="tight")
 plt.close(fig)
 
-# ---------------------------------------------------------------- the site note
-def day_lines(d, g):
-    w = g[g.work_hour]
-    rain, pm, uv = g.precipitation.sum(), g.precipitation_probability.max(), g.uv_index.max()
-    storm = runs(g.thunder.values >= 1, g.index)
-    head = (f"rain {rain:.0f} mm (chance up to {pm:.0f} %)" + (f", thunderstorm risk {', '.join(storm)}" if storm else "") +
-            f"; gusts to {g.gust_hook.max():.0f} m/s at hook height; WBGT in sun peaks {g.wbgt_sun.max():.1f} °C at {g.wbgt_sun.idxmax():%H}:00")
-    out = []
-    hot = w[w.st_labour >= 1]
-    if len(hot):
-        worst = hot.wbgt_sun.max()
-        out.append(f"Heat: {', '.join(runs(w.st_labour.values >= 1, w.index))} need a work/rest cycle; at the peak, {work_rest(worst)}. "
-                   "Water at least every 20 min, shade for breaks, heavy tasks early, lighter duties for workers new to site.")
+# ---------------------------------------------------------------- the briefing (shared by note, card and A4 sheet)
+NAMES = dict(zip(KEYS, ["Outdoor labour", "Concrete pour", "Asphalt & surfacing", "Crane lifts", "Work at height", "Painting & coatings", "Earthworks"]))
+STATUS_ORDER = {"STOP": 0, "LIMITED": 1, "CAUTION": 2, "GO": 3}
+
+
+def causes(k, w):
+    """Why the non-go hours of trade k are not go, most frequent first."""
+    bad = w[w[f"st_{k}"] >= 1]
+    if not len(bad):
+        return []
+    c, co, asp = TH["concrete"], TH["coatings"], TH["asphalt"]
+    test = {"labour": {"heat": bad.st_labour >= 1},
+            "concrete": {"rain": (bad.precipitation >= c["rain_stop_mm_h"]) | (bad.prob_next3 >= c["rain_prob_caution_pct"]),
+                         "storms": bad.thunder >= 1, "fast drying": bad.evap_kg_m2_h >= c["evap_caution_kg_m2_h"]},
+            "asphalt": {"rain or wet surface": (bad.precipitation >= asp["rain_stop_mm_h"]) | (bad.rain_prev3 > 0) | (bad.prob_next3 >= asp["rain_prob_next3_caution_pct"]),
+                        "storms": bad.thunder >= 1, "wind": bad.wind_speed_10m >= asp["wind_caution_ms"], "cold": bad.temperature_2m < asp["min_air_C"]},
+            "crane": {"wind": bad.gust_hook >= TH["crane"]["gust_caution_ms"], "storms": bad.thunder >= 1},
+            "height": {"wind": bad.wind_gusts_10m >= TH["work_at_height"]["gust_caution_ms"], "rain": bad.precipitation >= TH["work_at_height"]["rain_stop_mm_h"],
+                       "storms": bad.thunder >= 1},
+            "coatings": {"humidity or dew": (bad.dewpoint_margin < co["dewpoint_margin_caution_C"]) | (bad.relative_humidity_2m > co["rh_caution_pct"]),
+                         "rain": (bad.precipitation > 0.1) | (bad.precipitation_probability >= 50)},
+            "earthworks": {"wet ground": bad.rain_prev24 >= TH["earthworks"]["rain_prev24h_caution_mm"], "rain": bad.precipitation > 0.2}}[k]
+    n = {lab: int(m.sum()) for lab, m in test.items() if m.sum()}
+    return sorted(n, key=n.get, reverse=True)
+
+
+def trade_row(k, w):
+    st = w[f"st_{k}"].values
+    go = runs(st == 0, w.index); n = int((st == 0).sum())
+    status = "GO" if n == len(w) else "CAUTION" if st.max() == 1 and n == 0 else "STOP" if n == 0 else "LIMITED"
+    gw = ", ".join(go)
+    why = causes(k, w)
+    if k == "labour":
+        hot = w[w.st_labour >= 1]
+        act = ("No heat limits; keep water and shade available." if status == "GO" else
+               f"Work/rest cycles {', '.join(runs(st >= 1, w.index))}: at the peak, {work_rest(hot.wbgt_sun.max())}. Water every 20 min, shade for breaks.")
+        gw = gw if status != "GO" else ""
     else:
-        out.append("Heat: continuous moderate work is fine through the day; keep water and shade available.")
-    win, n = longest(w.st_concrete.values == 0, w.index)
-    ev = w.evap_kg_m2_h.max()
-    cn = f"Concrete: best pour window {win} ({n} h)" if n else "Concrete: no clear pour window in working hours"
-    if ev >= TH["concrete"]["evap_caution_kg_m2_h"]:
-        cn += f"; evaporation up to {ev:.1f} kg/m²/h, so have curing compound, wet hessian or windbreaks ready"
-    out.append(cn + ".")
-    aw, an = longest(w.st_asphalt.values == 0, w.index)
-    out.append(f"Asphalt & surfacing: dry window {aw} ({an} h); no laying or spraying on a wet surface." if an
-               else "Asphalt & surfacing: no dry window; do not lay or spray on wet surfaces or with rain imminent.")
-    cr_bad = runs(w.st_crane.values >= 1, w.index)
-    out.append("Cranes: " + (f"check wind and storms before lifts at {', '.join(cr_bad)}." if cr_bad else "no gust limits expected in working hours."))
-    ht = runs(w.st_height.values >= 1, w.index)
-    out.append("Work at height: " + (f"caution or stop at {', '.join(ht)} (rain, gusts or storms)." if ht else "no weather limits expected."))
-    ok = runs(w.st_coatings.values == 0, w.index)
-    out.append("Coatings: " + (f"suitable {', '.join(ok)}." if ok else "no suitable window (humidity, dew point or rain)."))
-    ew = w.rain_prev24.max()
-    out.append("Earthworks: " + (f"up to {ew:.0f} mm in the previous 24 h, so expect soft, wet ground; protect formation and stockpiles."
-                                 if ew >= TH["earthworks"]["rain_prev24h_caution_mm"] else "ground conditions not limited by recent rain."))
-    if uv >= 8:
-        out.append(f"UV index up to {uv:.0f} (very high): hats with neck cover, long sleeves, sunscreen.")
+        act = {"concrete": {"LIMITED": "Curing cover and windbreaks ready." if "fast drying" in why else "Keep covers ready outside this window.",
+                            "STOP": "No pour window: postpone, or pour under cover.", "CAUTION": "Pour with care: covers and curing ready."},
+               "asphalt": {"LIMITED": "Never lay or spray on a wet surface.", "STOP": "No dry window: do not lay or spray.",
+                           "CAUTION": "Lay with care: check the surface is dry and rain is not imminent."},
+               "crane": {"LIMITED": "Check the anemometer before each lift.", "STOP": "No safe lift window: leave the crane in free slew.",
+                         "CAUTION": "Lift with care: check the anemometer before each lift."},
+               "height": {"LIMITED": "Clear roofs and scaffolds before storms.", "STOP": "Keep off roofs and scaffolds.",
+                          "CAUTION": "Work at height with care: watch gusts and the sky."},
+               "coatings": {"LIMITED": "Check the surface is 3 °C above dew point.", "STOP": "Too humid or wet for painting and coatings.",
+                            "CAUTION": "Paint with care: check dew point and humidity first."},
+               "earthworks": {"LIMITED": "Protect formation and stockpiles.", "STOP": "Ground too wet: protect formation, keep plant off soft ground.",
+                              "CAUTION": "Ground soft: protect formation and stockpiles."}}[k].get(status, "No weather limits.")
+        if k == "earthworks" and w.rain_prev24.max() >= TH["earthworks"]["rain_prev24h_caution_mm"]:
+            act += f" Ground wet after {w.rain_prev24.max():.0f} mm in 24 h."
+    label = {"GO": "no limits", "STOP": "STOP", "CAUTION": "go with care", "LIMITED": f"go {gw} only"}[status]
+    if k == "labour" and status != "GO":
+        label = "work/rest needed" if status != "STOP" else "STOP moderate work in sun"
+    return dict(key=k, trade=NAMES[k], status=status, label=label, go_hours=n, windows=gw, causes=why, action=act)
+
+
+def briefing(d, g):
+    w = g[g.work_hour]
+    rows = sorted([trade_row(k, w) for k in KEYS], key=lambda r: STATUS_ORDER[r["status"]])
+    stl = runs(w.thunder.values == 2, w.index); stp = runs(w.thunder.values >= 1, w.index)
+    rain = float(g.precipitation.sum()); r = {x["key"]: x for x in rows}
+    pour = longest(w.st_concrete.values == 0, w.index)
+    if stl:
+        head = f"Storms likely from {stl[0][:2]}:00: finish lifts, roof and asphalt work before then."
+    elif (w.st_labour == 2).any():
+        head = f"Heat stress: stop moderate work in the sun {runs(w.st_labour.values == 2, w.index)[0]}."
+    elif r["concrete"]["status"] == "STOP" and r["asphalt"]["status"] == "STOP":
+        head = f"Wet day ({rain:.0f} mm): no concrete or asphalt window."
+    elif stp:
+        head = f"Storms possible from {stp[0][:2]}:00: do exposed work in the morning."
+    elif r["concrete"]["status"] == "LIMITED":
+        head = f"Pour concrete {pour[0]}; {(r['concrete']['causes'] or ['weather'])[0]} limits the rest of the day."
+    elif all(x["status"] == "GO" for x in rows):
+        head = "Good working day: no weather limits on any trade."
+    else:
+        head = "Some limits today: check your trade below."
+    extras = []
+    if g.uv_index.max() >= 8:
+        extras.append(f"UV index up to {g.uv_index.max():.0f} (very high): hats with neck cover, long sleeves, sunscreen.")
     if aq is not None:
         a = aq[aq.index.normalize() == d]
         if len(a) and a.max() >= 35:
-            out.append(f"Dust/air quality: PM2.5 up to {a.max():.0f} µg/m³; damp down haul roads and cutting work; masks for dusty tasks.")
-    hours = {k: int((w[f'st_{k}'] == 0).sum()) for k in KEYS}
-    out.append("Workable hours (go): " + ", ".join(f"{lab.split(' (')[0].lower()} {hours[k]}" for lab, k in zip(TRADES, KEYS)) + f" of {len(w)}.")
-    return head, out
+            extras.append(f"Dust: PM2.5 up to {a.max():.0f} µg/m³; damp down haul roads and cutting work; masks for dusty tasks.")
+    storm = "likely" if stl else "possible" if stp else "low"
+    return dict(date=f"{d:%Y-%m-%d}", day=f"{d:%A %d %B}", headline=head, rows=rows, extras=extras,
+                facts=dict(rain_mm=round(rain, 1), rain_chance=int(g.precipitation_probability.max()), storm=storm,
+                           storm_from=(stl or stp or [""])[0][:2], wbgt_peak=round(float(g.wbgt_sun.max()), 1),
+                           gust_hook_max=round(float(g.gust_hook.max()), 1), go_hours={x["key"]: x["go_hours"] for x in rows}))
 
 
 days = [(d, g) for d, g in fc.groupby(fc.index.normalize())]
 if now.hour >= W1:                                          # evening run: the note starts with tomorrow
     days = days[1:]
-md = [f"# Site note · {A.name}", "", f"Issued {now:%A %d %B %Y, %H:%M} ({TZ}). Site {A.lat:.4f}, {A.lon:.4f}. Working hours {W0:02d}:00-{W1:02d}:00, lunch break excluded ({NW} h).", ""]
-for d, g in days[:3]:
-    head, lines = day_lines(d, g)
-    md += [f"## {d:%A %d %B}", "", f"**{head[0].upper() + head[1:]}.**", ""] + [f"- {x}" for x in lines] + [""]
+BR = [briefing(d, g) for d, g in days]
+(SITE / "site_briefing_latest.json").write_text(json.dumps(dict(site=A.name, lat=A.lat, lon=A.lon, issued=f"{now:%Y-%m-%d %H:%M}",
+                                                                 working=f"{W0:02d}:00-{W1:02d}:00, lunch excluded ({NW} h)", days=BR), indent=1))
+md = [f"# Site note · {A.name}", "", f"Issued {now:%A %d %B %Y, %H:%M} ({TZ}). Site {A.lat:.4f}, {A.lon:.4f}. "
+      f"Working hours {W0:02d}:00-{W1:02d}:00, lunch break excluded ({NW} h).", ""]
+for b in BR[:3]:
+    f = b["facts"]
+    md += [f"## {b['day']}", "", f"**{b['headline']}**", "",
+           f"Rain {f['rain_mm']:.0f} mm (chance up to {f['rain_chance']} %) · storms {f['storm']} · WBGT peak {f['wbgt_peak']} °C · "
+           f"gusts {f['gust_hook_max']:.0f} m/s at hook height", ""]
+    for x in b["rows"]:
+        if x["status"] != "GO":
+            md.append(f"- **{x['trade']} — {x['label']}.** "
+                      f"{'Limited by ' + ', '.join(x['causes']) + '. ' if x['causes'] and x['key'] != 'labour' else ''}{x['action']}")
+    clear = [x["trade"] for x in b["rows"] if x["status"] == "GO"]
+    if clear:
+        md.append(f"- **No weather limits:** {', '.join(clear)}.")
+    md += [f"- {e}" for e in b["extras"]] + [""]
 md += ["## Outlook", ""]
-for d, g in days[3:]:
-    w = g[g.work_hour]; win, n = longest(w.st_concrete.values == 0, w.index)
-    md.append(f"- **{d:%a %d %b}**: rain {g.precipitation.sum():.0f} mm ({g.precipitation_probability.max():.0f} %)"
-              f"{', thunderstorm risk' if (g.thunder >= 1).any() else ''}; WBGT peak {g.wbgt_sun.max():.1f} °C; "
-              f"concrete window {win if n else 'none'}.")
+for b in BR[3:]:
+    f = b["facts"]
+    md.append(f"- **{b['day']}**: {b['headline']} Rain {f['rain_mm']:.0f} mm ({f['rain_chance']} %); concrete {f['go_hours']['concrete']} h go.")
 md += ["", "*Screening guidance from a weather forecast, not an instruction. The contract specification, the crane manufacturer's "
        "limits and the site health-and-safety plan take precedence; check conditions on site (WBGT meter, anemometer, "
        "the 30-30 rule for lightning) before each activity. Thresholds used: thresholds.json.*"]
@@ -557,7 +617,8 @@ compared with the site's 1991-2020 climate, builds up on its own.</p>
 <a href="archive/forecasts/">Forecasts as issued</a></p></section>
 <section><h2>Cards to share</h2>
 <p class="lede">The same forecast as images for WhatsApp, LinkedIn, X, Instagram and Facebook, refreshed each morning.
-<a href="social/today_4x5.png">Today</a> · <a href="social/today_9x16.png">Today (Status / Stories)</a> ·
+<a href="social/today_4x5.png">Today's briefing</a> · <a href="social/today_9x16.png">Today (Status / Stories)</a> ·
+<a href="social/today_hours_4x5.png">Hour-by-hour grid</a> · <a href="social/briefing_A4.pdf"><strong>Printable A4 briefing (PDF)</strong></a> ·
 <a href="social/week_4x5.png">The week</a> · <a href="social/carousel.pdf">LinkedIn carousel (PDF)</a> · <a href="social/caption.txt">Caption</a></p>
 <div style="display:flex;gap:12px;overflow-x:auto"><img src="social/today_4x5.png" alt="Today's site card" style="width:300px;flex:none">
 <img src="social/week_4x5.png" alt="The week on site card" style="width:300px;flex:none"><img src="social/howto_4x5.png" alt="How to read the card" style="width:300px;flex:none"></div></section>

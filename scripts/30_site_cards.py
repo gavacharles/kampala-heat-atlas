@@ -3,8 +3,11 @@
     python scripts/30_site_cards.py docs/site-weather/central-kampala
 
 Writes <site>/social/:
-  today_4x5.png     1080 x 1350  the day on site: key numbers, hour-by-hour go/caution/stop per trade, advice
-  today_9x16.png    1080 x 1920  the same for Stories / Status / Reels covers
+  today_4x5.png     1080 x 1350  the site briefing: headline, problem trades first (status, window, reason,
+                                 action, hour strip), clear trades on one line
+  today_9x16.png    1080 x 1920  the same for WhatsApp Status / Stories, with the next three days
+  today_hours_4x5.png            the full hour-by-hour grid for all trades
+  briefing_A4.pdf/.png           printable morning briefing (toolbox talk) with a sign-off box
   week_4x5.png      1080 x 1350  seven days: workable hours per trade, rain, storm risk
   howto_4x5.png     1080 x 1350  how to read the card (pin this once)
   carousel.pdf      today + week + how-to, for LinkedIn document posts
@@ -257,8 +260,8 @@ def howto_card(path):
     im = Image.new("RGB", (W, H), BG); d = ImageDraw.Draw(im)
     header(d, W, "How to read the card", "A daily weather check for contractors and site managers")
     y = 270
-    items = [("Each row is a trade", "Outdoor labour, concrete, cranes, work at height, painting, earthworks."),
-             ("Each block is an hour", f"{NW} working hours, {W0:02d}:00 to {W1:02d}:00 with lunch excluded. Green: go. Amber: go with care. Red: stop or reschedule."),
+    items = [("The headline is the one thing to plan around", "Then each trade, problems first: STOP, LIMITED (go only in the hours shown), CARE, and GO."),
+             ("Each small block is an hour", f"{NW} working hours, {W0:02d}:00 to {W1:02d}:00 with lunch excluded. Green: go. Amber: go with care. Red: stop or reschedule."),
              ("Heat uses WBGT", "Wet-bulb globe temperature, the standard for heat stress at work. It sets work/rest cycles."),
              ("Concrete looks at rain and drying", "Rain in the next hours, and evaporation fast enough to crack fresh concrete (ACI 305)."),
              ("Cranes use gusts at hook height", "Gusts scaled to 30 m, against typical tower-crane limits, plus thunderstorm risk."),
@@ -274,13 +277,148 @@ def howto_card(path):
     return im
 
 
-a = today_card(1080, 1350, OUTD / "today_4x5.png")
-today_card(1080, 1920, OUTD / "today_9x16.png")
+# ---------------------------------------------------------------- briefing card and A4 sheet (from site_briefing_latest.json)
+BJ = json.loads((SITE / "site_briefing_latest.json").read_text())
+B = BJ["days"][0]
+PILL = {"STOP": (STOP, "STOP"), "LIMITED": (CAU, "LIMITED"), "CAUTION": (CAU, "CARE"), "GO": (GO, "GO")}
+WORST = min(B["rows"], key=lambda r: ["STOP", "LIMITED", "CAUTION", "GO"].index(r["status"]))["status"]
+
+
+def pill(d, x, y, status, w=128, h=38, size=20):
+    col, word = PILL[status]
+    d.rounded_rectangle((x, y, x + w, y + h), h // 2, fill=col)
+    text(d, (x + w / 2, y + h / 2), word, F(size, True), (255, 255, 255), "mm")
+
+
+def strip(d, x, y, key, cell=24, h=26):
+    st = w[f"st_{key}"].values
+    for i, v in enumerate(st):
+        d.rounded_rectangle((x + i * (cell + 3), y, x + i * (cell + 3) + cell, y + h), 4, fill=COL[int(v)])
+    return x + len(st) * (cell + 3)
+
+
+def strip_axis(d, x, y, cell=24):
+    for i, hh in enumerate(WORK):
+        if i in (0, len(WORK) - 1) or hh == 14:
+            text(d, (x + i * (cell + 3) + cell / 2, y), f"{hh:02d}", F(16), MUT, "ma")
+
+
+def headline_box(d, x, y, W, size=34):
+    lines = wrap(d, B["headline"], F(size, True), W - 2 * x - 60)
+    hgt = 36 + len(lines) * (size + 10)
+    d.rounded_rectangle((x, y, W - x, y + hgt), 14, fill=CARD, outline=LINE, width=2)
+    d.rounded_rectangle((x, y, x + 12, y + hgt), 6, fill=PILL[WORST][0])
+    for k, ln in enumerate(lines):
+        text(d, (x + 36, y + 18 + k * (size + 10)), ln, F(size, True))
+    return y + hgt
+
+
+def facts_line(d, x, y):
+    f = B["facts"]
+    s = (f"Rain {f['rain_mm']:.0f} mm ({f['rain_chance']}%)  ·  Storms {f['storm']}" + (f" from {f['storm_from']}:00" if f["storm_from"] else "")
+         + f"  ·  Heat (WBGT) {f['wbgt_peak']:.0f} °C  ·  Gusts {f['gust_hook_max']:.0f} m/s")
+    text(d, (x, y), s, F(24), INK2)
+    return y + 40
+
+
+def briefing_rows(d, x, y, W, ymax, size=28, small=22, show_go=False):
+    """Problem trades first: pill, trade, hour strip; then label, reason and action. Clear trades on one line."""
+    sx = W - x - len(WORK) * 27 + 3
+    strip_axis(d, sx, y)
+    y += 26
+    for r in B["rows"]:
+        if r["status"] == "GO" and not show_go:
+            continue
+        sub = r["label"][0].upper() + r["label"][1:] + (" · limited by " + ", ".join(r["causes"]) if r["causes"] and r["key"] != "labour" else "")
+        if r["status"] == "STOP":
+            sub = ("Stopped by " + ", ".join(r["causes"])) if r["causes"] else "No window"
+        body = r["action"] if r["status"] == "GO" else sub + ". " + r["action"]
+        lines = wrap(d, body, F(small), sx - x - 158 - 20)[:3]
+        hgt = 46 + len(lines) * (small + 8) + 14
+        if y + hgt > ymax:
+            break
+        pill(d, x, y + 2, r["status"])
+        text(d, (x + 150, y), r["trade"], F(size, True))
+        strip(d, sx, y + 6, r["key"])
+        for k, ln in enumerate(lines):
+            text(d, (x + 150, y + 42 + k * (small + 8)), ln, F(small), INK2)
+        y += hgt
+        d.line((x, y - 7, W - x, y - 7), fill=LINE, width=1)
+    clear = [r["trade"] for r in B["rows"] if r["status"] == "GO"]
+    if clear and not show_go and y + 50 < ymax:
+        pill(d, x, y + 4, "GO")
+        for k, ln in enumerate(wrap(d, "No weather limits: " + ", ".join(clear) + ".", F(size - 2, True), W - 2 * x - 150)[:2]):
+            text(d, (x + 150, y + 6 + k * (size + 4)), ln, F(size - 2, True))
+        y += 56 + (size + 4) * (len(wrap(d, "No weather limits: " + ", ".join(clear) + ".", F(size - 2, True), W - 2 * x - 150)[:2]) - 1)
+    return y
+
+
+def briefing_card(W, H, path):
+    im = Image.new("RGB", (W, H), BG); d = ImageDraw.Draw(im)
+    top = 110 if H >= 1600 else 0
+    header(d, W, B["day"], f"Site briefing · issued {BJ['issued'][-5:]} · {NW}-hour day, lunch excluded", top)
+    y = headline_box(d, 64, 236 + top, W) + 18
+    y = facts_line(d, 64, y) + 10
+    y = briefing_rows(d, 64, y, W, H - 160 - (330 if H >= 1600 else 0))
+    for e in B["extras"]:
+        lines = wrap(d, e, F(22), W - 128)
+        if y + 30 * len(lines) > H - 160 - (330 if H >= 1600 else 0):
+            break
+        for ln in lines:
+            text(d, (64, y), ln, F(22), MUT); y += 30
+        y += 6
+    if H >= 1600:
+        y = H - 160 - 300
+        text(d, (64, y), "NEXT DAYS", F(22, True), BLUE); y += 44
+        for b in BJ["days"][1:4]:
+            text(d, (64, y), b["day"].split()[0][:3] + " " + b["day"].split()[1], F(26, True))
+            for k, ln in enumerate(wrap(d, b["headline"], F(23), W - 128 - 140)[:2]):
+                text(d, (200, y + 2 + k * 30), ln, F(23), INK2)
+            y += 76
+    footer(d, W, H)
+    im.save(path)
+    return im
+
+
+def a4_sheet(path_pdf, path_png):
+    W, H = 1240, 1754                                         # A4 at 150 dpi
+    im = Image.new("RGB", (W, H), (255, 255, 255)); d = ImageDraw.Draw(im)
+    header(d, W, B["day"], f"Morning site briefing · {NAME} · issued {BJ['issued']}")
+    y = headline_box(d, 64, 236, W) + 18
+    y = facts_line(d, 64, y) + 8
+    y = briefing_rows(d, 64, y, W, H - 560, show_go=True)
+    for e in B["extras"]:
+        text(d, (64, y), e, F(21), INK2); y += 30
+    y += 14
+    text(d, (64, y), "THE WEEK", F(20, True), BLUE); y += 34
+    for b in BJ["days"][1:6]:
+        text(d, (64, y), b["day"], F(21, True))
+        text(d, (330, y), wrap(d, b["headline"], F(21), W - 394)[0], F(21), INK2)
+        y += 32
+    y = max(y + 20, H - 330)
+    d.rounded_rectangle((64, y, W - 64, y + 170), 10, outline=INK2, width=2)
+    text(d, (84, y + 16), "BRIEFING RECORD", F(18, True), MUT)
+    for k, lab in enumerate(["Briefing given by", "Date and time", "Workers present (number)", "Signature"]):
+        cx, cy = 84 + (k % 2) * 560, y + 58 + (k // 2) * 56
+        text(d, (cx, cy), lab, F(20), INK2)
+        d.line((cx + d.textlength(lab, font=F(20)) + 12, cy + 22, cx + 520, cy + 22), fill=MUT, width=1)
+    footer(d, W, H)
+    im.save(path_png)
+    im.save(path_pdf, resolution=150)
+    return im
+
+
+a = briefing_card(1080, 1350, OUTD / "today_4x5.png")
+briefing_card(1080, 1920, OUTD / "today_9x16.png")
+today_card(1080, 1350, OUTD / "today_hours_4x5.png")          # the full hour-by-hour grid, for the detail-minded
+a4_sheet(OUTD / "briefing_A4.pdf", OUTD / "briefing_A4.png")
 b = week_card(OUTD / "week_4x5.png")
 c = howto_card(OUTD / "howto_4x5.png")
 a.save(OUTD / "carousel.pdf", save_all=True, append_images=[b, c], resolution=150)
-cap = [f"Site weather, {NAME}: {day:%A %d %B}.", ""] + [f"• {x}" for x in advice()] + [
-    "", f"Hour-by-hour for six trades, the week ahead and the monthly record: {LINK}", "",
+cap = [f"Site weather, {NAME}: {B['day']}.", "", B["headline"], ""] + [
+    f"• {r['trade']}: {r['label']}." for r in B["rows"] if r["status"] != "GO"] + [
+    f"• No limits: {', '.join(r['trade'] for r in B['rows'] if r['status'] == 'GO')}." if any(r["status"] == "GO" for r in B["rows"]) else ""] + [
+    "", f"Hour-by-hour for seven trades, the week ahead and the monthly record: {LINK}", "",
     "Screening guidance from a forecast; your contract, crane limits and H&S plan come first.",
     "#Kampala #Construction #SiteSafety #HeatStress #Uganda #Weather"]
 (OUTD / "caption.txt").write_text("\n".join(cap) + "\n")
