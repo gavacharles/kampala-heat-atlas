@@ -53,14 +53,27 @@ for ep in (sys.argv[1:] or EPOCHS):
             items += list(cat.search(collections=["sentinel-2-l2a"], bbox=BBOX, datetime=f"{a}/{b}",
                                      query={"eo:cloud_cover": {"lt": 40}}).items())
         print(ep, len(items), "scenes", flush=True)
+        # a failed tile read drops that one scene (nodata, masked below); the median over ~40 scenes absorbs it.
+        # A wholesale failure (it once emptied B11/B12) is caught by the per-band completeness check before writing.
         ds = load(items, bands=BANDS + ["SCL"], bbox=BBOX, crs="EPSG:32636", resolution=10, groupby="solar_day",
                   chunks={"x": 1024, "y": 1024, "time": 1}, fail_on_error=False)
         base = {i.datetime.date(): float(i.properties.get("s2:processing_baseline", "0")) for i in items}
         off = np.array([1000 if base.get(np.datetime64(t, "D").astype(object), 0) >= 4 else 0 for t in ds.time.values])
         clear = ds.SCL.isin([4, 5, 6, 11])
-        stack = [(ds[b].astype("float32") - off[:, None, None]).where(clear & (ds[b] > 0)).median("time", skipna=True)
-                 for b in BANDS]
-        arr = np.nan_to_num(np.clip(np.stack([s.compute().values for s in stack]), 0, 10000)).astype("int16")
+        arr = []
+        for b in BANDS:
+            for attempt in range(4):                        # transient blob-storage errors: retry the band
+                try:
+                    v = (ds[b].astype("float32") - off[:, None, None]).where(clear & (ds[b] > 0)).median("time", skipna=True)
+                    arr.append(v.compute().values); break
+                except Exception as e:  # noqa: BLE001
+                    print(ep, b, "retry", attempt + 1, str(e)[:120], flush=True)
+                    if attempt == 3:
+                        raise
+        arr = np.nan_to_num(np.clip(np.stack(arr), 0, 10000)).astype("int16")
+        for b, band in zip(BANDS, arr):                     # every band must be essentially complete
+            if (band > 0).mean() < 0.97:
+                raise RuntimeError(f"{ep} {b}: only {(band > 0).mean():.1%} valid - not writing")
         geobox = ds.odc.geobox
         write(s2_path, arr, geobox, "int16", 0)
         print(ep, "s2 written", arr.shape, "valid", float((arr[2] > 0).mean()), flush=True)

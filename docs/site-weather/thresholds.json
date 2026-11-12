@@ -1,0 +1,54 @@
+{
+ "_note": "Typical screening values. The contract specification, the crane manufacturer's limits and the site health-and-safety plan always take precedence. Edit these to match them.",
+ "working_hours": [
+  7,
+  18
+ ],
+ "heat_wbgt_moderate_work_acclimatised_C": {
+  "_source": "ACGIH TLV / ISO 7243 style screening, moderate work, acclimatised workers",
+  "continuous": 28.0,
+  "work75_rest25": 29.0,
+  "work50_rest50": 30.0,
+  "work25_rest75": 31.0
+ },
+ "crane": {
+  "_source": "typical tower-crane in-service limits; gust scaled from 10 m to hook height by the 1/7 power law",
+  "hook_height_m": 30,
+  "gust_caution_ms": 15.0,
+  "gust_stop_ms": 20.0
+ },
+ "work_at_height": {
+  "gust_caution_ms": 11.0,
+  "gust_stop_ms": 15.0,
+  "rain_stop_mm_h": 0.2
+ },
+ "concrete": {
+  "_source": "ACI 305R evaporation-rate guidance (Uno 1998 formula); concrete assumed warmer than air by concrete_minus_air_C",
+  "concrete_minus_air_C": 3.0,
+  "evap_caution_kg_m2_h": 0.5,
+  "evap_stop_kg_m2_h": 1.0,
+  "rain_stop_mm_h": 0.5,
+  "rain_prob_caution_pct": 30,
+  "rain_prob_stop_pct": 60
+ },
+ "coatings": {
+  "_source": "ISO 8502-4: surface at least 3 C above dew point; RH at most 85 %",
+  "dewpoint_margin_stop_C": 3.0,
+  "dewpoint_margin_caution_C": 5.0,
+  "rh_stop_pct": 85,
+  "rh_caution_pct": 80
+ },
+ "earthworks": {
+  "rain_prev24h_caution_mm": 5.0,
+  "rain_prev24h_stop_mm": 15.0,
+  "rain_stop_mm_h": 1.0
+ },
+ "lightning": {
+  "_source": "convective screening: CAPE with rain probability, and forecast rain in the hour for 'likely'; Kampala CAPE is above 1000 J/kg most hours, so CAPE alone is not a signal. Stop exposed work at the first thunder (30-30 rule).",
+  "cape_caution": 1000,
+  "cape_stop": 1000,
+  "prob_caution_pct": 50,
+  "prob_stop_pct": 70,
+  "rain_stop_mm_h": 0.5
+ }
+}

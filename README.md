@@ -8,6 +8,7 @@ Victoria breeze.
 - [Atlas](https://gavacharles.github.io/kampala-heat-atlas/): 11 map layers (heat, growth, settlements, trees, solar)
 - [3D model](https://gavacharles.github.io/kampala-heat-atlas/3d.html): three districts with real-time sun shadows and breeze arrows
 - [Figures & animations](https://gavacharles.github.io/kampala-heat-atlas/gallery.html)
+- [Site weather for contractors](https://gavacharles.github.io/kampala-heat-atlas/site-weather/central-kampala/): 7-day workable hours per trade (heat/WBGT, concrete, cranes, work at height, coatings, earthworks), a daily site note, and a month-by-month weather record against the 1991–2020 climate, refreshed daily by `scripts/29_site_weather.py`. Thresholds are editable in `docs/site-weather/thresholds.json` and are screening values only: the contract, crane manufacturer and site H&S plan take precedence. Weather data: Open-Meteo (CC BY 4.0); its free API is for non-commercial use, so commercial use of this service needs an Open-Meteo subscription.
 
 Status: first full run of PhD research (Gava Charles). Several layers carry open validation items,
 listed on the site next to each result. Please don't cite numbers without checking the caveats.

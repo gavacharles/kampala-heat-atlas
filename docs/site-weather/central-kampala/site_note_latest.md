@@ -1,0 +1,50 @@
+# Site note · Central Kampala
+
+Issued Thursday 12 November 2026, 21:04 (Africa/Kampala). Site 0.3136, 32.5811. Working hours 07:00-18:00.
+
+## Friday 13 November
+
+**Rain 1 mm (chance up to 57 %); gusts to 8 m/s at hook height; WBGT in sun peaks 24.4 °C at 13:00.**
+
+- Heat: continuous moderate work is fine through the day; keep water and shade available.
+- Concrete: best pour window 07-12 h (5 h).
+- Cranes: no gust limits expected in working hours.
+- Work at height: caution or stop at 16-17 h (rain, gusts or storms).
+- Coatings: suitable 10-14 h.
+- Earthworks: up to 9 mm in the previous 24 h, so expect soft, wet ground; protect formation and stockpiles.
+- Dust/air quality: PM2.5 up to 66 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Workable hours (go): outdoor labour 11, concrete pour 5, crane lifts 11, work at height / roofing 10, painting & coatings 4, earthworks 5 of 11.
+
+## Saturday 14 November
+
+**Rain 2 mm (chance up to 92 %), thunderstorm risk 12-19 h; gusts to 6 m/s at hook height; WBGT in sun peaks 27.5 °C at 15:00.**
+
+- Heat: continuous moderate work is fine through the day; keep water and shade available.
+- Concrete: best pour window 07-09 h (2 h).
+- Cranes: check wind and storms before lifts at 12-18 h.
+- Work at height: caution or stop at 12-18 h (rain, gusts or storms).
+- Coatings: no suitable window (humidity, dew point or rain).
+- Earthworks: ground conditions not limited by recent rain.
+- Dust/air quality: PM2.5 up to 66 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Workable hours (go): outdoor labour 11, concrete pour 2, crane lifts 5, work at height / roofing 5, painting & coatings 0, earthworks 9 of 11.
+
+## Sunday 15 November
+
+**Rain 10 mm (chance up to 93 %), thunderstorm risk 09-13 h, 14-16 h; gusts to 11 m/s at hook height; WBGT in sun peaks 24.1 °C at 11:00.**
+
+- Heat: continuous moderate work is fine through the day; keep water and shade available.
+- Concrete: no clear pour window in working hours.
+- Cranes: check wind and storms before lifts at 09-13 h, 14-16 h.
+- Work at height: caution or stop at 07-16 h (rain, gusts or storms).
+- Coatings: no suitable window (humidity, dew point or rain).
+- Earthworks: up to 11 mm in the previous 24 h, so expect soft, wet ground; protect formation and stockpiles.
+- Dust/air quality: PM2.5 up to 65 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Workable hours (go): outdoor labour 11, concrete pour 0, crane lifts 5, work at height / roofing 2, painting & coatings 0, earthworks 0 of 11.
+
+## Outlook
+
+- **Mon 16 Nov**: rain 4 mm (91 %), thunderstorm risk; WBGT peak 26.1 °C; concrete window none.
+- **Tue 17 Nov**: rain 2 mm (79 %), thunderstorm risk; WBGT peak 25.9 °C; concrete window none.
+- **Wed 18 Nov**: rain 9 mm (66 %), thunderstorm risk; WBGT peak 25.1 °C; concrete window none.
+
+*Screening guidance from a weather forecast, not an instruction. The contract specification, the crane manufacturer's limits and the site health-and-safety plan take precedence; check conditions on site (WBGT meter, anemometer, the 30-30 rule for lightning) before each activity. Thresholds used: thresholds.json.*
