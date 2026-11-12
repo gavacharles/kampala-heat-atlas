@@ -1,10 +1,10 @@
 # Site note · Jinja
 
-Issued Thursday 12 November 2026, 21:41 (Africa/Kampala). Site 0.4244, 33.2042. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Thursday 12 November 2026, 21:43 (Africa/Kampala). Site 0.4244, 33.2042. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Friday 13 November
 
-**Rain 0 mm (chance up to 51 %); gusts to 7 m/s at hook height; WBGT in sun peaks 24.6 °C at 16:00.**
+**Rain 0 mm (chance up to 51 %), thunderstorm risk 17-18 h; gusts to 7 m/s at hook height; WBGT in sun peaks 24.6 °C at 16:00.**
 
 - Heat: continuous moderate work is fine through the day; keep water and shade available.
 - Concrete: best pour window 08-13 h (5 h).
@@ -33,18 +33,18 @@ Issued Thursday 12 November 2026, 21:41 (Africa/Kampala). Site 0.4244, 33.2042. 
 
 ## Sunday 15 November
 
-**Rain 14 mm (chance up to 84 %), thunderstorm risk 11-17 h; gusts to 11 m/s at hook height; WBGT in sun peaks 24.0 °C at 12:00.**
+**Rain 14 mm (chance up to 84 %), thunderstorm risk 10-17 h; gusts to 11 m/s at hook height; WBGT in sun peaks 24.0 °C at 12:00.**
 
 - Heat: continuous moderate work is fine through the day; keep water and shade available.
 - Concrete: no clear pour window in working hours.
 - Asphalt & surfacing: no dry window; do not lay or spray on wet surfaces or with rain imminent.
-- Cranes: check wind and storms before lifts at 11-13 h, 14-17 h.
+- Cranes: check wind and storms before lifts at 10-13 h, 14-17 h.
 - Work at height: caution or stop at 08-13 h, 14-17 h (rain, gusts or storms).
 - Coatings: no suitable window (humidity, dew point or rain).
 - Earthworks: up to 15 mm in the previous 24 h, so expect soft, wet ground; protect formation and stockpiles.
 - UV index up to 8 (very high): hats with neck cover, long sleeves, sunscreen.
 - Dust/air quality: PM2.5 up to 73 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
-- Workable hours (go): outdoor labour 8, concrete pour 0, asphalt & surfacing 0, crane lifts 3, work at height / roofing 0, painting & coatings 0, earthworks 0 of 8.
+- Workable hours (go): outdoor labour 8, concrete pour 0, asphalt & surfacing 0, crane lifts 2, work at height / roofing 0, painting & coatings 0, earthworks 0 of 8.
 
 ## Outlook
 
