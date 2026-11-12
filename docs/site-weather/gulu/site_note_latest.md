@@ -1,6 +1,6 @@
 # Site note · Gulu
 
-Issued Friday 13 November 2026, 02:14 (Africa/Kampala). Site 2.7724, 32.2881. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Friday 13 November 2026, 02:25 (Africa/Kampala). Site 2.7724, 32.2881. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Friday 13 November
 
@@ -14,6 +14,7 @@ Rain 12 mm (chance up to 83 %) · storms low · WBGT peak 24.4 °C · gusts 6 m/
 - **Work at height — go 09-11 h, 12-13 h, 14-17 h only.** Limited by rain. Clear roofs and scaffolds before storms.
 - **Painting & coatings — go 14-17 h only.** Limited by humidity or dew, rain. Check the surface is 3 °C above dew point.
 - **No weather limits:** Outdoor labour, Crane lifts.
+- UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.
 
 ## Saturday 14 November
 
@@ -28,6 +29,7 @@ Rain 9 mm (chance up to 100 %) · storms likely · WBGT peak 26.5 °C · gusts 1
 - **Painting & coatings — go 10-12 h only.** Limited by humidity or dew, rain. Check the surface is 3 °C above dew point.
 - **Earthworks — go 08-13 h, 14-15 h only.** Limited by rain, wet ground. Protect formation and stockpiles. Ground wet after 7 mm in 24 h.
 - **No weather limits:** Outdoor labour.
+- UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.
 
 ## Sunday 15 November
 

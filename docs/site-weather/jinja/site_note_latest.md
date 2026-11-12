@@ -1,6 +1,6 @@
 # Site note · Jinja
 
-Issued Friday 13 November 2026, 02:12 (Africa/Kampala). Site 0.4244, 33.2042. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Friday 13 November 2026, 02:25 (Africa/Kampala). Site 0.4244, 33.2042. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Friday 13 November
 
@@ -29,7 +29,6 @@ Rain 1 mm (chance up to 95 %) · storms possible · WBGT peak 25.3 °C · gusts 
 - **Work at height — go 08-09 h, 12-13 h only.** Limited by rain, storms. Clear roofs and scaffolds before storms.
 - **Earthworks — go 08-09 h, 10-13 h, 14-17 h only.** Limited by rain. Protect formation and stockpiles.
 - **No weather limits:** Outdoor labour.
-- UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.
 - Dust: PM2.5 up to 40 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Sunday 15 November
@@ -45,7 +44,7 @@ Rain 12 mm (chance up to 79 %) · storms possible · WBGT peak 25.3 °C · gusts
 - **Earthworks — STOP.** Limited by wet ground, rain. Ground too wet: protect formation, keep plant off soft ground. Ground wet after 12 mm in 24 h.
 - **Crane lifts — go 08-10 h only.** Limited by storms. Check the anemometer before each lift.
 - **No weather limits:** Outdoor labour.
-- UV index up to 8 (very high): hats with neck cover, long sleeves, sunscreen.
+- UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.
 - Dust: PM2.5 up to 45 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Outlook
