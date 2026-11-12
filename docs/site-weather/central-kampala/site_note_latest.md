@@ -1,6 +1,6 @@
 # Site note · Central Kampala
 
-Issued Friday 13 November 2026, 01:06 (Africa/Kampala). Site 0.3136, 32.5811. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Friday 13 November 2026, 01:10 (Africa/Kampala). Site 0.3136, 32.5811. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Friday 13 November
 
@@ -15,7 +15,7 @@ Rain 4 mm (chance up to 57 %) · storms low · WBGT peak 24.8 °C · gusts 9 m/s
 - **Earthworks — go 14-16 h only.** Limited by wet ground, rain. Protect formation and stockpiles. Ground wet after 8 mm in 24 h.
 - **No weather limits:** Outdoor labour, Crane lifts.
 - UV index up to 8 (very high): hats with neck cover, long sleeves, sunscreen.
-- Dust: PM2.5 up to 66 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Dust: PM2.5 up to 39 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Saturday 14 November
 
@@ -31,7 +31,7 @@ Rain 3 mm (chance up to 92 %) · storms likely · WBGT peak 25.9 °C · gusts 7 
 - **Earthworks — go 08-12 h, 16-17 h only.** Limited by rain, wet ground. Protect formation and stockpiles. Ground wet after 6 mm in 24 h.
 - **No weather limits:** Outdoor labour.
 - UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.
-- Dust: PM2.5 up to 66 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Dust: PM2.5 up to 39 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Sunday 15 November
 
@@ -46,7 +46,7 @@ Rain 6 mm (chance up to 93 %) · storms likely · WBGT peak 25.4 °C · gusts 11
 - **Work at height — go 08-09 h only.** Limited by rain, storms. Clear roofs and scaffolds before storms.
 - **Earthworks — go 08-13 h only.** Limited by wet ground, rain. Protect formation and stockpiles. Ground wet after 7 mm in 24 h.
 - **No weather limits:** Outdoor labour.
-- Dust: PM2.5 up to 65 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Dust: PM2.5 up to 56 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Outlook
 

@@ -1,6 +1,6 @@
 # Site note · Mbale
 
-Issued Friday 13 November 2026, 01:07 (Africa/Kampala). Site 1.0821, 34.1750. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Friday 13 November 2026, 01:10 (Africa/Kampala). Site 1.0821, 34.1750. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Friday 13 November
 
@@ -14,7 +14,7 @@ Rain 7 mm (chance up to 60 %) · storms low · WBGT peak 24.9 °C · gusts 5 m/s
 - **Work at height — go 15-17 h only.** Limited by rain. Clear roofs and scaffolds before storms.
 - **Earthworks — go with care.** Limited by wet ground, rain. Ground soft: protect formation and stockpiles. Ground wet after 10 mm in 24 h.
 - **No weather limits:** Outdoor labour, Crane lifts.
-- Dust: PM2.5 up to 47 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Dust: PM2.5 up to 63 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Saturday 14 November
 
@@ -30,7 +30,7 @@ Rain 11 mm (chance up to 100 %) · storms likely · WBGT peak 26.2 °C · gusts 
 - **Earthworks — go 08-11 h only.** Limited by rain, wet ground. Protect formation and stockpiles. Ground wet after 8 mm in 24 h.
 - **No weather limits:** Outdoor labour.
 - UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.
-- Dust: PM2.5 up to 43 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Dust: PM2.5 up to 60 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Sunday 15 November
 
@@ -46,7 +46,7 @@ Rain 8 mm (chance up to 100 %) · storms likely · WBGT peak 27.3 °C · gusts 6
 - **Painting & coatings — go 10-11 h only.** Limited by rain, humidity or dew. Check the surface is 3 °C above dew point.
 - **No weather limits:** Outdoor labour.
 - UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.
-- Dust: PM2.5 up to 50 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Dust: PM2.5 up to 45 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Outlook
 

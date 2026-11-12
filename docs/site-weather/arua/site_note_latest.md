@@ -1,6 +1,6 @@
 # Site note · Arua
 
-Issued Friday 13 November 2026, 01:07 (Africa/Kampala). Site 3.0201, 30.9111. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Friday 13 November 2026, 01:12 (Africa/Kampala). Site 3.0201, 30.9111. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Friday 13 November
 
@@ -15,7 +15,7 @@ Rain 2 mm (chance up to 39 %) · storms low · WBGT peak 24.3 °C · gusts 9 m/s
 - **Earthworks — go 08-13 h, 15-17 h only.** Limited by rain. Protect formation and stockpiles.
 - **No weather limits:** Outdoor labour, Crane lifts.
 - UV index up to 8 (very high): hats with neck cover, long sleeves, sunscreen.
-- Dust: PM2.5 up to 64 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Dust: PM2.5 up to 62 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Saturday 14 November
 
@@ -30,6 +30,7 @@ Rain 2 mm (chance up to 86 %) · storms low · WBGT peak 24.8 °C · gusts 13 m/
 - **Earthworks — go 08-13 h, 14-16 h only.** Limited by rain. Protect formation and stockpiles.
 - **No weather limits:** Outdoor labour, Crane lifts.
 - UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.
+- Dust: PM2.5 up to 46 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Sunday 15 November
 

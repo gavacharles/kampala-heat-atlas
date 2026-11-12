@@ -1,6 +1,6 @@
 # Site note · Mbarara
 
-Issued Friday 13 November 2026, 01:07 (Africa/Kampala). Site -0.6072, 30.6545. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Friday 13 November 2026, 01:10 (Africa/Kampala). Site -0.6072, 30.6545. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Friday 13 November
 
@@ -15,7 +15,7 @@ Rain 8 mm (chance up to 90 %) · storms low · WBGT peak 23.3 °C · gusts 13 m/
 - **Painting & coatings — go 10-13 h, 14-15 h only.** Limited by humidity or dew, rain. Check the surface is 3 °C above dew point.
 - **No weather limits:** Outdoor labour, Crane lifts.
 - UV index up to 8 (very high): hats with neck cover, long sleeves, sunscreen.
-- Dust: PM2.5 up to 56 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Dust: PM2.5 up to 41 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Saturday 14 November
 
@@ -30,7 +30,7 @@ Rain 6 mm (chance up to 73 %) · storms possible · WBGT peak 25.3 °C · gusts 
 - **Painting & coatings — go 11-13 h only.** Limited by humidity or dew, rain. Check the surface is 3 °C above dew point.
 - **Earthworks — go with care.** Limited by wet ground, rain. Ground soft: protect formation and stockpiles. Ground wet after 8 mm in 24 h.
 - **No weather limits:** Outdoor labour.
-- Dust: PM2.5 up to 51 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Dust: PM2.5 up to 53 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Sunday 15 November
 
@@ -46,7 +46,7 @@ Rain 3 mm (chance up to 79 %) · storms possible · WBGT peak 25.4 °C · gusts 
 - **Earthworks — go with care.** Limited by wet ground, rain. Ground soft: protect formation and stockpiles. Ground wet after 6 mm in 24 h.
 - **No weather limits:** Outdoor labour.
 - UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.
-- Dust: PM2.5 up to 38 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Dust: PM2.5 up to 64 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Outlook
 

@@ -2,7 +2,7 @@
  "site": "Mbarara",
  "lat": -0.6072,
  "lon": 30.6545,
- "issued": "2026-11-13 01:07",
+ "issued": "2026-11-13 01:10",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -96,7 +96,7 @@
    ],
    "extras": [
     "UV index up to 8 (very high): hats with neck cover, long sleeves, sunscreen.",
-    "Dust: PM2.5 up to 56 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
+    "Dust: PM2.5 up to 41 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
    ],
    "facts": {
     "rain_mm": 7.5,
@@ -210,7 +210,7 @@
     }
    ],
    "extras": [
-    "Dust: PM2.5 up to 51 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
+    "Dust: PM2.5 up to 53 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
    ],
    "facts": {
     "rain_mm": 5.9,
@@ -325,7 +325,7 @@
    ],
    "extras": [
     "UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.",
-    "Dust: PM2.5 up to 38 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
+    "Dust: PM2.5 up to 64 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
    ],
    "facts": {
     "rain_mm": 2.6,
@@ -439,7 +439,7 @@
    ],
    "extras": [
     "UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.",
-    "Dust: PM2.5 up to 48 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
+    "Dust: PM2.5 up to 61 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
    ],
    "facts": {
     "rain_mm": 3.0,
@@ -552,7 +552,7 @@
     }
    ],
    "extras": [
-    "Dust: PM2.5 up to 59 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
+    "Dust: PM2.5 up to 56 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
    ],
    "facts": {
     "rain_mm": 3.9,

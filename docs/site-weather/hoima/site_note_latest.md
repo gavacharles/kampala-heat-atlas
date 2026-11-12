@@ -1,6 +1,6 @@
 # Site note · Hoima
 
-Issued Friday 13 November 2026, 01:07 (Africa/Kampala). Site 1.4331, 31.3524. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Friday 13 November 2026, 01:10 (Africa/Kampala). Site 1.4331, 31.3524. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Friday 13 November
 
@@ -14,7 +14,7 @@ Rain 2 mm (chance up to 69 %) · storms possible · WBGT peak 23.8 °C · gusts 
 - **Crane lifts — go 08-13 h, 14-15 h only.** Limited by storms. Check the anemometer before each lift.
 - **Work at height — go 08-12 h only.** Limited by rain, storms. Clear roofs and scaffolds before storms.
 - **No weather limits:** Outdoor labour, Earthworks.
-- Dust: PM2.5 up to 36 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Dust: PM2.5 up to 43 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Saturday 14 November
 

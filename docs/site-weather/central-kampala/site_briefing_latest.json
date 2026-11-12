@@ -2,7 +2,7 @@
  "site": "Central Kampala",
  "lat": 0.3136,
  "lon": 32.5811,
- "issued": "2026-11-13 01:06",
+ "issued": "2026-11-13 01:10",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -95,7 +95,7 @@
    ],
    "extras": [
     "UV index up to 8 (very high): hats with neck cover, long sleeves, sunscreen.",
-    "Dust: PM2.5 up to 66 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
+    "Dust: PM2.5 up to 39 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
    ],
    "facts": {
     "rain_mm": 3.8,
@@ -210,7 +210,7 @@
    ],
    "extras": [
     "UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.",
-    "Dust: PM2.5 up to 66 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
+    "Dust: PM2.5 up to 39 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
    ],
    "facts": {
     "rain_mm": 3.4,
@@ -324,7 +324,7 @@
     }
    ],
    "extras": [
-    "Dust: PM2.5 up to 65 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
+    "Dust: PM2.5 up to 56 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
    ],
    "facts": {
     "rain_mm": 6.1,
@@ -439,7 +439,7 @@
    ],
    "extras": [
     "UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.",
-    "Dust: PM2.5 up to 75 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
+    "Dust: PM2.5 up to 78 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
    ],
    "facts": {
     "rain_mm": 8.2,
@@ -553,7 +553,7 @@
     }
    ],
    "extras": [
-    "Dust: PM2.5 up to 75 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
+    "Dust: PM2.5 up to 85 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
    ],
    "facts": {
     "rain_mm": 4.2,
