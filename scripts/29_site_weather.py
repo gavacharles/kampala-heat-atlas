@@ -62,8 +62,8 @@ for d in ("archive/forecasts", "archive/observed", "archive/monthly"):
 TH = json.loads((OUT / "thresholds.json").read_text())
 W0, W1 = TH["working_hours"]
 SIGMA = 5.67e-8
-TRADES = ["Outdoor labour (heat)", "Concrete pour", "Crane lifts", "Work at height / roofing", "Painting & coatings", "Earthworks"]
-KEYS = ["labour", "concrete", "crane", "height", "coatings", "earthworks"]
+TRADES = ["Outdoor labour (heat)", "Concrete pour", "Asphalt & surfacing", "Crane lifts", "Work at height / roofing", "Painting & coatings", "Earthworks"]
+KEYS = ["labour", "concrete", "asphalt", "crane", "height", "coatings", "earthworks"]
 INK, INK2, MUTED, GRID = "#0b0b0b", "#52514e", "#898781", "#e1e0d9"
 BLUE, ORANGE, RED, GREEN, AMBER, OFF = "#2a78d6", "#eb6834", "#c23434", "#2f8f3a", "#e0a526", "#ecebe6"
 plt.rcParams.update({"font.family": ["Helvetica Neue", "Arial", "DejaVu Sans"], "font.size": 9, "axes.edgecolor": "#c3c2b7",
@@ -164,6 +164,7 @@ def derive(df):
     df["thunder"] = np.where((cape >= lt["cape_stop"]) & (prob >= lt["prob_stop_pct"]) & (df.precipitation.values >= lt["rain_stop_mm_h"]), 2,
                              np.where((cape >= lt["cape_caution"]) & (prob >= lt["prob_caution_pct"]), 1, 0))
     df["rain_prev24"] = df.precipitation.rolling(24, min_periods=1).sum()
+    df["rain_prev3"] = df.precipitation.shift(1, fill_value=0).rolling(3, min_periods=1).sum()
     df["prob_next3"] = df.precipitation_probability[::-1].rolling(3, min_periods=1).max()[::-1]
     df["solar_elev"] = elev
 
@@ -179,7 +180,11 @@ def derive(df):
     df["st_height"] = lvl((g10 >= wh["gust_stop_ms"]) | (pr >= wh["rain_stop_mm_h"]) | (thn == 2), (g10 >= wh["gust_caution_ms"]) | (thn == 1))
     co = TH["coatings"]; m, r = df.dewpoint_margin.values, rh
     df["st_coatings"] = lvl((m < co["dewpoint_margin_stop_C"]) | (r > co["rh_stop_pct"]) | (pr > 0.1),
-                            (m < co["dewpoint_margin_caution_C"]) | (r > co["rh_caution_pct"]) | (df.precipitation_probability >= 30))
+                            (m < co["dewpoint_margin_caution_C"]) | (r > co["rh_caution_pct"]) | (df.precipitation_probability >= 50))
+    asp = TH["asphalt"]; p3 = df.rain_prev3.values
+    df["st_asphalt"] = lvl((pr >= asp["rain_stop_mm_h"]) | (p3 >= asp["wet_surface_prev3h_mm"]) | (df.prob_next3 >= asp["rain_prob_next3_stop_pct"])
+                           | (thn == 2) | (ta < asp["min_air_C"]),
+                           (p3 > 0) | (df.prob_next3 >= asp["rain_prob_next3_caution_pct"]) | (thn == 1) | (df.wind_speed_10m.values >= asp["wind_caution_ms"]))
     ew = TH["earthworks"]; p24 = df.rain_prev24.values
     df["st_earthworks"] = lvl((p24 >= ew["rain_prev24h_stop_mm"]) | (pr >= ew["rain_stop_mm_h"]), (p24 >= ew["rain_prev24h_caution_mm"]) | (pr > 0.2))
     df["work_hour"] = (df.index.hour >= W0) & (df.index.hour < W1)
@@ -239,7 +244,7 @@ CLIM = climatology()
 # ---------------------------------------------------------------- figure
 t = fc.index
 fig, ax = plt.subplots(6, 1, figsize=(11.5, 14), sharex=True, constrained_layout=True,
-                       gridspec_kw=dict(height_ratios=[2.6, 1.2, 1.3, 1.1, 1.1, 1.6]))
+                       gridspec_kw=dict(height_ratios=[2.6, 1.2, 1.3, 1.1, 1.1, 1.8]))
 h = TH["heat_wbgt_moderate_work_acclimatised_C"]
 bands = [(-50, h["continuous"], "#ffffff", "continuous work"), (h["continuous"], h["work75_rest25"], "#fde0d2", "45/15 work/rest"),
          (h["work75_rest25"], h["work50_rest50"], "#f8c4ad", "30/30"), (h["work50_rest50"], h["work25_rest75"], "#f19b80", "15/45"),
@@ -326,6 +331,9 @@ def day_lines(d, g):
     if ev >= TH["concrete"]["evap_caution_kg_m2_h"]:
         cn += f"; evaporation up to {ev:.1f} kg/m²/h, so have curing compound, wet hessian or windbreaks ready"
     out.append(cn + ".")
+    aw, an = longest(w.st_asphalt.values == 0, w.index)
+    out.append(f"Asphalt & surfacing: dry window {aw} ({an} h); no laying or spraying on a wet surface." if an
+               else "Asphalt & surfacing: no dry window; do not lay or spray on wet surfaces or with rain imminent.")
     cr_bad = runs(w.st_crane.values >= 1, w.index)
     out.append("Cranes: " + (f"check wind and storms before lifts at {', '.join(cr_bad)}." if cr_bad else "no gust limits expected in working hours."))
     ht = runs(w.st_height.values >= 1, w.index)
@@ -388,7 +396,7 @@ def md_to_html(lines):
 note_html = md_to_html(md)
 (SITE / "site_note_latest.html").write_text(note_html)
 cols = ["temperature_2m", "relative_humidity_2m", "dew_point_2m", "precipitation", "precipitation_probability", "cape", "wind_speed_10m",
-        "wind_gusts_10m", "gust_hook", "uv_index", "wbgt_sun", "wbgt_shade", "evap_kg_m2_h", "dewpoint_margin", "rain_prev24", "thunder"] + [f"st_{k}" for k in KEYS]
+        "wind_gusts_10m", "gust_hook", "uv_index", "wbgt_sun", "wbgt_shade", "evap_kg_m2_h", "dewpoint_margin", "rain_prev24", "rain_prev3", "thunder"] + [f"st_{k}" for k in KEYS]
 fc[cols].round(2).to_csv(SITE / "site_forecast_latest.csv")
 
 # ---------------------------------------------------------------- archive: forecast as issued
@@ -533,7 +541,7 @@ section{{display:grid;gap:10px;border-top:1px solid var(--line);padding-top:16px
 th,td{{border-bottom:1px solid var(--line);padding:6px 10px;text-align:right}} th:first-child,td:first-child{{text-align:left}}
 img{{width:100%;height:auto;border:1px solid var(--line);border-radius:8px;background:#fff}}
 </style></head><body><main>
-<nav><a href="../../index.html">Atlas</a><a href="../../3d.html">3D model</a><a href="../../stories.html">Stories</a><a href="../../daynight.html">Day vs night</a><a href="../../meteogram.html">Meteogram</a><a href="./">Site weather</a><a href="../../gallery.html">Figures</a><a href="https://github.com/gavacharles/kampala-heat-atlas">Code</a></nav>
+<nav><a href="../../index.html">Atlas</a><a href="../../3d.html">3D model</a><a href="../../stories.html">Stories</a><a href="../../daynight.html">Day vs night</a><a href="../../meteogram.html">Meteogram</a><a href="../">Site weather</a><a href="../../gallery.html">Figures</a><a href="https://github.com/gavacharles/kampala-heat-atlas">Code</a></nav>
 <h1>Site weather · {html.escape(A.name)}</h1>
 <p class="lede">For contractors and site managers: the next seven days as workable hours per trade, with a short site note,
 refreshed every morning at 06:00. Every day is also archived, so the record of what the weather did, month by month and

@@ -1,0 +1,10 @@
+{"_note": "One entry per site. Add a line to add a site (contractors can send coordinates). alt in metres.",
+ "sites": [
+  {"name": "Central Kampala", "region": "Central", "lat": 0.3136, "lon": 32.5811, "alt": 1190},
+  {"name": "Mbarara", "region": "Western", "lat": -0.6072, "lon": 30.6545, "alt": 1430},
+  {"name": "Hoima", "region": "Western", "lat": 1.4331, "lon": 31.3524, "alt": 1150},
+  {"name": "Mbale", "region": "Eastern", "lat": 1.0821, "lon": 34.1750, "alt": 1150},
+  {"name": "Jinja", "region": "Eastern", "lat": 0.4244, "lon": 33.2042, "alt": 1140},
+  {"name": "Gulu", "region": "Northern", "lat": 2.7724, "lon": 32.2881, "alt": 1100},
+  {"name": "Arua", "region": "Northern", "lat": 3.0201, "lon": 30.9111, "alt": 1210}
+ ]}

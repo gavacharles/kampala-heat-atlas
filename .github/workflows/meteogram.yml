@@ -1,13 +1,17 @@
-name: Refresh Kampala meteograms and site weather record
+name: Refresh meteograms and site weather, deploy site
 on:
   schedule:
-    - cron: "0 3 * * *"        # 06:00 in Kampala, daily
+    - cron: "0 3 * * *"        # 06:00 in Uganda, daily
+  push:
+    branches: [main]
   workflow_dispatch:
 permissions:
   contents: write
+  pages: write
+  id-token: write
 concurrency: meteogram
 jobs:
-  meteogram:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -16,12 +20,21 @@ jobs:
           python-version: "3.12"
       - run: pip install numpy pandas matplotlib pvlib pythermalcomfort pillow
       - run: python scripts/25_meteogram.py docs/figures
-      # construction site weather: meteogram, site note, and the daily/monthly record (add more sites as extra lines)
-      - run: python scripts/29_site_weather.py docs/site-weather --name "Central Kampala" --lat 0.3136 --lon 32.5811
-      - run: python scripts/30_site_cards.py docs/site-weather/central-kampala
-      - name: Commit if changed
+      # every site in docs/site-weather/sites.json: meteogram, site note, cards, daily/monthly record
+      - run: python scripts/31_site_weather_all.py docs/site-weather
+      - name: Commit the record (text only; images are deployed, not committed)
         run: |
           git config user.name "meteogram-bot"
           git config user.email "actions@users.noreply.github.com"
           git add docs/figures/meteogram_latest.png docs/figures/meteogram_latest.csv docs/site-weather
           git diff --cached --quiet || (git commit -m "Refresh meteograms and site weather record" && git push)
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+    steps:
+      - uses: actions/deploy-pages@v4

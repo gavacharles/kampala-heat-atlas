@@ -28,8 +28,8 @@
   "evap_caution_kg_m2_h": 0.5,
   "evap_stop_kg_m2_h": 1.0,
   "rain_stop_mm_h": 0.5,
-  "rain_prob_caution_pct": 30,
-  "rain_prob_stop_pct": 60
+  "rain_prob_caution_pct": 50,
+  "rain_prob_stop_pct": 75
  },
  "coatings": {
   "_source": "ISO 8502-4: surface at least 3 C above dew point; RH at most 85 %",
@@ -50,5 +50,14 @@
   "prob_caution_pct": 50,
   "prob_stop_pct": 70,
   "rain_stop_mm_h": 0.5
+ },
+ "asphalt": {
+  "_source": "typical hot-mix asphalt and bituminous surface-dressing practice (e.g. MoWT General Specifications for Roads and Bridges): no laying or spraying in rain or on a wet surface, nor when rain is imminent; thin lifts cool fast in wind",
+  "rain_stop_mm_h": 0.1,
+  "wet_surface_prev3h_mm": 0.5,
+  "rain_prob_next3_caution_pct": 50,
+  "rain_prob_next3_stop_pct": 75,
+  "min_air_C": 10,
+  "wind_caution_ms": 8
  }
 }

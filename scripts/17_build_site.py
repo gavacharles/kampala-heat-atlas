@@ -49,7 +49,7 @@ section{{display:grid;gap:12px;border-top:1px solid var(--line);padding-top:16px
 input[type=range]{{max-width:900px;width:100%;accent-color:var(--blue)}}
 @media (max-width:700px){{.media{{grid-template-columns:1fr}}}}
 </style></head><body><main>
-<nav><a href="index.html">Atlas</a><a href="3d.html">3D model</a><a href="stories.html">Stories</a><a href="daynight.html">Day vs night</a><a href="meteogram.html">Meteogram</a><a href="site-weather/central-kampala/">Site weather</a><a href="gallery.html">Figures</a><a href="https://github.com/gavacharles/kampala-heat-atlas">Code</a></nav>
+<nav><a href="index.html">Atlas</a><a href="3d.html">3D model</a><a href="stories.html">Stories</a><a href="daynight.html">Day vs night</a><a href="meteogram.html">Meteogram</a><a href="site-weather/">Site weather</a><a href="gallery.html">Figures</a><a href="https://github.com/gavacharles/kampala-heat-atlas">Code</a></nav>
 """
 
 # ---------------------------------------------------------------- 2D atlas

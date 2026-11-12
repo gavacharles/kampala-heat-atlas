@@ -24,7 +24,7 @@ SITE = Path(sys.argv[1] if len(sys.argv) > 1 else "docs/site-weather/central-kam
 OUTD = SITE / "social"; OUTD.mkdir(parents=True, exist_ok=True)
 TH = json.loads((SITE.parent / "thresholds.json").read_text())
 W0, W1 = TH["working_hours"]
-NAME = SITE.name.replace("-", " ").title()
+NAME = (SITE / "site_note_latest.md").read_text().splitlines()[0].split("· ", 1)[1].strip()
 LINK = f"gavacharles.github.io/kampala-heat-atlas/site-weather/{SITE.name}"
 
 
@@ -47,7 +47,7 @@ BG, CARD, INK, INK2, MUT, LINE = (246, 246, 243), (255, 255, 255), (11, 11, 11),
 GO, CAU, STOP, OFF, BLUE = (47, 143, 58), (224, 165, 38), (194, 52, 52), (236, 235, 230), (42, 120, 214)
 COL = {0: GO, 1: CAU, 2: STOP}
 WORD = {0: "GO", 1: "CAUTION", 2: "STOP"}
-TRADES = [("labour", "Outdoor labour"), ("concrete", "Concrete pour"), ("crane", "Crane lifts"),
+TRADES = [("labour", "Outdoor labour"), ("concrete", "Concrete pour"), ("asphalt", "Asphalt & surfacing"), ("crane", "Crane lifts"),
           ("height", "Work at height"), ("coatings", "Painting & coatings"), ("earthworks", "Earthworks")]
 
 df = pd.read_csv(SITE / "site_forecast_latest.csv", index_col=0)
@@ -126,6 +126,8 @@ def advice():
         out.append(f"Pour concrete {pour[0]:02d}-{pour[1]:02d} h; have curing cover ready.")
     else:
         out.append("No clear concrete window today: postpone pours or protect against rain.")
+    asp = best(w.st_asphalt.values == 0, w.index)
+    out.append(f"Asphalt: dry window {asp[0]:02d}-{asp[1]:02d} h." if asp else "Asphalt: no dry window; don't lay on a wet surface.")
     if w.rain_prev24.max() >= TH["earthworks"]["rain_prev24h_caution_mm"] if "rain_prev24" in w else False:
         out.append("Ground is wet from recent rain: protect formation and stockpiles.")
     ok = runs(w.st_coatings.values == 0, w.index)
@@ -176,15 +178,17 @@ def today_card(W, H, path):
     top = 110 if H >= 1600 else 0                            # clear the Stories profile bar
     header(d, W, f"{day:%A %d %B}", f"Hour-by-hour: what can go ahead on site · issued {issued:%H:%M}", top)
     y = facts_block(d, 64, 240 + top, W) + 44
-    y = trade_grid(d, 64, y, W, row_h=78 if H < 1600 else 96) + 28
+    y = trade_grid(d, 64, y, W, row_h=62 if H < 1600 else 88) + 28
     text(d, (64, y), "ON SITE TODAY", F(22, True), BLUE); y += 40
     for a in advice():
+        if y + 36 > H - 150:
+            break
         for i, ln in enumerate(wrap(d, a, F(26), W - 128 - 30)):
             if i == 0:
                 d.ellipse((64, y + 10, 76, y + 22), fill=INK)
             text(d, (94, y), ln, F(26), INK); y += 36
         y += 8
-        if y > H - 200:
+        if y > H - 150:
             break
     if H >= 1600:                                            # vertical: a short outlook fills the lower third
         y += 30
@@ -214,16 +218,16 @@ def week_card(path):
         text(d, (cx, y0 + 34), f"{dd:%d}", F(20), MUT, "ma")
     y = y0 + 80
     for k, name in TRADES:
-        text(d, (x0, y + 44), name, F(26, True), INK, "lm")
+        text(d, (x0, y + 40), name, F(26, True), INK, "lm")
         for j, (dd, gg) in enumerate(days):
             ww = gg[(gg.index.hour >= W0) & (gg.index.hour < W1)]
             n = int((ww[f"st_{k}"] == 0).sum()); share = n / max(len(ww), 1)
             col = GO if share >= 0.66 else CAU if share >= 0.33 else STOP
             cx = x0 + lab_w + j * cw
-            d.rounded_rectangle((cx + 5, y + 8, cx + cw - 5, y + 80), 10, fill=col)
-            text(d, (cx + cw / 2, y + 36), f"{n}h", F(30, True), (255, 255, 255), "mm")
-            text(d, (cx + cw / 2, y + 64), "go", F(16, True), (255, 255, 255), "mm")
-        y += 92
+            d.rounded_rectangle((cx + 5, y + 6, cx + cw - 5, y + 74), 10, fill=col)
+            text(d, (cx + cw / 2, y + 32), f"{n}h", F(30, True), (255, 255, 255), "mm")
+            text(d, (cx + cw / 2, y + 60), "go", F(16, True), (255, 255, 255), "mm")
+        y += 80
     y += 10
     text(d, (x0, y + 30), "Rain", F(26, True), INK, "lm")
     text(d, (x0, y + 90), "Storm risk", F(26, True), INK, "lm")
