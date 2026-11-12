@@ -1,8 +1,8 @@
 {
  "_note": "Typical screening values. The contract specification, the crane manufacturer's limits and the site health-and-safety plan always take precedence. Edit these to match them.",
  "working_hours": [
-  7,
-  18
+  8,
+  17
  ],
  "heat_wbgt_moderate_work_acclimatised_C": {
   "_source": "ACGIH TLV / ISO 7243 style screening, moderate work, acclimatised workers",
@@ -59,5 +59,9 @@
   "rain_prob_next3_stop_pct": 75,
   "min_air_C": 10,
   "wind_caution_ms": 8
- }
+ },
+ "break_hours": [
+  13
+ ],
+ "_working_note": "8-hour working day: 08:00-17:00 with a lunch break 13:00-14:00 (break hours are not counted)"
 }

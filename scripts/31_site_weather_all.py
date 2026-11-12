@@ -20,6 +20,8 @@ HERE = Path(__file__).parent
 SITES = json.loads((OUT / "sites.json").read_text())["sites"]
 TH = json.loads((OUT / "thresholds.json").read_text())
 W0, W1 = TH["working_hours"]
+WORK = [h for h in range(W0, W1) if h not in TH.get("break_hours", [])]     # e.g. 8 working hours, lunch excluded
+NW = len(WORK)
 slug = lambda n: "-".join("".join(c if c.isalnum() else " " for c in n.lower()).split())
 
 failed = []
@@ -64,7 +66,7 @@ W, H = 1080, 1350
 im = Image.new("RGB", (W, H), BG); d = ImageDraw.Draw(im)
 d.text((64, 64), "SITE WEATHER · UGANDA", font=F(26, True), fill=BLUE)
 d.text((64, 104), "Concrete windows this week", font=F(56, True), fill=INK)
-d.text((64, 176), f"Hours a pour can go ahead, out of the {W1 - W0}-hour working day, and daily rain", font=F(26), fill=INK2)
+d.text((64, 176), f"Hours a pour can go ahead, out of the {NW}-hour working day, and daily rain", font=F(26), fill=INK2)
 x0, lab_w, y = 64, 250, 250
 cw = (W - 128 - lab_w) / max(len(days), 1)
 for j, dd in enumerate(days):
@@ -78,7 +80,7 @@ for s, df in rows:
         d.text((x0, y + 4), region.upper(), font=F(18, True), fill=BLUE); y += 30
     d.text((x0, y + 40), s["name"].replace("Central ", ""), font=F(28, True), fill=INK, anchor="lm")
     for j, dd in enumerate(days):
-        g = df[df.index.normalize() == dd]; w = g[(g.index.hour >= W0) & (g.index.hour < W1)]
+        g = df[df.index.normalize() == dd]; w = g[g.index.hour.isin(WORK)]
         n = int((w.st_concrete == 0).sum()); share = n / max(len(w), 1)
         col = GO if share >= 0.66 else CAU if share >= 0.33 else STOP
         cx = x0 + lab_w + j * cw

@@ -24,6 +24,8 @@ SITE = Path(sys.argv[1] if len(sys.argv) > 1 else "docs/site-weather/central-kam
 OUTD = SITE / "social"; OUTD.mkdir(parents=True, exist_ok=True)
 TH = json.loads((SITE.parent / "thresholds.json").read_text())
 W0, W1 = TH["working_hours"]
+WORK = [h for h in range(W0, W1) if h not in TH.get("break_hours", [])]     # e.g. 8 working hours, lunch excluded
+NW = len(WORK)
 NAME = (SITE / "site_note_latest.md").read_text().splitlines()[0].split("· ", 1)[1].strip()
 LINK = f"gavacharles.github.io/kampala-heat-atlas/site-weather/{SITE.name}"
 
@@ -57,12 +59,14 @@ days = [(d, g) for d, g in df.groupby(df.index.normalize())]
 if issued.hour >= W1:
     days = days[1:]
 day, g = days[0]
-w = g[(g.index.hour >= W0) & (g.index.hour < W1)]
+w = g[g.index.hour.isin(WORK)]
 
 
 def runs(mask, idx):
     out, s = [], None
     for k, ok in enumerate(list(mask) + [False]):
+        if ok and s is not None and idx[k].hour != idx[k - 1].hour + 1:       # gap (lunch): close the run
+            out.append((idx[s].hour, idx[k - 1].hour + 1)); s = None
         if ok and s is None:
             s = k
         if not ok and s is not None:
@@ -148,7 +152,7 @@ def facts_block(d, x, y, W):
 
 
 def trade_grid(d, x, y, W, row_h=78):
-    hrs = list(range(W0, W1))
+    hrs = WORK
     lab_w = 300; gx = x + lab_w; gw = W - x - gx
     cw = gw / len(hrs)
     for i, hh in enumerate(hrs):
@@ -169,7 +173,7 @@ def trade_grid(d, x, y, W, row_h=78):
         d.rounded_rectangle((lx, y + 14, lx + 26, y + 40), 5, fill=COL[s])
         text(d, (lx + 36, y + 27), WORD[s], F(20, True), INK2, "lm")
         lx += 36 + d.textlength(WORD[s], font=F(20, True)) + 40
-    text(d, (W - 64, y + 27), f"working hours {W0:02d}-{W1:02d}", F(20), MUT, "rm")
+    text(d, (W - 64, y + 27), f"working hours {W0:02d}-{W1:02d}, lunch excluded", F(20), MUT, "rm")
     return y + 54
 
 
@@ -194,7 +198,7 @@ def today_card(W, H, path):
         y += 30
         text(d, (64, y), "NEXT DAYS", F(22, True), BLUE); y += 44
         for dd, gg in days[1:4]:
-            ww = gg[(gg.index.hour >= W0) & (gg.index.hour < W1)]
+            ww = gg[gg.index.hour.isin(WORK)]
             lvl = int(gg.thunder.max())
             text(d, (64, y), f"{dd:%a %d}", F(28, True))
             text(d, (230, y), f"rain {gg.precipitation.sum():.0f} mm", F(26), BLUE)
@@ -209,7 +213,7 @@ def today_card(W, H, path):
 def week_card(path):
     W, H = 1080, 1350
     im = Image.new("RGB", (W, H), BG); d = ImageDraw.Draw(im)
-    header(d, W, "The week on site", f"Hours each trade can go ahead, out of the {W1 - W0}-hour working day")
+    header(d, W, "The week on site", f"Hours each trade can go ahead, out of the {NW}-hour working day")
     x0, y0, lab_w = 64, 260, 290
     cw = (W - 128 - lab_w) / len(days)
     for j, (dd, gg) in enumerate(days):
@@ -220,7 +224,7 @@ def week_card(path):
     for k, name in TRADES:
         text(d, (x0, y + 40), name, F(26, True), INK, "lm")
         for j, (dd, gg) in enumerate(days):
-            ww = gg[(gg.index.hour >= W0) & (gg.index.hour < W1)]
+            ww = gg[gg.index.hour.isin(WORK)]
             n = int((ww[f"st_{k}"] == 0).sum()); share = n / max(len(ww), 1)
             col = GO if share >= 0.66 else CAU if share >= 0.33 else STOP
             cx = x0 + lab_w + j * cw
@@ -242,7 +246,7 @@ def week_card(path):
     for col, lab in ((GO, "most of the day (8h+)"), (CAU, "part of the day (4-7h)"), (STOP, "little or none (0-3h)")):
         d.rounded_rectangle((lx, y, lx + 26, y + 26), 5, fill=col)
         text(d, (lx + 36, y + 13), lab, F(20), INK2, "lm"); lx += 36 + d.textlength(lab, font=F(20)) + 36
-    text(d, (x0, y + 60), f"Example: 3h = only 3 of the {W1 - W0} hours ({W0:02d}-{W1:02d} h) are clear of rain, storm, wind and heat limits for that trade.", F(20), MUT)
+    text(d, (x0, y + 60), f"Example: 3h = only 3 of the {NW} hours ({W0:02d}-{W1:02d} h) are clear of rain, storm, wind and heat limits for that trade.", F(20), MUT)
     footer(d, W, H)
     im.save(path)
     return im
@@ -254,7 +258,7 @@ def howto_card(path):
     header(d, W, "How to read the card", "A daily weather check for contractors and site managers")
     y = 270
     items = [("Each row is a trade", "Outdoor labour, concrete, cranes, work at height, painting, earthworks."),
-             ("Each block is an hour", f"From {W0:02d}:00 to {W1:02d}:00. Green: go. Amber: go with care. Red: stop or reschedule."),
+             ("Each block is an hour", f"{NW} working hours, {W0:02d}:00 to {W1:02d}:00 with lunch excluded. Green: go. Amber: go with care. Red: stop or reschedule."),
              ("Heat uses WBGT", "Wet-bulb globe temperature, the standard for heat stress at work. It sets work/rest cycles."),
              ("Concrete looks at rain and drying", "Rain in the next hours, and evaporation fast enough to crack fresh concrete (ACI 305)."),
              ("Cranes use gusts at hook height", "Gusts scaled to 30 m, against typical tower-crane limits, plus thunderstorm risk."),

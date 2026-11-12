@@ -61,6 +61,8 @@ for d in ("archive/forecasts", "archive/observed", "archive/monthly"):
     (SITE / d).mkdir(parents=True, exist_ok=True)
 TH = json.loads((OUT / "thresholds.json").read_text())
 W0, W1 = TH["working_hours"]
+WORK = [h for h in range(W0, W1) if h not in TH.get("break_hours", [])]     # e.g. 8 working hours, lunch excluded
+NW = len(WORK)
 SIGMA = 5.67e-8
 TRADES = ["Outdoor labour (heat)", "Concrete pour", "Asphalt & surfacing", "Crane lifts", "Work at height / roofing", "Painting & coatings", "Earthworks"]
 KEYS = ["labour", "concrete", "asphalt", "crane", "height", "coatings", "earthworks"]
@@ -187,7 +189,7 @@ def derive(df):
                            (p3 > 0) | (df.prob_next3 >= asp["rain_prob_next3_caution_pct"]) | (thn == 1) | (df.wind_speed_10m.values >= asp["wind_caution_ms"]))
     ew = TH["earthworks"]; p24 = df.rain_prev24.values
     df["st_earthworks"] = lvl((p24 >= ew["rain_prev24h_stop_mm"]) | (pr >= ew["rain_stop_mm_h"]), (p24 >= ew["rain_prev24h_caution_mm"]) | (pr > 0.2))
-    df["work_hour"] = (df.index.hour >= W0) & (df.index.hour < W1)
+    df["work_hour"] = df.index.hour.isin(WORK)
     return df
 
 
@@ -206,6 +208,8 @@ def runs(mask, idx):
     """Contiguous True runs -> ['07-11 h', ...] (hour labels are the start of each hour)."""
     out, start = [], None
     for k, ok in enumerate(list(mask) + [False]):
+        if ok and start is not None and idx[k].hour != idx[k - 1].hour + 1:   # gap (lunch): close the run
+            out.append(f"{idx[start]:%H}-{(idx[k - 1] + pd.Timedelta(hours=1)):%H} h"); start = None
         if ok and start is None:
             start = k
         if not ok and start is not None:
@@ -216,7 +220,7 @@ def runs(mask, idx):
 def longest(mask, idx):
     best, cur, bs = 0, 0, None
     for k, ok in enumerate(mask):
-        cur = cur + 1 if ok else 0
+        cur = cur + 1 if ok and (cur == 0 or idx[k].hour == idx[k - 1].hour + 1) else (1 if ok else 0)
         if cur > best:
             best, bs = cur, k - cur + 1
     return (f"{idx[bs]:%H}-{(idx[bs + best - 1] + pd.Timedelta(hours=1)):%H} h", best) if best else ("none", 0)
@@ -357,7 +361,7 @@ def day_lines(d, g):
 days = [(d, g) for d, g in fc.groupby(fc.index.normalize())]
 if now.hour >= W1:                                          # evening run: the note starts with tomorrow
     days = days[1:]
-md = [f"# Site note · {A.name}", "", f"Issued {now:%A %d %B %Y, %H:%M} ({TZ}). Site {A.lat:.4f}, {A.lon:.4f}. Working hours {W0:02d}:00-{W1:02d}:00.", ""]
+md = [f"# Site note · {A.name}", "", f"Issued {now:%A %d %B %Y, %H:%M} ({TZ}). Site {A.lat:.4f}, {A.lon:.4f}. Working hours {W0:02d}:00-{W1:02d}:00, lunch break excluded ({NW} h).", ""]
 for d, g in days[:3]:
     head, lines = day_lines(d, g)
     md += [f"## {d:%A %d %B}", "", f"**{head[0].upper() + head[1:]}.**", ""] + [f"- {x}" for x in lines] + [""]
