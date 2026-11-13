@@ -1,6 +1,6 @@
 # Site note · Mbarara
 
-Issued Friday 13 November 2026, 11:08 (Africa/Kampala). Site -0.6072, 30.6545. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Friday 13 November 2026, 11:29 (Africa/Kampala). Site -0.6072, 30.6545. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Friday 13 November
 
@@ -24,8 +24,8 @@ Rain 8 mm (chance up to 85 %) · storms possible · WBGT peak 25.1 °C · gusts 
 
 - **Concrete pour — go 08-12 h only.** Limited by rain, storms. Keep covers ready outside this window.
 - **Asphalt & surfacing — go 08-11 h only.** Limited by rain or wet surface, storms. Never lay or spray on a wet surface.
-- **Crane lifts — go 08-13 h, 15-17 h only.** Limited by storms. Check the anemometer before each lift.
-- **Work at height — go 08-13 h, 15-17 h only.** Limited by storms. Clear roofs and scaffolds before storms.
+- **Crane lifts — go 09-13 h, 15-17 h only.** Limited by storms, poor visibility. Check the anemometer before each lift.
+- **Work at height — go 09-13 h, 15-17 h only.** Limited by storms, poor visibility. Clear roofs and scaffolds before storms.
 - **Painting & coatings — go 11-13 h only.** Limited by humidity or dew, rain. Check the surface is 3 °C above dew point.
 - **Earthworks — go 15-17 h only.** Limited by wet ground. Protect formation and stockpiles. Ground wet after 9 mm in 24 h.
 - **No weather limits:** Outdoor labour.

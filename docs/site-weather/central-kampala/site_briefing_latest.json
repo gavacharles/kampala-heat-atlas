@@ -2,7 +2,7 @@
  "site": "Central Kampala",
  "lat": 0.3136,
  "lon": 32.5811,
- "issued": "2026-11-13 11:08",
+ "issued": "2026-11-13 11:28",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -506,17 +506,18 @@
      "key": "crane",
      "trade": "Crane lifts",
      "status": "LIMITED",
-     "label": "go 08-12 h, 14-16 h only",
-     "go_hours": 6,
-     "windows": "08-12 h, 14-16 h",
+     "label": "go 09-12 h, 14-16 h only",
+     "go_hours": 5,
+     "windows": "09-12 h, 14-16 h",
      "causes": [
-      "storms"
+      "storms",
+      "poor visibility"
      ],
      "action": "Check the anemometer before each lift.",
      "hours": [
       [
        8,
-       0
+       2
       ],
       [
        9,
@@ -557,7 +558,8 @@
      "windows": "09-11 h",
      "causes": [
       "rain",
-      "storms"
+      "storms",
+      "poor visibility"
      ],
      "action": "Clear roofs and scaffolds before storms.",
      "hours": [
@@ -702,7 +704,7 @@
      "asphalt": 0,
      "coatings": 0,
      "concrete": 2,
-     "crane": 6,
+     "crane": 5,
      "height": 2,
      "earthworks": 5,
      "labour": 8

@@ -1,6 +1,6 @@
 # Site note · Central Kampala
 
-Issued Friday 13 November 2026, 11:08 (Africa/Kampala). Site 0.3136, 32.5811. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Friday 13 November 2026, 11:28 (Africa/Kampala). Site 0.3136, 32.5811. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Friday 13 November
 
@@ -26,8 +26,8 @@ Rain 10 mm (chance up to 86 %) · storms possible · WBGT peak 26.6 °C · gusts
 - **Asphalt & surfacing — STOP.** Limited by rain or wet surface, storms. No dry window: do not lay or spray.
 - **Painting & coatings — STOP.** Limited by humidity or dew, rain. Too humid or wet for painting and coatings.
 - **Concrete pour — go 08-10 h only.** Limited by rain, storms. Keep covers ready outside this window.
-- **Crane lifts — go 08-12 h, 14-16 h only.** Limited by storms. Check the anemometer before each lift.
-- **Work at height — go 09-11 h only.** Limited by rain, storms. Clear roofs and scaffolds before storms.
+- **Crane lifts — go 09-12 h, 14-16 h only.** Limited by storms, poor visibility. Check the anemometer before each lift.
+- **Work at height — go 09-11 h only.** Limited by rain, storms, poor visibility. Clear roofs and scaffolds before storms.
 - **Earthworks — go 08-13 h only.** Limited by wet ground, rain. Protect formation and stockpiles. Ground wet after 11 mm in 24 h.
 - **No weather limits:** Outdoor labour.
 - UV index up to 8 (very high): hats with neck cover, long sleeves, sunscreen.

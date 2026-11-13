@@ -1,6 +1,6 @@
 # Site note · Gulu
 
-Issued Friday 13 November 2026, 11:10 (Africa/Kampala). Site 2.7724, 32.2881. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Friday 13 November 2026, 11:40 (Africa/Kampala). Site 2.7724, 32.2881. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Friday 13 November
 
@@ -38,8 +38,8 @@ Rain 0 mm (chance up to 75 %) · storms possible · WBGT peak 26.9 °C · gusts 
 
 - **Concrete pour — go 08-13 h only.** Limited by rain, storms. Keep covers ready outside this window.
 - **Asphalt & surfacing — go 08-13 h only.** Limited by rain or wet surface, storms. Never lay or spray on a wet surface.
-- **Crane lifts — go 08-13 h, 14-16 h only.** Limited by storms. Check the anemometer before each lift.
-- **Work at height — go 08-13 h, 14-16 h only.** Limited by storms. Clear roofs and scaffolds before storms.
+- **Crane lifts — go 11-13 h, 14-16 h only.** Limited by poor visibility, storms. Check the anemometer before each lift.
+- **Work at height — go 11-13 h, 14-16 h only.** Limited by poor visibility, storms. Clear roofs and scaffolds before storms.
 - **Painting & coatings — go 11-13 h, 14-16 h only.** Limited by humidity or dew, rain. Check the surface is 3 °C above dew point.
 - **Earthworks — go 16-17 h only.** Limited by wet ground. Protect formation and stockpiles. Ground wet after 7 mm in 24 h.
 - **No weather limits:** Outdoor labour.

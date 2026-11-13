@@ -2,7 +2,7 @@
  "site": "Hoima",
  "lat": 1.4331,
  "lon": 31.3524,
- "issued": "2026-11-13 11:08",
+ "issued": "2026-11-13 11:30",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -549,17 +549,18 @@
      "key": "crane",
      "trade": "Crane lifts",
      "status": "LIMITED",
-     "label": "go 08-13 h only",
-     "go_hours": 5,
-     "windows": "08-13 h",
+     "label": "go 09-13 h only",
+     "go_hours": 4,
+     "windows": "09-13 h",
      "causes": [
-      "storms"
+      "storms",
+      "poor visibility"
      ],
      "action": "Check the anemometer before each lift.",
      "hours": [
       [
        8,
-       0
+       1
       ],
       [
        9,
@@ -600,7 +601,8 @@
      "windows": "11-12 h",
      "causes": [
       "rain",
-      "storms"
+      "storms",
+      "poor visibility"
      ],
      "action": "Clear roofs and scaffolds before storms.",
      "hours": [
@@ -698,7 +700,7 @@
      "asphalt": 0,
      "coatings": 0,
      "earthworks": 0,
-     "crane": 5,
+     "crane": 4,
      "height": 1,
      "labour": 8
     }
@@ -807,21 +809,22 @@
      "key": "crane",
      "trade": "Crane lifts",
      "status": "LIMITED",
-     "label": "go 08-13 h only",
-     "go_hours": 5,
-     "windows": "08-13 h",
+     "label": "go 10-13 h only",
+     "go_hours": 3,
+     "windows": "10-13 h",
      "causes": [
-      "storms"
+      "storms",
+      "poor visibility"
      ],
      "action": "Check the anemometer before each lift.",
      "hours": [
       [
        8,
-       0
+       2
       ],
       [
        9,
-       0
+       1
       ],
       [
        10,
@@ -853,22 +856,23 @@
      "key": "height",
      "trade": "Work at height",
      "status": "LIMITED",
-     "label": "go 08-13 h only",
-     "go_hours": 5,
-     "windows": "08-13 h",
+     "label": "go 10-13 h only",
+     "go_hours": 3,
+     "windows": "10-13 h",
      "causes": [
       "storms",
-      "rain"
+      "rain",
+      "poor visibility"
      ],
      "action": "Clear roofs and scaffolds before storms.",
      "hours": [
       [
        8,
-       0
+       2
       ],
       [
        9,
-       0
+       1
       ],
       [
        10,
@@ -1047,8 +1051,8 @@
     "go_hours": {
      "concrete": 4,
      "asphalt": 4,
-     "crane": 5,
-     "height": 5,
+     "crane": 3,
+     "height": 3,
      "coatings": 1,
      "earthworks": 6,
      "labour": 8
@@ -1205,25 +1209,26 @@
      "key": "crane",
      "trade": "Crane lifts",
      "status": "LIMITED",
-     "label": "go 08-12 h, 14-15 h only",
-     "go_hours": 5,
-     "windows": "08-12 h, 14-15 h",
+     "label": "go 11-12 h, 14-15 h only",
+     "go_hours": 2,
+     "windows": "11-12 h, 14-15 h",
      "causes": [
-      "storms"
+      "storms",
+      "poor visibility"
      ],
      "action": "Check the anemometer before each lift.",
      "hours": [
       [
        8,
-       0
+       2
       ],
       [
        9,
-       0
+       2
       ],
       [
        10,
-       0
+       1
       ],
       [
        11,
@@ -1251,26 +1256,27 @@
      "key": "height",
      "trade": "Work at height",
      "status": "LIMITED",
-     "label": "go 08-12 h only",
-     "go_hours": 4,
-     "windows": "08-12 h",
+     "label": "go 11-12 h only",
+     "go_hours": 1,
+     "windows": "11-12 h",
      "causes": [
       "rain",
-      "storms"
+      "storms",
+      "poor visibility"
      ],
      "action": "Clear roofs and scaffolds before storms.",
      "hours": [
       [
        8,
-       0
+       2
       ],
       [
        9,
-       0
+       2
       ],
       [
        10,
-       0
+       1
       ],
       [
        11,
@@ -1400,8 +1406,8 @@
      "coatings": 0,
      "concrete": 2,
      "asphalt": 2,
-     "crane": 5,
-     "height": 4,
+     "crane": 2,
+     "height": 1,
      "earthworks": 5,
      "labour": 8
     }
@@ -1510,21 +1516,22 @@
      "key": "crane",
      "trade": "Crane lifts",
      "status": "LIMITED",
-     "label": "go 08-13 h only",
-     "go_hours": 5,
-     "windows": "08-13 h",
+     "label": "go 10-13 h only",
+     "go_hours": 3,
+     "windows": "10-13 h",
      "causes": [
-      "storms"
+      "storms",
+      "poor visibility"
      ],
      "action": "Check the anemometer before each lift.",
      "hours": [
       [
        8,
-       0
+       2
       ],
       [
        9,
-       0
+       2
       ],
       [
        10,
@@ -1556,22 +1563,23 @@
      "key": "height",
      "trade": "Work at height",
      "status": "LIMITED",
-     "label": "go 08-13 h only",
-     "go_hours": 5,
-     "windows": "08-13 h",
+     "label": "go 10-13 h only",
+     "go_hours": 3,
+     "windows": "10-13 h",
      "causes": [
       "rain",
-      "storms"
+      "storms",
+      "poor visibility"
      ],
      "action": "Clear roofs and scaffolds before storms.",
      "hours": [
       [
        8,
-       0
+       2
       ],
       [
        9,
-       0
+       2
       ],
       [
        10,
@@ -1749,8 +1757,8 @@
     "go_hours": {
      "concrete": 3,
      "asphalt": 2,
-     "crane": 5,
-     "height": 5,
+     "crane": 3,
+     "height": 3,
      "coatings": 1,
      "earthworks": 0,
      "labour": 8
@@ -1860,21 +1868,22 @@
      "key": "crane",
      "trade": "Crane lifts",
      "status": "LIMITED",
-     "label": "go 08-13 h only",
-     "go_hours": 5,
-     "windows": "08-13 h",
+     "label": "go 10-13 h only",
+     "go_hours": 3,
+     "windows": "10-13 h",
      "causes": [
-      "storms"
+      "storms",
+      "poor visibility"
      ],
      "action": "Check the anemometer before each lift.",
      "hours": [
       [
        8,
-       0
+       2
       ],
       [
        9,
-       0
+       2
       ],
       [
        10,
@@ -1906,21 +1915,22 @@
      "key": "height",
      "trade": "Work at height",
      "status": "LIMITED",
-     "label": "go 08-13 h only",
-     "go_hours": 5,
-     "windows": "08-13 h",
+     "label": "go 10-13 h only",
+     "go_hours": 3,
+     "windows": "10-13 h",
      "causes": [
-      "storms"
+      "storms",
+      "poor visibility"
      ],
      "action": "Clear roofs and scaffolds before storms.",
      "hours": [
       [
        8,
-       0
+       2
       ],
       [
        9,
-       0
+       2
       ],
       [
        10,
@@ -2097,8 +2107,8 @@
     "go_hours": {
      "concrete": 3,
      "asphalt": 2,
-     "crane": 5,
-     "height": 5,
+     "crane": 3,
+     "height": 3,
      "coatings": 1,
      "labour": 8,
      "earthworks": 8

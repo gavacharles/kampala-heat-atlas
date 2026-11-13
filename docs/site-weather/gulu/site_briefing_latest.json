@@ -2,7 +2,7 @@
  "site": "Gulu",
  "lat": 2.7724,
  "lon": 32.2881,
- "issued": "2026-11-13 11:10",
+ "issued": "2026-11-13 11:40",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -804,25 +804,26 @@
      "key": "crane",
      "trade": "Crane lifts",
      "status": "LIMITED",
-     "label": "go 08-13 h, 14-16 h only",
-     "go_hours": 7,
-     "windows": "08-13 h, 14-16 h",
+     "label": "go 11-13 h, 14-16 h only",
+     "go_hours": 4,
+     "windows": "11-13 h, 14-16 h",
      "causes": [
+      "poor visibility",
       "storms"
      ],
      "action": "Check the anemometer before each lift.",
      "hours": [
       [
        8,
-       0
+       2
       ],
       [
        9,
-       0
+       1
       ],
       [
        10,
-       0
+       1
       ],
       [
        11,
@@ -850,25 +851,26 @@
      "key": "height",
      "trade": "Work at height",
      "status": "LIMITED",
-     "label": "go 08-13 h, 14-16 h only",
-     "go_hours": 7,
-     "windows": "08-13 h, 14-16 h",
+     "label": "go 11-13 h, 14-16 h only",
+     "go_hours": 4,
+     "windows": "11-13 h, 14-16 h",
      "causes": [
+      "poor visibility",
       "storms"
      ],
      "action": "Clear roofs and scaffolds before storms.",
      "hours": [
       [
        8,
-       0
+       2
       ],
       [
        9,
-       0
+       1
       ],
       [
        10,
-       0
+       1
       ],
       [
        11,
@@ -1043,8 +1045,8 @@
     "go_hours": {
      "concrete": 5,
      "asphalt": 5,
-     "crane": 7,
-     "height": 7,
+     "crane": 4,
+     "height": 4,
      "coatings": 4,
      "earthworks": 1,
      "labour": 8

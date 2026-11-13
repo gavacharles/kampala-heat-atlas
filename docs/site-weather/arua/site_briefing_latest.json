@@ -2,7 +2,7 @@
  "site": "Arua",
  "lat": 3.0201,
  "lon": 30.9111,
- "issued": "2026-11-13 11:11",
+ "issued": "2026-11-13 11:42",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -1162,17 +1162,18 @@
      "key": "crane",
      "trade": "Crane lifts",
      "status": "LIMITED",
-     "label": "go 08-13 h only",
-     "go_hours": 5,
-     "windows": "08-13 h",
+     "label": "go 09-13 h only",
+     "go_hours": 4,
+     "windows": "09-13 h",
      "causes": [
-      "storms"
+      "storms",
+      "poor visibility"
      ],
      "action": "Check the anemometer before each lift.",
      "hours": [
       [
        8,
-       0
+       2
       ],
       [
        9,
@@ -1208,19 +1209,20 @@
      "key": "height",
      "trade": "Work at height",
      "status": "LIMITED",
-     "label": "go 08-11 h only",
-     "go_hours": 3,
-     "windows": "08-11 h",
+     "label": "go 09-11 h only",
+     "go_hours": 2,
+     "windows": "09-11 h",
      "causes": [
       "wind",
       "storms",
-      "rain"
+      "rain",
+      "poor visibility"
      ],
      "action": "Clear roofs and scaffolds before storms.",
      "hours": [
       [
        8,
-       0
+       2
       ],
       [
        9,
@@ -1401,8 +1403,8 @@
     "go_hours": {
      "concrete": 3,
      "asphalt": 4,
-     "crane": 5,
-     "height": 3,
+     "crane": 4,
+     "height": 2,
      "coatings": 3,
      "labour": 8,
      "earthworks": 8

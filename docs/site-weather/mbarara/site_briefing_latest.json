@@ -2,7 +2,7 @@
  "site": "Mbarara",
  "lat": -0.6072,
  "lon": 30.6545,
- "issued": "2026-11-13 11:08",
+ "issued": "2026-11-13 11:29",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -455,17 +455,18 @@
      "key": "crane",
      "trade": "Crane lifts",
      "status": "LIMITED",
-     "label": "go 08-13 h, 15-17 h only",
-     "go_hours": 7,
-     "windows": "08-13 h, 15-17 h",
+     "label": "go 09-13 h, 15-17 h only",
+     "go_hours": 6,
+     "windows": "09-13 h, 15-17 h",
      "causes": [
-      "storms"
+      "storms",
+      "poor visibility"
      ],
      "action": "Check the anemometer before each lift.",
      "hours": [
       [
        8,
-       0
+       1
       ],
       [
        9,
@@ -501,17 +502,18 @@
      "key": "height",
      "trade": "Work at height",
      "status": "LIMITED",
-     "label": "go 08-13 h, 15-17 h only",
-     "go_hours": 7,
-     "windows": "08-13 h, 15-17 h",
+     "label": "go 09-13 h, 15-17 h only",
+     "go_hours": 6,
+     "windows": "09-13 h, 15-17 h",
      "causes": [
-      "storms"
+      "storms",
+      "poor visibility"
      ],
      "action": "Clear roofs and scaffolds before storms.",
      "hours": [
       [
        8,
-       0
+       1
       ],
       [
        9,
@@ -695,8 +697,8 @@
     "go_hours": {
      "concrete": 4,
      "asphalt": 3,
-     "crane": 7,
-     "height": 7,
+     "crane": 6,
+     "height": 6,
      "coatings": 2,
      "earthworks": 2,
      "labour": 8
