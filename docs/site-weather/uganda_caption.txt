@@ -1,12 +1,12 @@
 Site weather, Uganda: Friday 13 November. Concrete pour, go hours today:
 
-• Kampala: 08-13
+• Kampala: 08-11
 • Mbarara: 08-12
 • Hoima: none
-• Mbale: none
-• Jinja: 08-12
-• Gulu: 14-17
-• Arua: 08-13, 15-17
+• Mbale: 08-12
+• Jinja: 08-11
+• Gulu: 10-13, 14-17
+• Arua: 10-13
 
 Hour-by-hour for seven trades and your town's week ahead: gavacharles.github.io/kampala-heat-atlas/site-weather
 Send us your site location to add it.
