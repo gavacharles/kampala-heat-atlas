@@ -89,7 +89,7 @@ def marked_headline(d, x, y, s, width, size=40, gap=10):
                 core = wd.strip("();:,.")
                 x0m = xx + d.textlength(wd[:lead], font=f)
                 cl = d.textlength(core, font=f)
-                ext = sp if (j + 1) in mark and not wd.endswith((")", ";", ":", ",")) else 0
+                ext = sp if (j + 1) in mark and (j + 1) in ids and not wd.endswith((")", ";", ":", ",")) else 0
                 d.rounded_rectangle((x0m - 6, yy - 2, x0m + cl + ext + 6, yy + size + 6), 8, fill=ACCENT)
             text(d, (xx, yy), wd, f)
             xx += wl + sp

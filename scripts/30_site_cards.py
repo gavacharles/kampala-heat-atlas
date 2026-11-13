@@ -13,6 +13,7 @@ Writes <site>/social/:
   carousel.pdf      today + week + how-to, for LinkedIn document posts
   caption.txt       a ready-to-post caption with the link (WhatsApp, LinkedIn, Facebook)
   caption_x.txt     the same within X's 280 characters
+  x_16x9.png        1600 x 900  the note for X: headline and facts left, every trade as a row right
 Look: scripts/card_style.py (same as the site note on the town pages). Standalone so the daily Action can run it.
 """
 import json
@@ -302,7 +303,49 @@ def howto_card(path):
     return im
 
 
+def x_card(path):
+    """16:9 for X (1600 x 900): headline with the key time marked and fact chips on the left, every trade on the
+    right as one row (pill, trade, go window, hour chips)."""
+    W, H = 1600, 900
+    im = Image.new("RGB", (W, H), BG); d = ImageDraw.Draw(im)
+    spaced(d, (64, 64), f"Site weather · {TOWN} · {B['day']}")
+    y = marked_headline(d, 64, 104, B["headline"], 560, size=44) + 16
+    y = chips(d, 64, y, fact_items(), 560, size=18, h=36) + 26
+    for e in B["extras"][:2]:
+        for ln in wrap(d, e, F(17, 400), 560)[:2]:
+            text(d, (64, y), ln, F(17, 400), INK2); y += 24
+        y += 6
+    y = max(y + 10, H - 130 - 3 * 64 - 30)
+    spaced(d, (64, y), "Next days", size=15); y += 30
+    for b in BJ["days"][1:4]:
+        if y + 58 > H - 120:
+            break
+        card(d, (64, y, 624, y + 56), r=14, fill=BG)
+        text(d, (82, y + 28), b["day"].split()[0][:3] + " " + b["day"].split()[1], F(17, 800), INK, "lm")
+        hl = wrap(d, b["headline"], F(16, 600), 450)
+        text(d, (150, y + 28), hl[0] + ("…" if len(hl) > 1 else ""), F(16, 600), INK2, "lm")
+        y += 64
+    x0, rw, yy = 680, W - 680 - 64, 64
+    rh = (H - 64 - 130 - 8 * 6) / 7
+    for r in B["rows"]:
+        card(d, (x0, yy, x0 + rw, yy + rh), r=18)
+        pill(d, x0 + 18, yy + rh / 2 - 15, r["status"], size=14, h=30)
+        text(d, (x0 + 132, yy + rh / 2 - 12), r["trade"], F(20, 800), INK, "lm")
+        lab = "no limits" if r["status"] == "GO" else "no window" if r["status"] == "STOP" else \
+            ("work/rest" if r["key"] == "labour" else (f"go {r['windows']}" if r["windows"] else "with care"))
+        text(d, (x0 + 132, yy + rh / 2 + 14), lab, F(17, 600), INK2, "lm")
+        hour_chips(d, x0 + rw - 18 - 330, yy + rh / 2 - 15, 330, r.get("hours", []), h=30, size=13)
+        yy += rh + 6
+    f = F(20, 800); lw = d.textlength(LINK, font=f) + 40
+    d.rounded_rectangle((64, H - 96, 64 + lw, H - 56), 20, fill=ACCENT)
+    text(d, (84, H - 76), LINK, f, INK, "lm")
+    text(d, (W - 64, H - 76), "Screening guidance from a forecast; your contract and H&S plan come first.", F(16, 400), MUT, "rm")
+    im.save(path)
+    return im
+
+
 a = briefing_card(1080, 1350, OUTD / "today_4x5.png")
+x_card(OUTD / "x_16x9.png")
 briefing_card(1080, 1920, OUTD / "today_9x16.png")
 hours_card(OUTD / "today_hours_4x5.png")                       # the full hour-by-hour grid, for the detail-minded
 a4_sheet(OUTD / "briefing_A4.pdf", OUTD / "briefing_A4.png")

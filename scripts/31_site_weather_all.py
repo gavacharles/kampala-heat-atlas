@@ -125,6 +125,40 @@ for k, name, verb in ACTS:
     text(d, (x0, y + 44), "Times are go windows: 08-13 = from 08:00 until the lunch break. Grey figure: daily rain.", F(18, 400), MUT)
     footer(d, W, H, SITE_URL)
     im.save(OUT / f"uganda_{k}_4x5.png")
+    # 16:9 for X: today's go window per town, with the next two days
+    from card_style import ACCENT, CARD, LINE, card, chips, marked_headline  # noqa: E402
+    W2, H2 = 1600, 900
+    im = Image.new("RGB", (W2, H2), BG); d = ImageDraw.Draw(im)
+    spaced(d, (64, 64), f"Site weather · Uganda · {days[0]:%A %d %B}")
+    yh = marked_headline(d, 64, 104, f"{name.split(' (')[0]}: go hours today across Uganda.", 540, size=44) + 20
+    text(d, (64, yh), f"The hours {verb}, {W0:02d}-{W1:02d} h, lunch excluded.", F(19, 400), INK2)
+    text(d, (64, yh + 32), "Green most of the day, amber part, red little or none.", F(19, 400), INK2)
+    x0, rw, yy = 660, W2 - 660 - 64, 100
+    rh = (H2 - 100 - 130 - 6 * 6) / max(len(rows), 1)
+    for j, dd in enumerate(days[:3]):
+        cx = x0 + 220 + (0 if j == 0 else 262 + (j - 1) * 162); cw_ = 250 if j == 0 else 150
+        spaced(d, (cx + cw_ / 2 - (d.textlength(("Today" if j == 0 else f"{dd:%a %d}").upper(), font=F(14, 700)) * 1.15) / 2, 70),
+               "Today" if j == 0 else f"{dd:%a %d}", size=14)
+    for s_, df in rows:
+        card(d, (x0, yy, x0 + rw, yy + rh), r=16)
+        text(d, (x0 + 20, yy + rh / 2 - 11), s_["name"].replace("Central ", ""), F(21, 800), INK, "lm")
+        spaced(d, (x0 + 20, yy + rh / 2 + 6), s_["region"], size=12)
+        for j, dd in enumerate(days[:3]):
+            lab, n, nw = day_windows(df, dd, k)
+            share = n / max(nw, 1)
+            bg, fg = SHARE_TINT[0 if share >= 0.66 else 1 if share >= 0.33 else 2]
+            cw_ = 250 if j == 0 else 150
+            cx = x0 + 220 + (0 if j == 0 else 262 + (j - 1) * 162)
+            d.rounded_rectangle((cx, yy + 10, cx + cw_, yy + rh - 10), 12, fill=bg)
+            lab2 = lab if len(lab) <= (22 if j == 0 else 12) else lab.split(", ")[0] + "+"
+            text(d, (cx + cw_ / 2, yy + rh / 2), lab2, F(20 if j == 0 else 16, 800), fg, "mm")
+            pass
+        yy += rh + 6
+    f2 = F(20, 800); lw = d.textlength(SITE_URL, font=f2) + 40
+    d.rounded_rectangle((64, H2 - 96, 64 + lw, H2 - 56), 20, fill=ACCENT)
+    text(d, (84, H2 - 76), SITE_URL, f2, INK, "lm")
+    text(d, (W2 - 64, H2 - 76), "Screening guidance from a forecast; your contract and H&S plan come first.", F(16, 400), MUT, "rm")
+    im.save(OUT / f"uganda_{k}_x_16x9.png")
     # captions: long (WhatsApp, LinkedIn, Facebook) and X (280 characters, links count as 23)
     d0 = days[0]
     today = [(s["name"].replace("Central ", ""), day_windows(df, d0, k)[0]) for s, df in rows]

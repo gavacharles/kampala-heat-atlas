@@ -33,9 +33,11 @@ Paste the matching caption: the long one for WhatsApp, LinkedIn and Facebook, th
 const $ = s => document.querySelector(s);
 const store = { get(k){ try { return localStorage.getItem(k); } catch(e){ return null; } }, set(k,v){ try { localStorage.setItem(k,v); } catch(e){} } };
 let ACTS = [];
-const NATIONAL = a => [{title:`Uganda: ${a.name}, go hours this week`, file:`uganda_${a.key}_4x5.png`}];
+const NATIONAL = a => [{title:`For X (16:9): ${a.name}, go hours today`, file:`uganda_${a.key}_x_16x9.png`},
+  {title:`Uganda: ${a.name}, go hours this week`, file:`uganda_${a.key}_4x5.png`}];
 const TOWN = s => [
   {title:"Today's briefing (feed, Channel, groups)", file:`${s}/social/today_4x5.png`},
+  {title:"Today for X (16:9, shows in full in the timeline)", file:`${s}/social/x_16x9.png`},
   {title:"Today, vertical (WhatsApp Status, Stories)", file:`${s}/social/today_9x16.png`},
   {title:"The week on site: go hours for every activity", file:`${s}/social/week_4x5.png`},
   {title:"Today hour by hour, every activity", file:`${s}/social/today_hours_4x5.png`},
