@@ -1,6 +1,6 @@
 # Site note · Mbarara
 
-Issued Friday 13 November 2026, 14:10 (Africa/Kampala). Site -0.6072, 30.6545. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Friday 13 November 2026, 14:18 (Africa/Kampala). Site -0.6072, 30.6545. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Friday 13 November
 

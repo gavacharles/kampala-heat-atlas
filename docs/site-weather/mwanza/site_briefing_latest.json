@@ -2,7 +2,7 @@
  "site": "Mwanza",
  "lat": -2.5164,
  "lon": 32.9175,
- "issued": "2026-11-13 14:11",
+ "issued": "2026-11-13 14:21",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -1387,9 +1387,7 @@
      ]
     }
    ],
-   "extras": [
-    "UV index up to 8 (very high): hats with neck cover, long sleeves, sunscreen."
-   ],
+   "extras": [],
    "facts": {
     "rain_mm": 2.9,
     "rain_chance": 59,
@@ -1735,7 +1733,7 @@
     }
    ],
    "extras": [
-    "UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen."
+    "UV index up to 8 (very high): hats with neck cover, long sleeves, sunscreen."
    ],
    "facts": {
     "rain_mm": 21.2,
@@ -2423,9 +2421,7 @@
      ]
     }
    ],
-   "extras": [
-    "UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen."
-   ],
+   "extras": [],
    "facts": {
     "rain_mm": 11.0,
     "rain_chance": 71,

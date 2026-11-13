@@ -1,6 +1,6 @@
 # Site note · Manama
 
-Issued Friday 13 November 2026, 14:05 (Asia/Bahrain). Site 26.2285, 50.5860. Working hours 07:00-17:00, lunch break excluded (9 h).
+Issued Friday 13 November 2026, 14:21 (Asia/Bahrain). Site 26.2285, 50.5860. Working hours 07:00-17:00, lunch break excluded (9 h).
 
 ## Friday 13 November
 
