@@ -607,6 +607,17 @@ months_html = "".join(f"<tr><td><a href='archive/monthly/{r['month']}.md'>{r['mo
                       for r in reversed(rows)) or "<tr><td colspan='9'>The record starts tomorrow.</td></tr>"
 page = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Site Weather · {html.escape(A.name)}</title>
+<meta name="description" content="{html.escape(BR[0]['headline'])} Hour-by-hour go windows for seven trades, the week ahead and the monthly weather record. By Gava Charles.">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Kampala Heat Atlas · Site weather">
+<meta property="og:title" content="Site weather · {html.escape(A.name)} · {html.escape(BR[0]['day'])}">
+<meta property="og:description" content="{html.escape(BR[0]['headline'])} Go windows for concrete, asphalt, cranes, work at height, painting, earthworks and heat.">
+<meta property="og:url" content="https://gavacharles.github.io/kampala-heat-atlas/site-weather/{SLUG}/">
+<meta property="og:image" content="https://gavacharles.github.io/kampala-heat-atlas/site-weather/{SLUG}/social/x_16x9.png?v={now:%Y%m%d}">
+<meta property="og:image:width" content="1600"><meta property="og:image:height" content="900">
+<meta property="og:image:alt" content="{html.escape(BR[0]['headline'])} Site weather card for {html.escape(A.name)}.">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Site weather · {html.escape(A.name)}">
+<meta name="twitter:description" content="{html.escape(BR[0]['headline'])}">
+<meta name="twitter:image" content="https://gavacharles.github.io/kampala-heat-atlas/site-weather/{SLUG}/social/x_16x9.png?v={now:%Y%m%d}">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap">
 <style>
 :root{{--bg:#ffffff;--surface:#fafaf9;--ink:#0a0a0b;--ink-2:#3e3e42;--line:#e1e1e0;--accent:#fbca0c;--eyebrow:#755200;--tint:#fdf6dc;--link:#2a6fc4;

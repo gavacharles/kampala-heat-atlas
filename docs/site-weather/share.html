@@ -1,5 +1,6 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Share Today</title>
+<meta name="robots" content="noindex">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@800&family=Inter:wght@400;500;600&display=swap">
 <style>
 :root{--bg:#f6f6f3;--surface:#fff;--ink:#0b0b0b;--ink-2:#3a3a3e;--line:#e1e0d9;--blue:#2a78d6;--go:#2f8f3a}
@@ -24,6 +25,8 @@ Paste the matching caption: the long one for WhatsApp, LinkedIn and Facebook, th
 <select id="act" aria-label="Activity" style="display:none"></select>
 <div class="item"><h2>Caption for WhatsApp, LinkedIn, Facebook</h2><textarea id="cap" readonly></textarea>
 <div class="btns"><button class="primary" data-copy="cap">Copy caption</button></div><div class="status" id="capst"></div></div>
+<div class="item"><h2>Alt text (describe the image; paste in the image description box)</h2><textarea id="alt" readonly style="min-height:110px"></textarea>
+<div class="btns"><button class="primary" data-copy="alt">Copy alt text</button></div><div class="status" id="altst"></div></div>
 <div class="item"><h2>Caption for X <span id="xn" style="font-weight:400;color:var(--ink-2);font-size:13px"></span></h2><textarea id="capx" readonly style="min-height:120px"></textarea>
 <div class="btns"><button class="primary" data-copy="capx">Copy X caption</button></div><div class="status" id="capxst"></div></div>
 <div id="cards" style="display:grid;grid-template-columns:minmax(0,1fr);gap:16px"></div>
@@ -70,9 +73,11 @@ async function render(slug){
   const base = nat ? `uganda_${a.key}_caption` : `${slug}/social/caption`;
   const get = async u => { try { const r = await fetch(u, {cache:"no-store"}); return r.ok ? (await r.text()).trim() : ""; } catch(e){ return ""; } };
   $("#cap").value = await get(base + ".txt"); $("#capx").value = await get(base + "_x.txt");
+  $("#alt").value = nat ? `Table of ${a.name.toLowerCase()} go hours today and the next two days for seven Ugandan towns, coloured green, amber or red.`
+                        : await get(`${slug}/social/alt_text.txt`);
   const xl = $("#capx").value.replace(/\S*github\.io\S*/g, "x".repeat(23)).length;
   $("#xn").textContent = `(${xl} of 280 characters, links count as 23)`;
-  $("#capst").textContent = ""; $("#capxst").textContent = "";
+  $("#capst").textContent = ""; $("#capxst").textContent = ""; $("#altst").textContent = "";
   $("#cards").innerHTML = items.map((it, i) => `<div class="item"><h2>${it.title}</h2>
     ${it.pdf ? "" : `<img src="${it.file}?v=${Date.now()}" alt="${it.title}" loading="lazy">`}
     <div class="btns">${it.pdf ? "" : `<button class="primary" data-i="${i}">Share</button>`}

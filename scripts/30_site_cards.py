@@ -385,4 +385,12 @@ for m in range(len(go), 0, -1):
     if len(xt.replace(LINK, "x" * 23)) <= 280:
         break
 (OUTD / "caption_x.txt").write_text(xt + "\n")
+# alt text (accessibility; platforms also favour posts that have it). X allows 1000 characters.
+lim = [r for r in B["rows"] if r["status"] != "GO"]; ok_ = [r["trade"] for r in B["rows"] if r["status"] == "GO"]
+alt = (f"Site weather card for {TOWN}, {B['day']}. {B['headline']} "
+       f"Rain {B['facts']['rain_mm']:.0f} mm, chance up to {B['facts']['rain_chance']}%, storms {B['facts']['storm']}, "
+       f"peak heat {B['facts']['wbgt_peak']:.0f} °C WBGT, gusts {B['facts']['gust_hook_max']:.0f} m/s. "
+       + " ".join(f"{r['trade']}: {r['label']}{' (' + ', '.join(r['causes']) + ')' if r['causes'] and r['key'] != 'labour' else ''}." for r in lim)
+       + (f" No weather limits: {', '.join(ok_)}." if ok_ else ""))
+(OUTD / "alt_text.txt").write_text(alt[:1000] + "\n")
 print("wrote", OUTD, "for", f"{day:%a %d %b}")
