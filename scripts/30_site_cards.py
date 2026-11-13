@@ -150,7 +150,9 @@ def briefing_card(W, H, path):
     y = chips(d, 64, y, fact_items(), W - 128) + 22
     limited = [r for r in B["rows"] if r["status"] != "GO"]
     clear = [r["trade"] for r in B["rows"] if r["status"] == "GO"]
-    bottom = H - 170 - (380 if H >= 1600 else 0) - (90 if clear else 0)
+    # reserve the exact height of the no-limits card (and the next-days block on the vertical card) before sizing trades
+    clear_h = (70 + 30 * len(wrap(d, ", ".join(clear) + ".", F(22, 800), W - 2 * 64 - 44)) + 16) if clear else 0
+    bottom = H - 180 - (380 if H >= 1600 else 0) - clear_h
     y = trade_cards(d, 64, y, W, bottom, limited) + 16
     y = clear_card(d, 64, y, W, clear) + 12
     if H >= 1600:
