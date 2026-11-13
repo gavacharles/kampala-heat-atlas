@@ -66,7 +66,7 @@ NW = len(WORK)
 SIGMA = 5.67e-8
 TRADES = ["Outdoor labour (heat)", "Concrete pour", "Asphalt & surfacing", "Crane lifts", "Work at height / roofing", "Painting & coatings", "Earthworks"]
 KEYS = ["labour", "concrete", "asphalt", "crane", "height", "coatings", "earthworks"]
-INK, INK2, MUTED, GRID = "#0b0b0b", "#52514e", "#898781", "#e1e0d9"
+INK, INK2, MUTED, GRID = "#0b0b0b", "#3a3a3e", "#55555a", "#e1e0d9"
 BLUE, ORANGE, RED, GREEN, AMBER, OFF = "#2a78d6", "#eb6834", "#c23434", "#2f8f3a", "#e0a526", "#ecebe6"
 plt.rcParams.update({"font.family": ["Helvetica Neue", "Arial", "DejaVu Sans"], "font.size": 9, "axes.edgecolor": "#c3c2b7",
                      "axes.spines.top": False, "axes.spines.right": False, "axes.grid": True, "grid.color": GRID,
@@ -649,7 +649,7 @@ page = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name
 <title>Site Weather · {html.escape(A.name)}</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap">
 <style>
-:root{{--bg:#ffffff;--surface:#fafaf9;--ink:#0a0a0b;--ink-2:#606061;--line:#e1e1e0;--accent:#fbca0c;--eyebrow:#8a6100;--tint:#fdf6dc;--link:#2a6fc4;
+:root{{--bg:#ffffff;--surface:#fafaf9;--ink:#0a0a0b;--ink-2:#3e3e42;--line:#e1e1e0;--accent:#fbca0c;--eyebrow:#755200;--tint:#fdf6dc;--link:#2a6fc4;
 --go-bg:#e8f4eb;--go:#1f7a35;--lim-bg:#fdf3d7;--lim:#8a6100;--stop-bg:#f9eaea;--stop:#b42318;--s0:#2f8f3a;--s1:#e0a526;--s2:#c23434}}
 @media (prefers-color-scheme: dark){{:root:not([data-theme="light"]){{--bg:#0d0d0e;--surface:#17171a;--ink:#f2f2ef;--ink-2:#a8a8a4;--line:#2a2a2e;--eyebrow:#e3b341;
 --tint:#2a2410;--link:#7fb0ef;--go-bg:#11281a;--go:#7fd394;--lim-bg:#2b2410;--lim:#f0c75e;--stop-bg:#2e1414;--stop:#f08a80;color-scheme:dark}}}}

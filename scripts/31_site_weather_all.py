@@ -114,7 +114,7 @@ for k, name, verb in ACTS:
                 yy = y + (32 if len(parts) == 1 else 20 + li * 23)
                 text(d, (cx + cw / 2, yy), ptxt, F(19 if len(ptxt) <= 6 else 17, 800), fg, "mm")
             g = df[df.index.normalize() == dd]
-            text(d, (cx + cw / 2, y + 66), f"{g.precipitation.sum():.0f} mm", F(14, 600), INK2, "mm")
+            text(d, (cx + cw / 2, y + 66), f"{g.precipitation.sum():.0f} mm", F(16, 700), INK2, "mm")
         y += 86
     y += 10
     lx = x0
@@ -122,7 +122,7 @@ for k, name, verb in ACTS:
         bg, fg = SHARE_TINT[s0]
         d.rounded_rectangle((lx, y, lx + 26, y + 26), 7, fill=bg); d.ellipse((lx + 9, y + 9, lx + 17, y + 17), fill=fg)
         text(d, (lx + 36, y + 13), lab, F(19, 600), INK2, "lm"); lx += 36 + d.textlength(lab, font=F(19, 600)) + 30
-    text(d, (x0, y + 44), "Times are go windows: 08-13 = from 08:00 until the lunch break. Grey figure: daily rain.", F(18, 400), MUT)
+    text(d, (x0, y + 44), "Times are go windows: 08-13 = from 08:00 until the lunch break. Grey figure: daily rain.", F(19, 600), MUT)
     footer(d, W, H, SITE_URL)
     im.save(OUT / f"uganda_{k}_4x5.png")
     # 16:9 for X: today's go window per town, with the next two days
@@ -131,8 +131,8 @@ for k, name, verb in ACTS:
     im = Image.new("RGB", (W2, H2), BG); d = ImageDraw.Draw(im)
     spaced(d, (64, 64), f"Site weather · Uganda · {days[0]:%A %d %B}")
     yh = marked_headline(d, 64, 104, f"{name.split(' (')[0]}: go hours today across Uganda.", 540, size=44) + 20
-    text(d, (64, yh), f"The hours {verb}, {W0:02d}-{W1:02d} h, lunch excluded.", F(19, 400), INK2)
-    text(d, (64, yh + 32), "Green most of the day, amber part, red little or none.", F(19, 400), INK2)
+    text(d, (64, yh), f"The hours {verb}, {W0:02d}-{W1:02d} h, lunch excluded.", F(20, 600), INK2)
+    text(d, (64, yh + 32), "Green most of the day, amber part, red little or none.", F(20, 600), INK2)
     x0, rw, yy = 660, W2 - 660 - 64, 100
     rh = (H2 - 100 - 130 - 6 * 6) / max(len(rows), 1)
     for j, dd in enumerate(days[:3]):
@@ -157,7 +157,7 @@ for k, name, verb in ACTS:
     f2 = F(20, 800); lw = d.textlength(SITE_URL, font=f2) + 40
     d.rounded_rectangle((64, H2 - 96, 64 + lw, H2 - 56), 20, fill=ACCENT)
     text(d, (84, H2 - 76), SITE_URL, f2, INK, "lm")
-    text(d, (64, H2 - 120), "Screening guidance from a forecast; your contract and H&S plan come first.", F(16, 400), MUT)
+    text(d, (64, H2 - 120), "Screening guidance from a forecast; your contract and H&S plan come first.", F(18, 600), MUT)
     byline(d, 0, H2 - 76, size=19, anchor_right=True, W=W2)
     im.save(OUT / f"uganda_{k}_x_16x9.png")
     # captions: long (WhatsApp, LinkedIn, Facebook) and X (280 characters, links count as 23)
@@ -209,7 +209,7 @@ for reg in dict.fromkeys(s["region"] for s, _ in rows):
 <title>Site Weather Uganda</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@800&family=Inter:wght@400;500&display=swap">
 <style>
-:root{{--bg:#f6f6f3;--surface:#fff;--ink:#0b0b0b;--ink-2:#52514e;--line:#e1e0d9;--blue:#2a78d6}}
+:root{{--bg:#f6f6f3;--surface:#fff;--ink:#0b0b0b;--ink-2:#3a3a3e;--line:#e1e0d9;--blue:#2a78d6}}
 @media (prefers-color-scheme: dark){{:root:not([data-theme="light"]){{--bg:#111312;--surface:#1a1c1b;--ink:#ecedea;--ink-2:#b6b9b2;--line:#2d302e;--blue:#6da7ec;color-scheme:dark}}}}
 body{{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 Inter,Arial,sans-serif;padding:24px 16px}}
 main{{max-width:1100px;margin:0 auto;display:grid;gap:16px}} h1{{font:800 34px/1.05 Archivo,Arial,sans-serif;margin:0}}

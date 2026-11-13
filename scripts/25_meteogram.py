@@ -32,7 +32,7 @@ LAT, LON, ALT = 0.3136, 32.5811, 1190
 OUT = Path(sys.argv[1] if len(sys.argv) > 1 else ".")
 OUT.mkdir(parents=True, exist_ok=True)
 SIGMA = 5.67e-8
-INK, INK2, MUTED, GRID = "#0b0b0b", "#52514e", "#898781", "#e1e0d9"
+INK, INK2, MUTED, GRID = "#0b0b0b", "#3a3a3e", "#55555a", "#e1e0d9"
 BLUE, ORANGE, RED, GREEN = "#2a78d6", "#eb6834", "#c23434", "#2f8f3a"
 plt.rcParams.update({"font.family": ["Helvetica Neue", "Arial", "DejaVu Sans"], "font.size": 9, "axes.edgecolor": "#c3c2b7",
                      "axes.spines.top": False, "axes.spines.right": False, "axes.grid": True, "grid.color": GRID,

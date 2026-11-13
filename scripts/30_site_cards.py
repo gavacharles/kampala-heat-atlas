@@ -123,8 +123,8 @@ def trade_cards(d, x, y, W, ymax, rows, cols=2, gap=16):
         tf = F(24 if d.textlength(title, font=F(24, 800)) < cw - (px - cx) - 36 else 20, 800)
         text(d, (px + 12, cy + 68), title, tf, INK, "lm")
         yy = hour_chips(d, cx + 22, cy + 100, cw - 44, r.get("hours", []))
-        for k, ln in enumerate(wrap(d, trade_body(r), F(19, 400), cw - 44)[:body_lines]):
-            text(d, (cx + 22, yy + 14 + k * 26), ln, F(19, 400), INK2)
+        for k, ln in enumerate(wrap(d, trade_body(r), F(20, 400), cw - 48)[:body_lines]):
+            text(d, (cx + 22, yy + 14 + k * 26), ln, F(20, 400), INK2)
     return y + nrow * ch + (nrow - 1) * gap
 
 
@@ -177,14 +177,14 @@ def a4_sheet(path_pdf, path_png):
     box = H - 372                                              # briefing record sits above the footer
     y = trade_cards(d, 64, y, W, box - 260, B["rows"]) + 16
     for e in B["extras"]:
-        text(d, (64, y), e, F(19, 400), INK2); y += 28
+        text(d, (64, y), e, F(20, 400), INK2); y += 28
     y += 12
     spaced(d, (64, y), "The week"); y += 34
     for b in BJ["days"][1:6]:
         if y + 28 > box - 12:
             break
         text(d, (64, y), b["day"], F(19, 800))
-        text(d, (330, y), wrap(d, b["headline"], F(19, 400), W - 394)[0], F(19, 400), INK2)
+        text(d, (330, y), wrap(d, b["headline"], F(19, 400), W - 394)[0], F(20, 400), INK2)
         y += 28
     y = box
     card(d, (64, y, W - 64, y + 172))
@@ -315,7 +315,7 @@ def x_card(path):
     y = chips(d, 64, y, fact_items(), 560, size=18, h=36) + 26
     for e in B["extras"][:2]:
         for ln in wrap(d, e, F(17, 400), 560)[:2]:
-            text(d, (64, y), ln, F(17, 400), INK2); y += 24
+            text(d, (64, y), ln, F(18, 600), INK2); y += 25
         y += 6
     y = max(y + 10, H - 146 - 3 * 64 - 30)
     spaced(d, (64, y), "Next days", size=15); y += 30
@@ -325,7 +325,7 @@ def x_card(path):
         card(d, (64, y, 624, y + 56), r=14, fill=BG)
         text(d, (82, y + 28), b["day"].split()[0][:3] + " " + b["day"].split()[1], F(17, 800), INK, "lm")
         hl = wrap(d, b["headline"], F(16, 600), 450)
-        text(d, (150, y + 28), hl[0] + ("…" if len(hl) > 1 else ""), F(16, 600), INK2, "lm")
+        text(d, (150, y + 28), hl[0] + ("…" if len(hl) > 1 else ""), F(17, 600), INK2, "lm")
         y += 64
     x0, rw, yy = 680, W - 680 - 64, 64
     rh = (H - 64 - 130 - 8 * 6) / 7
@@ -340,15 +340,15 @@ def x_card(path):
         text(d, (tx, yy + rh / 2 + 1), lab, F(16, 700), INK, "lm")
         if why:                                                # why the trade is limited, on its own line
             wl = wrap(d, ("Stopped by " if r["status"] == "STOP" else "Limited by ") + why, F(15, 400), tw)
-            text(d, (tx, yy + rh / 2 + 22), wl[0] + ("…" if len(wl) > 1 else ""), F(15, 400), INK2, "lm")
+            text(d, (tx, yy + rh / 2 + 22), wl[0] + ("…" if len(wl) > 1 else ""), F(16, 600), INK2, "lm")
         else:
-            text(d, (tx, yy + rh / 2 + 22), "work as planned", F(15, 400), INK2, "lm")
+            text(d, (tx, yy + rh / 2 + 22), "work as planned", F(16, 600), INK2, "lm")
         hour_chips(d, x0 + rw - 18 - chips_w, yy + rh / 2 - 15, chips_w, r.get("hours", []), h=30, size=12)
         yy += rh + 6
     f = F(20, 800); lw = d.textlength(LINK, font=f) + 40
     d.rounded_rectangle((64, H - 96, 64 + lw, H - 56), 20, fill=ACCENT)
     text(d, (84, H - 76), LINK, f, INK, "lm")
-    text(d, (64, H - 120), "Screening guidance from a forecast; your contract and H&S plan come first.", F(16, 400), MUT)
+    text(d, (64, H - 120), "Screening guidance from a forecast; your contract and H&S plan come first.", F(18, 600), MUT)
     byline(d, 0, H - 76, size=19, anchor_right=True, W=W)
     im.save(path)
     return im

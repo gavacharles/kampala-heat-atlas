@@ -8,8 +8,8 @@ from pathlib import Path
 from PIL import ImageFont
 
 FONTS = Path(__file__).parent / "fonts"
-BG, CARD, INK, INK2, MUT, LINE = (255, 255, 255), (250, 250, 249), (10, 10, 11), (96, 96, 97), (138, 138, 136), (225, 225, 224)
-ACCENT, EYEBROW, TINT = (251, 202, 12), (138, 97, 0), (253, 246, 220)
+BG, CARD, INK, INK2, MUT, LINE = (255, 255, 255), (250, 250, 249), (10, 10, 11), (58, 58, 62), (84, 84, 88), (225, 225, 224)
+ACCENT, EYEBROW, TINT = (251, 202, 12), (117, 82, 0), (253, 246, 220)
 GO, CAU, STOP = (47, 143, 58), (224, 165, 38), (194, 52, 52)                 # solid, for hour cells
 TINTED = {"STOP": ((249, 234, 234), (180, 35, 24)), "LIMITED": ((253, 243, 215), (138, 97, 0)),
           "CAUTION": ((253, 243, 215), (138, 97, 0)), "GO": ((232, 244, 235), (31, 122, 53))}
@@ -131,7 +131,7 @@ def header(d, eyebrow, title, sub, top=0, x=64, title_size=58):
 
 def footer(d, W, H, link, credit="Gava Charles · Kampala Heat Atlas · forecast data Open-Meteo"):
     d.line((64, H - 160, W - 64, H - 160), fill=LINE, width=2)
-    text(d, (64, H - 140), "Screening guidance from a forecast. Your contract, crane limits and site H&S plan come first.", F(19, 400), MUT)
+    text(d, (64, H - 140), "Screening guidance from a forecast. Your contract, crane limits and site H&S plan come first.", F(20, 600), MUT)
     f = F(20, 800); w = d.textlength(link, font=f) + 40
     d.rounded_rectangle((64, H - 106, 64 + w, H - 66), 20, fill=ACCENT)
     text(d, (84, H - 86), link, f, INK, "lm")
@@ -141,7 +141,7 @@ def footer(d, W, H, link, credit="Gava Charles · Kampala Heat Atlas · forecast
 def byline(d, x, y, size=18, anchor_right=False, W=None):
     """'By Gava Charles' in bold ink, then the project and data source in grey."""
     a, b = "By Gava Charles", "  ·  Kampala Heat Atlas  ·  forecast data Open-Meteo"
-    fa, fb = F(size, 800), F(size - 2, 600)
+    fa, fb = F(size, 800), F(size - 1, 700)
     if anchor_right:
         x = W - 64 - d.textlength(a, font=fa) - d.textlength(b, font=fb)
     text(d, (x, y), a, fa, INK, "lm")
