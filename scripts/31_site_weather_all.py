@@ -77,6 +77,8 @@ def x_len(txt):                                              # X counts any link
 
 rows = []
 for s in SITES:
+    if s.get("country", "Uganda") != "Uganda":                   # the national cards are Uganda's
+        continue
     p = OUT / slug(s["name"]) / "site_forecast_latest.csv"
     if not p.exists():
         continue
@@ -188,7 +190,7 @@ for s in SITES:
         continue
     bj = json.loads(bp.read_text()); b0 = bj["days"][0]
     worst = min((r["status"] for r in b0["rows"]), key=RANK.get)
-    towns.append(dict(name=s["name"], region=s["region"], lat=s["lat"], lon=s["lon"], slug=sl, issued=bj["issued"], day=b0["day"],
+    towns.append(dict(name=s["name"], region=s["region"], country=s.get("country", "Uganda"), lat=s["lat"], lon=s["lon"], slug=sl, issued=bj["issued"], day=b0["day"],
                       headline=b0["headline"], worst=worst, facts=b0["facts"],
                       rows=[dict(trade=r["trade"], status=r["status"], label=r["label"]) for r in b0["rows"]],
                       outlook=[dict(day=b["day"], headline=b["headline"]) for b in bj["days"][1:4]]))
@@ -197,16 +199,21 @@ for s in SITES:
 
 # ---------------------------------------------------------------- landing page
 cards = ""
-for reg in dict.fromkeys(s["region"] for s, _ in rows):
-    cards += f"<h2>{reg}</h2><div class='row'>"
-    for s, df in rows:
-        if s["region"] == reg:
-            sl = slug(s["name"])
-            cards += (f"<a class='site' href='{sl}/'><img src='{sl}/social/today_4x5.png' alt='Today on site, {html.escape(s['name'])}'>"
-                      f"<span>{html.escape(s['name'])}</span></a>")
-    cards += "</div>"
+allrows = [(s, None) for s in SITES if (OUT / slug(s["name"]) / "social" / "today_4x5.png").exists()]
+for ctry in dict.fromkeys(s.get("country", "Uganda") for s, _ in allrows):
+    cards += f"<h2>{html.escape(ctry)}</h2>"
+    for reg in dict.fromkeys(s["region"] for s, _ in allrows if s.get("country", "Uganda") == ctry):
+        if ctry == "Uganda":
+            cards += f"<p class='lede' style='margin:6px 0 0;font-weight:700'>{html.escape(reg)}</p>"
+        cards += "<div class='row'>"
+        for s, _ in allrows:
+            if s.get("country", "Uganda") == ctry and s["region"] == reg:
+                sl = slug(s["name"])
+                cards += (f"<a class='site' href='{sl}/'><img src='{sl}/social/today_4x5.png' alt='Today on site, {html.escape(s['name'])}'>"
+                          f"<span>{html.escape(s['name'])}</span></a>")
+        cards += "</div>"
 (OUT / "index.html").write_text(f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Site Weather Uganda</title>
+<title>Site Weather</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@800&family=Inter:wght@400;500&display=swap">
 <style>
 :root{{--bg:#f6f6f3;--surface:#fff;--ink:#0b0b0b;--ink-2:#3a3a3e;--line:#e1e0d9;--blue:#2a78d6}}
@@ -219,9 +226,9 @@ nav{{display:flex;gap:8px;flex-wrap:wrap}} nav a{{color:var(--ink);text-decorati
 .site img,.nat{{width:100%;height:auto;border:1px solid var(--line);border-radius:8px;background:#fff;display:block;margin-bottom:6px}} .nat{{max-width:520px}}
 </style></head><body><main>
 <nav><a href="../index.html">Atlas</a><a href="../3d.html">3D model</a><a href="../stories.html">Stories</a><a href="../daynight.html">Day vs night</a><a href="../meteogram.html">Meteogram</a><a href="./">Site weather</a><a href="map.html">Map</a><a href="share.html">Share today</a><a href="../gallery.html">Figures</a><a href="https://github.com/gavacharles/kampala-heat-atlas">Code</a></nav>
-<h1>Site weather · Uganda</h1>
+<h1>Site weather</h1>
 <p class="lede">For contractors and site managers: hour-by-hour workable time for seven trades, a daily site note and a
-month-by-month weather record against each town's 1991-2020 climate. Refreshed every morning at 06:00. Pick the town nearest
+month-by-month weather record against each town's 1991-2020 climate, for towns in Uganda, Kenya, South Africa and Saudi Arabia. Refreshed every morning. Pick the town nearest
 your site; to add a site, send its coordinates.</p>
 <p><a href="map.html"><strong>Open the map</strong></a> (click any town, or anywhere in Uganda, for a live site check) ·
 <a href="share.html"><strong>Share today</strong></a> (cards and captions, one tap to WhatsApp)</p>

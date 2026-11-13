@@ -49,7 +49,12 @@ LONG = {"labour": "Outdoor labour (heat)", "concrete": "Concrete pour", "asphalt
 EXTRA_TOWNS = [("Entebbe", 0.0512, 32.4637), ("Mukono", 0.3533, 32.7553), ("Wakiso", 0.4044, 32.4594), ("Masaka", -0.3338, 31.7341),
                ("Fort Portal", 0.6710, 30.2750), ("Kasese", 0.1833, 30.0833), ("Soroti", 1.7146, 33.6111), ("Lira", 2.2499, 32.8999),
                ("Tororo", 0.6928, 34.1809), ("Kabale", -1.2486, 29.9899), ("Masindi", 1.6744, 31.7150), ("Iganga", 0.6092, 33.4686),
-               ("Kitgum", 3.2783, 32.8867), ("Nebbi", 2.4783, 31.0889), ("Ibanda", -0.1342, 30.4950), ("Busia", 0.4669, 34.0900)]
+               ("Kitgum", 3.2783, 32.8867), ("Nebbi", 2.4783, 31.0889), ("Ibanda", -0.1342, 30.4950), ("Busia", 0.4669, 34.0900),
+               ("Thika", -1.0333, 37.0693), ("Ruiru", -1.1460, 36.9600), ("Kiambu", -1.1714, 36.8356), ("Ngong", -1.3612, 36.6588),
+               ("Athi River", -1.4560, 36.9780), ("Kitengela", -1.4747, 36.9620),
+               ("Pretoria", -25.7479, 28.2293), ("Sandton", -26.1076, 28.0567), ("Soweto", -26.2485, 27.8540), ("Midrand", -25.9890, 28.1270),
+               ("Kempton Park", -26.1000, 28.2333), ("Germiston", -26.2178, 28.1672), ("Krugersdorp", -26.0855, 27.7720), ("Vereeniging", -26.6731, 27.9261),
+               ("Diriyah", 24.7340, 46.5750), ("Al Kharj", 24.1556, 47.3120), ("King Khalid Airport", 24.9576, 46.6988)]
 plt.rcParams.update({"font.family": ["Manrope ExtraLight", "Helvetica Neue", "Arial", "DejaVu Sans"], "font.size": 9, "axes.edgecolor": "#c3c2b7",
                      "axes.spines.top": False, "axes.spines.right": False, "axes.grid": True, "grid.color": GRID,
                      "xtick.color": MUTED, "ytick.color": MUTED, "axes.labelcolor": INK2})

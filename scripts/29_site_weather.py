@@ -61,6 +61,25 @@ SITE = OUT / SLUG
 for d in ("archive/forecasts", "archive/observed", "archive/monthly"):
     (SITE / d).mkdir(parents=True, exist_ok=True)
 TH = json.loads((OUT / "thresholds.json").read_text())
+
+
+def _merge(a, b):
+    for k, v in b.items():
+        a[k] = _merge(a.get(k, {}), v) if isinstance(v, dict) and isinstance(a.get(k), dict) else v
+    return a
+
+
+_SITES = json.loads((OUT / "sites.json").read_text())["sites"] if (OUT / "sites.json").exists() else []
+_ME = next((s for s in _SITES if s["name"] == A.name), {})
+TH = _merge(TH, _ME.get("thresholds", {}))                    # per-site working hours and limits
+_sb = TH.get("seasonal_break")
+if _sb:                                                        # e.g. Saudi midday outdoor-work ban, 15 Jun - 15 Sep
+    _md = dt.date.today().strftime("%m-%d")
+    if _sb["from"] <= _md <= _sb["to"]:
+        TH["break_hours"] = sorted(set(TH.get("break_hours", [])) | set(_sb["hours"]))
+        TH["_seasonal_break_active"] = True
+COUNTRY = _ME.get("country", "Uganda")
+(SITE / "thresholds_site.json").write_text(json.dumps(TH, indent=1))
 W0, W1 = TH["working_hours"]
 WORK = [h for h in range(W0, W1) if h not in TH.get("break_hours", [])]     # e.g. 8 working hours, lunch excluded
 NW = len(WORK)
@@ -176,11 +195,16 @@ def derive(df):
     h = TH["heat_wbgt_moderate_work_acclimatised_C"]; ws = df.wbgt_sun.values; thn = df.thunder.values
     pr, g10, gh = df.precipitation.values, df.wind_gusts_10m.values, df.gust_hook.values
     df["st_labour"] = lvl(ws > h["work25_rest75"], ws > h["continuous"])
-    df["st_concrete"] = lvl((pr >= c["rain_stop_mm_h"]) | (df.prob_next3 >= c["rain_prob_stop_pct"]) | (df.evap_kg_m2_h >= c["evap_stop_kg_m2_h"]) | (thn == 2),
-                            (df.prob_next3 >= c["rain_prob_caution_pct"]) | (df.evap_kg_m2_h >= c["evap_caution_kg_m2_h"]) | (thn == 1))
-    df["st_crane"] = lvl((gh >= cr["gust_stop_ms"]) | (thn == 2), (gh >= cr["gust_caution_ms"]) | (thn == 1))
+    cold_s, cold_c = ta < c.get("cold_stop_C", -99), ta < c.get("cold_caution_C", -99)
+    df["st_concrete"] = lvl((pr >= c["rain_stop_mm_h"]) | (df.prob_next3 >= c["rain_prob_stop_pct"]) | (df.evap_kg_m2_h >= c["evap_stop_kg_m2_h"]) | (thn == 2) | cold_s,
+                            (df.prob_next3 >= c["rain_prob_caution_pct"]) | (df.evap_kg_m2_h >= c["evap_caution_kg_m2_h"]) | (thn == 1) | cold_c)
+    vis = (df["visibility"].values / 1000) if "visibility" in df else np.full(len(df), np.inf)
+    vis = np.where(np.isnan(vis), np.inf, vis)
+    df["st_crane"] = lvl((gh >= cr["gust_stop_ms"]) | (thn == 2) | (vis < cr.get("vis_stop_km", 0)),
+                         (gh >= cr["gust_caution_ms"]) | (thn == 1) | (vis < cr.get("vis_caution_km", 0)))
     wh = TH["work_at_height"]
-    df["st_height"] = lvl((g10 >= wh["gust_stop_ms"]) | (pr >= wh["rain_stop_mm_h"]) | (thn == 2), (g10 >= wh["gust_caution_ms"]) | (thn == 1))
+    df["st_height"] = lvl((g10 >= wh["gust_stop_ms"]) | (pr >= wh["rain_stop_mm_h"]) | (thn == 2) | (vis < wh.get("vis_stop_km", 0)),
+                          (g10 >= wh["gust_caution_ms"]) | (thn == 1) | (vis < wh.get("vis_caution_km", 0)))
     co = TH["coatings"]; m, r = df.dewpoint_margin.values, rh
     df["st_coatings"] = lvl((m < co["dewpoint_margin_stop_C"]) | (r > co["rh_stop_pct"]) | (pr > 0.1),
                             (m < co["dewpoint_margin_caution_C"]) | (r > co["rh_caution_pct"]) | (df.precipitation_probability >= 50))
@@ -233,15 +257,15 @@ fjs = get(f"https://api.open-meteo.com/v1/forecast?latitude={A.lat}&longitude={A
 TZ = fjs["timezone"]
 raw = hourly_frame(fjs)
 full = derive(raw)
-OBS_DROP = ["precipitation_probability", "cape", "uv_index"]   # records use what happened only, so preliminary and ERA5 days compare
+OBS_DROP = ["precipitation_probability", "cape", "uv_index", "visibility", "cloud_cover_low", "cloud_cover_mid", "cloud_cover_high", "pressure_msl"]   # records use what happened only, so preliminary and ERA5 days compare
 obs_full = derive(raw.drop(columns=OBS_DROP))
 now = pd.Timestamp.now(tz=TZ)
 today = now.normalize()
 fc = full[full.index >= today]
-aq = None
+aq = aqf = None
 try:
-    ajs = get(f"https://air-quality-api.open-meteo.com/v1/air-quality?latitude={A.lat}&longitude={A.lon}&hourly=pm2_5&timezone=auto&forecast_days=5")
-    aq = hourly_frame(ajs).pm2_5
+    ajs = get(f"https://air-quality-api.open-meteo.com/v1/air-quality?latitude={A.lat}&longitude={A.lon}&hourly=pm2_5,pm10,dust&timezone=auto&forecast_days=5")
+    aqf = hourly_frame(ajs); aq = aqf.pm2_5
 except Exception:  # noqa: BLE001
     pass
 CLIM = climatology()
@@ -268,12 +292,15 @@ def causes(k, w):
     c, co, asp = TH["concrete"], TH["coatings"], TH["asphalt"]
     test = {"labour": {"heat": bad.st_labour >= 1},
             "concrete": {"rain": (bad.precipitation >= c["rain_stop_mm_h"]) | (bad.prob_next3 >= c["rain_prob_caution_pct"]),
-                         "storms": bad.thunder >= 1, "fast drying": bad.evap_kg_m2_h >= c["evap_caution_kg_m2_h"]},
+                         "storms": bad.thunder >= 1, "fast drying": bad.evap_kg_m2_h >= c["evap_caution_kg_m2_h"],
+                         "cold": bad.temperature_2m < c.get("cold_caution_C", -99)},
             "asphalt": {"rain or wet surface": (bad.precipitation >= asp["rain_stop_mm_h"]) | (bad.rain_prev3 > 0) | (bad.prob_next3 >= asp["rain_prob_next3_caution_pct"]),
                         "storms": bad.thunder >= 1, "wind": bad.wind_speed_10m >= asp["wind_caution_ms"], "cold": bad.temperature_2m < asp["min_air_C"]},
-            "crane": {"wind": bad.gust_hook >= TH["crane"]["gust_caution_ms"], "storms": bad.thunder >= 1},
+            "crane": {"wind": bad.gust_hook >= TH["crane"]["gust_caution_ms"], "storms": bad.thunder >= 1,
+                      "poor visibility": (bad["visibility"] / 1000 < TH["crane"].get("vis_caution_km", 0)) if "visibility" in bad else bad.thunder < -1},
             "height": {"wind": bad.wind_gusts_10m >= TH["work_at_height"]["gust_caution_ms"], "rain": bad.precipitation >= TH["work_at_height"]["rain_stop_mm_h"],
-                       "storms": bad.thunder >= 1},
+                       "storms": bad.thunder >= 1,
+                       "poor visibility": (bad["visibility"] / 1000 < TH["work_at_height"].get("vis_caution_km", 0)) if "visibility" in bad else bad.thunder < -1},
             "coatings": {"humidity or dew": (bad.dewpoint_margin < co["dewpoint_margin_caution_C"]) | (bad.relative_humidity_2m > co["rh_caution_pct"]),
                          "rain": (bad.precipitation > 0.1) | (bad.precipitation_probability >= 50)},
             "earthworks": {"wet ground": bad.rain_prev24 >= TH["earthworks"]["rain_prev24h_caution_mm"], "rain": bad.precipitation > 0.2}}[k]
@@ -341,6 +368,14 @@ def briefing(d, g):
         a = aq[aq.index.normalize() == d]
         if len(a) and a.max() >= 35:
             extras.append(f"Dust: PM2.5 up to {a.max():.0f} µg/m³; damp down haul roads and cutting work; masks for dusty tasks.")
+    if aqf is not None and "dust" in aqf:
+        dd_ = aqf[aqf.index.normalize() == d]
+        dw = TH.get("dust", {})
+        if len(dd_) and (dd_.dust.max() >= dw.get("dust_warn_ug_m3", 1e9) or dd_.pm10.max() >= dw.get("pm10_warn_ug_m3", 1e9)):
+            extras.append(f"Dust storm risk (dust up to {dd_.dust.max():.0f} µg/m³): goggles and masks, secure sheeting and loose materials, "
+                          "stop lifts if the operator loses sight of the load.")
+    if TH.get("_seasonal_break_active"):
+        extras.append("Midday outdoor-work ban in force (12:00-15:00): those hours are excluded from the working day.")
     storm = "likely" if stl else "possible" if stp else "low"
     return dict(date=f"{d:%Y-%m-%d}", day=f"{d:%A %d %B}", headline=head, rows=rows, extras=extras,
                 facts=dict(rain_mm=round(rain, 1), rain_chance=int(g.precipitation_probability.max()), storm=storm,
@@ -529,7 +564,8 @@ for p in sorted((SITE / "archive" / "observed").glob("*.csv")):
     days_in_month = pd.Period(mon).days_in_month
     rows.append(dict(month=mon, days_recorded=nd, days_final=final, rain_mm=round(rain, 1),
                      rain_normal_mm_month=round(m["rain_mean_mm_month"], 0),
-                     rain_pct_of_normal_pro_rata=round(100 * rain / (m["rain_mean_mm_month"] * nd / days_in_month), 0) if nd else None,
+                     rain_pct_of_normal_pro_rata=round(100 * rain / (m["rain_mean_mm_month"] * nd / days_in_month), 0)
+                     if nd and m["rain_mean_mm_month"] * nd / days_in_month >= 1 else None,
                      rain_days=int((o.rain_mm >= 1).sum()), rain_days_normal=round(m["rain_days_mean"] * nd / days_in_month, 1),
                      heavy_rain_days=int(o.rain_flag.str.startswith("heavy").sum()), exceptional_rain_days=int(o.rain_flag.str.startswith("exceptional").sum()),
                      high_gust_days=int((o.gust_flag != "").sum()), hot_days=int((o.heat_flag != "").sum()),
@@ -546,7 +582,8 @@ for p in sorted((SITE / "archive" / "observed").glob("*.csv")):
                f"Site {A.lat:.4f}, {A.lon:.4f}. {nd} of {days_in_month} days recorded, {final} finalised from ERA5 (the rest are "
                "preliminary model analysis and are replaced automatically once ERA5 is published).", "",
                f"- Rain {r['rain_mm']} mm against a pro-rata normal of {m['rain_mean_mm_month'] * nd / days_in_month:.0f} mm "
-               f"({r['rain_pct_of_normal_pro_rata']:.0f} % of normal; full-month normal {m['rain_mean_mm_month']:.0f} mm, 1991-2020).",
+               + ("(" + (f"{r['rain_pct_of_normal_pro_rata']:.0f} % of normal; " if r['rain_pct_of_normal_pro_rata'] is not None else "normal under 1 mm, so no percentage; ")
+                + f"full-month normal {m['rain_mean_mm_month']:.0f} mm, 1991-2020)."),
                f"- Rain days (1 mm or more): {r['rain_days']} against a pro-rata normal of {r['rain_days_normal']}.",
                f"- Heavy rain days (above the site's 1-in-10-day amount, {m['rain_day_p90']:.0f} mm): {r['heavy_rain_days']}; "
                f"exceptional (above 1-in-100-day, {m['rain_day_p99']:.0f} mm): {r['exceptional_rain_days']}.",
@@ -564,7 +601,7 @@ idx.to_csv(SITE / "archive" / "monthly_index.csv", index=False)
 
 # ---------------------------------------------------------------- page
 months_html = "".join(f"<tr><td><a href='archive/monthly/{r['month']}.md'>{r['month']}</a></td><td>{r['days_recorded']}</td>"
-                      f"<td>{r['rain_mm']}</td><td>{r['rain_pct_of_normal_pro_rata']:.0f} %</td><td>{r['heavy_rain_days']}</td>"
+                      f"<td>{r['rain_mm']}</td><td>{'–' if r['rain_pct_of_normal_pro_rata'] is None else str(int(r['rain_pct_of_normal_pro_rata'])) + ' %'}</td><td>{r['heavy_rain_days']}</td>"
                       f"<td>{r['exceptional_rain_days']}</td><td>{r['lost_hours_concrete']}</td><td>{r['lost_hours_labour']}</td>"
                       f"<td><a href='archive/observed/{r['month']}.csv'>CSV</a></td></tr>"
                       for r in reversed(rows)) or "<tr><td colspan='9'>The record starts tomorrow.</td></tr>"

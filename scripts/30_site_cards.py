@@ -30,12 +30,14 @@ from card_style import (ACCENT, byline, BG, CARD, CAU, EYEBROW, GO, INK, INK2, L
 
 SITE = Path(sys.argv[1] if len(sys.argv) > 1 else "docs/site-weather/central-kampala")
 OUTD = SITE / "social"; OUTD.mkdir(parents=True, exist_ok=True)
-TH = json.loads((SITE.parent / "thresholds.json").read_text())
+TH = json.loads(((SITE / "thresholds_site.json") if (SITE / "thresholds_site.json").exists() else (SITE.parent / "thresholds.json")).read_text())
 W0, W1 = TH["working_hours"]
 WORK = [h for h in range(W0, W1) if h not in TH.get("break_hours", [])]     # e.g. 8 working hours, lunch excluded
 NW = len(WORK)
 NAME = (SITE / "site_note_latest.md").read_text().splitlines()[0].split("· ", 1)[1].strip()
 TOWN = NAME.replace("Central ", "")
+COUNTRY = next((x.get("country", "Uganda") for x in json.loads((SITE.parent / "sites.json").read_text())["sites"]
+                if x["name"] == NAME), "Uganda") if (SITE.parent / "sites.json").exists() else "Uganda"
 LINK = f"gavacharles.github.io/kampala-heat-atlas/site-weather/{SITE.name}"
 COL = {0: GO, 1: CAU, 2: STOP}
 TRADES = [("labour", "Outdoor labour"), ("concrete", "Concrete pour"), ("asphalt", "Asphalt & surfacing"), ("crane", "Crane lifts"),
@@ -119,8 +121,12 @@ def trade_cards(d, x, y, W, ymax, rows, cols=2, gap=16):
         card(d, (cx, cy, cx + cw, cy + ch))
         spaced(d, (cx + 22, cy + 22), r["trade"], size=15)
         px = pill(d, cx + 22, cy + 52, r["status"], size=16, h=32)
-        title = trade_title(r)
-        tf = F(24 if d.textlength(title, font=F(24, 800)) < cw - (px - cx) - 36 else 20, 800)
+        title = trade_title(r); room = cw - (px - cx) - 30
+        size = next((z for z in (24, 21, 18) if d.textlength(title, font=F(z, 800)) < room), 18)
+        if d.textlength(title, font=F(size, 800)) >= room:                 # many windows: first two, then "+"
+            parts = title[3:].split(", ")
+            title = "Go " + ", ".join(parts[:2]) + f" +{len(parts) - 2}"
+        tf = F(size, 800)
         text(d, (px + 12, cy + 68), title, tf, INK, "lm")
         yy = hour_chips(d, cx + 22, cy + 100, cw - 44, r.get("hours", []))
         for k, ln in enumerate(wrap(d, trade_body(r), F(20, 400), cw - 48)[:body_lines]):
@@ -367,7 +373,7 @@ cap = [f"Site weather, {NAME}: {B['day']}.", "", B["headline"], ""] + [
     f"• No limits: {', '.join(r['trade'] for r in B['rows'] if r['status'] == 'GO')}." if any(r["status"] == "GO" for r in B["rows"]) else ""] + [
     "", f"Hour-by-hour for seven trades, the week ahead and the monthly record: {LINK}", "",
     "Screening guidance from a forecast; your contract, crane limits and H&S plan come first.",
-    "#Kampala #Construction #SiteSafety #HeatStress #Uganda #Weather"]
+    f"#{TOWN.replace(' ', '')} #Construction #SiteSafety #HeatStress #{COUNTRY.replace(' ', '')} #Weather"]
 (OUTD / "caption.txt").write_text("\n".join(cap) + "\n")
 # X: 280 characters, a link counts as 23
 short = {"labour": "Labour", "concrete": "Concrete", "asphalt": "Asphalt", "crane": "Cranes", "height": "Height", "coatings": "Painting", "earthworks": "Earthworks"}

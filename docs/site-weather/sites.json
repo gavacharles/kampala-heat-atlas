@@ -1,10 +1,114 @@
-{"_note": "One entry per site. Add a line to add a site (contractors can send coordinates). alt in metres.",
+{
+ "_note": "One entry per site. Add a line to add a site. alt in metres. Optional 'thresholds' overrides the shared thresholds.json for that site.",
  "sites": [
-  {"name": "Central Kampala", "region": "Central", "lat": 0.3136, "lon": 32.5811, "alt": 1190},
-  {"name": "Mbarara", "region": "Western", "lat": -0.6072, "lon": 30.6545, "alt": 1430},
-  {"name": "Hoima", "region": "Western", "lat": 1.4331, "lon": 31.3524, "alt": 1150},
-  {"name": "Mbale", "region": "Eastern", "lat": 1.0821, "lon": 34.1750, "alt": 1150},
-  {"name": "Jinja", "region": "Eastern", "lat": 0.4244, "lon": 33.2042, "alt": 1140},
-  {"name": "Gulu", "region": "Northern", "lat": 2.7724, "lon": 32.2881, "alt": 1100},
-  {"name": "Arua", "region": "Northern", "lat": 3.0201, "lon": 30.9111, "alt": 1210}
- ]}
+  {
+   "name": "Central Kampala",
+   "region": "Central",
+   "lat": 0.3136,
+   "lon": 32.5811,
+   "alt": 1190,
+   "country": "Uganda"
+  },
+  {
+   "name": "Mbarara",
+   "region": "Western",
+   "lat": -0.6072,
+   "lon": 30.6545,
+   "alt": 1430,
+   "country": "Uganda"
+  },
+  {
+   "name": "Hoima",
+   "region": "Western",
+   "lat": 1.4331,
+   "lon": 31.3524,
+   "alt": 1150,
+   "country": "Uganda"
+  },
+  {
+   "name": "Mbale",
+   "region": "Eastern",
+   "lat": 1.0821,
+   "lon": 34.175,
+   "alt": 1150,
+   "country": "Uganda"
+  },
+  {
+   "name": "Jinja",
+   "region": "Eastern",
+   "lat": 0.4244,
+   "lon": 33.2042,
+   "alt": 1140,
+   "country": "Uganda"
+  },
+  {
+   "name": "Gulu",
+   "region": "Northern",
+   "lat": 2.7724,
+   "lon": 32.2881,
+   "alt": 1100,
+   "country": "Uganda"
+  },
+  {
+   "name": "Arua",
+   "region": "Northern",
+   "lat": 3.0201,
+   "lon": 30.9111,
+   "alt": 1210,
+   "country": "Uganda"
+  },
+  {
+   "name": "Nairobi",
+   "region": "Nairobi",
+   "country": "Kenya",
+   "lat": -1.2864,
+   "lon": 36.8172,
+   "alt": 1795
+  },
+  {
+   "name": "Johannesburg",
+   "region": "Gauteng",
+   "country": "South Africa",
+   "lat": -26.2041,
+   "lon": 28.0473,
+   "alt": 1753,
+   "thresholds": {
+    "working_hours": [
+     7,
+     17
+    ],
+    "break_hours": [
+     12
+    ],
+    "_note": "Typical South African site day 07:00-17:00 with a lunch hour at 12:00"
+   }
+  },
+  {
+   "name": "Riyadh",
+   "region": "Riyadh",
+   "country": "Saudi Arabia",
+   "lat": 24.7136,
+   "lon": 46.6753,
+   "alt": 612,
+   "thresholds": {
+    "working_hours": [
+     7,
+     17
+    ],
+    "break_hours": [
+     12
+    ],
+    "seasonal_break": {
+     "from": "06-15",
+     "to": "09-15",
+     "hours": [
+      12,
+      13,
+      14
+     ],
+     "_source": "Saudi Ministry of Human Resources: outdoor work in direct sun is banned 12:00-15:00 from 15 June to 15 September"
+    }
+   }
+  }
+ ]
+}

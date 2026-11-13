@@ -15,12 +15,16 @@
   "_source": "typical tower-crane in-service limits; gust scaled from 10 m to hook height by the 1/7 power law",
   "hook_height_m": 30,
   "gust_caution_ms": 15.0,
-  "gust_stop_ms": 20.0
+  "gust_stop_ms": 20.0,
+  "vis_stop_km": 0.5,
+  "vis_caution_km": 1.5
  },
  "work_at_height": {
   "gust_caution_ms": 11.0,
   "gust_stop_ms": 15.0,
-  "rain_stop_mm_h": 0.2
+  "rain_stop_mm_h": 0.2,
+  "vis_stop_km": 0.5,
+  "vis_caution_km": 1.5
  },
  "concrete": {
   "_source": "ACI 305R evaporation-rate guidance (Uno 1998 formula); concrete assumed warmer than air by concrete_minus_air_C",
@@ -29,7 +33,10 @@
   "evap_stop_kg_m2_h": 1.0,
   "rain_stop_mm_h": 0.5,
   "rain_prob_caution_pct": 50,
-  "rain_prob_stop_pct": 75
+  "rain_prob_stop_pct": 75,
+  "cold_stop_C": 5.0,
+  "cold_caution_C": 10.0,
+  "_cold_source": "ACI 306R cold-weather concreting: protect below about 5 C; caution below 10 C"
  },
  "coatings": {
   "_source": "ISO 8502-4: surface at least 3 C above dew point; RH at most 85 %",
@@ -63,5 +70,10 @@
  "break_hours": [
   13
  ],
- "_working_note": "8-hour working day: 08:00-17:00 with a lunch break 13:00-14:00 (break hours are not counted)"
+ "_working_note": "8-hour working day: 08:00-17:00 with a lunch break 13:00-14:00 (break hours are not counted)",
+ "dust": {
+  "_source": "Open-Meteo/CAMS dust concentration; a dust event reduces visibility and needs eye protection and secured materials",
+  "dust_warn_ug_m3": 200,
+  "pm10_warn_ug_m3": 150
+ }
 }
