@@ -25,7 +25,7 @@ import pandas as pd
 from PIL import Image, ImageDraw
 
 sys.path.insert(0, str(Path(__file__).parent))
-from card_style import (ACCENT, BG, CARD, CAU, EYEBROW, GO, INK, INK2, LINE, MUT, SHARE_TINT, STOP, TINTED, F,  # noqa: E402
+from card_style import (ACCENT, byline, BG, CARD, CAU, EYEBROW, GO, INK, INK2, LINE, MUT, SHARE_TINT, STOP, TINTED, F,  # noqa: E402
                         card, chips, footer, header, marked_headline, pill, spaced, text, wrap)
 
 SITE = Path(sys.argv[1] if len(sys.argv) > 1 else "docs/site-weather/central-kampala")
@@ -317,10 +317,10 @@ def x_card(path):
         for ln in wrap(d, e, F(17, 400), 560)[:2]:
             text(d, (64, y), ln, F(17, 400), INK2); y += 24
         y += 6
-    y = max(y + 10, H - 130 - 3 * 64 - 30)
+    y = max(y + 10, H - 146 - 3 * 64 - 30)
     spaced(d, (64, y), "Next days", size=15); y += 30
     for b in BJ["days"][1:4]:
-        if y + 58 > H - 120:
+        if y + 58 > H - 136:
             break
         card(d, (64, y, 624, y + 56), r=14, fill=BG)
         text(d, (82, y + 28), b["day"].split()[0][:3] + " " + b["day"].split()[1], F(17, 800), INK, "lm")
@@ -348,7 +348,8 @@ def x_card(path):
     f = F(20, 800); lw = d.textlength(LINK, font=f) + 40
     d.rounded_rectangle((64, H - 96, 64 + lw, H - 56), 20, fill=ACCENT)
     text(d, (84, H - 76), LINK, f, INK, "lm")
-    text(d, (W - 64, H - 76), "Screening guidance from a forecast; your contract and H&S plan come first.", F(16, 400), MUT, "rm")
+    text(d, (64, H - 120), "Screening guidance from a forecast; your contract and H&S plan come first.", F(16, 400), MUT)
+    byline(d, 0, H - 76, size=19, anchor_right=True, W=W)
     im.save(path)
     return im
 

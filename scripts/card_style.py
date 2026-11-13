@@ -135,4 +135,14 @@ def footer(d, W, H, link, credit="Gava Charles · Kampala Heat Atlas · forecast
     f = F(20, 800); w = d.textlength(link, font=f) + 40
     d.rounded_rectangle((64, H - 106, 64 + w, H - 66), 20, fill=ACCENT)
     text(d, (84, H - 86), link, f, INK, "lm")
-    text(d, (64, H - 46), credit, F(16, 600), MUT)
+    byline(d, 64, H - 46)
+
+
+def byline(d, x, y, size=18, anchor_right=False, W=None):
+    """'By Gava Charles' in bold ink, then the project and data source in grey."""
+    a, b = "By Gava Charles", "  ·  Kampala Heat Atlas  ·  forecast data Open-Meteo"
+    fa, fb = F(size, 800), F(size - 2, 600)
+    if anchor_right:
+        x = W - 64 - d.textlength(a, font=fa) - d.textlength(b, font=fb)
+    text(d, (x, y), a, fa, INK, "lm")
+    text(d, (x + d.textlength(a, font=fa), y), b, fb, MUT, "lm")

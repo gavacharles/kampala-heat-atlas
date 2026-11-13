@@ -41,7 +41,7 @@ for s in SITES:
 
 # ---------------------------------------------------------------- national cards: one per activity, actual go hours
 sys.path.insert(0, str(HERE))
-from card_style import BG, INK, INK2, MUT, SHARE_TINT, F, footer, header, spaced, text  # noqa: E402
+from card_style import byline, BG, INK, INK2, MUT, SHARE_TINT, F, footer, header, spaced, text  # noqa: E402
 
 SITE_URL = "gavacharles.github.io/kampala-heat-atlas/site-weather"
 ACTS = [("concrete", "Concrete pour", "a pour can go ahead"), ("asphalt", "Asphalt & surfacing", "laying or spraying can go ahead"),
@@ -157,7 +157,8 @@ for k, name, verb in ACTS:
     f2 = F(20, 800); lw = d.textlength(SITE_URL, font=f2) + 40
     d.rounded_rectangle((64, H2 - 96, 64 + lw, H2 - 56), 20, fill=ACCENT)
     text(d, (84, H2 - 76), SITE_URL, f2, INK, "lm")
-    text(d, (W2 - 64, H2 - 76), "Screening guidance from a forecast; your contract and H&S plan come first.", F(16, 400), MUT, "rm")
+    text(d, (64, H2 - 120), "Screening guidance from a forecast; your contract and H&S plan come first.", F(16, 400), MUT)
+    byline(d, 0, H2 - 76, size=19, anchor_right=True, W=W2)
     im.save(OUT / f"uganda_{k}_x_16x9.png")
     # captions: long (WhatsApp, LinkedIn, Facebook) and X (280 characters, links count as 23)
     d0 = days[0]
@@ -228,6 +229,7 @@ your site; to add a site, send its coordinates.</p>
 {cards}
 <p class="lede" style="font-size:13px">Screening guidance from a weather forecast, not an instruction. The contract specification,
 crane manufacturer's limits and site health-and-safety plan take precedence. Data: Open-Meteo (CC BY 4.0).</p>
+<p style="margin:0;font-weight:700">By Gava Charles · Kampala Heat Atlas</p>
 </main></body></html>""")
 print("index and national card written;", "failed: " + ", ".join(failed) if failed else "all sites ok")
 # one town's forecast failing (a timeout) must not fail the run: publish the others and warn; fail only if all failed

@@ -265,6 +265,7 @@ ax[0].set_ylim(ylo, yhi); ax[0].set_ylabel("°C")
 ax[0].legend(loc="upper left", ncol=3, frameon=False, fontsize=8)
 ax[0].set_title(f"Site weather · {A.name} ({A.lat:.3f}, {A.lon:.3f}) · issued {now:%a %d %b %Y %H:%M}",
                 loc="left", fontsize=12, fontweight="bold", color=INK)
+ax[0].set_title("By Gava Charles · Kampala Heat Atlas", loc="right", fontsize=10, fontweight="bold", color=INK2)
 ax[0].text(0.005, 0.04, "grey bands = working hours · work/rest bands: moderate work, acclimatised workers; heavier work or new workers need lower limits",
            transform=ax[0].transAxes, fontsize=7.5, color=INK2)
 ax[1].bar(t, fc.precipitation, width=0.035, color=BLUE)
@@ -705,6 +706,7 @@ model analysis and are replaced by ERA5 about a week later. Useful as supporting
 <th>concrete h lost</th><th>labour (heat) h lost</th><th>daily</th></tr>{months_html}</table></div></section>
 <p class="lede" style="font-size:13px">Screening guidance from a weather forecast, not an instruction. The contract specification,
 crane manufacturer's limits and site health-and-safety plan take precedence. Forecast and ERA5 data: Open-Meteo (open-meteo.com, CC BY 4.0).</p>
+<p style="margin:0;font-weight:800">By Gava Charles · <span style="font-weight:600;color:var(--ink-2)">Kampala Heat Atlas</span></p>
 </main></body></html>"""
 (SITE / "index.html").write_text(page)
 sites = sorted(p.parent.name for p in OUT.glob("*/index.html"))
