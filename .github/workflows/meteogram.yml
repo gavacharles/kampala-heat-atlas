@@ -1,7 +1,10 @@
 name: Refresh meteograms and site weather, deploy site
 on:
   schedule:
-    - cron: "0 3 * * *"        # 06:00 in Uganda, daily
+    # off-peak minutes: GitHub delays or drops schedules at the top of the hour. Two slots so one
+    # missed trigger still leaves the site refreshed before work starts (the run is safe to repeat).
+    - cron: "23 2 * * *"       # 05:23 in Uganda
+    - cron: "41 3 * * *"       # 06:41 in Uganda, backup
   push:
     branches: [main]
     paths: ["scripts/**", "docs/**", ".github/workflows/**"]
