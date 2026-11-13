@@ -1,6 +1,6 @@
 # Site note · Mbale
 
-Issued Friday 13 November 2026, 09:10 (Africa/Kampala). Site 1.0821, 34.1750. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Friday 13 November 2026, 09:31 (Africa/Kampala). Site 1.0821, 34.1750. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Friday 13 November
 
