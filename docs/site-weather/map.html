@@ -23,6 +23,9 @@ nav{display:flex;gap:6px;flex-wrap:wrap} nav a{color:var(--ink);text-decoration:
 .cells span.gap{margin-left:9px}
 .facts{color:var(--ink-2)} svg text{fill:var(--muted);font:10px Inter,Arial,sans-serif}
 .tip{max-width:290px;position:fixed;pointer-events:none;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:6px 9px;font-size:12px;box-shadow:0 2px 10px #0002;display:none;z-index:999}
+.vt{border-collapse:collapse;font-size:11px;width:100%} .vt th{font-weight:600;color:var(--ink-2);text-align:left;padding:2px 6px 2px 0;white-space:nowrap}
+.vt tr:first-child th{text-align:center} .vt td{text-align:center;padding:3px 2px;border:1px solid var(--surface);font-weight:700;min-width:28px}
+.vt.wk td{min-width:44px}
 .legend{display:flex;gap:10px;flex-wrap:wrap;font-size:12px;color:var(--ink-2)} .legend i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:4px;vertical-align:-2px}
 .leaflet-tooltip.town{background:var(--surface);color:var(--ink);border:1px solid var(--line);font:600 12px Inter,Arial,sans-serif;box-shadow:none}
 @media (max-width:860px){.wrap{grid-template-columns:1fr;height:auto} #map{height:52vh} aside{border-left:0;border-top:1px solid var(--line)}}
@@ -50,7 +53,23 @@ const STCOL = () => [css("--go"), css("--cau"), css("--stop")];
 const KEYS = ["labour","concrete","asphalt","crane","height","coatings","earthworks"];
 const NAMES = {labour:"Outdoor labour",concrete:"Concrete pour",asphalt:"Asphalt & surfacing",crane:"Crane lifts",height:"Work at height",coatings:"Painting & coatings",earthworks:"Earthworks"};
 const WORD = {STOP:"STOP",LIMITED:"LIMITED",CAUTION:"CARE",GO:"GO"};
-let TH, WORK, W0, W1, live = null, liveMarker = null;
+let TH, WORK, W0, W1, live = null, liveMarker = null, BASE_TH = null, SITES = [], gridLayer = null, gridVar = "rain";
+const BOX = {"Uganda": [-1.5, 29.5, 4.25, 35.05], "Kenya": [-4.75, 33.9, 5.1, 41.95], "South Africa": [-35.0, 16.4, -22.1, 33.0],
+             "Saudi Arabia": [16.3, 34.5, 32.2, 55.7]};      // rough boxes; Uganda is checked before Kenya
+function countryOf(lat, lon){
+  for (const [c, [a, b, cc, d]] of Object.entries(BOX)) if (lat >= a && lat <= cc && lon >= b && lon <= d) return c;
+  return null;
+}
+function merge(a, b){ const o = JSON.parse(JSON.stringify(a)); for (const [k, v] of Object.entries(b || {}))
+  o[k] = (v && typeof v === "object" && !Array.isArray(v) && o[k] && typeof o[k] === "object") ? merge(o[k], v) : v; return o; }
+function useRules(ctry){
+  const site = SITES.find(x => (x.country || "Uganda") === ctry);
+  TH = merge(BASE_TH, site ? site.thresholds : {});
+  const sb = TH.seasonal_break, md = new Date().toISOString().slice(5, 10);
+  TH._ban = !!(sb && md >= sb.from && md <= sb.to);
+  if (TH._ban) TH.break_hours = [...new Set([...(TH.break_hours || []), ...sb.hours])];
+  [W0, W1] = TH.working_hours; WORK = []; for (let h = W0; h < W1; h++) if (!(TH.break_hours || []).includes(h)) WORK.push(h);
+}
 const panel = document.getElementById("panel"), tip = document.getElementById("tip");
 const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 
@@ -60,7 +79,8 @@ L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {maxZoom: 19,
 
 // ------------------------------------------------------------------ the daily town briefings
 async function init(){
-  TH = await (await fetch("thresholds.json", {cache: "no-store"})).json();
+  TH = await (await fetch("thresholds.json", {cache: "no-store"})).json(); BASE_TH = JSON.parse(JSON.stringify(TH));
+  try { SITES = (await (await fetch("sites.json", {cache: "no-store"})).json()).sites; } catch(e){}
   [W0, W1] = TH.working_hours; WORK = []; for (let h = W0; h < W1; h++) if (!(TH.break_hours || []).includes(h)) WORK.push(h);
   let towns = [];
   try { towns = (await (await fetch("towns_today.json", {cache: "no-store"})).json()).towns; } catch(e){}
@@ -153,7 +173,7 @@ function derive(H, offset, lat, lon){
     let p3 = 0; for (let j = Math.max(0, i - 3); j < i; j++) p3 += P[j] || 0;
     let pn3 = 0; for (let j = i; j < Math.min(n, i + 3); j++) pn3 = Math.max(pn3, PP[j] || 0);
     const h = TH.heat_wbgt_moderate_work_acclimatised_C, cr = TH.crane, wh = TH.work_at_height, co = TH.coatings, ew = TH.earthworks, asp = TH.asphalt;
-    out.push({t, day: t.slice(0, 10), hour, ta, rh, pr, prob, v10: H.wind_speed_10m[i], wbgt: wb.sun, wbgtShade: wb.shade, evap, margin, g10, gh, thunder, p24, p3,
+    out.push({t, day: t.slice(0, 10), hour, ta, rh, pr, prob, vis, v10: H.wind_speed_10m[i], wbgt: wb.sun, wbgtShade: wb.shade, evap, margin, g10, gh, thunder, p24, p3,
       work: WORK.includes(hour),
       st: {
         labour: lvl(wb.sun > h.work25_rest75, wb.sun > h.continuous),
@@ -216,13 +236,15 @@ async function runLive(lat, lon, name){
   try {
     const js = await (await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat.toFixed(4)}&longitude=${lon.toFixed(4)}&hourly=${vars}&timezone=auto&past_days=1&forecast_days=7&wind_speed_unit=ms`)).json();
     if (js.error) throw new Error(js.reason);
+    const ctry = countryOf(lat, lon); useRules(ctry);
     const all = derive(js.hourly, js.utc_offset_seconds, lat, lon);
     const nowLocal = new Date(Date.now() + js.utc_offset_seconds * 1000).toISOString();
     const today = nowLocal.slice(0, 10), nowHour = +nowLocal.slice(11, 13);
     const rows = all.filter(x => x.day >= today);
     let days = [...new Set(rows.map(x => x.day))]; if (nowHour >= W1) days = days.slice(1);
-    live = {name: name || `${lat.toFixed(3)}, ${lon.toFixed(3)}`, lat, lon, rows, days, sel: days[0], elev: js.elevation};
+    live = {name: name || `${lat.toFixed(3)}, ${lon.toFixed(3)}`, lat, lon, rows, days, sel: days[0], elev: js.elevation, ctry, grid: null};
     renderLive();
+    loadGrid(lat, lon);
   } catch(e){ panel.innerHTML = `<p class="lede">Could not get the forecast: ${esc(e.message)}. Try again in a minute.</p>`; }
 }
 
@@ -233,16 +255,104 @@ function renderLive(){
     <span class="trade">${NAMES[t.k]}</span><span class="label">${esc(t.label)}</span>
     <span class="cells">${b.w.map((x, i) => `<span${i && x.hour !== b.w[i - 1].hour + 1 ? ' class="gap"' : ""} style="background:${S[t.st[i]]}" title="${NAMES[t.k]} ${String(x.hour).padStart(2, "0")}:00">${String(x.hour).padStart(2, "0")}</span>`).join("")}</span></div>`).join("");
   panel.innerHTML = `<h2>Live check · ${esc(name)}</h2>
-    <div class="small"><a href="?lat=${live.lat.toFixed(4)}&lon=${live.lon.toFixed(4)}">Link to this spot</a> (bookmark it for your site) · Elevation ${Math.round(live.elev)} m · ${WORK.length}-hour day ${String(W0).padStart(2, "0")}-${String(W1).padStart(2, "0")}, lunch excluded</div>
+    <div class="small"><a href="?lat=${live.lat.toFixed(4)}&lon=${live.lon.toFixed(4)}">Link to this spot</a> (bookmark it for your site) · Elevation ${Math.round(live.elev)} m ·
+    rules: ${esc(live.ctry || "default")} · ${WORK.length}-hour day ${String(W0).padStart(2, "0")}-${String(W1).padStart(2, "0")}, breaks excluded${TH._ban ? " · midday outdoor-work ban in force" : ""}</div>
     <div class="tabs">${days.map(d => `<button aria-pressed="${d === sel}" data-d="${d}">${dname(d)}</button>`).join("")}</div>
     <div class="head" style="border-left-color:${C[b.worst]}">${esc(b.head)}</div>
     <div class="facts">Rain ${b.rain.toFixed(0)} mm (${b.prob}%) · storms ${b.storm} · WBGT ${b.wbgt.toFixed(0)} °C · gusts ${b.gust.toFixed(0)} m/s at hook height</div>
     ${trades}
+    <h2 style="margin-top:6px">${dname(sel)}, every 3 hours</h2>
+    ${dayTable(dr)}
+    <h2 style="margin-top:6px">The week at a glance</h2>
+    ${weekTable(rows, days)}
+    <h2 style="margin-top:6px">On the map</h2>
+    <div class="small">The shaded squares on the map show ${dname(sel)} across about 90 × 90 km around this point.</div>
+    <div class="tabs" id="gv"><button data-v="rain" aria-pressed="${gridVar === "rain"}">Daily rain</button><button data-v="gust" aria-pressed="${gridVar === "gust"}">Max gust at hook height</button></div>
+    <div id="glegend" class="small"></div>
     <h2 style="margin-top:6px">Seven-day meteogram</h2>
     <div class="small">Grey bands: working hours. Darker band: the day selected above. Hover or tap for values.</div>
     <div id="mg"></div>`;
-  panel.querySelectorAll(".tabs button").forEach(bt => bt.onclick = () => { live.sel = bt.dataset.d; renderLive(); });
+  panel.querySelectorAll(".tabs button[data-d]").forEach(bt => bt.onclick = () => { live.sel = bt.dataset.d; renderLive(); });
+  panel.querySelectorAll("#gv button").forEach(bt => bt.onclick = () => { gridVar = bt.dataset.v; renderLive(); });
+  drawGrid();
   drawMeteogram(document.getElementById("mg"), rows, sel);
+}
+
+// ---------------- tables
+const shade = (v, stops, cols) => cols[stops.findIndex(x => v < x) === -1 ? cols.length - 1 : stops.findIndex(x => v < x)];
+const ink = bg => { const n = parseInt(bg.slice(1), 16); return ((n >> 16) * 0.299 + ((n >> 8) & 255) * 0.587 + (n & 255) * 0.114) < 128 ? "#fff" : "#0b0b0b"; };
+const cell = (txt, bg) => `<td style="background:${bg};color:${ink(bg)}">${txt}</td>`;
+function colours(){
+  const h = TH.heat_wbgt_moderate_work_acclimatised_C, cr = TH.crane, c = TH.concrete, co = TH.coatings;
+  return {
+    wb: v => shade(v, [h.continuous, h.work75_rest25, h.work50_rest50, h.work25_rest75], ["#e8f4eb", "#fde0d2", "#f8c4ad", "#f19b80", "#c23434"]),
+    ta: v => shade(v, [12, 18, 24, 30, 36], ["#2c7bb6", "#abd9e9", "#ffffbf", "#fdae61", "#f46d43", "#d7191c"]),
+    rain: v => shade(v, [0.1, 1, 3, 8, 15], ["#ffffff", "#deebf7", "#9ecae1", "#4292c6", "#2171b5", "#08306b"]),
+    prob: v => shade(v, [20, 40, 60, 80], ["#ffffff", "#deebf7", "#9ecae1", "#4292c6", "#08306b"]),
+    gust: v => shade(v, [cr.gust_caution_ms * 0.6, cr.gust_caution_ms, cr.gust_stop_ms], ["#ffffff", "#fff1c1", "#f6b34a", "#c23434"]),
+    vis: v => shade(v, [0.5, 1.5, 5, 10], ["#c23434", "#f6b34a", "#fff1c1", "#fbfbfb", "#ffffff"]),
+    ev: v => shade(v, [c.evap_caution_kg_m2_h, c.evap_stop_kg_m2_h], ["#ffffff", "#f6b34a", "#c23434"]),
+    dm: v => shade(v, [co.dewpoint_margin_stop_C, co.dewpoint_margin_caution_C], ["#c23434", "#f6b34a", "#ffffff"]),
+    storm: v => ["#ffffff", "#f6b34a", "#c23434"][v]};
+}
+function dayTable(dr){
+  const K = colours(), B = [];
+  for (let hh = 0; hh < 24; hh += 3){ const r = dr.filter(x => x.hour >= hh && x.hour < hh + 3); if (r.length) B.push([hh, r]); }
+  const f = (fn, agg) => B.map(([_, r]) => agg(r.map(fn)));
+  const max = a => Math.max(...a), min = a => Math.min(...a), sum = a => a.reduce((x, y) => x + y, 0), mean = a => sum(a) / a.length;
+  const rowsT = [["Air °C", f(x => x.ta, mean), v => v.toFixed(0), K.ta], ["WBGT sun °C", f(x => x.wbgt, max), v => v.toFixed(0), K.wb],
+    ["Rain mm", f(x => x.pr, sum), v => v < 0.05 ? "" : v.toFixed(1), K.rain], ["Chance %", f(x => x.prob, max), v => v.toFixed(0), K.prob],
+    ["Storms", f(x => x.thunder, max), v => ["", "poss", "likely"][v], K.storm], ["Wind m/s", f(x => x.v10, mean), v => v.toFixed(0), () => "#ffffff"],
+    ["Gust hook m/s", f(x => x.gh, max), v => v.toFixed(0), K.gust], ["Visibility km", f(x => x.vis, min), v => isFinite(v) ? (v < 10 ? v.toFixed(1) : v.toFixed(0)) : "–", v => isFinite(v) ? K.vis(v) : "#ffffff"],
+    ["Evap kg/m²/h", f(x => x.evap, max), v => v.toFixed(1), K.ev], ["Dew margin °C", f(x => x.margin, min), v => Math.round(v).toString().replace("-0", "0"), K.dm],
+    ["Humidity %", f(x => x.rh, mean), v => v.toFixed(0), K.prob]];
+  return `<div style="overflow-x:auto"><table class="vt"><tr><th></th>${B.map(([hh]) => `<th>${String(hh).padStart(2, "0")}</th>`).join("")}</tr>` +
+    rowsT.map(([lab, vals, fm, col]) => `<tr><th>${lab}</th>${vals.map(v => cell(fm(v), col(v))).join("")}</tr>`).join("") + "</table></div>";
+}
+function weekTable(rows, days){
+  const K = colours(), T = {0: ["#e8f4eb", "#1f7a35"], 1: ["#fdf3d7", "#755200"], 2: ["#f9eaea", "#b42318"]};
+  const dname = d => new Date(d + "T12:00:00Z").toLocaleDateString("en-GB", {weekday: "short", day: "numeric", timeZone: "UTC"});
+  const per = days.map(d => { const r = rows.filter(x => x.day === d), w = r.filter(x => x.work);
+    return {r, w, rain: r.reduce((a, x) => a + x.pr, 0), prob: Math.max(...r.map(x => x.prob)), storm: Math.max(...r.map(x => x.thunder)),
+            wb: Math.max(...r.map(x => x.wbgt)), gust: Math.max(...r.map(x => x.gh)), vis: w.length ? Math.min(...w.map(x => x.vis)) : Infinity}; });
+  const tr = (lab, fn) => `<tr><th>${lab}</th>${per.map(fn).join("")}</tr>`;
+  let h = `<div style="overflow-x:auto"><table class="vt wk"><tr><th></th>${days.map(d => `<th>${dname(d)}</th>`).join("")}</tr>`;
+  h += tr("Rain mm", p => cell(p.rain.toFixed(0), K.rain(p.rain / 3))) + tr("Chance %", p => cell(p.prob, K.prob(p.prob)))
+     + tr("Storms", p => cell(["low", "poss", "likely"][p.storm], K.storm(p.storm))) + tr("Peak WBGT", p => cell(p.wb.toFixed(0), K.wb(p.wb)))
+     + tr("Max gust", p => cell(p.gust.toFixed(0), K.gust(p.gust))) + tr("Min vis, work h", p => cell(isFinite(p.vis) ? p.vis.toFixed(1) : "–", isFinite(p.vis) ? K.vis(p.vis) : "#fff"));
+  KEYS.forEach(k => { h += tr(NAMES[k], p => { if (!p.w.length) return cell("", "#f6f6f3");
+    const st = p.w.map(x => x.st[k]), share = st.filter(s => s === 0).length / st.length, t = T[share >= 0.66 ? 0 : share >= 0.33 ? 1 : 2];
+    const win = st.every(s => s === 0) ? "all day" : (runsOf(p.w, st.map(s => s === 0)).map(([a, b]) => `${String(a).padStart(2, "0")}-${String(b).padStart(2, "0")}`).join(" ") || "none");
+    return `<td style="background:${t[0]};color:${t[1]};font-size:10px">${win}</td>`; }); });
+  return h + "</table></div>";
+}
+
+// ---------------- daily rain / gust around the point, drawn on the map
+async function loadGrid(lat, lon){
+  const g = [-0.4, -0.267, -0.133, 0, 0.133, 0.267, 0.4], la = [], lo = [];
+  g.forEach(a => g.forEach(b => { la.push((lat + a).toFixed(3)); lo.push((lon + b).toFixed(3)); }));
+  try {
+    const js = await (await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${la.join(",")}&longitude=${lo.join(",")}&daily=precipitation_sum,wind_gusts_10m_max&timezone=auto&forecast_days=7&wind_speed_unit=ms`)).json();
+    if (!Array.isArray(js) || !live || live.lat !== lat) return;
+    live.grid = {pts: js.map((j, i) => ({lat: +la[i], lon: +lo[i], days: j.daily.time, rain: j.daily.precipitation_sum, gust: j.daily.wind_gusts_10m_max})), step: 0.1333};
+    drawGrid();
+  } catch(e){}
+}
+function drawGrid(){
+  if (gridLayer){ map.removeLayer(gridLayer); gridLayer = null; }
+  const lg = document.getElementById("glegend");
+  if (!live || !live.grid){ if (lg) lg.textContent = "Loading the area around this point…"; return; }
+  const cr = TH.crane, hs = live.grid.step / 2, K = colours();
+  gridLayer = L.layerGroup();
+  live.grid.pts.forEach(p => { const k = p.days.indexOf(live.sel); if (k < 0) return;
+    const v = gridVar === "rain" ? p.rain[k] : p.gust[k] * Math.pow(cr.hook_height_m / 10, 1 / 7);
+    const col = gridVar === "rain" ? K.rain(v / 3) : K.gust(v);
+    L.rectangle([[p.lat - hs, p.lon - hs], [p.lat + hs, p.lon + hs]], {weight: 0, fillColor: col, fillOpacity: 0.55, interactive: true})
+      .bindTooltip(`${gridVar === "rain" ? v.toFixed(1) + " mm rain" : v.toFixed(0) + " m/s gust at hook height"}`, {sticky: true}).addTo(gridLayer);
+  });
+  gridLayer.addTo(map); if (liveMarker) liveMarker.bringToFront();
+  if (lg) lg.textContent = gridVar === "rain" ? "Rain: white none · light blue under 3 mm · blue 3-24 mm · dark over 24 mm. Hover a square for its value."
+                                              : `Gust at ${cr.hook_height_m} m: white calm · yellow near · orange over caution (${cr.gust_caution_ms} m/s) · red over stop (${cr.gust_stop_ms} m/s).`;
 }
 
 function drawMeteogram(el, rows, sel){
