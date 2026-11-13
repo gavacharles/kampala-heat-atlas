@@ -1,0 +1,89 @@
+{
+ "_note": "Typical screening values. The contract specification, the crane manufacturer's limits and the site health-and-safety plan always take precedence. Edit these to match them.",
+ "working_hours": [
+  7,
+  17
+ ],
+ "heat_wbgt_moderate_work_acclimatised_C": {
+  "_source": "ACGIH TLV / ISO 7243 style screening, moderate work, acclimatised workers",
+  "continuous": 28.0,
+  "work75_rest25": 29.0,
+  "work50_rest50": 30.0,
+  "work25_rest75": 31.0
+ },
+ "crane": {
+  "_source": "typical tower-crane in-service limits; gust scaled from 10 m to hook height by the 1/7 power law",
+  "hook_height_m": 30,
+  "gust_caution_ms": 15.0,
+  "gust_stop_ms": 20.0,
+  "vis_stop_km": 0.5,
+  "vis_caution_km": 1.5
+ },
+ "work_at_height": {
+  "gust_caution_ms": 11.0,
+  "gust_stop_ms": 15.0,
+  "rain_stop_mm_h": 0.2,
+  "vis_stop_km": 0.5,
+  "vis_caution_km": 1.5
+ },
+ "concrete": {
+  "_source": "ACI 305R evaporation-rate guidance (Uno 1998 formula); concrete assumed warmer than air by concrete_minus_air_C",
+  "concrete_minus_air_C": 3.0,
+  "evap_caution_kg_m2_h": 0.5,
+  "evap_stop_kg_m2_h": 1.0,
+  "rain_stop_mm_h": 0.5,
+  "rain_prob_caution_pct": 50,
+  "rain_prob_stop_pct": 75,
+  "cold_stop_C": 5.0,
+  "cold_caution_C": 10.0,
+  "_cold_source": "ACI 306R cold-weather concreting: protect below about 5 C; caution below 10 C"
+ },
+ "coatings": {
+  "_source": "ISO 8502-4: surface at least 3 C above dew point; RH at most 85 %",
+  "dewpoint_margin_stop_C": 3.0,
+  "dewpoint_margin_caution_C": 5.0,
+  "rh_stop_pct": 85,
+  "rh_caution_pct": 80
+ },
+ "earthworks": {
+  "rain_prev24h_caution_mm": 5.0,
+  "rain_prev24h_stop_mm": 15.0,
+  "rain_stop_mm_h": 1.0
+ },
+ "lightning": {
+  "_source": "convective screening: CAPE with rain probability, and forecast rain in the hour for 'likely'; Kampala CAPE is above 1000 J/kg most hours, so CAPE alone is not a signal. Stop exposed work at the first thunder (30-30 rule).",
+  "cape_caution": 1000,
+  "cape_stop": 1000,
+  "prob_caution_pct": 50,
+  "prob_stop_pct": 70,
+  "rain_stop_mm_h": 0.5
+ },
+ "asphalt": {
+  "_source": "typical hot-mix asphalt and bituminous surface-dressing practice (e.g. MoWT General Specifications for Roads and Bridges): no laying or spraying in rain or on a wet surface, nor when rain is imminent; thin lifts cool fast in wind",
+  "rain_stop_mm_h": 0.1,
+  "wet_surface_prev3h_mm": 0.5,
+  "rain_prob_next3_caution_pct": 50,
+  "rain_prob_next3_stop_pct": 75,
+  "min_air_C": 10,
+  "wind_caution_ms": 8
+ },
+ "break_hours": [
+  12
+ ],
+ "_working_note": "8-hour working day: 08:00-17:00 with a lunch break 13:00-14:00 (break hours are not counted)",
+ "dust": {
+  "_source": "Open-Meteo/CAMS dust concentration; a dust event reduces visibility and needs eye protection and secured materials",
+  "dust_warn_ug_m3": 200,
+  "pm10_warn_ug_m3": 150
+ },
+ "seasonal_break": {
+  "from": "06-15",
+  "to": "09-15",
+  "hours": [
+   12,
+   13,
+   14
+  ],
+  "_source": "Saudi Ministry of Human Resources: outdoor work in direct sun banned 12:00-15:00, 15 June-15 September. Verify against the ministry's current decision before relying on it."
+ }
+}

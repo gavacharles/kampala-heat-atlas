@@ -2,7 +2,7 @@
  "site": "Mbarara",
  "lat": -0.6072,
  "lon": 30.6545,
- "issued": "2026-11-13 12:20",
+ "issued": "2026-11-13 13:50",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -331,9 +331,7 @@
      ]
     }
    ],
-   "extras": [
-    "Dust: PM2.5 up to 41 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
-   ],
+   "extras": [],
    "facts": {
     "rain_mm": 9.1,
     "rain_chance": 100,
@@ -685,11 +683,11 @@
    ],
    "extras": [
     "UV index up to 8 (very high): hats with neck cover, long sleeves, sunscreen.",
-    "Dust: PM2.5 up to 53 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
+    "Dust: PM2.5 up to 36 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
    ],
    "facts": {
     "rain_mm": 7.7,
-    "rain_chance": 85,
+    "rain_chance": 87,
     "storm": "possible",
     "storm_from": "14",
     "wbgt_peak": 25.1,
@@ -761,9 +759,9 @@
      "key": "concrete",
      "trade": "Concrete pour",
      "status": "LIMITED",
-     "label": "go 08-11 h only",
-     "go_hours": 3,
-     "windows": "08-11 h",
+     "label": "go 08-12 h only",
+     "go_hours": 4,
+     "windows": "08-12 h",
      "causes": [
       "rain",
       "storms"
@@ -784,7 +782,7 @@
       ],
       [
        11,
-       1
+       0
       ],
       [
        12,
@@ -792,7 +790,7 @@
       ],
       [
        14,
-       2
+       1
       ],
       [
        15,
@@ -1038,18 +1036,18 @@
    ],
    "extras": [
     "UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.",
-    "Dust: PM2.5 up to 64 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
+    "Dust: PM2.5 up to 37 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
    ],
    "facts": {
     "rain_mm": 2.3,
-    "rain_chance": 84,
+    "rain_chance": 83,
     "storm": "possible",
     "storm_from": "14",
     "wbgt_peak": 25.1,
     "gust_hook_max": 8.9,
     "go_hours": {
      "asphalt": 0,
-     "concrete": 3,
+     "concrete": 4,
      "crane": 6,
      "height": 5,
      "coatings": 1,
@@ -1392,11 +1390,11 @@
    ],
    "extras": [
     "UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.",
-    "Dust: PM2.5 up to 61 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
+    "Dust: PM2.5 up to 49 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
    ],
    "facts": {
     "rain_mm": 2.2,
-    "rain_chance": 93,
+    "rain_chance": 86,
     "storm": "likely",
     "storm_from": "16",
     "wbgt_peak": 25.3,
@@ -1743,11 +1741,11 @@
     }
    ],
    "extras": [
-    "Dust: PM2.5 up to 56 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
+    "Dust: PM2.5 up to 57 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
    ],
    "facts": {
     "rain_mm": 2.1,
-    "rain_chance": 99,
+    "rain_chance": 96,
     "storm": "possible",
     "storm_from": "14",
     "wbgt_peak": 25.0,
@@ -2094,7 +2092,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 0.6,
-    "rain_chance": 84,
+    "rain_chance": 82,
     "storm": "possible",
     "storm_from": "14",
     "wbgt_peak": 25.2,
@@ -2150,11 +2148,11 @@
       ],
       [
        14,
-       2
+       1
       ],
       [
        15,
-       2
+       1
       ],
       [
        16,
@@ -2440,7 +2438,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 1.2,
-    "rain_chance": 75,
+    "rain_chance": 72,
     "storm": "possible",
     "storm_from": "14",
     "wbgt_peak": 24.4,

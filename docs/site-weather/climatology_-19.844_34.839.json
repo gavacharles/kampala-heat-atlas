@@ -1,0 +1,101 @@
+{
+ "source": "Open-Meteo historical API (ERA5), -19.8436, 34.8389, 1991-2020",
+ "months": {
+  "1": {
+   "rain_mean_mm_month": 196.9533333333333,
+   "rain_day_p90": 16.71,
+   "rain_day_p99": 54.49700000000003,
+   "rain_days_mean": 19.566666666666666,
+   "tmax_p90": 34.4,
+   "gust_p90": 11.9
+  },
+  "2": {
+   "rain_mean_mm_month": 157.83333333333334,
+   "rain_day_p90": 16.830000000000005,
+   "rain_day_p99": 43.78299999999997,
+   "rain_days_mean": 17.233333333333334,
+   "tmax_p90": 33.830000000000005,
+   "gust_p90": 11.6
+  },
+  "3": {
+   "rain_mean_mm_month": 117.96666666666667,
+   "rain_day_p90": 10.120000000000005,
+   "rain_day_p99": 40.14900000000007,
+   "rain_days_mean": 17.366666666666667,
+   "tmax_p90": 33.3,
+   "gust_p90": 11.4
+  },
+  "4": {
+   "rain_mean_mm_month": 53.76,
+   "rain_day_p90": 4.8,
+   "rain_day_p99": 17.630999999999972,
+   "rain_days_mean": 10.566666666666666,
+   "tmax_p90": 32.1,
+   "gust_p90": 11.4
+  },
+  "5": {
+   "rain_mean_mm_month": 19.419999999999998,
+   "rain_day_p90": 1.7,
+   "rain_day_p99": 7.1,
+   "rain_days_mean": 4.966666666666667,
+   "tmax_p90": 30.9,
+   "gust_p90": 10.6
+  },
+  "6": {
+   "rain_mean_mm_month": 13.79666666666667,
+   "rain_day_p90": 1.4,
+   "rain_day_p99": 6.3,
+   "rain_days_mean": 4.133333333333334,
+   "tmax_p90": 29.6,
+   "gust_p90": 11.010000000000002
+  },
+  "7": {
+   "rain_mean_mm_month": 16.81666666666667,
+   "rain_day_p90": 1.5,
+   "rain_day_p99": 5.471000000000004,
+   "rain_days_mean": 4.8,
+   "tmax_p90": 29.5,
+   "gust_p90": 11.8
+  },
+  "8": {
+   "rain_mean_mm_month": 10.826666666666666,
+   "rain_day_p90": 1.0,
+   "rain_day_p99": 5.268000000000029,
+   "rain_days_mean": 3.3,
+   "tmax_p90": 32.1,
+   "gust_p90": 12.010000000000002
+  },
+  "9": {
+   "rain_mean_mm_month": 14.773333333333335,
+   "rain_day_p90": 1.2,
+   "rain_day_p99": 8.002999999999997,
+   "rain_days_mean": 3.9,
+   "tmax_p90": 34.5,
+   "gust_p90": 12.9
+  },
+  "10": {
+   "rain_mean_mm_month": 24.456666666666667,
+   "rain_day_p90": 1.8100000000000023,
+   "rain_day_p99": 12.797000000000025,
+   "rain_days_mean": 6.0,
+   "tmax_p90": 35.1,
+   "gust_p90": 13.3
+  },
+  "11": {
+   "rain_mean_mm_month": 73.86333333333332,
+   "rain_day_p90": 7.720000000000005,
+   "rain_day_p99": 27.208999999999993,
+   "rain_days_mean": 9.966666666666667,
+   "tmax_p90": 35.9,
+   "gust_p90": 12.8
+  },
+  "12": {
+   "rain_mean_mm_month": 176.41333333333333,
+   "rain_day_p90": 16.4,
+   "rain_day_p99": 57.84700000000021,
+   "rain_days_mean": 15.9,
+   "tmax_p90": 35.4,
+   "gust_p90": 11.9
+  }
+ }
+}

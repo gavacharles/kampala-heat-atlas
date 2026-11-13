@@ -1,0 +1,32 @@
+date,source,rain_mm,rain_max_mm_h,tmax_C,gust_max_ms,wbgt_sun_max_C,rain_flag,gust_flag,heat_flag,go_hours_labour,go_hours_concrete,go_hours_asphalt,go_hours_crane,go_hours_height,go_hours_coatings,go_hours_earthworks,working_hours
+2026-07-01,ERA5 (final),0.0,0.0,40.4,9.6,30.6,exceptional (above 1-in-100-day),,,3.0,0.0,9.0,9.0,9.0,9.0,9.0,9.0
+2026-07-02,ERA5 (final),0.0,0.0,40.5,9.8,30.7,exceptional (above 1-in-100-day),,,3.0,0.0,9.0,9.0,9.0,9.0,9.0,9.0
+2026-07-03,ERA5 (final),0.0,0.0,38.8,9.0,31.7,exceptional (above 1-in-100-day),,,2.0,0.0,9.0,9.0,9.0,9.0,9.0,9.0
+2026-07-04,ERA5 (final),0.0,0.0,39.7,7.9,32.3,exceptional (above 1-in-100-day),,,1.0,0.0,9.0,9.0,9.0,9.0,9.0,9.0
+2026-07-05,ERA5 (final),0.0,0.0,40.6,9.1,32.5,exceptional (above 1-in-100-day),,,2.0,0.0,9.0,9.0,9.0,9.0,9.0,9.0
+2026-07-06,ERA5 (final),0.0,0.0,41.6,9.8,32.2,exceptional (above 1-in-100-day),,above 1-in-10-day,2.0,0.0,9.0,9.0,9.0,9.0,9.0,9.0
+2026-07-07,ERA5 (final),0.0,0.0,41.3,12.0,32.1,exceptional (above 1-in-100-day),,above 1-in-10-day,1.0,0.0,5.0,9.0,2.0,9.0,9.0,9.0
+2026-07-08,ERA5 (final),0.0,0.0,40.7,12.8,30.4,exceptional (above 1-in-100-day),,,1.0,0.0,2.0,9.0,1.0,9.0,9.0,9.0
+2026-07-09,ERA5 (final),0.0,0.0,39.4,12.4,30.9,exceptional (above 1-in-100-day),,,0.0,0.0,2.0,9.0,1.0,9.0,9.0,9.0
+2026-07-10,ERA5 (final),0.0,0.0,39.4,11.6,30.6,exceptional (above 1-in-100-day),,,1.0,0.0,9.0,9.0,6.0,9.0,9.0,9.0
+2026-07-11,ERA5 (final),0.0,0.0,40.0,11.0,31.6,exceptional (above 1-in-100-day),,,1.0,0.0,9.0,9.0,7.0,9.0,9.0,9.0
+2026-07-12,ERA5 (final),0.0,0.0,39.9,11.0,31.4,exceptional (above 1-in-100-day),,,2.0,0.0,9.0,9.0,8.0,9.0,9.0,9.0
+2026-07-13,ERA5 (final),0.0,0.0,41.9,9.8,31.8,exceptional (above 1-in-100-day),,above 1-in-10-day,2.0,0.0,9.0,9.0,9.0,9.0,9.0,9.0
+2026-07-14,ERA5 (final),0.0,0.0,39.7,11.2,32.5,exceptional (above 1-in-100-day),,,1.0,0.0,9.0,9.0,8.0,9.0,9.0,9.0
+2026-07-15,ERA5 (final),0.0,0.0,39.5,12.1,32.4,exceptional (above 1-in-100-day),,,0.0,0.0,5.0,9.0,4.0,9.0,9.0,9.0
+2026-07-16,ERA5 (final),0.0,0.0,40.3,8.9,32.0,exceptional (above 1-in-100-day),,,1.0,0.0,9.0,9.0,9.0,9.0,9.0,9.0
+2026-07-17,ERA5 (final),0.0,0.0,38.8,7.5,33.3,exceptional (above 1-in-100-day),,,1.0,0.0,9.0,9.0,9.0,9.0,9.0,9.0
+2026-07-18,ERA5 (final),0.0,0.0,37.9,6.9,34.1,exceptional (above 1-in-100-day),,,0.0,4.0,9.0,9.0,9.0,8.0,9.0,9.0
+2026-07-19,ERA5 (final),0.0,0.0,41.8,7.7,33.5,exceptional (above 1-in-100-day),,above 1-in-10-day,1.0,0.0,9.0,9.0,9.0,9.0,9.0,9.0
+2026-07-20,ERA5 (final),0.0,0.0,40.3,13.2,32.8,exceptional (above 1-in-100-day),,,0.0,0.0,4.0,6.0,3.0,9.0,9.0,9.0
+2026-07-21,ERA5 (final),0.0,0.0,41.2,12.9,31.7,exceptional (above 1-in-100-day),,,0.0,0.0,7.0,9.0,3.0,9.0,9.0,9.0
+2026-07-22,ERA5 (final),0.0,0.0,42.0,9.9,32.3,exceptional (above 1-in-100-day),,above 1-in-10-day,2.0,0.0,9.0,9.0,9.0,9.0,9.0,9.0
+2026-07-23,ERA5 (final),0.0,0.0,41.6,9.0,32.2,exceptional (above 1-in-100-day),,above 1-in-10-day,1.0,0.0,9.0,9.0,9.0,9.0,9.0,9.0
+2026-07-24,ERA5 (final),0.0,0.0,41.4,8.9,32.4,exceptional (above 1-in-100-day),,above 1-in-10-day,2.0,0.0,9.0,9.0,9.0,9.0,9.0,9.0
+2026-07-25,ERA5 (final),0.0,0.0,40.8,9.4,32.6,exceptional (above 1-in-100-day),,,1.0,0.0,9.0,9.0,9.0,9.0,9.0,9.0
+2026-07-26,ERA5 (final),0.0,0.0,40.1,12.4,31.8,exceptional (above 1-in-100-day),,,1.0,0.0,6.0,9.0,4.0,9.0,9.0,9.0
+2026-07-27,ERA5 (final),0.0,0.0,38.8,12.7,31.2,exceptional (above 1-in-100-day),,,0.0,0.0,4.0,9.0,2.0,9.0,9.0,9.0
+2026-07-28,ERA5 (final),0.0,0.0,39.0,11.8,30.9,exceptional (above 1-in-100-day),,,1.0,0.0,9.0,9.0,5.0,9.0,9.0,9.0
+2026-07-29,ERA5 (final),0.0,0.0,37.8,9.8,32.7,exceptional (above 1-in-100-day),,,1.0,0.0,9.0,9.0,9.0,9.0,9.0,9.0
+2026-07-30,ERA5 (final),0.0,0.0,39.8,6.8,33.0,exceptional (above 1-in-100-day),,,1.0,0.0,9.0,9.0,9.0,9.0,9.0,9.0
+2026-07-31,ERA5 (final),0.0,0.0,40.1,6.0,34.2,exceptional (above 1-in-100-day),,,0.0,2.0,9.0,9.0,9.0,9.0,9.0,9.0

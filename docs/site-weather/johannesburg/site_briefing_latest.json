@@ -2,7 +2,7 @@
  "site": "Johannesburg",
  "lat": -26.2041,
  "lon": 28.0473,
- "issued": "2026-11-13 11:23",
+ "issued": "2026-11-13 12:50",
  "working": "07:00-17:00, lunch excluded (9 h)",
  "days": [
   {
@@ -351,7 +351,7 @@
    ],
    "extras": [
     "UV index up to 10 (very high): hats with neck cover, long sleeves, sunscreen.",
-    "Dust: PM2.5 up to 50 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
+    "Dust: PM2.5 up to 36 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
    ],
    "facts": {
     "rain_mm": 0.0,
@@ -727,11 +727,11 @@
    ],
    "extras": [
     "UV index up to 10 (very high): hats with neck cover, long sleeves, sunscreen.",
-    "Dust: PM2.5 up to 61 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
+    "Dust: PM2.5 up to 54 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
    ],
    "facts": {
     "rain_mm": 10.2,
-    "rain_chance": 95,
+    "rain_chance": 99,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 23.1,
@@ -1487,7 +1487,7 @@
    ],
    "facts": {
     "rain_mm": 0.1,
-    "rain_chance": 57,
+    "rain_chance": 67,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 22.7,
@@ -1506,7 +1506,7 @@
   {
    "date": "2026-11-17",
    "day": "Tuesday 17 November",
-   "headline": "Storms possible from 16:00: do exposed work in the morning.",
+   "headline": "Pour concrete 07-12 h; rain limits the rest of the day.",
    "rows": [
     {
      "key": "concrete",
@@ -1517,8 +1517,7 @@
      "windows": "07-12 h",
      "causes": [
       "rain",
-      "fast drying",
-      "storms"
+      "fast drying"
      ],
      "action": "Curing cover and windbreaks ready.",
      "hours": [
@@ -1568,8 +1567,7 @@
      "go_hours": 5,
      "windows": "07-12 h",
      "causes": [
-      "rain or wet surface",
-      "storms"
+      "rain or wet surface"
      ],
      "action": "Never lay or spray on a wet surface.",
      "hours": [
@@ -1612,56 +1610,6 @@
      ]
     },
     {
-     "key": "crane",
-     "trade": "Crane lifts",
-     "status": "LIMITED",
-     "label": "go 07-12 h, 13-16 h only",
-     "go_hours": 8,
-     "windows": "07-12 h, 13-16 h",
-     "causes": [
-      "storms"
-     ],
-     "action": "Check the anemometer before each lift.",
-     "hours": [
-      [
-       7,
-       0
-      ],
-      [
-       8,
-       0
-      ],
-      [
-       9,
-       0
-      ],
-      [
-       10,
-       0
-      ],
-      [
-       11,
-       0
-      ],
-      [
-       13,
-       0
-      ],
-      [
-       14,
-       0
-      ],
-      [
-       15,
-       0
-      ],
-      [
-       16,
-       1
-      ]
-     ]
-    },
-    {
      "key": "height",
      "trade": "Work at height",
      "status": "LIMITED",
@@ -1669,8 +1617,7 @@
      "go_hours": 7,
      "windows": "07-12 h, 13-15 h",
      "causes": [
-      "rain",
-      "storms"
+      "rain"
      ],
      "action": "Clear roofs and scaffolds before storms.",
      "hours": [
@@ -1860,26 +1807,75 @@
        0
       ]
      ]
+    },
+    {
+     "key": "crane",
+     "trade": "Crane lifts",
+     "status": "GO",
+     "label": "no limits",
+     "go_hours": 9,
+     "windows": "07-12 h, 13-17 h",
+     "causes": [],
+     "action": "No weather limits.",
+     "hours": [
+      [
+       7,
+       0
+      ],
+      [
+       8,
+       0
+      ],
+      [
+       9,
+       0
+      ],
+      [
+       10,
+       0
+      ],
+      [
+       11,
+       0
+      ],
+      [
+       13,
+       0
+      ],
+      [
+       14,
+       0
+      ],
+      [
+       15,
+       0
+      ],
+      [
+       16,
+       0
+      ]
+     ]
     }
    ],
    "extras": [
-    "UV index up to 10 (very high): hats with neck cover, long sleeves, sunscreen."
+    "UV index up to 10 (very high): hats with neck cover, long sleeves, sunscreen.",
+    "Dust: PM2.5 up to 48 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
    ],
    "facts": {
     "rain_mm": 3.9,
-    "rain_chance": 61,
-    "storm": "possible",
-    "storm_from": "16",
+    "rain_chance": 51,
+    "storm": "low",
+    "storm_from": "",
     "wbgt_peak": 23.0,
     "gust_hook_max": 11.6,
     "go_hours": {
      "concrete": 5,
      "asphalt": 5,
-     "crane": 8,
      "height": 7,
      "coatings": 6,
      "earthworks": 7,
-     "labour": 9
+     "labour": 9,
+     "crane": 9
     }
    }
   },
@@ -2236,7 +2232,7 @@
    ],
    "facts": {
     "rain_mm": 2.4,
-    "rain_chance": 40,
+    "rain_chance": 51,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 21.8,
@@ -2607,7 +2603,7 @@
    ],
    "facts": {
     "rain_mm": 0.9,
-    "rain_chance": 55,
+    "rain_chance": 34,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 24.1,

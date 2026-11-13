@@ -1,6 +1,6 @@
 # Site note · Riyadh
 
-Issued Friday 13 November 2026, 12:25 (Asia/Riyadh). Site 24.7136, 46.6753. Working hours 07:00-17:00, lunch break excluded (9 h).
+Issued Friday 13 November 2026, 13:50 (Asia/Riyadh). Site 24.7136, 46.6753. Working hours 07:00-17:00, lunch break excluded (9 h).
 
 ## Friday 13 November
 
@@ -9,8 +9,8 @@ Issued Friday 13 November 2026, 12:25 (Asia/Riyadh). Site 24.7136, 46.6753. Work
 Rain 0 mm (chance up to 8 %) · storms low · WBGT peak 17.5 °C · gusts 7 m/s at hook height
 
 - **No weather limits:** Outdoor labour, Concrete pour, Asphalt & surfacing, Crane lifts, Work at height, Painting & coatings, Earthworks.
-- Dust: PM2.5 up to 181 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
-- Dust storm risk (dust up to 2962 µg/m³): goggles and masks, secure sheeting and loose materials, stop lifts if the operator loses sight of the load.
+- Dust: PM2.5 up to 233 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Dust storm risk (dust up to 3968 µg/m³): goggles and masks, secure sheeting and loose materials, stop lifts if the operator loses sight of the load.
 
 ## Saturday 14 November
 
@@ -19,8 +19,8 @@ Rain 0 mm (chance up to 8 %) · storms low · WBGT peak 17.5 °C · gusts 7 m/s 
 Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 19.6 °C · gusts 9 m/s at hook height
 
 - **No weather limits:** Outdoor labour, Concrete pour, Asphalt & surfacing, Crane lifts, Work at height, Painting & coatings, Earthworks.
-- Dust: PM2.5 up to 293 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
-- Dust storm risk (dust up to 4850 µg/m³): goggles and masks, secure sheeting and loose materials, stop lifts if the operator loses sight of the load.
+- Dust: PM2.5 up to 313 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Dust storm risk (dust up to 5233 µg/m³): goggles and masks, secure sheeting and loose materials, stop lifts if the operator loses sight of the load.
 
 ## Sunday 15 November
 
@@ -29,8 +29,8 @@ Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 19.6 °C · gusts 9 m/s 
 Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 18.3 °C · gusts 9 m/s at hook height
 
 - **No weather limits:** Outdoor labour, Concrete pour, Asphalt & surfacing, Crane lifts, Work at height, Painting & coatings, Earthworks.
-- Dust: PM2.5 up to 256 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
-- Dust storm risk (dust up to 4271 µg/m³): goggles and masks, secure sheeting and loose materials, stop lifts if the operator loses sight of the load.
+- Dust: PM2.5 up to 263 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Dust storm risk (dust up to 4626 µg/m³): goggles and masks, secure sheeting and loose materials, stop lifts if the operator loses sight of the load.
 
 ## Outlook
 

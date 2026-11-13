@@ -6,7 +6,7 @@ Site weather, Uganda: Friday 13 November. Painting & coatings, go hours today:
 • Mbale: 12-13
 • Jinja: none
 • Gulu: 12-13, 14-17
-• Arua: 10-13, 14-15
+• Arua: 10-13, 14-15, 16-17
 
 Hour-by-hour for seven trades and your town's week ahead: gavacharles.github.io/kampala-heat-atlas/site-weather
 Send us your site location to add it.

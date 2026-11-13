@@ -2,7 +2,7 @@
  "site": "Mbale",
  "lat": 1.0821,
  "lon": 34.175,
- "issued": "2026-11-13 12:20",
+ "issued": "2026-11-13 13:50",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -61,9 +61,9 @@
      "key": "concrete",
      "trade": "Concrete pour",
      "status": "LIMITED",
-     "label": "go 08-12 h only",
-     "go_hours": 4,
-     "windows": "08-12 h",
+     "label": "go 08-11 h only",
+     "go_hours": 3,
+     "windows": "08-11 h",
      "causes": [
       "rain",
       "storms"
@@ -84,7 +84,7 @@
       ],
       [
        11,
-       0
+       1
       ],
       [
        12,
@@ -337,7 +337,7 @@
    ],
    "extras": [
     "UV index up to 8 (very high): hats with neck cover, long sleeves, sunscreen.",
-    "Dust: PM2.5 up to 63 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
+    "Dust: PM2.5 up to 64 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
    ],
    "facts": {
     "rain_mm": 4.5,
@@ -348,7 +348,7 @@
     "gust_hook_max": 6.0,
     "go_hours": {
      "asphalt": 0,
-     "concrete": 4,
+     "concrete": 3,
      "crane": 5,
      "height": 4,
      "coatings": 1,
@@ -377,7 +377,7 @@
      "hours": [
       [
        8,
-       1
+       2
       ],
       [
        9,
@@ -690,7 +690,7 @@
    ],
    "extras": [
     "UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.",
-    "Dust: PM2.5 up to 60 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
+    "Dust: PM2.5 up to 65 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
    ],
    "facts": {
     "rain_mm": 36.4,
@@ -860,9 +860,9 @@
      "key": "concrete",
      "trade": "Concrete pour",
      "status": "LIMITED",
-     "label": "go 08-09 h only",
-     "go_hours": 1,
-     "windows": "08-09 h",
+     "label": "go 08-10 h only",
+     "go_hours": 2,
+     "windows": "08-10 h",
      "causes": [
       "rain",
       "storms"
@@ -875,15 +875,15 @@
       ],
       [
        9,
-       1
+       0
       ],
       [
        10,
-       2
+       1
       ],
       [
        11,
-       2
+       1
       ],
       [
        12,
@@ -907,9 +907,9 @@
      "key": "crane",
      "trade": "Crane lifts",
      "status": "LIMITED",
-     "label": "go 08-11 h only",
-     "go_hours": 3,
-     "windows": "08-11 h",
+     "label": "go 08-12 h only",
+     "go_hours": 4,
+     "windows": "08-12 h",
      "causes": [
       "storms"
      ],
@@ -929,7 +929,7 @@
       ],
       [
        11,
-       1
+       0
       ],
       [
        12,
@@ -1043,7 +1043,7 @@
    ],
    "extras": [
     "UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.",
-    "Dust: PM2.5 up to 45 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
+    "Dust: PM2.5 up to 44 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
    ],
    "facts": {
     "rain_mm": 10.5,
@@ -1056,8 +1056,8 @@
      "asphalt": 0,
      "coatings": 0,
      "earthworks": 0,
-     "concrete": 1,
-     "crane": 3,
+     "concrete": 2,
+     "crane": 4,
      "height": 2,
      "labour": 8
     }
@@ -1119,9 +1119,9 @@
      "key": "concrete",
      "trade": "Concrete pour",
      "status": "LIMITED",
-     "label": "go 08-10 h only",
-     "go_hours": 2,
-     "windows": "08-10 h",
+     "label": "go 08-09 h only",
+     "go_hours": 1,
+     "windows": "08-09 h",
      "causes": [
       "rain",
       "storms"
@@ -1134,7 +1134,7 @@
       ],
       [
        9,
-       0
+       1
       ],
       [
        10,
@@ -1166,9 +1166,9 @@
      "key": "crane",
      "trade": "Crane lifts",
      "status": "LIMITED",
-     "label": "go 08-12 h only",
-     "go_hours": 4,
-     "windows": "08-12 h",
+     "label": "go 08-11 h only",
+     "go_hours": 3,
+     "windows": "08-11 h",
      "causes": [
       "storms"
      ],
@@ -1188,7 +1188,7 @@
       ],
       [
        11,
-       0
+       1
       ],
       [
        12,
@@ -1216,8 +1216,8 @@
      "go_hours": 3,
      "windows": "08-11 h",
      "causes": [
-      "rain",
-      "storms"
+      "storms",
+      "rain"
      ],
      "action": "Clear roofs and scaffolds before storms.",
      "hours": [
@@ -1396,7 +1396,7 @@
    ],
    "extras": [
     "UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.",
-    "Dust: PM2.5 up to 40 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
+    "Dust: PM2.5 up to 38 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
    ],
    "facts": {
     "rain_mm": 10.6,
@@ -1407,8 +1407,8 @@
     "gust_hook_max": 6.8,
     "go_hours": {
      "asphalt": 0,
-     "concrete": 2,
-     "crane": 4,
+     "concrete": 1,
+     "crane": 3,
      "height": 3,
      "coatings": 1,
      "earthworks": 0,
@@ -1749,11 +1749,11 @@
    ],
    "extras": [
     "UV index up to 8 (very high): hats with neck cover, long sleeves, sunscreen.",
-    "Dust: PM2.5 up to 42 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
+    "Dust: PM2.5 up to 48 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
    ],
    "facts": {
     "rain_mm": 9.2,
-    "rain_chance": 94,
+    "rain_chance": 100,
     "storm": "likely",
     "storm_from": "14",
     "wbgt_peak": 27.8,
@@ -2214,7 +2214,7 @@
       ],
       [
        16,
-       2
+       1
       ]
      ]
     },
@@ -2453,7 +2453,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 4.2,
-    "rain_chance": 85,
+    "rain_chance": 76,
     "storm": "likely",
     "storm_from": "14",
     "wbgt_peak": 27.0,
