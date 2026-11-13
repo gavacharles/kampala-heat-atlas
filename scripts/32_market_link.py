@@ -122,6 +122,9 @@ def what_to_do(w, c):
     elif cd >= 5:
         out.append(f"Good week for pours and surfacing ({cd} of {w['days_ahead']} days, {t['concrete']['go_hours_per_day_ahead']:.1f} h a day): "
                    "use it to recover programme.")
+    for fl in (c or {}).get("flags", []):                     # CiO's shock watch: observed prices off the forecast
+        if fl.startswith("Observed"):
+            out.append(fl.split(" (")[0] + ": costs may already be higher than the forecast shows.")
     if c and abs(c.get("oil_4w_pct") or 0) >= 10:
         out.append(f"Oil has moved {c['oil_4w_pct']:+.0f}% in 4 weeks: cost forecasts set before the move may be "
                    f"{'too high' if c['oil_4w_pct'] < 0 else 'too low'}; recheck fuel-heavy items before committing.")
