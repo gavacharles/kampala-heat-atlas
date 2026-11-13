@@ -332,11 +332,18 @@ def x_card(path):
     for r in B["rows"]:
         card(d, (x0, yy, x0 + rw, yy + rh), r=18)
         pill(d, x0 + 18, yy + rh / 2 - 15, r["status"], size=14, h=30)
-        text(d, (x0 + 132, yy + rh / 2 - 12), r["trade"], F(20, 800), INK, "lm")
+        chips_w = 290; tx = x0 + 132; tw = rw - 132 - chips_w - 36
         lab = "no limits" if r["status"] == "GO" else "no window" if r["status"] == "STOP" else \
-            ("work/rest" if r["key"] == "labour" else (f"go {r['windows']}" if r["windows"] else "with care"))
-        text(d, (x0 + 132, yy + rh / 2 + 14), lab, F(17, 600), INK2, "lm")
-        hour_chips(d, x0 + rw - 18 - 330, yy + rh / 2 - 15, 330, r.get("hours", []), h=30, size=13)
+            ("work/rest cycles" if r["key"] == "labour" else (f"go {r['windows']}" if r["windows"] else "go with care"))
+        why = ("heat stress (WBGT)" if r["key"] == "labour" else ", ".join(r["causes"])) if r["status"] != "GO" else ""
+        text(d, (tx, yy + rh / 2 - 22), r["trade"], F(19, 800), INK, "lm")
+        text(d, (tx, yy + rh / 2 + 1), lab, F(16, 700), INK, "lm")
+        if why:                                                # why the trade is limited, on its own line
+            wl = wrap(d, ("Stopped by " if r["status"] == "STOP" else "Limited by ") + why, F(15, 400), tw)
+            text(d, (tx, yy + rh / 2 + 22), wl[0] + ("…" if len(wl) > 1 else ""), F(15, 400), INK2, "lm")
+        else:
+            text(d, (tx, yy + rh / 2 + 22), "work as planned", F(15, 400), INK2, "lm")
+        hour_chips(d, x0 + rw - 18 - chips_w, yy + rh / 2 - 15, chips_w, r.get("hours", []), h=30, size=12)
         yy += rh + 6
     f = F(20, 800); lw = d.textlength(LINK, font=f) + 40
     d.rounded_rectangle((64, H - 96, 64 + lw, H - 56), 20, fill=ACCENT)
