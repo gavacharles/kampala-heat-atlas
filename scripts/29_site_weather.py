@@ -76,14 +76,14 @@ BASE_VARS = ("temperature_2m,relative_humidity_2m,dew_point_2m,precipitation,clo
 FC_VARS = BASE_VARS + ",precipitation_probability,cape,uv_index"
 
 
-def get(url, tries=4):
+def get(url, tries=5):
     for k in range(tries):
         try:
             return json.loads(urllib.request.urlopen(url, timeout=90).read())
         except Exception:  # noqa: BLE001
             if k == tries - 1:
                 raise
-            time.sleep(5 * (k + 1))
+            time.sleep(10 * (k + 1))
 
 
 def hourly_frame(js):

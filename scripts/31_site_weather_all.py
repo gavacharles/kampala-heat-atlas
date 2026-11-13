@@ -196,4 +196,7 @@ your site; to add a site, send its coordinates.</p>
 crane manufacturer's limits and site health-and-safety plan take precedence. Data: Open-Meteo (CC BY 4.0).</p>
 </main></body></html>""")
 print("index and national card written;", "failed: " + ", ".join(failed) if failed else "all sites ok")
-sys.exit(1 if failed else 0)
+# one town's forecast failing (a timeout) must not fail the run: publish the others and warn; fail only if all failed
+for name in failed:
+    print(f"::warning::site weather for {name} failed this run; its previous page stays up")
+sys.exit(1 if failed and len(failed) == len(SITES) else 0)
