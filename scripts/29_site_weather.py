@@ -33,6 +33,7 @@ import datetime as dt
 import html
 import json
 import re
+import sys
 import time
 import urllib.request
 from pathlib import Path
@@ -73,7 +74,7 @@ plt.rcParams.update({"font.family": ["Helvetica Neue", "Arial", "DejaVu Sans"], 
                      "xtick.color": MUTED, "ytick.color": MUTED, "axes.labelcolor": INK2})
 BASE_VARS = ("temperature_2m,relative_humidity_2m,dew_point_2m,precipitation,cloud_cover,wind_speed_10m,wind_direction_10m,"
              "wind_gusts_10m,shortwave_radiation,direct_normal_irradiance,diffuse_radiation")
-FC_VARS = BASE_VARS + ",precipitation_probability,cape,uv_index"
+FC_VARS = BASE_VARS + ",precipitation_probability,cape,uv_index,visibility,cloud_cover_low,cloud_cover_mid,cloud_cover_high,pressure_msl"
 
 
 def get(url, tries=5):
@@ -245,92 +246,14 @@ except Exception:  # noqa: BLE001
     pass
 CLIM = climatology()
 
-# ---------------------------------------------------------------- figure
-t = fc.index
-fig, ax = plt.subplots(6, 1, figsize=(11.5, 14), sharex=True, constrained_layout=True,
-                       gridspec_kw=dict(height_ratios=[2.6, 1.2, 1.3, 1.1, 1.1, 1.8]))
-h = TH["heat_wbgt_moderate_work_acclimatised_C"]
-bands = [(-50, h["continuous"], "#ffffff", "continuous work"), (h["continuous"], h["work75_rest25"], "#fde0d2", "45/15 work/rest"),
-         (h["work75_rest25"], h["work50_rest50"], "#f8c4ad", "30/30"), (h["work50_rest50"], h["work25_rest75"], "#f19b80", "15/45"),
-         (h["work25_rest75"], 60, "#e06a5f", "stop moderate work")]
-ylo, yhi = min(15, np.nanmin(fc.temperature_2m) - 1), max(33, np.nanmax(fc.wbgt_sun) + 1)
-for lo, hi, col, lab in bands:
-    ax[0].axhspan(lo, hi, color=col, alpha=0.55, lw=0)
-    if lo > ylo and lo < yhi:
-        ax[0].text(t[-1], min((lo + hi) / 2, yhi - 0.6), f" {lab}", fontsize=7.5, color=INK2, va="center")
-ax[0].plot(t, fc.wbgt_sun, color=RED, lw=2, label="WBGT in the sun")
-ax[0].plot(t, fc.wbgt_shade, color=GREEN, lw=2, label="WBGT in shade")
-ax[0].plot(t, fc.temperature_2m, color=INK2, lw=1.2, ls="--", label="air temperature")
-ax[0].set_ylim(ylo, yhi); ax[0].set_ylabel("°C")
-ax[0].legend(loc="upper left", ncol=3, frameon=False, fontsize=8)
-ax[0].set_title(f"Site weather · {A.name} ({A.lat:.3f}, {A.lon:.3f}) · issued {now:%a %d %b %Y %H:%M}",
-                loc="left", fontsize=12, fontweight="bold", color=INK)
-ax[0].set_title("By Gava Charles · Kampala Heat Atlas", loc="right", fontsize=10, fontweight="bold", color=INK2)
-ax[0].text(0.005, 0.04, "grey bands = working hours · work/rest bands: moderate work, acclimatised workers; heavier work or new workers need lower limits",
-           transform=ax[0].transAxes, fontsize=7.5, color=INK2)
-ax[1].bar(t, fc.precipitation, width=0.035, color=BLUE)
-rmax = max(5, fc.precipitation.max() * 1.25)
-ax[1].set_ylim(0, rmax); ax[1].set_ylabel("rain mm/h")
-for lv, col in ((1, AMBER), (2, RED)):
-    k = fc.thunder.values == lv
-    ax[1].scatter(t[k], np.full(k.sum(), rmax * 0.92), marker="v", s=22, color=col, zorder=3)
-daily = fc.precipitation.resample("D").sum(); pmax = fc.precipitation_probability.resample("D").max()
-ax[1].set_title("Rain · triangles = storm risk (amber possible, red likely) · " +
-                "  ".join(f"{d:%a} {v:.0f} mm ({p:.0f}%)" for (d, v), p in zip(daily.items(), pmax.values)),
-                loc="left", fontsize=7.8, color=INK2)
-cr = TH["crane"]
-ax[2].plot(t, fc.wind_speed_10m, color=MUTED, lw=1.2, label="mean wind, 10 m")
-ax[2].plot(t, fc.gust_hook, color=INK, lw=1.6, label=f"gust at {cr['hook_height_m']} m hook height")
-for y, col, lab in ((cr["gust_caution_ms"], AMBER, "crane caution"), (cr["gust_stop_ms"], RED, "crane stop")):
-    ax[2].axhline(y, color=col, lw=1, ls="--"); ax[2].text(t[0], y + 0.3, f" {lab} {y:.0f} m/s", fontsize=7.5, color=INK2)
-ax[2].set_ylim(0, max(cr["gust_stop_ms"] + 3, fc.gust_hook.max() + 2)); ax[2].set_ylabel("m/s")
-ax[2].legend(loc="upper right", ncol=2, frameon=False, fontsize=8)
-c = TH["concrete"]
-ax[3].fill_between(t, fc.evap_kg_m2_h, color="#f8c4ad", lw=0); ax[3].plot(t, fc.evap_kg_m2_h, color=ORANGE, lw=1.4)
-for y, col, lab in ((c["evap_caution_kg_m2_h"], AMBER, "protect fresh concrete"), (c["evap_stop_kg_m2_h"], RED, "plastic-cracking risk (ACI 305)")):
-    ax[3].axhline(y, color=col, lw=1, ls="--"); ax[3].text(t[0], y + 0.03, f" {lab}", fontsize=7.5, color=INK2)
-ax[3].set_ylim(0, max(1.3, fc.evap_kg_m2_h.max() * 1.15)); ax[3].set_ylabel("evaporation\nkg/m²/h")
-co = TH["coatings"]
-ax[4].plot(t, fc.dewpoint_margin, color=BLUE, lw=1.4)
-ax[4].axhline(co["dewpoint_margin_stop_C"], color=RED, lw=1, ls="--")
-ax[4].text(t[0], co["dewpoint_margin_stop_C"] + 0.3, " surface must be 3 °C above dew point (ISO 8502-4)", fontsize=7.5, color=INK2)
-wet = fc.relative_humidity_2m.values > co["rh_stop_pct"]
-ax[4].fill_between(t, 0, 1, where=wet, transform=ax[4].get_xaxis_transform(), color=BLUE, alpha=0.08, lw=0)
-ax[4].set_ylim(0, max(12, fc.dewpoint_margin.max() + 1)); ax[4].set_ylabel("surface − dew\npoint °C")
-ax[4].text(0.005, 0.82, f"shaded: relative humidity above {co['rh_stop_pct']} %", transform=ax[4].transAxes, fontsize=7.5, color=INK2)
-grid = np.array([np.where(fc.work_hour, fc[f"st_{k}"].values + 1, 0) for k in KEYS])
-edges = mdates.date2num(list(t) + [t[-1] + pd.Timedelta(hours=1)])
-ax[5].pcolormesh(edges, np.arange(len(KEYS) + 1), grid, cmap=ListedColormap([OFF, GREEN, AMBER, RED]), vmin=0, vmax=3,
-                 edgecolors="#ffffff", linewidth=0.3)
-ax[5].set_yticks(np.arange(len(KEYS)) + 0.5); ax[5].set_yticklabels(TRADES, fontsize=8); ax[5].invert_yaxis(); ax[5].grid(False)
-ax[5].set_title(f"Go hours per trade, written in each day (working hours {W0:02d}-{W1:02d} h, lunch excluded) · green go · amber caution · red stop · grey not working",
-                loc="left", fontsize=8.5, color=INK2)
-ax[5].xaxis.set_major_locator(mdates.DayLocator(tz=t.tz)); ax[5].xaxis.set_major_formatter(mdates.DateFormatter("\n%a %d %b", tz=t.tz))
-ax[5].xaxis.set_minor_locator(mdates.HourLocator(byhour=[W0, 12, W1], tz=t.tz))
-ax[5].xaxis.set_minor_formatter(mdates.DateFormatter("%H", tz=t.tz)); ax[5].tick_params(axis="x", which="minor", labelsize=6.5, colors=MUTED)
-ax[5].tick_params(axis="x", which="major", length=0)
-# write each day's go windows in the strip, so the hours can be read without counting cells
-for dday, gday in fc.groupby(fc.index.normalize()):
-    wd = gday[gday.work_hour]
-    if not len(wd):
-        continue
-    xc = mdates.date2num(dday + pd.Timedelta(hours=(W0 + W1) / 2))
-    for r_i, k in enumerate(KEYS):
-        go = runs(wd[f"st_{k}"].values == 0, wd.index)
-        lab = "all day" if (wd[f"st_{k}"] == 0).all() else ", ".join(x.replace(" h", "") for x in go) if go else "none"
-        ax[5].text(xc, r_i + 0.5, lab, ha="center", va="center", fontsize=6.3, color=INK, fontweight="bold" if lab != "none" else "normal",
-                   bbox=dict(boxstyle="round,pad=0.15", fc="white", ec="none", alpha=0.8))
-for a in ax:
-    for d in pd.date_range(today, periods=8, freq="D"):
-        a.axvline(d, color="#c3c2b7", lw=0.6)
-        if a is not ax[5]:                                   # working hours shaded lightly on every panel
-            a.axvspan(d + pd.Timedelta(hours=W0), d + pd.Timedelta(hours=W1), color="#8a8478", alpha=0.07, lw=0)
-    a.set_xlim(t[0], t[-1] + pd.Timedelta(hours=1))
-fig.text(0.01, -0.012, "Screening guidance from the Open-Meteo forecast (open-meteo.com). Thresholds: docs/site-weather/thresholds.json; "
-         "the contract specification, crane manufacturer's limits and site H&S plan take precedence. Kampala Heat Atlas · Gava Charles",
-         fontsize=7, color=MUTED)
-fig.savefig(SITE / "site_meteogram_latest.png", dpi=130, bbox_inches="tight")
-plt.close(fig)
+# ---------------------------------------------------------------- figures (scripts/meteogram_site.py)
+sys.path.insert(0, str(Path(__file__).parent))
+import meteogram_site  # noqa: E402
+
+_sites = json.loads((OUT / "sites.json").read_text())["sites"] if (OUT / "sites.json").exists() else []
+meteogram_site.build(fc, dict(name=A.name, short=A.name.replace("Central ", ""), lat=A.lat, lon=A.lon, alt=A.alt,
+                              elev=fjs.get("elevation", A.alt), TH=TH, WORK=WORK, sites=_sites, now=now,
+                              tz_abbr=fjs.get("timezone_abbreviation", "")), SITE)
 
 # ---------------------------------------------------------------- the briefing (shared by note, card and A4 sheet)
 NAMES = dict(zip(KEYS, ["Outdoor labour", "Concrete pour", "Asphalt & surfacing", "Crane lifts", "Work at height", "Painting & coatings", "Earthworks"]))
@@ -688,7 +611,10 @@ refreshed every morning at 06:00. Every day is also archived, so the record of w
 compared with the site's 1991-2020 climate, builds up on its own.</p>
 <section>{note_cards(BR)}</section>
 <section><h2>Seven-day site meteogram</h2>
-<img src="site_meteogram_latest.png" alt="Seven-day site meteogram: heat stress, rain and storms, wind at crane height, concrete evaporation, coating conditions, workable hours per trade">
+<img src="site_meteogram_latest.png" alt="Seven-day site meteogram: heat, rain and storms, wind, sun and cloud, concrete and painting, go hours per trade, daily summary and regional maps">
+<p class="lede">Trade panels, the same forecast with only what each trade needs:
+<a href="site_meteogram_concrete.png">concrete, asphalt, painting and earthworks</a> ·
+<a href="site_meteogram_lifting.png">cranes and work at height</a> · <a href="site_meteogram_heat.png">heat and outdoor labour</a></p>
 <p class="lede"><a href="site_forecast_latest.csv">Hourly numbers and per-trade status (CSV)</a> · <a href="../thresholds.json">Thresholds used</a> ·
 <a href="archive/forecasts/">Forecasts as issued</a></p></section>
 <section><h2>Cards to share</h2>
