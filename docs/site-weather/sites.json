@@ -7,7 +7,8 @@
    "lat": 0.3136,
    "lon": 32.5811,
    "alt": 1190,
-   "country": "Uganda"
+   "country": "Uganda",
+   "group": "uganda"
   },
   {
    "name": "Mbarara",
@@ -15,7 +16,8 @@
    "lat": -0.6072,
    "lon": 30.6545,
    "alt": 1430,
-   "country": "Uganda"
+   "country": "Uganda",
+   "group": "uganda"
   },
   {
    "name": "Hoima",
@@ -23,7 +25,8 @@
    "lat": 1.4331,
    "lon": 31.3524,
    "alt": 1150,
-   "country": "Uganda"
+   "country": "Uganda",
+   "group": "uganda"
   },
   {
    "name": "Mbale",
@@ -31,7 +34,8 @@
    "lat": 1.0821,
    "lon": 34.175,
    "alt": 1150,
-   "country": "Uganda"
+   "country": "Uganda",
+   "group": "uganda"
   },
   {
    "name": "Jinja",
@@ -39,7 +43,8 @@
    "lat": 0.4244,
    "lon": 33.2042,
    "alt": 1140,
-   "country": "Uganda"
+   "country": "Uganda",
+   "group": "uganda"
   },
   {
    "name": "Gulu",
@@ -47,7 +52,8 @@
    "lat": 2.7724,
    "lon": 32.2881,
    "alt": 1100,
-   "country": "Uganda"
+   "country": "Uganda",
+   "group": "uganda"
   },
   {
    "name": "Arua",
@@ -55,7 +61,8 @@
    "lat": 3.0201,
    "lon": 30.9111,
    "alt": 1210,
-   "country": "Uganda"
+   "country": "Uganda",
+   "group": "uganda"
   },
   {
    "name": "Nairobi",
@@ -63,7 +70,8 @@
    "country": "Kenya",
    "lat": -1.2864,
    "lon": 36.8172,
-   "alt": 1795
+   "alt": 1795,
+   "group": "east-africa"
   },
   {
    "name": "Johannesburg",
@@ -81,7 +89,8 @@
      12
     ],
     "_note": "Typical South African site day 07:00-17:00 with a lunch hour at 12:00"
-   }
+   },
+   "group": "southern-africa"
   },
   {
    "name": "Riyadh",
@@ -108,7 +117,422 @@
      ],
      "_source": "Saudi Ministry of Human Resources: outdoor work in direct sun is banned 12:00-15:00 from 15 June to 15 September"
     }
-   }
+   },
+   "group": "gulf"
+  },
+  {
+   "name": "Kigali",
+   "region": "Kigali",
+   "country": "Rwanda",
+   "lat": -1.9441,
+   "lon": 30.0619,
+   "alt": 1567,
+   "thresholds": {
+    "working_hours": [
+     7,
+     17
+    ],
+    "break_hours": [
+     12
+    ],
+    "_note": "Typical Rwandan site day 07:00-17:00, lunch 12:00"
+   },
+   "group": "east-africa"
+  },
+  {
+   "name": "Dar es Salaam",
+   "region": "Coast",
+   "country": "Tanzania",
+   "lat": -6.7924,
+   "lon": 39.2083,
+   "alt": 14,
+   "group": "east-africa"
+  },
+  {
+   "name": "Dodoma",
+   "region": "Central",
+   "country": "Tanzania",
+   "lat": -6.163,
+   "lon": 35.7516,
+   "alt": 1120,
+   "group": "east-africa"
+  },
+  {
+   "name": "Arusha",
+   "region": "Northern",
+   "country": "Tanzania",
+   "lat": -3.3869,
+   "lon": 36.683,
+   "alt": 1400,
+   "group": "east-africa"
+  },
+  {
+   "name": "Mwanza",
+   "region": "Lake Zone",
+   "country": "Tanzania",
+   "lat": -2.5164,
+   "lon": 32.9175,
+   "alt": 1140,
+   "group": "east-africa"
+  },
+  {
+   "name": "Dubai",
+   "region": "Dubai",
+   "country": "United Arab Emirates",
+   "lat": 25.2048,
+   "lon": 55.2708,
+   "alt": 5,
+   "thresholds": {
+    "working_hours": [
+     7,
+     17
+    ],
+    "break_hours": [
+     12
+    ],
+    "seasonal_break": {
+     "from": "06-15",
+     "to": "09-15",
+     "hours": [
+      12,
+      13,
+      14
+     ],
+     "_source": "UAE MoHRE midday break 12:30-15:00, 15 June-15 September. Verify against the ministry's current decision before relying on it."
+    }
+   },
+   "group": "gulf"
+  },
+  {
+   "name": "Abu Dhabi",
+   "region": "Abu Dhabi",
+   "country": "United Arab Emirates",
+   "lat": 24.4539,
+   "lon": 54.3773,
+   "alt": 5,
+   "thresholds": {
+    "working_hours": [
+     7,
+     17
+    ],
+    "break_hours": [
+     12
+    ],
+    "seasonal_break": {
+     "from": "06-15",
+     "to": "09-15",
+     "hours": [
+      12,
+      13,
+      14
+     ],
+     "_source": "UAE MoHRE midday break 12:30-15:00, 15 June-15 September. Verify against the ministry's current decision before relying on it."
+    }
+   },
+   "group": "gulf"
+  },
+  {
+   "name": "Doha",
+   "region": "Doha",
+   "country": "Qatar",
+   "lat": 25.2854,
+   "lon": 51.531,
+   "alt": 10,
+   "thresholds": {
+    "working_hours": [
+     7,
+     17
+    ],
+    "break_hours": [
+     12
+    ],
+    "seasonal_break": {
+     "from": "06-01",
+     "to": "09-15",
+     "hours": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+     ],
+     "_source": "Qatar Ministerial Decision 17/2021: outdoor work banned 10:00-15:30, 1 June-15 September. Verify against the ministry's current decision before relying on it."
+    },
+    "legal_wbgt_stop_C": 32.1,
+    "_legal_wbgt_source": "Qatar Ministerial Decision 17/2021: all outdoor work stops when WBGT exceeds 32.1 C, any time of year. Verify against the current decision."
+   },
+   "group": "gulf"
+  },
+  {
+   "name": "Kuwait City",
+   "region": "Al Asimah",
+   "country": "Kuwait",
+   "lat": 29.3759,
+   "lon": 47.9774,
+   "alt": 10,
+   "thresholds": {
+    "working_hours": [
+     7,
+     17
+    ],
+    "break_hours": [
+     12
+    ],
+    "seasonal_break": {
+     "from": "06-01",
+     "to": "08-31",
+     "hours": [
+      11,
+      12,
+      13,
+      14,
+      15
+     ],
+     "_source": "Kuwait PAM midday ban 11:00-16:00, 1 June-31 August. Verify against the ministry's current decision before relying on it."
+    }
+   },
+   "group": "gulf"
+  },
+  {
+   "name": "Muscat",
+   "region": "Muscat",
+   "country": "Oman",
+   "lat": 23.588,
+   "lon": 58.3829,
+   "alt": 10,
+   "thresholds": {
+    "working_hours": [
+     7,
+     17
+    ],
+    "break_hours": [
+     12
+    ],
+    "seasonal_break": {
+     "from": "06-01",
+     "to": "08-31",
+     "hours": [
+      12,
+      13,
+      14,
+      15
+     ],
+     "_source": "Oman Ministry of Labour midday ban 12:30-15:30, 1 June-31 August. Verify against the ministry's current decision before relying on it."
+    }
+   },
+   "group": "gulf"
+  },
+  {
+   "name": "Manama",
+   "region": "Capital",
+   "country": "Bahrain",
+   "lat": 26.2285,
+   "lon": 50.586,
+   "alt": 5,
+   "thresholds": {
+    "working_hours": [
+     7,
+     17
+    ],
+    "break_hours": [
+     12
+    ],
+    "seasonal_break": {
+     "from": "06-15",
+     "to": "08-31",
+     "hours": [
+      12,
+      13,
+      14,
+      15
+     ],
+     "_source": "Bahrain Ministry of Labour midday ban 12:00-16:00, 15 June-31 August. Verify against the ministry's current decision before relying on it."
+    }
+   },
+   "group": "gulf"
+  },
+  {
+   "name": "Jeddah",
+   "region": "Makkah",
+   "country": "Saudi Arabia",
+   "lat": 21.4858,
+   "lon": 39.1925,
+   "alt": 12,
+   "thresholds": {
+    "working_hours": [
+     7,
+     17
+    ],
+    "break_hours": [
+     12
+    ],
+    "seasonal_break": {
+     "from": "06-15",
+     "to": "09-15",
+     "hours": [
+      12,
+      13,
+      14
+     ],
+     "_source": "Saudi Ministry of Human Resources: outdoor work in direct sun banned 12:00-15:00, 15 June-15 September. Verify against the ministry's current decision before relying on it."
+    }
+   },
+   "group": "gulf"
+  },
+  {
+   "name": "Dammam",
+   "region": "Eastern Province",
+   "country": "Saudi Arabia",
+   "lat": 26.4207,
+   "lon": 50.0888,
+   "alt": 10,
+   "thresholds": {
+    "working_hours": [
+     7,
+     17
+    ],
+    "break_hours": [
+     12
+    ],
+    "seasonal_break": {
+     "from": "06-15",
+     "to": "09-15",
+     "hours": [
+      12,
+      13,
+      14
+     ],
+     "_source": "Saudi Ministry of Human Resources: outdoor work in direct sun banned 12:00-15:00, 15 June-15 September. Verify against the ministry's current decision before relying on it."
+    }
+   },
+   "group": "gulf"
+  },
+  {
+   "name": "Lagos",
+   "region": "Lagos",
+   "country": "Nigeria",
+   "lat": 6.5244,
+   "lon": 3.3792,
+   "alt": 40,
+   "group": "west-africa"
+  },
+  {
+   "name": "Abuja",
+   "region": "FCT",
+   "country": "Nigeria",
+   "lat": 9.0765,
+   "lon": 7.3986,
+   "alt": 480,
+   "group": "west-africa"
+  },
+  {
+   "name": "Accra",
+   "region": "Greater Accra",
+   "country": "Ghana",
+   "lat": 5.6037,
+   "lon": -0.187,
+   "alt": 60,
+   "group": "west-africa"
+  },
+  {
+   "name": "Abidjan",
+   "region": "Abidjan",
+   "country": "Côte d'Ivoire",
+   "lat": 5.36,
+   "lon": -4.0083,
+   "alt": 20,
+   "group": "west-africa"
+  },
+  {
+   "name": "Dakar",
+   "region": "Dakar",
+   "country": "Senegal",
+   "lat": 14.7167,
+   "lon": -17.4677,
+   "alt": 20,
+   "group": "west-africa"
+  },
+  {
+   "name": "Cape Town",
+   "region": "Western Cape",
+   "country": "South Africa",
+   "lat": -33.9249,
+   "lon": 18.4241,
+   "alt": 20,
+   "thresholds": {
+    "working_hours": [
+     7,
+     17
+    ],
+    "break_hours": [
+     12
+    ],
+    "_note": "Typical South African site day 07:00-17:00 with a lunch hour at 12:00"
+   },
+   "group": "southern-africa"
+  },
+  {
+   "name": "Durban",
+   "region": "KwaZulu-Natal",
+   "country": "South Africa",
+   "lat": -29.8587,
+   "lon": 31.0218,
+   "alt": 20,
+   "thresholds": {
+    "working_hours": [
+     7,
+     17
+    ],
+    "break_hours": [
+     12
+    ],
+    "_note": "Typical South African site day 07:00-17:00 with a lunch hour at 12:00"
+   },
+   "group": "southern-africa"
+  },
+  {
+   "name": "Lusaka",
+   "region": "Lusaka",
+   "country": "Zambia",
+   "lat": -15.3875,
+   "lon": 28.3228,
+   "alt": 1280,
+   "group": "southern-africa"
+  },
+  {
+   "name": "Maputo",
+   "region": "Maputo",
+   "country": "Mozambique",
+   "lat": -25.9692,
+   "lon": 32.5732,
+   "alt": 47,
+   "group": "southern-africa"
+  },
+  {
+   "name": "Beira",
+   "region": "Sofala",
+   "country": "Mozambique",
+   "lat": -19.8436,
+   "lon": 34.8389,
+   "alt": 10,
+   "group": "southern-africa"
+  },
+  {
+   "name": "Gaborone",
+   "region": "South-East",
+   "country": "Botswana",
+   "lat": -24.6282,
+   "lon": 25.9231,
+   "alt": 1010,
+   "group": "southern-africa"
   }
- ]
+ ],
+ "groups": {
+  "uganda": "Uganda",
+  "east-africa": "East Africa",
+  "gulf": "The Gulf",
+  "west-africa": "West Africa",
+  "southern-africa": "Southern Africa"
+ }
 }

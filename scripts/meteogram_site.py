@@ -61,14 +61,14 @@ plt.rcParams.update({"font.family": ["Manrope ExtraLight", "Helvetica Neue", "Ar
 
 
 def _get(url):
-    for k in range(4):
+    import time
+    for k in range(5):
         try:
             return json.loads(urllib.request.urlopen(url, timeout=90).read())
-        except Exception:  # noqa: BLE001
-            if k == 3:
+        except Exception as e:  # noqa: BLE001
+            if k == 4:
                 raise
-            import time
-            time.sleep(8 * (k + 1))
+            time.sleep(62 if getattr(e, "code", None) == 429 else 8 * (k + 1))   # 429: per-minute limit of the free API
 
 
 def fetch_extras(ctx):
@@ -93,12 +93,12 @@ def fetch_extras(ctx):
     except Exception:  # noqa: BLE001
         pass
     try:
-        g = np.linspace(-0.4, 0.4, 7)
+        g = np.linspace(-0.4, 0.4, 5)                      # 5 x 5 points: each counts as a request on the free API
         lats = [round(lat + a, 4) for a in g for _ in g]; lons = [round(lon + b, 4) for _ in g for b in g]
         js = _get("https://api.open-meteo.com/v1/forecast?latitude=" + ",".join(map(str, lats)) + "&longitude=" + ",".join(map(str, lons)) +
                   "&daily=precipitation_sum,wind_gusts_10m_max&timezone=auto&forecast_days=7&wind_speed_unit=ms")
-        rain = np.array([j["daily"]["precipitation_sum"] for j in js], float).reshape(7, 7, -1)
-        gust = np.array([j["daily"]["wind_gusts_10m_max"] for j in js], float).reshape(7, 7, -1)
+        rain = np.array([j["daily"]["precipitation_sum"] for j in js], float).reshape(5, 5, -1)
+        gust = np.array([j["daily"]["wind_gusts_10m_max"] for j in js], float).reshape(5, 5, -1)
         ex["grid"] = dict(rain=rain, gust=gust, days=pd.to_datetime(js[0]["daily"]["time"]), lat=g + lat, lon=g + lon)
     except Exception:  # noqa: BLE001
         pass
@@ -411,7 +411,7 @@ def build(fc, ctx, out_dir):
             return
         mdays = [d for d in G["days"] if pd.Timestamp(d).tz_localize(str(t.tz)) >= days[0]][:7]
         towns = [(s["name"].replace("Central ", ""), s["lat"], s["lon"]) for s in ctx["sites"]] + EXTRA_TOWNS
-        ext = (G["lon"][0] - 0.067, G["lon"][-1] + 0.067, G["lat"][0] - 0.067, G["lat"][-1] + 0.067)
+        ext = (G["lon"][0] - 0.1, G["lon"][-1] + 0.1, G["lat"][0] - 0.1, G["lat"][-1] + 0.1)
         for row, (key, cm, vmax, unit) in enumerate((("rain", "Blues", max(10, np.nanmax(G["rain"])), "mm"),
                                                     ("gust", "Oranges", max(cr["gust_stop_ms"], np.nanmax(G["gust"]) * 1.4), "m/s"))):
             for j, dd in enumerate(mdays):
@@ -423,7 +423,7 @@ def build(fc, ctx, out_dir):
                             abs(lo - ctx["lon"]) + abs(la - ctx["lat"]) > 0.18:
                         ax.plot(lo, la, "o", ms=2.5, color=INK); ax.text(lo, la + 0.04, name, fontsize=6, ha="center", color=INK)
                 ax.plot(ctx["lon"], ctx["lat"], "o", ms=5, mfc="white", mec=INK)
-                ci = arr[3, 3]
+                ci = arr[2, 2]
                 ax.text(ctx["lon"], ctx["lat"] + 0.07, f"{ci:.0f} {unit}", ha="center", va="bottom", fontsize=8, fontweight="bold",
                         bbox=dict(boxstyle="round,pad=0.25", fc="white", ec=INK, lw=0.6))
                 ax.set_xticks([]); ax.set_yticks([]); ax.grid(False)
@@ -469,7 +469,7 @@ def build(fc, ctx, out_dir):
         fig.text(0.085, 1 - 0.28 / H, f"Site weather · {ctx['name']}{title_extra}", fontsize=15, fontweight="bold", color=INK, va="top")
         stamp = f"{ctx['lat']:.4f}°, {ctx['lon']:.4f}° · {ctx['elev']:.0f} m · issued {ctx['now']:%a %d %b %Y %H:%M} {ctx['tz_abbr']} · 7 days, hourly · values in cells: 3-hour blocks"
         fig.text(0.085, 1 - 0.62 / H, stamp, fontsize=8.5, color=INK2, va="top")
-        model = "Forecast: Open-Meteo best match (ECMWF IFS 9 km over East Africa, blended)"
+        model = "Forecast: Open-Meteo best match (ECMWF IFS and regional models, blended)"
         if "init_ens" in ex:
             model += f" · ensemble: ECMWF IFS 0.25° ENS, {ex.get('ens_n', 51)} members, run {ex['init_ens']:%Y-%m-%d %H}Z"
         fig.text(0.955, 1 - 0.28 / H, "By Gava Charles · Kampala Heat Atlas", fontsize=10, fontweight="bold", color=INK2, va="top", ha="right")
@@ -484,7 +484,7 @@ def build(fc, ctx, out_dir):
                             textcoords="offset points", ha="center", fontsize=6.4, color=MUTED)
         fig.text(0.085, 0.1 / H, "WBGT: 0.7 Tnw + 0.2 Tg + 0.1 Ta from a radiant budget (screening; a WBGT meter on site is the reference). "
                  "Gust at hook height: 10 m gust × (hook/10)^1/7. Concrete evaporation: Uno (1998), ACI 305. Coatings: ISO 8502-4. Clear sky: Haurwitz. "
-                 "\nMaps: daily rain and gust on a 7 × 7 grid (about 90 × 90 km). Thresholds: docs/site-weather/thresholds.json; "
+                 "\nMaps: daily rain and gust on a 5 × 5 grid (about 90 × 90 km). Thresholds: docs/site-weather/thresholds.json; "
                  "the contract, crane manufacturer's limits and site H&S plan take precedence. Data: Open-Meteo (CC BY 4.0), ECMWF.",
                  fontsize=6.8, color=INK2, va="bottom")
         fig.savefig(path, dpi=115)

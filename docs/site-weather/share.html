@@ -60,7 +60,9 @@ async function load(){
   const sa = store.get("shareAct"); if (sa && ACTS.some(a => a.key === sa)) act.value = sa;
   act.onchange = () => { store.set("shareAct", act.value); render($("#town").value); };
   const sel = $("#town");
-  sel.innerHTML = `<option value="uganda">Uganda (all towns)</option>` + towns.map(t => `<option value="${t.slug}">${t.name} · ${t.region}</option>`).join("");
+  const byC = {}; towns.forEach(t => (byC[t.country || "Uganda"] = byC[t.country || "Uganda"] || []).push(t));
+  sel.innerHTML = `<option value="uganda">Uganda (all towns, by activity)</option>` + Object.entries(byC).map(([c, ts]) =>
+    `<optgroup label="${c}">` + ts.map(t => `<option value="${t.slug}">${t.name} · ${t.region}</option>`).join("") + "</optgroup>").join("");
   const saved = store.get("shareTown"); if (saved && [...sel.options].some(o => o.value === saved)) sel.value = saved;
   sel.onchange = () => { store.set("shareTown", sel.value); render(sel.value); };
   render(sel.value);

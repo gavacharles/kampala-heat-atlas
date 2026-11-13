@@ -15,9 +15,40 @@ permissions:
   id-token: write
 concurrency: meteogram
 jobs:
-  build:
+  # one job per region, in parallel (separate runners, so the forecast requests are spread out)
+  sites:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 40
+    strategy:
+      fail-fast: false
+      matrix:
+        group: [uganda, east-africa, gulf, west-africa, southern-africa]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install numpy pandas matplotlib pvlib pythermalcomfort pillow
+      - run: python scripts/31_site_weather_all.py docs/site-weather --group ${{ matrix.group }}
+      - name: Pack this region's site folders
+        if: always()
+        run: |
+          cd docs/site-weather
+          touch _built_${{ matrix.group }}.txt
+          tar czf ../../site-${{ matrix.group }}.tgz --ignore-failed-read $(cat _built_${{ matrix.group }}.txt) climatology_*.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: site-${{ matrix.group }}
+          path: site-${{ matrix.group }}.tgz
+          retention-days: 2
+
+  # put the regions together: national cards, map data, landing page; commit the record; deploy
+  assemble:
+    needs: sites
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -26,8 +57,14 @@ jobs:
       - run: pip install numpy pandas matplotlib pvlib pythermalcomfort pillow
       - run: python scripts/25_meteogram.py docs/figures
         continue-on-error: true      # a failed heat meteogram must not block site weather or the deploy
-      # every site in docs/site-weather/sites.json: meteogram, site note, cards, daily/monthly record
-      - run: python scripts/31_site_weather_all.py docs/site-weather
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: site-*
+          path: packs
+          merge-multiple: true
+      - name: Unpack the regions
+        run: for f in packs/*.tgz; do tar xzf "$f" -C docs/site-weather; done
+      - run: python scripts/31_site_weather_all.py docs/site-weather --assemble
       - name: Commit the record (text only; images are deployed, not committed)
         run: |
           git config user.name "meteogram-bot"
@@ -47,7 +84,7 @@ jobs:
         with:
           path: docs
   deploy:
-    needs: build
+    needs: assemble
     runs-on: ubuntu-latest
     environment:
       name: github-pages

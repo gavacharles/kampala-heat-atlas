@@ -96,14 +96,15 @@ BASE_VARS = ("temperature_2m,relative_humidity_2m,dew_point_2m,precipitation,clo
 FC_VARS = BASE_VARS + ",precipitation_probability,cape,uv_index,visibility,cloud_cover_low,cloud_cover_mid,cloud_cover_high,pressure_msl"
 
 
-def get(url, tries=5):
+def get(url, tries=6):
     for k in range(tries):
         try:
             return json.loads(urllib.request.urlopen(url, timeout=90).read())
-        except Exception:  # noqa: BLE001
+        except Exception as e:  # noqa: BLE001
             if k == tries - 1:
                 raise
-            time.sleep(10 * (k + 1))
+            # 429 = the free API's per-minute limit: wait for the next minute; otherwise back off briefly
+            time.sleep(62 if getattr(e, "code", None) == 429 else 10 * (k + 1))
 
 
 def hourly_frame(js):
@@ -194,7 +195,8 @@ def derive(df):
         return np.where(stop, 2, np.where(caution, 1, 0))
     h = TH["heat_wbgt_moderate_work_acclimatised_C"]; ws = df.wbgt_sun.values; thn = df.thunder.values
     pr, g10, gh = df.precipitation.values, df.wind_gusts_10m.values, df.gust_hook.values
-    df["st_labour"] = lvl(ws > h["work25_rest75"], ws > h["continuous"])
+    legal = TH.get("legal_wbgt_stop_C", 99)                      # e.g. Qatar: all outdoor work stops above WBGT 32.1 C
+    df["st_labour"] = lvl((ws > h["work25_rest75"]) | (ws > legal), ws > h["continuous"])
     cold_s, cold_c = ta < c.get("cold_stop_C", -99), ta < c.get("cold_caution_C", -99)
     df["st_concrete"] = lvl((pr >= c["rain_stop_mm_h"]) | (df.prob_next3 >= c["rain_prob_stop_pct"]) | (df.evap_kg_m2_h >= c["evap_stop_kg_m2_h"]) | (thn == 2) | cold_s,
                             (df.prob_next3 >= c["rain_prob_caution_pct"]) | (df.evap_kg_m2_h >= c["evap_caution_kg_m2_h"]) | (thn == 1) | cold_c)
@@ -374,6 +376,9 @@ def briefing(d, g):
         if len(dd_) and (dd_.dust.max() >= dw.get("dust_warn_ug_m3", 1e9) or dd_.pm10.max() >= dw.get("pm10_warn_ug_m3", 1e9)):
             extras.append(f"Dust storm risk (dust up to {dd_.dust.max():.0f} µg/m³): goggles and masks, secure sheeting and loose materials, "
                           "stop lifts if the operator loses sight of the load.")
+    if TH.get("legal_wbgt_stop_C") and (g.wbgt_sun > TH["legal_wbgt_stop_C"]).any():
+        hrs = runs((g.wbgt_sun > TH["legal_wbgt_stop_C"]).values, g.index)
+        extras.append(f"Legal heat limit: WBGT above {TH['legal_wbgt_stop_C']} °C at {', '.join(hrs)}; outdoor work must stop by law in those hours.")
     if TH.get("_seasonal_break_active"):
         extras.append("Midday outdoor-work ban in force (12:00-15:00): those hours are excluded from the working day.")
     storm = "likely" if stl else "possible" if stp else "low"

@@ -54,8 +54,12 @@ const KEYS = ["labour","concrete","asphalt","crane","height","coatings","earthwo
 const NAMES = {labour:"Outdoor labour",concrete:"Concrete pour",asphalt:"Asphalt & surfacing",crane:"Crane lifts",height:"Work at height",coatings:"Painting & coatings",earthworks:"Earthworks"};
 const WORD = {STOP:"STOP",LIMITED:"LIMITED",CAUTION:"CARE",GO:"GO"};
 let TH, WORK, W0, W1, live = null, liveMarker = null, BASE_TH = null, SITES = [], gridLayer = null, gridVar = "rain";
-const BOX = {"Uganda": [-1.5, 29.5, 4.25, 35.05], "Kenya": [-4.75, 33.9, 5.1, 41.95], "South Africa": [-35.0, 16.4, -22.1, 33.0],
-             "Saudi Arabia": [16.3, 34.5, 32.2, 55.7]};      // rough boxes; Uganda is checked before Kenya
+const BOX = {   // rough boxes, smallest first so a point in a small country is not taken by a big neighbour's box
+  "Bahrain": [25.5, 50.3, 26.4, 50.8], "Qatar": [24.4, 50.7, 26.2, 51.7], "Kuwait": [28.5, 46.5, 30.1, 48.5], "Rwanda": [-2.85, 28.85, -1.05, 30.9],
+  "United Arab Emirates": [22.6, 51.5, 26.1, 56.4], "Uganda": [-1.5, 29.5, 4.25, 35.05], "Senegal": [12.3, -17.6, 16.7, -11.3],
+  "Ghana": [4.7, -3.3, 11.2, 1.2], "Côte d'Ivoire": [4.3, -8.6, 10.8, -2.5], "Oman": [16.6, 52.0, 26.4, 59.9], "Botswana": [-26.9, 20.0, -17.8, 29.4],
+  "Kenya": [-4.75, 33.9, 5.1, 41.95], "Tanzania": [-11.75, 29.3, -0.95, 40.5], "Zambia": [-18.1, 21.9, -8.2, 33.7], "Mozambique": [-26.9, 30.2, -10.4, 40.9],
+  "Nigeria": [4.2, 2.7, 13.9, 14.7], "South Africa": [-35.0, 16.4, -22.1, 33.0], "Saudi Arabia": [16.3, 34.5, 32.2, 55.7]};
 function countryOf(lat, lon){
   for (const [c, [a, b, cc, d]] of Object.entries(BOX)) if (lat >= a && lat <= cc && lon >= b && lon <= d) return c;
   return null;
@@ -84,14 +88,15 @@ async function init(){
   [W0, W1] = TH.working_hours; WORK = []; for (let h = W0; h < W1; h++) if (!(TH.break_hours || []).includes(h)) WORK.push(h);
   let towns = [];
   try { towns = (await (await fetch("towns_today.json", {cache: "no-store"})).json()).towns; } catch(e){}
-  const views = {"Uganda": [[1.35, 32.4], 7], "Kenya": [[-1.29, 36.82], 9], "South Africa": [[-26.2, 28.05], 9], "Saudi Arabia": [[24.71, 46.68], 9]};
   const jump = document.getElementById("jump");
-  [...new Set(towns.map(t => t.country || "Uganda"))].forEach(c => {
-    const b = document.createElement("button"); b.textContent = c; b.setAttribute("aria-pressed", c === "Uganda");
-    b.onclick = () => { const v = views[c] || [[towns.find(t => t.country === c).lat, towns.find(t => t.country === c).lon], 9];
-      map.setView(v[0], v[1]); jump.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", x === b)); };
-    jump.appendChild(b);
-  });
+  const ctrs = [...new Set(towns.map(t => t.country || "Uganda"))];
+  jump.innerHTML = `<select aria-label="Go to a country" style="font:600 13px Inter,Arial,sans-serif;padding:7px 10px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--ink)">`
+    + ctrs.map(c => `<option>${esc(c)}</option>`).join("") + "</select>";
+  jump.querySelector("select").onchange = e => {
+    const ts = towns.filter(t => (t.country || "Uganda") === e.target.value);
+    if (ts.length === 1) map.setView([ts[0].lat, ts[0].lon], 9);
+    else map.fitBounds(L.latLngBounds(ts.map(t => [t.lat, t.lon])).pad(0.3), {maxZoom: 9});
+  };
   towns.forEach(t => {
     const m = L.circleMarker([t.lat, t.lon], {radius: 11, color: "#fff", weight: 2, fillColor: COLOR()[t.worst], fillOpacity: 1}).addTo(map);
     const left = t.slug === "central-kampala";                // Jinja sits just east of Kampala
@@ -329,12 +334,12 @@ function weekTable(rows, days){
 
 // ---------------- daily rain / gust around the point, drawn on the map
 async function loadGrid(lat, lon){
-  const g = [-0.4, -0.267, -0.133, 0, 0.133, 0.267, 0.4], la = [], lo = [];
+  const g = [-0.4, -0.2, 0, 0.2, 0.4], la = [], lo = [];
   g.forEach(a => g.forEach(b => { la.push((lat + a).toFixed(3)); lo.push((lon + b).toFixed(3)); }));
   try {
     const js = await (await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${la.join(",")}&longitude=${lo.join(",")}&daily=precipitation_sum,wind_gusts_10m_max&timezone=auto&forecast_days=7&wind_speed_unit=ms`)).json();
     if (!Array.isArray(js) || !live || live.lat !== lat) return;
-    live.grid = {pts: js.map((j, i) => ({lat: +la[i], lon: +lo[i], days: j.daily.time, rain: j.daily.precipitation_sum, gust: j.daily.wind_gusts_10m_max})), step: 0.1333};
+    live.grid = {pts: js.map((j, i) => ({lat: +la[i], lon: +lo[i], days: j.daily.time, rain: j.daily.precipitation_sum, gust: j.daily.wind_gusts_10m_max})), step: 0.2};
     drawGrid();
   } catch(e){}
 }

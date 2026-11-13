@@ -15,9 +15,17 @@ from pathlib import Path
 import pandas as pd
 from PIL import Image, ImageDraw, ImageFont
 
-OUT = Path(sys.argv[1] if len(sys.argv) > 1 else "docs/site-weather")
+import argparse  # noqa: E402
+_ap = argparse.ArgumentParser()
+_ap.add_argument("out", nargs="?", default="docs/site-weather")
+_ap.add_argument("--group", help="build only this region (uganda, east-africa, gulf, west-africa, southern-africa)")
+_ap.add_argument("--assemble", action="store_true", help="skip building; make the national cards, data files and landing page")
+_A = _ap.parse_args()
+OUT = Path(_A.out)
 HERE = Path(__file__).parent
-SITES = json.loads((OUT / "sites.json").read_text())["sites"]
+_SJ = json.loads((OUT / "sites.json").read_text())
+SITES = _SJ["sites"]
+GROUPS = _SJ.get("groups", {})
 TH = json.loads((OUT / "thresholds.json").read_text())
 W0, W1 = TH["working_hours"]
 WORK = [h for h in range(W0, W1) if h not in TH.get("break_hours", [])]     # e.g. 8 working hours, lunch excluded
@@ -40,11 +48,17 @@ def one_site(s):
 # sites are independent (each writes only its own folder), so build four at a time: mostly waiting on the network
 from concurrent.futures import ThreadPoolExecutor  # noqa: E402
 failed = []
+todo = [] if _A.assemble else [s for s in SITES if not _A.group or s.get("group") == _A.group]
 with ThreadPoolExecutor(max_workers=4) as pool:
-    for name, code, err in pool.map(one_site, SITES):
+    for name, code, err in pool.map(one_site, todo):
         print(name, "ok" if code == 0 else "FAILED\n" + err, flush=True)
         if code:
             failed.append(name)
+if _A.group:                                                   # a regional job: list its folders for the artifact, then stop
+    (OUT / f"_built_{_A.group}.txt").write_text("\n".join(slug(s["name"]) for s in todo) + "\n")
+    for name in failed:
+        print(f"::warning::site weather for {name} failed this run; its previous page stays up")
+    sys.exit(1 if failed and len(failed) == len(todo) else 0)
 
 
 # ---------------------------------------------------------------- national cards: one per activity, actual go hours
@@ -198,7 +212,7 @@ for s in SITES:
         continue
     bj = json.loads(bp.read_text()); b0 = bj["days"][0]
     worst = min((r["status"] for r in b0["rows"]), key=RANK.get)
-    towns.append(dict(name=s["name"], region=s["region"], country=s.get("country", "Uganda"), lat=s["lat"], lon=s["lon"], slug=sl, issued=bj["issued"], day=b0["day"],
+    towns.append(dict(name=s["name"], region=s["region"], country=s.get("country", "Uganda"), group=s.get("group", ""), lat=s["lat"], lon=s["lon"], slug=sl, issued=bj["issued"], day=b0["day"],
                       headline=b0["headline"], worst=worst, facts=b0["facts"],
                       rows=[dict(trade=r["trade"], status=r["status"], label=r["label"]) for r in b0["rows"]],
                       outlook=[dict(day=b["day"], headline=b["headline"]) for b in bj["days"][1:4]]))
@@ -207,25 +221,30 @@ for s in SITES:
 
 # ---------------------------------------------------------------- landing page
 cards = ""
-allrows = [(s, None) for s in SITES if (OUT / slug(s["name"]) / "social" / "today_4x5.png").exists()]
-for ctry in dict.fromkeys(s.get("country", "Uganda") for s, _ in allrows):
-    cards += f"<h2>{html.escape(ctry)}</h2>"
-    for reg in dict.fromkeys(s["region"] for s, _ in allrows if s.get("country", "Uganda") == ctry):
-        if ctry == "Uganda":
-            cards += f"<p class='lede' style='margin:6px 0 0;font-weight:700'>{html.escape(reg)}</p>"
-        cards += "<div class='row'>"
-        for s, _ in allrows:
-            if s.get("country", "Uganda") == ctry and s["region"] == reg:
-                sl = slug(s["name"])
-                cards += (f"<a class='site' href='{sl}/'><img src='{sl}/social/today_4x5.png' alt='Today on site, {html.escape(s['name'])}'>"
-                          f"<span>{html.escape(s['name'])}</span></a>")
-        cards += "</div>"
+allrows = [s for s in SITES if (OUT / slug(s["name"]) / "social" / "today_4x5.png").exists()]
+
+
+def card_row(items):
+    return "<div class='row'>" + "".join(
+        f"<a class='site' href='{slug(x['name'])}/'><img src='{slug(x['name'])}/social/today_4x5.png' alt='Today on site, {html.escape(x['name'])}' loading='lazy'>"
+        f"<span>{html.escape(x['name'])}</span></a>" for x in items) + "</div>"
+
+
+for gk, gname in GROUPS.items():                               # region, then country (Uganda: by region of Uganda)
+    gs = [x for x in allrows if x.get("group") == gk]
+    if not gs:
+        continue
+    cards += f"<h2>{html.escape(gname)}</h2>"
+    key = "region" if gk == "uganda" else "country"
+    for sub_ in dict.fromkeys(x.get(key, "Uganda") for x in gs):
+        cards += f"<p class='lede' style='margin:6px 0 0;font-weight:700'>{html.escape(sub_)}</p>"
+        cards += card_row([x for x in gs if x.get(key, "Uganda") == sub_])
 (OUT / "index.html").write_text(f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Site Weather</title>
-<meta name="description" content="Daily construction site weather for Uganda, Kenya, South Africa and Saudi Arabia: go windows for seven trades, the week ahead and a monthly record. By Gava Charles.">
+<meta name="description" content="Daily construction site weather for East, West and Southern Africa and the Gulf: go windows for seven trades, the week ahead and a monthly record. By Gava Charles.">
 <meta property="og:type" content="website"><meta property="og:site_name" content="Kampala Heat Atlas · Site weather">
 <meta property="og:title" content="Site weather: today's go windows for construction">
-<meta property="og:description" content="Concrete, asphalt, cranes, work at height, painting, earthworks and heat, hour by hour, for ten towns and cities.">
+<meta property="og:description" content="Concrete, asphalt, cranes, work at height, painting, earthworks and heat, hour by hour, for 34 towns and cities in Africa and the Gulf.">
 <meta property="og:url" content="https://gavacharles.github.io/kampala-heat-atlas/site-weather/">
 <meta property="og:image" content="https://gavacharles.github.io/kampala-heat-atlas/site-weather/uganda_concrete_x_16x9.png?v={pd.Timestamp.now(tz='Africa/Kampala'):%Y%m%d}">
 <meta property="og:image:width" content="1600"><meta property="og:image:height" content="900">
@@ -245,7 +264,7 @@ nav{{display:flex;gap:8px;flex-wrap:wrap}} nav a{{color:var(--ink);text-decorati
 <nav><a href="../index.html">Atlas</a><a href="../3d.html">3D model</a><a href="../stories.html">Stories</a><a href="../daynight.html">Day vs night</a><a href="../meteogram.html">Meteogram</a><a href="./">Site weather</a><a href="map.html">Map</a><a href="share.html">Share today</a><a href="../gallery.html">Figures</a><a href="https://github.com/gavacharles/kampala-heat-atlas">Code</a></nav>
 <h1>Site weather</h1>
 <p class="lede">For contractors and site managers: hour-by-hour workable time for seven trades, a daily site note and a
-month-by-month weather record against each town's 1991-2020 climate, for towns in Uganda, Kenya, South Africa and Saudi Arabia. Refreshed every morning. Pick the town nearest
+month-by-month weather record against each town's 1991-2020 climate, for 34 towns and cities across East, West and Southern Africa and the Gulf. Refreshed every morning. Pick the town nearest
 your site; to add a site, send its coordinates.</p>
 <p><a href="map.html"><strong>Open the map</strong></a> (click any town, or anywhere in Uganda, for a live site check) ·
 <a href="share.html"><strong>Share today</strong></a> (cards and captions, one tap to WhatsApp)</p>
@@ -259,4 +278,4 @@ print("index and national card written;", "failed: " + ", ".join(failed) if fail
 # one town's forecast failing (a timeout) must not fail the run: publish the others and warn; fail only if all failed
 for name in failed:
     print(f"::warning::site weather for {name} failed this run; its previous page stays up")
-sys.exit(1 if failed and len(failed) == len(SITES) else 0)
+sys.exit(1 if failed and len(failed) == len(todo) and todo else 0)
