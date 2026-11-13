@@ -1,0 +1,752 @@
+{
+ "source": "CiO Construction Cost Platform (gavacharles/cio-construction-costs)",
+ "generated": "2026-11-13 11:11 UTC",
+ "note": "Changes are % on the base period; fx_13w_pct > 0 means the local currency weakened against the US dollar over 13 weeks.",
+ "countries": {
+  "austria": {
+   "country": "Austria",
+   "currency": "EUR",
+   "kind": "benchmark",
+   "base": "Sep 2026",
+   "generated": "2026-11-13",
+   "basis": "Statistics Austria (via Eurostat) September 2026; forecast tested month by month on the last 48 months",
+   "series": "Construction costs (all)",
+   "near": {
+    "period": "2026-10",
+    "median": 0.22,
+    "lo": -0.36,
+    "hi": 1.35
+   },
+   "next": {
+    "period": "2026-11",
+    "median": 0.43
+   },
+   "oil_13w_pct": 0.1,
+   "oil_4w_pct": -22.8,
+   "fx": 0.9028,
+   "fx_13w_pct": 4.1,
+   "movers": [],
+   "flags": [],
+   "fx_spread_note": null
+  },
+  "botswana": {
+   "country": "Botswana",
+   "currency": "BWP",
+   "kind": "pressure",
+   "base": "Nov 2026",
+   "generated": "2026-11-13",
+   "basis": "Imported-input cost pressure from oil in BWP and the exchange rate; an indicator, not a price index",
+   "series": "Imported-input cost pressure",
+   "near": {
+    "period": "Next 3 months",
+    "median": -0.04,
+    "lo": -2.31,
+    "hi": 4.49
+   },
+   "next": {
+    "period": "Next 6 months",
+    "median": 0.99
+   },
+   "oil_13w_pct": 0.1,
+   "oil_4w_pct": -22.8,
+   "fx": 13.8251,
+   "fx_13w_pct": 2.9,
+   "movers": [],
+   "flags": [
+    "Oil has moved -22.8% in 4 weeks: forecasts made before the move may be off; re-run with the latest prices."
+   ],
+   "fx_spread_note": "Public exchange-rate feeds differ: CiO's rate is -2.5% from an independent feed."
+  },
+  "brazil": {
+   "country": "Brazil",
+   "currency": "BRL",
+   "kind": "benchmark",
+   "base": "Oct 2026",
+   "generated": "2026-11-13",
+   "basis": "Fundação Getulio Vargas (FGV), via Banco Central do Brasil October 2026; forecast tested month by month on the last 48 months",
+   "series": "Construction costs (all)",
+   "near": {
+    "period": "2026-11",
+    "median": 0.41,
+    "lo": 0.11,
+    "hi": 0.8
+   },
+   "next": {
+    "period": "2026-12",
+    "median": 0.81
+   },
+   "oil_13w_pct": 0.1,
+   "oil_4w_pct": -22.8,
+   "fx": 5.5839,
+   "fx_13w_pct": 7.5,
+   "movers": [],
+   "flags": [],
+   "fx_spread_note": null
+  },
+  "egypt": {
+   "country": "Egypt",
+   "currency": "EGP",
+   "kind": "pressure",
+   "base": "Nov 2026",
+   "generated": "2026-11-13",
+   "basis": "Imported-input cost pressure from oil in EGP and the exchange rate; an indicator, not a price index",
+   "series": "Imported-input cost pressure",
+   "near": {
+    "period": "Next 3 months",
+    "median": 1.05,
+    "lo": -1.88,
+    "hi": 11.01
+   },
+   "next": {
+    "period": "Next 6 months",
+    "median": 4.42
+   },
+   "oil_13w_pct": 0.1,
+   "oil_4w_pct": -22.8,
+   "fx": 53.5523,
+   "fx_13w_pct": 6.7,
+   "movers": [],
+   "flags": [
+    "Oil has moved -22.8% in 4 weeks: forecasts made before the move may be off; re-run with the latest prices."
+   ],
+   "fx_spread_note": null
+  },
+  "ethiopia": {
+   "country": "Ethiopia",
+   "currency": "ETB",
+   "kind": "pressure",
+   "base": "Nov 2026",
+   "generated": "2026-11-13",
+   "basis": "Imported-input cost pressure from oil in ETB and the exchange rate; an indicator, not a price index",
+   "series": "Imported-input cost pressure",
+   "near": {
+    "period": "Next 3 months",
+    "median": 1.67,
+    "lo": -0.52,
+    "hi": 5.1
+   },
+   "next": {
+    "period": "Next 6 months",
+    "median": 3.43
+   },
+   "oil_13w_pct": 0.1,
+   "oil_4w_pct": -22.8,
+   "fx": 164.2873,
+   "fx_13w_pct": 1.8,
+   "movers": [],
+   "flags": [
+    "Oil has moved -22.8% in 4 weeks: forecasts made before the move may be off; re-run with the latest prices."
+   ],
+   "fx_spread_note": "Public exchange-rate feeds differ: CiO's rate is +1.8% from an independent feed."
+  },
+  "ghana": {
+   "country": "Ghana",
+   "currency": "GHS",
+   "kind": "pressure",
+   "base": "Nov 2026",
+   "generated": "2026-11-13",
+   "basis": "Imported-input cost pressure from oil in GHS and the exchange rate; an indicator, not a price index",
+   "series": "Imported-input cost pressure",
+   "near": {
+    "period": "Next 3 months",
+    "median": 2.48,
+    "lo": -4.6,
+    "hi": 7.83
+   },
+   "next": {
+    "period": "Next 6 months",
+    "median": 4.37
+   },
+   "oil_13w_pct": 0.1,
+   "oil_4w_pct": -22.8,
+   "fx": 11.7252,
+   "fx_13w_pct": 7.0,
+   "movers": [],
+   "flags": [
+    "Oil has moved -22.8% in 4 weeks: forecasts made before the move may be off; re-run with the latest prices."
+   ],
+   "fx_spread_note": null
+  },
+  "hong_kong": {
+   "country": "Hong Kong",
+   "currency": "HKD",
+   "kind": "benchmark",
+   "base": "Aug 2026",
+   "generated": "2026-11-13",
+   "basis": "Census and Statistics Department (C&SD), Hong Kong August 2026; forecast tested month by month on the last 48 months",
+   "series": "Key materials (basket)",
+   "near": {
+    "period": "2026-09",
+    "median": 0.45,
+    "lo": -0.79,
+    "hi": 2.35
+   },
+   "next": {
+    "period": "2026-10",
+    "median": 0.94
+   },
+   "oil_13w_pct": 0.1,
+   "oil_4w_pct": -22.8,
+   "fx": 7.8422,
+   "fx_13w_pct": -0.1,
+   "movers": [
+    {
+     "name": "Diesel",
+     "change_year": 28.3
+    },
+    {
+     "name": "Steel reinforcement",
+     "change_year": 8.2
+    },
+    {
+     "name": "Aggregates",
+     "change_year": 6.5
+    }
+   ],
+   "flags": [],
+   "fx_spread_note": null
+  },
+  "kenya": {
+   "country": "Kenya",
+   "currency": "KES",
+   "kind": "quarterly",
+   "base": "Q3 2026",
+   "generated": "2026-11-13",
+   "basis": "Change from the latest KNBS print (Q3 2026), conditioned on the oil and shilling months already observed",
+   "series": "Overall construction input prices",
+   "near": {
+    "period": "Q4 2026",
+    "median": 1.47,
+    "lo": 0.14,
+    "hi": 2.79
+   },
+   "next": {
+    "period": "Q1 2027",
+    "median": 2.24
+   },
+   "oil_13w_pct": 0.1,
+   "oil_4w_pct": -22.8,
+   "fx": 129.9458,
+   "fx_13w_pct": 0.5,
+   "movers": [
+    {
+     "name": "Fuel and lubricants",
+     "change_year": 22.6
+    },
+    {
+     "name": "Tiles",
+     "change_year": 10.7
+    },
+    {
+     "name": "Paint",
+     "change_year": 7.8
+    }
+   ],
+   "flags": [
+    "Oil has moved -22.8% in 4 weeks: forecasts made before the move may be off; re-run with the latest prices."
+   ],
+   "fx_spread_note": null
+  },
+  "malawi": {
+   "country": "Malawi",
+   "currency": "MWK",
+   "kind": "pressure",
+   "base": "Nov 2026",
+   "generated": "2026-11-13",
+   "basis": "Imported-input cost pressure from oil in MWK and the exchange rate; an indicator, not a price index",
+   "series": "Imported-input cost pressure",
+   "near": {
+    "period": "Next 3 months",
+    "median": 0.18,
+    "lo": -1.57,
+    "hi": 6.29
+   },
+   "next": {
+    "period": "Next 6 months",
+    "median": 2.05
+   },
+   "oil_13w_pct": 0.1,
+   "oil_4w_pct": -22.8,
+   "fx": 1747.9247,
+   "fx_13w_pct": 0.8,
+   "movers": [],
+   "flags": [
+    "Oil has moved -22.8% in 4 weeks: forecasts made before the move may be off; re-run with the latest prices."
+   ],
+   "fx_spread_note": null
+  },
+  "mauritius": {
+   "country": "Mauritius",
+   "currency": "MUR",
+   "kind": "pressure",
+   "base": "Nov 2026",
+   "generated": "2026-11-13",
+   "basis": "Imported-input cost pressure from oil in MUR and the exchange rate; an indicator, not a price index",
+   "series": "Imported-input cost pressure",
+   "near": {
+    "period": "Next 3 months",
+    "median": 0.26,
+    "lo": -1.91,
+    "hi": 3.21
+   },
+   "next": {
+    "period": "Next 6 months",
+    "median": 0.54
+   },
+   "oil_13w_pct": 0.1,
+   "oil_4w_pct": -22.8,
+   "fx": 47.4676,
+   "fx_13w_pct": 0.7,
+   "movers": [],
+   "flags": [
+    "Oil has moved -22.8% in 4 weeks: forecasts made before the move may be off; re-run with the latest prices."
+   ],
+   "fx_spread_note": null
+  },
+  "morocco": {
+   "country": "Morocco",
+   "currency": "MAD",
+   "kind": "pressure",
+   "base": "Nov 2026",
+   "generated": "2026-11-13",
+   "basis": "Imported-input cost pressure from oil in MAD and the exchange rate; an indicator, not a price index",
+   "series": "Imported-input cost pressure",
+   "near": {
+    "period": "Next 3 months",
+    "median": 0.07,
+    "lo": -3.13,
+    "hi": 4.88
+   },
+   "next": {
+    "period": "Next 6 months",
+    "median": 0.3
+   },
+   "oil_13w_pct": 0.1,
+   "oil_4w_pct": -22.8,
+   "fx": 9.8258,
+   "fx_13w_pct": 5.6,
+   "movers": [],
+   "flags": [
+    "Oil has moved -22.8% in 4 weeks: forecasts made before the move may be off; re-run with the latest prices."
+   ],
+   "fx_spread_note": null
+  },
+  "mozambique": {
+   "country": "Mozambique",
+   "currency": "MZN",
+   "kind": "pressure",
+   "base": "Nov 2026",
+   "generated": "2026-11-13",
+   "basis": "Imported-input cost pressure from oil in MZN and the exchange rate; an indicator, not a price index",
+   "series": "Imported-input cost pressure",
+   "near": {
+    "period": "Next 3 months",
+    "median": -0.24,
+    "lo": -1.59,
+    "hi": 2.9
+   },
+   "next": {
+    "period": "Next 6 months",
+    "median": -0.16
+   },
+   "oil_13w_pct": 0.1,
+   "oil_4w_pct": -22.8,
+   "fx": 63.8786,
+   "fx_13w_pct": 0.2,
+   "movers": [],
+   "flags": [
+    "Oil has moved -22.8% in 4 weeks: forecasts made before the move may be off; re-run with the latest prices."
+   ],
+   "fx_spread_note": null
+  },
+  "namibia": {
+   "country": "Namibia",
+   "currency": "NAD",
+   "kind": "pressure",
+   "base": "Nov 2026",
+   "generated": "2026-11-13",
+   "basis": "Imported-input cost pressure from oil in NAD and the exchange rate; an indicator, not a price index",
+   "series": "Imported-input cost pressure",
+   "near": {
+    "period": "Next 3 months",
+    "median": 0.38,
+    "lo": -2.9,
+    "hi": 3.94
+   },
+   "next": {
+    "period": "Next 6 months",
+    "median": 0.33
+   },
+   "oil_13w_pct": 0.1,
+   "oil_4w_pct": -22.8,
+   "fx": 16.625,
+   "fx_13w_pct": 2.6,
+   "movers": [],
+   "flags": [
+    "Oil has moved -22.8% in 4 weeks: forecasts made before the move may be off; re-run with the latest prices."
+   ],
+   "fx_spread_note": null
+  },
+  "nigeria": {
+   "country": "Nigeria",
+   "currency": "NGN",
+   "kind": "pressure",
+   "base": "Nov 2026",
+   "generated": "2026-11-13",
+   "basis": "Imported-input cost pressure from oil in NGN and the exchange rate; an indicator, not a price index",
+   "series": "Imported-input cost pressure",
+   "near": {
+    "period": "Next 3 months",
+    "median": 1.15,
+    "lo": -2.93,
+    "hi": 13.51
+   },
+   "next": {
+    "period": "Next 6 months",
+    "median": 2.49
+   },
+   "oil_13w_pct": 0.1,
+   "oil_4w_pct": -22.8,
+   "fx": 1345.8531,
+   "fx_13w_pct": -1.1,
+   "movers": [],
+   "flags": [
+    "Oil has moved -22.8% in 4 weeks: forecasts made before the move may be off; re-run with the latest prices."
+   ],
+   "fx_spread_note": null
+  },
+  "philippines": {
+   "country": "Philippines",
+   "currency": "PHP",
+   "kind": "benchmark",
+   "base": "Oct 2026",
+   "generated": "2026-11-13",
+   "basis": "Philippine Statistics Authority (PSA) October 2026; forecast tested month by month on the last 48 months",
+   "series": "Construction materials (all)",
+   "near": {
+    "period": "2026-11",
+    "median": 0.13,
+    "lo": -0.05,
+    "hi": 0.63
+   },
+   "next": {
+    "period": "2026-12",
+    "median": 0.32
+   },
+   "oil_13w_pct": 0.1,
+   "oil_4w_pct": -22.8,
+   "fx": 63.6354,
+   "fx_13w_pct": 3.7,
+   "movers": [
+    {
+     "name": "Fuels and lubricants",
+     "change_year": 9.7
+    },
+    {
+     "name": "Sand and gravel",
+     "change_year": 5.5
+    },
+    {
+     "name": "Cement",
+     "change_year": 3.2
+    }
+   ],
+   "flags": [],
+   "fx_spread_note": null
+  },
+  "rwanda": {
+   "country": "Rwanda",
+   "currency": "RWF",
+   "kind": "pressure",
+   "base": "Nov 2026",
+   "generated": "2026-11-13",
+   "basis": "Imported-input cost pressure from oil in RWF and the exchange rate; an indicator, not a price index",
+   "series": "Imported-input cost pressure",
+   "near": {
+    "period": "Next 3 months",
+    "median": 0.9,
+    "lo": -0.72,
+    "hi": 3.88
+   },
+   "next": {
+    "period": "Next 6 months",
+    "median": 1.99
+   },
+   "oil_13w_pct": 0.1,
+   "oil_4w_pct": -22.8,
+   "fx": 1487.9595,
+   "fx_13w_pct": 1.2,
+   "movers": [],
+   "flags": [
+    "Oil has moved -22.8% in 4 weeks: forecasts made before the move may be off; re-run with the latest prices."
+   ],
+   "fx_spread_note": null
+  },
+  "senegal": {
+   "country": "Senegal",
+   "currency": "XOF",
+   "kind": "pressure",
+   "base": "Nov 2026",
+   "generated": "2026-11-13",
+   "basis": "Imported-input cost pressure from oil in XOF and the exchange rate; an indicator, not a price index",
+   "series": "Imported-input cost pressure",
+   "near": {
+    "period": "Next 3 months",
+    "median": -0.27,
+    "lo": -3.29,
+    "hi": 4.39
+   },
+   "next": {
+    "period": "Next 6 months",
+    "median": 0.16
+   },
+   "oil_13w_pct": 0.1,
+   "oil_4w_pct": -22.8,
+   "fx": 592.1671,
+   "fx_13w_pct": 4.1,
+   "movers": [],
+   "flags": [
+    "Oil has moved -22.8% in 4 weeks: forecasts made before the move may be off; re-run with the latest prices."
+   ],
+   "fx_spread_note": null
+  },
+  "south_africa": {
+   "country": "South Africa",
+   "currency": "ZAR",
+   "kind": "nowcast",
+   "base": "Sep 2026",
+   "generated": "2026-11-13",
+   "basis": "Stats SA September 2026 release; expected change next month from recent patterns (contract opening price)",
+   "series": "Construction input prices (whole industry)",
+   "near": {
+    "period": "Oct 2026",
+    "median": 0.23,
+    "lo": -0.71,
+    "hi": 1.53
+   },
+   "next": null,
+   "oil_13w_pct": 0.1,
+   "oil_4w_pct": -22.8,
+   "fx": 16.625,
+   "fx_13w_pct": 2.6,
+   "movers": [
+    {
+     "name": "Asphalt",
+     "change_year": 12.8
+    },
+    {
+     "name": "Ready-mix concrete",
+     "change_year": 12.1
+    },
+    {
+     "name": "Sand",
+     "change_year": -8.7
+    }
+   ],
+   "flags": [
+    "Oil has moved -22.8% in 4 weeks: forecasts made before the move may be off; re-run with the latest prices."
+   ],
+   "fx_spread_note": null
+  },
+  "tanzania": {
+   "country": "Tanzania",
+   "currency": "TZS",
+   "kind": "pressure",
+   "base": "Nov 2026",
+   "generated": "2026-11-13",
+   "basis": "Imported-input cost pressure from oil in TZS and the exchange rate; an indicator, not a price index",
+   "series": "Imported-input cost pressure",
+   "near": {
+    "period": "Next 3 months",
+    "median": 0.31,
+    "lo": -2.68,
+    "hi": 3.85
+   },
+   "next": {
+    "period": "Next 6 months",
+    "median": 0.67
+   },
+   "oil_13w_pct": 0.1,
+   "oil_4w_pct": -22.8,
+   "fx": 2651.2992,
+   "fx_13w_pct": 0.3,
+   "movers": [],
+   "flags": [
+    "Oil has moved -22.8% in 4 weeks: forecasts made before the move may be off; re-run with the latest prices."
+   ],
+   "fx_spread_note": null
+  },
+  "uganda": {
+   "country": "Uganda",
+   "currency": "UGX",
+   "kind": "structural",
+   "base": "Apr 2026",
+   "generated": "2026-11-13",
+   "basis": "Change from the last UBOS release (April 2026), with 7 months of oil and shilling readings since then built in",
+   "series": "Overall construction inputs",
+   "near": {
+    "period": "Nov 2026",
+    "median": 4.11,
+    "lo": 2.99,
+    "hi": 6.84
+   },
+   "next": {
+    "period": "Feb 2027",
+    "median": 5.51
+   },
+   "oil_13w_pct": 0.1,
+   "oil_4w_pct": -22.8,
+   "fx": 4100.4298,
+   "fx_13w_pct": 10.5,
+   "movers": [
+    {
+     "name": "Diesel",
+     "change_year": 5.8
+    },
+    {
+     "name": "Timber",
+     "change_year": 3.6
+    },
+    {
+     "name": "Cement",
+     "change_year": 2.6
+    }
+   ],
+   "flags": [
+    "Oil has moved -22.8% in 4 weeks: forecasts made before the move may be off; re-run with the latest prices.",
+    "Observed diesel prices (2026-10) are +35% on the base month against a forecast of +13% (price guide citing Daily Monitor; indicative (checked 2026-11-04)): the forecast is missing part of the move."
+   ],
+   "fx_spread_note": "Public exchange-rate feeds differ: CiO's rate is +1.9% from an independent feed."
+  },
+  "united_kingdom": {
+   "country": "United Kingdom",
+   "currency": "GBP",
+   "kind": "benchmark",
+   "base": "Sep 2026",
+   "generated": "2026-11-13",
+   "basis": "Department for Business and Trade (DBT), from ONS and BCIS September 2026; forecast tested month by month on the last 48 months",
+   "series": "Construction materials (all work)",
+   "near": {
+    "period": "2026-10",
+    "median": 0.54,
+    "lo": -0.31,
+    "hi": 1.23
+   },
+   "next": {
+    "period": "2026-11",
+    "median": 1.03
+   },
+   "oil_13w_pct": 0.1,
+   "oil_4w_pct": -22.8,
+   "fx": 0.7543,
+   "fx_13w_pct": 1.8,
+   "movers": [
+    {
+     "name": "Materials for repair and maintenance",
+     "change_year": 6.2
+    },
+    {
+     "name": "Materials for new housing",
+     "change_year": 5.4
+    }
+   ],
+   "flags": [],
+   "fx_spread_note": null
+  },
+  "united_states": {
+   "country": "United States",
+   "currency": "USD",
+   "kind": "benchmark",
+   "base": "Sep 2026",
+   "generated": "2026-11-13",
+   "basis": "U.S. Bureau of Labor Statistics (BLS) September 2026; forecast tested month by month on the last 48 months",
+   "series": "Construction inputs (all)",
+   "near": {
+    "period": "2026-10",
+    "median": 1.36,
+    "lo": 0.15,
+    "hi": 2.5
+   },
+   "next": {
+    "period": "2026-11",
+    "median": 2.23
+   },
+   "oil_13w_pct": 0.1,
+   "oil_4w_pct": -22.8,
+   "fx": 121.8803,
+   "fx_13w_pct": 2.5,
+   "movers": [
+    {
+     "name": "Diesel",
+     "change_year": 115.2
+    },
+    {
+     "name": "Steel mill products",
+     "change_year": 27.6
+    },
+    {
+     "name": "Lumber",
+     "change_year": 8.7
+    }
+   ],
+   "flags": [],
+   "fx_spread_note": null
+  },
+  "zambia": {
+   "country": "Zambia",
+   "currency": "ZMW",
+   "kind": "pressure",
+   "base": "Nov 2026",
+   "generated": "2026-11-13",
+   "basis": "Imported-input cost pressure from oil in ZMW and the exchange rate; an indicator, not a price index",
+   "series": "Imported-input cost pressure",
+   "near": {
+    "period": "Next 3 months",
+    "median": -0.05,
+    "lo": -6.34,
+    "hi": 7.63
+   },
+   "next": {
+    "period": "Next 6 months",
+    "median": 0.8
+   },
+   "oil_13w_pct": 0.1,
+   "oil_4w_pct": -22.8,
+   "fx": 20.4499,
+   "fx_13w_pct": 9.0,
+   "movers": [],
+   "flags": [
+    "Oil has moved -22.8% in 4 weeks: forecasts made before the move may be off; re-run with the latest prices."
+   ],
+   "fx_spread_note": null
+  },
+  "zimbabwe": {
+   "country": "Zimbabwe",
+   "currency": "ZWG",
+   "kind": "pressure",
+   "base": "Nov 2026",
+   "generated": "2026-11-13",
+   "basis": "Imported-input cost pressure from oil in USD and the exchange rate; an indicator, not a price index",
+   "series": "Imported-input cost pressure",
+   "near": {
+    "period": "Next 3 months",
+    "median": -0.24,
+    "lo": -1.6,
+    "hi": 2.9
+   },
+   "next": {
+    "period": "Next 6 months",
+    "median": -0.17
+   },
+   "oil_13w_pct": 0.1,
+   "oil_4w_pct": -22.8,
+   "fx": 26.6985,
+   "fx_13w_pct": 0.4,
+   "movers": [],
+   "flags": [
+    "Oil has moved -22.8% in 4 weeks: forecasts made before the move may be off; re-run with the latest prices."
+   ],
+   "fx_spread_note": null
+  }
+ }
+}

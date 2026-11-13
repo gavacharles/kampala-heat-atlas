@@ -1,6 +1,6 @@
 # Site note · Durban
 
-Issued Friday 13 November 2026, 12:50 (Africa/Johannesburg). Site -29.8587, 31.0218. Working hours 07:00-17:00, lunch break excluded (9 h).
+Issued Friday 13 November 2026, 13:04 (Africa/Johannesburg). Site -29.8587, 31.0218. Working hours 07:00-17:00, lunch break excluded (9 h).
 
 ## Friday 13 November
 
