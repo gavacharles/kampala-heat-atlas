@@ -605,6 +605,23 @@ idx = pd.DataFrame(rows)
 idx.to_csv(SITE / "archive" / "monthly_index.csv", index=False)
 
 # ---------------------------------------------------------------- page
+def cost_line():
+    """Construction input costs for this country from CiO (scripts/32_market_link.py saves them), with a link to the brief."""
+    f = OUT / "market" / "costs.json"
+    if not f.exists():
+        return ""
+    k = "_".join("".join(ch if ch.isalnum() else " " for ch in COUNTRY.lower().replace("ô", "o")).split())
+    c = json.loads(f.read_text()).get("countries", {}).get(k)
+    if not c:
+        return ""
+    fx = (f"; the {c['currency']} {'weakened' if c['fx_13w_pct'] > 0 else 'strengthened'} {abs(c['fx_13w_pct']):.1f}% in 13 weeks"
+          if c.get("fx_13w_pct") is not None else "")
+    return (f"<section><p class='eyebrow'>Costs in {html.escape(COUNTRY)}</p><p class='lede'><strong>{html.escape(c['series'])}: "
+            f"{c['near']['median']:+.1f}% by {html.escape(c['near']['period'])}</strong> (range {c['near']['lo']:+.1f}% to {c['near']['hi']:+.1f}%, "
+            f"base {html.escape(c['base'])}){fx}. From the CiO Construction Cost Platform. Weather sets the time, costs set the money: "
+            f"<a href='../market/#{k}'>this week's site and market brief</a>.</p></section>")
+
+
 months_html = "".join(f"<tr><td><a href='archive/monthly/{r['month']}.md'>{r['month']}</a></td><td>{r['days_recorded']}</td>"
                       f"<td>{r['rain_mm']}</td><td>{'–' if r['rain_pct_of_normal_pro_rata'] is None else str(int(r['rain_pct_of_normal_pro_rata'])) + ' %'}</td><td>{r['heavy_rain_days']}</td>"
                       f"<td>{r['exceptional_rain_days']}</td><td>{r['lost_hours_concrete']}</td><td>{r['lost_hours_labour']}</td>"
@@ -663,6 +680,7 @@ img{{width:100%;height:auto;border:1px solid var(--line);border-radius:16px;back
 refreshed every morning at 06:00. Every day is also archived, so the record of what the weather did, month by month and
 compared with the site's 1991-2020 climate, builds up on its own.</p>
 <section>{note_cards(BR)}</section>
+{cost_line()}
 <section><h2>Seven-day site meteogram</h2>
 <img src="site_meteogram_latest.png" alt="Seven-day site meteogram: heat, rain and storms, wind, sun and cloud, concrete and painting, go hours per trade, daily summary and regional maps">
 <p class="lede">Trade panels, the same forecast with only what each trade needs:

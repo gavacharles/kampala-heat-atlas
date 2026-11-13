@@ -36,7 +36,11 @@ Paste the matching caption: the long one for WhatsApp, LinkedIn and Facebook, th
 <script>
 const $ = s => document.querySelector(s);
 const store = { get(k){ try { return localStorage.getItem(k); } catch(e){ return null; } }, set(k,v){ try { localStorage.setItem(k,v); } catch(e){} } };
-let ACTS = [];
+let ACTS = [], TOWNS = [];
+let BRIEFS = {};
+const ckey = c => c.toLowerCase().replace("ô", "o").replace(/[^a-z0-9]+/g, " ").trim().split(" ").join("_");
+const BRIEF = c => BRIEFS[ckey(c)] ? [{title:`Site and market brief, ${c} (weekly: weather time and construction costs)`, file:`market/brief_${ckey(c)}_4x5.png`},
+  {title:`Site and market brief for X, ${c}`, file:`market/brief_${ckey(c)}_x_16x9.png`}] : [];
 const NATIONAL = a => [{title:`For X (16:9): ${a.name}, go hours today`, file:`uganda_${a.key}_x_16x9.png`},
   {title:`Uganda: ${a.name}, go hours this week`, file:`uganda_${a.key}_4x5.png`}];
 const TOWN = s => [
@@ -54,6 +58,8 @@ const TOWN = s => [
 async function load(){
   let towns = [];
   try { const tj = await (await fetch("towns_today.json", {cache:"no-store"})).json(); towns = tj.towns; ACTS = tj.activities || []; } catch(e){}
+  TOWNS = towns;
+  try { BRIEFS = (await (await fetch("market/index.json", {cache:"no-store"})).json()).countries || {}; } catch(e){}
   if (!ACTS.length) ACTS = [{key:"concrete", name:"Concrete pour"}];
   const act = $("#act");
   act.innerHTML = ACTS.map(a => `<option value="${a.key}">${a.name}</option>`).join("");
@@ -71,7 +77,8 @@ async function load(){
 async function render(slug){
   const nat = slug === "uganda", a = ACTS.find(x => x.key === $("#act").value) || ACTS[0];
   $("#act").style.display = nat ? "" : "none";
-  const items = nat ? NATIONAL(a) : TOWN(slug);
+  const tw = TOWNS.find(t => t.slug === slug);
+  const items = nat ? [...NATIONAL(a), ...BRIEF("Uganda")] : [...TOWN(slug), ...BRIEF(tw ? (tw.country || "Uganda") : "")];
   const base = nat ? `uganda_${a.key}_caption` : `${slug}/social/caption`;
   const get = async u => { try { const r = await fetch(u, {cache:"no-store"}); return r.ok ? (await r.text()).trim() : ""; } catch(e){ return ""; } };
   $("#cap").value = await get(base + ".txt"); $("#capx").value = await get(base + "_x.txt");
