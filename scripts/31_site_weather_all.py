@@ -24,8 +24,8 @@ WORK = [h for h in range(W0, W1) if h not in TH.get("break_hours", [])]     # e.
 NW = len(WORK)
 slug = lambda n: "-".join("".join(c if c.isalnum() else " " for c in n.lower()).split())
 
-failed = []
-for s in SITES:
+def one_site(s):
+    """Forecast, note, record and meteograms (29), then the cards (30), for one site."""
     sd = OUT / slug(s["name"])
     args = [sys.executable, str(HERE / "29_site_weather.py"), str(OUT), "--name", s["name"], "--lat", str(s["lat"]),
             "--lon", str(s["lon"]), "--alt", str(s["alt"])]
@@ -34,9 +34,17 @@ for s in SITES:
     r = subprocess.run(args, capture_output=True, text=True)
     if r.returncode == 0:
         r = subprocess.run([sys.executable, str(HERE / "30_site_cards.py"), str(sd)], capture_output=True, text=True)
-    print(s["name"], "ok" if r.returncode == 0 else "FAILED\n" + r.stderr[-800:], flush=True)
-    if r.returncode:
-        failed.append(s["name"])
+    return s["name"], r.returncode, r.stderr[-800:]
+
+
+# sites are independent (each writes only its own folder), so build four at a time: mostly waiting on the network
+from concurrent.futures import ThreadPoolExecutor  # noqa: E402
+failed = []
+with ThreadPoolExecutor(max_workers=4) as pool:
+    for name, code, err in pool.map(one_site, SITES):
+        print(name, "ok" if code == 0 else "FAILED\n" + err, flush=True)
+        if code:
+            failed.append(name)
 
 
 # ---------------------------------------------------------------- national cards: one per activity, actual go hours
