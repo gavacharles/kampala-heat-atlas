@@ -2,7 +2,7 @@
  "site": "Doha",
  "lat": 25.2854,
  "lon": 51.531,
- "issued": "2026-11-14 08:48",
+ "issued": "2026-11-14 12:07",
  "working": "07:00-17:00, lunch excluded (9 h)",
  "days": [
   {
@@ -64,9 +64,9 @@
      "key": "crane",
      "trade": "Crane lifts",
      "status": "LIMITED",
-     "label": "go 07-10 h only",
-     "go_hours": 3,
-     "windows": "07-10 h",
+     "label": "go 07-11 h only",
+     "go_hours": 4,
+     "windows": "07-11 h",
      "causes": [
       "wind"
      ],
@@ -86,7 +86,7 @@
       ],
       [
        10,
-       1
+       0
       ],
       [
        11,
@@ -114,9 +114,9 @@
      "key": "height",
      "trade": "Work at height",
      "status": "LIMITED",
-     "label": "go 07-08 h only",
-     "go_hours": 1,
-     "windows": "07-08 h",
+     "label": "go 07-09 h only",
+     "go_hours": 2,
+     "windows": "07-09 h",
      "causes": [
       "wind"
      ],
@@ -128,7 +128,7 @@
       ],
       [
        8,
-       1
+       0
       ],
       [
        9,
@@ -361,12 +361,12 @@
     "rain_chance": 0,
     "storm": "low",
     "storm_from": "",
-    "wbgt_peak": 22.7,
-    "gust_hook_max": 16.5,
+    "wbgt_peak": 22.9,
+    "gust_hook_max": 16.8,
     "go_hours": {
      "concrete": 1,
-     "crane": 3,
-     "height": 1,
+     "crane": 4,
+     "height": 2,
      "labour": 9,
      "asphalt": 9,
      "coatings": 9,

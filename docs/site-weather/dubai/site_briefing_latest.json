@@ -2,7 +2,7 @@
  "site": "Dubai",
  "lat": 25.2048,
  "lon": 55.2708,
- "issued": "2026-11-14 09:48",
+ "issued": "2026-11-14 13:07",
  "working": "07:00-17:00, lunch excluded (9 h)",
  "days": [
   {
@@ -720,7 +720,7 @@
     "rain_chance": 0,
     "storm": "low",
     "storm_from": "",
-    "wbgt_peak": 27.2,
+    "wbgt_peak": 27.1,
     "gust_hook_max": 6.8,
     "go_hours": {
      "concrete": 6,

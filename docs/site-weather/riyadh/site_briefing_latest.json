@@ -2,7 +2,7 @@
  "site": "Riyadh",
  "lat": 24.7136,
  "lon": 46.6753,
- "issued": "2026-11-14 08:48",
+ "issued": "2026-11-14 12:07",
  "working": "07:00-17:00, lunch excluded (9 h)",
  "days": [
   {
@@ -357,7 +357,7 @@
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 19.7,
-    "gust_hook_max": 9.9,
+    "gust_hook_max": 9.8,
     "go_hours": {
      "labour": 9,
      "concrete": 9,
@@ -378,9 +378,9 @@
      "key": "concrete",
      "trade": "Concrete pour",
      "status": "LIMITED",
-     "label": "go 07-12 h, 13-15 h, 16-17 h only",
-     "go_hours": 8,
-     "windows": "07-12 h, 13-15 h, 16-17 h",
+     "label": "go 07-12 h, 13-14 h, 16-17 h only",
+     "go_hours": 7,
+     "windows": "07-12 h, 13-14 h, 16-17 h",
      "causes": [
       "fast drying"
      ],
@@ -412,7 +412,7 @@
       ],
       [
        14,
-       0
+       1
       ],
       [
        15,
@@ -722,10 +722,10 @@
     "rain_chance": 0,
     "storm": "low",
     "storm_from": "",
-    "wbgt_peak": 17.8,
-    "gust_hook_max": 8.7,
+    "wbgt_peak": 17.6,
+    "gust_hook_max": 9.0,
     "go_hours": {
-     "concrete": 8,
+     "concrete": 7,
      "labour": 9,
      "asphalt": 9,
      "crane": 9,
@@ -1086,8 +1086,8 @@
     "rain_chance": 0,
     "storm": "low",
     "storm_from": "",
-    "wbgt_peak": 19.5,
-    "gust_hook_max": 7.5,
+    "wbgt_peak": 19.1,
+    "gust_hook_max": 7.8,
     "go_hours": {
      "labour": 9,
      "concrete": 9,
@@ -1450,8 +1450,8 @@
     "rain_chance": 0,
     "storm": "low",
     "storm_from": "",
-    "wbgt_peak": 21.4,
-    "gust_hook_max": 5.7,
+    "wbgt_peak": 21.1,
+    "gust_hook_max": 5.4,
     "go_hours": {
      "labour": 9,
      "concrete": 9,
@@ -1816,8 +1816,8 @@
     "rain_chance": 0,
     "storm": "low",
     "storm_from": "",
-    "wbgt_peak": 19.8,
-    "gust_hook_max": 8.8,
+    "wbgt_peak": 20.0,
+    "gust_hook_max": 8.1,
     "go_hours": {
      "concrete": 5,
      "labour": 9,
@@ -1832,17 +1832,19 @@
   {
    "date": "2026-11-19",
    "day": "Thursday 19 November",
-   "headline": "Good working day: no weather limits on any trade.",
+   "headline": "Pour concrete 07-12 h; fast drying limits the rest of the day.",
    "rows": [
     {
-     "key": "labour",
-     "trade": "Outdoor labour",
-     "status": "GO",
-     "label": "no limits",
-     "go_hours": 9,
-     "windows": "",
-     "causes": [],
-     "action": "No heat limits; keep water and shade available.",
+     "key": "concrete",
+     "trade": "Concrete pour",
+     "status": "LIMITED",
+     "label": "go 07-12 h, 15-16 h only",
+     "go_hours": 6,
+     "windows": "07-12 h, 15-16 h",
+     "causes": [
+      "fast drying"
+     ],
+     "action": "Curing cover and windbreaks ready.",
      "hours": [
       [
        7,
@@ -1866,11 +1868,11 @@
       ],
       [
        13,
-       0
+       1
       ],
       [
        14,
-       0
+       1
       ],
       [
        15,
@@ -1878,19 +1880,19 @@
       ],
       [
        16,
-       0
+       1
       ]
      ]
     },
     {
-     "key": "concrete",
-     "trade": "Concrete pour",
+     "key": "labour",
+     "trade": "Outdoor labour",
      "status": "GO",
      "label": "no limits",
      "go_hours": 9,
-     "windows": "07-12 h, 13-17 h",
+     "windows": "",
      "causes": [],
-     "action": "No weather limits.",
+     "action": "No heat limits; keep water and shade available.",
      "hours": [
       [
        7,
@@ -2177,11 +2179,11 @@
     "rain_chance": 0,
     "storm": "low",
     "storm_from": "",
-    "wbgt_peak": 21.6,
-    "gust_hook_max": 7.6,
+    "wbgt_peak": 20.9,
+    "gust_hook_max": 8.7,
     "go_hours": {
+     "concrete": 6,
      "labour": 9,
-     "concrete": 9,
      "asphalt": 9,
      "crane": 9,
      "height": 9,
@@ -2538,8 +2540,8 @@
     "rain_chance": 0,
     "storm": "low",
     "storm_from": "",
-    "wbgt_peak": 22.7,
-    "gust_hook_max": 7.3,
+    "wbgt_peak": 22.8,
+    "gust_hook_max": 6.2,
     "go_hours": {
      "labour": 9,
      "concrete": 9,

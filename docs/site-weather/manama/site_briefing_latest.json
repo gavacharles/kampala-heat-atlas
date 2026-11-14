@@ -2,7 +2,7 @@
  "site": "Manama",
  "lat": 26.2285,
  "lon": 50.586,
- "issued": "2026-11-14 08:49",
+ "issued": "2026-11-14 12:07",
  "working": "07:00-17:00, lunch excluded (9 h)",
  "days": [
   {
@@ -362,8 +362,8 @@
     "rain_chance": 0,
     "storm": "low",
     "storm_from": "",
-    "wbgt_peak": 20.6,
-    "gust_hook_max": 17.1,
+    "wbgt_peak": 20.7,
+    "gust_hook_max": 17.4,
     "go_hours": {
      "concrete": 0,
      "crane": 0,

@@ -1,12 +1,12 @@
 # Site note · Manama
 
-Issued Saturday 14 November 2026, 08:49 (Asia/Bahrain). Site 26.2285, 50.5860. Working hours 07:00-17:00, lunch break excluded (9 h).
+Issued Saturday 14 November 2026, 12:07 (Asia/Bahrain). Site 26.2285, 50.5860. Working hours 07:00-17:00, lunch break excluded (9 h).
 
 ## Saturday 14 November
 
 **Some limits today: check your trade below.**
 
-Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 20.6 °C · gusts 17 m/s at hook height
+Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 20.7 °C · gusts 17 m/s at hook height
 
 - **Concrete pour — go with care.** Limited by fast drying. Pour with care: covers and curing ready.
 - **Crane lifts — go with care.** Limited by wind. Lift with care: check the anemometer before each lift.

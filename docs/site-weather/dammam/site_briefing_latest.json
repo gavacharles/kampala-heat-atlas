@@ -2,7 +2,7 @@
  "site": "Dammam",
  "lat": 26.4207,
  "lon": 50.0888,
- "issued": "2026-11-14 08:49",
+ "issued": "2026-11-14 12:08",
  "working": "07:00-17:00, lunch excluded (9 h)",
  "days": [
   {
@@ -57,6 +57,56 @@
       [
        16,
        1
+      ]
+     ]
+    },
+    {
+     "key": "crane",
+     "trade": "Crane lifts",
+     "status": "LIMITED",
+     "label": "go 07-12 h, 15-17 h only",
+     "go_hours": 7,
+     "windows": "07-12 h, 15-17 h",
+     "causes": [
+      "wind"
+     ],
+     "action": "Check the anemometer before each lift.",
+     "hours": [
+      [
+       7,
+       0
+      ],
+      [
+       8,
+       0
+      ],
+      [
+       9,
+       0
+      ],
+      [
+       10,
+       0
+      ],
+      [
+       11,
+       0
+      ],
+      [
+       13,
+       1
+      ],
+      [
+       14,
+       1
+      ],
+      [
+       15,
+       0
+      ],
+      [
+       16,
+       0
       ]
      ]
     },
@@ -161,54 +211,6 @@
     {
      "key": "asphalt",
      "trade": "Asphalt & surfacing",
-     "status": "GO",
-     "label": "no limits",
-     "go_hours": 9,
-     "windows": "07-12 h, 13-17 h",
-     "causes": [],
-     "action": "No weather limits.",
-     "hours": [
-      [
-       7,
-       0
-      ],
-      [
-       8,
-       0
-      ],
-      [
-       9,
-       0
-      ],
-      [
-       10,
-       0
-      ],
-      [
-       11,
-       0
-      ],
-      [
-       13,
-       0
-      ],
-      [
-       14,
-       0
-      ],
-      [
-       15,
-       0
-      ],
-      [
-       16,
-       0
-      ]
-     ]
-    },
-    {
-     "key": "crane",
-     "trade": "Crane lifts",
      "status": "GO",
      "label": "no limits",
      "go_hours": 9,
@@ -361,13 +363,13 @@
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 18.5,
-    "gust_hook_max": 15.0,
+    "gust_hook_max": 15.2,
     "go_hours": {
      "concrete": 3,
+     "crane": 7,
      "height": 2,
      "labour": 9,
      "asphalt": 9,
-     "crane": 9,
      "coatings": 9,
      "earthworks": 9
     }
@@ -1842,106 +1844,6 @@
    "headline": "Some limits today: check your trade below.",
    "rows": [
     {
-     "key": "crane",
-     "trade": "Crane lifts",
-     "status": "LIMITED",
-     "label": "go 08-12 h, 13-17 h only",
-     "go_hours": 8,
-     "windows": "08-12 h, 13-17 h",
-     "causes": [
-      "poor visibility"
-     ],
-     "action": "Check the anemometer before each lift.",
-     "hours": [
-      [
-       7,
-       1
-      ],
-      [
-       8,
-       0
-      ],
-      [
-       9,
-       0
-      ],
-      [
-       10,
-       0
-      ],
-      [
-       11,
-       0
-      ],
-      [
-       13,
-       0
-      ],
-      [
-       14,
-       0
-      ],
-      [
-       15,
-       0
-      ],
-      [
-       16,
-       0
-      ]
-     ]
-    },
-    {
-     "key": "height",
-     "trade": "Work at height",
-     "status": "LIMITED",
-     "label": "go 08-12 h, 13-17 h only",
-     "go_hours": 8,
-     "windows": "08-12 h, 13-17 h",
-     "causes": [
-      "poor visibility"
-     ],
-     "action": "Clear roofs and scaffolds before storms.",
-     "hours": [
-      [
-       7,
-       1
-      ],
-      [
-       8,
-       0
-      ],
-      [
-       9,
-       0
-      ],
-      [
-       10,
-       0
-      ],
-      [
-       11,
-       0
-      ],
-      [
-       13,
-       0
-      ],
-      [
-       14,
-       0
-      ],
-      [
-       15,
-       0
-      ],
-      [
-       16,
-       0
-      ]
-     ]
-    },
-    {
      "key": "coatings",
      "trade": "Painting & coatings",
      "status": "LIMITED",
@@ -2136,6 +2038,102 @@
      ]
     },
     {
+     "key": "crane",
+     "trade": "Crane lifts",
+     "status": "GO",
+     "label": "no limits",
+     "go_hours": 9,
+     "windows": "07-12 h, 13-17 h",
+     "causes": [],
+     "action": "No weather limits.",
+     "hours": [
+      [
+       7,
+       0
+      ],
+      [
+       8,
+       0
+      ],
+      [
+       9,
+       0
+      ],
+      [
+       10,
+       0
+      ],
+      [
+       11,
+       0
+      ],
+      [
+       13,
+       0
+      ],
+      [
+       14,
+       0
+      ],
+      [
+       15,
+       0
+      ],
+      [
+       16,
+       0
+      ]
+     ]
+    },
+    {
+     "key": "height",
+     "trade": "Work at height",
+     "status": "GO",
+     "label": "no limits",
+     "go_hours": 9,
+     "windows": "07-12 h, 13-17 h",
+     "causes": [],
+     "action": "No weather limits.",
+     "hours": [
+      [
+       7,
+       0
+      ],
+      [
+       8,
+       0
+      ],
+      [
+       9,
+       0
+      ],
+      [
+       10,
+       0
+      ],
+      [
+       11,
+       0
+      ],
+      [
+       13,
+       0
+      ],
+      [
+       14,
+       0
+      ],
+      [
+       15,
+       0
+      ],
+      [
+       16,
+       0
+      ]
+     ]
+    },
+    {
      "key": "earthworks",
      "trade": "Earthworks",
      "status": "GO",
@@ -2193,12 +2191,12 @@
     "wbgt_peak": 26.0,
     "gust_hook_max": 6.1,
     "go_hours": {
-     "crane": 8,
-     "height": 8,
      "coatings": 7,
      "labour": 9,
      "concrete": 9,
      "asphalt": 9,
+     "crane": 9,
+     "height": 9,
      "earthworks": 9
     }
    }

@@ -1,12 +1,12 @@
 # Site note · Kuwait City
 
-Issued Saturday 14 November 2026, 08:49 (Asia/Kuwait). Site 29.3759, 47.9774. Working hours 07:00-17:00, lunch break excluded (9 h).
+Issued Saturday 14 November 2026, 12:07 (Asia/Kuwait). Site 29.3759, 47.9774. Working hours 07:00-17:00, lunch break excluded (9 h).
 
 ## Saturday 14 November
 
 **Pour concrete 07-11 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 18.6 °C · gusts 12 m/s at hook height
+Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 18.7 °C · gusts 12 m/s at hook height
 
 - **Concrete pour — go 07-11 h only.** Limited by fast drying. Curing cover and windbreaks ready.
 - **No weather limits:** Outdoor labour, Asphalt & surfacing, Crane lifts, Work at height, Painting & coatings, Earthworks.
@@ -17,7 +17,7 @@ Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 18.6 °C · gusts 12 m/s
 
 **Pour concrete 07-11 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 20.4 °C · gusts 11 m/s at hook height
+Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 20.4 °C · gusts 12 m/s at hook height
 
 - **Concrete pour — go 07-11 h only.** Limited by fast drying. Curing cover and windbreaks ready.
 - **No weather limits:** Outdoor labour, Asphalt & surfacing, Crane lifts, Work at height, Painting & coatings, Earthworks.

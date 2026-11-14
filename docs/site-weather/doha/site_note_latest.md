@@ -1,16 +1,16 @@
 # Site note · Doha
 
-Issued Saturday 14 November 2026, 08:48 (Asia/Qatar). Site 25.2854, 51.5310. Working hours 07:00-17:00, lunch break excluded (9 h).
+Issued Saturday 14 November 2026, 12:07 (Asia/Qatar). Site 25.2854, 51.5310. Working hours 07:00-17:00, lunch break excluded (9 h).
 
 ## Saturday 14 November
 
 **Pour concrete 07-08 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 22.7 °C · gusts 16 m/s at hook height
+Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 22.9 °C · gusts 17 m/s at hook height
 
 - **Concrete pour — go 07-08 h only.** Limited by fast drying. Curing cover and windbreaks ready.
-- **Crane lifts — go 07-10 h only.** Limited by wind. Check the anemometer before each lift.
-- **Work at height — go 07-08 h only.** Limited by wind. Clear roofs and scaffolds before storms.
+- **Crane lifts — go 07-11 h only.** Limited by wind. Check the anemometer before each lift.
+- **Work at height — go 07-09 h only.** Limited by wind. Clear roofs and scaffolds before storms.
 - **No weather limits:** Outdoor labour, Asphalt & surfacing, Painting & coatings, Earthworks.
 - Dust: PM2.5 up to 46 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
