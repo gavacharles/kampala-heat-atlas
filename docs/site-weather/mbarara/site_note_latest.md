@@ -1,6 +1,6 @@
 # Site note · Mbarara
 
-Issued Saturday 14 November 2026, 08:18 (Africa/Kampala). Site -0.6072, 30.6545. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Saturday 14 November 2026, 08:48 (Africa/Kampala). Site -0.6072, 30.6545. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Saturday 14 November
 
@@ -14,7 +14,6 @@ Rain 1 mm (chance up to 87 %) · storms low · WBGT peak 23.7 °C · gusts 7 m/s
 - **Work at height — go 08-13 h, 16-17 h only.** Limited by rain. Clear roofs and scaffolds before storms.
 - **Painting & coatings — go 10-13 h only.** Limited by rain, humidity or dew. Check the surface is 3 °C above dew point.
 - **No weather limits:** Outdoor labour, Crane lifts.
-- UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.
 - Dust: PM2.5 up to 39 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Sunday 15 November

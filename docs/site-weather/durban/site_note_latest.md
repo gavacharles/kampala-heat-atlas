@@ -1,6 +1,6 @@
 # Site note · Durban
 
-Issued Saturday 14 November 2026, 07:11 (Africa/Johannesburg). Site -29.8587, 31.0218. Working hours 07:00-17:00, lunch break excluded (9 h).
+Issued Saturday 14 November 2026, 07:48 (Africa/Johannesburg). Site -29.8587, 31.0218. Working hours 07:00-17:00, lunch break excluded (9 h).
 
 ## Saturday 14 November
 
@@ -28,7 +28,7 @@ Rain 7 mm (chance up to 98 %) · storms likely · WBGT peak 24.2 °C · gusts 15
 - **Painting & coatings — go 09-10 h only.** Limited by humidity or dew, rain. Check the surface is 3 °C above dew point.
 - **Earthworks — go with care.** Limited by wet ground, rain. Ground soft: protect formation and stockpiles. Ground wet after 12 mm in 24 h.
 - **No weather limits:** Outdoor labour.
-- UV index up to 8 (very high): hats with neck cover, long sleeves, sunscreen.
+- UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.
 
 ## Monday 16 November
 

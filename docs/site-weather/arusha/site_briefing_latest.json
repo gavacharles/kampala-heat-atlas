@@ -2,7 +2,7 @@
  "site": "Arusha",
  "lat": -3.3869,
  "lon": 36.683,
- "issued": "2026-11-14 08:11",
+ "issued": "2026-11-14 08:48",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -1036,9 +1036,7 @@
      ]
     }
    ],
-   "extras": [
-    "UV index up to 8 (very high): hats with neck cover, long sleeves, sunscreen."
-   ],
+   "extras": [],
    "facts": {
     "rain_mm": 22.8,
     "rain_chance": 92,
@@ -2077,7 +2075,7 @@
     }
    ],
    "extras": [
-    "UV index up to 8 (very high): hats with neck cover, long sleeves, sunscreen."
+    "UV index up to 10 (very high): hats with neck cover, long sleeves, sunscreen."
    ],
    "facts": {
     "rain_mm": 2.2,
@@ -2420,9 +2418,7 @@
      ]
     }
    ],
-   "extras": [
-    "UV index up to 10 (very high): hats with neck cover, long sleeves, sunscreen."
-   ],
+   "extras": [],
    "facts": {
     "rain_mm": 3.8,
     "rain_chance": 69,

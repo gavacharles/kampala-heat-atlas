@@ -1,6 +1,6 @@
 # Site note · Mwanza
 
-Issued Saturday 14 November 2026, 08:11 (Africa/Dar_es_Salaam). Site -2.5164, 32.9175. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Saturday 14 November 2026, 08:48 (Africa/Dar_es_Salaam). Site -2.5164, 32.9175. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Saturday 14 November
 
@@ -15,7 +15,6 @@ Rain 5 mm (chance up to 65 %) · storms possible · WBGT peak 24.7 °C · gusts 
 - **Earthworks — STOP.** Limited by wet ground, rain. Ground too wet: protect formation, keep plant off soft ground. Ground wet after 8 mm in 24 h.
 - **Crane lifts — go 08-13 h only.** Limited by storms. Check the anemometer before each lift.
 - **No weather limits:** Outdoor labour.
-- UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.
 
 ## Sunday 15 November
 
@@ -45,6 +44,7 @@ Rain 7 mm (chance up to 53 %) · storms possible · WBGT peak 27.4 °C · gusts 
 - **Work at height — go 08-13 h, 14-15 h only.** Limited by rain, storms. Clear roofs and scaffolds before storms.
 - **Painting & coatings — go 11-13 h, 14-15 h only.** Limited by humidity or dew, rain. Check the surface is 3 °C above dew point.
 - **No weather limits:** Outdoor labour.
+- UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.
 
 ## Outlook
 

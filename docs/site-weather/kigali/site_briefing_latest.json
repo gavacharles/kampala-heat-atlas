@@ -2,7 +2,7 @@
  "site": "Kigali",
  "lat": -1.9441,
  "lon": 30.0619,
- "issued": "2026-11-14 07:11",
+ "issued": "2026-11-14 07:48",
  "working": "07:00-17:00, lunch excluded (9 h)",
  "days": [
   {
@@ -362,9 +362,7 @@
      ]
     }
    ],
-   "extras": [
-    "UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen."
-   ],
+   "extras": [],
    "facts": {
     "rain_mm": 5.6,
     "rain_chance": 94,
@@ -1124,7 +1122,7 @@
     }
    ],
    "extras": [
-    "UV index up to 8 (very high): hats with neck cover, long sleeves, sunscreen.",
+    "UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.",
     "Dust: PM2.5 up to 50 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
    ],
    "facts": {
@@ -1507,7 +1505,6 @@
     }
    ],
    "extras": [
-    "UV index up to 8 (very high): hats with neck cover, long sleeves, sunscreen.",
     "Dust: PM2.5 up to 53 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
    ],
    "facts": {
@@ -2268,7 +2265,9 @@
      ]
     }
    ],
-   "extras": [],
+   "extras": [
+    "UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen."
+   ],
    "facts": {
     "rain_mm": 4.2,
     "rain_chance": 90,

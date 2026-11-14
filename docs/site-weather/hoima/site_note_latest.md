@@ -1,6 +1,6 @@
 # Site note · Hoima
 
-Issued Saturday 14 November 2026, 08:18 (Africa/Kampala). Site 1.4331, 31.3524. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Saturday 14 November 2026, 08:48 (Africa/Kampala). Site 1.4331, 31.3524. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Saturday 14 November
 
@@ -15,7 +15,7 @@ Rain 7 mm (chance up to 100 %) · storms possible · WBGT peak 26.1 °C · gusts
 - **Work at height — go 08-12 h only.** Limited by rain, storms. Clear roofs and scaffolds before storms.
 - **Earthworks — go 12-13 h only.** Limited by wet ground, rain. Protect formation and stockpiles. Ground wet after 7 mm in 24 h.
 - **No weather limits:** Outdoor labour.
-- UV index up to 8 (very high): hats with neck cover, long sleeves, sunscreen.
+- UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.
 
 ## Sunday 15 November
 

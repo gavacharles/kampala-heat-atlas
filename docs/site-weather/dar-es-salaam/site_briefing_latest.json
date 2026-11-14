@@ -2,7 +2,7 @@
  "site": "Dar es Salaam",
  "lat": -6.7924,
  "lon": 39.2083,
- "issued": "2026-11-14 08:11",
+ "issued": "2026-11-14 08:48",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -338,7 +338,7 @@
     }
    ],
    "extras": [
-    "UV index up to 8 (very high): hats with neck cover, long sleeves, sunscreen."
+    "UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen."
    ],
    "facts": {
     "rain_mm": 3.7,
@@ -1042,7 +1042,7 @@
     }
    ],
    "extras": [
-    "UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen."
+    "UV index up to 8 (very high): hats with neck cover, long sleeves, sunscreen."
    ],
    "facts": {
     "rain_mm": 2.7,
@@ -2450,7 +2450,7 @@
     }
    ],
    "extras": [
-    "UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen."
+    "UV index up to 8 (very high): hats with neck cover, long sleeves, sunscreen."
    ],
    "facts": {
     "rain_mm": 19.6,

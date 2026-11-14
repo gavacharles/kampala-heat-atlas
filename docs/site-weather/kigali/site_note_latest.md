@@ -1,6 +1,6 @@
 # Site note · Kigali
 
-Issued Saturday 14 November 2026, 07:11 (Africa/Kigali). Site -1.9441, 30.0619. Working hours 07:00-17:00, lunch break excluded (9 h).
+Issued Saturday 14 November 2026, 07:48 (Africa/Kigali). Site -1.9441, 30.0619. Working hours 07:00-17:00, lunch break excluded (9 h).
 
 ## Saturday 14 November
 
@@ -15,7 +15,6 @@ Rain 6 mm (chance up to 94 %) · storms possible · WBGT peak 25.4 °C · gusts 
 - **Work at height — go 07-12 h, 14-17 h only.** Limited by storms. Clear roofs and scaffolds before storms.
 - **Painting & coatings — go 10-12 h only.** Limited by rain, humidity or dew. Check the surface is 3 °C above dew point.
 - **No weather limits:** Outdoor labour.
-- UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.
 
 ## Sunday 15 November
 
@@ -46,7 +45,7 @@ Rain 4 mm (chance up to 94 %) · storms likely · WBGT peak 24.4 °C · gusts 10
 - **Painting & coatings — go 10-12 h, 13-14 h only.** Limited by humidity or dew, rain. Check the surface is 3 °C above dew point.
 - **Earthworks — go 07-12 h, 13-16 h only.** Limited by rain. Protect formation and stockpiles.
 - **No weather limits:** Outdoor labour.
-- UV index up to 8 (very high): hats with neck cover, long sleeves, sunscreen.
+- UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.
 - Dust: PM2.5 up to 50 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Outlook

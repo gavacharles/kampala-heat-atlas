@@ -1,6 +1,6 @@
 # Site note · Maputo
 
-Issued Saturday 14 November 2026, 07:11 (Africa/Maputo). Site -25.9692, 32.5732. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Saturday 14 November 2026, 07:50 (Africa/Maputo). Site -25.9692, 32.5732. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Saturday 14 November
 
@@ -15,7 +15,6 @@ Rain 5 mm (chance up to 98 %) · storms possible · WBGT peak 28.8 °C · gusts 
 - **Outdoor labour — work/rest needed.** Work/rest cycles 10-13 h: at the peak, 45 min work / 15 min rest each hour. Water every 20 min, shade for breaks.
 - **Earthworks — go 08-13 h, 15-17 h only.** Limited by rain. Protect formation and stockpiles.
 - **Crane lifts — go with care.** Limited by storms. Lift with care: check the anemometer before each lift.
-- UV index up to 8 (very high): hats with neck cover, long sleeves, sunscreen.
 
 ## Sunday 15 November
 

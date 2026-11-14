@@ -1,6 +1,6 @@
 # Site note · Arusha
 
-Issued Saturday 14 November 2026, 08:11 (Africa/Dar_es_Salaam). Site -3.3869, 36.6830. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Saturday 14 November 2026, 08:48 (Africa/Dar_es_Salaam). Site -3.3869, 36.6830. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Saturday 14 November
 
@@ -43,7 +43,6 @@ Rain 23 mm (chance up to 92 %) · storms likely · WBGT peak 24.8 °C · gusts 9
 - **Crane lifts — go 08-13 h, 16-17 h only.** Limited by storms. Check the anemometer before each lift.
 - **Work at height — go 08-11 h only.** Limited by rain, storms. Clear roofs and scaffolds before storms.
 - **No weather limits:** Outdoor labour.
-- UV index up to 8 (very high): hats with neck cover, long sleeves, sunscreen.
 
 ## Outlook
 

@@ -2,7 +2,7 @@
  "site": "Lusaka",
  "lat": -15.3875,
  "lon": 28.3228,
- "issued": "2026-11-14 07:11",
+ "issued": "2026-11-14 07:48",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -1738,7 +1738,7 @@
     }
    ],
    "extras": [
-    "UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen."
+    "UV index up to 8 (very high): hats with neck cover, long sleeves, sunscreen."
    ],
    "facts": {
     "rain_mm": 3.6,
@@ -2088,7 +2088,9 @@
      ]
     }
    ],
-   "extras": [],
+   "extras": [
+    "UV index up to 11 (very high): hats with neck cover, long sleeves, sunscreen."
+   ],
    "facts": {
     "rain_mm": 2.4,
     "rain_chance": 66,
@@ -2433,7 +2435,9 @@
      ]
     }
    ],
-   "extras": [],
+   "extras": [
+    "UV index up to 10 (very high): hats with neck cover, long sleeves, sunscreen."
+   ],
    "facts": {
     "rain_mm": 3.6,
     "rain_chance": 62,

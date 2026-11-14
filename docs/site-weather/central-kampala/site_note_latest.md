@@ -1,6 +1,6 @@
 # Site note · Central Kampala
 
-Issued Saturday 14 November 2026, 08:18 (Africa/Kampala). Site 0.3136, 32.5811. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Saturday 14 November 2026, 08:48 (Africa/Kampala). Site 0.3136, 32.5811. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Saturday 14 November
 
@@ -15,7 +15,7 @@ Rain 14 mm (chance up to 99 %) · storms likely · WBGT peak 26.5 °C · gusts 1
 - **Crane lifts — go 08-11 h, 14-16 h only.** Limited by storms. Check the anemometer before each lift.
 - **Work at height — go 08-10 h only.** Limited by rain, storms. Clear roofs and scaffolds before storms.
 - **No weather limits:** Outdoor labour.
-- UV index up to 8 (very high): hats with neck cover, long sleeves, sunscreen.
+- UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.
 - Dust: PM2.5 up to 69 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Sunday 15 November
@@ -31,6 +31,7 @@ Rain 1 mm (chance up to 78 %) · storms possible · WBGT peak 25.4 °C · gusts 
 - **Painting & coatings — go 16-17 h only.** Limited by rain, humidity or dew. Check the surface is 3 °C above dew point.
 - **Earthworks — go 14-17 h only.** Limited by wet ground. Protect formation and stockpiles. Ground wet after 7 mm in 24 h.
 - **No weather limits:** Outdoor labour.
+- UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.
 - Dust: PM2.5 up to 55 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Monday 16 November
@@ -46,7 +47,7 @@ Rain 8 mm (chance up to 90 %) · storms possible · WBGT peak 26.2 °C · gusts 
 - **Earthworks — STOP.** Limited by wet ground, rain. Ground too wet: protect formation, keep plant off soft ground. Ground wet after 6 mm in 24 h.
 - **Crane lifts — go 08-10 h only.** Limited by storms. Check the anemometer before each lift.
 - **No weather limits:** Outdoor labour.
-- UV index up to 8 (very high): hats with neck cover, long sleeves, sunscreen.
+- UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.
 - Dust: PM2.5 up to 79 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Outlook

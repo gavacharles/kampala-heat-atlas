@@ -1,6 +1,6 @@
 # Site note · Abidjan
 
-Issued Saturday 14 November 2026, 05:18 (Africa/Abidjan). Site 5.3600, -4.0083. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Saturday 14 November 2026, 05:48 (Africa/Abidjan). Site 5.3600, -4.0083. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Saturday 14 November
 
@@ -43,7 +43,6 @@ Rain 4 mm (chance up to 100 %) · storms likely · WBGT peak 30.0 °C · gusts 1
 - **Work at height — go 08-12 h only.** Limited by rain, storms. Clear roofs and scaffolds before storms.
 - **Painting & coatings — go 08-12 h only.** Limited by rain. Check the surface is 3 °C above dew point.
 - **Earthworks — go 08-12 h, 16-17 h only.** Limited by rain. Protect formation and stockpiles.
-- UV index up to 8 (very high): hats with neck cover, long sleeves, sunscreen.
 
 ## Outlook
 
