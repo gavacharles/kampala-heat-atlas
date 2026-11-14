@@ -605,8 +605,13 @@ idx = pd.DataFrame(rows)
 idx.to_csv(SITE / "archive" / "monthly_index.csv", index=False)
 
 # ---------------------------------------------------------------- page
+SHOW_COSTS = False   # CiO cost line hidden until the cost forecasts are reworked (2026-11-14); True brings it back
+
+
 def cost_line():
     """Construction input costs for this country from CiO (scripts/32_market_link.py saves them), with a link to the brief."""
+    if not SHOW_COSTS:
+        return ""
     f = OUT / "market" / "costs.json"
     if not f.exists():
         return ""

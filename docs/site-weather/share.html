@@ -59,7 +59,7 @@ async function load(){
   let towns = [];
   try { const tj = await (await fetch("towns_today.json", {cache:"no-store"})).json(); towns = tj.towns; ACTS = tj.activities || []; } catch(e){}
   TOWNS = towns;
-  try { BRIEFS = (await (await fetch("market/index.json", {cache:"no-store"})).json()).countries || {}; } catch(e){}
+  // site and market briefs (CiO costs) hidden until the cost side is ready; BRIEFS stays empty
   if (!ACTS.length) ACTS = [{key:"concrete", name:"Concrete pour"}];
   const act = $("#act");
   act.innerHTML = ACTS.map(a => `<option value="${a.key}">${a.name}</option>`).join("");

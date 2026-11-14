@@ -266,8 +266,7 @@ nav{{display:flex;gap:8px;flex-wrap:wrap}} nav a{{color:var(--ink);text-decorati
 <p class="lede">For contractors and site managers: hour-by-hour workable time for seven trades, a daily site note and a
 month-by-month weather record against each town's 1991-2020 climate, for 34 towns and cities across East, West and Southern Africa and the Gulf. Refreshed every morning. Pick the town nearest
 your site; to add a site, send its coordinates.</p>
-<p><a href="market/"><strong>Site and market briefs</strong></a> (weather time and construction costs, per country, weekly) ·
-<a href="map.html"><strong>Open the map</strong></a> (click any town, or anywhere in Uganda, for a live site check) ·
+<p><a href="map.html"><strong>Open the map</strong></a> (click any town, or anywhere in Uganda, for a live site check) ·
 <a href="share.html"><strong>Share today</strong></a> (cards and captions, one tap to WhatsApp)</p>
 <img class="nat" src="uganda_week_4x5.png" alt="Concrete pour windows this week across Uganda">
 {cards}

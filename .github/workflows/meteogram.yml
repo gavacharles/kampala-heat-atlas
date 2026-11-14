@@ -65,8 +65,9 @@ jobs:
       - name: Unpack the regions
         run: for f in packs/*.tgz; do tar xzf "$f" -C docs/site-weather; done
       - run: python scripts/31_site_weather_all.py docs/site-weather --assemble
-      - run: python scripts/32_market_link.py docs/site-weather      # site and market briefs (weather + CiO costs)
-        continue-on-error: true
+      # site and market briefs (weather + CiO costs): paused 2026-11-14 until the cost side is reworked
+      # - run: python scripts/32_market_link.py docs/site-weather
+      #   continue-on-error: true
       - name: Commit the record (text only; images are deployed, not committed)
         run: |
           git config user.name "meteogram-bot"
