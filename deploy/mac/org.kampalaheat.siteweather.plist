@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>org.kampalaheat.siteweather</string>
+  <!-- Starts the site weather run on GitHub each morning; GitHub's own schedule has not fired reliably.
+       If the Mac is asleep at 05:15, launchd runs it when the Mac wakes.
+       Install:   cp deploy/mac/org.kampalaheat.siteweather.plist ~/Library/LaunchAgents/ &&
+                  launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/org.kampalaheat.siteweather.plist
+       Remove:    launchctl bootout gui/$(id -u) ~/Library/LaunchAgents/org.kampalaheat.siteweather.plist -->
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string><string>-lc</string>
+    <string>gh workflow run meteogram.yml --repo gavacharles/kampala-heat-atlas &gt;&gt; "$HOME/Library/Logs/siteweather-trigger.log" 2&gt;&amp;1; date &gt;&gt; "$HOME/Library/Logs/siteweather-trigger.log"</string>
+  </array>
+  <key>StartCalendarInterval</key>
+  <dict><key>Hour</key><integer>5</integer><key>Minute</key><integer>15</integer></dict>
+</dict>
+</plist>
