@@ -1,6 +1,6 @@
 # Site note · Lagos
 
-Issued Saturday 14 November 2026, 10:07 (Africa/Lagos). Site 6.5244, 3.3792. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Saturday 14 November 2026, 11:53 (Africa/Lagos). Site 6.5244, 3.3792. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Saturday 14 November
 
@@ -30,7 +30,7 @@ Rain 2 mm (chance up to 98 %) · storms likely · WBGT peak 31.1 °C · gusts 9 
 - **Work at height — go 08-09 h, 10-13 h only.** Limited by rain, storms. Clear roofs and scaffolds before storms.
 - **Painting & coatings — go 12-13 h only.** Limited by humidity or dew, rain. Check the surface is 3 °C above dew point.
 - **Earthworks — go 08-13 h, 16-17 h only.** Limited by rain. Protect formation and stockpiles.
-- Dust: PM2.5 up to 40 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Dust: PM2.5 up to 41 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Monday 16 November
 
@@ -45,7 +45,7 @@ Rain 1 mm (chance up to 94 %) · storms likely · WBGT peak 31.6 °C · gusts 10
 - **Work at height — go 08-12 h only.** Limited by storms, rain. Clear roofs and scaffolds before storms.
 - **Painting & coatings — go 11-12 h only.** Limited by rain, humidity or dew. Check the surface is 3 °C above dew point.
 - **Earthworks — go 08-13 h, 14-15 h only.** Limited by rain. Protect formation and stockpiles.
-- Dust: PM2.5 up to 37 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Dust: PM2.5 up to 39 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Outlook
 

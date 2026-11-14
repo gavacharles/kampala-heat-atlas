@@ -1,6 +1,6 @@
 # Site note · Mbarara
 
-Issued Saturday 14 November 2026, 12:07 (Africa/Kampala). Site -0.6072, 30.6545. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Saturday 14 November 2026, 14:00 (Africa/Kampala). Site -0.6072, 30.6545. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Saturday 14 November
 
@@ -15,7 +15,6 @@ Rain 4 mm (chance up to 87 %) · storms possible · WBGT peak 23.7 °C · gusts 
 - **Crane lifts — go 08-13 h, 16-17 h only.** Limited by storms. Check the anemometer before each lift.
 - **Work at height — go 09-11 h only.** Limited by rain, storms. Clear roofs and scaffolds before storms.
 - **No weather limits:** Outdoor labour.
-- Dust: PM2.5 up to 39 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Sunday 15 November
 
@@ -31,7 +30,6 @@ Rain 4 mm (chance up to 76 %) · storms likely · WBGT peak 25.4 °C · gusts 10
 - **Earthworks — go 08-13 h, 14-15 h only.** Limited by rain. Protect formation and stockpiles.
 - **No weather limits:** Outdoor labour.
 - UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.
-- Dust: PM2.5 up to 53 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Monday 16 November
 
@@ -47,7 +45,7 @@ Rain 2 mm (chance up to 90 %) · storms likely · WBGT peak 24.8 °C · gusts 9 
 - **Earthworks — go 08-13 h, 14-15 h only.** Limited by rain. Protect formation and stockpiles.
 - **No weather limits:** Outdoor labour.
 - UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.
-- Dust: PM2.5 up to 55 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Dust: PM2.5 up to 36 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Outlook
 

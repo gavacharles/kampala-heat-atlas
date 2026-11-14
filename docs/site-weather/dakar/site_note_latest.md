@@ -1,6 +1,6 @@
 # Site note · Dakar
 
-Issued Saturday 14 November 2026, 09:07 (Africa/Dakar). Site 14.7167, -17.4677. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Saturday 14 November 2026, 10:53 (Africa/Dakar). Site 14.7167, -17.4677. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Saturday 14 November
 
@@ -39,6 +39,7 @@ Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 28.3 °C · gusts 14 m/s
 - **Work at height — go 08-09 h only.** Limited by wind. Clear roofs and scaffolds before storms.
 - **Painting & coatings — go 10-13 h, 14-17 h only.** Limited by humidity or dew. Check the surface is 3 °C above dew point.
 - **No weather limits:** Asphalt & surfacing, Crane lifts, Earthworks.
+- Dust: PM2.5 up to 36 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Outlook
 

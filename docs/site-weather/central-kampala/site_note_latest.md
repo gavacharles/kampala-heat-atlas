@@ -1,6 +1,6 @@
 # Site note · Central Kampala
 
-Issued Saturday 14 November 2026, 12:07 (Africa/Kampala). Site 0.3136, 32.5811. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Saturday 14 November 2026, 14:00 (Africa/Kampala). Site 0.3136, 32.5811. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Saturday 14 November
 
@@ -16,7 +16,7 @@ Rain 11 mm (chance up to 99 %) · storms likely · WBGT peak 24.9 °C · gusts 8
 - **Work at height — go 08-10 h only.** Limited by storms, rain. Clear roofs and scaffolds before storms.
 - **No weather limits:** Outdoor labour.
 - UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.
-- Dust: PM2.5 up to 69 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Dust: PM2.5 up to 60 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Sunday 15 November
 
@@ -32,7 +32,7 @@ Rain 3 mm (chance up to 78 %) · storms likely · WBGT peak 26.7 °C · gusts 10
 - **Earthworks — go 16-17 h only.** Limited by wet ground, rain. Protect formation and stockpiles. Ground wet after 6 mm in 24 h.
 - **No weather limits:** Outdoor labour.
 - UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.
-- Dust: PM2.5 up to 55 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Dust: PM2.5 up to 64 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Monday 16 November
 
@@ -48,7 +48,7 @@ Rain 11 mm (chance up to 90 %) · storms possible · WBGT peak 25.3 °C · gusts
 - **Crane lifts — go 08-10 h, 12-13 h only.** Limited by storms. Check the anemometer before each lift.
 - **No weather limits:** Outdoor labour.
 - UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.
-- Dust: PM2.5 up to 79 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Dust: PM2.5 up to 89 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Outlook
 

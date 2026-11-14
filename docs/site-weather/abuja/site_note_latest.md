@@ -1,6 +1,6 @@
 # Site note · Abuja
 
-Issued Saturday 14 November 2026, 10:07 (Africa/Lagos). Site 9.0765, 7.3986. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Saturday 14 November 2026, 11:53 (Africa/Lagos). Site 9.0765, 7.3986. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Saturday 14 November
 
@@ -21,7 +21,7 @@ Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 28.1 °C · gusts 7 m/s 
 - **Outdoor labour — work/rest needed.** Work/rest cycles 12-13 h: at the peak, 45 min work / 15 min rest each hour. Water every 20 min, shade for breaks.
 - **Concrete pour — go 08-13 h only.** Limited by fast drying. Curing cover and windbreaks ready.
 - **No weather limits:** Asphalt & surfacing, Crane lifts, Work at height, Painting & coatings, Earthworks.
-- Dust: PM2.5 up to 87 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Dust: PM2.5 up to 86 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Monday 16 November
 
@@ -32,7 +32,7 @@ Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 28.1 °C · gusts 6 m/s 
 - **Outdoor labour — work/rest needed.** Work/rest cycles 14-15 h: at the peak, 45 min work / 15 min rest each hour. Water every 20 min, shade for breaks.
 - **Concrete pour — go 08-11 h only.** Limited by fast drying. Curing cover and windbreaks ready.
 - **No weather limits:** Asphalt & surfacing, Crane lifts, Work at height, Painting & coatings, Earthworks.
-- Dust: PM2.5 up to 103 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Dust: PM2.5 up to 105 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Outlook
 

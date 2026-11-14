@@ -1,6 +1,6 @@
 # Site note · Muscat
 
-Issued Saturday 14 November 2026, 13:07 (Asia/Muscat). Site 23.5880, 58.3829. Working hours 07:00-17:00, lunch break excluded (9 h).
+Issued Saturday 14 November 2026, 14:53 (Asia/Muscat). Site 23.5880, 58.3829. Working hours 07:00-17:00, lunch break excluded (9 h).
 
 ## Saturday 14 November
 

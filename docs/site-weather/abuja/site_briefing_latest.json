@@ -2,7 +2,7 @@
  "site": "Abuja",
  "lat": 9.0765,
  "lon": 7.3986,
- "issued": "2026-11-14 10:07",
+ "issued": "2026-11-14 11:53",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -661,7 +661,7 @@
     }
    ],
    "extras": [
-    "Dust: PM2.5 up to 87 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
+    "Dust: PM2.5 up to 86 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
    ],
    "facts": {
     "rain_mm": 0.0,
@@ -1000,7 +1000,7 @@
     }
    ],
    "extras": [
-    "Dust: PM2.5 up to 103 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
+    "Dust: PM2.5 up to 105 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
    ],
    "facts": {
     "rain_mm": 0.0,
@@ -1339,8 +1339,8 @@
     }
    ],
    "extras": [
-    "Dust: PM2.5 up to 119 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks.",
-    "Dust storm risk (dust up to 115 \u00b5g/m\u00b3): goggles and masks, secure sheeting and loose materials, stop lifts if the operator loses sight of the load."
+    "Dust: PM2.5 up to 117 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks.",
+    "Dust storm risk (dust up to 107 \u00b5g/m\u00b3): goggles and masks, secure sheeting and loose materials, stop lifts if the operator loses sight of the load."
    ],
    "facts": {
     "rain_mm": 0.0,
@@ -1679,8 +1679,8 @@
     }
    ],
    "extras": [
-    "Dust: PM2.5 up to 114 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks.",
-    "Dust storm risk (dust up to 110 \u00b5g/m\u00b3): goggles and masks, secure sheeting and loose materials, stop lifts if the operator loses sight of the load."
+    "Dust: PM2.5 up to 119 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks.",
+    "Dust storm risk (dust up to 111 \u00b5g/m\u00b3): goggles and masks, secure sheeting and loose materials, stop lifts if the operator loses sight of the load."
    ],
    "facts": {
     "rain_mm": 0.0,

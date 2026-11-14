@@ -2,7 +2,7 @@
  "site": "Doha",
  "lat": 25.2854,
  "lon": 51.531,
- "issued": "2026-11-14 12:07",
+ "issued": "2026-11-14 13:53",
  "working": "07:00-17:00, lunch excluded (9 h)",
  "days": [
   {
@@ -354,15 +354,15 @@
     }
    ],
    "extras": [
-    "Dust: PM2.5 up to 46 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
+    "Dust: PM2.5 up to 42 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
    ],
    "facts": {
     "rain_mm": 0.0,
     "rain_chance": 0,
     "storm": "low",
     "storm_from": "",
-    "wbgt_peak": 22.9,
-    "gust_hook_max": 16.8,
+    "wbgt_peak": 23.1,
+    "gust_hook_max": 16.3,
     "go_hours": {
      "concrete": 1,
      "crane": 4,
@@ -433,9 +433,9 @@
      "key": "height",
      "trade": "Work at height",
      "status": "LIMITED",
-     "label": "go 07-09 h only",
-     "go_hours": 2,
-     "windows": "07-09 h",
+     "label": "go 07-11 h only",
+     "go_hours": 4,
+     "windows": "07-11 h",
      "causes": [
       "wind"
      ],
@@ -451,11 +451,11 @@
       ],
       [
        9,
-       1
+       0
       ],
       [
        10,
-       1
+       0
       ],
       [
        11,
@@ -721,8 +721,8 @@
     }
    ],
    "extras": [
-    "Dust: PM2.5 up to 62 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks.",
-    "Dust storm risk (dust up to 198 \u00b5g/m\u00b3): goggles and masks, secure sheeting and loose materials, stop lifts if the operator loses sight of the load."
+    "Dust: PM2.5 up to 60 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks.",
+    "Dust storm risk (dust up to 194 \u00b5g/m\u00b3): goggles and masks, secure sheeting and loose materials, stop lifts if the operator loses sight of the load."
    ],
    "facts": {
     "rain_mm": 0.0,
@@ -730,10 +730,10 @@
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 24.3,
-    "gust_hook_max": 14.9,
+    "gust_hook_max": 14.2,
     "go_hours": {
      "concrete": 2,
-     "height": 2,
+     "height": 4,
      "labour": 9,
      "asphalt": 9,
      "crane": 9,
@@ -1087,8 +1087,8 @@
     }
    ],
    "extras": [
-    "Dust: PM2.5 up to 57 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks.",
-    "Dust storm risk (dust up to 219 \u00b5g/m\u00b3): goggles and masks, secure sheeting and loose materials, stop lifts if the operator loses sight of the load."
+    "Dust: PM2.5 up to 58 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks.",
+    "Dust storm risk (dust up to 228 \u00b5g/m\u00b3): goggles and masks, secure sheeting and loose materials, stop lifts if the operator loses sight of the load."
    ],
    "facts": {
     "rain_mm": 0.0,
@@ -1096,7 +1096,7 @@
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 24.5,
-    "gust_hook_max": 12.2,
+    "gust_hook_max": 11.7,
     "go_hours": {
      "concrete": 2,
      "labour": 9,
@@ -1111,15 +1111,15 @@
   {
    "date": "2026-11-17",
    "day": "Tuesday 17 November",
-   "headline": "Pour concrete 07-09 h; fast drying limits the rest of the day.",
+   "headline": "Pour concrete 13-17 h; fast drying limits the rest of the day.",
    "rows": [
     {
      "key": "concrete",
      "trade": "Concrete pour",
      "status": "LIMITED",
-     "label": "go 07-09 h, 16-17 h only",
-     "go_hours": 3,
-     "windows": "07-09 h, 16-17 h",
+     "label": "go 07-10 h, 13-17 h only",
+     "go_hours": 7,
+     "windows": "07-10 h, 13-17 h",
      "causes": [
       "fast drying"
      ],
@@ -1135,7 +1135,7 @@
       ],
       [
        9,
-       1
+       0
       ],
       [
        10,
@@ -1147,15 +1147,15 @@
       ],
       [
        13,
-       1
+       0
       ],
       [
        14,
-       1
+       0
       ],
       [
        15,
-       1
+       0
       ],
       [
        16,
@@ -1453,17 +1453,17 @@
     }
    ],
    "extras": [
-    "Dust: PM2.5 up to 47 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
+    "Dust: PM2.5 up to 46 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
    ],
    "facts": {
     "rain_mm": 0.0,
     "rain_chance": 0,
     "storm": "low",
     "storm_from": "",
-    "wbgt_peak": 25.2,
-    "gust_hook_max": 9.9,
+    "wbgt_peak": 25.5,
+    "gust_hook_max": 8.9,
     "go_hours": {
-     "concrete": 3,
+     "concrete": 7,
      "labour": 9,
      "asphalt": 9,
      "crane": 9,
@@ -1482,9 +1482,9 @@
      "key": "concrete",
      "trade": "Concrete pour",
      "status": "LIMITED",
-     "label": "go 07-12 h only",
-     "go_hours": 5,
-     "windows": "07-12 h",
+     "label": "go 07-12 h, 13-15 h, 16-17 h only",
+     "go_hours": 8,
+     "windows": "07-12 h, 13-15 h, 16-17 h",
      "causes": [
       "fast drying"
      ],
@@ -1512,11 +1512,11 @@
       ],
       [
        13,
-       1
+       0
       ],
       [
        14,
-       1
+       0
       ],
       [
        15,
@@ -1524,7 +1524,7 @@
       ],
       [
        16,
-       1
+       0
       ]
      ]
     },
@@ -1532,9 +1532,9 @@
      "key": "coatings",
      "trade": "Painting & coatings",
      "status": "LIMITED",
-     "label": "go 09-12 h, 13-17 h only",
-     "go_hours": 7,
-     "windows": "09-12 h, 13-17 h",
+     "label": "go 08-12 h, 13-17 h only",
+     "go_hours": 8,
+     "windows": "08-12 h, 13-17 h",
      "causes": [
       "humidity or dew"
      ],
@@ -1542,11 +1542,11 @@
      "hours": [
       [
        7,
-       2
+       1
       ],
       [
        8,
-       1
+       0
       ],
       [
        9,
@@ -1825,11 +1825,11 @@
     "rain_chance": 0,
     "storm": "low",
     "storm_from": "",
-    "wbgt_peak": 26.9,
-    "gust_hook_max": 7.8,
+    "wbgt_peak": 27.2,
+    "gust_hook_max": 6.4,
     "go_hours": {
-     "concrete": 5,
-     "coatings": 7,
+     "concrete": 8,
+     "coatings": 8,
      "labour": 9,
      "asphalt": 9,
      "crane": 9,
@@ -1890,6 +1890,56 @@
       [
        16,
        1
+      ]
+     ]
+    },
+    {
+     "key": "coatings",
+     "trade": "Painting & coatings",
+     "status": "LIMITED",
+     "label": "go 08-12 h, 13-17 h only",
+     "go_hours": 8,
+     "windows": "08-12 h, 13-17 h",
+     "causes": [
+      "humidity or dew"
+     ],
+     "action": "Check the surface is 3 \u00b0C above dew point.",
+     "hours": [
+      [
+       7,
+       1
+      ],
+      [
+       8,
+       0
+      ],
+      [
+       9,
+       0
+      ],
+      [
+       10,
+       0
+      ],
+      [
+       11,
+       0
+      ],
+      [
+       13,
+       0
+      ],
+      [
+       14,
+       0
+      ],
+      [
+       15,
+       0
+      ],
+      [
+       16,
+       0
       ]
      ]
     },
@@ -2040,54 +2090,6 @@
     {
      "key": "height",
      "trade": "Work at height",
-     "status": "GO",
-     "label": "no limits",
-     "go_hours": 9,
-     "windows": "07-12 h, 13-17 h",
-     "causes": [],
-     "action": "No weather limits.",
-     "hours": [
-      [
-       7,
-       0
-      ],
-      [
-       8,
-       0
-      ],
-      [
-       9,
-       0
-      ],
-      [
-       10,
-       0
-      ],
-      [
-       11,
-       0
-      ],
-      [
-       13,
-       0
-      ],
-      [
-       14,
-       0
-      ],
-      [
-       15,
-       0
-      ],
-      [
-       16,
-       0
-      ]
-     ]
-    },
-    {
-     "key": "coatings",
-     "trade": "Painting & coatings",
      "status": "GO",
      "label": "no limits",
      "go_hours": 9,
@@ -2192,11 +2194,11 @@
     "gust_hook_max": 6.6,
     "go_hours": {
      "concrete": 5,
+     "coatings": 8,
      "labour": 9,
      "asphalt": 9,
      "crane": 9,
      "height": 9,
-     "coatings": 9,
      "earthworks": 9
     }
    }

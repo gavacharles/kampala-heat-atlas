@@ -1,6 +1,6 @@
 # Site note · Lusaka
 
-Issued Saturday 14 November 2026, 11:07 (Africa/Lusaka). Site -15.3875, 28.3228. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Saturday 14 November 2026, 12:53 (Africa/Lusaka). Site -15.3875, 28.3228. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Saturday 14 November
 
@@ -42,7 +42,6 @@ Rain 1 mm (chance up to 61 %) · storms low · WBGT peak 26.8 °C · gusts 13 m/
 - **Earthworks — go 08-13 h, 14-15 h only.** Limited by rain. Protect formation and stockpiles.
 - **No weather limits:** Outdoor labour, Crane lifts.
 - UV index up to 10 (very high): hats with neck cover, long sleeves, sunscreen.
-- Dust: PM2.5 up to 38 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Outlook
 

@@ -2,7 +2,7 @@
  "site": "Lusaka",
  "lat": -15.3875,
  "lon": 28.3228,
- "issued": "2026-11-14 11:07",
+ "issued": "2026-11-14 12:53",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -1026,8 +1026,7 @@
     }
    ],
    "extras": [
-    "UV index up to 10 (very high): hats with neck cover, long sleeves, sunscreen.",
-    "Dust: PM2.5 up to 38 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
+    "UV index up to 10 (very high): hats with neck cover, long sleeves, sunscreen."
    ],
    "facts": {
     "rain_mm": 1.1,

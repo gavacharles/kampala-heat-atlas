@@ -1,6 +1,6 @@
 # Site note · Mbale
 
-Issued Saturday 14 November 2026, 12:07 (Africa/Kampala). Site 1.0821, 34.1750. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Saturday 14 November 2026, 14:00 (Africa/Kampala). Site 1.0821, 34.1750. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Saturday 14 November
 
@@ -32,7 +32,7 @@ Rain 8 mm (chance up to 100 %) · storms likely · WBGT peak 27.7 °C · gusts 7
 - **Work at height — go 08-09 h only.** Limited by rain, storms. Clear roofs and scaffolds before storms.
 - **No weather limits:** Outdoor labour.
 - UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.
-- Dust: PM2.5 up to 44 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Dust: PM2.5 up to 47 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Monday 16 November
 
@@ -48,7 +48,7 @@ Rain 12 mm (chance up to 99 %) · storms likely · WBGT peak 28.0 °C · gusts 8
 - **Work at height — go 08-12 h only.** Limited by storms, rain. Clear roofs and scaffolds before storms.
 - **Painting & coatings — go 10-12 h only.** Limited by humidity or dew, rain. Check the surface is 3 °C above dew point.
 - UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.
-- Dust: PM2.5 up to 47 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Dust: PM2.5 up to 48 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Outlook
 

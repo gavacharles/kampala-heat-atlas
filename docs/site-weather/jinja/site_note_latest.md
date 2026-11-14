@@ -1,6 +1,6 @@
 # Site note · Jinja
 
-Issued Saturday 14 November 2026, 12:08 (Africa/Kampala). Site 0.4244, 33.2042. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Saturday 14 November 2026, 14:02 (Africa/Kampala). Site 0.4244, 33.2042. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Saturday 14 November
 
@@ -16,7 +16,6 @@ Rain 5 mm (chance up to 96 %) · storms likely · WBGT peak 24.1 °C · gusts 10
 - **Earthworks — go with care.** Limited by wet ground, rain. Ground soft: protect formation and stockpiles. Ground wet after 11 mm in 24 h.
 - **No weather limits:** Outdoor labour.
 - UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.
-- Dust: PM2.5 up to 65 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Sunday 15 November
 
@@ -31,7 +30,7 @@ Rain 0 mm (chance up to 57 %) · storms possible · WBGT peak 25.6 °C · gusts 
 - **Painting & coatings — go 16-17 h only.** Limited by humidity or dew, rain. Check the surface is 3 °C above dew point.
 - **No weather limits:** Outdoor labour, Earthworks.
 - UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.
-- Dust: PM2.5 up to 66 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Dust: PM2.5 up to 41 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Monday 16 November
 
@@ -47,7 +46,7 @@ Rain 8 mm (chance up to 63 %) · storms possible · WBGT peak 24.5 °C · gusts 
 - **Crane lifts — go 08-10 h only.** Limited by storms. Check the anemometer before each lift.
 - **No weather limits:** Outdoor labour.
 - UV index up to 8 (very high): hats with neck cover, long sleeves, sunscreen.
-- Dust: PM2.5 up to 55 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Dust: PM2.5 up to 54 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Outlook
 

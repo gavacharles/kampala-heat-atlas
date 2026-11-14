@@ -1,42 +1,41 @@
 # Site note · Dammam
 
-Issued Saturday 14 November 2026, 12:08 (Asia/Riyadh). Site 26.4207, 50.0888. Working hours 07:00-17:00, lunch break excluded (9 h).
+Issued Saturday 14 November 2026, 13:53 (Asia/Riyadh). Site 26.4207, 50.0888. Working hours 07:00-17:00, lunch break excluded (9 h).
 
 ## Saturday 14 November
 
 **Pour concrete 07-10 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 18.5 °C · gusts 15 m/s at hook height
+Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 19.0 °C · gusts 15 m/s at hook height
 
 - **Concrete pour — go 07-10 h only.** Limited by fast drying. Curing cover and windbreaks ready.
-- **Crane lifts — go 07-12 h, 15-17 h only.** Limited by wind. Check the anemometer before each lift.
 - **Work at height — go 07-09 h only.** Limited by wind. Clear roofs and scaffolds before storms.
-- **No weather limits:** Outdoor labour, Asphalt & surfacing, Painting & coatings, Earthworks.
-- Dust: PM2.5 up to 88 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
-- Dust storm risk (dust up to 368 µg/m³): goggles and masks, secure sheeting and loose materials, stop lifts if the operator loses sight of the load.
+- **No weather limits:** Outdoor labour, Asphalt & surfacing, Crane lifts, Painting & coatings, Earthworks.
+- Dust: PM2.5 up to 78 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Dust storm risk (dust up to 317 µg/m³): goggles and masks, secure sheeting and loose materials, stop lifts if the operator loses sight of the load.
 
 ## Sunday 15 November
 
 **Pour concrete 07-10 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 21.2 °C · gusts 14 m/s at hook height
+Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 21.3 °C · gusts 14 m/s at hook height
 
 - **Concrete pour — go 07-10 h only.** Limited by fast drying. Curing cover and windbreaks ready.
-- **Work at height — go 07-11 h, 15-17 h only.** Limited by wind. Clear roofs and scaffolds before storms.
+- **Work at height — go 07-11 h, 16-17 h only.** Limited by wind. Clear roofs and scaffolds before storms.
 - **No weather limits:** Outdoor labour, Asphalt & surfacing, Crane lifts, Painting & coatings, Earthworks.
 - Dust: PM2.5 up to 90 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
-- Dust storm risk (dust up to 350 µg/m³): goggles and masks, secure sheeting and loose materials, stop lifts if the operator loses sight of the load.
+- Dust storm risk (dust up to 352 µg/m³): goggles and masks, secure sheeting and loose materials, stop lifts if the operator loses sight of the load.
 
 ## Monday 16 November
 
 **Pour concrete 07-10 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 22.5 °C · gusts 12 m/s at hook height
+Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 22.7 °C · gusts 12 m/s at hook height
 
 - **Concrete pour — go 07-10 h only.** Limited by fast drying. Curing cover and windbreaks ready.
 - **No weather limits:** Outdoor labour, Asphalt & surfacing, Crane lifts, Work at height, Painting & coatings, Earthworks.
 - Dust: PM2.5 up to 91 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
-- Dust storm risk (dust up to 309 µg/m³): goggles and masks, secure sheeting and loose materials, stop lifts if the operator loses sight of the load.
+- Dust storm risk (dust up to 324 µg/m³): goggles and masks, secure sheeting and loose materials, stop lifts if the operator loses sight of the load.
 
 ## Outlook
 
