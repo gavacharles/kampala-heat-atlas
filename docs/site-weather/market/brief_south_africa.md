@@ -1,22 +1,22 @@
-# Site and market · South Africa · week of 13 November 2026
+# Site and market · South Africa · week of 14 November 2026
 
-**Next 7 days in South Africa: concrete can go on 6 days (4.3 of 9 working hours a day on average); weather took 28 concrete hours in the last 7 days.**
+**Next 7 days in South Africa: concrete can go on 6 days (4.6 of 9 working hours a day on average); weather took 28 concrete hours in the last 7 days.**
 
 **Costs (CiO):** Construction input prices (whole industry) +0.2% by Oct 2026 (range -0.7% to +1.5%, base Sep 2026). Oil +0.1% over 13 weeks (-22.8% over 4); ZAR +2.6% over 13 weeks.
 
 | Trade | Days with a go window, next 7 | Go hours per working day | Hours lost, last 7 days |
 |---|---|---|---|
-| Concrete pour | 6 | 4.3 of 9 | 28 |
-| Asphalt & surfacing | 6 | 5.6 of 9 | 13 |
-| Crane lifts | 6 | 6.1 of 9 | 7 |
-| Work at height | 5 | 3.6 of 9 | 23 |
-| Painting & coatings | 5 | 5.4 of 9 | 19 |
-| Earthworks | 6 | 6.9 of 9 | 12 |
-| Outdoor labour (heat) | 7 | 8.8 of 9 | 1 |
+| Concrete pour | 6 | 4.6 of 9 | 28 |
+| Asphalt & surfacing | 7 | 5.5 of 9 | 17 |
+| Crane lifts | 5 | 5.7 of 9 | 8 |
+| Work at height | 4 | 3.3 of 9 | 23 |
+| Painting & coatings | 6 | 5.7 of 9 | 19 |
+| Earthworks | 5 | 6.7 of 9 | 12 |
+| Outdoor labour (heat) | 7 | 9.0 of 9 | 1 |
 
 **What to do this week**
 
-- Good week for pours and surfacing (6 of 7 days, 4.3 h a day): use it to recover programme.
+- Good week for pours and surfacing (6 of 7 days, 4.6 h a day): use it to recover programme.
 - Oil has moved -23% in 4 weeks: cost forecasts set before the move may be too high; recheck fuel-heavy items before committing.
 - Input costs about flat (+0.2% by Oct 2026): no need to buy ahead.
 - Weather took 28 concrete hours last week: record it in the site diary for time claims (FIDIC 8.5); the monthly weather record is on each town page.

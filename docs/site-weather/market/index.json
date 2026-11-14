@@ -1,10 +1,10 @@
 {
  "source": "Site weather service (gavacharles/kampala-heat-atlas)",
- "generated": "2026-11-13 14:28 EAT",
+ "generated": "2026-11-14 08:22 EAT",
  "countries": {
   "uganda": {
    "country": "Uganda",
-   "generated": "2026-11-13",
+   "generated": "2026-11-14",
    "days_ahead": 7,
    "hours_per_day": 8,
    "trades": [
@@ -12,50 +12,50 @@
      "key": "concrete",
      "trade": "Concrete pour",
      "go_days_ahead": 5,
-     "go_hours_per_day_ahead": 2.4,
-     "lost_hours_last_7": 15.3
+     "go_hours_per_day_ahead": 3.4,
+     "lost_hours_last_7": 15.4
     },
     {
      "key": "asphalt",
      "trade": "Asphalt & surfacing",
      "go_days_ahead": 4,
-     "go_hours_per_day_ahead": 2.3,
-     "lost_hours_last_7": 34.0
+     "go_hours_per_day_ahead": 2.9,
+     "lost_hours_last_7": 35.3
     },
     {
      "key": "crane",
      "trade": "Crane lifts",
-     "go_days_ahead": 6,
-     "go_hours_per_day_ahead": 4.9,
+     "go_days_ahead": 7,
+     "go_hours_per_day_ahead": 5.7,
      "lost_hours_last_7": 0.0
     },
     {
      "key": "height",
      "trade": "Work at height",
-     "go_days_ahead": 5,
-     "go_hours_per_day_ahead": 3.5,
-     "lost_hours_last_7": 18.9
+     "go_days_ahead": 6,
+     "go_hours_per_day_ahead": 4.1,
+     "lost_hours_last_7": 19.0
     },
     {
      "key": "coatings",
      "trade": "Painting & coatings",
-     "go_days_ahead": 3,
-     "go_hours_per_day_ahead": 1.9,
-     "lost_hours_last_7": 31.9
+     "go_days_ahead": 4,
+     "go_hours_per_day_ahead": 2.6,
+     "lost_hours_last_7": 32.4
     },
     {
      "key": "earthworks",
      "trade": "Earthworks",
-     "go_days_ahead": 4,
-     "go_hours_per_day_ahead": 3.8,
-     "lost_hours_last_7": 24.7
+     "go_days_ahead": 5,
+     "go_hours_per_day_ahead": 4.5,
+     "lost_hours_last_7": 23.4
     },
     {
      "key": "labour",
      "trade": "Outdoor labour (heat)",
      "go_days_ahead": 7,
      "go_hours_per_day_ahead": 8.0,
-     "lost_hours_last_7": 1.1
+     "lost_hours_last_7": 0.9
     }
    ],
    "towns": [
@@ -88,59 +88,59 @@
      "url": "https://gavacharles.github.io/kampala-heat-atlas/site-weather/arua/"
     }
    ],
-   "rain_last_7_mm": 52.9,
-   "rain_month_pct_of_normal": 68,
-   "headline": "Next 7 days in Uganda: concrete can go on 5 days (2.4 of 8 working hours a day on average); weather took 15 concrete hours in the last 7 days.",
+   "rain_last_7_mm": 56.5,
+   "rain_month_pct_of_normal": 92,
+   "headline": "Next 7 days in Uganda: concrete can go on 5 days (3.4 of 8 working hours a day on average); weather took 15 concrete hours in the last 7 days.",
    "page": "https://gavacharles.github.io/kampala-heat-atlas/site-weather/",
    "brief": "https://gavacharles.github.io/kampala-heat-atlas/site-weather/market/#uganda"
   },
   "kenya": {
    "country": "Kenya",
-   "generated": "2026-11-13",
+   "generated": "2026-11-14",
    "days_ahead": 7,
    "hours_per_day": 8,
    "trades": [
     {
      "key": "concrete",
      "trade": "Concrete pour",
-     "go_days_ahead": 2,
-     "go_hours_per_day_ahead": 0.7,
-     "lost_hours_last_7": 23.0
+     "go_days_ahead": 3,
+     "go_hours_per_day_ahead": 1.3,
+     "lost_hours_last_7": 25.0
     },
     {
      "key": "asphalt",
      "trade": "Asphalt & surfacing",
-     "go_days_ahead": 0,
-     "go_hours_per_day_ahead": 0.3,
+     "go_days_ahead": 1,
+     "go_hours_per_day_ahead": 0.4,
      "lost_hours_last_7": 34.0
     },
     {
      "key": "crane",
      "trade": "Crane lifts",
      "go_days_ahead": 7,
-     "go_hours_per_day_ahead": 6.9,
+     "go_hours_per_day_ahead": 7.7,
      "lost_hours_last_7": 0.0
     },
     {
      "key": "height",
      "trade": "Work at height",
      "go_days_ahead": 5,
-     "go_hours_per_day_ahead": 2.6,
-     "lost_hours_last_7": 19.0
+     "go_hours_per_day_ahead": 2.3,
+     "lost_hours_last_7": 18.0
     },
     {
      "key": "coatings",
      "trade": "Painting & coatings",
-     "go_days_ahead": 2,
-     "go_hours_per_day_ahead": 0.6,
-     "lost_hours_last_7": 20.0
+     "go_days_ahead": 3,
+     "go_hours_per_day_ahead": 1.3,
+     "lost_hours_last_7": 22.0
     },
     {
      "key": "earthworks",
      "trade": "Earthworks",
-     "go_days_ahead": 2,
-     "go_hours_per_day_ahead": 1.1,
-     "lost_hours_last_7": 9.0
+     "go_days_ahead": 3,
+     "go_hours_per_day_ahead": 2.7,
+     "lost_hours_last_7": 14.0
     },
     {
      "key": "labour",
@@ -156,15 +156,15 @@
      "url": "https://gavacharles.github.io/kampala-heat-atlas/site-weather/nairobi/"
     }
    ],
-   "rain_last_7_mm": 22.0,
-   "rain_month_pct_of_normal": 119,
-   "headline": "Next 7 days in Kenya: concrete can go on 2 days (0.7 of 8 working hours a day on average); weather took 23 concrete hours in the last 7 days.",
+   "rain_last_7_mm": 37.3,
+   "rain_month_pct_of_normal": 192,
+   "headline": "Next 7 days in Kenya: concrete can go on 3 days (1.3 of 8 working hours a day on average); weather took 25 concrete hours in the last 7 days.",
    "page": "https://gavacharles.github.io/kampala-heat-atlas/site-weather/",
    "brief": "https://gavacharles.github.io/kampala-heat-atlas/site-weather/market/#kenya"
   },
   "south_africa": {
    "country": "South Africa",
-   "generated": "2026-11-13",
+   "generated": "2026-11-14",
    "days_ahead": 7,
    "hours_per_day": 9,
    "trades": [
@@ -172,49 +172,49 @@
      "key": "concrete",
      "trade": "Concrete pour",
      "go_days_ahead": 6,
-     "go_hours_per_day_ahead": 4.3,
-     "lost_hours_last_7": 28.0
+     "go_hours_per_day_ahead": 4.6,
+     "lost_hours_last_7": 28.3
     },
     {
      "key": "asphalt",
      "trade": "Asphalt & surfacing",
-     "go_days_ahead": 6,
-     "go_hours_per_day_ahead": 5.6,
-     "lost_hours_last_7": 13.3
+     "go_days_ahead": 7,
+     "go_hours_per_day_ahead": 5.5,
+     "lost_hours_last_7": 17.0
     },
     {
      "key": "crane",
      "trade": "Crane lifts",
-     "go_days_ahead": 6,
-     "go_hours_per_day_ahead": 6.1,
-     "lost_hours_last_7": 6.7
+     "go_days_ahead": 5,
+     "go_hours_per_day_ahead": 5.7,
+     "lost_hours_last_7": 8.3
     },
     {
      "key": "height",
      "trade": "Work at height",
-     "go_days_ahead": 5,
-     "go_hours_per_day_ahead": 3.6,
+     "go_days_ahead": 4,
+     "go_hours_per_day_ahead": 3.3,
      "lost_hours_last_7": 22.7
     },
     {
      "key": "coatings",
      "trade": "Painting & coatings",
-     "go_days_ahead": 5,
-     "go_hours_per_day_ahead": 5.4,
-     "lost_hours_last_7": 19.0
+     "go_days_ahead": 6,
+     "go_hours_per_day_ahead": 5.7,
+     "lost_hours_last_7": 19.3
     },
     {
      "key": "earthworks",
      "trade": "Earthworks",
-     "go_days_ahead": 6,
-     "go_hours_per_day_ahead": 6.9,
+     "go_days_ahead": 5,
+     "go_hours_per_day_ahead": 6.7,
      "lost_hours_last_7": 12.0
     },
     {
      "key": "labour",
      "trade": "Outdoor labour (heat)",
      "go_days_ahead": 7,
-     "go_hours_per_day_ahead": 8.8,
+     "go_hours_per_day_ahead": 9.0,
      "lost_hours_last_7": 1.3
     }
    ],
@@ -232,15 +232,15 @@
      "url": "https://gavacharles.github.io/kampala-heat-atlas/site-weather/durban/"
     }
    ],
-   "rain_last_7_mm": 19.4,
-   "rain_month_pct_of_normal": 102,
-   "headline": "Next 7 days in South Africa: concrete can go on 6 days (4.3 of 9 working hours a day on average); weather took 28 concrete hours in the last 7 days.",
+   "rain_last_7_mm": 20.0,
+   "rain_month_pct_of_normal": 92,
+   "headline": "Next 7 days in South Africa: concrete can go on 6 days (4.6 of 9 working hours a day on average); weather took 28 concrete hours in the last 7 days.",
    "page": "https://gavacharles.github.io/kampala-heat-atlas/site-weather/",
    "brief": "https://gavacharles.github.io/kampala-heat-atlas/site-weather/market/#south_africa"
   },
   "saudi_arabia": {
    "country": "Saudi Arabia",
-   "generated": "2026-11-13",
+   "generated": "2026-11-14",
    "days_ahead": 7,
    "hours_per_day": 9,
    "trades": [
@@ -248,50 +248,50 @@
      "key": "concrete",
      "trade": "Concrete pour",
      "go_days_ahead": 7,
-     "go_hours_per_day_ahead": 5.5,
-     "lost_hours_last_7": 38.7
+     "go_hours_per_day_ahead": 5.9,
+     "lost_hours_last_7": 34.7
     },
     {
      "key": "asphalt",
      "trade": "Asphalt & surfacing",
      "go_days_ahead": 7,
-     "go_hours_per_day_ahead": 8.5,
-     "lost_hours_last_7": 0.3
+     "go_hours_per_day_ahead": 8.9,
+     "lost_hours_last_7": 2.0
     },
     {
      "key": "crane",
      "trade": "Crane lifts",
      "go_days_ahead": 7,
-     "go_hours_per_day_ahead": 8.7,
+     "go_hours_per_day_ahead": 8.9,
      "lost_hours_last_7": 0.0
     },
     {
      "key": "height",
      "trade": "Work at height",
      "go_days_ahead": 7,
-     "go_hours_per_day_ahead": 8.0,
-     "lost_hours_last_7": 1.7
+     "go_hours_per_day_ahead": 8.3,
+     "lost_hours_last_7": 3.7
     },
     {
      "key": "coatings",
      "trade": "Painting & coatings",
      "go_days_ahead": 7,
-     "go_hours_per_day_ahead": 8.3,
-     "lost_hours_last_7": 3.3
+     "go_hours_per_day_ahead": 8.4,
+     "lost_hours_last_7": 4.0
     },
     {
      "key": "earthworks",
      "trade": "Earthworks",
      "go_days_ahead": 7,
-     "go_hours_per_day_ahead": 8.9,
-     "lost_hours_last_7": 0.3
+     "go_hours_per_day_ahead": 9.0,
+     "lost_hours_last_7": 0.7
     },
     {
      "key": "labour",
      "trade": "Outdoor labour (heat)",
      "go_days_ahead": 7,
-     "go_hours_per_day_ahead": 7.8,
-     "lost_hours_last_7": 26.7
+     "go_hours_per_day_ahead": 7.1,
+     "lost_hours_last_7": 23.7
     }
    ],
    "towns": [
@@ -308,59 +308,59 @@
      "url": "https://gavacharles.github.io/kampala-heat-atlas/site-weather/dammam/"
     }
    ],
-   "rain_last_7_mm": 0.4,
-   "rain_month_pct_of_normal": 17,
-   "headline": "Next 7 days in Saudi Arabia: concrete can go on 7 days (5.5 of 9 working hours a day on average); weather took 39 concrete hours in the last 7 days.",
+   "rain_last_7_mm": 1.4,
+   "rain_month_pct_of_normal": 31,
+   "headline": "Next 7 days in Saudi Arabia: concrete can go on 7 days (5.9 of 9 working hours a day on average); weather took 35 concrete hours in the last 7 days.",
    "page": "https://gavacharles.github.io/kampala-heat-atlas/site-weather/",
    "brief": "https://gavacharles.github.io/kampala-heat-atlas/site-weather/market/#saudi_arabia"
   },
   "rwanda": {
    "country": "Rwanda",
-   "generated": "2026-11-13",
+   "generated": "2026-11-14",
    "days_ahead": 7,
    "hours_per_day": 9,
    "trades": [
     {
      "key": "concrete",
      "trade": "Concrete pour",
-     "go_days_ahead": 6,
+     "go_days_ahead": 5,
      "go_hours_per_day_ahead": 3.0,
-     "lost_hours_last_7": 4.0
+     "lost_hours_last_7": 6.0
     },
     {
      "key": "asphalt",
      "trade": "Asphalt & surfacing",
-     "go_days_ahead": 5,
-     "go_hours_per_day_ahead": 2.3,
-     "lost_hours_last_7": 28.0
+     "go_days_ahead": 4,
+     "go_hours_per_day_ahead": 2.0,
+     "lost_hours_last_7": 33.0
     },
     {
      "key": "crane",
      "trade": "Crane lifts",
      "go_days_ahead": 7,
-     "go_hours_per_day_ahead": 5.6,
+     "go_hours_per_day_ahead": 5.1,
      "lost_hours_last_7": 0.0
     },
     {
      "key": "height",
      "trade": "Work at height",
      "go_days_ahead": 6,
-     "go_hours_per_day_ahead": 2.9,
-     "lost_hours_last_7": 5.0
+     "go_hours_per_day_ahead": 3.7,
+     "lost_hours_last_7": 11.0
     },
     {
      "key": "coatings",
      "trade": "Painting & coatings",
-     "go_days_ahead": 0,
-     "go_hours_per_day_ahead": 0.1,
-     "lost_hours_last_7": 24.0
+     "go_days_ahead": 2,
+     "go_hours_per_day_ahead": 0.9,
+     "lost_hours_last_7": 29.0
     },
     {
      "key": "earthworks",
      "trade": "Earthworks",
-     "go_days_ahead": 4,
-     "go_hours_per_day_ahead": 3.6,
-     "lost_hours_last_7": 9.0
+     "go_days_ahead": 6,
+     "go_hours_per_day_ahead": 5.0,
+     "lost_hours_last_7": 12.0
     },
     {
      "key": "labour",
@@ -376,66 +376,66 @@
      "url": "https://gavacharles.github.io/kampala-heat-atlas/site-weather/kigali/"
     }
    ],
-   "rain_last_7_mm": 15.3,
-   "rain_month_pct_of_normal": 58,
-   "headline": "Next 7 days in Rwanda: concrete can go on 6 days (3.0 of 9 working hours a day on average); weather took 4 concrete hours in the last 7 days.",
+   "rain_last_7_mm": 31.4,
+   "rain_month_pct_of_normal": 103,
+   "headline": "Next 7 days in Rwanda: concrete can go on 5 days (3.0 of 9 working hours a day on average); weather took 6 concrete hours in the last 7 days.",
    "page": "https://gavacharles.github.io/kampala-heat-atlas/site-weather/",
    "brief": "https://gavacharles.github.io/kampala-heat-atlas/site-weather/market/#rwanda"
   },
   "tanzania": {
    "country": "Tanzania",
-   "generated": "2026-11-13",
+   "generated": "2026-11-14",
    "days_ahead": 7,
    "hours_per_day": 8,
    "trades": [
     {
      "key": "concrete",
      "trade": "Concrete pour",
-     "go_days_ahead": 5,
-     "go_hours_per_day_ahead": 2.8,
-     "lost_hours_last_7": 24.8
+     "go_days_ahead": 6,
+     "go_hours_per_day_ahead": 3.2,
+     "lost_hours_last_7": 23.8
     },
     {
      "key": "asphalt",
      "trade": "Asphalt & surfacing",
      "go_days_ahead": 2,
-     "go_hours_per_day_ahead": 1.1,
-     "lost_hours_last_7": 36.0
+     "go_hours_per_day_ahead": 1.5,
+     "lost_hours_last_7": 38.2
     },
     {
      "key": "crane",
      "trade": "Crane lifts",
      "go_days_ahead": 7,
-     "go_hours_per_day_ahead": 5.5,
+     "go_hours_per_day_ahead": 6.4,
      "lost_hours_last_7": 0.0
     },
     {
      "key": "height",
      "trade": "Work at height",
      "go_days_ahead": 6,
-     "go_hours_per_day_ahead": 3.4,
-     "lost_hours_last_7": 12.8
+     "go_hours_per_day_ahead": 3.6,
+     "lost_hours_last_7": 15.8
     },
     {
      "key": "coatings",
      "trade": "Painting & coatings",
      "go_days_ahead": 4,
-     "go_hours_per_day_ahead": 2.1,
-     "lost_hours_last_7": 19.2
+     "go_hours_per_day_ahead": 2.2,
+     "lost_hours_last_7": 22.2
     },
     {
      "key": "earthworks",
      "trade": "Earthworks",
-     "go_days_ahead": 4,
-     "go_hours_per_day_ahead": 3.2,
-     "lost_hours_last_7": 12.0
+     "go_days_ahead": 3,
+     "go_hours_per_day_ahead": 2.5,
+     "lost_hours_last_7": 14.8
     },
     {
      "key": "labour",
      "trade": "Outdoor labour (heat)",
-     "go_days_ahead": 7,
+     "go_days_ahead": 6,
      "go_hours_per_day_ahead": 6.8,
-     "lost_hours_last_7": 11.2
+     "lost_hours_last_7": 11.0
     }
    ],
    "towns": [
@@ -456,58 +456,58 @@
      "url": "https://gavacharles.github.io/kampala-heat-atlas/site-weather/mwanza/"
     }
    ],
-   "rain_last_7_mm": 21.1,
-   "rain_month_pct_of_normal": 84,
-   "headline": "Next 7 days in Tanzania: concrete can go on 5 days (2.8 of 8 working hours a day on average); weather took 25 concrete hours in the last 7 days.",
+   "rain_last_7_mm": 27.9,
+   "rain_month_pct_of_normal": 147,
+   "headline": "Next 7 days in Tanzania: concrete can go on 6 days (3.2 of 8 working hours a day on average); weather took 24 concrete hours in the last 7 days.",
    "page": "https://gavacharles.github.io/kampala-heat-atlas/site-weather/",
    "brief": "https://gavacharles.github.io/kampala-heat-atlas/site-weather/market/#tanzania"
   },
   "united_arab_emirates": {
    "country": "United Arab Emirates",
-   "generated": "2026-11-13",
+   "generated": "2026-11-14",
    "days_ahead": 7,
    "hours_per_day": 9,
    "trades": [
     {
      "key": "concrete",
      "trade": "Concrete pour",
-     "go_days_ahead": 5,
-     "go_hours_per_day_ahead": 4.4,
-     "lost_hours_last_7": 37.5
+     "go_days_ahead": 6,
+     "go_hours_per_day_ahead": 4.9,
+     "lost_hours_last_7": 42.5
     },
     {
      "key": "asphalt",
      "trade": "Asphalt & surfacing",
      "go_days_ahead": 7,
-     "go_hours_per_day_ahead": 8.6,
+     "go_hours_per_day_ahead": 9.0,
      "lost_hours_last_7": 0.0
     },
     {
      "key": "crane",
      "trade": "Crane lifts",
      "go_days_ahead": 7,
-     "go_hours_per_day_ahead": 8.2,
-     "lost_hours_last_7": 0.0
+     "go_hours_per_day_ahead": 8.6,
+     "lost_hours_last_7": 2.0
     },
     {
      "key": "height",
      "trade": "Work at height",
      "go_days_ahead": 6,
-     "go_hours_per_day_ahead": 7.4,
-     "lost_hours_last_7": 2.5
+     "go_hours_per_day_ahead": 8.4,
+     "lost_hours_last_7": 7.0
     },
     {
      "key": "coatings",
      "trade": "Painting & coatings",
      "go_days_ahead": 7,
-     "go_hours_per_day_ahead": 8.3,
-     "lost_hours_last_7": 11.0
+     "go_hours_per_day_ahead": 8.5,
+     "lost_hours_last_7": 9.5
     },
     {
      "key": "earthworks",
      "trade": "Earthworks",
      "go_days_ahead": 7,
-     "go_hours_per_day_ahead": 8.6,
+     "go_hours_per_day_ahead": 9.0,
      "lost_hours_last_7": 0.0
     },
     {
@@ -515,7 +515,7 @@
      "trade": "Outdoor labour (heat)",
      "go_days_ahead": 7,
      "go_hours_per_day_ahead": 9.0,
-     "lost_hours_last_7": 39.0
+     "lost_hours_last_7": 32.0
     }
    ],
    "towns": [
@@ -530,13 +530,13 @@
    ],
    "rain_last_7_mm": 0.0,
    "rain_month_pct_of_normal": null,
-   "headline": "Next 7 days in United Arab Emirates: concrete can go on 5 days (4.4 of 9 working hours a day on average); weather took 38 concrete hours in the last 7 days.",
+   "headline": "Next 7 days in United Arab Emirates: concrete can go on 6 days (4.9 of 9 working hours a day on average); weather took 42 concrete hours in the last 7 days.",
    "page": "https://gavacharles.github.io/kampala-heat-atlas/site-weather/",
    "brief": "https://gavacharles.github.io/kampala-heat-atlas/site-weather/market/#united_arab_emirates"
   },
   "qatar": {
    "country": "Qatar",
-   "generated": "2026-11-13",
+   "generated": "2026-11-14",
    "days_ahead": 7,
    "hours_per_day": 9,
    "trades": [
@@ -544,8 +544,8 @@
      "key": "concrete",
      "trade": "Concrete pour",
      "go_days_ahead": 6,
-     "go_hours_per_day_ahead": 2.7,
-     "lost_hours_last_7": 36.0
+     "go_hours_per_day_ahead": 3.1,
+     "lost_hours_last_7": 38.0
     },
     {
      "key": "asphalt",
@@ -558,22 +558,22 @@
      "key": "crane",
      "trade": "Crane lifts",
      "go_days_ahead": 7,
-     "go_hours_per_day_ahead": 8.0,
+     "go_hours_per_day_ahead": 8.1,
      "lost_hours_last_7": 0.0
     },
     {
      "key": "height",
      "trade": "Work at height",
      "go_days_ahead": 6,
-     "go_hours_per_day_ahead": 5.9,
-     "lost_hours_last_7": 7.0
+     "go_hours_per_day_ahead": 6.9,
+     "lost_hours_last_7": 14.0
     },
     {
      "key": "coatings",
      "trade": "Painting & coatings",
      "go_days_ahead": 7,
-     "go_hours_per_day_ahead": 9.0,
-     "lost_hours_last_7": 8.0
+     "go_hours_per_day_ahead": 8.4,
+     "lost_hours_last_7": 7.0
     },
     {
      "key": "earthworks",
@@ -587,7 +587,7 @@
      "trade": "Outdoor labour (heat)",
      "go_days_ahead": 7,
      "go_hours_per_day_ahead": 9.0,
-     "lost_hours_last_7": 46.0
+     "lost_hours_last_7": 38.0
     }
    ],
    "towns": [
@@ -597,14 +597,14 @@
     }
    ],
    "rain_last_7_mm": 0.4,
-   "rain_month_pct_of_normal": 28,
-   "headline": "Next 7 days in Qatar: concrete can go on 6 days (2.7 of 9 working hours a day on average); weather took 36 concrete hours in the last 7 days.",
+   "rain_month_pct_of_normal": 24,
+   "headline": "Next 7 days in Qatar: concrete can go on 6 days (3.1 of 9 working hours a day on average); weather took 38 concrete hours in the last 7 days.",
    "page": "https://gavacharles.github.io/kampala-heat-atlas/site-weather/",
    "brief": "https://gavacharles.github.io/kampala-heat-atlas/site-weather/market/#qatar"
   },
   "kuwait": {
    "country": "Kuwait",
-   "generated": "2026-11-13",
+   "generated": "2026-11-14",
    "days_ahead": 7,
    "hours_per_day": 9,
    "trades": [
@@ -612,8 +612,8 @@
      "key": "concrete",
      "trade": "Concrete pour",
      "go_days_ahead": 7,
-     "go_hours_per_day_ahead": 6.1,
-     "lost_hours_last_7": 43.0
+     "go_hours_per_day_ahead": 7.1,
+     "lost_hours_last_7": 42.0
     },
     {
      "key": "asphalt",
@@ -641,7 +641,7 @@
      "trade": "Painting & coatings",
      "go_days_ahead": 7,
      "go_hours_per_day_ahead": 8.9,
-     "lost_hours_last_7": 10.0
+     "lost_hours_last_7": 7.0
     },
     {
      "key": "earthworks",
@@ -655,7 +655,7 @@
      "trade": "Outdoor labour (heat)",
      "go_days_ahead": 7,
      "go_hours_per_day_ahead": 9.0,
-     "lost_hours_last_7": 20.0
+     "lost_hours_last_7": 12.0
     }
    ],
    "towns": [
@@ -665,14 +665,14 @@
     }
    ],
    "rain_last_7_mm": 0.6,
-   "rain_month_pct_of_normal": 10,
-   "headline": "Next 7 days in Kuwait: concrete can go on 7 days (6.1 of 9 working hours a day on average); weather took 43 concrete hours in the last 7 days.",
+   "rain_month_pct_of_normal": 8,
+   "headline": "Next 7 days in Kuwait: concrete can go on 7 days (7.1 of 9 working hours a day on average); weather took 42 concrete hours in the last 7 days.",
    "page": "https://gavacharles.github.io/kampala-heat-atlas/site-weather/",
    "brief": "https://gavacharles.github.io/kampala-heat-atlas/site-weather/market/#kuwait"
   },
   "oman": {
    "country": "Oman",
-   "generated": "2026-11-13",
+   "generated": "2026-11-14",
    "days_ahead": 7,
    "hours_per_day": 9,
    "trades": [
@@ -680,50 +680,50 @@
      "key": "concrete",
      "trade": "Concrete pour",
      "go_days_ahead": 6,
-     "go_hours_per_day_ahead": 4.4,
-     "lost_hours_last_7": 47.0
+     "go_hours_per_day_ahead": 5.4,
+     "lost_hours_last_7": 49.0
     },
     {
      "key": "asphalt",
      "trade": "Asphalt & surfacing",
      "go_days_ahead": 7,
-     "go_hours_per_day_ahead": 8.4,
-     "lost_hours_last_7": 4.0
+     "go_hours_per_day_ahead": 6.9,
+     "lost_hours_last_7": 0.0
     },
     {
      "key": "crane",
      "trade": "Crane lifts",
      "go_days_ahead": 7,
-     "go_hours_per_day_ahead": 8.9,
+     "go_hours_per_day_ahead": 9.0,
      "lost_hours_last_7": 0.0
     },
     {
      "key": "height",
      "trade": "Work at height",
      "go_days_ahead": 7,
-     "go_hours_per_day_ahead": 7.0,
-     "lost_hours_last_7": 6.0
+     "go_hours_per_day_ahead": 7.7,
+     "lost_hours_last_7": 8.0
     },
     {
      "key": "coatings",
      "trade": "Painting & coatings",
      "go_days_ahead": 7,
-     "go_hours_per_day_ahead": 8.4,
-     "lost_hours_last_7": 1.0
+     "go_hours_per_day_ahead": 8.1,
+     "lost_hours_last_7": 0.0
     },
     {
      "key": "earthworks",
      "trade": "Earthworks",
      "go_days_ahead": 7,
      "go_hours_per_day_ahead": 8.7,
-     "lost_hours_last_7": 1.0
+     "lost_hours_last_7": 0.0
     },
     {
      "key": "labour",
      "trade": "Outdoor labour (heat)",
      "go_days_ahead": 7,
      "go_hours_per_day_ahead": 9.0,
-     "lost_hours_last_7": 40.0
+     "lost_hours_last_7": 33.0
     }
    ],
    "towns": [
@@ -732,15 +732,15 @@
      "url": "https://gavacharles.github.io/kampala-heat-atlas/site-weather/muscat/"
     }
    ],
-   "rain_last_7_mm": 0.7,
+   "rain_last_7_mm": 0.0,
    "rain_month_pct_of_normal": 0,
-   "headline": "Next 7 days in Oman: concrete can go on 6 days (4.4 of 9 working hours a day on average); weather took 47 concrete hours in the last 7 days.",
+   "headline": "Next 7 days in Oman: concrete can go on 6 days (5.4 of 9 working hours a day on average); weather took 49 concrete hours in the last 7 days.",
    "page": "https://gavacharles.github.io/kampala-heat-atlas/site-weather/",
    "brief": "https://gavacharles.github.io/kampala-heat-atlas/site-weather/market/#oman"
   },
   "bahrain": {
    "country": "Bahrain",
-   "generated": "2026-11-13",
+   "generated": "2026-11-14",
    "days_ahead": 7,
    "hours_per_day": 9,
    "trades": [
@@ -748,8 +748,8 @@
      "key": "concrete",
      "trade": "Concrete pour",
      "go_days_ahead": 4,
-     "go_hours_per_day_ahead": 1.7,
-     "lost_hours_last_7": 19.0
+     "go_hours_per_day_ahead": 4.0,
+     "lost_hours_last_7": 25.0
     },
     {
      "key": "asphalt",
@@ -761,22 +761,22 @@
     {
      "key": "crane",
      "trade": "Crane lifts",
-     "go_days_ahead": 4,
-     "go_hours_per_day_ahead": 5.3,
-     "lost_hours_last_7": 4.0
+     "go_days_ahead": 5,
+     "go_hours_per_day_ahead": 6.4,
+     "lost_hours_last_7": 13.0
     },
     {
      "key": "height",
      "trade": "Work at height",
-     "go_days_ahead": 3,
-     "go_hours_per_day_ahead": 4.0,
-     "lost_hours_last_7": 9.0
+     "go_days_ahead": 4,
+     "go_hours_per_day_ahead": 5.3,
+     "lost_hours_last_7": 18.0
     },
     {
      "key": "coatings",
      "trade": "Painting & coatings",
      "go_days_ahead": 7,
-     "go_hours_per_day_ahead": 9.0,
+     "go_hours_per_day_ahead": 8.4,
      "lost_hours_last_7": 5.0
     },
     {
@@ -791,7 +791,7 @@
      "trade": "Outdoor labour (heat)",
      "go_days_ahead": 7,
      "go_hours_per_day_ahead": 9.0,
-     "lost_hours_last_7": 39.0
+     "lost_hours_last_7": 31.0
     }
    ],
    "towns": [
@@ -802,13 +802,13 @@
    ],
    "rain_last_7_mm": 0.0,
    "rain_month_pct_of_normal": 0,
-   "headline": "Next 7 days in Bahrain: concrete can go on 4 days (1.7 of 9 working hours a day on average); weather took 19 concrete hours in the last 7 days.",
+   "headline": "Next 7 days in Bahrain: concrete can go on 4 days (4.0 of 9 working hours a day on average); weather took 25 concrete hours in the last 7 days.",
    "page": "https://gavacharles.github.io/kampala-heat-atlas/site-weather/",
    "brief": "https://gavacharles.github.io/kampala-heat-atlas/site-weather/market/#bahrain"
   },
   "nigeria": {
    "country": "Nigeria",
-   "generated": "2026-11-13",
+   "generated": "2026-11-14",
    "days_ahead": 7,
    "hours_per_day": 8,
    "trades": [
@@ -816,28 +816,28 @@
      "key": "concrete",
      "trade": "Concrete pour",
      "go_days_ahead": 6,
-     "go_hours_per_day_ahead": 3.3,
+     "go_hours_per_day_ahead": 2.4,
      "lost_hours_last_7": 9.0
     },
     {
      "key": "asphalt",
      "trade": "Asphalt & surfacing",
-     "go_days_ahead": 4,
-     "go_hours_per_day_ahead": 4.5,
-     "lost_hours_last_7": 25.5
+     "go_days_ahead": 6,
+     "go_hours_per_day_ahead": 4.6,
+     "lost_hours_last_7": 23.0
     },
     {
      "key": "crane",
      "trade": "Crane lifts",
      "go_days_ahead": 7,
-     "go_hours_per_day_ahead": 6.3,
+     "go_hours_per_day_ahead": 6.1,
      "lost_hours_last_7": 0.0
     },
     {
      "key": "height",
      "trade": "Work at height",
-     "go_days_ahead": 6,
-     "go_hours_per_day_ahead": 5.8,
+     "go_days_ahead": 7,
+     "go_hours_per_day_ahead": 6.0,
      "lost_hours_last_7": 11.5
     },
     {
@@ -845,21 +845,21 @@
      "trade": "Painting & coatings",
      "go_days_ahead": 4,
      "go_hours_per_day_ahead": 4.5,
-     "lost_hours_last_7": 35.5
+     "lost_hours_last_7": 33.5
     },
     {
      "key": "earthworks",
      "trade": "Earthworks",
      "go_days_ahead": 7,
-     "go_hours_per_day_ahead": 6.6,
-     "lost_hours_last_7": 15.0
+     "go_hours_per_day_ahead": 6.8,
+     "lost_hours_last_7": 14.0
     },
     {
      "key": "labour",
      "trade": "Outdoor labour (heat)",
      "go_days_ahead": 4,
      "go_hours_per_day_ahead": 4.0,
-     "lost_hours_last_7": 39.5
+     "lost_hours_last_7": 39.0
     }
    ],
    "towns": [
@@ -872,65 +872,65 @@
      "url": "https://gavacharles.github.io/kampala-heat-atlas/site-weather/abuja/"
     }
    ],
-   "rain_last_7_mm": 19.5,
-   "rain_month_pct_of_normal": 310,
-   "headline": "Next 7 days in Nigeria: concrete can go on 6 days (3.3 of 8 working hours a day on average); weather took 9 concrete hours in the last 7 days.",
+   "rain_last_7_mm": 19.4,
+   "rain_month_pct_of_normal": 268,
+   "headline": "Next 7 days in Nigeria: concrete can go on 6 days (2.4 of 8 working hours a day on average); weather took 9 concrete hours in the last 7 days.",
    "page": "https://gavacharles.github.io/kampala-heat-atlas/site-weather/",
    "brief": "https://gavacharles.github.io/kampala-heat-atlas/site-weather/market/#nigeria"
   },
   "ghana": {
    "country": "Ghana",
-   "generated": "2026-11-13",
+   "generated": "2026-11-14",
    "days_ahead": 7,
    "hours_per_day": 8,
    "trades": [
     {
      "key": "concrete",
      "trade": "Concrete pour",
-     "go_days_ahead": 7,
+     "go_days_ahead": 6,
      "go_hours_per_day_ahead": 3.3,
-     "lost_hours_last_7": 10.0
+     "lost_hours_last_7": 12.0
     },
     {
      "key": "asphalt",
      "trade": "Asphalt & surfacing",
      "go_days_ahead": 5,
      "go_hours_per_day_ahead": 1.7,
-     "lost_hours_last_7": 33.0
+     "lost_hours_last_7": 31.0
     },
     {
      "key": "crane",
      "trade": "Crane lifts",
      "go_days_ahead": 7,
-     "go_hours_per_day_ahead": 5.1,
+     "go_hours_per_day_ahead": 5.0,
      "lost_hours_last_7": 0.0
     },
     {
      "key": "height",
      "trade": "Work at height",
      "go_days_ahead": 7,
-     "go_hours_per_day_ahead": 3.4,
-     "lost_hours_last_7": 17.0
+     "go_hours_per_day_ahead": 3.3,
+     "lost_hours_last_7": 15.0
     },
     {
      "key": "coatings",
      "trade": "Painting & coatings",
      "go_days_ahead": 5,
-     "go_hours_per_day_ahead": 2.3,
-     "lost_hours_last_7": 28.0
+     "go_hours_per_day_ahead": 2.6,
+     "lost_hours_last_7": 26.0
     },
     {
      "key": "earthworks",
      "trade": "Earthworks",
-     "go_days_ahead": 7,
-     "go_hours_per_day_ahead": 6.3,
+     "go_days_ahead": 6,
+     "go_hours_per_day_ahead": 4.4,
      "lost_hours_last_7": 19.0
     },
     {
      "key": "labour",
      "trade": "Outdoor labour (heat)",
      "go_days_ahead": 1,
-     "go_hours_per_day_ahead": 0.9,
+     "go_hours_per_day_ahead": 0.6,
      "lost_hours_last_7": 50.0
     }
    ],
@@ -940,15 +940,15 @@
      "url": "https://gavacharles.github.io/kampala-heat-atlas/site-weather/accra/"
     }
    ],
-   "rain_last_7_mm": 17.9,
-   "rain_month_pct_of_normal": 154,
-   "headline": "Next 7 days in Ghana: concrete can go on 7 days (3.3 of 8 working hours a day on average); weather took 10 concrete hours in the last 7 days.",
+   "rain_last_7_mm": 17.0,
+   "rain_month_pct_of_normal": 133,
+   "headline": "Next 7 days in Ghana: concrete can go on 6 days (3.3 of 8 working hours a day on average); weather took 12 concrete hours in the last 7 days.",
    "page": "https://gavacharles.github.io/kampala-heat-atlas/site-weather/",
    "brief": "https://gavacharles.github.io/kampala-heat-atlas/site-weather/market/#ghana"
   },
   "cote_d_ivoire": {
    "country": "Côte d'Ivoire",
-   "generated": "2026-11-13",
+   "generated": "2026-11-14",
    "days_ahead": 7,
    "hours_per_day": 8,
    "trades": [
@@ -963,8 +963,8 @@
      "key": "asphalt",
      "trade": "Asphalt & surfacing",
      "go_days_ahead": 4,
-     "go_hours_per_day_ahead": 1.6,
-     "lost_hours_last_7": 45.0
+     "go_hours_per_day_ahead": 1.4,
+     "lost_hours_last_7": 40.0
     },
     {
      "key": "crane",
@@ -978,28 +978,28 @@
      "trade": "Work at height",
      "go_days_ahead": 7,
      "go_hours_per_day_ahead": 3.7,
-     "lost_hours_last_7": 29.0
+     "lost_hours_last_7": 25.0
     },
     {
      "key": "coatings",
      "trade": "Painting & coatings",
-     "go_days_ahead": 5,
-     "go_hours_per_day_ahead": 2.9,
-     "lost_hours_last_7": 50.0
+     "go_days_ahead": 6,
+     "go_hours_per_day_ahead": 3.0,
+     "lost_hours_last_7": 42.0
     },
     {
      "key": "earthworks",
      "trade": "Earthworks",
      "go_days_ahead": 7,
-     "go_hours_per_day_ahead": 5.0,
-     "lost_hours_last_7": 25.0
+     "go_hours_per_day_ahead": 6.1,
+     "lost_hours_last_7": 22.0
     },
     {
      "key": "labour",
      "trade": "Outdoor labour (heat)",
-     "go_days_ahead": 3,
-     "go_hours_per_day_ahead": 1.4,
-     "lost_hours_last_7": 46.0
+     "go_days_ahead": 2,
+     "go_hours_per_day_ahead": 1.0,
+     "lost_hours_last_7": 45.0
     }
    ],
    "towns": [
@@ -1008,15 +1008,15 @@
      "url": "https://gavacharles.github.io/kampala-heat-atlas/site-weather/abidjan/"
     }
    ],
-   "rain_last_7_mm": 32.3,
-   "rain_month_pct_of_normal": 88,
+   "rain_last_7_mm": 29.7,
+   "rain_month_pct_of_normal": 76,
    "headline": "Next 7 days in Côte d'Ivoire: concrete can go on 7 days (2.7 of 8 working hours a day on average); weather took 9 concrete hours in the last 7 days.",
    "page": "https://gavacharles.github.io/kampala-heat-atlas/site-weather/",
    "brief": "https://gavacharles.github.io/kampala-heat-atlas/site-weather/market/#cote_d_ivoire"
   },
   "senegal": {
    "country": "Senegal",
-   "generated": "2026-11-13",
+   "generated": "2026-11-14",
    "days_ahead": 7,
    "hours_per_day": 8,
    "trades": [
@@ -1024,50 +1024,50 @@
      "key": "concrete",
      "trade": "Concrete pour",
      "go_days_ahead": 6,
-     "go_hours_per_day_ahead": 2.1,
-     "lost_hours_last_7": 25.0
+     "go_hours_per_day_ahead": 2.6,
+     "lost_hours_last_7": 29.0
     },
     {
      "key": "asphalt",
      "trade": "Asphalt & surfacing",
      "go_days_ahead": 7,
      "go_hours_per_day_ahead": 8.0,
-     "lost_hours_last_7": 12.0
+     "lost_hours_last_7": 10.0
     },
     {
      "key": "crane",
      "trade": "Crane lifts",
      "go_days_ahead": 6,
-     "go_hours_per_day_ahead": 5.4,
-     "lost_hours_last_7": 5.0
+     "go_hours_per_day_ahead": 6.0,
+     "lost_hours_last_7": 10.0
     },
     {
      "key": "height",
      "trade": "Work at height",
      "go_days_ahead": 4,
-     "go_hours_per_day_ahead": 3.9,
-     "lost_hours_last_7": 8.0
+     "go_hours_per_day_ahead": 4.9,
+     "lost_hours_last_7": 15.0
     },
     {
      "key": "coatings",
      "trade": "Painting & coatings",
      "go_days_ahead": 7,
-     "go_hours_per_day_ahead": 6.9,
-     "lost_hours_last_7": 21.0
+     "go_hours_per_day_ahead": 6.4,
+     "lost_hours_last_7": 20.0
     },
     {
      "key": "earthworks",
      "trade": "Earthworks",
      "go_days_ahead": 7,
      "go_hours_per_day_ahead": 8.0,
-     "lost_hours_last_7": 1.0
+     "lost_hours_last_7": 0.0
     },
     {
      "key": "labour",
      "trade": "Outdoor labour (heat)",
      "go_days_ahead": 7,
-     "go_hours_per_day_ahead": 5.4,
-     "lost_hours_last_7": 37.0
+     "go_hours_per_day_ahead": 5.3,
+     "lost_hours_last_7": 36.0
     }
    ],
    "towns": [
@@ -1076,58 +1076,58 @@
      "url": "https://gavacharles.github.io/kampala-heat-atlas/site-weather/dakar/"
     }
    ],
-   "rain_last_7_mm": 1.5,
+   "rain_last_7_mm": 0.9,
    "rain_month_pct_of_normal": null,
-   "headline": "Next 7 days in Senegal: concrete can go on 6 days (2.1 of 8 working hours a day on average); weather took 25 concrete hours in the last 7 days.",
+   "headline": "Next 7 days in Senegal: concrete can go on 6 days (2.6 of 8 working hours a day on average); weather took 29 concrete hours in the last 7 days.",
    "page": "https://gavacharles.github.io/kampala-heat-atlas/site-weather/",
    "brief": "https://gavacharles.github.io/kampala-heat-atlas/site-weather/market/#senegal"
   },
   "zambia": {
    "country": "Zambia",
-   "generated": "2026-11-13",
+   "generated": "2026-11-14",
    "days_ahead": 7,
    "hours_per_day": 8,
    "trades": [
     {
      "key": "concrete",
      "trade": "Concrete pour",
-     "go_days_ahead": 6,
-     "go_hours_per_day_ahead": 2.1,
-     "lost_hours_last_7": 54.0
+     "go_days_ahead": 4,
+     "go_hours_per_day_ahead": 1.7,
+     "lost_hours_last_7": 53.0
     },
     {
      "key": "asphalt",
      "trade": "Asphalt & surfacing",
-     "go_days_ahead": 3,
+     "go_days_ahead": 5,
      "go_hours_per_day_ahead": 2.9,
-     "lost_hours_last_7": 0.0
+     "lost_hours_last_7": 3.0
     },
     {
      "key": "crane",
      "trade": "Crane lifts",
      "go_days_ahead": 7,
-     "go_hours_per_day_ahead": 6.6,
+     "go_hours_per_day_ahead": 6.1,
      "lost_hours_last_7": 0.0
     },
     {
      "key": "height",
      "trade": "Work at height",
      "go_days_ahead": 5,
-     "go_hours_per_day_ahead": 4.9,
-     "lost_hours_last_7": 8.0
+     "go_hours_per_day_ahead": 4.1,
+     "lost_hours_last_7": 7.0
     },
     {
      "key": "coatings",
      "trade": "Painting & coatings",
      "go_days_ahead": 6,
-     "go_hours_per_day_ahead": 4.6,
+     "go_hours_per_day_ahead": 5.0,
      "lost_hours_last_7": 0.0
     },
     {
      "key": "earthworks",
      "trade": "Earthworks",
-     "go_days_ahead": 5,
-     "go_hours_per_day_ahead": 4.6,
+     "go_days_ahead": 7,
+     "go_hours_per_day_ahead": 6.9,
      "lost_hours_last_7": 0.0
     },
     {
@@ -1144,66 +1144,66 @@
      "url": "https://gavacharles.github.io/kampala-heat-atlas/site-weather/lusaka/"
     }
    ],
-   "rain_last_7_mm": 0.0,
-   "rain_month_pct_of_normal": 0,
-   "headline": "Next 7 days in Zambia: concrete can go on 6 days (2.1 of 8 working hours a day on average); weather took 54 concrete hours in the last 7 days.",
+   "rain_last_7_mm": 0.2,
+   "rain_month_pct_of_normal": 1,
+   "headline": "Next 7 days in Zambia: concrete can go on 4 days (1.7 of 8 working hours a day on average); weather took 53 concrete hours in the last 7 days.",
    "page": "https://gavacharles.github.io/kampala-heat-atlas/site-weather/",
    "brief": "https://gavacharles.github.io/kampala-heat-atlas/site-weather/market/#zambia"
   },
   "mozambique": {
    "country": "Mozambique",
-   "generated": "2026-11-13",
+   "generated": "2026-11-14",
    "days_ahead": 7,
    "hours_per_day": 8,
    "trades": [
     {
      "key": "concrete",
      "trade": "Concrete pour",
-     "go_days_ahead": 2,
-     "go_hours_per_day_ahead": 2.1,
-     "lost_hours_last_7": 30.5
+     "go_days_ahead": 3,
+     "go_hours_per_day_ahead": 2.2,
+     "lost_hours_last_7": 31.5
     },
     {
      "key": "asphalt",
      "trade": "Asphalt & surfacing",
-     "go_days_ahead": 4,
-     "go_hours_per_day_ahead": 3.4,
-     "lost_hours_last_7": 16.0
+     "go_days_ahead": 5,
+     "go_hours_per_day_ahead": 4.5,
+     "lost_hours_last_7": 18.5
     },
     {
      "key": "crane",
      "trade": "Crane lifts",
      "go_days_ahead": 6,
-     "go_hours_per_day_ahead": 4.6,
+     "go_hours_per_day_ahead": 5.6,
      "lost_hours_last_7": 0.0
     },
     {
      "key": "height",
      "trade": "Work at height",
-     "go_days_ahead": 4,
-     "go_hours_per_day_ahead": 3.7,
-     "lost_hours_last_7": 10.5
+     "go_days_ahead": 5,
+     "go_hours_per_day_ahead": 4.0,
+     "lost_hours_last_7": 11.0
     },
     {
      "key": "coatings",
      "trade": "Painting & coatings",
-     "go_days_ahead": 5,
-     "go_hours_per_day_ahead": 4.4,
+     "go_days_ahead": 6,
+     "go_hours_per_day_ahead": 5.0,
      "lost_hours_last_7": 6.0
     },
     {
      "key": "earthworks",
      "trade": "Earthworks",
      "go_days_ahead": 6,
-     "go_hours_per_day_ahead": 5.7,
-     "lost_hours_last_7": 1.5
+     "go_hours_per_day_ahead": 6.1,
+     "lost_hours_last_7": 2.0
     },
     {
      "key": "labour",
      "trade": "Outdoor labour (heat)",
      "go_days_ahead": 6,
-     "go_hours_per_day_ahead": 5.6,
-     "lost_hours_last_7": 10.5
+     "go_hours_per_day_ahead": 4.9,
+     "lost_hours_last_7": 12.5
     }
    ],
    "towns": [
@@ -1216,45 +1216,45 @@
      "url": "https://gavacharles.github.io/kampala-heat-atlas/site-weather/beira/"
     }
    ],
-   "rain_last_7_mm": 2.8,
-   "rain_month_pct_of_normal": 13,
-   "headline": "Next 7 days in Mozambique: concrete can go on 2 days (2.1 of 8 working hours a day on average); weather took 30 concrete hours in the last 7 days.",
+   "rain_last_7_mm": 4.7,
+   "rain_month_pct_of_normal": 25,
+   "headline": "Next 7 days in Mozambique: concrete can go on 3 days (2.2 of 8 working hours a day on average); weather took 32 concrete hours in the last 7 days.",
    "page": "https://gavacharles.github.io/kampala-heat-atlas/site-weather/",
    "brief": "https://gavacharles.github.io/kampala-heat-atlas/site-weather/market/#mozambique"
   },
   "botswana": {
    "country": "Botswana",
-   "generated": "2026-11-13",
+   "generated": "2026-11-14",
    "days_ahead": 7,
    "hours_per_day": 8,
    "trades": [
     {
      "key": "concrete",
      "trade": "Concrete pour",
-     "go_days_ahead": 3,
-     "go_hours_per_day_ahead": 2.3,
+     "go_days_ahead": 2,
+     "go_hours_per_day_ahead": 1.4,
      "lost_hours_last_7": 54.0
     },
     {
      "key": "asphalt",
      "trade": "Asphalt & surfacing",
      "go_days_ahead": 7,
-     "go_hours_per_day_ahead": 6.1,
+     "go_hours_per_day_ahead": 7.0,
      "lost_hours_last_7": 11.0
     },
     {
      "key": "crane",
      "trade": "Crane lifts",
      "go_days_ahead": 7,
-     "go_hours_per_day_ahead": 7.3,
+     "go_hours_per_day_ahead": 6.7,
      "lost_hours_last_7": 0.0
     },
     {
      "key": "height",
      "trade": "Work at height",
-     "go_days_ahead": 6,
-     "go_hours_per_day_ahead": 5.9,
-     "lost_hours_last_7": 2.0
+     "go_days_ahead": 5,
+     "go_hours_per_day_ahead": 5.0,
+     "lost_hours_last_7": 5.0
     },
     {
      "key": "coatings",
@@ -1267,15 +1267,15 @@
      "key": "earthworks",
      "trade": "Earthworks",
      "go_days_ahead": 6,
-     "go_hours_per_day_ahead": 6.6,
+     "go_hours_per_day_ahead": 6.7,
      "lost_hours_last_7": 1.0
     },
     {
      "key": "labour",
      "trade": "Outdoor labour (heat)",
      "go_days_ahead": 7,
-     "go_hours_per_day_ahead": 7.9,
-     "lost_hours_last_7": 15.0
+     "go_hours_per_day_ahead": 8.0,
+     "lost_hours_last_7": 14.0
     }
    ],
    "towns": [
@@ -1285,8 +1285,8 @@
     }
    ],
    "rain_last_7_mm": 2.5,
-   "rain_month_pct_of_normal": 18,
-   "headline": "Next 7 days in Botswana: concrete can go on 3 days (2.3 of 8 working hours a day on average); weather took 54 concrete hours in the last 7 days.",
+   "rain_month_pct_of_normal": 16,
+   "headline": "Next 7 days in Botswana: concrete can go on 2 days (1.4 of 8 working hours a day on average); weather took 54 concrete hours in the last 7 days.",
    "page": "https://gavacharles.github.io/kampala-heat-atlas/site-weather/",
    "brief": "https://gavacharles.github.io/kampala-heat-atlas/site-weather/market/#botswana"
   }

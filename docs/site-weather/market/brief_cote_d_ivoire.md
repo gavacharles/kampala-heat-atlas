@@ -1,4 +1,4 @@
-# Site and market · Côte d'Ivoire · week of 13 November 2026
+# Site and market · Côte d'Ivoire · week of 14 November 2026
 
 **Next 7 days in Côte d'Ivoire: concrete can go on 7 days (2.7 of 8 working hours a day on average); weather took 9 concrete hours in the last 7 days.**
 
@@ -6,12 +6,12 @@
 | Trade | Days with a go window, next 7 | Go hours per working day | Hours lost, last 7 days |
 |---|---|---|---|
 | Concrete pour | 7 | 2.7 of 8 | 9 |
-| Asphalt & surfacing | 4 | 1.6 of 8 | 45 |
+| Asphalt & surfacing | 4 | 1.4 of 8 | 40 |
 | Crane lifts | 7 | 4.7 of 8 | 0 |
-| Work at height | 7 | 3.7 of 8 | 29 |
-| Painting & coatings | 5 | 2.9 of 8 | 50 |
-| Earthworks | 7 | 5.0 of 8 | 25 |
-| Outdoor labour (heat) | 3 | 1.4 of 8 | 46 |
+| Work at height | 7 | 3.7 of 8 | 25 |
+| Painting & coatings | 6 | 3.0 of 8 | 42 |
+| Earthworks | 7 | 6.1 of 8 | 22 |
+| Outdoor labour (heat) | 2 | 1.0 of 8 | 45 |
 
 **What to do this week**
 

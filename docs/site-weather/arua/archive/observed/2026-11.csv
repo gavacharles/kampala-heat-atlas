@@ -1,7 +1,8 @@
-date,source,rain_mm,rain_max_mm_h,tmax_C,gust_max_ms,wbgt_sun_max_C,rain_flag,gust_flag,heat_flag,go_hours_labour,go_hours_concrete,go_hours_asphalt,go_hours_crane,go_hours_height,go_hours_coatings,go_hours_earthworks,working_hours
-2026-11-01,ERA5 (final),0.1,0.1,29.0,8.5,26.6,,,,8.0,5.0,8.0,8.0,8.0,7.0,8.0,8.0
-2026-11-02,ERA5 (final),0.0,0.0,29.0,9.2,26.7,,,,8.0,8.0,8.0,8.0,8.0,7.0,8.0,8.0
-2026-11-03,ERA5 (final),0.0,0.0,29.5,7.9,27.0,,,above 1-in-10-day,8.0,5.0,8.0,8.0,8.0,7.0,8.0,8.0
-2026-11-04,ERA5 (final),0.0,0.0,29.9,10.0,26.4,,,above 1-in-10-day,8.0,3.0,8.0,8.0,8.0,8.0,8.0,8.0
-2026-11-11,model analysis (preliminary),2.2,0.9,26.0,8.4,24.4,,,,8.0,5.0,1.0,8.0,5.0,5.0,5.0,8.0
-2026-11-12,model analysis (preliminary),0.9,0.3,25.5,7.2,23.3,,,,8.0,8.0,6.0,8.0,8.0,7.0,8.0,8.0
+date,source,rain_mm,rain_max_mm_h,tmax_C,gust_max_ms,wbgt_sun_max_C,rain_flag,gust_flag,heat_flag,go_hours_labour,go_hours_concrete,go_hours_asphalt,go_hours_crane,go_hours_height,go_hours_coatings,go_hours_earthworks,working_hours,forecast_rain_mm_day_before
+2026-11-01,ERA5 (final),0.1,0.1,29.0,8.5,26.6,,,,8.0,5.0,8.0,8.0,8.0,7.0,8.0,8.0,
+2026-11-02,ERA5 (final),0.0,0.0,29.0,9.2,26.7,,,,8.0,8.0,8.0,8.0,8.0,7.0,8.0,8.0,
+2026-11-03,ERA5 (final),0.0,0.0,29.5,7.9,27.0,,,above 1-in-10-day,8.0,5.0,8.0,8.0,8.0,7.0,8.0,8.0,
+2026-11-04,ERA5 (final),0.0,0.0,29.9,10.0,26.4,,,above 1-in-10-day,8.0,3.0,8.0,8.0,8.0,8.0,8.0,8.0,
+2026-11-11,model analysis (preliminary),2.2,0.9,26.0,8.4,24.4,,,,8.0,5.0,1.0,8.0,5.0,5.0,5.0,8.0,
+2026-11-12,model analysis (preliminary),0.9,0.3,25.5,7.2,23.3,,,,8.0,8.0,6.0,8.0,8.0,7.0,8.0,8.0,
+2026-11-13,model analysis (preliminary),4.6,1.9,26.4,7.4,26.0,,,,8.0,6.0,3.0,8.0,5.0,3.0,5.0,8.0,3.4
