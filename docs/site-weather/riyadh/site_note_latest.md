@@ -1,6 +1,6 @@
 # Site note · Riyadh
 
-Issued Sunday 15 November 2026, 23:13 (Asia/Riyadh). Site 24.7136, 46.6753. Working hours 07:00-17:00, lunch break excluded (9 h).
+Issued Sunday 15 November 2026, 23:26 (Asia/Riyadh). Site 24.7136, 46.6753. Working hours 07:00-17:00, lunch break excluded (9 h).
 
 ## Monday 16 November
 

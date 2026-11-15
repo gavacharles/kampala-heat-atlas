@@ -1,6 +1,6 @@
 # Site note · Jeddah
 
-Issued Sunday 15 November 2026, 23:17 (Asia/Riyadh). Site 21.4858, 39.1925. Working hours 07:00-17:00, lunch break excluded (9 h).
+Issued Sunday 15 November 2026, 23:26 (Asia/Riyadh). Site 21.4858, 39.1925. Working hours 07:00-17:00, lunch break excluded (9 h).
 
 ## Monday 16 November
 

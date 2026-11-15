@@ -1,6 +1,6 @@
 # Site note · Dammam
 
-Issued Sunday 15 November 2026, 23:19 (Asia/Riyadh). Site 26.4207, 50.0888. Working hours 07:00-17:00, lunch break excluded (9 h).
+Issued Sunday 15 November 2026, 23:26 (Asia/Riyadh). Site 26.4207, 50.0888. Working hours 07:00-17:00, lunch break excluded (9 h).
 
 ## Monday 16 November
 

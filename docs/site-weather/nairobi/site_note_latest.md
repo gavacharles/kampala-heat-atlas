@@ -1,6 +1,6 @@
 # Site note · Nairobi
 
-Issued Sunday 15 November 2026, 23:13 (Africa/Nairobi). Site -1.2864, 36.8172. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Sunday 15 November 2026, 23:26 (Africa/Nairobi). Site -1.2864, 36.8172. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Monday 16 November
 

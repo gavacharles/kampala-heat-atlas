@@ -1,6 +1,6 @@
 # Site note · Mwanza
 
-Issued Sunday 15 November 2026, 23:16 (Africa/Dar_es_Salaam). Site -2.5164, 32.9175. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Sunday 15 November 2026, 23:26 (Africa/Dar_es_Salaam). Site -2.5164, 32.9175. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Monday 16 November
 
