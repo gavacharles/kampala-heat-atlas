@@ -1,6 +1,6 @@
 # Site note · Nairobi
 
-Issued Sunday 15 November 2026, 12:38 (Africa/Nairobi). Site -1.2864, 36.8172. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Sunday 15 November 2026, 14:28 (Africa/Nairobi). Site -1.2864, 36.8172. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Sunday 15 November
 
@@ -42,7 +42,6 @@ Rain 6 mm (chance up to 89 %) · storms possible · WBGT peak 22.8 °C · gusts 
 - **Work at height — go 08-09 h, 14-15 h only.** Limited by rain, storms. Clear roofs and scaffolds before storms.
 - **Earthworks — go with care.** Limited by wet ground, rain. Ground soft: protect formation and stockpiles. Ground wet after 7 mm in 24 h.
 - **No weather limits:** Outdoor labour.
-- UV index up to 8 (very high): hats with neck cover, long sleeves, sunscreen.
 
 ## Outlook
 

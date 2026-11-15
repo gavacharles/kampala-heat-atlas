@@ -1,6 +1,6 @@
 # Site note · Dodoma
 
-Issued Sunday 15 November 2026, 12:38 (Africa/Dar_es_Salaam). Site -6.1630, 35.7516. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Sunday 15 November 2026, 14:28 (Africa/Dar_es_Salaam). Site -6.1630, 35.7516. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Sunday 15 November
 
@@ -43,6 +43,7 @@ Rain 4 mm (chance up to 73 %) · storms low · WBGT peak 25.5 °C · gusts 12 m/
 - **Painting & coatings — go 09-13 h only.** Limited by rain, humidity or dew. Check the surface is 3 °C above dew point.
 - **Earthworks — go 08-13 h only.** Limited by rain, wet ground. Protect formation and stockpiles. Ground wet after 5 mm in 24 h.
 - **No weather limits:** Outdoor labour, Crane lifts.
+- UV index up to 10 (very high): hats with neck cover, long sleeves, sunscreen.
 
 ## Outlook
 

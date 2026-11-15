@@ -1,6 +1,6 @@
 # Site note · Hoima
 
-Issued Sunday 15 November 2026, 12:38 (Africa/Kampala). Site 1.4331, 31.3524. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Sunday 15 November 2026, 14:27 (Africa/Kampala). Site 1.4331, 31.3524. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Sunday 15 November
 

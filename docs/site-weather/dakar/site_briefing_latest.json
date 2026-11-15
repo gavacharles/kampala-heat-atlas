@@ -2,7 +2,7 @@
  "site": "Dakar",
  "lat": 14.7167,
  "lon": -17.4677,
- "issued": "2026-11-15 09:39",
+ "issued": "2026-11-15 11:27",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -670,9 +670,7 @@
      ]
     }
    ],
-   "extras": [
-    "Dust: PM2.5 up to 40 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
-   ],
+   "extras": [],
    "facts": {
     "rain_mm": 0.0,
     "rain_chance": 0,
@@ -1009,9 +1007,7 @@
      ]
     }
    ],
-   "extras": [
-    "Dust: PM2.5 up to 35 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
-   ],
+   "extras": [],
    "facts": {
     "rain_mm": 0.0,
     "rain_chance": 2,

@@ -2,7 +2,7 @@
  "site": "Arua",
  "lat": 3.0201,
  "lon": 30.9111,
- "issued": "2026-11-15 12:39",
+ "issued": "2026-11-15 14:27",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -2387,7 +2387,7 @@
     }
    ],
    "extras": [
-    "UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen."
+    "UV index up to 10 (very high): hats with neck cover, long sleeves, sunscreen."
    ],
    "facts": {
     "rain_mm": 0.0,

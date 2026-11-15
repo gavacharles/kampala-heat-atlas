@@ -2,7 +2,7 @@
  "site": "Lusaka",
  "lat": -15.3875,
  "lon": 28.3228,
- "issued": "2026-11-15 11:38",
+ "issued": "2026-11-15 13:29",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -338,7 +338,7 @@
     }
    ],
    "extras": [
-    "UV index up to 10 (very high): hats with neck cover, long sleeves, sunscreen."
+    "UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen."
    ],
    "facts": {
     "rain_mm": 5.5,
@@ -685,7 +685,7 @@
     }
    ],
    "extras": [
-    "UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen."
+    "UV index up to 10 (very high): hats with neck cover, long sleeves, sunscreen."
    ],
    "facts": {
     "rain_mm": 1.4,
@@ -1390,7 +1390,9 @@
      ]
     }
    ],
-   "extras": [],
+   "extras": [
+    "UV index up to 8 (very high): hats with neck cover, long sleeves, sunscreen."
+   ],
    "facts": {
     "rain_mm": 4.0,
     "rain_chance": 84,
@@ -1740,9 +1742,7 @@
      ]
     }
    ],
-   "extras": [
-    "UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen."
-   ],
+   "extras": [],
    "facts": {
     "rain_mm": 3.3,
     "rain_chance": 66,
@@ -2086,9 +2086,7 @@
      ]
     }
    ],
-   "extras": [
-    "UV index up to 8 (very high): hats with neck cover, long sleeves, sunscreen."
-   ],
+   "extras": [],
    "facts": {
     "rain_mm": 6.3,
     "rain_chance": 62,
@@ -2428,7 +2426,7 @@
     }
    ],
    "extras": [
-    "UV index up to 10 (very high): hats with neck cover, long sleeves, sunscreen."
+    "UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen."
    ],
    "facts": {
     "rain_mm": 1.8,

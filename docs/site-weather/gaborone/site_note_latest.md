@@ -1,6 +1,6 @@
 # Site note · Gaborone
 
-Issued Sunday 15 November 2026, 11:39 (Africa/Gaborone). Site -24.6282, 25.9231. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Sunday 15 November 2026, 13:32 (Africa/Gaborone). Site -24.6282, 25.9231. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Sunday 15 November
 
@@ -25,7 +25,7 @@ Rain 0 mm (chance up to 54 %) · storms low · WBGT peak 27.5 °C · gusts 9 m/s
 
 - **Concrete pour — go 08-12 h only.** Limited by fast drying. Curing cover and windbreaks ready.
 - **No weather limits:** Outdoor labour, Asphalt & surfacing, Crane lifts, Work at height, Painting & coatings, Earthworks.
-- UV index up to 10 (very high): hats with neck cover, long sleeves, sunscreen.
+- UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.
 
 ## Tuesday 17 November
 

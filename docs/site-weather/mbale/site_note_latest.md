@@ -1,6 +1,6 @@
 # Site note · Mbale
 
-Issued Sunday 15 November 2026, 12:38 (Africa/Kampala). Site 1.0821, 34.1750. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Sunday 15 November 2026, 14:27 (Africa/Kampala). Site 1.0821, 34.1750. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Sunday 15 November
 
@@ -16,7 +16,7 @@ Rain 9 mm (chance up to 100 %) · storms likely · WBGT peak 28.1 °C · gusts 6
 - **Work at height — go 08-11 h only.** Limited by rain, storms. Clear roofs and scaffolds before storms.
 - **Earthworks — go 16-17 h only.** Limited by wet ground, rain. Protect formation and stockpiles. Ground wet after 9 mm in 24 h.
 - UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.
-- Dust: PM2.5 up to 50 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Dust: PM2.5 up to 48 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Monday 16 November
 
@@ -32,7 +32,7 @@ Rain 15 mm (chance up to 99 %) · storms likely · WBGT peak 27.5 °C · gusts 7
 - **Work at height — go 09-11 h only.** Limited by rain, storms. Clear roofs and scaffolds before storms.
 - **No weather limits:** Outdoor labour.
 - UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.
-- Dust: PM2.5 up to 51 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Dust: PM2.5 up to 45 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Tuesday 17 November
 
@@ -47,7 +47,7 @@ Rain 5 mm (chance up to 98 %) · storms likely · WBGT peak 27.7 °C · gusts 8 
 - **Crane lifts — go 08-11 h only.** Limited by storms. Check the anemometer before each lift.
 - **Work at height — go 08-10 h only.** Limited by rain, storms. Clear roofs and scaffolds before storms.
 - **No weather limits:** Outdoor labour.
-- Dust: PM2.5 up to 50 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Dust: PM2.5 up to 40 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Outlook
 

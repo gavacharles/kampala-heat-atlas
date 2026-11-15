@@ -2,7 +2,7 @@
  "site": "Accra",
  "lat": 5.6037,
  "lon": -0.187,
- "issued": "2026-11-15 09:38",
+ "issued": "2026-11-15 11:27",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -688,9 +688,7 @@
      ]
     }
    ],
-   "extras": [
-    "UV index up to 8 (very high): hats with neck cover, long sleeves, sunscreen."
-   ],
+   "extras": [],
    "facts": {
     "rain_mm": 3.2,
     "rain_chance": 94,

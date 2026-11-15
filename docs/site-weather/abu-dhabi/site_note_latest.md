@@ -1,6 +1,6 @@
 # Site note · Abu Dhabi
 
-Issued Sunday 15 November 2026, 13:38 (Asia/Dubai). Site 24.4539, 54.3773. Working hours 07:00-17:00, lunch break excluded (9 h).
+Issued Sunday 15 November 2026, 15:27 (Asia/Dubai). Site 24.4539, 54.3773. Working hours 07:00-17:00, lunch break excluded (9 h).
 
 ## Sunday 15 November
 
@@ -28,7 +28,7 @@ Rain 0 mm (chance up to 17 %) · storms low · WBGT peak 25.5 °C · gusts 10 m/
 
 - **Concrete pour — go 07-12 h only.** Limited by fast drying. Curing cover and windbreaks ready.
 - **No weather limits:** Outdoor labour, Asphalt & surfacing, Crane lifts, Work at height, Painting & coatings, Earthworks.
-- Dust: PM2.5 up to 39 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Dust: PM2.5 up to 38 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Outlook
 

@@ -1,6 +1,6 @@
 # Site note · Kigali
 
-Issued Sunday 15 November 2026, 11:38 (Africa/Kigali). Site -1.9441, 30.0619. Working hours 07:00-17:00, lunch break excluded (9 h).
+Issued Sunday 15 November 2026, 13:28 (Africa/Kigali). Site -1.9441, 30.0619. Working hours 07:00-17:00, lunch break excluded (9 h).
 
 ## Sunday 15 November
 
@@ -16,7 +16,7 @@ Rain 3 mm (chance up to 85 %) · storms possible · WBGT peak 24.7 °C · gusts 
 - **Earthworks — go 07-11 h, 13-17 h only.** Limited by rain. Protect formation and stockpiles.
 - **No weather limits:** Outdoor labour.
 - UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.
-- Dust: PM2.5 up to 41 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Dust: PM2.5 up to 38 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Monday 16 November
 
@@ -32,7 +32,7 @@ Rain 6 mm (chance up to 94 %) · storms likely · WBGT peak 24.7 °C · gusts 12
 - **Earthworks — go 07-12 h only.** Limited by rain, wet ground. Protect formation and stockpiles. Ground wet after 7 mm in 24 h.
 - **No weather limits:** Outdoor labour.
 - UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.
-- Dust: PM2.5 up to 47 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Dust: PM2.5 up to 45 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Tuesday 17 November
 
@@ -48,7 +48,7 @@ Rain 7 mm (chance up to 98 %) · storms possible · WBGT peak 24.8 °C · gusts 
 - **Earthworks — go with care.** Limited by wet ground, rain. Ground soft: protect formation and stockpiles. Ground wet after 10 mm in 24 h.
 - **No weather limits:** Outdoor labour.
 - UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.
-- Dust: PM2.5 up to 44 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Dust: PM2.5 up to 43 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Outlook
 

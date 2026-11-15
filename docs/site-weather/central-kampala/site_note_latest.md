@@ -1,6 +1,6 @@
 # Site note · Central Kampala
 
-Issued Sunday 15 November 2026, 12:38 (Africa/Kampala). Site 0.3136, 32.5811. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Sunday 15 November 2026, 14:27 (Africa/Kampala). Site 0.3136, 32.5811. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Sunday 15 November
 
@@ -15,8 +15,7 @@ Rain 1 mm (chance up to 78 %) · storms possible · WBGT peak 25.7 °C · gusts 
 - **Painting & coatings — go 16-17 h only.** Limited by rain, humidity or dew. Check the surface is 3 °C above dew point.
 - **Earthworks — go 14-17 h only.** Limited by wet ground. Protect formation and stockpiles. Ground wet after 9 mm in 24 h.
 - **No weather limits:** Outdoor labour.
-- UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.
-- Dust: PM2.5 up to 65 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Dust: PM2.5 up to 81 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Monday 16 November
 
@@ -31,8 +30,7 @@ Rain 8 mm (chance up to 90 %) · storms possible · WBGT peak 26.3 °C · gusts 
 - **Work at height — go 08-09 h only.** Limited by storms, rain. Clear roofs and scaffolds before storms.
 - **Earthworks — go with care.** Limited by wet ground, rain. Ground soft: protect formation and stockpiles. Ground wet after 8 mm in 24 h.
 - **No weather limits:** Outdoor labour.
-- UV index up to 8 (very high): hats with neck cover, long sleeves, sunscreen.
-- Dust: PM2.5 up to 95 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Dust: PM2.5 up to 84 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Tuesday 17 November
 
@@ -46,7 +44,8 @@ Rain 4 mm (chance up to 72 %) · storms possible · WBGT peak 25.9 °C · gusts 
 - **Painting & coatings — STOP.** Limited by rain, humidity or dew. Too humid or wet for painting and coatings.
 - **Concrete pour — go with care.** Limited by rain, storms. Pour with care: covers and curing ready.
 - **No weather limits:** Outdoor labour, Earthworks.
-- Dust: PM2.5 up to 94 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- UV index up to 8 (very high): hats with neck cover, long sleeves, sunscreen.
+- Dust: PM2.5 up to 89 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Outlook
 

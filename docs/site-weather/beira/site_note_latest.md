@@ -1,6 +1,6 @@
 # Site note · Beira
 
-Issued Sunday 15 November 2026, 11:39 (Africa/Maputo). Site -19.8436, 34.8389. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Sunday 15 November 2026, 13:30 (Africa/Maputo). Site -19.8436, 34.8389. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Sunday 15 November
 
@@ -45,7 +45,7 @@ Rain 3 mm (chance up to 80 %) · storms possible · WBGT peak 28.4 °C · gusts 
 - **Crane lifts — go 08-09 h only.** Limited by storms, wind. Check the anemometer before each lift.
 - **Painting & coatings — go 16-17 h only.** Limited by rain. Check the surface is 3 °C above dew point.
 - **No weather limits:** Earthworks.
-- UV index up to 10 (very high): hats with neck cover, long sleeves, sunscreen.
+- UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.
 
 ## Outlook
 

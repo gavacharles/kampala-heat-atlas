@@ -2,7 +2,7 @@
  "site": "Lagos",
  "lat": 6.5244,
  "lon": 3.3792,
- "issued": "2026-11-15 10:38",
+ "issued": "2026-11-15 12:27",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -338,7 +338,7 @@
     }
    ],
    "extras": [
-    "Dust: PM2.5 up to 52 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
+    "Dust: PM2.5 up to 41 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
    ],
    "facts": {
     "rain_mm": 3.3,
@@ -1392,7 +1392,9 @@
      ]
     }
    ],
-   "extras": [],
+   "extras": [
+    "Dust: PM2.5 up to 39 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
+   ],
    "facts": {
     "rain_mm": 2.1,
     "rain_chance": 85,

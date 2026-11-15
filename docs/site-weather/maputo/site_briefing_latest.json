@@ -2,7 +2,7 @@
  "site": "Maputo",
  "lat": -25.9692,
  "lon": 32.5732,
- "issued": "2026-11-15 11:39",
+ "issued": "2026-11-15 13:30",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -338,7 +338,9 @@
      ]
     }
    ],
-   "extras": [],
+   "extras": [
+    "UV index up to 8 (very high): hats with neck cover, long sleeves, sunscreen."
+   ],
    "facts": {
     "rain_mm": 19.6,
     "rain_chance": 88,
@@ -1369,7 +1371,7 @@
     }
    ],
    "extras": [
-    "UV index up to 8 (very high): hats with neck cover, long sleeves, sunscreen."
+    "UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen."
    ],
    "facts": {
     "rain_mm": 0.0,
@@ -2046,7 +2048,9 @@
      ]
     }
    ],
-   "extras": [],
+   "extras": [
+    "UV index up to 10 (very high): hats with neck cover, long sleeves, sunscreen."
+   ],
    "facts": {
     "rain_mm": 0.0,
     "rain_chance": 4,
@@ -2391,9 +2395,7 @@
      ]
     }
    ],
-   "extras": [
-    "UV index up to 8 (very high): hats with neck cover, long sleeves, sunscreen."
-   ],
+   "extras": [],
    "facts": {
     "rain_mm": 1.5,
     "rain_chance": 4,

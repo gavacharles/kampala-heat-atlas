@@ -1,6 +1,6 @@
 # Site note · Dammam
 
-Issued Sunday 15 November 2026, 12:45 (Asia/Riyadh). Site 26.4207, 50.0888. Working hours 07:00-17:00, lunch break excluded (9 h).
+Issued Sunday 15 November 2026, 14:27 (Asia/Riyadh). Site 26.4207, 50.0888. Working hours 07:00-17:00, lunch break excluded (9 h).
 
 ## Sunday 15 November
 
@@ -18,7 +18,7 @@ Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 21.2 °C · gusts 14 m/s
 
 **Pour concrete 07-10 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 22.4 °C · gusts 12 m/s at hook height
+Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 22.3 °C · gusts 12 m/s at hook height
 
 - **Concrete pour — go 07-10 h only.** Limited by fast drying. Curing cover and windbreaks ready.
 - **No weather limits:** Outdoor labour, Asphalt & surfacing, Crane lifts, Work at height, Painting & coatings, Earthworks.
@@ -29,7 +29,7 @@ Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 22.4 °C · gusts 12 m/s
 
 **Pour concrete 07-11 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 24.5 °C · gusts 10 m/s at hook height
+Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 24.4 °C · gusts 9 m/s at hook height
 
 - **Concrete pour — go 07-11 h, 16-17 h only.** Limited by fast drying. Curing cover and windbreaks ready.
 - **No weather limits:** Outdoor labour, Asphalt & surfacing, Crane lifts, Work at height, Painting & coatings, Earthworks.
@@ -38,7 +38,7 @@ Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 24.5 °C · gusts 10 m/s
 
 ## Outlook
 
-- **Wednesday 18 November**: Pour concrete 07-12 h; fast drying limits the rest of the day. Rain 0 mm (0 %); concrete 8 h go.
+- **Wednesday 18 November**: Good working day: no weather limits on any trade. Rain 0 mm (0 %); concrete 9 h go.
 - **Thursday 19 November**: Some limits today: check your trade below. Rain 0 mm (0 %); concrete 9 h go.
 - **Friday 20 November**: Pour concrete 07-11 h; fast drying limits the rest of the day. Rain 0 mm (0 %); concrete 7 h go.
 - **Saturday 21 November**: Pour concrete 07-12 h; fast drying limits the rest of the day. Rain 0 mm (0 %); concrete 6 h go.

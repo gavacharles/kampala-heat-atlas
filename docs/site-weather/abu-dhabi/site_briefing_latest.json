@@ -2,7 +2,7 @@
  "site": "Abu Dhabi",
  "lat": 24.4539,
  "lon": 54.3773,
- "issued": "2026-11-15 13:38",
+ "issued": "2026-11-15 15:27",
  "working": "07:00-17:00, lunch excluded (9 h)",
  "days": [
   {
@@ -1076,7 +1076,7 @@
     }
    ],
    "extras": [
-    "Dust: PM2.5 up to 39 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
+    "Dust: PM2.5 up to 38 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
    ],
    "facts": {
     "rain_mm": 0.0,
@@ -1443,7 +1443,7 @@
     }
    ],
    "extras": [
-    "Dust: PM2.5 up to 47 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
+    "Dust: PM2.5 up to 45 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
    ],
    "facts": {
     "rain_mm": 0.0,
@@ -1814,7 +1814,7 @@
     }
    ],
    "extras": [
-    "Dust: PM2.5 up to 44 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
+    "Dust: PM2.5 up to 50 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
    ],
    "facts": {
     "rain_mm": 0.0,

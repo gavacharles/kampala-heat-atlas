@@ -1,6 +1,6 @@
 # Site note · Abuja
 
-Issued Sunday 15 November 2026, 10:38 (Africa/Lagos). Site 9.0765, 7.3986. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Sunday 15 November 2026, 12:27 (Africa/Lagos). Site 9.0765, 7.3986. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Sunday 15 November
 
@@ -10,7 +10,7 @@ Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 27.0 °C · gusts 8 m/s 
 
 - **Concrete pour — go with care.** Limited by fast drying. Pour with care: covers and curing ready.
 - **No weather limits:** Outdoor labour, Asphalt & surfacing, Crane lifts, Work at height, Painting & coatings, Earthworks.
-- Dust: PM2.5 up to 84 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Dust: PM2.5 up to 87 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Monday 16 November
 
@@ -20,8 +20,8 @@ Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 26.6 °C · gusts 6 m/s 
 
 - **Concrete pour — go 08-09 h only.** Limited by fast drying. Curing cover and windbreaks ready.
 - **No weather limits:** Outdoor labour, Asphalt & surfacing, Crane lifts, Work at height, Painting & coatings, Earthworks.
-- Dust: PM2.5 up to 106 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
-- Dust storm risk (dust up to 99 µg/m³): goggles and masks, secure sheeting and loose materials, stop lifts if the operator loses sight of the load.
+- Dust: PM2.5 up to 109 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Dust storm risk (dust up to 116 µg/m³): goggles and masks, secure sheeting and loose materials, stop lifts if the operator loses sight of the load.
 
 ## Tuesday 17 November
 
@@ -32,8 +32,8 @@ Rain 0 mm (chance up to 2 %) · storms low · WBGT peak 28.8 °C · gusts 7 m/s 
 - **Outdoor labour — work/rest needed.** Work/rest cycles 14-16 h: at the peak, 45 min work / 15 min rest each hour. Water every 20 min, shade for breaks.
 - **Concrete pour — go 08-11 h, 15-16 h only.** Limited by fast drying. Curing cover and windbreaks ready.
 - **No weather limits:** Asphalt & surfacing, Crane lifts, Work at height, Painting & coatings, Earthworks.
-- Dust: PM2.5 up to 116 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
-- Dust storm risk (dust up to 111 µg/m³): goggles and masks, secure sheeting and loose materials, stop lifts if the operator loses sight of the load.
+- Dust: PM2.5 up to 106 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Dust storm risk (dust up to 124 µg/m³): goggles and masks, secure sheeting and loose materials, stop lifts if the operator loses sight of the load.
 
 ## Outlook
 

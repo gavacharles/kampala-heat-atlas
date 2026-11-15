@@ -1,6 +1,6 @@
 # Site note · Lusaka
 
-Issued Sunday 15 November 2026, 11:38 (Africa/Lusaka). Site -15.3875, 28.3228. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Sunday 15 November 2026, 13:29 (Africa/Lusaka). Site -15.3875, 28.3228. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Sunday 15 November
 
@@ -15,7 +15,7 @@ Rain 6 mm (chance up to 76 %) · storms possible · WBGT peak 27.8 °C · gusts 
 - **Painting & coatings — go 09-13 h only.** Limited by rain. Check the surface is 3 °C above dew point.
 - **Earthworks — go 08-13 h, 14-15 h only.** Limited by rain, wet ground. Protect formation and stockpiles. Ground wet after 6 mm in 24 h.
 - **No weather limits:** Outdoor labour.
-- UV index up to 10 (very high): hats with neck cover, long sleeves, sunscreen.
+- UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.
 
 ## Monday 16 November
 
@@ -29,7 +29,7 @@ Rain 1 mm (chance up to 61 %) · storms low · WBGT peak 26.6 °C · gusts 12 m/
 - **Painting & coatings — go 10-13 h, 14-16 h only.** Limited by rain, humidity or dew. Check the surface is 3 °C above dew point.
 - **Earthworks — go 10-13 h, 14-17 h only.** Limited by rain. Protect formation and stockpiles.
 - **No weather limits:** Outdoor labour, Crane lifts.
-- UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.
+- UV index up to 10 (very high): hats with neck cover, long sleeves, sunscreen.
 
 ## Tuesday 17 November
 

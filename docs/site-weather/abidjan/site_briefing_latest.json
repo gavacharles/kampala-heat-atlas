@@ -2,7 +2,7 @@
  "site": "Abidjan",
  "lat": 5.36,
  "lon": -4.0083,
- "issued": "2026-11-15 09:38",
+ "issued": "2026-11-15 11:27",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -689,7 +689,9 @@
      ]
     }
    ],
-   "extras": [],
+   "extras": [
+    "UV index up to 8 (very high): hats with neck cover, long sleeves, sunscreen."
+   ],
    "facts": {
     "rain_mm": 4.5,
     "rain_chance": 100,

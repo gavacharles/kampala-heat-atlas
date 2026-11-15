@@ -1,6 +1,6 @@
 # Site note · Jinja
 
-Issued Sunday 15 November 2026, 12:39 (Africa/Kampala). Site 0.4244, 33.2042. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Sunday 15 November 2026, 14:27 (Africa/Kampala). Site 0.4244, 33.2042. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Sunday 15 November
 
@@ -16,7 +16,7 @@ Rain 1 mm (chance up to 57 %) · storms possible · WBGT peak 25.2 °C · gusts 
 - **Earthworks — go 08-11 h, 12-13 h, 14-17 h only.** Limited by rain. Protect formation and stockpiles.
 - **No weather limits:** Outdoor labour.
 - UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.
-- Dust: PM2.5 up to 55 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Dust: PM2.5 up to 59 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Monday 16 November
 
@@ -31,8 +31,7 @@ Rain 10 mm (chance up to 63 %) · storms possible · WBGT peak 25.3 °C · gusts
 - **Earthworks — STOP.** Limited by wet ground, rain. Ground too wet: protect formation, keep plant off soft ground. Ground wet after 11 mm in 24 h.
 - **Crane lifts — go 08-11 h only.** Limited by storms. Check the anemometer before each lift.
 - **No weather limits:** Outdoor labour.
-- UV index up to 8 (very high): hats with neck cover, long sleeves, sunscreen.
-- Dust: PM2.5 up to 73 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Dust: PM2.5 up to 55 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Tuesday 17 November
 
@@ -46,8 +45,8 @@ Rain 4 mm (chance up to 59 %) · storms low · WBGT peak 25.9 °C · gusts 8 m/s
 - **Painting & coatings — go 14-17 h only.** Limited by humidity or dew, rain. Check the surface is 3 °C above dew point.
 - **Earthworks — go 09-13 h, 14-17 h only.** Limited by wet ground, rain. Protect formation and stockpiles. Ground wet after 8 mm in 24 h.
 - **No weather limits:** Outdoor labour, Crane lifts.
-- UV index up to 8 (very high): hats with neck cover, long sleeves, sunscreen.
-- Dust: PM2.5 up to 78 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.
+- Dust: PM2.5 up to 56 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Outlook
 

@@ -2,7 +2,7 @@
  "site": "Gaborone",
  "lat": -24.6282,
  "lon": 25.9231,
- "issued": "2026-11-15 11:39",
+ "issued": "2026-11-15 13:32",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -675,7 +675,7 @@
     }
    ],
    "extras": [
-    "UV index up to 10 (very high): hats with neck cover, long sleeves, sunscreen."
+    "UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen."
    ],
    "facts": {
     "rain_mm": 0.2,
@@ -2373,7 +2373,9 @@
      ]
     }
    ],
-   "extras": [],
+   "extras": [
+    "UV index up to 10 (very high): hats with neck cover, long sleeves, sunscreen."
+   ],
    "facts": {
     "rain_mm": 3.6,
     "rain_chance": 10,

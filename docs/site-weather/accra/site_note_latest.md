@@ -1,6 +1,6 @@
 # Site note · Accra
 
-Issued Sunday 15 November 2026, 09:38 (Africa/Accra). Site 5.6037, -0.1870. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Sunday 15 November 2026, 11:27 (Africa/Accra). Site 5.6037, -0.1870. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Sunday 15 November
 
@@ -30,7 +30,6 @@ Rain 3 mm (chance up to 94 %) · storms likely · WBGT peak 30.8 °C · gusts 12
 - **Work at height — go 08-11 h only.** Limited by rain, storms. Clear roofs and scaffolds before storms.
 - **Painting & coatings — go 08-11 h only.** Limited by rain. Check the surface is 3 °C above dew point.
 - **Earthworks — go 08-11 h only.** Limited by rain. Protect formation and stockpiles.
-- UV index up to 8 (very high): hats with neck cover, long sleeves, sunscreen.
 
 ## Tuesday 17 November
 

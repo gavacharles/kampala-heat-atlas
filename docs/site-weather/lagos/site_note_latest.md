@@ -1,6 +1,6 @@
 # Site note · Lagos
 
-Issued Sunday 15 November 2026, 10:38 (Africa/Lagos). Site 6.5244, 3.3792. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Sunday 15 November 2026, 12:27 (Africa/Lagos). Site 6.5244, 3.3792. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Sunday 15 November
 
@@ -15,7 +15,7 @@ Rain 3 mm (chance up to 98 %) · storms likely · WBGT peak 30.8 °C · gusts 9 
 - **Work at height — go 08-11 h, 12-13 h only.** Limited by rain, storms. Clear roofs and scaffolds before storms.
 - **Painting & coatings — go 12-13 h only.** Limited by humidity or dew, rain. Check the surface is 3 °C above dew point.
 - **Earthworks — go 08-13 h only.** Limited by rain. Protect formation and stockpiles.
-- Dust: PM2.5 up to 52 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Dust: PM2.5 up to 41 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Monday 16 November
 

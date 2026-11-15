@@ -1,6 +1,6 @@
 # Site note · Abidjan
 
-Issued Sunday 15 November 2026, 09:38 (Africa/Abidjan). Site 5.3600, -4.0083. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Sunday 15 November 2026, 11:27 (Africa/Abidjan). Site 5.3600, -4.0083. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Sunday 15 November
 
@@ -30,6 +30,7 @@ Rain 4 mm (chance up to 100 %) · storms likely · WBGT peak 30.3 °C · gusts 1
 - **Painting & coatings — go 09-13 h only.** Limited by humidity or dew, rain. Check the surface is 3 °C above dew point.
 - **Earthworks — go 08-13 h, 14-15 h only.** Limited by rain. Protect formation and stockpiles.
 - **Outdoor labour — work/rest needed.** Work/rest cycles 08-13 h, 14-17 h: at the peak, 15 min work / 45 min rest. Water every 20 min, shade for breaks.
+- UV index up to 8 (very high): hats with neck cover, long sleeves, sunscreen.
 
 ## Tuesday 17 November
 

@@ -1,6 +1,6 @@
 # Site note · Mbarara
 
-Issued Sunday 15 November 2026, 12:38 (Africa/Kampala). Site -0.6072, 30.6545. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Sunday 15 November 2026, 14:27 (Africa/Kampala). Site -0.6072, 30.6545. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Sunday 15 November
 
@@ -31,7 +31,7 @@ Rain 1 mm (chance up to 90 %) · storms possible · WBGT peak 24.9 °C · gusts 
 - **Earthworks — go 08-13 h, 14-15 h only.** Limited by rain. Protect formation and stockpiles.
 - **No weather limits:** Outdoor labour.
 - UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.
-- Dust: PM2.5 up to 44 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Dust: PM2.5 up to 41 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Tuesday 17 November
 
@@ -46,8 +46,7 @@ Rain 8 mm (chance up to 96 %) · storms likely · WBGT peak 24.7 °C · gusts 10
 - **Painting & coatings — go 10-13 h only.** Limited by humidity or dew, rain. Check the surface is 3 °C above dew point.
 - **Earthworks — go 08-13 h only.** Limited by wet ground, rain. Protect formation and stockpiles. Ground wet after 9 mm in 24 h.
 - **No weather limits:** Outdoor labour.
-- UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.
-- Dust: PM2.5 up to 59 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Dust: PM2.5 up to 46 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Outlook
 

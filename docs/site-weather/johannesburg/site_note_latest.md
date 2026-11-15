@@ -1,6 +1,6 @@
 # Site note · Johannesburg
 
-Issued Sunday 15 November 2026, 11:38 (Africa/Johannesburg). Site -26.2041, 28.0473. Working hours 07:00-17:00, lunch break excluded (9 h).
+Issued Sunday 15 November 2026, 13:29 (Africa/Johannesburg). Site -26.2041, 28.0473. Working hours 07:00-17:00, lunch break excluded (9 h).
 
 ## Sunday 15 November
 
@@ -31,7 +31,7 @@ Rain 0 mm (chance up to 58 %) · storms possible · WBGT peak 23.0 °C · gusts 
 - **Painting & coatings — go 10-12 h, 13-16 h only.** Limited by humidity or dew, rain. Check the surface is 3 °C above dew point.
 - **No weather limits:** Outdoor labour.
 - UV index up to 10 (very high): hats with neck cover, long sleeves, sunscreen.
-- Dust: PM2.5 up to 62 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Dust: PM2.5 up to 52 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Tuesday 17 November
 
@@ -47,7 +47,7 @@ Rain 2 mm (chance up to 59 %) · storms possible · WBGT peak 22.5 °C · gusts 
 - **Earthworks — go 07-12 h, 13-14 h only.** Limited by rain. Protect formation and stockpiles.
 - **No weather limits:** Outdoor labour.
 - UV index up to 10 (very high): hats with neck cover, long sleeves, sunscreen.
-- Dust: PM2.5 up to 60 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Dust: PM2.5 up to 54 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Outlook
 

@@ -1,6 +1,6 @@
 # Site note · Dar es Salaam
 
-Issued Sunday 15 November 2026, 12:38 (Africa/Dar_es_Salaam). Site -6.7924, 39.2083. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Sunday 15 November 2026, 14:28 (Africa/Dar_es_Salaam). Site -6.7924, 39.2083. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Sunday 15 November
 
@@ -45,7 +45,7 @@ Rain 2 mm (chance up to 63 %) · storms possible · WBGT peak 29.5 °C · gusts 
 - **Work at height — go 14-15 h, 16-17 h only.** Limited by storms, rain. Clear roofs and scaffolds before storms.
 - **Painting & coatings — go 14-15 h, 16-17 h only.** Limited by rain, humidity or dew. Check the surface is 3 °C above dew point.
 - **Earthworks — go 08-13 h, 14-15 h, 16-17 h only.** Limited by rain. Protect formation and stockpiles.
-- UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.
+- UV index up to 8 (very high): hats with neck cover, long sleeves, sunscreen.
 
 ## Outlook
 

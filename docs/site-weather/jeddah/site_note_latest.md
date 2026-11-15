@@ -1,6 +1,6 @@
 # Site note · Jeddah
 
-Issued Sunday 15 November 2026, 12:42 (Asia/Riyadh). Site 21.4858, 39.1925. Working hours 07:00-17:00, lunch break excluded (9 h).
+Issued Sunday 15 November 2026, 14:27 (Asia/Riyadh). Site 21.4858, 39.1925. Working hours 07:00-17:00, lunch break excluded (9 h).
 
 ## Sunday 15 November
 
@@ -14,7 +14,7 @@ Rain 0 mm (chance up to 2 %) · storms low · WBGT peak 29.4 °C · gusts 13 m/s
 - **Painting & coatings — go 08-12 h, 13-17 h only.** Limited by humidity or dew. Check the surface is 3 °C above dew point.
 - **No weather limits:** Asphalt & surfacing, Crane lifts, Earthworks.
 - Dust: PM2.5 up to 75 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
-- Dust storm risk (dust up to 210 µg/m³): goggles and masks, secure sheeting and loose materials, stop lifts if the operator loses sight of the load.
+- Dust storm risk (dust up to 242 µg/m³): goggles and masks, secure sheeting and loose materials, stop lifts if the operator loses sight of the load.
 
 ## Monday 16 November
 
@@ -38,7 +38,7 @@ Rain 0 mm (chance up to 10 %) · storms low · WBGT peak 29.6 °C · gusts 11 m/
 - **Concrete pour — go 07-12 h only.** Limited by fast drying. Curing cover and windbreaks ready.
 - **Painting & coatings — go 09-12 h, 13-17 h only.** Limited by humidity or dew. Check the surface is 3 °C above dew point.
 - **No weather limits:** Asphalt & surfacing, Crane lifts, Work at height, Earthworks.
-- Dust: PM2.5 up to 48 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Dust: PM2.5 up to 51 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Outlook
 
