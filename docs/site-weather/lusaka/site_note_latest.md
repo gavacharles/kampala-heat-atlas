@@ -1,6 +1,6 @@
 # Site note · Lusaka
 
-Issued Monday 16 November 2026, 04:27 (Africa/Lusaka). Site -15.3875, 28.3228. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Monday 16 November 2026, 04:30 (Africa/Lusaka). Site -15.3875, 28.3228. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Monday 16 November
 
