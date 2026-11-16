@@ -2,11 +2,11 @@ Site weather, Uganda: Monday 16 November. Painting & coatings, go hours today:
 
 • Kampala: none
 • Mbarara: 09-13
-• Hoima: none
+• Hoima: 11-13
 • Mbale: none
 • Jinja: none
 • Gulu: 09-13, 14-15
-• Arua: 09-13, 14-17
+• Arua: 10-13, 15-17
 
 Hour-by-hour for seven trades and your town's week ahead: gavacharles.github.io/kampala-heat-atlas/site-weather
 Send us your site location to add it.
