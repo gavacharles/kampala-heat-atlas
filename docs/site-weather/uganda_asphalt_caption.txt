@@ -1,12 +1,12 @@
-Site weather, Uganda: Monday 16 November. Asphalt & surfacing, go hours today:
+Site weather, Uganda: Tuesday 17 November. Asphalt & surfacing, go hours today:
 
 • Kampala: none
-• Mbarara: 08-12
-• Hoima: 08-11
-• Mbale: none
+• Mbarara: 08-11
+• Hoima: 08-10
+• Mbale: 08-09
 • Jinja: none
-• Gulu: 08-12
-• Arua: 08-13
+• Gulu: all day
+• Arua: 08-13, 14-16
 
 Hour-by-hour for seven trades and your town's week ahead: gavacharles.github.io/kampala-heat-atlas/site-weather
 Send us your site location to add it.

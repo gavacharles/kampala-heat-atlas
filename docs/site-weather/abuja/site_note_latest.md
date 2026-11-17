@@ -1,46 +1,48 @@
 # Site note · Abuja
 
-Issued Monday 16 November 2026, 04:44 (Africa/Lagos). Site 9.0765, 7.3986. Working hours 08:00-17:00, lunch break excluded (8 h).
-
-## Monday 16 November
-
-**Some limits today: check your trade below.**
-
-Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 26.8 °C · gusts 9 m/s at hook height
-
-- **Concrete pour — STOP.** Limited by fast drying. No pour window: postpone, or pour under cover.
-- **No weather limits:** Outdoor labour, Asphalt & surfacing, Crane lifts, Work at height, Painting & coatings, Earthworks.
-- Dust: PM2.5 up to 95 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+Issued Tuesday 17 November 2026, 03:15 (Africa/Lagos). Site 9.0765, 7.3986. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Tuesday 17 November
 
-**Pour concrete 08-13 h; fast drying limits the rest of the day.**
+**Pour concrete 08-11 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 2 %) · storms low · WBGT peak 28.9 °C · gusts 6 m/s at hook height
+Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 28.3 °C · gusts 6 m/s at hook height
 
-- **Outdoor labour — work/rest needed.** Work/rest cycles 11-13 h, 14-16 h: at the peak, 45 min work / 15 min rest each hour. Water every 20 min, shade for breaks.
-- **Concrete pour — go 08-13 h, 14-15 h only.** Limited by fast drying. Curing cover and windbreaks ready.
+- **Outdoor labour — work/rest needed.** Work/rest cycles 14-15 h: at the peak, 45 min work / 15 min rest each hour. Water every 20 min, shade for breaks.
+- **Concrete pour — go 08-11 h only.** Limited by fast drying. Curing cover and windbreaks ready.
 - **No weather limits:** Asphalt & surfacing, Crane lifts, Work at height, Painting & coatings, Earthworks.
-- Dust: PM2.5 up to 114 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
-- Dust storm risk (dust up to 129 µg/m³): goggles and masks, secure sheeting and loose materials, stop lifts if the operator loses sight of the load.
+- Dust: PM2.5 up to 115 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Dust storm risk (dust up to 150 µg/m³): goggles and masks, secure sheeting and loose materials, stop lifts if the operator loses sight of the load.
 
 ## Wednesday 18 November
 
-**Pour concrete 08-13 h; fast drying limits the rest of the day.**
+**Pour concrete 08-11 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 29.8 °C · gusts 6 m/s at hook height
+Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 28.4 °C · gusts 6 m/s at hook height
 
-- **Outdoor labour — work/rest needed.** Work/rest cycles 11-13 h, 14-17 h: at the peak, 30 min work / 30 min rest. Water every 20 min, shade for breaks.
-- **Concrete pour — go 08-13 h, 14-15 h only.** Limited by fast drying. Curing cover and windbreaks ready.
+- **Outdoor labour — work/rest needed.** Work/rest cycles 14-16 h: at the peak, 45 min work / 15 min rest each hour. Water every 20 min, shade for breaks.
+- **Concrete pour — go 08-11 h, 16-17 h only.** Limited by fast drying. Curing cover and windbreaks ready.
 - **No weather limits:** Asphalt & surfacing, Crane lifts, Work at height, Painting & coatings, Earthworks.
-- Dust: PM2.5 up to 118 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
-- Dust storm risk (dust up to 133 µg/m³): goggles and masks, secure sheeting and loose materials, stop lifts if the operator loses sight of the load.
+- Dust: PM2.5 up to 110 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Dust storm risk (dust up to 141 µg/m³): goggles and masks, secure sheeting and loose materials, stop lifts if the operator loses sight of the load.
+
+## Thursday 19 November
+
+**Pour concrete 12-13 h; fast drying limits the rest of the day.**
+
+Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 28.4 °C · gusts 8 m/s at hook height
+
+- **Outdoor labour — work/rest needed.** Work/rest cycles 14-16 h: at the peak, 45 min work / 15 min rest each hour. Water every 20 min, shade for breaks.
+- **Concrete pour — go 12-13 h only.** Limited by fast drying. Curing cover and windbreaks ready.
+- **No weather limits:** Asphalt & surfacing, Crane lifts, Work at height, Painting & coatings, Earthworks.
+- Dust: PM2.5 up to 111 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
+- Dust storm risk (dust up to 146 µg/m³): goggles and masks, secure sheeting and loose materials, stop lifts if the operator loses sight of the load.
 
 ## Outlook
 
-- **Thursday 19 November**: Some limits today: check your trade below. Rain 0 mm (0 %); concrete 0 h go.
-- **Friday 20 November**: Pour concrete 08-10 h; fast drying limits the rest of the day. Rain 0 mm (0 %); concrete 2 h go.
-- **Saturday 21 November**: Pour concrete 10-11 h; fast drying limits the rest of the day. Rain 0 mm (0 %); concrete 1 h go.
-- **Sunday 22 November**: Pour concrete 08-12 h; fast drying limits the rest of the day. Rain 0 mm (0 %); concrete 5 h go.
+- **Friday 20 November**: Pour concrete 08-10 h; fast drying limits the rest of the day. Rain 0 mm (0 %); concrete 3 h go.
+- **Saturday 21 November**: Some limits today: check your trade below. Rain 0 mm (0 %); concrete 0 h go.
+- **Sunday 22 November**: Pour concrete 08-09 h; fast drying limits the rest of the day. Rain 0 mm (0 %); concrete 1 h go.
+- **Monday 23 November**: Pour concrete 08-11 h; fast drying limits the rest of the day. Rain 0 mm (0 %); concrete 4 h go.
 
 *Screening guidance from a weather forecast, not an instruction. The contract specification, the crane manufacturer's limits and the site health-and-safety plan take precedence; check conditions on site (WBGT meter, anemometer, the 30-30 rule for lightning) before each activity. Thresholds used: thresholds.json.*
