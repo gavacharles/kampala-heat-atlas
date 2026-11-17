@@ -2,7 +2,7 @@
  "site": "Maputo",
  "lat": -25.9692,
  "lon": 32.5732,
- "issued": "2026-11-17 04:37",
+ "issued": "2026-11-17 05:43",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -665,7 +665,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 0.4,
-    "rain_chance": 12,
+    "rain_chance": 4,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 24.4,
@@ -1686,7 +1686,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 6,
+    "rain_chance": 2,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 30.9,
@@ -2025,7 +2025,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 5,
+    "rain_chance": 12,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 31.9,

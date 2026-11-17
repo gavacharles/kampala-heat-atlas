@@ -2,7 +2,7 @@
  "site": "Kigali",
  "lat": -1.9441,
  "lon": 30.0619,
- "issued": "2026-11-17 04:29",
+ "issued": "2026-11-17 05:43",
  "working": "07:00-17:00, lunch excluded (9 h)",
  "days": [
   {
@@ -369,7 +369,7 @@
    ],
    "facts": {
     "rain_mm": 13.3,
-    "rain_chance": 86,
+    "rain_chance": 84,
     "storm": "likely",
     "storm_from": "16",
     "wbgt_peak": 25.1,
@@ -388,7 +388,7 @@
   {
    "date": "2026-11-18",
    "day": "Wednesday 18 November",
-   "headline": "Storms possible from 14:00: do exposed work in the morning.",
+   "headline": "Storms possible from 15:00: do exposed work in the morning.",
    "rows": [
     {
      "key": "concrete",
@@ -496,9 +496,9 @@
      "key": "crane",
      "trade": "Crane lifts",
      "status": "LIMITED",
-     "label": "go 09-12 h, 13-14 h only",
-     "go_hours": 4,
-     "windows": "09-12 h, 13-14 h",
+     "label": "go 09-12 h, 13-15 h only",
+     "go_hours": 5,
+     "windows": "09-12 h, 13-15 h",
      "causes": [
       "storms",
       "poor visibility"
@@ -531,7 +531,7 @@
       ],
       [
        14,
-       1
+       0
       ],
       [
        15,
@@ -547,12 +547,12 @@
      "key": "height",
      "trade": "Work at height",
      "status": "LIMITED",
-     "label": "go 09-12 h, 13-14 h only",
-     "go_hours": 4,
-     "windows": "09-12 h, 13-14 h",
+     "label": "go 09-12 h, 13-15 h only",
+     "go_hours": 5,
+     "windows": "09-12 h, 13-15 h",
      "causes": [
-      "storms",
       "rain",
+      "storms",
       "poor visibility"
      ],
      "action": "Clear roofs and scaffolds before storms.",
@@ -583,7 +583,7 @@
       ],
       [
        14,
-       1
+       0
       ],
       [
        15,
@@ -599,9 +599,9 @@
      "key": "coatings",
      "trade": "Painting & coatings",
      "status": "LIMITED",
-     "label": "go 11-12 h, 13-14 h only",
-     "go_hours": 2,
-     "windows": "11-12 h, 13-14 h",
+     "label": "go 11-12 h, 13-15 h only",
+     "go_hours": 3,
+     "windows": "11-12 h, 13-15 h",
      "causes": [
       "humidity or dew",
       "rain"
@@ -634,7 +634,7 @@
       ],
       [
        14,
-       1
+       0
       ],
       [
        15,
@@ -753,15 +753,15 @@
     "rain_mm": 4.0,
     "rain_chance": 90,
     "storm": "possible",
-    "storm_from": "14",
+    "storm_from": "15",
     "wbgt_peak": 25.4,
     "gust_hook_max": 9.7,
     "go_hours": {
      "concrete": 5,
      "asphalt": 5,
-     "crane": 4,
-     "height": 4,
-     "coatings": 2,
+     "crane": 5,
+     "height": 5,
+     "coatings": 3,
      "earthworks": 0,
      "labour": 9
     }
@@ -854,7 +854,7 @@
       ],
       [
        11,
-       1
+       2
       ],
       [
        13,
@@ -1134,7 +1134,7 @@
    ],
    "facts": {
     "rain_mm": 6.7,
-    "rain_chance": 88,
+    "rain_chance": 85,
     "storm": "likely",
     "storm_from": "14",
     "wbgt_peak": 24.6,
@@ -1515,7 +1515,7 @@
    ],
    "facts": {
     "rain_mm": 5.6,
-    "rain_chance": 88,
+    "rain_chance": 94,
     "storm": "likely",
     "storm_from": "11",
     "wbgt_peak": 25.4,
@@ -1591,9 +1591,9 @@
      "key": "concrete",
      "trade": "Concrete pour",
      "status": "LIMITED",
-     "label": "go 07-09 h only",
-     "go_hours": 2,
-     "windows": "07-09 h",
+     "label": "go 07-10 h only",
+     "go_hours": 3,
+     "windows": "07-10 h",
      "causes": [
       "rain",
       "storms"
@@ -1610,7 +1610,7 @@
       ],
       [
        9,
-       1
+       0
       ],
       [
        10,
@@ -1626,15 +1626,15 @@
       ],
       [
        14,
-       1
+       2
       ],
       [
        15,
-       1
+       2
       ],
       [
        16,
-       1
+       2
       ]
      ]
     },
@@ -1896,14 +1896,14 @@
    ],
    "facts": {
     "rain_mm": 0.9,
-    "rain_chance": 71,
+    "rain_chance": 76,
     "storm": "possible",
     "storm_from": "13",
     "wbgt_peak": 24.8,
     "gust_hook_max": 8.0,
     "go_hours": {
      "coatings": 0,
-     "concrete": 2,
+     "concrete": 3,
      "asphalt": 2,
      "crane": 3,
      "height": 3,
@@ -2003,19 +2003,19 @@
       ],
       [
        13,
-       1
+       2
       ],
       [
        14,
-       1
+       2
       ],
       [
        15,
-       1
+       2
       ],
       [
        16,
-       1
+       2
       ]
      ]
     },
@@ -2270,7 +2270,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 1.2,
-    "rain_chance": 75,
+    "rain_chance": 96,
     "storm": "possible",
     "storm_from": "13",
     "wbgt_peak": 24.5,

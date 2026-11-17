@@ -1,12 +1,12 @@
 # Site note · Dakar
 
-Issued Tuesday 17 November 2026, 02:29 (Africa/Dakar). Site 14.7167, -17.4677. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Tuesday 17 November 2026, 03:43 (Africa/Dakar). Site 14.7167, -17.4677. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Tuesday 17 November
 
 **Pour concrete 08-09 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 6 %) · storms low · WBGT peak 29.6 °C · gusts 10 m/s at hook height
+Rain 0 mm (chance up to 7 %) · storms low · WBGT peak 29.6 °C · gusts 10 m/s at hook height
 
 - **Outdoor labour — work/rest needed.** Work/rest cycles 12-13 h, 14-17 h: at the peak, 30 min work / 30 min rest. Water every 20 min, shade for breaks.
 - **Concrete pour — go 08-09 h only.** Limited by fast drying. Curing cover and windbreaks ready.
@@ -26,7 +26,7 @@ Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 26.9 °C · gusts 10 m/s
 
 **Pour concrete 08-12 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 10 %) · storms low · WBGT peak 29.2 °C · gusts 11 m/s at hook height
+Rain 0 mm (chance up to 6 %) · storms low · WBGT peak 29.2 °C · gusts 11 m/s at hook height
 
 - **Outdoor labour — work/rest needed.** Work/rest cycles 12-13 h, 14-17 h: at the peak, 45 min work / 15 min rest each hour. Water every 20 min, shade for breaks.
 - **Concrete pour — go 08-12 h only.** Limited by fast drying. Curing cover and windbreaks ready.
@@ -35,8 +35,8 @@ Rain 0 mm (chance up to 10 %) · storms low · WBGT peak 29.2 °C · gusts 11 m/
 
 ## Outlook
 
-- **Friday 20 November**: Pour concrete 08-11 h; fast drying limits the rest of the day. Rain 0 mm (4 %); concrete 3 h go.
-- **Saturday 21 November**: Some limits today: check your trade below. Rain 0 mm (0 %); concrete 0 h go.
+- **Friday 20 November**: Pour concrete 08-11 h; fast drying limits the rest of the day. Rain 0 mm (6 %); concrete 3 h go.
+- **Saturday 21 November**: Some limits today: check your trade below. Rain 0 mm (2 %); concrete 0 h go.
 - **Sunday 22 November**: Some limits today: check your trade below. Rain 0 mm (0 %); concrete 0 h go.
 - **Monday 23 November**: Some limits today: check your trade below. Rain 0 mm (0 %); concrete 0 h go.
 

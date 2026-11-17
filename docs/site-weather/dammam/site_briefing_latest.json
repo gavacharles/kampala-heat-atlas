@@ -2,7 +2,7 @@
  "site": "Dammam",
  "lat": 26.4207,
  "lon": 50.0888,
- "issued": "2026-11-17 05:30",
+ "issued": "2026-11-17 06:47",
  "working": "07:00-17:00, lunch excluded (9 h)",
  "days": [
   {
@@ -358,8 +358,8 @@
     "rain_chance": 0,
     "storm": "low",
     "storm_from": "",
-    "wbgt_peak": 24.7,
-    "gust_hook_max": 9.4,
+    "wbgt_peak": 24.8,
+    "gust_hook_max": 9.2,
     "go_hours": {
      "concrete": 6,
      "labour": 9,
@@ -723,8 +723,8 @@
     "rain_chance": 0,
     "storm": "low",
     "storm_from": "",
-    "wbgt_peak": 27.3,
-    "gust_hook_max": 6.7,
+    "wbgt_peak": 27.2,
+    "gust_hook_max": 6.8,
     "go_hours": {
      "coatings": 8,
      "labour": 9,
@@ -759,7 +759,7 @@
       ],
       [
        8,
-       1
+       2
       ],
       [
        9,
@@ -1088,8 +1088,8 @@
     "rain_chance": 0,
     "storm": "low",
     "storm_from": "",
-    "wbgt_peak": 27.3,
-    "gust_hook_max": 5.8,
+    "wbgt_peak": 27.4,
+    "gust_hook_max": 6.1,
     "go_hours": {
      "coatings": 7,
      "labour": 9,
@@ -1149,6 +1149,56 @@
       [
        15,
        1
+      ],
+      [
+       16,
+       0
+      ]
+     ]
+    },
+    {
+     "key": "coatings",
+     "trade": "Painting & coatings",
+     "status": "LIMITED",
+     "label": "go 08-12 h, 13-17 h only",
+     "go_hours": 8,
+     "windows": "08-12 h, 13-17 h",
+     "causes": [
+      "humidity or dew"
+     ],
+     "action": "Check the surface is 3 \u00b0C above dew point.",
+     "hours": [
+      [
+       7,
+       2
+      ],
+      [
+       8,
+       0
+      ],
+      [
+       9,
+       0
+      ],
+      [
+       10,
+       0
+      ],
+      [
+       11,
+       0
+      ],
+      [
+       13,
+       0
+      ],
+      [
+       14,
+       0
+      ],
+      [
+       15,
+       0
       ],
       [
        16,
@@ -1349,54 +1399,6 @@
      ]
     },
     {
-     "key": "coatings",
-     "trade": "Painting & coatings",
-     "status": "GO",
-     "label": "no limits",
-     "go_hours": 9,
-     "windows": "07-12 h, 13-17 h",
-     "causes": [],
-     "action": "No weather limits.",
-     "hours": [
-      [
-       7,
-       0
-      ],
-      [
-       8,
-       0
-      ],
-      [
-       9,
-       0
-      ],
-      [
-       10,
-       0
-      ],
-      [
-       11,
-       0
-      ],
-      [
-       13,
-       0
-      ],
-      [
-       14,
-       0
-      ],
-      [
-       15,
-       0
-      ],
-      [
-       16,
-       0
-      ]
-     ]
-    },
-    {
      "key": "earthworks",
      "trade": "Earthworks",
      "status": "GO",
@@ -1453,15 +1455,15 @@
     "rain_chance": 0,
     "storm": "low",
     "storm_from": "",
-    "wbgt_peak": 24.5,
-    "gust_hook_max": 6.4,
+    "wbgt_peak": 25.1,
+    "gust_hook_max": 6.2,
     "go_hours": {
      "concrete": 6,
+     "coatings": 8,
      "labour": 9,
      "asphalt": 9,
      "crane": 9,
      "height": 9,
-     "coatings": 9,
      "earthworks": 9
     }
    }
@@ -1469,15 +1471,15 @@
   {
    "date": "2026-11-21",
    "day": "Saturday 21 November",
-   "headline": "Pour concrete 07-10 h; fast drying limits the rest of the day.",
+   "headline": "Pour concrete 07-11 h; fast drying limits the rest of the day.",
    "rows": [
     {
      "key": "concrete",
      "trade": "Concrete pour",
      "status": "LIMITED",
-     "label": "go 07-10 h only",
-     "go_hours": 3,
-     "windows": "07-10 h",
+     "label": "go 07-11 h only",
+     "go_hours": 4,
+     "windows": "07-11 h",
      "causes": [
       "fast drying"
      ],
@@ -1497,7 +1499,7 @@
       ],
       [
        10,
-       1
+       0
       ],
       [
        11,
@@ -1818,10 +1820,10 @@
     "rain_chance": 0,
     "storm": "low",
     "storm_from": "",
-    "wbgt_peak": 23.6,
-    "gust_hook_max": 11.5,
+    "wbgt_peak": 24.7,
+    "gust_hook_max": 10.6,
     "go_hours": {
-     "concrete": 3,
+     "concrete": 4,
      "labour": 9,
      "asphalt": 9,
      "crane": 9,

@@ -1,12 +1,12 @@
 # Site note · Abu Dhabi
 
-Issued Tuesday 17 November 2026, 06:29 (Asia/Dubai). Site 24.4539, 54.3773. Working hours 07:00-17:00, lunch break excluded (9 h).
+Issued Tuesday 17 November 2026, 07:47 (Asia/Dubai). Site 24.4539, 54.3773. Working hours 07:00-17:00, lunch break excluded (9 h).
 
 ## Tuesday 17 November
 
 **Pour concrete 07-12 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 9 %) · storms low · WBGT peak 25.5 °C · gusts 10 m/s at hook height
+Rain 0 mm (chance up to 16 %) · storms low · WBGT peak 25.5 °C · gusts 10 m/s at hook height
 
 - **Concrete pour — go 07-12 h only.** Limited by fast drying. Curing cover and windbreaks ready.
 - **Asphalt & surfacing — go 11-12 h, 13-17 h only.** Limited by rain or wet surface. Never lay or spray on a wet surface.
@@ -38,8 +38,8 @@ Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 25.9 °C · gusts 11 m/s
 
 ## Outlook
 
-- **Friday 20 November**: Pour concrete 07-12 h; fast drying limits the rest of the day. Rain 0 mm (2 %); concrete 5 h go.
-- **Saturday 21 November**: Pour concrete 07-11 h; fast drying limits the rest of the day. Rain 0 mm (2 %); concrete 4 h go.
+- **Friday 20 November**: Pour concrete 07-12 h; fast drying limits the rest of the day. Rain 0 mm (4 %); concrete 5 h go.
+- **Saturday 21 November**: Pour concrete 07-11 h; fast drying limits the rest of the day. Rain 0 mm (4 %); concrete 4 h go.
 - **Sunday 22 November**: Some limits today: check your trade below. Rain 0 mm (0 %); concrete 9 h go.
 - **Monday 23 November**: Pour concrete 07-12 h; fast drying limits the rest of the day. Rain 0 mm (6 %); concrete 8 h go.
 

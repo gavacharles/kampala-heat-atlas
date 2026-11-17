@@ -2,7 +2,7 @@
  "site": "Manama",
  "lat": 26.2285,
  "lon": 50.586,
- "issued": "2026-11-17 05:29",
+ "issued": "2026-11-17 06:47",
  "working": "07:00-17:00, lunch excluded (9 h)",
  "days": [
   {
@@ -356,8 +356,8 @@
     "rain_chance": 0,
     "storm": "low",
     "storm_from": "",
-    "wbgt_peak": 24.1,
-    "gust_hook_max": 9.2,
+    "wbgt_peak": 24.2,
+    "gust_hook_max": 9.1,
     "go_hours": {
      "labour": 9,
      "concrete": 9,
@@ -720,7 +720,7 @@
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 25.5,
-    "gust_hook_max": 5.7,
+    "gust_hook_max": 6.1,
     "go_hours": {
      "coatings": 7,
      "labour": 9,
@@ -855,7 +855,7 @@
       ],
       [
        8,
-       2
+       1
       ],
       [
        9,
@@ -1088,8 +1088,8 @@
     "rain_chance": 0,
     "storm": "low",
     "storm_from": "",
-    "wbgt_peak": 25.8,
-    "gust_hook_max": 5.7,
+    "wbgt_peak": 25.5,
+    "gust_hook_max": 5.1,
     "go_hours": {
      "crane": 8,
      "height": 8,
@@ -1454,7 +1454,7 @@
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 24.7,
-    "gust_hook_max": 6.6,
+    "gust_hook_max": 6.9,
     "go_hours": {
      "coatings": 7,
      "labour": 9,
@@ -1469,15 +1469,15 @@
   {
    "date": "2026-11-21",
    "day": "Saturday 21 November",
-   "headline": "Pour concrete 07-11 h; fast drying limits the rest of the day.",
+   "headline": "Pour concrete 07-12 h; fast drying limits the rest of the day.",
    "rows": [
     {
      "key": "concrete",
      "trade": "Concrete pour",
      "status": "LIMITED",
-     "label": "go 07-11 h, 16-17 h only",
+     "label": "go 07-12 h only",
      "go_hours": 5,
-     "windows": "07-11 h, 16-17 h",
+     "windows": "07-12 h",
      "causes": [
       "fast drying"
      ],
@@ -1501,7 +1501,7 @@
       ],
       [
        11,
-       1
+       0
       ],
       [
        13,
@@ -1517,57 +1517,7 @@
       ],
       [
        16,
-       0
-      ]
-     ]
-    },
-    {
-     "key": "coatings",
-     "trade": "Painting & coatings",
-     "status": "LIMITED",
-     "label": "go 08-12 h, 13-17 h only",
-     "go_hours": 8,
-     "windows": "08-12 h, 13-17 h",
-     "causes": [
-      "humidity or dew"
-     ],
-     "action": "Check the surface is 3 \u00b0C above dew point.",
-     "hours": [
-      [
-       7,
        1
-      ],
-      [
-       8,
-       0
-      ],
-      [
-       9,
-       0
-      ],
-      [
-       10,
-       0
-      ],
-      [
-       11,
-       0
-      ],
-      [
-       13,
-       0
-      ],
-      [
-       14,
-       0
-      ],
-      [
-       15,
-       0
-      ],
-      [
-       16,
-       0
       ]
      ]
     },
@@ -1764,6 +1714,54 @@
      ]
     },
     {
+     "key": "coatings",
+     "trade": "Painting & coatings",
+     "status": "GO",
+     "label": "no limits",
+     "go_hours": 9,
+     "windows": "07-12 h, 13-17 h",
+     "causes": [],
+     "action": "No weather limits.",
+     "hours": [
+      [
+       7,
+       0
+      ],
+      [
+       8,
+       0
+      ],
+      [
+       9,
+       0
+      ],
+      [
+       10,
+       0
+      ],
+      [
+       11,
+       0
+      ],
+      [
+       13,
+       0
+      ],
+      [
+       14,
+       0
+      ],
+      [
+       15,
+       0
+      ],
+      [
+       16,
+       0
+      ]
+     ]
+    },
+    {
      "key": "earthworks",
      "trade": "Earthworks",
      "status": "GO",
@@ -1820,15 +1818,15 @@
     "rain_chance": 0,
     "storm": "low",
     "storm_from": "",
-    "wbgt_peak": 24.3,
-    "gust_hook_max": 10.6,
+    "wbgt_peak": 24.6,
+    "gust_hook_max": 10.8,
     "go_hours": {
      "concrete": 5,
-     "coatings": 8,
      "labour": 9,
      "asphalt": 9,
      "crane": 9,
      "height": 9,
+     "coatings": 9,
      "earthworks": 9
     }
    }
@@ -2184,7 +2182,7 @@
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 26.2,
-    "gust_hook_max": 6.0,
+    "gust_hook_max": 6.8,
     "go_hours": {
      "coatings": 8,
      "labour": 9,

@@ -1,6 +1,6 @@
 # Site note · Cape Town
 
-Issued Tuesday 17 November 2026, 04:37 (Africa/Johannesburg). Site -33.9249, 18.4241. Working hours 07:00-17:00, lunch break excluded (9 h).
+Issued Tuesday 17 November 2026, 05:43 (Africa/Johannesburg). Site -33.9249, 18.4241. Working hours 07:00-17:00, lunch break excluded (9 h).
 
 ## Tuesday 17 November
 
@@ -29,7 +29,7 @@ Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 27.7 °C · gusts 13 m/s
 
 **Pour concrete 07-12 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 11 %) · storms low · WBGT peak 23.2 °C · gusts 15 m/s at hook height
+Rain 0 mm (chance up to 27 %) · storms low · WBGT peak 23.2 °C · gusts 15 m/s at hook height
 
 - **Concrete pour — go 07-12 h, 15-17 h only.** Limited by fast drying. Curing cover and windbreaks ready.
 - **Crane lifts — go 07-12 h, 15-17 h only.** Limited by wind. Check the anemometer before each lift.
@@ -40,9 +40,9 @@ Rain 0 mm (chance up to 11 %) · storms low · WBGT peak 23.2 °C · gusts 15 m/
 
 ## Outlook
 
-- **Friday 20 November**: Pour concrete 07-10 h; fast drying limits the rest of the day. Rain 0 mm (9 %); concrete 3 h go.
-- **Saturday 21 November**: Some limits today: check your trade below. Rain 1 mm (12 %); concrete 9 h go.
+- **Friday 20 November**: Pour concrete 07-10 h; fast drying limits the rest of the day. Rain 0 mm (24 %); concrete 3 h go.
+- **Saturday 21 November**: Some limits today: check your trade below. Rain 1 mm (22 %); concrete 9 h go.
 - **Sunday 22 November**: Some limits today: check your trade below. Rain 1 mm (35 %); concrete 9 h go.
-- **Monday 23 November**: Pour concrete 07-12 h; fast drying limits the rest of the day. Rain 0 mm (20 %); concrete 6 h go.
+- **Monday 23 November**: Pour concrete 07-12 h; fast drying limits the rest of the day. Rain 0 mm (21 %); concrete 6 h go.
 
 *Screening guidance from a weather forecast, not an instruction. The contract specification, the crane manufacturer's limits and the site health-and-safety plan take precedence; check conditions on site (WBGT meter, anemometer, the 30-30 rule for lightning) before each activity. Thresholds used: thresholds.json.*

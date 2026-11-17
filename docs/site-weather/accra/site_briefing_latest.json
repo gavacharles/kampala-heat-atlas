@@ -2,7 +2,7 @@
  "site": "Accra",
  "lat": 5.6037,
  "lon": -0.187,
- "issued": "2026-11-17 02:29",
+ "issued": "2026-11-17 03:43",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -343,7 +343,7 @@
    ],
    "facts": {
     "rain_mm": 3.9,
-    "rain_chance": 86,
+    "rain_chance": 89,
     "storm": "likely",
     "storm_from": "14",
     "wbgt_peak": 30.3,
@@ -696,7 +696,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 1.4,
-    "rain_chance": 99,
+    "rain_chance": 86,
     "storm": "possible",
     "storm_from": "14",
     "wbgt_peak": 30.8,
@@ -1049,7 +1049,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 1.6,
-    "rain_chance": 87,
+    "rain_chance": 84,
     "storm": "possible",
     "storm_from": "14",
     "wbgt_peak": 30.9,
@@ -1097,7 +1097,7 @@
       ],
       [
        11,
-       1
+       2
       ],
       [
        12,
@@ -1400,7 +1400,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 1.3,
-    "rain_chance": 86,
+    "rain_chance": 98,
     "storm": "possible",
     "storm_from": "12",
     "wbgt_peak": 30.2,
@@ -1752,7 +1752,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 3.6,
-    "rain_chance": 96,
+    "rain_chance": 98,
     "storm": "likely",
     "storm_from": "14",
     "wbgt_peak": 30.4,
@@ -1771,15 +1771,15 @@
   {
    "date": "2026-11-22",
    "day": "Sunday 22 November",
-   "headline": "Storms likely from 15:00: finish lifts, roof and asphalt work before then.",
+   "headline": "Storms likely from 14:00: finish lifts, roof and asphalt work before then.",
    "rows": [
     {
      "key": "concrete",
      "trade": "Concrete pour",
      "status": "LIMITED",
-     "label": "go 08-12 h only",
-     "go_hours": 4,
-     "windows": "08-12 h",
+     "label": "go 08-11 h only",
+     "go_hours": 3,
+     "windows": "08-11 h",
      "causes": [
       "rain",
       "storms"
@@ -1800,11 +1800,11 @@
       ],
       [
        11,
-       0
+       1
       ],
       [
        12,
-       1
+       2
       ],
       [
        14,
@@ -1901,7 +1901,7 @@
       ],
       [
        14,
-       1
+       2
       ],
       [
        15,
@@ -2103,13 +2103,13 @@
    "extras": [],
    "facts": {
     "rain_mm": 3.0,
-    "rain_chance": 94,
+    "rain_chance": 88,
     "storm": "likely",
-    "storm_from": "15",
+    "storm_from": "14",
     "wbgt_peak": 30.4,
     "gust_hook_max": 10.9,
     "go_hours": {
-     "concrete": 4,
+     "concrete": 3,
      "asphalt": 2,
      "crane": 5,
      "height": 2,

@@ -1,12 +1,12 @@
 # Site note · Arusha
 
-Issued Tuesday 17 November 2026, 05:30 (Africa/Dar_es_Salaam). Site -3.3869, 36.6830. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Tuesday 17 November 2026, 06:43 (Africa/Dar_es_Salaam). Site -3.3869, 36.6830. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Tuesday 17 November
 
 **Storms likely from 14:00: finish lifts, roof and asphalt work before then.**
 
-Rain 17 mm (chance up to 92 %) · storms likely · WBGT peak 23.3 °C · gusts 10 m/s at hook height
+Rain 17 mm (chance up to 98 %) · storms likely · WBGT peak 23.3 °C · gusts 10 m/s at hook height
 
 - **Concrete pour — STOP.** Limited by rain, storms. No pour window: postpone, or pour under cover.
 - **Asphalt & surfacing — STOP.** Limited by rain or wet surface, storms. No dry window: do not lay or spray.
@@ -18,9 +18,9 @@ Rain 17 mm (chance up to 92 %) · storms likely · WBGT peak 23.3 °C · gusts 1
 
 ## Wednesday 18 November
 
-**Storms likely from 15:00: finish lifts, roof and asphalt work before then.**
+**Storms possible from 14:00: do exposed work in the morning.**
 
-Rain 3 mm (chance up to 74 %) · storms likely · WBGT peak 24.3 °C · gusts 10 m/s at hook height
+Rain 3 mm (chance up to 68 %) · storms possible · WBGT peak 24.3 °C · gusts 10 m/s at hook height
 
 - **Concrete pour — go 08-12 h only.** Limited by rain, storms. Keep covers ready outside this window.
 - **Asphalt & surfacing — go 08-10 h only.** Limited by rain or wet surface, storms. Never lay or spray on a wet surface.
@@ -34,7 +34,7 @@ Rain 3 mm (chance up to 74 %) · storms likely · WBGT peak 24.3 °C · gusts 10
 
 **Storms possible from 15:00: do exposed work in the morning.**
 
-Rain 4 mm (chance up to 88 %) · storms possible · WBGT peak 24.2 °C · gusts 12 m/s at hook height
+Rain 4 mm (chance up to 90 %) · storms possible · WBGT peak 24.2 °C · gusts 12 m/s at hook height
 
 - **Asphalt & surfacing — STOP.** Limited by rain or wet surface, storms. No dry window: do not lay or spray.
 - **Concrete pour — go 08-10 h only.** Limited by rain, storms. Keep covers ready outside this window.
@@ -46,9 +46,9 @@ Rain 4 mm (chance up to 88 %) · storms possible · WBGT peak 24.2 °C · gusts 
 
 ## Outlook
 
-- **Friday 20 November**: Wet day (1 mm): no concrete or asphalt window. Rain 1 mm (85 %); concrete 0 h go.
-- **Saturday 21 November**: Storms likely from 14:00: finish lifts, roof and asphalt work before then. Rain 16 mm (97 %); concrete 2 h go.
-- **Sunday 22 November**: Storms likely from 15:00: finish lifts, roof and asphalt work before then. Rain 24 mm (85 %); concrete 1 h go.
+- **Friday 20 November**: Wet day (1 mm): no concrete or asphalt window. Rain 1 mm (93 %); concrete 0 h go.
+- **Saturday 21 November**: Storms likely from 14:00: finish lifts, roof and asphalt work before then. Rain 16 mm (98 %); concrete 2 h go.
+- **Sunday 22 November**: Storms likely from 15:00: finish lifts, roof and asphalt work before then. Rain 24 mm (94 %); concrete 2 h go.
 - **Monday 23 November**: Wet day (8 mm): no concrete or asphalt window. Rain 8 mm (61 %); concrete 0 h go.
 
 *Screening guidance from a weather forecast, not an instruction. The contract specification, the crane manufacturer's limits and the site health-and-safety plan take precedence; check conditions on site (WBGT meter, anemometer, the 30-30 rule for lightning) before each activity. Thresholds used: thresholds.json.*
