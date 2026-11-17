@@ -1,6 +1,6 @@
 # Site note · Maputo
 
-Issued Tuesday 17 November 2026, 04:26 (Africa/Maputo). Site -25.9692, 32.5732. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Tuesday 17 November 2026, 04:37 (Africa/Maputo). Site -25.9692, 32.5732. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Tuesday 17 November
 
