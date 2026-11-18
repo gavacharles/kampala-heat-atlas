@@ -1,6 +1,6 @@
 # Site note · Dar es Salaam
 
-Issued Wednesday 18 November 2026, 05:24 (Africa/Dar_es_Salaam). Site -6.7924, 39.2083. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Wednesday 18 November 2026, 05:35 (Africa/Dar_es_Salaam). Site -6.7924, 39.2083. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Wednesday 18 November
 
