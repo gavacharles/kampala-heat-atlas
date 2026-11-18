@@ -2,7 +2,7 @@
  "site": "Maputo",
  "lat": -25.9692,
  "lon": 32.5732,
- "issued": "2026-11-18 04:35",
+ "issued": "2026-11-18 05:43",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -324,7 +324,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 10,
+    "rain_chance": 12,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 25.2,
@@ -1345,7 +1345,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 4,
+    "rain_chance": 6,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 30.9,
@@ -1684,7 +1684,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 16,
+    "rain_chance": 24,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 32.1,
@@ -1703,19 +1703,20 @@
   {
    "date": "2026-11-23",
    "day": "Monday 23 November",
-   "headline": "Pour concrete 09-11 h; rain limits the rest of the day.",
+   "headline": "Some limits today: check your trade below.",
    "rows": [
     {
-     "key": "asphalt",
-     "trade": "Asphalt & surfacing",
+     "key": "concrete",
+     "trade": "Concrete pour",
      "status": "STOP",
      "label": "STOP",
      "go_hours": 0,
      "windows": "",
      "causes": [
-      "rain or wet surface"
+      "rain",
+      "fast drying"
      ],
-     "action": "No dry window: do not lay or spray.",
+     "action": "No pour window: postpone, or pour under cover.",
      "hours": [
       [
        8,
@@ -1723,19 +1724,19 @@
       ],
       [
        9,
-       2
+       1
       ],
       [
        10,
-       2
+       1
       ],
       [
        11,
-       2
+       1
       ],
       [
        12,
-       2
+       1
       ],
       [
        14,
@@ -1846,17 +1847,16 @@
      ]
     },
     {
-     "key": "concrete",
-     "trade": "Concrete pour",
+     "key": "asphalt",
+     "trade": "Asphalt & surfacing",
      "status": "LIMITED",
-     "label": "go 09-11 h only",
+     "label": "go 15-17 h only",
      "go_hours": 2,
-     "windows": "09-11 h",
+     "windows": "15-17 h",
      "causes": [
-      "rain",
-      "fast drying"
+      "rain or wet surface"
      ],
-     "action": "Curing cover and windbreaks ready.",
+     "action": "Never lay or spray on a wet surface.",
      "hours": [
       [
        8,
@@ -1864,19 +1864,19 @@
       ],
       [
        9,
-       0
+       2
       ],
       [
        10,
-       0
+       2
       ],
       [
        11,
-       1
+       2
       ],
       [
        12,
-       1
+       2
       ],
       [
        14,
@@ -1884,11 +1884,11 @@
       ],
       [
        15,
-       1
+       0
       ],
       [
        16,
-       1
+       0
       ]
      ]
     },
@@ -1942,9 +1942,9 @@
      "key": "coatings",
      "trade": "Painting & coatings",
      "status": "LIMITED",
-     "label": "go 12-13 h only",
-     "go_hours": 1,
-     "windows": "12-13 h",
+     "label": "go 14-17 h only",
+     "go_hours": 3,
+     "windows": "14-17 h",
      "causes": [
       "rain",
       "humidity or dew"
@@ -1969,19 +1969,19 @@
       ],
       [
        12,
-       0
+       1
       ],
       [
        14,
-       1
+       0
       ],
       [
        15,
-       1
+       0
       ],
       [
        16,
-       1
+       0
       ]
      ]
     },
@@ -2035,18 +2035,18 @@
    ],
    "facts": {
     "rain_mm": 21.9,
-    "rain_chance": 59,
+    "rain_chance": 54,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 25.4,
     "gust_hook_max": 16.5,
     "go_hours": {
-     "asphalt": 0,
+     "concrete": 0,
      "height": 0,
      "earthworks": 0,
-     "concrete": 2,
+     "asphalt": 2,
      "crane": 4,
-     "coatings": 1,
+     "coatings": 3,
      "labour": 8
     }
    }

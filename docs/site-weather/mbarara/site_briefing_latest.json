@@ -2,7 +2,7 @@
  "site": "Mbarara",
  "lat": -0.6072,
  "lon": 30.6545,
- "issued": "2026-11-18 05:29",
+ "issued": "2026-11-18 06:43",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -341,7 +341,7 @@
    ],
    "facts": {
     "rain_mm": 1.1,
-    "rain_chance": 80,
+    "rain_chance": 78,
     "storm": "possible",
     "storm_from": "14",
     "wbgt_peak": 25.0,
@@ -693,7 +693,7 @@
    ],
    "facts": {
     "rain_mm": 0.7,
-    "rain_chance": 67,
+    "rain_chance": 69,
     "storm": "possible",
     "storm_from": "14",
     "wbgt_peak": 24.6,
@@ -718,9 +718,9 @@
      "key": "concrete",
      "trade": "Concrete pour",
      "status": "LIMITED",
-     "label": "go 08-10 h only",
-     "go_hours": 2,
-     "windows": "08-10 h",
+     "label": "go 08-12 h only",
+     "go_hours": 4,
+     "windows": "08-12 h",
      "causes": [
       "rain",
       "storms"
@@ -737,11 +737,11 @@
       ],
       [
        10,
-       1
+       0
       ],
       [
        11,
-       1
+       0
       ],
       [
        12,
@@ -749,15 +749,15 @@
       ],
       [
        14,
-       2
+       1
       ],
       [
        15,
-       2
+       1
       ],
       [
        16,
-       2
+       1
       ]
      ]
     },
@@ -765,9 +765,9 @@
      "key": "asphalt",
      "trade": "Asphalt & surfacing",
      "status": "LIMITED",
-     "label": "go 08-10 h only",
-     "go_hours": 2,
-     "windows": "08-10 h",
+     "label": "go 08-12 h only",
+     "go_hours": 4,
+     "windows": "08-12 h",
      "causes": [
       "rain or wet surface",
       "storms"
@@ -784,11 +784,11 @@
       ],
       [
        10,
-       1
+       0
       ],
       [
        11,
-       1
+       0
       ],
       [
        12,
@@ -1042,14 +1042,14 @@
    ],
    "facts": {
     "rain_mm": 1.7,
-    "rain_chance": 80,
+    "rain_chance": 69,
     "storm": "possible",
     "storm_from": "14",
     "wbgt_peak": 25.1,
     "gust_hook_max": 10.5,
     "go_hours": {
-     "concrete": 2,
-     "asphalt": 2,
+     "concrete": 4,
+     "asphalt": 4,
      "crane": 5,
      "height": 4,
      "coatings": 3,
@@ -1061,7 +1061,7 @@
   {
    "date": "2026-11-21",
    "day": "Saturday 21 November",
-   "headline": "Storms likely from 15:00: finish lifts, roof and asphalt work before then.",
+   "headline": "Storms possible from 12:00: do exposed work in the morning.",
    "rows": [
     {
      "key": "concrete",
@@ -1196,7 +1196,7 @@
       ],
       [
        15,
-       2
+       1
       ],
       [
        16,
@@ -1398,8 +1398,8 @@
    "facts": {
     "rain_mm": 6.1,
     "rain_chance": 71,
-    "storm": "likely",
-    "storm_from": "15",
+    "storm": "possible",
+    "storm_from": "12",
     "wbgt_peak": 24.8,
     "gust_hook_max": 12.9,
     "go_hours": {
@@ -1445,11 +1445,11 @@
       ],
       [
        11,
-       1
+       2
       ],
       [
        12,
-       1
+       2
       ],
       [
        14,
@@ -1750,7 +1750,7 @@
    ],
    "facts": {
     "rain_mm": 1.5,
-    "rain_chance": 78,
+    "rain_chance": 88,
     "storm": "possible",
     "storm_from": "12",
     "wbgt_peak": 24.9,
@@ -1775,9 +1775,9 @@
      "key": "concrete",
      "trade": "Concrete pour",
      "status": "LIMITED",
-     "label": "go 08-11 h only",
-     "go_hours": 3,
-     "windows": "08-11 h",
+     "label": "go 08-12 h only",
+     "go_hours": 4,
+     "windows": "08-12 h",
      "causes": [
       "rain",
       "storms"
@@ -1798,7 +1798,7 @@
       ],
       [
        11,
-       1
+       0
       ],
       [
        12,
@@ -1822,9 +1822,9 @@
      "key": "asphalt",
      "trade": "Asphalt & surfacing",
      "status": "LIMITED",
-     "label": "go 08-11 h only",
-     "go_hours": 3,
-     "windows": "08-11 h",
+     "label": "go 08-12 h only",
+     "go_hours": 4,
+     "windows": "08-12 h",
      "causes": [
       "rain or wet surface",
       "storms"
@@ -1845,7 +1845,7 @@
       ],
       [
        11,
-       1
+       0
       ],
       [
        12,
@@ -2101,14 +2101,14 @@
    ],
    "facts": {
     "rain_mm": 2.7,
-    "rain_chance": 84,
+    "rain_chance": 82,
     "storm": "possible",
     "storm_from": "14",
     "wbgt_peak": 24.8,
     "gust_hook_max": 11.0,
     "go_hours": {
-     "concrete": 3,
-     "asphalt": 3,
+     "concrete": 4,
+     "asphalt": 4,
      "crane": 5,
      "height": 5,
      "coatings": 3,

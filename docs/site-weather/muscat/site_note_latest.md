@@ -1,12 +1,12 @@
 # Site note · Muscat
 
-Issued Wednesday 18 November 2026, 06:35 (Asia/Muscat). Site 23.5880, 58.3829. Working hours 07:00-17:00, lunch break excluded (9 h).
+Issued Wednesday 18 November 2026, 07:44 (Asia/Muscat). Site 23.5880, 58.3829. Working hours 07:00-17:00, lunch break excluded (9 h).
 
 ## Wednesday 18 November
 
 **Pour concrete 07-11 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 35 %) · storms low · WBGT peak 26.7 °C · gusts 12 m/s at hook height
+Rain 0 mm (chance up to 41 %) · storms low · WBGT peak 26.7 °C · gusts 12 m/s at hook height
 
 - **Concrete pour — go 07-11 h only.** Limited by fast drying. Curing cover and windbreaks ready.
 - **Asphalt & surfacing — go 07-12 h only.** Limited by rain or wet surface. Never lay or spray on a wet surface.
@@ -16,7 +16,7 @@ Rain 0 mm (chance up to 35 %) · storms low · WBGT peak 26.7 °C · gusts 12 m/
 
 **Pour concrete 07-12 h; rain limits the rest of the day.**
 
-Rain 0 mm (chance up to 71 %) · storms low · WBGT peak 26.5 °C · gusts 10 m/s at hook height
+Rain 0 mm (chance up to 78 %) · storms low · WBGT peak 26.5 °C · gusts 10 m/s at hook height
 
 - **Concrete pour — go 07-12 h only.** Limited by rain, fast drying. Curing cover and windbreaks ready.
 - **Asphalt & surfacing — go 07-12 h only.** Limited by rain or wet surface. Never lay or spray on a wet surface.
@@ -28,7 +28,7 @@ Rain 0 mm (chance up to 71 %) · storms low · WBGT peak 26.5 °C · gusts 10 m/
 
 **Storms possible from 13:00: do exposed work in the morning.**
 
-Rain 0 mm (chance up to 76 %) · storms possible · WBGT peak 26.0 °C · gusts 12 m/s at hook height
+Rain 0 mm (chance up to 77 %) · storms possible · WBGT peak 26.0 °C · gusts 12 m/s at hook height
 
 - **Concrete pour — go 07-11 h only.** Limited by rain, storms, fast drying. Curing cover and windbreaks ready.
 - **Asphalt & surfacing — go 07-10 h only.** Limited by rain or wet surface, storms. Never lay or spray on a wet surface.
@@ -39,9 +39,9 @@ Rain 0 mm (chance up to 76 %) · storms possible · WBGT peak 26.0 °C · gusts 
 
 ## Outlook
 
-- **Saturday 21 November**: Pour concrete 07-12 h; fast drying limits the rest of the day. Rain 0 mm (0 %); concrete 7 h go.
-- **Sunday 22 November**: Pour concrete 07-12 h; fast drying limits the rest of the day. Rain 0 mm (0 %); concrete 5 h go.
-- **Monday 23 November**: Pour concrete 07-12 h; fast drying limits the rest of the day. Rain 0 mm (2 %); concrete 5 h go.
+- **Saturday 21 November**: Pour concrete 07-12 h; fast drying limits the rest of the day. Rain 0 mm (6 %); concrete 7 h go.
+- **Sunday 22 November**: Pour concrete 07-12 h; fast drying limits the rest of the day. Rain 0 mm (8 %); concrete 5 h go.
+- **Monday 23 November**: Pour concrete 07-12 h; fast drying limits the rest of the day. Rain 0 mm (4 %); concrete 5 h go.
 - **Tuesday 24 November**: Good working day: no weather limits on any trade. Rain 0 mm (0 %); concrete 9 h go.
 
 *Screening guidance from a weather forecast, not an instruction. The contract specification, the crane manufacturer's limits and the site health-and-safety plan take precedence; check conditions on site (WBGT meter, anemometer, the 30-30 rule for lightning) before each activity. Thresholds used: thresholds.json.*

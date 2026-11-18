@@ -1,6 +1,6 @@
 # Site note · Dakar
 
-Issued Wednesday 18 November 2026, 02:30 (Africa/Dakar). Site 14.7167, -17.4677. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Wednesday 18 November 2026, 03:45 (Africa/Dakar). Site 14.7167, -17.4677. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Wednesday 18 November
 
@@ -16,7 +16,7 @@ Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 27.9 °C · gusts 10 m/s
 
 **Pour concrete 08-10 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 2 %) · storms low · WBGT peak 27.8 °C · gusts 10 m/s at hook height
+Rain 0 mm (chance up to 4 %) · storms low · WBGT peak 27.8 °C · gusts 10 m/s at hook height
 
 - **Concrete pour — go 08-10 h only.** Limited by fast drying. Curing cover and windbreaks ready.
 - **No weather limits:** Outdoor labour, Asphalt & surfacing, Crane lifts, Work at height, Painting & coatings, Earthworks.
@@ -25,7 +25,7 @@ Rain 0 mm (chance up to 2 %) · storms low · WBGT peak 27.8 °C · gusts 10 m/s
 
 **Pour concrete 08-10 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 28.3 °C · gusts 11 m/s at hook height
+Rain 0 mm (chance up to 2 %) · storms low · WBGT peak 28.3 °C · gusts 11 m/s at hook height
 
 - **Outdoor labour — work/rest needed.** Work/rest cycles 15-16 h: at the peak, 45 min work / 15 min rest each hour. Water every 20 min, shade for breaks.
 - **Concrete pour — go 08-10 h only.** Limited by fast drying. Curing cover and windbreaks ready.

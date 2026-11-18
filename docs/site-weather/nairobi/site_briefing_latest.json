@@ -2,14 +2,61 @@
  "site": "Nairobi",
  "lat": -1.2864,
  "lon": 36.8172,
- "issued": "2026-11-18 05:35",
+ "issued": "2026-11-18 06:45",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
    "date": "2026-11-18",
    "day": "Wednesday 18 November",
-   "headline": "Pour concrete 08-09 h; rain limits the rest of the day.",
+   "headline": "Wet day (8 mm): no concrete or asphalt window.",
    "rows": [
+    {
+     "key": "concrete",
+     "trade": "Concrete pour",
+     "status": "STOP",
+     "label": "STOP",
+     "go_hours": 0,
+     "windows": "",
+     "causes": [
+      "rain",
+      "fast drying"
+     ],
+     "action": "No pour window: postpone, or pour under cover.",
+     "hours": [
+      [
+       8,
+       2
+      ],
+      [
+       9,
+       2
+      ],
+      [
+       10,
+       2
+      ],
+      [
+       11,
+       2
+      ],
+      [
+       12,
+       2
+      ],
+      [
+       14,
+       1
+      ],
+      [
+       15,
+       1
+      ],
+      [
+       16,
+       2
+      ]
+     ]
+    },
     {
      "key": "asphalt",
      "trade": "Asphalt & surfacing",
@@ -57,21 +104,21 @@
      ]
     },
     {
-     "key": "concrete",
-     "trade": "Concrete pour",
-     "status": "LIMITED",
-     "label": "go 08-09 h only",
-     "go_hours": 1,
-     "windows": "08-09 h",
+     "key": "coatings",
+     "trade": "Painting & coatings",
+     "status": "STOP",
+     "label": "STOP",
+     "go_hours": 0,
+     "windows": "",
      "causes": [
       "rain",
-      "fast drying"
+      "humidity or dew"
      ],
-     "action": "Curing cover and windbreaks ready.",
+     "action": "Too humid or wet for painting and coatings.",
      "hours": [
       [
        8,
-       0
+       2
       ],
       [
        9,
@@ -79,11 +126,11 @@
       ],
       [
        10,
-       1
+       2
       ],
       [
        11,
-       1
+       2
       ],
       [
        12,
@@ -114,53 +161,6 @@
       "rain"
      ],
      "action": "Clear roofs and scaffolds before storms.",
-     "hours": [
-      [
-       8,
-       2
-      ],
-      [
-       9,
-       2
-      ],
-      [
-       10,
-       2
-      ],
-      [
-       11,
-       2
-      ],
-      [
-       12,
-       2
-      ],
-      [
-       14,
-       0
-      ],
-      [
-       15,
-       0
-      ],
-      [
-       16,
-       2
-      ]
-     ]
-    },
-    {
-     "key": "coatings",
-     "trade": "Painting & coatings",
-     "status": "LIMITED",
-     "label": "go 14-16 h only",
-     "go_hours": 2,
-     "windows": "14-16 h",
-     "causes": [
-      "rain",
-      "humidity or dew"
-     ],
-     "action": "Check the surface is 3 \u00b0C above dew point.",
      "hours": [
       [
        8,
@@ -335,16 +335,16 @@
    "extras": [],
    "facts": {
     "rain_mm": 7.8,
-    "rain_chance": 83,
+    "rain_chance": 98,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 23.0,
     "gust_hook_max": 12.8,
     "go_hours": {
+     "concrete": 0,
      "asphalt": 0,
-     "concrete": 1,
+     "coatings": 0,
      "height": 2,
-     "coatings": 2,
      "earthworks": 0,
      "labour": 8,
      "crane": 8
@@ -391,11 +391,11 @@
       ],
       [
        14,
-       2
+       1
       ],
       [
        15,
-       2
+       1
       ],
       [
        16,
@@ -683,7 +683,7 @@
    ],
    "facts": {
     "rain_mm": 8.8,
-    "rain_chance": 95,
+    "rain_chance": 87,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 22.8,
@@ -1035,7 +1035,7 @@
    ],
    "facts": {
     "rain_mm": 8.3,
-    "rain_chance": 100,
+    "rain_chance": 94,
     "storm": "possible",
     "storm_from": "14",
     "wbgt_peak": 23.0,
@@ -1091,15 +1091,15 @@
       ],
       [
        14,
-       2
+       1
       ],
       [
        15,
-       2
+       1
       ],
       [
        16,
-       2
+       1
       ]
      ]
     },
@@ -1138,11 +1138,11 @@
       ],
       [
        14,
-       2
+       1
       ],
       [
        15,
-       2
+       1
       ],
       [
        16,
@@ -1387,7 +1387,7 @@
    ],
    "facts": {
     "rain_mm": 5.5,
-    "rain_chance": 89,
+    "rain_chance": 82,
     "storm": "possible",
     "storm_from": "12",
     "wbgt_peak": 23.2,
@@ -2081,7 +2081,7 @@
    ],
    "facts": {
     "rain_mm": 5.5,
-    "rain_chance": 95,
+    "rain_chance": 96,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 22.0,

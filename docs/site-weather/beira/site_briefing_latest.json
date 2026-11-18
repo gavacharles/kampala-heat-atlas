@@ -2,7 +2,7 @@
  "site": "Beira",
  "lat": -19.8436,
  "lon": 34.8389,
- "issued": "2026-11-18 04:35",
+ "issued": "2026-11-18 05:43",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -37,7 +37,7 @@
       ],
       [
        11,
-       1
+       2
       ],
       [
        12,
@@ -340,7 +340,7 @@
    ],
    "facts": {
     "rain_mm": 16.3,
-    "rain_chance": 100,
+    "rain_chance": 98,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 26.3,
@@ -359,8 +359,54 @@
   {
    "date": "2026-11-19",
    "day": "Thursday 19 November",
-   "headline": "Some limits today: check your trade below.",
+   "headline": "Pour concrete 14-17 h; rain limits the rest of the day.",
    "rows": [
+    {
+     "key": "concrete",
+     "trade": "Concrete pour",
+     "status": "LIMITED",
+     "label": "go 14-17 h only",
+     "go_hours": 3,
+     "windows": "14-17 h",
+     "causes": [
+      "rain"
+     ],
+     "action": "Keep covers ready outside this window.",
+     "hours": [
+      [
+       8,
+       1
+      ],
+      [
+       9,
+       1
+      ],
+      [
+       10,
+       1
+      ],
+      [
+       11,
+       1
+      ],
+      [
+       12,
+       1
+      ],
+      [
+       14,
+       0
+      ],
+      [
+       15,
+       0
+      ],
+      [
+       16,
+       0
+      ]
+     ]
+    },
     {
      "key": "asphalt",
      "trade": "Asphalt & surfacing",
@@ -457,9 +503,9 @@
      "key": "coatings",
      "trade": "Painting & coatings",
      "status": "LIMITED",
-     "label": "go 12-13 h, 14-17 h only",
-     "go_hours": 4,
-     "windows": "12-13 h, 14-17 h",
+     "label": "go 14-17 h only",
+     "go_hours": 3,
+     "windows": "14-17 h",
      "causes": [
       "rain",
       "humidity or dew"
@@ -484,7 +530,7 @@
       ],
       [
        12,
-       0
+       1
       ],
       [
        14,
@@ -592,50 +638,6 @@
      ]
     },
     {
-     "key": "concrete",
-     "trade": "Concrete pour",
-     "status": "GO",
-     "label": "no limits",
-     "go_hours": 8,
-     "windows": "08-13 h, 14-17 h",
-     "causes": [],
-     "action": "No weather limits.",
-     "hours": [
-      [
-       8,
-       0
-      ],
-      [
-       9,
-       0
-      ],
-      [
-       10,
-       0
-      ],
-      [
-       11,
-       0
-      ],
-      [
-       12,
-       0
-      ],
-      [
-       14,
-       0
-      ],
-      [
-       15,
-       0
-      ],
-      [
-       16,
-       0
-      ]
-     ]
-    },
-    {
      "key": "crane",
      "trade": "Crane lifts",
      "status": "GO",
@@ -685,18 +687,18 @@
    ],
    "facts": {
     "rain_mm": 1.7,
-    "rain_chance": 47,
+    "rain_chance": 63,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 27.2,
     "gust_hook_max": 11.2,
     "go_hours": {
+     "concrete": 3,
      "asphalt": 1,
      "height": 4,
-     "coatings": 4,
+     "coatings": 3,
      "earthworks": 5,
      "labour": 8,
-     "concrete": 8,
      "crane": 8
     }
    }
@@ -1028,7 +1030,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 4,
+    "rain_chance": 8,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 30.5,
@@ -1376,7 +1378,7 @@
    ],
    "facts": {
     "rain_mm": 0.4,
-    "rain_chance": 29,
+    "rain_chance": 39,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 29.8,
@@ -1729,7 +1731,7 @@
    ],
    "facts": {
     "rain_mm": 0.3,
-    "rain_chance": 84,
+    "rain_chance": 76,
     "storm": "possible",
     "storm_from": "14",
     "wbgt_peak": 32.4,
@@ -1836,7 +1838,7 @@
       ],
       [
        15,
-       2
+       1
       ],
       [
        16,
@@ -2080,7 +2082,7 @@
    ],
    "facts": {
     "rain_mm": 0.6,
-    "rain_chance": 82,
+    "rain_chance": 78,
     "storm": "possible",
     "storm_from": "14",
     "wbgt_peak": 32.3,

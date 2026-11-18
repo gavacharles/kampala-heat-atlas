@@ -2,7 +2,7 @@
  "site": "Jeddah",
  "lat": 21.4858,
  "lon": 39.1925,
- "issued": "2026-11-18 05:35",
+ "issued": "2026-11-18 06:44",
  "working": "07:00-17:00, lunch excluded (9 h)",
  "days": [
   {
@@ -108,7 +108,7 @@
       ],
       [
        16,
-       1
+       2
       ]
      ]
     },
@@ -372,7 +372,7 @@
    ],
    "facts": {
     "rain_mm": 0.7,
-    "rain_chance": 90,
+    "rain_chance": 98,
     "storm": "possible",
     "storm_from": "14",
     "wbgt_peak": 30.0,
@@ -741,7 +741,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 25,
+    "rain_chance": 33,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 28.6,
@@ -2222,7 +2222,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 6,
+    "rain_chance": 10,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 26.6,

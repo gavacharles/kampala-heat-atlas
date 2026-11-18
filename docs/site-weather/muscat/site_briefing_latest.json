@@ -2,7 +2,7 @@
  "site": "Muscat",
  "lat": 23.588,
  "lon": 58.3829,
- "issued": "2026-11-18 06:35",
+ "issued": "2026-11-18 07:44",
  "working": "07:00-17:00, lunch excluded (9 h)",
  "days": [
   {
@@ -354,7 +354,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 0.5,
-    "rain_chance": 35,
+    "rain_chance": 41,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 26.7,
@@ -414,15 +414,15 @@
       ],
       [
        14,
-       1
+       2
       ],
       [
        15,
-       1
+       2
       ],
       [
        16,
-       1
+       2
       ]
      ]
     },
@@ -472,7 +472,7 @@
       ],
       [
        16,
-       1
+       2
       ]
      ]
     },
@@ -724,7 +724,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 0.4,
-    "rain_chance": 71,
+    "rain_chance": 78,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 26.5,
@@ -793,7 +793,7 @@
       ],
       [
        16,
-       2
+       1
       ]
      ]
     },
@@ -844,7 +844,7 @@
       ],
       [
        16,
-       2
+       1
       ]
      ]
     },
@@ -1099,7 +1099,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 0.3,
-    "rain_chance": 76,
+    "rain_chance": 77,
     "storm": "possible",
     "storm_from": "13",
     "wbgt_peak": 26.0,
@@ -1464,7 +1464,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 0,
+    "rain_chance": 6,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 26.3,
@@ -1829,7 +1829,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 0,
+    "rain_chance": 8,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 26.8,
@@ -2192,7 +2192,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 2,
+    "rain_chance": 4,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 26.4,

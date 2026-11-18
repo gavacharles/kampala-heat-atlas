@@ -1,12 +1,12 @@
 # Site note · Maputo
 
-Issued Wednesday 18 November 2026, 04:35 (Africa/Maputo). Site -25.9692, 32.5732. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Wednesday 18 November 2026, 05:43 (Africa/Maputo). Site -25.9692, 32.5732. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Wednesday 18 November
 
 **Good working day: no weather limits on any trade.**
 
-Rain 0 mm (chance up to 10 %) · storms low · WBGT peak 25.2 °C · gusts 10 m/s at hook height
+Rain 0 mm (chance up to 12 %) · storms low · WBGT peak 25.2 °C · gusts 10 m/s at hook height
 
 - **No weather limits:** Outdoor labour, Concrete pour, Asphalt & surfacing, Crane lifts, Work at height, Painting & coatings, Earthworks.
 - UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.
@@ -36,9 +36,9 @@ Rain 0 mm (chance up to 6 %) · storms low · WBGT peak 32.7 °C · gusts 14 m/s
 
 ## Outlook
 
-- **Saturday 21 November**: Pour concrete 08-10 h; fast drying limits the rest of the day. Rain 0 mm (4 %); concrete 2 h go.
-- **Sunday 22 November**: Heat stress: stop moderate work in the sun 11-13 h. Rain 0 mm (16 %); concrete 0 h go.
-- **Monday 23 November**: Pour concrete 09-11 h; rain limits the rest of the day. Rain 22 mm (59 %); concrete 2 h go.
+- **Saturday 21 November**: Pour concrete 08-10 h; fast drying limits the rest of the day. Rain 0 mm (6 %); concrete 2 h go.
+- **Sunday 22 November**: Heat stress: stop moderate work in the sun 11-13 h. Rain 0 mm (24 %); concrete 0 h go.
+- **Monday 23 November**: Some limits today: check your trade below. Rain 22 mm (54 %); concrete 0 h go.
 - **Tuesday 24 November**: Some limits today: check your trade below. Rain 11 mm (49 %); concrete 8 h go.
 
 *Screening guidance from a weather forecast, not an instruction. The contract specification, the crane manufacturer's limits and the site health-and-safety plan take precedence; check conditions on site (WBGT meter, anemometer, the 30-30 rule for lightning) before each activity. Thresholds used: thresholds.json.*
