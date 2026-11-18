@@ -9,3 +9,4 @@ date,source,rain_mm,rain_max_mm_h,tmax_C,gust_max_ms,wbgt_sun_max_C,rain_flag,gu
 2026-11-14,model analysis (preliminary),18.1,2.4,22.8,11.8,22.8,heavy (above 1-in-10-day),,,9.0,4.0,0.0,9.0,0.0,0.0,1.0,9.0,22.1
 2026-11-15,model analysis (preliminary),2.2,0.7,24.8,14.0,24.8,,,,9.0,9.0,1.0,5.0,2.0,0.0,9.0,9.0,7.6
 2026-11-16,model analysis (preliminary),0.4,0.4,25.4,17.1,24.0,,above 1-in-10-day,,9.0,4.0,6.0,2.0,1.0,6.0,8.0,9.0,0.1
+2026-11-17,model analysis (preliminary),3.9,1.0,22.4,13.9,21.1,,,,9.0,7.0,3.0,8.0,2.0,3.0,4.0,9.0,3.7
