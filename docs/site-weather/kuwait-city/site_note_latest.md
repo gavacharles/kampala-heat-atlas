@@ -1,6 +1,6 @@
 # Site note · Kuwait City
 
-Issued Wednesday 18 November 2026, 05:16 (Asia/Kuwait). Site 29.3759, 47.9774. Working hours 07:00-17:00, lunch break excluded (9 h).
+Issued Wednesday 18 November 2026, 05:19 (Asia/Kuwait). Site 29.3759, 47.9774. Working hours 07:00-17:00, lunch break excluded (9 h).
 
 ## Wednesday 18 November
 
