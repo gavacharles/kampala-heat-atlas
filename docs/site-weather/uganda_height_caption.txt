@@ -1,12 +1,12 @@
-Site weather, Uganda: Wednesday 18 November. Work at height, go hours today:
+Site weather, Uganda: Thursday 19 November. Work at height, go hours today:
 
-• Kampala: 08-12
-• Mbarara: 08-12
-• Hoima: 09-12, 15-17
-• Mbale: 08-12
-• Jinja: 08-13
+• Kampala: 16-17
+• Mbarara: 08-13
+• Hoima: 08-13
+• Mbale: 08-11
+• Jinja: none
 • Gulu: all day
-• Arua: 08-12, 16-17
+• Arua: 08-11, 12-13, 14-17
 
 Hour-by-hour for seven trades and your town's week ahead: gavacharles.github.io/kampala-heat-atlas/site-weather
 Send us your site location to add it.

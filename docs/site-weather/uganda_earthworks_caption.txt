@@ -1,12 +1,12 @@
-Site weather, Uganda: Wednesday 18 November. Earthworks, go hours today:
+Site weather, Uganda: Thursday 19 November. Earthworks, go hours today:
 
-• Kampala: 08-13, 14-16
-• Mbarara: 14-17
-• Hoima: all day
-• Mbale: 16-17
-• Jinja: all day
+• Kampala: 08-11
+• Mbarara: 08-13, 14-15
+• Hoima: 08-13
+• Mbale: 14-16
+• Jinja: 08-11
 • Gulu: all day
-• Arua: all day
+• Arua: 08-11, 12-13, 14-17
 
 Hour-by-hour for seven trades and your town's week ahead: gavacharles.github.io/kampala-heat-atlas/site-weather
 Send us your site location to add it.
