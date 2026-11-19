@@ -1,6 +1,6 @@
 # Site note · Kigali
 
-Issued Thursday 19 November 2026, 04:25 (Africa/Kigali). Site -1.9441, 30.0619. Working hours 07:00-17:00, lunch break excluded (9 h).
+Issued Thursday 19 November 2026, 04:30 (Africa/Kigali). Site -1.9441, 30.0619. Working hours 07:00-17:00, lunch break excluded (9 h).
 
 ## Thursday 19 November
 
