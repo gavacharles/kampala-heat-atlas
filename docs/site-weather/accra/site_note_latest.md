@@ -1,6 +1,6 @@
 # Site note · Accra
 
-Issued Thursday 19 November 2026, 02:15 (Africa/Accra). Site 5.6037, -0.1870. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Thursday 19 November 2026, 02:25 (Africa/Accra). Site 5.6037, -0.1870. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Thursday 19 November
 
