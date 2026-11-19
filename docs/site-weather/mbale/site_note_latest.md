@@ -1,6 +1,6 @@
 # Site note · Mbale
 
-Issued Thursday 19 November 2026, 05:30 (Africa/Kampala). Site 1.0821, 34.1750. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Thursday 19 November 2026, 06:43 (Africa/Kampala). Site 1.0821, 34.1750. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Thursday 19 November
 
@@ -22,9 +22,9 @@ Rain 6 mm (chance up to 94 %) · storms likely · WBGT peak 28.4 °C · gusts 9 
 
 **Storms likely from 14:00: finish lifts, roof and asphalt work before then.**
 
-Rain 3 mm (chance up to 92 %) · storms likely · WBGT peak 28.0 °C · gusts 7 m/s at hook height
+Rain 3 mm (chance up to 96 %) · storms likely · WBGT peak 28.0 °C · gusts 7 m/s at hook height
 
-- **Concrete pour — go 08-12 h only.** Limited by rain, storms. Keep covers ready outside this window.
+- **Concrete pour — go 08-11 h only.** Limited by rain, storms. Keep covers ready outside this window.
 - **Asphalt & surfacing — go 08-11 h only.** Limited by rain or wet surface, storms. Never lay or spray on a wet surface.
 - **Crane lifts — go 08-13 h only.** Limited by storms. Check the anemometer before each lift.
 - **Work at height — go 08-11 h, 12-13 h only.** Limited by rain, storms. Clear roofs and scaffolds before storms.
@@ -38,7 +38,7 @@ Rain 3 mm (chance up to 92 %) · storms likely · WBGT peak 28.0 °C · gusts 7 
 
 **Storms likely from 15:00: finish lifts, roof and asphalt work before then.**
 
-Rain 2 mm (chance up to 94 %) · storms likely · WBGT peak 28.8 °C · gusts 7 m/s at hook height
+Rain 2 mm (chance up to 82 %) · storms likely · WBGT peak 28.8 °C · gusts 7 m/s at hook height
 
 - **Outdoor labour — work/rest needed.** Work/rest cycles 12-13 h, 14-16 h: at the peak, 45 min work / 15 min rest each hour. Water every 20 min, shade for breaks.
 - **Concrete pour — go 08-11 h only.** Limited by rain, storms. Keep covers ready outside this window.
@@ -52,9 +52,9 @@ Rain 2 mm (chance up to 94 %) · storms likely · WBGT peak 28.8 °C · gusts 7 
 
 ## Outlook
 
-- **Sunday 22 November**: Storms likely from 15:00: finish lifts, roof and asphalt work before then. Rain 5 mm (84 %); concrete 2 h go.
+- **Sunday 22 November**: Storms likely from 15:00: finish lifts, roof and asphalt work before then. Rain 5 mm (90 %); concrete 3 h go.
 - **Monday 23 November**: Storms likely from 14:00: finish lifts, roof and asphalt work before then. Rain 5 mm (86 %); concrete 3 h go.
-- **Tuesday 24 November**: Storms likely from 14:00: finish lifts, roof and asphalt work before then. Rain 4 mm (92 %); concrete 3 h go.
+- **Tuesday 24 November**: Storms likely from 15:00: finish lifts, roof and asphalt work before then. Rain 4 mm (82 %); concrete 4 h go.
 - **Wednesday 25 November**: Storms possible from 12:00: do exposed work in the morning. Rain 2 mm (78 %); concrete 2 h go.
 
 *Screening guidance from a weather forecast, not an instruction. The contract specification, the crane manufacturer's limits and the site health-and-safety plan take precedence; check conditions on site (WBGT meter, anemometer, the 30-30 rule for lightning) before each activity. Thresholds used: thresholds.json.*

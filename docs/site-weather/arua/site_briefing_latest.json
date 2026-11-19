@@ -2,7 +2,7 @@
  "site": "Arua",
  "lat": 3.0201,
  "lon": 30.9111,
- "issued": "2026-11-19 05:30",
+ "issued": "2026-11-19 06:43",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -336,7 +336,7 @@
    ],
    "facts": {
     "rain_mm": 1.7,
-    "rain_chance": 44,
+    "rain_chance": 39,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 25.6,
@@ -679,7 +679,7 @@
    ],
    "facts": {
     "rain_mm": 0.1,
-    "rain_chance": 29,
+    "rain_chance": 25,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 26.3,
@@ -1020,7 +1020,7 @@
    ],
    "facts": {
     "rain_mm": 0.1,
-    "rain_chance": 31,
+    "rain_chance": 39,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 26.5,
@@ -1039,7 +1039,7 @@
   {
    "date": "2026-11-22",
    "day": "Sunday 22 November",
-   "headline": "Storms possible from 16:00: do exposed work in the morning.",
+   "headline": "Storms possible from 15:00: do exposed work in the morning.",
    "rows": [
     {
      "key": "concrete",
@@ -1140,9 +1140,9 @@
      "key": "crane",
      "trade": "Crane lifts",
      "status": "LIMITED",
-     "label": "go 08-13 h, 14-16 h only",
-     "go_hours": 7,
-     "windows": "08-13 h, 14-16 h",
+     "label": "go 08-13 h, 14-15 h only",
+     "go_hours": 6,
+     "windows": "08-13 h, 14-15 h",
      "causes": [
       "storms"
      ],
@@ -1174,7 +1174,7 @@
       ],
       [
        15,
-       0
+       1
       ],
       [
        16,
@@ -1191,8 +1191,8 @@
      "windows": "08-12 h",
      "causes": [
       "rain",
-      "wind",
-      "storms"
+      "storms",
+      "wind"
      ],
      "action": "Clear roofs and scaffolds before storms.",
      "hours": [
@@ -1372,15 +1372,15 @@
    ],
    "facts": {
     "rain_mm": 2.9,
-    "rain_chance": 56,
+    "rain_chance": 52,
     "storm": "possible",
-    "storm_from": "16",
+    "storm_from": "15",
     "wbgt_peak": 25.3,
     "gust_hook_max": 14.5,
     "go_hours": {
      "concrete": 2,
      "asphalt": 4,
-     "crane": 7,
+     "crane": 6,
      "height": 4,
      "coatings": 4,
      "earthworks": 5,
@@ -1401,8 +1401,7 @@
      "go_hours": 3,
      "windows": "08-11 h",
      "causes": [
-      "fast drying",
-      "rain"
+      "fast drying"
      ],
      "action": "Curing cover and windbreaks ready.",
      "hours": [
@@ -1717,7 +1716,7 @@
    ],
    "facts": {
     "rain_mm": 1.2,
-    "rain_chance": 63,
+    "rain_chance": 49,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 25.9,
@@ -2058,7 +2057,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 0.9,
-    "rain_chance": 28,
+    "rain_chance": 49,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 26.5,

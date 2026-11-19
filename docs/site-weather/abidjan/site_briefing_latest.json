@@ -2,7 +2,7 @@
  "site": "Abidjan",
  "lat": 5.36,
  "lon": -4.0083,
- "issued": "2026-11-19 02:29",
+ "issued": "2026-11-19 03:43",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -340,7 +340,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 3.2,
-    "rain_chance": 89,
+    "rain_chance": 87,
     "storm": "likely",
     "storm_from": "14",
     "wbgt_peak": 31.0,
@@ -710,7 +710,7 @@
   {
    "date": "2026-11-21",
    "day": "Saturday 21 November",
-   "headline": "Storms possible from 12:00: do exposed work in the morning.",
+   "headline": "Storms possible from 14:00: do exposed work in the morning.",
    "rows": [
     {
      "key": "labour",
@@ -762,9 +762,9 @@
      "key": "concrete",
      "trade": "Concrete pour",
      "status": "LIMITED",
-     "label": "go 08-10 h only",
-     "go_hours": 2,
-     "windows": "08-10 h",
+     "label": "go 08-11 h only",
+     "go_hours": 3,
+     "windows": "08-11 h",
      "causes": [
       "rain",
       "storms"
@@ -781,7 +781,7 @@
       ],
       [
        10,
-       1
+       0
       ],
       [
        11,
@@ -856,9 +856,9 @@
      "key": "crane",
      "trade": "Crane lifts",
      "status": "LIMITED",
-     "label": "go 08-12 h only",
-     "go_hours": 4,
-     "windows": "08-12 h",
+     "label": "go 08-13 h only",
+     "go_hours": 5,
+     "windows": "08-13 h",
      "causes": [
       "storms"
      ],
@@ -882,7 +882,7 @@
       ],
       [
        12,
-       1
+       0
       ],
       [
        14,
@@ -906,8 +906,8 @@
      "go_hours": 3,
      "windows": "08-11 h",
      "causes": [
-      "storms",
-      "rain"
+      "rain",
+      "storms"
      ],
      "action": "Clear roofs and scaffolds before storms.",
      "hours": [
@@ -1044,16 +1044,16 @@
    ],
    "facts": {
     "rain_mm": 1.2,
-    "rain_chance": 90,
+    "rain_chance": 98,
     "storm": "possible",
-    "storm_from": "12",
+    "storm_from": "14",
     "wbgt_peak": 29.7,
     "gust_hook_max": 9.6,
     "go_hours": {
      "labour": 1,
-     "concrete": 2,
+     "concrete": 3,
      "asphalt": 2,
-     "crane": 4,
+     "crane": 5,
      "height": 3,
      "coatings": 2,
      "earthworks": 7
@@ -1395,7 +1395,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 3.1,
-    "rain_chance": 98,
+    "rain_chance": 96,
     "storm": "likely",
     "storm_from": "14",
     "wbgt_peak": 30.2,
@@ -1489,7 +1489,7 @@
       ],
       [
        11,
-       2
+       1
       ],
       [
        12,
@@ -1746,7 +1746,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 2.7,
-    "rain_chance": 94,
+    "rain_chance": 88,
     "storm": "likely",
     "storm_from": "14",
     "wbgt_peak": 31.0,
@@ -1911,9 +1911,9 @@
      "key": "concrete",
      "trade": "Concrete pour",
      "status": "LIMITED",
-     "label": "go 08-10 h only",
-     "go_hours": 2,
-     "windows": "08-10 h",
+     "label": "go 08-11 h only",
+     "go_hours": 3,
+     "windows": "08-11 h",
      "causes": [
       "rain",
       "storms"
@@ -1930,7 +1930,7 @@
       ],
       [
        10,
-       1
+       0
       ],
       [
        11,
@@ -1958,9 +1958,9 @@
      "key": "crane",
      "trade": "Crane lifts",
      "status": "LIMITED",
-     "label": "go 08-12 h only",
-     "go_hours": 4,
-     "windows": "08-12 h",
+     "label": "go 08-13 h only",
+     "go_hours": 5,
+     "windows": "08-13 h",
      "causes": [
       "storms"
      ],
@@ -1984,7 +1984,7 @@
       ],
       [
        12,
-       1
+       0
       ],
       [
        14,
@@ -2097,7 +2097,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 3.3,
-    "rain_chance": 96,
+    "rain_chance": 86,
     "storm": "likely",
     "storm_from": "14",
     "wbgt_peak": 31.1,
@@ -2106,8 +2106,8 @@
      "labour": 0,
      "asphalt": 0,
      "coatings": 0,
-     "concrete": 2,
-     "crane": 4,
+     "concrete": 3,
+     "crane": 5,
      "height": 2,
      "earthworks": 6
     }

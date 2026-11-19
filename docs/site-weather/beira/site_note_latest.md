@@ -1,12 +1,12 @@
 # Site note · Beira
 
-Issued Thursday 19 November 2026, 04:33 (Africa/Maputo). Site -19.8436, 34.8389. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Thursday 19 November 2026, 05:43 (Africa/Maputo). Site -19.8436, 34.8389. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Thursday 19 November
 
 **Pour concrete 14-17 h; rain limits the rest of the day.**
 
-Rain 1 mm (chance up to 86 %) · storms low · WBGT peak 27.6 °C · gusts 12 m/s at hook height
+Rain 1 mm (chance up to 63 %) · storms low · WBGT peak 27.6 °C · gusts 12 m/s at hook height
 
 - **Concrete pour — go 14-17 h only.** Limited by rain. Keep covers ready outside this window.
 - **Asphalt & surfacing — go 14-17 h only.** Limited by rain or wet surface. Never lay or spray on a wet surface.
@@ -19,7 +19,7 @@ Rain 1 mm (chance up to 86 %) · storms low · WBGT peak 27.6 °C · gusts 12 m/
 
 **Pour concrete 08-12 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 4 %) · storms low · WBGT peak 30.2 °C · gusts 15 m/s at hook height
+Rain 0 mm (chance up to 2 %) · storms low · WBGT peak 30.2 °C · gusts 15 m/s at hook height
 
 - **Outdoor labour — work/rest needed.** Work/rest cycles 09-13 h, 14-16 h: at the peak, 15 min work / 45 min rest. Water every 20 min, shade for breaks.
 - **Concrete pour — go 08-12 h only.** Limited by fast drying. Curing cover and windbreaks ready.
@@ -32,7 +32,7 @@ Rain 0 mm (chance up to 4 %) · storms low · WBGT peak 30.2 °C · gusts 15 m/s
 
 **Pour concrete 08-09 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 14 %) · storms low · WBGT peak 29.2 °C · gusts 16 m/s at hook height
+Rain 0 mm (chance up to 8 %) · storms low · WBGT peak 29.2 °C · gusts 16 m/s at hook height
 
 - **Outdoor labour — work/rest needed.** Work/rest cycles 10-13 h, 14-16 h: at the peak, 30 min work / 30 min rest. Water every 20 min, shade for breaks.
 - **Concrete pour — go 08-09 h only.** Limited by fast drying. Curing cover and windbreaks ready.
@@ -43,9 +43,9 @@ Rain 0 mm (chance up to 14 %) · storms low · WBGT peak 29.2 °C · gusts 16 m/
 
 ## Outlook
 
-- **Sunday 22 November**: Storms likely from 14:00: finish lifts, roof and asphalt work before then. Rain 3 mm (78 %); concrete 3 h go.
-- **Monday 23 November**: Heat stress: stop moderate work in the sun 10-13 h. Rain 1 mm (96 %); concrete 2 h go.
-- **Tuesday 24 November**: Heat stress: stop moderate work in the sun 10-13 h. Rain 4 mm (80 %); concrete 1 h go.
+- **Sunday 22 November**: Storms likely from 14:00: finish lifts, roof and asphalt work before then. Rain 3 mm (75 %); concrete 3 h go.
+- **Monday 23 November**: Heat stress: stop moderate work in the sun 10-13 h. Rain 1 mm (92 %); concrete 2 h go.
+- **Tuesday 24 November**: Heat stress: stop moderate work in the sun 10-13 h. Rain 4 mm (78 %); concrete 1 h go.
 - **Wednesday 25 November**: Storms possible from 11:00: do exposed work in the morning. Rain 15 mm (82 %); concrete 1 h go.
 
 *Screening guidance from a weather forecast, not an instruction. The contract specification, the crane manufacturer's limits and the site health-and-safety plan take precedence; check conditions on site (WBGT meter, anemometer, the 30-30 rule for lightning) before each activity. Thresholds used: thresholds.json.*

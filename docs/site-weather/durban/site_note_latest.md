@@ -1,6 +1,6 @@
 # Site note · Durban
 
-Issued Thursday 19 November 2026, 04:33 (Africa/Johannesburg). Site -29.8587, 31.0218. Working hours 07:00-17:00, lunch break excluded (9 h).
+Issued Thursday 19 November 2026, 05:43 (Africa/Johannesburg). Site -29.8587, 31.0218. Working hours 07:00-17:00, lunch break excluded (9 h).
 
 ## Thursday 19 November
 
@@ -16,7 +16,7 @@ Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 26.5 °C · gusts 12 m/s
 
 **Pour concrete 13-17 h; fast drying limits the rest of the day.**
 
-Rain 1 mm (chance up to 61 %) · storms low · WBGT peak 24.7 °C · gusts 17 m/s at hook height
+Rain 1 mm (chance up to 67 %) · storms low · WBGT peak 24.7 °C · gusts 17 m/s at hook height
 
 - **Concrete pour — go 07-10 h, 13-17 h only.** Limited by fast drying. Curing cover and windbreaks ready.
 - **Asphalt & surfacing — go 09-12 h, 13-17 h only.** Limited by rain or wet surface. Never lay or spray on a wet surface.
@@ -30,7 +30,7 @@ Rain 1 mm (chance up to 61 %) · storms low · WBGT peak 24.7 °C · gusts 17 m/
 
 **Heat stress: stop moderate work in the sun 15-16 h.**
 
-Rain 1 mm (chance up to 55 %) · storms low · WBGT peak 31.1 °C · gusts 12 m/s at hook height
+Rain 1 mm (chance up to 60 %) · storms low · WBGT peak 31.1 °C · gusts 12 m/s at hook height
 
 - **Outdoor labour — work/rest needed.** Work/rest cycles 13-17 h: at the peak, stop heavy and moderate work in the sun. Water every 20 min, shade for breaks.
 - **Painting & coatings — go 13-17 h only.** Limited by humidity or dew. Check the surface is 3 °C above dew point.
@@ -39,9 +39,9 @@ Rain 1 mm (chance up to 55 %) · storms low · WBGT peak 31.1 °C · gusts 12 m/
 
 ## Outlook
 
-- **Sunday 22 November**: Pour concrete 07-12 h; rain limits the rest of the day. Rain 15 mm (82 %); concrete 7 h go.
-- **Monday 23 November**: Pour concrete 10-11 h; rain limits the rest of the day. Rain 8 mm (88 %); concrete 1 h go.
-- **Tuesday 24 November**: Wet day (10 mm): no concrete or asphalt window. Rain 10 mm (84 %); concrete 0 h go.
-- **Wednesday 25 November**: Pour concrete 07-11 h; rain limits the rest of the day. Rain 1 mm (58 %); concrete 4 h go.
+- **Sunday 22 November**: Pour concrete 07-12 h; rain limits the rest of the day. Rain 15 mm (91 %); concrete 7 h go.
+- **Monday 23 November**: Pour concrete 08-12 h; rain limits the rest of the day. Rain 8 mm (92 %); concrete 8 h go.
+- **Tuesday 24 November**: Storms possible from 11:00: do exposed work in the morning. Rain 10 mm (76 %); concrete 2 h go.
+- **Wednesday 25 November**: Pour concrete 07-11 h; rain limits the rest of the day. Rain 1 mm (59 %); concrete 4 h go.
 
 *Screening guidance from a weather forecast, not an instruction. The contract specification, the crane manufacturer's limits and the site health-and-safety plan take precedence; check conditions on site (WBGT meter, anemometer, the 30-30 rule for lightning) before each activity. Thresholds used: thresholds.json.*

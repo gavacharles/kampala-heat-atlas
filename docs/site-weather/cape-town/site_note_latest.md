@@ -1,12 +1,12 @@
 # Site note · Cape Town
 
-Issued Thursday 19 November 2026, 04:33 (Africa/Johannesburg). Site -33.9249, 18.4241. Working hours 07:00-17:00, lunch break excluded (9 h).
+Issued Thursday 19 November 2026, 05:43 (Africa/Johannesburg). Site -33.9249, 18.4241. Working hours 07:00-17:00, lunch break excluded (9 h).
 
 ## Thursday 19 November
 
 **Pour concrete 07-12 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 7 %) · storms low · WBGT peak 23.5 °C · gusts 15 m/s at hook height
+Rain 0 mm (chance up to 4 %) · storms low · WBGT peak 23.5 °C · gusts 15 m/s at hook height
 
 - **Concrete pour — go 07-12 h, 13-14 h, 15-17 h only.** Limited by fast drying. Curing cover and windbreaks ready.
 - **Work at height — go 07-12 h only.** Limited by wind. Clear roofs and scaffolds before storms.
@@ -19,7 +19,7 @@ Rain 0 mm (chance up to 7 %) · storms low · WBGT peak 23.5 °C · gusts 15 m/s
 
 **Pour concrete 07-12 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 5 %) · storms low · WBGT peak 21.0 °C · gusts 16 m/s at hook height
+Rain 0 mm (chance up to 1 %) · storms low · WBGT peak 21.0 °C · gusts 16 m/s at hook height
 
 - **Concrete pour — go 07-12 h only.** Limited by fast drying. Curing cover and windbreaks ready.
 - **Crane lifts — go 13-16 h only.** Limited by wind. Check the anemometer before each lift.
@@ -31,7 +31,7 @@ Rain 0 mm (chance up to 5 %) · storms low · WBGT peak 21.0 °C · gusts 16 m/s
 
 **Some limits today: check your trade below.**
 
-Rain 2 mm (chance up to 24 %) · storms low · WBGT peak 18.5 °C · gusts 19 m/s at hook height
+Rain 2 mm (chance up to 21 %) · storms low · WBGT peak 18.5 °C · gusts 19 m/s at hook height
 
 - **Asphalt & surfacing — go 07-12 h, 13-15 h only.** Limited by rain or wet surface. Never lay or spray on a wet surface.
 - **Crane lifts — go 07-09 h only.** Limited by wind. Check the anemometer before each lift.
@@ -43,9 +43,9 @@ Rain 2 mm (chance up to 24 %) · storms low · WBGT peak 18.5 °C · gusts 19 m/
 
 ## Outlook
 
-- **Sunday 22 November**: Some limits today: check your trade below. Rain 0 mm (39 %); concrete 9 h go.
-- **Monday 23 November**: Pour concrete 07-12 h; fast drying limits the rest of the day. Rain 0 mm (4 %); concrete 5 h go.
-- **Tuesday 24 November**: Pour concrete 07-12 h; fast drying limits the rest of the day. Rain 0 mm (8 %); concrete 5 h go.
+- **Sunday 22 November**: Some limits today: check your trade below. Rain 0 mm (26 %); concrete 9 h go.
+- **Monday 23 November**: Pour concrete 07-12 h; fast drying limits the rest of the day. Rain 0 mm (8 %); concrete 5 h go.
+- **Tuesday 24 November**: Pour concrete 07-12 h; fast drying limits the rest of the day. Rain 0 mm (6 %); concrete 5 h go.
 - **Wednesday 25 November**: Pour concrete 07-10 h; fast drying limits the rest of the day. Rain 0 mm (5 %); concrete 3 h go.
 
 *Screening guidance from a weather forecast, not an instruction. The contract specification, the crane manufacturer's limits and the site health-and-safety plan take precedence; check conditions on site (WBGT meter, anemometer, the 30-30 rule for lightning) before each activity. Thresholds used: thresholds.json.*

@@ -1,12 +1,12 @@
 # Site note · Lagos
 
-Issued Thursday 19 November 2026, 03:29 (Africa/Lagos). Site 6.5244, 3.3792. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Thursday 19 November 2026, 04:43 (Africa/Lagos). Site 6.5244, 3.3792. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Thursday 19 November
 
-**Storms possible from 14:00: do exposed work in the morning.**
+**Storms likely from 14:00: finish lifts, roof and asphalt work before then.**
 
-Rain 3 mm (chance up to 84 %) · storms possible · WBGT peak 30.7 °C · gusts 10 m/s at hook height
+Rain 3 mm (chance up to 94 %) · storms likely · WBGT peak 30.7 °C · gusts 10 m/s at hook height
 
 - **Asphalt & surfacing — STOP.** Limited by rain or wet surface, storms. No dry window: do not lay or spray.
 - **Outdoor labour — work/rest needed.** Work/rest cycles 09-13 h, 14-17 h: at the peak, 15 min work / 45 min rest. Water every 20 min, shade for breaks.
@@ -20,7 +20,7 @@ Rain 3 mm (chance up to 84 %) · storms possible · WBGT peak 30.7 °C · gusts 
 
 **Storms likely from 14:00: finish lifts, roof and asphalt work before then.**
 
-Rain 2 mm (chance up to 96 %) · storms likely · WBGT peak 30.8 °C · gusts 10 m/s at hook height
+Rain 2 mm (chance up to 99 %) · storms likely · WBGT peak 30.8 °C · gusts 10 m/s at hook height
 
 - **Outdoor labour — work/rest needed.** Work/rest cycles 09-13 h, 14-17 h: at the peak, 15 min work / 45 min rest. Water every 20 min, shade for breaks.
 - **Concrete pour — go 08-10 h only.** Limited by rain, storms. Keep covers ready outside this window.
@@ -34,7 +34,7 @@ Rain 2 mm (chance up to 96 %) · storms likely · WBGT peak 30.8 °C · gusts 10
 
 **Storms likely from 14:00: finish lifts, roof and asphalt work before then.**
 
-Rain 5 mm (chance up to 86 %) · storms likely · WBGT peak 30.8 °C · gusts 10 m/s at hook height
+Rain 5 mm (chance up to 92 %) · storms likely · WBGT peak 30.8 °C · gusts 10 m/s at hook height
 
 - **Painting & coatings — STOP.** Limited by rain, humidity or dew. Too humid or wet for painting and coatings.
 - **Outdoor labour — work/rest needed.** Work/rest cycles 09-13 h, 14-17 h: at the peak, 15 min work / 45 min rest. Water every 20 min, shade for breaks.
@@ -46,9 +46,9 @@ Rain 5 mm (chance up to 86 %) · storms likely · WBGT peak 30.8 °C · gusts 10
 
 ## Outlook
 
-- **Sunday 22 November**: Storms likely from 14:00: finish lifts, roof and asphalt work before then. Rain 4 mm (94 %); concrete 3 h go.
-- **Monday 23 November**: Heat stress: stop moderate work in the sun 11-13 h. Rain 0 mm (55 %); concrete 4 h go.
-- **Tuesday 24 November**: Heat stress: stop moderate work in the sun 11-13 h. Rain 0 mm (72 %); concrete 3 h go.
+- **Sunday 22 November**: Storms likely from 14:00: finish lifts, roof and asphalt work before then. Rain 4 mm (96 %); concrete 2 h go.
+- **Monday 23 November**: Heat stress: stop moderate work in the sun 11-13 h. Rain 0 mm (57 %); concrete 5 h go.
+- **Tuesday 24 November**: Heat stress: stop moderate work in the sun 11-13 h. Rain 0 mm (73 %); concrete 5 h go.
 - **Wednesday 25 November**: Storms possible from 14:00: do exposed work in the morning. Rain 2 mm (92 %); concrete 3 h go.
 
 *Screening guidance from a weather forecast, not an instruction. The contract specification, the crane manufacturer's limits and the site health-and-safety plan take precedence; check conditions on site (WBGT meter, anemometer, the 30-30 rule for lightning) before each activity. Thresholds used: thresholds.json.*

@@ -2,7 +2,7 @@
  "site": "Gulu",
  "lat": 2.7724,
  "lon": 32.2881,
- "issued": "2026-11-19 05:30",
+ "issued": "2026-11-19 06:43",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -328,7 +328,7 @@
    ],
    "facts": {
     "rain_mm": 0.2,
-    "rain_chance": 33,
+    "rain_chance": 34,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 27.6,
@@ -667,7 +667,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 23,
+    "rain_chance": 19,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 26.9,
@@ -1013,7 +1013,7 @@
    ],
    "facts": {
     "rain_mm": 2.2,
-    "rain_chance": 46,
+    "rain_chance": 41,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 27.4,
@@ -1032,18 +1032,17 @@
   {
    "date": "2026-11-22",
    "day": "Sunday 22 November",
-   "headline": "Pour concrete 08-10 h; fast drying limits the rest of the day.",
+   "headline": "Pour concrete 14-17 h; fast drying limits the rest of the day.",
    "rows": [
     {
      "key": "concrete",
      "trade": "Concrete pour",
      "status": "LIMITED",
-     "label": "go 08-10 h, 14-15 h only",
-     "go_hours": 3,
-     "windows": "08-10 h, 14-15 h",
+     "label": "go 08-10 h, 14-17 h only",
+     "go_hours": 5,
+     "windows": "08-10 h, 14-17 h",
      "causes": [
-      "fast drying",
-      "rain"
+      "fast drying"
      ],
      "action": "Curing cover and windbreaks ready.",
      "hours": [
@@ -1073,11 +1072,11 @@
       ],
       [
        15,
-       1
+       0
       ],
       [
        16,
-       1
+       0
       ]
      ]
     },
@@ -1361,13 +1360,13 @@
    ],
    "facts": {
     "rain_mm": 1.9,
-    "rain_chance": 50,
+    "rain_chance": 47,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 27.0,
     "gust_hook_max": 13.2,
     "go_hours": {
-     "concrete": 3,
+     "concrete": 5,
      "asphalt": 5,
      "height": 5,
      "coatings": 6,
@@ -1386,11 +1385,12 @@
      "key": "concrete",
      "trade": "Concrete pour",
      "status": "LIMITED",
-     "label": "go 08-13 h, 16-17 h only",
-     "go_hours": 6,
-     "windows": "08-13 h, 16-17 h",
+     "label": "go 08-13 h only",
+     "go_hours": 5,
+     "windows": "08-13 h",
      "causes": [
-      "fast drying"
+      "fast drying",
+      "rain"
      ],
      "action": "Curing cover and windbreaks ready.",
      "hours": [
@@ -1424,7 +1424,7 @@
       ],
       [
        16,
-       0
+       1
       ]
      ]
     },
@@ -1707,13 +1707,13 @@
    ],
    "facts": {
     "rain_mm": 1.5,
-    "rain_chance": 39,
+    "rain_chance": 53,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 27.5,
     "gust_hook_max": 12.3,
     "go_hours": {
-     "concrete": 6,
+     "concrete": 5,
      "asphalt": 2,
      "height": 7,
      "coatings": 5,
@@ -2046,7 +2046,7 @@
    ],
    "facts": {
     "rain_mm": 0.3,
-    "rain_chance": 20,
+    "rain_chance": 35,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 26.9,

@@ -1,12 +1,12 @@
 # Site note · Arua
 
-Issued Thursday 19 November 2026, 05:30 (Africa/Kampala). Site 3.0201, 30.9111. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Thursday 19 November 2026, 06:43 (Africa/Kampala). Site 3.0201, 30.9111. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Thursday 19 November
 
 **Pour concrete 08-10 h; fast drying limits the rest of the day.**
 
-Rain 2 mm (chance up to 44 %) · storms low · WBGT peak 25.6 °C · gusts 11 m/s at hook height
+Rain 2 mm (chance up to 39 %) · storms low · WBGT peak 25.6 °C · gusts 11 m/s at hook height
 
 - **Concrete pour — go 08-10 h only.** Limited by fast drying, rain. Curing cover and windbreaks ready.
 - **Asphalt & surfacing — go 08-11 h, 16-17 h only.** Limited by rain or wet surface. Never lay or spray on a wet surface.
@@ -21,7 +21,7 @@ Rain 2 mm (chance up to 44 %) · storms low · WBGT peak 25.6 °C · gusts 11 m/
 
 **Pour concrete 08-10 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 29 %) · storms low · WBGT peak 26.3 °C · gusts 13 m/s at hook height
+Rain 0 mm (chance up to 25 %) · storms low · WBGT peak 26.3 °C · gusts 13 m/s at hook height
 
 - **Concrete pour — go 08-10 h only.** Limited by fast drying. Curing cover and windbreaks ready.
 - **Asphalt & surfacing — go 08-13 h only.** Limited by rain or wet surface. Never lay or spray on a wet surface.
@@ -34,7 +34,7 @@ Rain 0 mm (chance up to 29 %) · storms low · WBGT peak 26.3 °C · gusts 13 m/
 
 **Pour concrete 08-10 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 31 %) · storms low · WBGT peak 26.5 °C · gusts 14 m/s at hook height
+Rain 0 mm (chance up to 39 %) · storms low · WBGT peak 26.5 °C · gusts 14 m/s at hook height
 
 - **Concrete pour — go 08-10 h only.** Limited by fast drying. Curing cover and windbreaks ready.
 - **Work at height — go 08-10 h only.** Limited by wind. Clear roofs and scaffolds before storms.
@@ -44,9 +44,9 @@ Rain 0 mm (chance up to 31 %) · storms low · WBGT peak 26.5 °C · gusts 14 m/
 
 ## Outlook
 
-- **Sunday 22 November**: Storms possible from 16:00: do exposed work in the morning. Rain 3 mm (56 %); concrete 2 h go.
-- **Monday 23 November**: Pour concrete 08-11 h; fast drying limits the rest of the day. Rain 1 mm (63 %); concrete 3 h go.
-- **Tuesday 24 November**: Pour concrete 08-11 h; fast drying limits the rest of the day. Rain 1 mm (28 %); concrete 3 h go.
+- **Sunday 22 November**: Storms possible from 15:00: do exposed work in the morning. Rain 3 mm (52 %); concrete 2 h go.
+- **Monday 23 November**: Pour concrete 08-11 h; fast drying limits the rest of the day. Rain 1 mm (49 %); concrete 3 h go.
+- **Tuesday 24 November**: Pour concrete 08-11 h; fast drying limits the rest of the day. Rain 1 mm (49 %); concrete 3 h go.
 - **Wednesday 25 November**: Pour concrete 08-13 h; fast drying limits the rest of the day. Rain 1 mm (31 %); concrete 5 h go.
 
 *Screening guidance from a weather forecast, not an instruction. The contract specification, the crane manufacturer's limits and the site health-and-safety plan take precedence; check conditions on site (WBGT meter, anemometer, the 30-30 rule for lightning) before each activity. Thresholds used: thresholds.json.*
