@@ -2,403 +2,25 @@
  "site": "Jeddah",
  "lat": 21.4858,
  "lon": 39.1925,
- "issued": "2026-11-19 06:43",
+ "issued": "2026-11-20 05:15",
  "working": "07:00-17:00, lunch excluded (9 h)",
  "days": [
   {
-   "date": "2026-11-19",
-   "day": "Thursday 19 November",
-   "headline": "Storms possible from 14:00: do exposed work in the morning.",
-   "rows": [
-    {
-     "key": "labour",
-     "trade": "Outdoor labour",
-     "status": "LIMITED",
-     "label": "work/rest needed",
-     "go_hours": 3,
-     "windows": "07-10 h",
-     "causes": [
-      "heat"
-     ],
-     "action": "Work/rest cycles 10-12 h, 13-17 h: at the peak, 45 min work / 15 min rest each hour. Water every 20 min, shade for breaks.",
-     "hours": [
-      [
-       7,
-       0
-      ],
-      [
-       8,
-       0
-      ],
-      [
-       9,
-       0
-      ],
-      [
-       10,
-       1
-      ],
-      [
-       11,
-       1
-      ],
-      [
-       13,
-       1
-      ],
-      [
-       14,
-       1
-      ],
-      [
-       15,
-       1
-      ],
-      [
-       16,
-       1
-      ]
-     ]
-    },
-    {
-     "key": "concrete",
-     "trade": "Concrete pour",
-     "status": "LIMITED",
-     "label": "go 07-11 h only",
-     "go_hours": 4,
-     "windows": "07-11 h",
-     "causes": [
-      "rain",
-      "fast drying",
-      "storms"
-     ],
-     "action": "Curing cover and windbreaks ready.",
-     "hours": [
-      [
-       7,
-       0
-      ],
-      [
-       8,
-       0
-      ],
-      [
-       9,
-       0
-      ],
-      [
-       10,
-       0
-      ],
-      [
-       11,
-       1
-      ],
-      [
-       13,
-       1
-      ],
-      [
-       14,
-       1
-      ],
-      [
-       15,
-       1
-      ],
-      [
-       16,
-       1
-      ]
-     ]
-    },
-    {
-     "key": "asphalt",
-     "trade": "Asphalt & surfacing",
-     "status": "LIMITED",
-     "label": "go 07-12 h only",
-     "go_hours": 5,
-     "windows": "07-12 h",
-     "causes": [
-      "rain or wet surface",
-      "storms"
-     ],
-     "action": "Never lay or spray on a wet surface.",
-     "hours": [
-      [
-       7,
-       0
-      ],
-      [
-       8,
-       0
-      ],
-      [
-       9,
-       0
-      ],
-      [
-       10,
-       0
-      ],
-      [
-       11,
-       0
-      ],
-      [
-       13,
-       1
-      ],
-      [
-       14,
-       1
-      ],
-      [
-       15,
-       1
-      ],
-      [
-       16,
-       1
-      ]
-     ]
-    },
-    {
-     "key": "crane",
-     "trade": "Crane lifts",
-     "status": "LIMITED",
-     "label": "go 07-12 h, 13-14 h only",
-     "go_hours": 6,
-     "windows": "07-12 h, 13-14 h",
-     "causes": [
-      "storms"
-     ],
-     "action": "Check the anemometer before each lift.",
-     "hours": [
-      [
-       7,
-       0
-      ],
-      [
-       8,
-       0
-      ],
-      [
-       9,
-       0
-      ],
-      [
-       10,
-       0
-      ],
-      [
-       11,
-       0
-      ],
-      [
-       13,
-       0
-      ],
-      [
-       14,
-       1
-      ],
-      [
-       15,
-       1
-      ],
-      [
-       16,
-       1
-      ]
-     ]
-    },
-    {
-     "key": "height",
-     "trade": "Work at height",
-     "status": "LIMITED",
-     "label": "go 07-12 h, 13-14 h only",
-     "go_hours": 6,
-     "windows": "07-12 h, 13-14 h",
-     "causes": [
-      "storms"
-     ],
-     "action": "Clear roofs and scaffolds before storms.",
-     "hours": [
-      [
-       7,
-       0
-      ],
-      [
-       8,
-       0
-      ],
-      [
-       9,
-       0
-      ],
-      [
-       10,
-       0
-      ],
-      [
-       11,
-       0
-      ],
-      [
-       13,
-       0
-      ],
-      [
-       14,
-       1
-      ],
-      [
-       15,
-       1
-      ],
-      [
-       16,
-       1
-      ]
-     ]
-    },
-    {
-     "key": "coatings",
-     "trade": "Painting & coatings",
-     "status": "LIMITED",
-     "label": "go 07-12 h, 13-14 h only",
-     "go_hours": 6,
-     "windows": "07-12 h, 13-14 h",
-     "causes": [
-      "rain"
-     ],
-     "action": "Check the surface is 3 \u00b0C above dew point.",
-     "hours": [
-      [
-       7,
-       0
-      ],
-      [
-       8,
-       0
-      ],
-      [
-       9,
-       0
-      ],
-      [
-       10,
-       0
-      ],
-      [
-       11,
-       0
-      ],
-      [
-       13,
-       0
-      ],
-      [
-       14,
-       1
-      ],
-      [
-       15,
-       1
-      ],
-      [
-       16,
-       1
-      ]
-     ]
-    },
-    {
-     "key": "earthworks",
-     "trade": "Earthworks",
-     "status": "GO",
-     "label": "no limits",
-     "go_hours": 9,
-     "windows": "07-12 h, 13-17 h",
-     "causes": [],
-     "action": "No weather limits.",
-     "hours": [
-      [
-       7,
-       0
-      ],
-      [
-       8,
-       0
-      ],
-      [
-       9,
-       0
-      ],
-      [
-       10,
-       0
-      ],
-      [
-       11,
-       0
-      ],
-      [
-       13,
-       0
-      ],
-      [
-       14,
-       0
-      ],
-      [
-       15,
-       0
-      ],
-      [
-       16,
-       0
-      ]
-     ]
-    }
-   ],
-   "extras": [
-    "Dust: PM2.5 up to 45 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
-   ],
-   "facts": {
-    "rain_mm": 0.0,
-    "rain_chance": 63,
-    "storm": "possible",
-    "storm_from": "14",
-    "wbgt_peak": 28.7,
-    "gust_hook_max": 12.6,
-    "go_hours": {
-     "labour": 3,
-     "concrete": 4,
-     "asphalt": 5,
-     "crane": 6,
-     "height": 6,
-     "coatings": 6,
-     "earthworks": 9
-    }
-   }
-  },
-  {
    "date": "2026-11-20",
    "day": "Friday 20 November",
-   "headline": "Pour concrete 07-10 h; fast drying limits the rest of the day.",
+   "headline": "Pour concrete 07-11 h; fast drying limits the rest of the day.",
    "rows": [
     {
      "key": "labour",
      "trade": "Outdoor labour",
      "status": "LIMITED",
      "label": "work/rest needed",
-     "go_hours": 5,
-     "windows": "07-12 h",
+     "go_hours": 2,
+     "windows": "07-09 h",
      "causes": [
       "heat"
      ],
-     "action": "Work/rest cycles 13-17 h: at the peak, 30 min work / 30 min rest. Water every 20 min, shade for breaks.",
+     "action": "Work/rest cycles 09-12 h, 13-17 h: at the peak, 30 min work / 30 min rest. Water every 20 min, shade for breaks.",
      "hours": [
       [
        7,
@@ -410,15 +32,15 @@
       ],
       [
        9,
-       0
+       1
       ],
       [
        10,
-       0
+       1
       ],
       [
        11,
-       0
+       1
       ],
       [
        13,
@@ -442,9 +64,9 @@
      "key": "concrete",
      "trade": "Concrete pour",
      "status": "LIMITED",
-     "label": "go 07-10 h only",
-     "go_hours": 3,
-     "windows": "07-10 h",
+     "label": "go 07-11 h, 16-17 h only",
+     "go_hours": 5,
+     "windows": "07-11 h, 16-17 h",
      "causes": [
       "fast drying"
      ],
@@ -464,7 +86,7 @@
       ],
       [
        10,
-       1
+       0
       ],
       [
        11,
@@ -484,21 +106,21 @@
       ],
       [
        16,
-       1
+       0
       ]
      ]
     },
     {
-     "key": "coatings",
-     "trade": "Painting & coatings",
+     "key": "asphalt",
+     "trade": "Asphalt & surfacing",
      "status": "LIMITED",
      "label": "go 08-12 h, 13-17 h only",
      "go_hours": 8,
      "windows": "08-12 h, 13-17 h",
      "causes": [
-      "humidity or dew"
+      "rain or wet surface"
      ],
-     "action": "Check the surface is 3 \u00b0C above dew point.",
+     "action": "Never lay or spray on a wet surface.",
      "hours": [
       [
        7,
@@ -539,18 +161,20 @@
      ]
     },
     {
-     "key": "asphalt",
-     "trade": "Asphalt & surfacing",
-     "status": "GO",
-     "label": "no limits",
-     "go_hours": 9,
-     "windows": "07-12 h, 13-17 h",
-     "causes": [],
-     "action": "No weather limits.",
+     "key": "coatings",
+     "trade": "Painting & coatings",
+     "status": "LIMITED",
+     "label": "go 08-12 h, 13-17 h only",
+     "go_hours": 8,
+     "windows": "08-12 h, 13-17 h",
+     "causes": [
+      "humidity or dew"
+     ],
+     "action": "Check the surface is 3 \u00b0C above dew point.",
      "hours": [
       [
        7,
-       0
+       2
       ],
       [
        8,
@@ -732,21 +356,21 @@
     }
    ],
    "extras": [
-    "Dust: PM2.5 up to 48 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks.",
-    "Dust storm risk (dust up to 220 \u00b5g/m\u00b3): goggles and masks, secure sheeting and loose materials, stop lifts if the operator loses sight of the load."
+    "Dust: PM2.5 up to 53 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks.",
+    "Dust storm risk (dust up to 219 \u00b5g/m\u00b3): goggles and masks, secure sheeting and loose materials, stop lifts if the operator loses sight of the load."
    ],
    "facts": {
-    "rain_mm": 0.0,
-    "rain_chance": 0,
+    "rain_mm": 0.2,
+    "rain_chance": 4,
     "storm": "low",
     "storm_from": "",
-    "wbgt_peak": 29.3,
-    "gust_hook_max": 12.4,
+    "wbgt_peak": 29.4,
+    "gust_hook_max": 12.1,
     "go_hours": {
-     "labour": 5,
-     "concrete": 3,
+     "labour": 2,
+     "concrete": 5,
+     "asphalt": 8,
      "coatings": 8,
-     "asphalt": 9,
      "crane": 9,
      "height": 9,
      "earthworks": 9
@@ -812,9 +436,9 @@
      "key": "concrete",
      "trade": "Concrete pour",
      "status": "LIMITED",
-     "label": "go 07-12 h, 16-17 h only",
-     "go_hours": 6,
-     "windows": "07-12 h, 16-17 h",
+     "label": "go 07-12 h only",
+     "go_hours": 5,
+     "windows": "07-12 h",
      "causes": [
       "fast drying"
      ],
@@ -854,7 +478,7 @@
       ],
       [
        16,
-       0
+       1
       ]
      ]
     },
@@ -1102,18 +726,19 @@
     }
    ],
    "extras": [
-    "Dust: PM2.5 up to 55 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
+    "Dust: PM2.5 up to 58 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks.",
+    "Dust storm risk (dust up to 223 \u00b5g/m\u00b3): goggles and masks, secure sheeting and loose materials, stop lifts if the operator loses sight of the load."
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 8,
+    "rain_chance": 2,
     "storm": "low",
     "storm_from": "",
-    "wbgt_peak": 30.8,
-    "gust_hook_max": 11.6,
+    "wbgt_peak": 30.7,
+    "gust_hook_max": 11.3,
     "go_hours": {
      "labour": 2,
-     "concrete": 6,
+     "concrete": 5,
      "coatings": 7,
      "asphalt": 9,
      "crane": 9,
@@ -1125,7 +750,7 @@
   {
    "date": "2026-11-22",
    "day": "Sunday 22 November",
-   "headline": "Pour concrete 07-12 h; fast drying limits the rest of the day.",
+   "headline": "Storms possible from 14:00: do exposed work in the morning.",
    "rows": [
     {
      "key": "labour",
@@ -1181,10 +806,12 @@
      "key": "concrete",
      "trade": "Concrete pour",
      "status": "LIMITED",
-     "label": "go 07-12 h, 14-17 h only",
-     "go_hours": 8,
-     "windows": "07-12 h, 14-17 h",
+     "label": "go 07-12 h only",
+     "go_hours": 5,
+     "windows": "07-12 h",
      "causes": [
+      "rain",
+      "storms",
       "fast drying"
      ],
      "action": "Curing cover and windbreaks ready.",
@@ -1215,15 +842,167 @@
       ],
       [
        14,
-       0
+       2
       ],
       [
        15,
-       0
+       1
       ],
       [
        16,
+       1
+      ]
+     ]
+    },
+    {
+     "key": "asphalt",
+     "trade": "Asphalt & surfacing",
+     "status": "LIMITED",
+     "label": "go 07-12 h only",
+     "go_hours": 5,
+     "windows": "07-12 h",
+     "causes": [
+      "rain or wet surface",
+      "storms"
+     ],
+     "action": "Never lay or spray on a wet surface.",
+     "hours": [
+      [
+       7,
        0
+      ],
+      [
+       8,
+       0
+      ],
+      [
+       9,
+       0
+      ],
+      [
+       10,
+       0
+      ],
+      [
+       11,
+       0
+      ],
+      [
+       13,
+       1
+      ],
+      [
+       14,
+       2
+      ],
+      [
+       15,
+       2
+      ],
+      [
+       16,
+       2
+      ]
+     ]
+    },
+    {
+     "key": "crane",
+     "trade": "Crane lifts",
+     "status": "LIMITED",
+     "label": "go 07-12 h, 13-14 h only",
+     "go_hours": 6,
+     "windows": "07-12 h, 13-14 h",
+     "causes": [
+      "storms"
+     ],
+     "action": "Check the anemometer before each lift.",
+     "hours": [
+      [
+       7,
+       0
+      ],
+      [
+       8,
+       0
+      ],
+      [
+       9,
+       0
+      ],
+      [
+       10,
+       0
+      ],
+      [
+       11,
+       0
+      ],
+      [
+       13,
+       0
+      ],
+      [
+       14,
+       1
+      ],
+      [
+       15,
+       1
+      ],
+      [
+       16,
+       1
+      ]
+     ]
+    },
+    {
+     "key": "height",
+     "trade": "Work at height",
+     "status": "LIMITED",
+     "label": "go 07-12 h, 13-14 h only",
+     "go_hours": 6,
+     "windows": "07-12 h, 13-14 h",
+     "causes": [
+      "storms",
+      "rain"
+     ],
+     "action": "Clear roofs and scaffolds before storms.",
+     "hours": [
+      [
+       7,
+       0
+      ],
+      [
+       8,
+       0
+      ],
+      [
+       9,
+       0
+      ],
+      [
+       10,
+       0
+      ],
+      [
+       11,
+       0
+      ],
+      [
+       13,
+       0
+      ],
+      [
+       14,
+       2
+      ],
+      [
+       15,
+       1
+      ],
+      [
+       16,
+       1
       ]
      ]
     },
@@ -1231,10 +1010,11 @@
      "key": "coatings",
      "trade": "Painting & coatings",
      "status": "LIMITED",
-     "label": "go 09-12 h, 13-17 h only",
-     "go_hours": 7,
-     "windows": "09-12 h, 13-17 h",
+     "label": "go 09-12 h, 13-14 h only",
+     "go_hours": 4,
+     "windows": "09-12 h, 13-14 h",
      "causes": [
+      "rain",
       "humidity or dew"
      ],
      "action": "Check the surface is 3 \u00b0C above dew point.",
@@ -1265,171 +1045,29 @@
       ],
       [
        14,
-       0
+       2
       ],
       [
        15,
-       0
+       1
       ],
       [
        16,
-       0
-      ]
-     ]
-    },
-    {
-     "key": "asphalt",
-     "trade": "Asphalt & surfacing",
-     "status": "GO",
-     "label": "no limits",
-     "go_hours": 9,
-     "windows": "07-12 h, 13-17 h",
-     "causes": [],
-     "action": "No weather limits.",
-     "hours": [
-      [
-       7,
-       0
-      ],
-      [
-       8,
-       0
-      ],
-      [
-       9,
-       0
-      ],
-      [
-       10,
-       0
-      ],
-      [
-       11,
-       0
-      ],
-      [
-       13,
-       0
-      ],
-      [
-       14,
-       0
-      ],
-      [
-       15,
-       0
-      ],
-      [
-       16,
-       0
-      ]
-     ]
-    },
-    {
-     "key": "crane",
-     "trade": "Crane lifts",
-     "status": "GO",
-     "label": "no limits",
-     "go_hours": 9,
-     "windows": "07-12 h, 13-17 h",
-     "causes": [],
-     "action": "No weather limits.",
-     "hours": [
-      [
-       7,
-       0
-      ],
-      [
-       8,
-       0
-      ],
-      [
-       9,
-       0
-      ],
-      [
-       10,
-       0
-      ],
-      [
-       11,
-       0
-      ],
-      [
-       13,
-       0
-      ],
-      [
-       14,
-       0
-      ],
-      [
-       15,
-       0
-      ],
-      [
-       16,
-       0
-      ]
-     ]
-    },
-    {
-     "key": "height",
-     "trade": "Work at height",
-     "status": "GO",
-     "label": "no limits",
-     "go_hours": 9,
-     "windows": "07-12 h, 13-17 h",
-     "causes": [],
-     "action": "No weather limits.",
-     "hours": [
-      [
-       7,
-       0
-      ],
-      [
-       8,
-       0
-      ],
-      [
-       9,
-       0
-      ],
-      [
-       10,
-       0
-      ],
-      [
-       11,
-       0
-      ],
-      [
-       13,
-       0
-      ],
-      [
-       14,
-       0
-      ],
-      [
-       15,
-       0
-      ],
-      [
-       16,
-       0
+       1
       ]
      ]
     },
     {
      "key": "earthworks",
      "trade": "Earthworks",
-     "status": "GO",
-     "label": "no limits",
-     "go_hours": 9,
-     "windows": "07-12 h, 13-17 h",
-     "causes": [],
-     "action": "No weather limits.",
+     "status": "LIMITED",
+     "label": "go 07-12 h, 13-14 h, 15-17 h only",
+     "go_hours": 8,
+     "windows": "07-12 h, 13-14 h, 15-17 h",
+     "causes": [
+      "rain"
+     ],
+     "action": "Protect formation and stockpiles.",
      "hours": [
       [
        7,
@@ -1457,7 +1095,7 @@
       ],
       [
        14,
-       0
+       2
       ],
       [
        15,
@@ -1471,399 +1109,30 @@
     }
    ],
    "extras": [
-    "Dust: PM2.5 up to 70 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks."
+    "Dust: PM2.5 up to 65 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks.",
+    "Dust storm risk (dust up to 187 \u00b5g/m\u00b3): goggles and masks, secure sheeting and loose materials, stop lifts if the operator loses sight of the load."
    ],
    "facts": {
-    "rain_mm": 0.0,
-    "rain_chance": 47,
-    "storm": "low",
-    "storm_from": "",
-    "wbgt_peak": 30.0,
+    "rain_mm": 1.5,
+    "rain_chance": 71,
+    "storm": "possible",
+    "storm_from": "14",
+    "wbgt_peak": 29.9,
     "gust_hook_max": 11.0,
     "go_hours": {
      "labour": 3,
-     "concrete": 8,
-     "coatings": 7,
-     "asphalt": 9,
-     "crane": 9,
-     "height": 9,
-     "earthworks": 9
+     "concrete": 5,
+     "asphalt": 5,
+     "crane": 6,
+     "height": 6,
+     "coatings": 4,
+     "earthworks": 8
     }
    }
   },
   {
    "date": "2026-11-23",
    "day": "Monday 23 November",
-   "headline": "Pour concrete 07-12 h; fast drying limits the rest of the day.",
-   "rows": [
-    {
-     "key": "labour",
-     "trade": "Outdoor labour",
-     "status": "LIMITED",
-     "label": "work/rest needed",
-     "go_hours": 3,
-     "windows": "07-10 h",
-     "causes": [
-      "heat"
-     ],
-     "action": "Work/rest cycles 10-12 h, 13-17 h: at the peak, 30 min work / 30 min rest. Water every 20 min, shade for breaks.",
-     "hours": [
-      [
-       7,
-       0
-      ],
-      [
-       8,
-       0
-      ],
-      [
-       9,
-       0
-      ],
-      [
-       10,
-       1
-      ],
-      [
-       11,
-       1
-      ],
-      [
-       13,
-       1
-      ],
-      [
-       14,
-       1
-      ],
-      [
-       15,
-       1
-      ],
-      [
-       16,
-       1
-      ]
-     ]
-    },
-    {
-     "key": "concrete",
-     "trade": "Concrete pour",
-     "status": "LIMITED",
-     "label": "go 07-12 h, 16-17 h only",
-     "go_hours": 6,
-     "windows": "07-12 h, 16-17 h",
-     "causes": [
-      "fast drying"
-     ],
-     "action": "Curing cover and windbreaks ready.",
-     "hours": [
-      [
-       7,
-       0
-      ],
-      [
-       8,
-       0
-      ],
-      [
-       9,
-       0
-      ],
-      [
-       10,
-       0
-      ],
-      [
-       11,
-       0
-      ],
-      [
-       13,
-       1
-      ],
-      [
-       14,
-       1
-      ],
-      [
-       15,
-       1
-      ],
-      [
-       16,
-       0
-      ]
-     ]
-    },
-    {
-     "key": "coatings",
-     "trade": "Painting & coatings",
-     "status": "LIMITED",
-     "label": "go 08-12 h, 13-17 h only",
-     "go_hours": 8,
-     "windows": "08-12 h, 13-17 h",
-     "causes": [
-      "humidity or dew"
-     ],
-     "action": "Check the surface is 3 \u00b0C above dew point.",
-     "hours": [
-      [
-       7,
-       1
-      ],
-      [
-       8,
-       0
-      ],
-      [
-       9,
-       0
-      ],
-      [
-       10,
-       0
-      ],
-      [
-       11,
-       0
-      ],
-      [
-       13,
-       0
-      ],
-      [
-       14,
-       0
-      ],
-      [
-       15,
-       0
-      ],
-      [
-       16,
-       0
-      ]
-     ]
-    },
-    {
-     "key": "asphalt",
-     "trade": "Asphalt & surfacing",
-     "status": "GO",
-     "label": "no limits",
-     "go_hours": 9,
-     "windows": "07-12 h, 13-17 h",
-     "causes": [],
-     "action": "No weather limits.",
-     "hours": [
-      [
-       7,
-       0
-      ],
-      [
-       8,
-       0
-      ],
-      [
-       9,
-       0
-      ],
-      [
-       10,
-       0
-      ],
-      [
-       11,
-       0
-      ],
-      [
-       13,
-       0
-      ],
-      [
-       14,
-       0
-      ],
-      [
-       15,
-       0
-      ],
-      [
-       16,
-       0
-      ]
-     ]
-    },
-    {
-     "key": "crane",
-     "trade": "Crane lifts",
-     "status": "GO",
-     "label": "no limits",
-     "go_hours": 9,
-     "windows": "07-12 h, 13-17 h",
-     "causes": [],
-     "action": "No weather limits.",
-     "hours": [
-      [
-       7,
-       0
-      ],
-      [
-       8,
-       0
-      ],
-      [
-       9,
-       0
-      ],
-      [
-       10,
-       0
-      ],
-      [
-       11,
-       0
-      ],
-      [
-       13,
-       0
-      ],
-      [
-       14,
-       0
-      ],
-      [
-       15,
-       0
-      ],
-      [
-       16,
-       0
-      ]
-     ]
-    },
-    {
-     "key": "height",
-     "trade": "Work at height",
-     "status": "GO",
-     "label": "no limits",
-     "go_hours": 9,
-     "windows": "07-12 h, 13-17 h",
-     "causes": [],
-     "action": "No weather limits.",
-     "hours": [
-      [
-       7,
-       0
-      ],
-      [
-       8,
-       0
-      ],
-      [
-       9,
-       0
-      ],
-      [
-       10,
-       0
-      ],
-      [
-       11,
-       0
-      ],
-      [
-       13,
-       0
-      ],
-      [
-       14,
-       0
-      ],
-      [
-       15,
-       0
-      ],
-      [
-       16,
-       0
-      ]
-     ]
-    },
-    {
-     "key": "earthworks",
-     "trade": "Earthworks",
-     "status": "GO",
-     "label": "no limits",
-     "go_hours": 9,
-     "windows": "07-12 h, 13-17 h",
-     "causes": [],
-     "action": "No weather limits.",
-     "hours": [
-      [
-       7,
-       0
-      ],
-      [
-       8,
-       0
-      ],
-      [
-       9,
-       0
-      ],
-      [
-       10,
-       0
-      ],
-      [
-       11,
-       0
-      ],
-      [
-       13,
-       0
-      ],
-      [
-       14,
-       0
-      ],
-      [
-       15,
-       0
-      ],
-      [
-       16,
-       0
-      ]
-     ]
-    }
-   ],
-   "extras": [
-    "Dust: PM2.5 up to 59 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks.",
-    "Dust storm risk (dust up to 173 \u00b5g/m\u00b3): goggles and masks, secure sheeting and loose materials, stop lifts if the operator loses sight of the load."
-   ],
-   "facts": {
-    "rain_mm": 0.0,
-    "rain_chance": 16,
-    "storm": "low",
-    "storm_from": "",
-    "wbgt_peak": 29.3,
-    "gust_hook_max": 11.7,
-    "go_hours": {
-     "labour": 3,
-     "concrete": 6,
-     "coatings": 8,
-     "asphalt": 9,
-     "crane": 9,
-     "height": 9,
-     "earthworks": 9
-    }
-   }
-  },
-  {
-   "date": "2026-11-24",
-   "day": "Tuesday 24 November",
    "headline": "Pour concrete 07-12 h; fast drying limits the rest of the day.",
    "rows": [
     {
@@ -1980,7 +1249,7 @@
      "hours": [
       [
        7,
-       1
+       2
       ],
       [
        8,
@@ -2209,14 +1478,17 @@
      ]
     }
    ],
-   "extras": [],
+   "extras": [
+    "Dust: PM2.5 up to 63 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks.",
+    "Dust storm risk (dust up to 187 \u00b5g/m\u00b3): goggles and masks, secure sheeting and loose materials, stop lifts if the operator loses sight of the load."
+   ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 2,
+    "rain_chance": 8,
     "storm": "low",
     "storm_from": "",
-    "wbgt_peak": 29.0,
-    "gust_hook_max": 10.1,
+    "wbgt_peak": 29.1,
+    "gust_hook_max": 10.3,
     "go_hours": {
      "labour": 4,
      "concrete": 6,
@@ -2229,9 +1501,9 @@
    }
   },
   {
-   "date": "2026-11-25",
-   "day": "Wednesday 25 November",
-   "headline": "Some limits today: check your trade below.",
+   "date": "2026-11-24",
+   "day": "Tuesday 24 November",
+   "headline": "Pour concrete 07-12 h; fast drying limits the rest of the day.",
    "rows": [
     {
      "key": "labour",
@@ -2239,11 +1511,11 @@
      "status": "LIMITED",
      "label": "work/rest needed",
      "go_hours": 4,
-     "windows": "07-11 h",
+     "windows": "07-10 h, 16-17 h",
      "causes": [
       "heat"
      ],
-     "action": "Work/rest cycles 11-12 h, 13-17 h: at the peak, 45 min work / 15 min rest each hour. Water every 20 min, shade for breaks.",
+     "action": "Work/rest cycles 10-12 h, 13-16 h: at the peak, 30 min work / 30 min rest. Water every 20 min, shade for breaks.",
      "hours": [
       [
        7,
@@ -2259,7 +1531,7 @@
       ],
       [
        10,
-       0
+       1
       ],
       [
        11,
@@ -2279,13 +1551,113 @@
       ],
       [
        16,
-       1
+       0
       ]
      ]
     },
     {
      "key": "concrete",
      "trade": "Concrete pour",
+     "status": "LIMITED",
+     "label": "go 07-12 h, 16-17 h only",
+     "go_hours": 6,
+     "windows": "07-12 h, 16-17 h",
+     "causes": [
+      "fast drying"
+     ],
+     "action": "Curing cover and windbreaks ready.",
+     "hours": [
+      [
+       7,
+       0
+      ],
+      [
+       8,
+       0
+      ],
+      [
+       9,
+       0
+      ],
+      [
+       10,
+       0
+      ],
+      [
+       11,
+       0
+      ],
+      [
+       13,
+       1
+      ],
+      [
+       14,
+       1
+      ],
+      [
+       15,
+       1
+      ],
+      [
+       16,
+       0
+      ]
+     ]
+    },
+    {
+     "key": "coatings",
+     "trade": "Painting & coatings",
+     "status": "LIMITED",
+     "label": "go 08-12 h, 13-17 h only",
+     "go_hours": 8,
+     "windows": "08-12 h, 13-17 h",
+     "causes": [
+      "humidity or dew"
+     ],
+     "action": "Check the surface is 3 \u00b0C above dew point.",
+     "hours": [
+      [
+       7,
+       2
+      ],
+      [
+       8,
+       0
+      ],
+      [
+       9,
+       0
+      ],
+      [
+       10,
+       0
+      ],
+      [
+       11,
+       0
+      ],
+      [
+       13,
+       0
+      ],
+      [
+       14,
+       0
+      ],
+      [
+       15,
+       0
+      ],
+      [
+       16,
+       0
+      ]
+     ]
+    },
+    {
+     "key": "asphalt",
+     "trade": "Asphalt & surfacing",
      "status": "GO",
      "label": "no limits",
      "go_hours": 9,
@@ -2328,6 +1700,643 @@
       [
        16,
        0
+      ]
+     ]
+    },
+    {
+     "key": "crane",
+     "trade": "Crane lifts",
+     "status": "GO",
+     "label": "no limits",
+     "go_hours": 9,
+     "windows": "07-12 h, 13-17 h",
+     "causes": [],
+     "action": "No weather limits.",
+     "hours": [
+      [
+       7,
+       0
+      ],
+      [
+       8,
+       0
+      ],
+      [
+       9,
+       0
+      ],
+      [
+       10,
+       0
+      ],
+      [
+       11,
+       0
+      ],
+      [
+       13,
+       0
+      ],
+      [
+       14,
+       0
+      ],
+      [
+       15,
+       0
+      ],
+      [
+       16,
+       0
+      ]
+     ]
+    },
+    {
+     "key": "height",
+     "trade": "Work at height",
+     "status": "GO",
+     "label": "no limits",
+     "go_hours": 9,
+     "windows": "07-12 h, 13-17 h",
+     "causes": [],
+     "action": "No weather limits.",
+     "hours": [
+      [
+       7,
+       0
+      ],
+      [
+       8,
+       0
+      ],
+      [
+       9,
+       0
+      ],
+      [
+       10,
+       0
+      ],
+      [
+       11,
+       0
+      ],
+      [
+       13,
+       0
+      ],
+      [
+       14,
+       0
+      ],
+      [
+       15,
+       0
+      ],
+      [
+       16,
+       0
+      ]
+     ]
+    },
+    {
+     "key": "earthworks",
+     "trade": "Earthworks",
+     "status": "GO",
+     "label": "no limits",
+     "go_hours": 9,
+     "windows": "07-12 h, 13-17 h",
+     "causes": [],
+     "action": "No weather limits.",
+     "hours": [
+      [
+       7,
+       0
+      ],
+      [
+       8,
+       0
+      ],
+      [
+       9,
+       0
+      ],
+      [
+       10,
+       0
+      ],
+      [
+       11,
+       0
+      ],
+      [
+       13,
+       0
+      ],
+      [
+       14,
+       0
+      ],
+      [
+       15,
+       0
+      ],
+      [
+       16,
+       0
+      ]
+     ]
+    }
+   ],
+   "extras": [
+    "Dust: PM2.5 up to 73 \u00b5g/m\u00b3; damp down haul roads and cutting work; masks for dusty tasks.",
+    "Dust storm risk (dust up to 283 \u00b5g/m\u00b3): goggles and masks, secure sheeting and loose materials, stop lifts if the operator loses sight of the load."
+   ],
+   "facts": {
+    "rain_mm": 0.0,
+    "rain_chance": 2,
+    "storm": "low",
+    "storm_from": "",
+    "wbgt_peak": 29.6,
+    "gust_hook_max": 10.4,
+    "go_hours": {
+     "labour": 4,
+     "concrete": 6,
+     "coatings": 8,
+     "asphalt": 9,
+     "crane": 9,
+     "height": 9,
+     "earthworks": 9
+    }
+   }
+  },
+  {
+   "date": "2026-11-25",
+   "day": "Wednesday 25 November",
+   "headline": "Pour concrete 07-12 h; fast drying limits the rest of the day.",
+   "rows": [
+    {
+     "key": "labour",
+     "trade": "Outdoor labour",
+     "status": "LIMITED",
+     "label": "work/rest needed",
+     "go_hours": 6,
+     "windows": "07-10 h, 14-17 h",
+     "causes": [
+      "heat"
+     ],
+     "action": "Work/rest cycles 10-12 h, 13-14 h: at the peak, 30 min work / 30 min rest. Water every 20 min, shade for breaks.",
+     "hours": [
+      [
+       7,
+       0
+      ],
+      [
+       8,
+       0
+      ],
+      [
+       9,
+       0
+      ],
+      [
+       10,
+       1
+      ],
+      [
+       11,
+       1
+      ],
+      [
+       13,
+       1
+      ],
+      [
+       14,
+       0
+      ],
+      [
+       15,
+       0
+      ],
+      [
+       16,
+       0
+      ]
+     ]
+    },
+    {
+     "key": "concrete",
+     "trade": "Concrete pour",
+     "status": "LIMITED",
+     "label": "go 07-12 h only",
+     "go_hours": 5,
+     "windows": "07-12 h",
+     "causes": [
+      "fast drying"
+     ],
+     "action": "Curing cover and windbreaks ready.",
+     "hours": [
+      [
+       7,
+       0
+      ],
+      [
+       8,
+       0
+      ],
+      [
+       9,
+       0
+      ],
+      [
+       10,
+       0
+      ],
+      [
+       11,
+       0
+      ],
+      [
+       13,
+       1
+      ],
+      [
+       14,
+       1
+      ],
+      [
+       15,
+       1
+      ],
+      [
+       16,
+       1
+      ]
+     ]
+    },
+    {
+     "key": "asphalt",
+     "trade": "Asphalt & surfacing",
+     "status": "GO",
+     "label": "no limits",
+     "go_hours": 9,
+     "windows": "07-12 h, 13-17 h",
+     "causes": [],
+     "action": "No weather limits.",
+     "hours": [
+      [
+       7,
+       0
+      ],
+      [
+       8,
+       0
+      ],
+      [
+       9,
+       0
+      ],
+      [
+       10,
+       0
+      ],
+      [
+       11,
+       0
+      ],
+      [
+       13,
+       0
+      ],
+      [
+       14,
+       0
+      ],
+      [
+       15,
+       0
+      ],
+      [
+       16,
+       0
+      ]
+     ]
+    },
+    {
+     "key": "crane",
+     "trade": "Crane lifts",
+     "status": "GO",
+     "label": "no limits",
+     "go_hours": 9,
+     "windows": "07-12 h, 13-17 h",
+     "causes": [],
+     "action": "No weather limits.",
+     "hours": [
+      [
+       7,
+       0
+      ],
+      [
+       8,
+       0
+      ],
+      [
+       9,
+       0
+      ],
+      [
+       10,
+       0
+      ],
+      [
+       11,
+       0
+      ],
+      [
+       13,
+       0
+      ],
+      [
+       14,
+       0
+      ],
+      [
+       15,
+       0
+      ],
+      [
+       16,
+       0
+      ]
+     ]
+    },
+    {
+     "key": "height",
+     "trade": "Work at height",
+     "status": "GO",
+     "label": "no limits",
+     "go_hours": 9,
+     "windows": "07-12 h, 13-17 h",
+     "causes": [],
+     "action": "No weather limits.",
+     "hours": [
+      [
+       7,
+       0
+      ],
+      [
+       8,
+       0
+      ],
+      [
+       9,
+       0
+      ],
+      [
+       10,
+       0
+      ],
+      [
+       11,
+       0
+      ],
+      [
+       13,
+       0
+      ],
+      [
+       14,
+       0
+      ],
+      [
+       15,
+       0
+      ],
+      [
+       16,
+       0
+      ]
+     ]
+    },
+    {
+     "key": "coatings",
+     "trade": "Painting & coatings",
+     "status": "GO",
+     "label": "no limits",
+     "go_hours": 9,
+     "windows": "07-12 h, 13-17 h",
+     "causes": [],
+     "action": "No weather limits.",
+     "hours": [
+      [
+       7,
+       0
+      ],
+      [
+       8,
+       0
+      ],
+      [
+       9,
+       0
+      ],
+      [
+       10,
+       0
+      ],
+      [
+       11,
+       0
+      ],
+      [
+       13,
+       0
+      ],
+      [
+       14,
+       0
+      ],
+      [
+       15,
+       0
+      ],
+      [
+       16,
+       0
+      ]
+     ]
+    },
+    {
+     "key": "earthworks",
+     "trade": "Earthworks",
+     "status": "GO",
+     "label": "no limits",
+     "go_hours": 9,
+     "windows": "07-12 h, 13-17 h",
+     "causes": [],
+     "action": "No weather limits.",
+     "hours": [
+      [
+       7,
+       0
+      ],
+      [
+       8,
+       0
+      ],
+      [
+       9,
+       0
+      ],
+      [
+       10,
+       0
+      ],
+      [
+       11,
+       0
+      ],
+      [
+       13,
+       0
+      ],
+      [
+       14,
+       0
+      ],
+      [
+       15,
+       0
+      ],
+      [
+       16,
+       0
+      ]
+     ]
+    }
+   ],
+   "extras": [],
+   "facts": {
+    "rain_mm": 0.0,
+    "rain_chance": 0,
+    "storm": "low",
+    "storm_from": "",
+    "wbgt_peak": 29.2,
+    "gust_hook_max": 11.1,
+    "go_hours": {
+     "labour": 6,
+     "concrete": 5,
+     "asphalt": 9,
+     "crane": 9,
+     "height": 9,
+     "coatings": 9,
+     "earthworks": 9
+    }
+   }
+  },
+  {
+   "date": "2026-11-26",
+   "day": "Thursday 26 November",
+   "headline": "Pour concrete 07-12 h; fast drying limits the rest of the day.",
+   "rows": [
+    {
+     "key": "labour",
+     "trade": "Outdoor labour",
+     "status": "LIMITED",
+     "label": "work/rest needed",
+     "go_hours": 6,
+     "windows": "07-11 h, 13-14 h, 16-17 h",
+     "causes": [
+      "heat"
+     ],
+     "action": "Work/rest cycles 11-12 h, 14-16 h: at the peak, 45 min work / 15 min rest each hour. Water every 20 min, shade for breaks.",
+     "hours": [
+      [
+       7,
+       0
+      ],
+      [
+       8,
+       0
+      ],
+      [
+       9,
+       0
+      ],
+      [
+       10,
+       0
+      ],
+      [
+       11,
+       1
+      ],
+      [
+       13,
+       0
+      ],
+      [
+       14,
+       1
+      ],
+      [
+       15,
+       1
+      ],
+      [
+       16,
+       0
+      ]
+     ]
+    },
+    {
+     "key": "concrete",
+     "trade": "Concrete pour",
+     "status": "LIMITED",
+     "label": "go 07-12 h, 13-14 h only",
+     "go_hours": 6,
+     "windows": "07-12 h, 13-14 h",
+     "causes": [
+      "fast drying"
+     ],
+     "action": "Curing cover and windbreaks ready.",
+     "hours": [
+      [
+       7,
+       0
+      ],
+      [
+       8,
+       0
+      ],
+      [
+       9,
+       0
+      ],
+      [
+       10,
+       0
+      ],
+      [
+       11,
+       0
+      ],
+      [
+       13,
+       0
+      ],
+      [
+       14,
+       1
+      ],
+      [
+       15,
+       1
+      ],
+      [
+       16,
+       1
       ]
      ]
     },
@@ -2578,11 +2587,11 @@
     "rain_chance": 4,
     "storm": "low",
     "storm_from": "",
-    "wbgt_peak": 28.7,
-    "gust_hook_max": 11.1,
+    "wbgt_peak": 28.1,
+    "gust_hook_max": 11.0,
     "go_hours": {
-     "labour": 4,
-     "concrete": 9,
+     "labour": 6,
+     "concrete": 6,
      "asphalt": 9,
      "crane": 9,
      "height": 9,
