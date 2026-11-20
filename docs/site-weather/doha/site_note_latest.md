@@ -1,6 +1,6 @@
 # Site note · Doha
 
-Issued Friday 20 November 2026, 05:15 (Asia/Qatar). Site 25.2854, 51.5310. Working hours 07:00-17:00, lunch break excluded (9 h).
+Issued Friday 20 November 2026, 05:23 (Asia/Qatar). Site 25.2854, 51.5310. Working hours 07:00-17:00, lunch break excluded (9 h).
 
 ## Friday 20 November
 
