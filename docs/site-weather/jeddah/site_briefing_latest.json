@@ -2,7 +2,7 @@
  "site": "Jeddah",
  "lat": 21.4858,
  "lon": 39.1925,
- "issued": "2026-11-20 05:29",
+ "issued": "2026-11-20 06:43",
  "working": "07:00-17:00, lunch excluded (9 h)",
  "days": [
   {
@@ -361,7 +361,7 @@
    ],
    "facts": {
     "rain_mm": 0.2,
-    "rain_chance": 4,
+    "rain_chance": 12,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 29.4,
@@ -731,7 +731,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 2,
+    "rain_chance": 14,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 30.7,
@@ -838,7 +838,7 @@
       ],
       [
        13,
-       1
+       2
       ],
       [
        14,
@@ -846,7 +846,7 @@
       ],
       [
        15,
-       1
+       2
       ],
       [
        16,
@@ -889,7 +889,7 @@
       ],
       [
        13,
-       1
+       2
       ],
       [
        14,
@@ -1114,7 +1114,7 @@
    ],
    "facts": {
     "rain_mm": 1.5,
-    "rain_chance": 71,
+    "rain_chance": 75,
     "storm": "possible",
     "storm_from": "14",
     "wbgt_peak": 29.9,
@@ -1484,7 +1484,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 8,
+    "rain_chance": 4,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 29.1,
@@ -1854,7 +1854,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 2,
+    "rain_chance": 6,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 29.6,
@@ -2219,7 +2219,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 0,
+    "rain_chance": 2,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 29.2,

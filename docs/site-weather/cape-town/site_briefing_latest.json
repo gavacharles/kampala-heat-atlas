@@ -2,7 +2,7 @@
  "site": "Cape Town",
  "lat": -33.9249,
  "lon": 18.4241,
- "issued": "2026-11-20 04:32",
+ "issued": "2026-11-20 05:43",
  "working": "07:00-17:00, lunch excluded (9 h)",
  "days": [
   {
@@ -730,7 +730,7 @@
    ],
    "facts": {
     "rain_mm": 1.1,
-    "rain_chance": 9,
+    "rain_chance": 29,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 18.7,
@@ -1099,7 +1099,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 32,
+    "rain_chance": 16,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 19.0,
@@ -1468,7 +1468,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 1.5,
-    "rain_chance": 14,
+    "rain_chance": 10,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 20.1,
@@ -1837,7 +1837,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 10,
+    "rain_chance": 12,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 19.4,

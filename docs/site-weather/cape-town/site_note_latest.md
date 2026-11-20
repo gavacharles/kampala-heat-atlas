@@ -1,6 +1,6 @@
 # Site note · Cape Town
 
-Issued Friday 20 November 2026, 04:32 (Africa/Johannesburg). Site -33.9249, 18.4241. Working hours 07:00-17:00, lunch break excluded (9 h).
+Issued Friday 20 November 2026, 05:43 (Africa/Johannesburg). Site -33.9249, 18.4241. Working hours 07:00-17:00, lunch break excluded (9 h).
 
 ## Friday 20 November
 
@@ -17,7 +17,7 @@ Rain 0 mm (chance up to 2 %) · storms low · WBGT peak 21.1 °C · gusts 15 m/s
 
 **Some limits today: check your trade below.**
 
-Rain 1 mm (chance up to 9 %) · storms low · WBGT peak 18.7 °C · gusts 18 m/s at hook height
+Rain 1 mm (chance up to 29 %) · storms low · WBGT peak 18.7 °C · gusts 18 m/s at hook height
 
 - **Asphalt & surfacing — go 07-12 h only.** Limited by rain or wet surface. Never lay or spray on a wet surface.
 - **Crane lifts — go 07-11 h only.** Limited by wind. Check the anemometer before each lift.
@@ -31,7 +31,7 @@ Rain 1 mm (chance up to 9 %) · storms low · WBGT peak 18.7 °C · gusts 18 m/s
 
 **Some limits today: check your trade below.**
 
-Rain 0 mm (chance up to 32 %) · storms low · WBGT peak 19.0 °C · gusts 16 m/s at hook height
+Rain 0 mm (chance up to 16 %) · storms low · WBGT peak 19.0 °C · gusts 16 m/s at hook height
 
 - **Crane lifts — go 07-12 h, 13-16 h only.** Limited by wind. Check the anemometer before each lift.
 - **Work at height — go 07-11 h only.** Limited by wind. Clear roofs and scaffolds before storms.
@@ -41,8 +41,8 @@ Rain 0 mm (chance up to 32 %) · storms low · WBGT peak 19.0 °C · gusts 16 m/
 
 ## Outlook
 
-- **Monday 23 November**: Pour concrete 07-12 h; fast drying limits the rest of the day. Rain 2 mm (14 %); concrete 6 h go.
-- **Tuesday 24 November**: Pour concrete 07-11 h; fast drying limits the rest of the day. Rain 0 mm (10 %); concrete 4 h go.
+- **Monday 23 November**: Pour concrete 07-12 h; fast drying limits the rest of the day. Rain 2 mm (10 %); concrete 6 h go.
+- **Tuesday 24 November**: Pour concrete 07-11 h; fast drying limits the rest of the day. Rain 0 mm (12 %); concrete 4 h go.
 - **Wednesday 25 November**: Pour concrete 07-10 h; fast drying limits the rest of the day. Rain 0 mm (8 %); concrete 3 h go.
 - **Thursday 26 November**: Pour concrete 07-12 h; fast drying limits the rest of the day. Rain 0 mm (2 %); concrete 5 h go.
 

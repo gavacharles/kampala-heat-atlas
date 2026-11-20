@@ -1,6 +1,6 @@
 # Site note · Muscat
 
-Issued Friday 20 November 2026, 06:29 (Asia/Muscat). Site 23.5880, 58.3829. Working hours 07:00-17:00, lunch break excluded (9 h).
+Issued Friday 20 November 2026, 07:43 (Asia/Muscat). Site 23.5880, 58.3829. Working hours 07:00-17:00, lunch break excluded (9 h).
 
 ## Friday 20 November
 
@@ -9,7 +9,7 @@ Issued Friday 20 November 2026, 06:29 (Asia/Muscat). Site 23.5880, 58.3829. Work
 Rain 1 mm (chance up to 83 %) · storms possible · WBGT peak 26.1 °C · gusts 11 m/s at hook height
 
 - **Concrete pour — go 07-10 h only.** Limited by rain, storms, fast drying. Curing cover and windbreaks ready.
-- **Asphalt & surfacing — go 07-11 h only.** Limited by rain or wet surface, storms. Never lay or spray on a wet surface.
+- **Asphalt & surfacing — go 07-10 h only.** Limited by rain or wet surface, storms. Never lay or spray on a wet surface.
 - **Crane lifts — go 07-12 h, 13-14 h only.** Limited by storms. Check the anemometer before each lift.
 - **Work at height — go 07-12 h only.** Limited by storms, rain. Clear roofs and scaffolds before storms.
 - **Painting & coatings — go 08-12 h only.** Limited by rain, humidity or dew. Check the surface is 3 °C above dew point.
@@ -38,7 +38,7 @@ Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 25.6 °C · gusts 10 m/s
 
 ## Outlook
 
-- **Monday 23 November**: Pour concrete 07-12 h; fast drying limits the rest of the day. Rain 0 mm (8 %); concrete 5 h go.
+- **Monday 23 November**: Pour concrete 07-12 h; fast drying limits the rest of the day. Rain 0 mm (4 %); concrete 5 h go.
 - **Tuesday 24 November**: Pour concrete 07-12 h; fast drying limits the rest of the day. Rain 0 mm (0 %); concrete 5 h go.
 - **Wednesday 25 November**: Pour concrete 07-12 h; fast drying limits the rest of the day. Rain 0 mm (0 %); concrete 7 h go.
 - **Thursday 26 November**: Good working day: no weather limits on any trade. Rain 0 mm (0 %); concrete 9 h go.

@@ -1,6 +1,6 @@
 # Site note · Abu Dhabi
 
-Issued Friday 20 November 2026, 06:29 (Asia/Dubai). Site 24.4539, 54.3773. Working hours 07:00-17:00, lunch break excluded (9 h).
+Issued Friday 20 November 2026, 07:43 (Asia/Dubai). Site 24.4539, 54.3773. Working hours 07:00-17:00, lunch break excluded (9 h).
 
 ## Friday 20 November
 
@@ -17,7 +17,7 @@ Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 26.0 °C · gusts 10 m/s
 
 **Pour concrete 07-11 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 4 %) · storms low · WBGT peak 25.9 °C · gusts 12 m/s at hook height
+Rain 0 mm (chance up to 8 %) · storms low · WBGT peak 25.9 °C · gusts 12 m/s at hook height
 
 - **Concrete pour — go 07-11 h only.** Limited by fast drying. Curing cover and windbreaks ready.
 - **Painting & coatings — go 08-12 h, 13-17 h only.** Limited by humidity or dew. Check the surface is 3 °C above dew point.
@@ -28,7 +28,7 @@ Rain 0 mm (chance up to 4 %) · storms low · WBGT peak 25.9 °C · gusts 12 m/s
 
 **Pour concrete 07-12 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 27.7 °C · gusts 11 m/s at hook height
+Rain 0 mm (chance up to 2 %) · storms low · WBGT peak 27.7 °C · gusts 11 m/s at hook height
 
 - **Concrete pour — go 07-12 h, 13-14 h only.** Limited by fast drying. Curing cover and windbreaks ready.
 - **Painting & coatings — go 09-12 h, 13-17 h only.** Limited by humidity or dew. Check the surface is 3 °C above dew point.
@@ -37,8 +37,8 @@ Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 27.7 °C · gusts 11 m/s
 
 ## Outlook
 
-- **Monday 23 November**: Pour concrete 07-12 h; fast drying limits the rest of the day. Rain 0 mm (2 %); concrete 8 h go.
-- **Tuesday 24 November**: Pour concrete 07-12 h; fast drying limits the rest of the day. Rain 0 mm (4 %); concrete 5 h go.
+- **Monday 23 November**: Pour concrete 07-12 h; fast drying limits the rest of the day. Rain 0 mm (4 %); concrete 8 h go.
+- **Tuesday 24 November**: Pour concrete 07-12 h; fast drying limits the rest of the day. Rain 0 mm (2 %); concrete 5 h go.
 - **Wednesday 25 November**: Pour concrete 07-12 h; fast drying limits the rest of the day. Rain 0 mm (2 %); concrete 8 h go.
 - **Thursday 26 November**: Pour concrete 07-12 h; fast drying limits the rest of the day. Rain 0 mm (4 %); concrete 7 h go.
 

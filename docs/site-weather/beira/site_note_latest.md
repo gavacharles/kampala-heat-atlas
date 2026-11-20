@@ -1,12 +1,12 @@
 # Site note · Beira
 
-Issued Friday 20 November 2026, 04:33 (Africa/Maputo). Site -19.8436, 34.8389. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Friday 20 November 2026, 05:43 (Africa/Maputo). Site -19.8436, 34.8389. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Friday 20 November
 
 **Pour concrete 08-12 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 4 %) · storms low · WBGT peak 30.7 °C · gusts 15 m/s at hook height
+Rain 0 mm (chance up to 2 %) · storms low · WBGT peak 30.7 °C · gusts 15 m/s at hook height
 
 - **Outdoor labour — work/rest needed.** Work/rest cycles 09-13 h, 14-17 h: at the peak, 15 min work / 45 min rest. Water every 20 min, shade for breaks.
 - **Concrete pour — go 08-12 h only.** Limited by fast drying. Curing cover and windbreaks ready.
@@ -19,7 +19,7 @@ Rain 0 mm (chance up to 4 %) · storms low · WBGT peak 30.7 °C · gusts 15 m/s
 
 **Pour concrete 08-09 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 16 %) · storms low · WBGT peak 29.3 °C · gusts 15 m/s at hook height
+Rain 0 mm (chance up to 10 %) · storms low · WBGT peak 29.3 °C · gusts 15 m/s at hook height
 
 - **Outdoor labour — work/rest needed.** Work/rest cycles 10-13 h, 14-16 h: at the peak, 30 min work / 30 min rest. Water every 20 min, shade for breaks.
 - **Concrete pour — go 08-09 h, 10-11 h only.** Limited by fast drying. Curing cover and windbreaks ready.
@@ -45,9 +45,9 @@ Rain 1 mm (chance up to 80 %) · storms possible · WBGT peak 30.4 °C · gusts 
 
 ## Outlook
 
-- **Monday 23 November**: Heat stress: stop moderate work in the sun 10-12 h. Rain 1 mm (100 %); concrete 1 h go.
-- **Tuesday 24 November**: Heat stress: stop moderate work in the sun 10-12 h. Rain 1 mm (65 %); concrete 1 h go.
-- **Wednesday 25 November**: Heat stress: stop moderate work in the sun 09-13 h. Rain 2 mm (65 %); concrete 3 h go.
+- **Monday 23 November**: Heat stress: stop moderate work in the sun 10-12 h. Rain 1 mm (94 %); concrete 1 h go.
+- **Tuesday 24 November**: Heat stress: stop moderate work in the sun 10-12 h. Rain 1 mm (84 %); concrete 1 h go.
+- **Wednesday 25 November**: Heat stress: stop moderate work in the sun 09-13 h. Rain 2 mm (59 %); concrete 4 h go.
 - **Thursday 26 November**: Storms likely from 12:00: finish lifts, roof and asphalt work before then. Rain 26 mm (80 %); concrete 0 h go.
 
 *Screening guidance from a weather forecast, not an instruction. The contract specification, the crane manufacturer's limits and the site health-and-safety plan take precedence; check conditions on site (WBGT meter, anemometer, the 30-30 rule for lightning) before each activity. Thresholds used: thresholds.json.*
