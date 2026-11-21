@@ -1,6 +1,6 @@
 # Site note · Arusha
 
-Issued Saturday 21 November 2026, 05:16 (Africa/Dar_es_Salaam). Site -3.3869, 36.6830. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Saturday 21 November 2026, 05:24 (Africa/Dar_es_Salaam). Site -3.3869, 36.6830. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Saturday 21 November
 
