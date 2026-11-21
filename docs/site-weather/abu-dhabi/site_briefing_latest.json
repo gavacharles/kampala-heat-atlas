@@ -2,7 +2,7 @@
  "site": "Abu Dhabi",
  "lat": 24.4539,
  "lon": 54.3773,
- "issued": "2026-11-21 06:29",
+ "issued": "2026-11-21 07:43",
  "working": "07:00-17:00, lunch excluded (9 h)",
  "days": [
   {
@@ -2187,7 +2187,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 4,
+    "rain_chance": 2,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 26.1,

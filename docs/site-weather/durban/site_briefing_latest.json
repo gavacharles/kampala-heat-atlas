@@ -2,7 +2,7 @@
  "site": "Durban",
  "lat": -29.8587,
  "lon": 31.0218,
- "issued": "2026-11-21 04:29",
+ "issued": "2026-11-21 05:42",
  "working": "07:00-17:00, lunch excluded (9 h)",
  "days": [
   {
@@ -356,7 +356,7 @@
    ],
    "facts": {
     "rain_mm": 0.2,
-    "rain_chance": 49,
+    "rain_chance": 85,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 29.1,
@@ -721,7 +721,7 @@
    ],
    "facts": {
     "rain_mm": 2.1,
-    "rain_chance": 82,
+    "rain_chance": 88,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 27.6,
@@ -1094,7 +1094,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 4.3,
-    "rain_chance": 96,
+    "rain_chance": 93,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 24.1,
@@ -1113,7 +1113,7 @@
   {
    "date": "2026-11-24",
    "day": "Tuesday 24 November",
-   "headline": "Pour concrete 07-10 h; fast drying limits the rest of the day.",
+   "headline": "Storms possible from 15:00: do exposed work in the morning.",
    "rows": [
     {
      "key": "concrete",
@@ -1124,7 +1124,8 @@
      "windows": "07-10 h",
      "causes": [
       "fast drying",
-      "rain"
+      "rain",
+      "storms"
      ],
      "action": "Curing cover and windbreaks ready.",
      "hours": [
@@ -1175,7 +1176,8 @@
      "windows": "07-11 h",
      "causes": [
       "wind",
-      "rain or wet surface"
+      "rain or wet surface",
+      "storms"
      ],
      "action": "Never lay or spray on a wet surface.",
      "hours": [
@@ -1225,7 +1227,8 @@
      "go_hours": 3,
      "windows": "07-10 h",
      "causes": [
-      "wind"
+      "wind",
+      "storms"
      ],
      "action": "Check the anemometer before each lift.",
      "hours": [
@@ -1276,7 +1279,8 @@
      "windows": "08-10 h",
      "causes": [
       "wind",
-      "rain"
+      "rain",
+      "storms"
      ],
      "action": "Clear roofs and scaffolds before storms.",
      "hours": [
@@ -1474,9 +1478,9 @@
    ],
    "facts": {
     "rain_mm": 12.2,
-    "rain_chance": 88,
-    "storm": "low",
-    "storm_from": "",
+    "rain_chance": 92,
+    "storm": "possible",
+    "storm_from": "15",
     "wbgt_peak": 26.8,
     "gust_hook_max": 22.6,
     "go_hours": {
@@ -1493,58 +1497,8 @@
   {
    "date": "2026-11-25",
    "day": "Wednesday 25 November",
-   "headline": "Wet day (4 mm): no concrete or asphalt window.",
+   "headline": "Pour concrete 14-17 h; rain limits the rest of the day.",
    "rows": [
-    {
-     "key": "concrete",
-     "trade": "Concrete pour",
-     "status": "STOP",
-     "label": "STOP",
-     "go_hours": 0,
-     "windows": "",
-     "causes": [
-      "rain"
-     ],
-     "action": "No pour window: postpone, or pour under cover.",
-     "hours": [
-      [
-       7,
-       1
-      ],
-      [
-       8,
-       1
-      ],
-      [
-       9,
-       2
-      ],
-      [
-       10,
-       2
-      ],
-      [
-       11,
-       2
-      ],
-      [
-       13,
-       1
-      ],
-      [
-       14,
-       1
-      ],
-      [
-       15,
-       1
-      ],
-      [
-       16,
-       1
-      ]
-     ]
-    },
     {
      "key": "asphalt",
      "trade": "Asphalt & surfacing",
@@ -1584,57 +1538,6 @@
       [
        14,
        2
-      ],
-      [
-       15,
-       1
-      ],
-      [
-       16,
-       1
-      ]
-     ]
-    },
-    {
-     "key": "coatings",
-     "trade": "Painting & coatings",
-     "status": "STOP",
-     "label": "STOP",
-     "go_hours": 0,
-     "windows": "",
-     "causes": [
-      "rain",
-      "humidity or dew"
-     ],
-     "action": "Too humid or wet for painting and coatings.",
-     "hours": [
-      [
-       7,
-       2
-      ],
-      [
-       8,
-       2
-      ],
-      [
-       9,
-       2
-      ],
-      [
-       10,
-       2
-      ],
-      [
-       11,
-       2
-      ],
-      [
-       13,
-       1
-      ],
-      [
-       14,
-       1
       ],
       [
        15,
@@ -1698,6 +1601,56 @@
      ]
     },
     {
+     "key": "concrete",
+     "trade": "Concrete pour",
+     "status": "LIMITED",
+     "label": "go 14-17 h only",
+     "go_hours": 3,
+     "windows": "14-17 h",
+     "causes": [
+      "rain"
+     ],
+     "action": "Keep covers ready outside this window.",
+     "hours": [
+      [
+       7,
+       1
+      ],
+      [
+       8,
+       1
+      ],
+      [
+       9,
+       2
+      ],
+      [
+       10,
+       2
+      ],
+      [
+       11,
+       2
+      ],
+      [
+       13,
+       1
+      ],
+      [
+       14,
+       0
+      ],
+      [
+       15,
+       0
+      ],
+      [
+       16,
+       0
+      ]
+     ]
+    },
+    {
      "key": "height",
      "trade": "Work at height",
      "status": "LIMITED",
@@ -1732,6 +1685,57 @@
       [
        13,
        0
+      ],
+      [
+       14,
+       0
+      ],
+      [
+       15,
+       0
+      ],
+      [
+       16,
+       0
+      ]
+     ]
+    },
+    {
+     "key": "coatings",
+     "trade": "Painting & coatings",
+     "status": "LIMITED",
+     "label": "go 14-17 h only",
+     "go_hours": 3,
+     "windows": "14-17 h",
+     "causes": [
+      "rain",
+      "humidity or dew"
+     ],
+     "action": "Check the surface is 3 \u00b0C above dew point.",
+     "hours": [
+      [
+       7,
+       2
+      ],
+      [
+       8,
+       2
+      ],
+      [
+       9,
+       2
+      ],
+      [
+       10,
+       2
+      ],
+      [
+       11,
+       2
+      ],
+      [
+       13,
+       1
       ],
       [
        14,
@@ -1847,17 +1851,17 @@
    "extras": [],
    "facts": {
     "rain_mm": 4.5,
-    "rain_chance": 70,
+    "rain_chance": 79,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 22.0,
     "gust_hook_max": 13.9,
     "go_hours": {
-     "concrete": 0,
      "asphalt": 0,
-     "coatings": 0,
      "earthworks": 0,
+     "concrete": 3,
      "height": 4,
+     "coatings": 3,
      "labour": 9,
      "crane": 9
     }
@@ -2214,7 +2218,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 31,
+    "rain_chance": 10,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 24.6,

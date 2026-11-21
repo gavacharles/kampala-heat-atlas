@@ -1,12 +1,12 @@
 # Site note · Dar es Salaam
 
-Issued Saturday 21 November 2026, 05:29 (Africa/Dar_es_Salaam). Site -6.7924, 39.2083. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Saturday 21 November 2026, 06:43 (Africa/Dar_es_Salaam). Site -6.7924, 39.2083. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Saturday 21 November
 
 **Pour concrete 08-10 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 34 %) · storms low · WBGT peak 29.3 °C · gusts 13 m/s at hook height
+Rain 0 mm (chance up to 43 %) · storms low · WBGT peak 29.3 °C · gusts 13 m/s at hook height
 
 - **Outdoor labour — work/rest needed.** Work/rest cycles 09-13 h, 14-17 h: at the peak, 30 min work / 30 min rest. Water every 20 min, shade for breaks.
 - **Concrete pour — go 08-10 h only.** Limited by fast drying. Curing cover and windbreaks ready.
@@ -17,9 +17,9 @@ Rain 0 mm (chance up to 34 %) · storms low · WBGT peak 29.3 °C · gusts 13 m/
 
 ## Sunday 22 November
 
-**Storms likely from 12:00: finish lifts, roof and asphalt work before then.**
+**Storms possible from 08:00: do exposed work in the morning.**
 
-Rain 6 mm (chance up to 88 %) · storms likely · WBGT peak 29.7 °C · gusts 12 m/s at hook height
+Rain 6 mm (chance up to 60 %) · storms possible · WBGT peak 29.7 °C · gusts 12 m/s at hook height
 
 - **Asphalt & surfacing — STOP.** Limited by rain or wet surface, storms. No dry window: do not lay or spray.
 - **Outdoor labour — work/rest needed.** Work/rest cycles 09-13 h, 14-17 h: at the peak, 30 min work / 30 min rest. Water every 20 min, shade for breaks.
@@ -32,24 +32,24 @@ Rain 6 mm (chance up to 88 %) · storms likely · WBGT peak 29.7 °C · gusts 12
 
 ## Monday 23 November
 
-**Wet day (12 mm): no concrete or asphalt window.**
+**Storms possible from 10:00: do exposed work in the morning.**
 
-Rain 12 mm (chance up to 97 %) · storms possible · WBGT peak 29.3 °C · gusts 14 m/s at hook height
+Rain 12 mm (chance up to 84 %) · storms possible · WBGT peak 29.3 °C · gusts 14 m/s at hook height
 
-- **Concrete pour — STOP.** Limited by rain, storms. No pour window: postpone, or pour under cover.
 - **Asphalt & surfacing — STOP.** Limited by rain or wet surface, storms. No dry window: do not lay or spray.
 - **Painting & coatings — STOP.** Limited by rain, humidity or dew. Too humid or wet for painting and coatings.
 - **Earthworks — STOP.** Limited by wet ground, rain. Ground too wet: protect formation, keep plant off soft ground. Ground wet after 15 mm in 24 h.
 - **Outdoor labour — work/rest needed.** Work/rest cycles 10-12 h, 14-16 h: at the peak, 30 min work / 30 min rest. Water every 20 min, shade for breaks.
-- **Crane lifts — go 08-10 h, 12-13 h only.** Limited by storms. Check the anemometer before each lift.
-- **Work at height — go 09-10 h only.** Limited by storms, rain, wind. Clear roofs and scaffolds before storms.
+- **Concrete pour — go 16-17 h only.** Limited by rain, storms. Keep covers ready outside this window.
+- **Crane lifts — go 08-10 h, 12-13 h, 16-17 h only.** Limited by storms. Check the anemometer before each lift.
+- **Work at height — go 09-10 h, 16-17 h only.** Limited by storms, rain, wind. Clear roofs and scaffolds before storms.
 - UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.
 
 ## Outlook
 
-- **Tuesday 24 November**: Storms possible from 10:00: do exposed work in the morning. Rain 4 mm (95 %); concrete 1 h go.
-- **Wednesday 25 November**: Storms possible from 08:00: do exposed work in the morning. Rain 2 mm (59 %); concrete 3 h go.
-- **Thursday 26 November**: Storms possible from 09:00: do exposed work in the morning. Rain 5 mm (51 %); concrete 6 h go.
+- **Tuesday 24 November**: Storms possible from 10:00: do exposed work in the morning. Rain 4 mm (88 %); concrete 3 h go.
+- **Wednesday 25 November**: Storms possible from 10:00: do exposed work in the morning. Rain 2 mm (52 %); concrete 4 h go.
+- **Thursday 26 November**: Pour concrete 10-13 h; rain limits the rest of the day. Rain 5 mm (45 %); concrete 6 h go.
 - **Friday 27 November**: Some limits today: check your trade below. Rain 1 mm (45 %); concrete 8 h go.
 
 *Screening guidance from a weather forecast, not an instruction. The contract specification, the crane manufacturer's limits and the site health-and-safety plan take precedence; check conditions on site (WBGT meter, anemometer, the 30-30 rule for lightning) before each activity. Thresholds used: thresholds.json.*

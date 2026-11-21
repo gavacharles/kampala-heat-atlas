@@ -1,11 +1,11 @@
 Site weather, Uganda: Saturday 21 November. Painting & coatings, go hours today:
 
-• Kampala: none
+• Kampala: 15-17
 • Mbarara: 09-11
 • Hoima: none
 • Mbale: 10-13
-• Jinja: 16-17
-• Gulu: 08-13, 14-15
+• Jinja: none
+• Gulu: 08-13, 14-16
 • Arua: all day
 
 Hour-by-hour for seven trades and your town's week ahead: gavacharles.github.io/kampala-heat-atlas/site-weather

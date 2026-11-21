@@ -1,6 +1,6 @@
 # Site note · Abuja
 
-Issued Saturday 21 November 2026, 03:29 (Africa/Lagos). Site 9.0765, 7.3986. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Saturday 21 November 2026, 04:42 (Africa/Lagos). Site 9.0765, 7.3986. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Saturday 21 November
 
@@ -40,7 +40,7 @@ Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 28.2 °C · gusts 7 m/s 
 
 - **Tuesday 24 November**: Pour concrete 08-13 h; fast drying limits the rest of the day. Rain 0 mm (0 %); concrete 5 h go.
 - **Wednesday 25 November**: Pour concrete 08-09 h; fast drying limits the rest of the day. Rain 0 mm (0 %); concrete 1 h go.
-- **Thursday 26 November**: Pour concrete 08-11 h; fast drying limits the rest of the day. Rain 0 mm (0 %); concrete 3 h go.
+- **Thursday 26 November**: Pour concrete 08-11 h; fast drying limits the rest of the day. Rain 0 mm (2 %); concrete 3 h go.
 - **Friday 27 November**: Pour concrete 08-13 h; fast drying limits the rest of the day. Rain 0 mm (0 %); concrete 5 h go.
 
 *Screening guidance from a weather forecast, not an instruction. The contract specification, the crane manufacturer's limits and the site health-and-safety plan take precedence; check conditions on site (WBGT meter, anemometer, the 30-30 rule for lightning) before each activity. Thresholds used: thresholds.json.*

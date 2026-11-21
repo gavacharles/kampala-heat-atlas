@@ -2,7 +2,7 @@
  "site": "Beira",
  "lat": -19.8436,
  "lon": 34.8389,
- "issued": "2026-11-21 04:29",
+ "issued": "2026-11-21 05:43",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -332,7 +332,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 12,
+    "rain_chance": 27,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 29.8,
@@ -686,7 +686,7 @@
    ],
    "facts": {
     "rain_mm": 2.0,
-    "rain_chance": 86,
+    "rain_chance": 76,
     "storm": "possible",
     "storm_from": "14",
     "wbgt_peak": 29.7,
@@ -1041,7 +1041,7 @@
    ],
    "facts": {
     "rain_mm": 1.6,
-    "rain_chance": 96,
+    "rain_chance": 98,
     "storm": "possible",
     "storm_from": "14",
     "wbgt_peak": 31.4,
@@ -1735,7 +1735,7 @@
    ],
    "facts": {
     "rain_mm": 0.3,
-    "rain_chance": 47,
+    "rain_chance": 49,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 30.6,
@@ -1796,7 +1796,7 @@
       ],
       [
        15,
-       2
+       1
       ],
       [
        16,
@@ -2089,7 +2089,7 @@
    ],
    "facts": {
     "rain_mm": 3.3,
-    "rain_chance": 80,
+    "rain_chance": 78,
     "storm": "possible",
     "storm_from": "09",
     "wbgt_peak": 29.5,

@@ -2,7 +2,7 @@
  "site": "Jeddah",
  "lat": 21.4858,
  "lon": 39.1925,
- "issued": "2026-11-21 05:30",
+ "issued": "2026-11-21 06:43",
  "working": "07:00-17:00, lunch excluded (9 h)",
  "days": [
   {
@@ -359,7 +359,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 14,
+    "rain_chance": 31,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 30.9,
@@ -378,7 +378,7 @@
   {
    "date": "2026-11-22",
    "day": "Sunday 22 November",
-   "headline": "Storms possible from 15:00: do exposed work in the morning.",
+   "headline": "Storms possible from 14:00: do exposed work in the morning.",
    "rows": [
     {
      "key": "labour",
@@ -434,9 +434,9 @@
      "key": "concrete",
      "trade": "Concrete pour",
      "status": "LIMITED",
-     "label": "go 07-12 h, 16-17 h only",
-     "go_hours": 6,
-     "windows": "07-12 h, 16-17 h",
+     "label": "go 07-12 h only",
+     "go_hours": 5,
+     "windows": "07-12 h",
      "causes": [
       "rain",
       "storms"
@@ -477,7 +477,7 @@
       ],
       [
        16,
-       0
+       1
       ]
      ]
     },
@@ -536,9 +536,9 @@
      "key": "crane",
      "trade": "Crane lifts",
      "status": "LIMITED",
-     "label": "go 07-12 h, 13-15 h, 16-17 h only",
-     "go_hours": 8,
-     "windows": "07-12 h, 13-15 h, 16-17 h",
+     "label": "go 07-12 h, 13-14 h only",
+     "go_hours": 6,
+     "windows": "07-12 h, 13-14 h",
      "causes": [
       "storms"
      ],
@@ -570,7 +570,7 @@
       ],
       [
        14,
-       0
+       1
       ],
       [
        15,
@@ -578,7 +578,7 @@
       ],
       [
        16,
-       0
+       1
       ]
      ]
     },
@@ -586,9 +586,9 @@
      "key": "height",
      "trade": "Work at height",
      "status": "LIMITED",
-     "label": "go 07-12 h, 13-15 h, 16-17 h only",
-     "go_hours": 8,
-     "windows": "07-12 h, 13-15 h, 16-17 h",
+     "label": "go 07-12 h, 13-14 h only",
+     "go_hours": 6,
+     "windows": "07-12 h, 13-14 h",
      "causes": [
       "storms"
      ],
@@ -620,7 +620,7 @@
       ],
       [
        14,
-       0
+       1
       ],
       [
        15,
@@ -628,7 +628,7 @@
       ],
       [
        16,
-       0
+       1
       ]
      ]
     },
@@ -636,12 +636,12 @@
      "key": "coatings",
      "trade": "Painting & coatings",
      "status": "LIMITED",
-     "label": "go 09-12 h, 13-15 h, 16-17 h only",
-     "go_hours": 6,
-     "windows": "09-12 h, 13-15 h, 16-17 h",
+     "label": "go 09-12 h, 13-14 h only",
+     "go_hours": 4,
+     "windows": "09-12 h, 13-14 h",
      "causes": [
-      "humidity or dew",
-      "rain"
+      "rain",
+      "humidity or dew"
      ],
      "action": "Check the surface is 3 \u00b0C above dew point.",
      "hours": [
@@ -671,7 +671,7 @@
       ],
       [
        14,
-       0
+       1
       ],
       [
        15,
@@ -679,7 +679,7 @@
       ],
       [
        16,
-       0
+       1
       ]
      ]
     },
@@ -738,18 +738,18 @@
    ],
    "facts": {
     "rain_mm": 0.1,
-    "rain_chance": 59,
+    "rain_chance": 73,
     "storm": "possible",
-    "storm_from": "15",
+    "storm_from": "14",
     "wbgt_peak": 30.0,
     "gust_hook_max": 10.9,
     "go_hours": {
      "labour": 2,
-     "concrete": 6,
+     "concrete": 5,
      "asphalt": 5,
-     "crane": 8,
-     "height": 8,
-     "coatings": 6,
+     "crane": 6,
+     "height": 6,
+     "coatings": 4,
      "earthworks": 9
     }
    }
@@ -1108,7 +1108,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 14,
+    "rain_chance": 22,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 29.3,
@@ -2209,7 +2209,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 6,
+    "rain_chance": 0,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 27.9,

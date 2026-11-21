@@ -1,12 +1,12 @@
 # Site note · Kuwait City
 
-Issued Saturday 21 November 2026, 05:30 (Asia/Kuwait). Site 29.3759, 47.9774. Working hours 07:00-17:00, lunch break excluded (9 h).
+Issued Saturday 21 November 2026, 06:43 (Asia/Kuwait). Site 29.3759, 47.9774. Working hours 07:00-17:00, lunch break excluded (9 h).
 
 ## Saturday 21 November
 
 **Pour concrete 07-11 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 23.0 °C · gusts 8 m/s at hook height
+Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 23.1 °C · gusts 8 m/s at hook height
 
 - **Concrete pour — go 07-11 h, 16-17 h only.** Limited by fast drying. Curing cover and windbreaks ready.
 - **No weather limits:** Outdoor labour, Asphalt & surfacing, Crane lifts, Work at height, Painting & coatings, Earthworks.
@@ -17,7 +17,7 @@ Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 23.0 °C · gusts 8 m/s 
 
 **Pour concrete 07-12 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 25.1 °C · gusts 6 m/s at hook height
+Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 24.9 °C · gusts 6 m/s at hook height
 
 - **Concrete pour — go 07-12 h only.** Limited by fast drying. Curing cover and windbreaks ready.
 - **No weather limits:** Outdoor labour, Asphalt & surfacing, Crane lifts, Work at height, Painting & coatings, Earthworks.
@@ -25,11 +25,11 @@ Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 25.1 °C · gusts 6 m/s 
 
 ## Monday 23 November
 
-**Pour concrete 07-12 h; fast drying limits the rest of the day.**
+**Pour concrete 07-11 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 25.7 °C · gusts 9 m/s at hook height
+Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 25.5 °C · gusts 10 m/s at hook height
 
-- **Concrete pour — go 07-12 h only.** Limited by fast drying. Curing cover and windbreaks ready.
+- **Concrete pour — go 07-11 h only.** Limited by fast drying. Curing cover and windbreaks ready.
 - **No weather limits:** Outdoor labour, Asphalt & surfacing, Crane lifts, Work at height, Painting & coatings, Earthworks.
 - Dust: PM2.5 up to 64 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 

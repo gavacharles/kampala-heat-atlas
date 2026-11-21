@@ -1,6 +1,6 @@
 # Site note · Nairobi
 
-Issued Saturday 21 November 2026, 05:29 (Africa/Nairobi). Site -1.2864, 36.8172. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Saturday 21 November 2026, 06:43 (Africa/Nairobi). Site -1.2864, 36.8172. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Saturday 21 November
 
@@ -35,7 +35,7 @@ Rain 11 mm (chance up to 100 %) · storms low · WBGT peak 22.4 °C · gusts 13 
 
 **Wet day (5 mm): no concrete or asphalt window.**
 
-Rain 5 mm (chance up to 100 %) · storms possible · WBGT peak 22.0 °C · gusts 13 m/s at hook height
+Rain 5 mm (chance up to 96 %) · storms possible · WBGT peak 22.0 °C · gusts 13 m/s at hook height
 
 - **Concrete pour — STOP.** Limited by rain, storms. No pour window: postpone, or pour under cover.
 - **Asphalt & surfacing — STOP.** Limited by rain or wet surface, storms. No dry window: do not lay or spray.
@@ -48,9 +48,9 @@ Rain 5 mm (chance up to 100 %) · storms possible · WBGT peak 22.0 °C · gusts
 
 ## Outlook
 
-- **Tuesday 24 November**: Wet day (4 mm): no concrete or asphalt window. Rain 4 mm (94 %); concrete 0 h go.
-- **Wednesday 25 November**: Pour concrete 14-15 h; rain limits the rest of the day. Rain 3 mm (67 %); concrete 1 h go.
-- **Thursday 26 November**: Storms possible from 15:00: do exposed work in the morning. Rain 6 mm (82 %); concrete 3 h go.
+- **Tuesday 24 November**: Wet day (4 mm): no concrete or asphalt window. Rain 4 mm (85 %); concrete 0 h go.
+- **Wednesday 25 November**: Wet day (3 mm): no concrete or asphalt window. Rain 3 mm (76 %); concrete 0 h go.
+- **Thursday 26 November**: Storms possible from 15:00: do exposed work in the morning. Rain 6 mm (74 %); concrete 3 h go.
 - **Friday 27 November**: Wet day (3 mm): no concrete or asphalt window. Rain 3 mm (88 %); concrete 0 h go.
 
 *Screening guidance from a weather forecast, not an instruction. The contract specification, the crane manufacturer's limits and the site health-and-safety plan take precedence; check conditions on site (WBGT meter, anemometer, the 30-30 rule for lightning) before each activity. Thresholds used: thresholds.json.*

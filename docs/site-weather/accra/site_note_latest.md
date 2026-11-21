@@ -1,16 +1,16 @@
 # Site note · Accra
 
-Issued Saturday 21 November 2026, 02:29 (Africa/Accra). Site 5.6037, -0.1870. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Saturday 21 November 2026, 03:42 (Africa/Accra). Site 5.6037, -0.1870. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Saturday 21 November
 
 **Storms likely from 15:00: finish lifts, roof and asphalt work before then.**
 
-Rain 2 mm (chance up to 98 %) · storms likely · WBGT peak 30.3 °C · gusts 12 m/s at hook height
+Rain 2 mm (chance up to 96 %) · storms likely · WBGT peak 30.3 °C · gusts 12 m/s at hook height
 
-- **Concrete pour — go 08-10 h only.** Limited by rain, storms, fast drying. Curing cover and windbreaks ready.
+- **Concrete pour — go 08-11 h only.** Limited by rain, storms, fast drying. Curing cover and windbreaks ready.
 - **Asphalt & surfacing — go 08-10 h only.** Limited by rain or wet surface, storms. Never lay or spray on a wet surface.
-- **Crane lifts — go 08-12 h only.** Limited by storms. Check the anemometer before each lift.
+- **Crane lifts — go 08-13 h only.** Limited by storms. Check the anemometer before each lift.
 - **Work at height — go 08-11 h only.** Limited by rain, storms. Clear roofs and scaffolds before storms.
 - **Painting & coatings — go 09-11 h only.** Limited by rain, humidity or dew. Check the surface is 3 °C above dew point.
 - **Earthworks — go 08-12 h, 14-15 h only.** Limited by rain. Protect formation and stockpiles.
@@ -21,7 +21,7 @@ Rain 2 mm (chance up to 98 %) · storms likely · WBGT peak 30.3 °C · gusts 12
 
 **Storms likely from 16:00: finish lifts, roof and asphalt work before then.**
 
-Rain 2 mm (chance up to 91 %) · storms likely · WBGT peak 30.1 °C · gusts 13 m/s at hook height
+Rain 2 mm (chance up to 88 %) · storms likely · WBGT peak 30.1 °C · gusts 13 m/s at hook height
 
 - **Outdoor labour — work/rest needed.** Work/rest cycles 09-13 h, 14-16 h: at the peak, 15 min work / 45 min rest. Water every 20 min, shade for breaks.
 - **Concrete pour — go 08-12 h only.** Limited by rain, storms. Keep covers ready outside this window.
@@ -36,7 +36,7 @@ Rain 2 mm (chance up to 91 %) · storms likely · WBGT peak 30.1 °C · gusts 13
 
 **Storms possible from 14:00: do exposed work in the morning.**
 
-Rain 1 mm (chance up to 84 %) · storms possible · WBGT peak 30.8 °C · gusts 12 m/s at hook height
+Rain 1 mm (chance up to 87 %) · storms possible · WBGT peak 30.8 °C · gusts 12 m/s at hook height
 
 - **Outdoor labour — work/rest needed.** Work/rest cycles 09-13 h, 14-17 h: at the peak, 15 min work / 45 min rest. Water every 20 min, shade for breaks.
 - **Concrete pour — go 08-12 h only.** Limited by rain, storms, fast drying. Curing cover and windbreaks ready.
@@ -49,8 +49,8 @@ Rain 1 mm (chance up to 84 %) · storms possible · WBGT peak 30.8 °C · gusts 
 
 ## Outlook
 
-- **Tuesday 24 November**: Heat stress: stop moderate work in the sun 11-12 h. Rain 2 mm (67 %); concrete 4 h go.
-- **Wednesday 25 November**: Storms likely from 15:00: finish lifts, roof and asphalt work before then. Rain 3 mm (78 %); concrete 4 h go.
+- **Tuesday 24 November**: Storms likely from 15:00: finish lifts, roof and asphalt work before then. Rain 2 mm (78 %); concrete 4 h go.
+- **Wednesday 25 November**: Storms likely from 14:00: finish lifts, roof and asphalt work before then. Rain 3 mm (92 %); concrete 4 h go.
 - **Thursday 26 November**: Storms possible from 14:00: do exposed work in the morning. Rain 0 mm (84 %); concrete 4 h go.
 - **Friday 27 November**: Storms possible from 15:00: do exposed work in the morning. Rain 2 mm (92 %); concrete 5 h go.
 

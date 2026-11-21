@@ -2,7 +2,7 @@
  "site": "Mbarara",
  "lat": -0.6072,
  "lon": 30.6545,
- "issued": "2026-11-21 05:29",
+ "issued": "2026-11-21 06:43",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -341,7 +341,7 @@
    ],
    "facts": {
     "rain_mm": 5.7,
-    "rain_chance": 100,
+    "rain_chance": 86,
     "storm": "likely",
     "storm_from": "12",
     "wbgt_peak": 25.2,
@@ -398,7 +398,7 @@
       ],
       [
        14,
-       2
+       1
       ],
       [
        15,
@@ -695,7 +695,7 @@
    ],
    "facts": {
     "rain_mm": 2.4,
-    "rain_chance": 87,
+    "rain_chance": 86,
     "storm": "possible",
     "storm_from": "14",
     "wbgt_peak": 25.9,
@@ -714,7 +714,7 @@
   {
    "date": "2026-11-23",
    "day": "Monday 23 November",
-   "headline": "Storms likely from 15:00: finish lifts, roof and asphalt work before then.",
+   "headline": "Storms likely from 14:00: finish lifts, roof and asphalt work before then.",
    "rows": [
     {
      "key": "concrete",
@@ -748,7 +748,7 @@
       ],
       [
        12,
-       1
+       2
       ],
       [
        14,
@@ -795,7 +795,7 @@
       ],
       [
        12,
-       1
+       2
       ],
       [
        14,
@@ -845,7 +845,7 @@
       ],
       [
        14,
-       1
+       2
       ],
       [
        15,
@@ -1047,9 +1047,9 @@
    ],
    "facts": {
     "rain_mm": 4.0,
-    "rain_chance": 86,
+    "rain_chance": 99,
     "storm": "likely",
-    "storm_from": "15",
+    "storm_from": "14",
     "wbgt_peak": 25.2,
     "gust_hook_max": 11.5,
     "go_hours": {
@@ -1401,7 +1401,7 @@
    ],
    "facts": {
     "rain_mm": 5.0,
-    "rain_chance": 88,
+    "rain_chance": 100,
     "storm": "likely",
     "storm_from": "14",
     "wbgt_peak": 25.0,
@@ -1420,15 +1420,15 @@
   {
    "date": "2026-11-25",
    "day": "Wednesday 25 November",
-   "headline": "Pour concrete 08-11 h; rain limits the rest of the day.",
+   "headline": "Pour concrete 08-12 h; rain limits the rest of the day.",
    "rows": [
     {
      "key": "concrete",
      "trade": "Concrete pour",
      "status": "LIMITED",
-     "label": "go 08-11 h only",
-     "go_hours": 3,
-     "windows": "08-11 h",
+     "label": "go 08-12 h only",
+     "go_hours": 4,
+     "windows": "08-12 h",
      "causes": [
       "rain"
      ],
@@ -1448,7 +1448,7 @@
       ],
       [
        11,
-       1
+       0
       ],
       [
        12,
@@ -1472,9 +1472,9 @@
      "key": "asphalt",
      "trade": "Asphalt & surfacing",
      "status": "LIMITED",
-     "label": "go 08-11 h only",
-     "go_hours": 3,
-     "windows": "08-11 h",
+     "label": "go 08-12 h only",
+     "go_hours": 4,
+     "windows": "08-12 h",
      "causes": [
       "rain or wet surface"
      ],
@@ -1494,7 +1494,7 @@
       ],
       [
        11,
-       1
+       0
       ],
       [
        12,
@@ -1749,14 +1749,14 @@
    ],
    "facts": {
     "rain_mm": 7.2,
-    "rain_chance": 98,
+    "rain_chance": 95,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 25.9,
     "gust_hook_max": 11.2,
     "go_hours": {
-     "concrete": 3,
-     "asphalt": 3,
+     "concrete": 4,
+     "asphalt": 4,
      "height": 5,
      "coatings": 3,
      "earthworks": 3,
@@ -1774,9 +1774,9 @@
      "key": "concrete",
      "trade": "Concrete pour",
      "status": "LIMITED",
-     "label": "go 08-11 h only",
-     "go_hours": 3,
-     "windows": "08-11 h",
+     "label": "go 08-12 h only",
+     "go_hours": 4,
+     "windows": "08-12 h",
      "causes": [
       "rain",
       "storms"
@@ -1797,7 +1797,7 @@
       ],
       [
        11,
-       1
+       0
       ],
       [
        12,
@@ -1821,9 +1821,9 @@
      "key": "asphalt",
      "trade": "Asphalt & surfacing",
      "status": "LIMITED",
-     "label": "go 08-11 h only",
-     "go_hours": 3,
-     "windows": "08-11 h",
+     "label": "go 08-12 h only",
+     "go_hours": 4,
+     "windows": "08-12 h",
      "causes": [
       "rain or wet surface",
       "storms"
@@ -1844,7 +1844,7 @@
       ],
       [
        11,
-       1
+       0
       ],
       [
        12,
@@ -2099,14 +2099,14 @@
    "extras": [],
    "facts": {
     "rain_mm": 1.2,
-    "rain_chance": 89,
+    "rain_chance": 81,
     "storm": "possible",
     "storm_from": "14",
     "wbgt_peak": 24.7,
     "gust_hook_max": 9.6,
     "go_hours": {
-     "concrete": 3,
-     "asphalt": 3,
+     "concrete": 4,
+     "asphalt": 4,
      "crane": 5,
      "height": 5,
      "coatings": 2,

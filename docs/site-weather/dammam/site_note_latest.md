@@ -1,12 +1,12 @@
 # Site note · Dammam
 
-Issued Saturday 21 November 2026, 05:30 (Asia/Riyadh). Site 26.4207, 50.0888. Working hours 07:00-17:00, lunch break excluded (9 h).
+Issued Saturday 21 November 2026, 06:43 (Asia/Riyadh). Site 26.4207, 50.0888. Working hours 07:00-17:00, lunch break excluded (9 h).
 
 ## Saturday 21 November
 
 **Pour concrete 07-10 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 24.7 °C · gusts 11 m/s at hook height
+Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 25.0 °C · gusts 11 m/s at hook height
 
 - **Concrete pour — go 07-10 h only.** Limited by fast drying. Curing cover and windbreaks ready.
 - **No weather limits:** Outdoor labour, Asphalt & surfacing, Crane lifts, Work at height, Painting & coatings, Earthworks.
@@ -16,7 +16,7 @@ Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 24.7 °C · gusts 11 m/s
 
 **Pour concrete 07-12 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 26.3 °C · gusts 8 m/s at hook height
+Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 26.1 °C · gusts 9 m/s at hook height
 
 - **Concrete pour — go 07-12 h, 16-17 h only.** Limited by fast drying. Curing cover and windbreaks ready.
 - **No weather limits:** Outdoor labour, Asphalt & surfacing, Crane lifts, Work at height, Painting & coatings, Earthworks.
@@ -26,9 +26,9 @@ Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 26.3 °C · gusts 8 m/s 
 
 **Pour concrete 07-12 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 27.3 °C · gusts 8 m/s at hook height
+Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 27.6 °C · gusts 8 m/s at hook height
 
-- **Concrete pour — go 07-12 h, 15-17 h only.** Limited by fast drying. Curing cover and windbreaks ready.
+- **Concrete pour — go 07-12 h, 13-14 h, 15-17 h only.** Limited by fast drying. Curing cover and windbreaks ready.
 - **Crane lifts — go 08-12 h, 13-17 h only.** Limited by poor visibility. Check the anemometer before each lift.
 - **Work at height — go 08-12 h, 13-17 h only.** Limited by poor visibility. Clear roofs and scaffolds before storms.
 - **Painting & coatings — go 09-12 h, 13-17 h only.** Limited by humidity or dew. Check the surface is 3 °C above dew point.
@@ -37,7 +37,7 @@ Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 27.3 °C · gusts 8 m/s 
 
 ## Outlook
 
-- **Tuesday 24 November**: Some limits today: check your trade below. Rain 0 mm (0 %); concrete 9 h go.
+- **Tuesday 24 November**: Pour concrete 07-12 h; fast drying limits the rest of the day. Rain 0 mm (0 %); concrete 7 h go.
 - **Wednesday 25 November**: Some limits today: check your trade below. Rain 0 mm (0 %); concrete 9 h go.
 - **Thursday 26 November**: Pour concrete 07-12 h; fast drying limits the rest of the day. Rain 0 mm (0 %); concrete 6 h go.
 - **Friday 27 November**: Pour concrete 07-11 h; fast drying limits the rest of the day. Rain 0 mm (0 %); concrete 4 h go.

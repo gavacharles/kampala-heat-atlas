@@ -2,13 +2,13 @@
  "site": "Kigali",
  "lat": -1.9441,
  "lon": 30.0619,
- "issued": "2026-11-21 04:29",
+ "issued": "2026-11-21 05:43",
  "working": "07:00-17:00, lunch excluded (9 h)",
  "days": [
   {
    "date": "2026-11-21",
    "day": "Saturday 21 November",
-   "headline": "Wet day (4 mm): no concrete or asphalt window.",
+   "headline": "Storms likely from 16:00: finish lifts, roof and asphalt work before then.",
    "rows": [
     {
      "key": "concrete",
@@ -209,7 +209,7 @@
       ],
       [
        16,
-       1
+       2
       ]
      ]
     },
@@ -369,9 +369,9 @@
    ],
    "facts": {
     "rain_mm": 4.3,
-    "rain_chance": 84,
-    "storm": "possible",
-    "storm_from": "11",
+    "rain_chance": 76,
+    "storm": "likely",
+    "storm_from": "16",
     "wbgt_peak": 25.1,
     "gust_hook_max": 8.9,
     "go_hours": {
@@ -394,9 +394,9 @@
      "key": "concrete",
      "trade": "Concrete pour",
      "status": "LIMITED",
-     "label": "go 07-11 h only",
-     "go_hours": 4,
-     "windows": "07-11 h",
+     "label": "go 07-10 h only",
+     "go_hours": 3,
+     "windows": "07-10 h",
      "causes": [
       "rain",
       "storms"
@@ -417,7 +417,7 @@
       ],
       [
        10,
-       0
+       1
       ],
       [
        11,
@@ -445,9 +445,9 @@
      "key": "asphalt",
      "trade": "Asphalt & surfacing",
      "status": "LIMITED",
-     "label": "go 07-11 h only",
-     "go_hours": 4,
-     "windows": "07-11 h",
+     "label": "go 07-10 h only",
+     "go_hours": 3,
+     "windows": "07-10 h",
      "causes": [
       "rain or wet surface",
       "storms"
@@ -468,7 +468,7 @@
       ],
       [
        10,
-       0
+       1
       ],
       [
        11,
@@ -751,14 +751,14 @@
    ],
    "facts": {
     "rain_mm": 7.3,
-    "rain_chance": 88,
+    "rain_chance": 97,
     "storm": "likely",
     "storm_from": "15",
     "wbgt_peak": 25.4,
     "gust_hook_max": 9.9,
     "go_hours": {
-     "concrete": 4,
-     "asphalt": 4,
+     "concrete": 3,
+     "asphalt": 3,
      "crane": 4,
      "height": 4,
      "coatings": 2,
@@ -901,7 +901,7 @@
       ],
       [
        10,
-       2
+       1
       ],
       [
        11,
@@ -952,7 +952,7 @@
       ],
       [
        10,
-       2
+       1
       ],
       [
        11,
@@ -1134,7 +1134,7 @@
    ],
    "facts": {
     "rain_mm": 8.7,
-    "rain_chance": 95,
+    "rain_chance": 97,
     "storm": "likely",
     "storm_from": "15",
     "wbgt_peak": 24.6,
@@ -1210,9 +1210,9 @@
      "key": "concrete",
      "trade": "Concrete pour",
      "status": "LIMITED",
-     "label": "go 07-08 h only",
-     "go_hours": 1,
-     "windows": "07-08 h",
+     "label": "go 07-09 h only",
+     "go_hours": 2,
+     "windows": "07-09 h",
      "causes": [
       "rain",
       "storms"
@@ -1225,7 +1225,7 @@
       ],
       [
        8,
-       1
+       0
       ],
       [
        9,
@@ -1237,7 +1237,7 @@
       ],
       [
        11,
-       2
+       1
       ],
       [
        13,
@@ -1261,9 +1261,9 @@
      "key": "asphalt",
      "trade": "Asphalt & surfacing",
      "status": "LIMITED",
-     "label": "go 07-08 h only",
-     "go_hours": 1,
-     "windows": "07-08 h",
+     "label": "go 07-09 h only",
+     "go_hours": 2,
+     "windows": "07-09 h",
      "causes": [
       "rain or wet surface",
       "storms"
@@ -1276,7 +1276,7 @@
       ],
       [
        8,
-       1
+       0
       ],
       [
        9,
@@ -1517,15 +1517,15 @@
    ],
    "facts": {
     "rain_mm": 3.1,
-    "rain_chance": 98,
+    "rain_chance": 92,
     "storm": "likely",
     "storm_from": "15",
     "wbgt_peak": 24.4,
     "gust_hook_max": 12.6,
     "go_hours": {
      "coatings": 0,
-     "concrete": 1,
-     "asphalt": 1,
+     "concrete": 2,
+     "asphalt": 2,
      "crane": 4,
      "height": 2,
      "earthworks": 0,
@@ -1897,7 +1897,7 @@
    ],
    "facts": {
     "rain_mm": 9.3,
-    "rain_chance": 97,
+    "rain_chance": 95,
     "storm": "likely",
     "storm_from": "15",
     "wbgt_peak": 24.7,
@@ -2279,7 +2279,7 @@
    ],
    "facts": {
     "rain_mm": 3.0,
-    "rain_chance": 100,
+    "rain_chance": 92,
     "storm": "likely",
     "storm_from": "15",
     "wbgt_peak": 25.0,
