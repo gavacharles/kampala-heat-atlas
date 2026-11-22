@@ -1,6 +1,6 @@
 # Site note · Cape Town
 
-Issued Sunday 22 November 2026, 04:15 (Africa/Johannesburg). Site -33.9249, 18.4241. Working hours 07:00-17:00, lunch break excluded (9 h).
+Issued Sunday 22 November 2026, 04:19 (Africa/Johannesburg). Site -33.9249, 18.4241. Working hours 07:00-17:00, lunch break excluded (9 h).
 
 ## Sunday 22 November
 
