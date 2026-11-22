@@ -1,6 +1,6 @@
 # Site note · Nairobi
 
-Issued Sunday 22 November 2026, 05:30 (Africa/Nairobi). Site -1.2864, 36.8172. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Sunday 22 November 2026, 06:48 (Africa/Nairobi). Site -1.2864, 36.8172. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Sunday 22 November
 
@@ -47,9 +47,9 @@ Rain 3 mm (chance up to 90 %) · storms possible · WBGT peak 22.8 °C · gusts 
 
 ## Outlook
 
-- **Wednesday 25 November**: Wet day (6 mm): no concrete or asphalt window. Rain 6 mm (88 %); concrete 0 h go.
-- **Thursday 26 November**: Pour concrete 08-10 h; rain limits the rest of the day. Rain 9 mm (75 %); concrete 2 h go.
-- **Friday 27 November**: Wet day (5 mm): no concrete or asphalt window. Rain 5 mm (87 %); concrete 0 h go.
+- **Wednesday 25 November**: Storms likely from 16:00: finish lifts, roof and asphalt work before then. Rain 6 mm (86 %); concrete 0 h go.
+- **Thursday 26 November**: Pour concrete 08-10 h; rain limits the rest of the day. Rain 9 mm (73 %); concrete 2 h go.
+- **Friday 27 November**: Wet day (5 mm): no concrete or asphalt window. Rain 5 mm (83 %); concrete 0 h go.
 - **Saturday 28 November**: Pour concrete 14-15 h; rain limits the rest of the day. Rain 4 mm (79 %); concrete 2 h go.
 
 *Screening guidance from a weather forecast, not an instruction. The contract specification, the crane manufacturer's limits and the site health-and-safety plan take precedence; check conditions on site (WBGT meter, anemometer, the 30-30 rule for lightning) before each activity. Thresholds used: thresholds.json.*

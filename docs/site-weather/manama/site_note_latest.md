@@ -1,21 +1,22 @@
 # Site note · Manama
 
-Issued Sunday 22 November 2026, 05:30 (Asia/Bahrain). Site 26.2285, 50.5860. Working hours 07:00-17:00, lunch break excluded (9 h).
+Issued Sunday 22 November 2026, 06:43 (Asia/Bahrain). Site 26.2285, 50.5860. Working hours 07:00-17:00, lunch break excluded (9 h).
 
 ## Sunday 22 November
 
-**Good working day: no weather limits on any trade.**
+**Some limits today: check your trade below.**
 
-Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 25.7 °C · gusts 8 m/s at hook height
+Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 26.1 °C · gusts 7 m/s at hook height
 
-- **No weather limits:** Outdoor labour, Concrete pour, Asphalt & surfacing, Crane lifts, Work at height, Painting & coatings, Earthworks.
+- **Painting & coatings — go 08-12 h, 13-17 h only.** Limited by humidity or dew. Check the surface is 3 °C above dew point.
+- **No weather limits:** Outdoor labour, Concrete pour, Asphalt & surfacing, Crane lifts, Work at height, Earthworks.
 - Dust: PM2.5 up to 50 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 
 ## Monday 23 November
 
 **Some limits today: check your trade below.**
 
-Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 27.0 °C · gusts 6 m/s at hook height
+Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 27.4 °C · gusts 7 m/s at hook height
 
 - **Painting & coatings — go 10-12 h, 13-17 h only.** Limited by humidity or dew. Check the surface is 3 °C above dew point.
 - **No weather limits:** Outdoor labour, Concrete pour, Asphalt & surfacing, Crane lifts, Work at height, Earthworks.
@@ -25,9 +26,9 @@ Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 27.0 °C · gusts 6 m/s 
 
 **Some limits today: check your trade below.**
 
-Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 27.1 °C · gusts 5 m/s at hook height
+Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 27.8 °C · gusts 6 m/s at hook height
 
-- **Painting & coatings — go 09-12 h, 13-16 h only.** Limited by humidity or dew. Check the surface is 3 °C above dew point.
+- **Painting & coatings — go 10-12 h, 13-15 h only.** Limited by humidity or dew. Check the surface is 3 °C above dew point.
 - **No weather limits:** Outdoor labour, Concrete pour, Asphalt & surfacing, Crane lifts, Work at height, Earthworks.
 - Dust: PM2.5 up to 40 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 

@@ -2,13 +2,13 @@
  "site": "Mbarara",
  "lat": -0.6072,
  "lon": 30.6545,
- "issued": "2026-11-22 05:30",
+ "issued": "2026-11-22 06:43",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
    "date": "2026-11-22",
    "day": "Sunday 22 November",
-   "headline": "Storms possible from 14:00: do exposed work in the morning.",
+   "headline": "Storms likely from 15:00: finish lifts, roof and asphalt work before then.",
    "rows": [
     {
      "key": "concrete",
@@ -143,7 +143,7 @@
       ],
       [
        15,
-       1
+       2
       ],
       [
        16,
@@ -343,9 +343,9 @@
    ],
    "facts": {
     "rain_mm": 2.0,
-    "rain_chance": 70,
-    "storm": "possible",
-    "storm_from": "14",
+    "rain_chance": 73,
+    "storm": "likely",
+    "storm_from": "15",
     "wbgt_peak": 24.8,
     "gust_hook_max": 11.1,
     "go_hours": {
@@ -395,7 +395,7 @@
       ],
       [
        12,
-       2
+       1
       ],
       [
        14,
@@ -695,7 +695,7 @@
    ],
    "facts": {
     "rain_mm": 3.3,
-    "rain_chance": 98,
+    "rain_chance": 89,
     "storm": "likely",
     "storm_from": "14",
     "wbgt_peak": 25.5,
@@ -714,15 +714,15 @@
   {
    "date": "2026-11-24",
    "day": "Tuesday 24 November",
-   "headline": "Pour concrete 08-11 h; rain limits the rest of the day.",
+   "headline": "Pour concrete 08-12 h; rain limits the rest of the day.",
    "rows": [
     {
      "key": "concrete",
      "trade": "Concrete pour",
      "status": "LIMITED",
-     "label": "go 08-11 h only",
-     "go_hours": 3,
-     "windows": "08-11 h",
+     "label": "go 08-12 h only",
+     "go_hours": 4,
+     "windows": "08-12 h",
      "causes": [
       "rain",
       "fast drying"
@@ -743,7 +743,7 @@
       ],
       [
        11,
-       1
+       0
       ],
       [
        12,
@@ -1043,13 +1043,13 @@
    ],
    "facts": {
     "rain_mm": 4.3,
-    "rain_chance": 94,
+    "rain_chance": 97,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 25.0,
     "gust_hook_max": 11.5,
     "go_hours": {
-     "concrete": 3,
+     "concrete": 4,
      "asphalt": 3,
      "height": 5,
      "coatings": 3,
@@ -1395,7 +1395,7 @@
    ],
    "facts": {
     "rain_mm": 2.2,
-    "rain_chance": 95,
+    "rain_chance": 93,
     "storm": "possible",
     "storm_from": "15",
     "wbgt_peak": 26.1,
@@ -2094,7 +2094,7 @@
    ],
    "facts": {
     "rain_mm": 2.4,
-    "rain_chance": 88,
+    "rain_chance": 95,
     "storm": "possible",
     "storm_from": "14",
     "wbgt_peak": 24.8,

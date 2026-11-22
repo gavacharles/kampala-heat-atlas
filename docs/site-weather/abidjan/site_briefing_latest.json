@@ -2,7 +2,7 @@
  "site": "Abidjan",
  "lat": 5.36,
  "lon": -4.0083,
- "issued": "2026-11-22 02:30",
+ "issued": "2026-11-22 03:43",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -60,9 +60,9 @@
      "key": "concrete",
      "trade": "Concrete pour",
      "status": "LIMITED",
-     "label": "go 08-09 h only",
-     "go_hours": 1,
-     "windows": "08-09 h",
+     "label": "go 08-10 h only",
+     "go_hours": 2,
+     "windows": "08-10 h",
      "causes": [
       "rain",
       "storms"
@@ -75,7 +75,7 @@
       ],
       [
        9,
-       1
+       0
       ],
       [
        10,
@@ -107,9 +107,9 @@
      "key": "asphalt",
      "trade": "Asphalt & surfacing",
      "status": "LIMITED",
-     "label": "go 08-09 h only",
-     "go_hours": 1,
-     "windows": "08-09 h",
+     "label": "go 08-10 h only",
+     "go_hours": 2,
+     "windows": "08-10 h",
      "causes": [
       "rain or wet surface",
       "storms"
@@ -122,7 +122,7 @@
       ],
       [
        9,
-       1
+       0
       ],
       [
        10,
@@ -154,9 +154,9 @@
      "key": "crane",
      "trade": "Crane lifts",
      "status": "LIMITED",
-     "label": "go 08-11 h only",
-     "go_hours": 3,
-     "windows": "08-11 h",
+     "label": "go 08-12 h only",
+     "go_hours": 4,
+     "windows": "08-12 h",
      "causes": [
       "storms"
      ],
@@ -176,7 +176,7 @@
       ],
       [
        11,
-       1
+       0
       ],
       [
        12,
@@ -349,9 +349,9 @@
     "gust_hook_max": 9.5,
     "go_hours": {
      "labour": 2,
-     "concrete": 1,
-     "asphalt": 1,
-     "crane": 3,
+     "concrete": 2,
+     "asphalt": 2,
+     "crane": 4,
      "height": 3,
      "coatings": 2,
      "earthworks": 5
@@ -413,9 +413,9 @@
      "key": "concrete",
      "trade": "Concrete pour",
      "status": "LIMITED",
-     "label": "go 08-11 h only",
-     "go_hours": 3,
-     "windows": "08-11 h",
+     "label": "go 08-10 h only",
+     "go_hours": 2,
+     "windows": "08-10 h",
      "causes": [
       "rain",
       "storms"
@@ -432,11 +432,11 @@
       ],
       [
        10,
-       0
+       1
       ],
       [
        11,
-       1
+       2
       ],
       [
        12,
@@ -483,7 +483,7 @@
       ],
       [
        11,
-       1
+       2
       ],
       [
        12,
@@ -507,9 +507,9 @@
      "key": "crane",
      "trade": "Crane lifts",
      "status": "LIMITED",
-     "label": "go 08-13 h only",
-     "go_hours": 5,
-     "windows": "08-13 h",
+     "label": "go 08-12 h only",
+     "go_hours": 4,
+     "windows": "08-12 h",
      "causes": [
       "storms"
      ],
@@ -533,7 +533,7 @@
       ],
       [
        12,
-       0
+       1
       ],
       [
        14,
@@ -553,9 +553,9 @@
      "key": "height",
      "trade": "Work at height",
      "status": "LIMITED",
-     "label": "go 08-13 h only",
-     "go_hours": 5,
-     "windows": "08-13 h",
+     "label": "go 08-12 h only",
+     "go_hours": 4,
+     "windows": "08-12 h",
      "causes": [
       "storms",
       "rain"
@@ -580,7 +580,7 @@
       ],
       [
        12,
-       0
+       1
       ],
       [
        14,
@@ -600,12 +600,12 @@
      "key": "coatings",
      "trade": "Painting & coatings",
      "status": "LIMITED",
-     "label": "go 10-13 h only",
-     "go_hours": 3,
-     "windows": "10-13 h",
+     "label": "go 10-12 h only",
+     "go_hours": 2,
+     "windows": "10-12 h",
      "causes": [
-      "humidity or dew",
-      "rain"
+      "rain",
+      "humidity or dew"
      ],
      "action": "Check the surface is 3 \u00b0C above dew point.",
      "hours": [
@@ -627,7 +627,7 @@
       ],
       [
        12,
-       0
+       1
       ],
       [
        14,
@@ -701,11 +701,11 @@
     "gust_hook_max": 8.9,
     "go_hours": {
      "labour": 1,
-     "concrete": 3,
+     "concrete": 2,
      "asphalt": 1,
-     "crane": 5,
-     "height": 5,
-     "coatings": 3,
+     "crane": 4,
+     "height": 4,
+     "coatings": 2,
      "earthworks": 2
     }
    }
@@ -788,7 +788,7 @@
       ],
       [
        11,
-       1
+       2
       ],
       [
        12,
@@ -1045,7 +1045,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 3.9,
-    "rain_chance": 87,
+    "rain_chance": 86,
     "storm": "likely",
     "storm_from": "14",
     "wbgt_peak": 31.1,
@@ -1396,7 +1396,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 2.7,
-    "rain_chance": 90,
+    "rain_chance": 94,
     "storm": "likely",
     "storm_from": "14",
     "wbgt_peak": 30.5,
@@ -1845,7 +1845,7 @@
       ],
       [
        12,
-       1
+       2
       ],
       [
        14,
@@ -2096,7 +2096,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 1.2,
-    "rain_chance": 96,
+    "rain_chance": 100,
     "storm": "possible",
     "storm_from": "14",
     "wbgt_peak": 30.1,

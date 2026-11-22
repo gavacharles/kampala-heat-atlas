@@ -2,13 +2,13 @@
  "site": "Jeddah",
  "lat": 21.4858,
  "lon": 39.1925,
- "issued": "2026-11-22 05:30",
+ "issued": "2026-11-22 06:43",
  "working": "07:00-17:00, lunch excluded (9 h)",
  "days": [
   {
    "date": "2026-11-22",
    "day": "Sunday 22 November",
-   "headline": "Storms likely from 16:00: finish lifts, roof and asphalt work before then.",
+   "headline": "Storms possible from 14:00: do exposed work in the morning.",
    "rows": [
     {
      "key": "labour",
@@ -96,15 +96,15 @@
       ],
       [
        13,
-       2
+       1
       ],
       [
        14,
-       2
+       1
       ],
       [
        15,
-       2
+       1
       ],
       [
        16,
@@ -147,15 +147,15 @@
       ],
       [
        13,
-       2
+       1
       ],
       [
        14,
-       2
+       1
       ],
       [
        15,
-       2
+       1
       ],
       [
        16,
@@ -209,7 +209,7 @@
       ],
       [
        16,
-       2
+       1
       ]
      ]
     },
@@ -372,9 +372,9 @@
    ],
    "facts": {
     "rain_mm": 0.9,
-    "rain_chance": 84,
-    "storm": "likely",
-    "storm_from": "16",
+    "rain_chance": 73,
+    "storm": "possible",
+    "storm_from": "14",
     "wbgt_peak": 30.2,
     "gust_hook_max": 11.2,
     "go_hours": {
@@ -742,7 +742,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 16,
+    "rain_chance": 22,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 28.9,
@@ -1112,7 +1112,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 2,
+    "rain_chance": 0,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 29.4,
@@ -1480,7 +1480,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 2,
+    "rain_chance": 0,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 27.5,
@@ -2217,7 +2217,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 0,
+    "rain_chance": 6,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 29.0,

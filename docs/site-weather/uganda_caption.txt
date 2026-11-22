@@ -1,10 +1,10 @@
 Site weather, Uganda: Sunday 22 November. Concrete pour, go hours today:
 
-• Kampala: 16-17
+• Kampala: none
 • Mbarara: 08-12
-• Hoima: 08-10
-• Mbale: 09-11
-• Jinja: 16-17
+• Hoima: 08-11
+• Mbale: none
+• Jinja: none
 • Gulu: 08-11
 • Arua: 08-10
 

@@ -2,7 +2,7 @@
  "site": "Muscat",
  "lat": 23.588,
  "lon": 58.3829,
- "issued": "2026-11-22 06:30",
+ "issued": "2026-11-22 07:43",
  "working": "07:00-17:00, lunch excluded (9 h)",
  "days": [
   {
@@ -356,7 +356,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 0.3,
-    "rain_chance": 27,
+    "rain_chance": 10,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 27.4,
@@ -721,7 +721,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 4,
+    "rain_chance": 2,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 26.3,

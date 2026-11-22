@@ -2,7 +2,7 @@
  "site": "Nairobi",
  "lat": -1.2864,
  "lon": 36.8172,
- "issued": "2026-11-22 05:30",
+ "issued": "2026-11-22 06:48",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -739,7 +739,7 @@
       ],
       [
        14,
-       1
+       2
       ],
       [
        15,
@@ -1054,7 +1054,7 @@
   {
    "date": "2026-11-25",
    "day": "Wednesday 25 November",
-   "headline": "Wet day (6 mm): no concrete or asphalt window.",
+   "headline": "Storms likely from 16:00: finish lifts, roof and asphalt work before then.",
    "rows": [
     {
      "key": "concrete",
@@ -1071,7 +1071,7 @@
      "hours": [
       [
        8,
-       2
+       1
       ],
       [
        9,
@@ -1091,11 +1091,11 @@
       ],
       [
        14,
-       2
+       1
       ],
       [
        15,
-       1
+       2
       ],
       [
        16,
@@ -1239,7 +1239,7 @@
       ],
       [
        16,
-       1
+       2
       ]
      ]
     },
@@ -1386,9 +1386,9 @@
    ],
    "facts": {
     "rain_mm": 6.3,
-    "rain_chance": 88,
-    "storm": "possible",
-    "storm_from": "14",
+    "rain_chance": 86,
+    "storm": "likely",
+    "storm_from": "16",
     "wbgt_peak": 23.2,
     "gust_hook_max": 12.1,
     "go_hours": {
@@ -1735,7 +1735,7 @@
    ],
    "facts": {
     "rain_mm": 9.4,
-    "rain_chance": 75,
+    "rain_chance": 73,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 22.3,
@@ -2088,7 +2088,7 @@
    ],
    "facts": {
     "rain_mm": 5.4,
-    "rain_chance": 87,
+    "rain_chance": 83,
     "storm": "possible",
     "storm_from": "15",
     "wbgt_peak": 21.7,

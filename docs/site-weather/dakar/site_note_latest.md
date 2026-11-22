@@ -1,6 +1,6 @@
 # Site note · Dakar
 
-Issued Sunday 22 November 2026, 02:30 (Africa/Dakar). Site 14.7167, -17.4677. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Sunday 22 November 2026, 03:43 (Africa/Dakar). Site 14.7167, -17.4677. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Sunday 22 November
 
@@ -32,8 +32,8 @@ Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 27.9 °C · gusts 11 m/s
 
 ## Outlook
 
-- **Wednesday 25 November**: Pour concrete 08-09 h; fast drying limits the rest of the day. Rain 0 mm (7 %); concrete 1 h go.
-- **Thursday 26 November**: Pour concrete 15-17 h; fast drying limits the rest of the day. Rain 1 mm (11 %); concrete 2 h go.
+- **Wednesday 25 November**: Pour concrete 08-09 h; fast drying limits the rest of the day. Rain 0 mm (2 %); concrete 1 h go.
+- **Thursday 26 November**: Pour concrete 15-17 h; fast drying limits the rest of the day. Rain 1 mm (9 %); concrete 2 h go.
 - **Friday 27 November**: Good working day: no weather limits on any trade. Rain 1 mm (25 %); concrete 8 h go.
 - **Saturday 28 November**: Good working day: no weather limits on any trade. Rain 0 mm (27 %); concrete 8 h go.
 

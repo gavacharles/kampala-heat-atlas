@@ -1,12 +1,12 @@
 # Site note · Muscat
 
-Issued Sunday 22 November 2026, 06:30 (Asia/Muscat). Site 23.5880, 58.3829. Working hours 07:00-17:00, lunch break excluded (9 h).
+Issued Sunday 22 November 2026, 07:43 (Asia/Muscat). Site 23.5880, 58.3829. Working hours 07:00-17:00, lunch break excluded (9 h).
 
 ## Sunday 22 November
 
 **Pour concrete 07-12 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 27 %) · storms low · WBGT peak 27.4 °C · gusts 14 m/s at hook height
+Rain 0 mm (chance up to 10 %) · storms low · WBGT peak 27.4 °C · gusts 14 m/s at hook height
 
 - **Concrete pour — go 07-12 h only.** Limited by fast drying. Curing cover and windbreaks ready.
 - **Asphalt & surfacing — go 07-12 h, 13-14 h only.** Limited by rain or wet surface. Never lay or spray on a wet surface.
@@ -17,7 +17,7 @@ Rain 0 mm (chance up to 27 %) · storms low · WBGT peak 27.4 °C · gusts 14 m/
 
 **Pour concrete 07-12 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 4 %) · storms low · WBGT peak 26.3 °C · gusts 14 m/s at hook height
+Rain 0 mm (chance up to 2 %) · storms low · WBGT peak 26.3 °C · gusts 14 m/s at hook height
 
 - **Concrete pour — go 07-12 h only.** Limited by fast drying. Curing cover and windbreaks ready.
 - **Work at height — go 07-12 h, 13-14 h only.** Limited by wind. Clear roofs and scaffolds before storms.

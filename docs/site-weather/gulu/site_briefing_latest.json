@@ -2,13 +2,13 @@
  "site": "Gulu",
  "lat": 2.7724,
  "lon": 32.2881,
- "issued": "2026-11-22 05:30",
+ "issued": "2026-11-22 06:43",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
    "date": "2026-11-22",
    "day": "Sunday 22 November",
-   "headline": "Storms possible from 16:00: do exposed work in the morning.",
+   "headline": "Pour concrete 08-11 h; fast drying limits the rest of the day.",
    "rows": [
     {
      "key": "concrete",
@@ -19,8 +19,7 @@
      "windows": "08-11 h",
      "causes": [
       "fast drying",
-      "rain",
-      "storms"
+      "rain"
      ],
      "action": "Curing cover and windbreaks ready.",
      "hours": [
@@ -62,12 +61,11 @@
      "key": "asphalt",
      "trade": "Asphalt & surfacing",
      "status": "LIMITED",
-     "label": "go 08-13 h only",
-     "go_hours": 5,
-     "windows": "08-13 h",
+     "label": "go 08-13 h, 14-15 h only",
+     "go_hours": 6,
+     "windows": "08-13 h, 14-15 h",
      "causes": [
-      "rain or wet surface",
-      "storms"
+      "rain or wet surface"
      ],
      "action": "Never lay or spray on a wet surface.",
      "hours": [
@@ -93,7 +91,7 @@
       ],
       [
        14,
-       1
+       0
       ],
       [
        15,
@@ -106,52 +104,6 @@
      ]
     },
     {
-     "key": "crane",
-     "trade": "Crane lifts",
-     "status": "LIMITED",
-     "label": "go 08-13 h, 14-16 h only",
-     "go_hours": 7,
-     "windows": "08-13 h, 14-16 h",
-     "causes": [
-      "storms"
-     ],
-     "action": "Check the anemometer before each lift.",
-     "hours": [
-      [
-       8,
-       0
-      ],
-      [
-       9,
-       0
-      ],
-      [
-       10,
-       0
-      ],
-      [
-       11,
-       0
-      ],
-      [
-       12,
-       0
-      ],
-      [
-       14,
-       0
-      ],
-      [
-       15,
-       0
-      ],
-      [
-       16,
-       1
-      ]
-     ]
-    },
-    {
      "key": "height",
      "trade": "Work at height",
      "status": "LIMITED",
@@ -160,8 +112,7 @@
      "windows": "08-13 h, 14-16 h",
      "causes": [
       "wind",
-      "rain",
-      "storms"
+      "rain"
      ],
      "action": "Clear roofs and scaffolds before storms.",
      "hours": [
@@ -334,6 +285,50 @@
        0
       ]
      ]
+    },
+    {
+     "key": "crane",
+     "trade": "Crane lifts",
+     "status": "GO",
+     "label": "no limits",
+     "go_hours": 8,
+     "windows": "08-13 h, 14-17 h",
+     "causes": [],
+     "action": "No weather limits.",
+     "hours": [
+      [
+       8,
+       0
+      ],
+      [
+       9,
+       0
+      ],
+      [
+       10,
+       0
+      ],
+      [
+       11,
+       0
+      ],
+      [
+       12,
+       0
+      ],
+      [
+       14,
+       0
+      ],
+      [
+       15,
+       0
+      ],
+      [
+       16,
+       0
+      ]
+     ]
     }
    ],
    "extras": [
@@ -342,18 +337,18 @@
    "facts": {
     "rain_mm": 0.7,
     "rain_chance": 57,
-    "storm": "possible",
-    "storm_from": "16",
+    "storm": "low",
+    "storm_from": "",
     "wbgt_peak": 26.8,
     "gust_hook_max": 13.2,
     "go_hours": {
      "concrete": 3,
-     "asphalt": 5,
-     "crane": 7,
+     "asphalt": 6,
      "height": 7,
      "coatings": 7,
      "earthworks": 7,
-     "labour": 8
+     "labour": 8,
+     "crane": 8
     }
    }
   },
@@ -680,7 +675,7 @@
    ],
    "facts": {
     "rain_mm": 0.2,
-    "rain_chance": 31,
+    "rain_chance": 20,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 26.9,
@@ -1024,7 +1019,7 @@
    ],
    "facts": {
     "rain_mm": 0.8,
-    "rain_chance": 24,
+    "rain_chance": 22,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 27.0,
@@ -1365,7 +1360,7 @@
    ],
    "facts": {
     "rain_mm": 0.1,
-    "rain_chance": 18,
+    "rain_chance": 14,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 27.3,
@@ -1704,7 +1699,7 @@
    ],
    "facts": {
     "rain_mm": 0.6,
-    "rain_chance": 41,
+    "rain_chance": 24,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 27.7,
@@ -2045,7 +2040,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 0.6,
-    "rain_chance": 21,
+    "rain_chance": 25,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 26.9,
