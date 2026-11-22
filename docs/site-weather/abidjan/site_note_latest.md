@@ -1,6 +1,6 @@
 # Site note · Abidjan
 
-Issued Sunday 22 November 2026, 02:19 (Africa/Abidjan). Site 5.3600, -4.0083. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Sunday 22 November 2026, 02:30 (Africa/Abidjan). Site 5.3600, -4.0083. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Sunday 22 November
 

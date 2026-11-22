@@ -1,6 +1,6 @@
 # Site note · Gulu
 
-Issued Sunday 22 November 2026, 05:19 (Africa/Kampala). Site 2.7724, 32.2881. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Sunday 22 November 2026, 05:30 (Africa/Kampala). Site 2.7724, 32.2881. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Sunday 22 November
 
