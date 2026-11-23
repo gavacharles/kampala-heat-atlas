@@ -1,6 +1,6 @@
 # Site note · Dubai
 
-Issued Monday 23 November 2026, 06:27 (Asia/Dubai). Site 25.2048, 55.2708. Working hours 07:00-17:00, lunch break excluded (9 h).
+Issued Monday 23 November 2026, 06:37 (Asia/Dubai). Site 25.2048, 55.2708. Working hours 07:00-17:00, lunch break excluded (9 h).
 
 ## Monday 23 November
 
