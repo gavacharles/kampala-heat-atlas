@@ -2,7 +2,7 @@
  "site": "Beira",
  "lat": -19.8436,
  "lon": 34.8389,
- "issued": "2026-11-23 04:31",
+ "issued": "2026-11-23 05:43",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -84,7 +84,7 @@
       ],
       [
        11,
-       1
+       2
       ],
       [
        12,
@@ -131,7 +131,7 @@
       ],
       [
        11,
-       1
+       2
       ],
       [
        12,
@@ -344,7 +344,7 @@
    ],
    "facts": {
     "rain_mm": 1.3,
-    "rain_chance": 96,
+    "rain_chance": 100,
     "storm": "possible",
     "storm_from": "14",
     "wbgt_peak": 31.5,
@@ -695,7 +695,7 @@
    ],
    "facts": {
     "rain_mm": 0.4,
-    "rain_chance": 73,
+    "rain_chance": 71,
     "storm": "possible",
     "storm_from": "14",
     "wbgt_peak": 32.2,
@@ -1045,7 +1045,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 51,
+    "rain_chance": 55,
     "storm": "possible",
     "storm_from": "14",
     "wbgt_peak": 31.8,
@@ -1064,56 +1064,8 @@
   {
    "date": "2026-11-26",
    "day": "Thursday 26 November",
-   "headline": "Wet day (1 mm): no concrete or asphalt window.",
+   "headline": "Storms possible from 08:00: do exposed work in the morning.",
    "rows": [
-    {
-     "key": "concrete",
-     "trade": "Concrete pour",
-     "status": "STOP",
-     "label": "STOP",
-     "go_hours": 0,
-     "windows": "",
-     "causes": [
-      "rain",
-      "storms",
-      "fast drying"
-     ],
-     "action": "No pour window: postpone, or pour under cover.",
-     "hours": [
-      [
-       8,
-       1
-      ],
-      [
-       9,
-       1
-      ],
-      [
-       10,
-       1
-      ],
-      [
-       11,
-       1
-      ],
-      [
-       12,
-       2
-      ],
-      [
-       14,
-       2
-      ],
-      [
-       15,
-       1
-      ],
-      [
-       16,
-       1
-      ]
-     ]
-    },
     {
      "key": "asphalt",
      "trade": "Asphalt & surfacing",
@@ -1145,11 +1097,11 @@
       ],
       [
        12,
-       2
+       1
       ],
       [
        14,
-       2
+       1
       ],
       [
        15,
@@ -1208,24 +1160,72 @@
      ]
     },
     {
-     "key": "crane",
-     "trade": "Crane lifts",
-     "status": "LIMITED",
-     "label": "go 08-10 h only",
-     "go_hours": 2,
-     "windows": "08-10 h",
+     "key": "concrete",
+     "trade": "Concrete pour",
+     "status": "CAUTION",
+     "label": "go with care",
+     "go_hours": 0,
+     "windows": "",
      "causes": [
-      "storms"
+      "rain",
+      "storms",
+      "fast drying"
      ],
-     "action": "Check the anemometer before each lift.",
+     "action": "Pour with care: covers and curing ready.",
      "hours": [
       [
        8,
-       0
+       1
       ],
       [
        9,
-       0
+       1
+      ],
+      [
+       10,
+       1
+      ],
+      [
+       11,
+       1
+      ],
+      [
+       12,
+       1
+      ],
+      [
+       14,
+       1
+      ],
+      [
+       15,
+       1
+      ],
+      [
+       16,
+       1
+      ]
+     ]
+    },
+    {
+     "key": "crane",
+     "trade": "Crane lifts",
+     "status": "CAUTION",
+     "label": "go with care",
+     "go_hours": 0,
+     "windows": "",
+     "causes": [
+      "storms"
+     ],
+     "action": "Lift with care: check the anemometer before each lift.",
+     "hours": [
+      [
+       8,
+       1
+      ],
+      [
+       9,
+       1
       ],
       [
        10,
@@ -1256,23 +1256,23 @@
     {
      "key": "height",
      "trade": "Work at height",
-     "status": "LIMITED",
-     "label": "go 08-10 h only",
-     "go_hours": 2,
-     "windows": "08-10 h",
+     "status": "CAUTION",
+     "label": "go with care",
+     "go_hours": 0,
+     "windows": "",
      "causes": [
       "storms",
       "wind"
      ],
-     "action": "Clear roofs and scaffolds before storms.",
+     "action": "Work at height with care: watch gusts and the sky.",
      "hours": [
       [
        8,
-       0
+       1
       ],
       [
        9,
-       0
+       1
       ],
       [
        10,
@@ -1303,15 +1303,15 @@
     {
      "key": "coatings",
      "trade": "Painting & coatings",
-     "status": "LIMITED",
-     "label": "go 09-10 h only",
-     "go_hours": 1,
-     "windows": "09-10 h",
+     "status": "CAUTION",
+     "label": "go with care",
+     "go_hours": 0,
+     "windows": "",
      "causes": [
       "rain",
       "humidity or dew"
      ],
-     "action": "Check the surface is 3 \u00b0C above dew point.",
+     "action": "Paint with care: check dew point and humidity first.",
      "hours": [
       [
        8,
@@ -1319,7 +1319,7 @@
       ],
       [
        9,
-       0
+       1
       ],
       [
        10,
@@ -1397,18 +1397,18 @@
    ],
    "facts": {
     "rain_mm": 1.0,
-    "rain_chance": 75,
+    "rain_chance": 69,
     "storm": "possible",
-    "storm_from": "10",
+    "storm_from": "08",
     "wbgt_peak": 29.0,
     "gust_hook_max": 14.3,
     "go_hours": {
-     "concrete": 0,
      "asphalt": 0,
      "labour": 3,
-     "crane": 2,
-     "height": 2,
-     "coatings": 1,
+     "concrete": 0,
+     "crane": 0,
+     "height": 0,
+     "coatings": 0,
      "earthworks": 8
     }
    }
@@ -1416,7 +1416,7 @@
   {
    "date": "2026-11-27",
    "day": "Friday 27 November",
-   "headline": "Storms likely from 10:00: finish lifts, roof and asphalt work before then.",
+   "headline": "Storms likely from 09:00: finish lifts, roof and asphalt work before then.",
    "rows": [
     {
      "key": "concrete",
@@ -1530,7 +1530,7 @@
       ],
       [
        9,
-       1
+       2
       ],
       [
        10,
@@ -1751,9 +1751,9 @@
    ],
    "facts": {
     "rain_mm": 8.4,
-    "rain_chance": 86,
+    "rain_chance": 84,
     "storm": "likely",
-    "storm_from": "10",
+    "storm_from": "09",
     "wbgt_peak": 28.8,
     "gust_hook_max": 12.2,
     "go_hours": {
@@ -1862,7 +1862,7 @@
       ],
       [
        16,
-       2
+       1
       ]
      ]
     },
@@ -2105,7 +2105,7 @@
    ],
    "facts": {
     "rain_mm": 2.7,
-    "rain_chance": 92,
+    "rain_chance": 84,
     "storm": "likely",
     "storm_from": "14",
     "wbgt_peak": 30.3,

@@ -2,7 +2,7 @@
  "site": "Maputo",
  "lat": -25.9692,
  "lon": 32.5732,
- "issued": "2026-11-23 04:31",
+ "issued": "2026-11-23 05:43",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -335,7 +335,7 @@
    ],
    "facts": {
     "rain_mm": 1.0,
-    "rain_chance": 29,
+    "rain_chance": 24,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 30.1,
@@ -676,7 +676,7 @@
    ],
    "facts": {
     "rain_mm": 5.0,
-    "rain_chance": 78,
+    "rain_chance": 86,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 31.6,
@@ -1023,7 +1023,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 5.6,
-    "rain_chance": 59,
+    "rain_chance": 63,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 24.6,
@@ -1362,7 +1362,7 @@
    ],
    "facts": {
     "rain_mm": 0.1,
-    "rain_chance": 24,
+    "rain_chance": 27,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 25.2,
@@ -1699,7 +1699,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 25,
+    "rain_chance": 35,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 28.4,
@@ -2048,7 +2048,7 @@
    ],
    "facts": {
     "rain_mm": 7.5,
-    "rain_chance": 50,
+    "rain_chance": 48,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 31.2,
@@ -2394,7 +2394,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 7.2,
-    "rain_chance": 46,
+    "rain_chance": 48,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 23.8,

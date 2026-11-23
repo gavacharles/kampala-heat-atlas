@@ -2,7 +2,7 @@
  "site": "Dodoma",
  "lat": -6.163,
  "lon": 35.7516,
- "issued": "2026-11-23 05:31",
+ "issued": "2026-11-23 06:43",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -328,7 +328,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 36,
+    "rain_chance": 24,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 26.2,
@@ -400,9 +400,9 @@
      "key": "asphalt",
      "trade": "Asphalt & surfacing",
      "status": "LIMITED",
-     "label": "go 08-13 h, 14-15 h only",
-     "go_hours": 6,
-     "windows": "08-13 h, 14-15 h",
+     "label": "go 08-13 h, 14-16 h only",
+     "go_hours": 7,
+     "windows": "08-13 h, 14-16 h",
      "causes": [
       "rain or wet surface"
      ],
@@ -434,7 +434,7 @@
       ],
       [
        15,
-       1
+       0
       ],
       [
        16,
@@ -670,14 +670,14 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 73,
+    "rain_chance": 57,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 26.7,
     "gust_hook_max": 16.4,
     "go_hours": {
      "concrete": 1,
-     "asphalt": 6,
+     "asphalt": 7,
      "height": 2,
      "labour": 8,
      "crane": 8,
@@ -1350,7 +1350,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 31,
+    "rain_chance": 33,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 25.8,
@@ -1691,7 +1691,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 13,
+    "rain_chance": 21,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 25.8,
@@ -2032,7 +2032,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 7,
+    "rain_chance": 18,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 25.2,

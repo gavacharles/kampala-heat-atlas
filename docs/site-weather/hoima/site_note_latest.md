@@ -1,12 +1,12 @@
 # Site note · Hoima
 
-Issued Monday 23 November 2026, 05:37 (Africa/Kampala). Site 1.4331, 31.3524. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Monday 23 November 2026, 06:46 (Africa/Kampala). Site 1.4331, 31.3524. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Monday 23 November
 
 **Storms likely from 14:00: finish lifts, roof and asphalt work before then.**
 
-Rain 2 mm (chance up to 92 %) · storms likely · WBGT peak 27.0 °C · gusts 10 m/s at hook height
+Rain 2 mm (chance up to 84 %) · storms likely · WBGT peak 27.0 °C · gusts 10 m/s at hook height
 
 - **Concrete pour — go 08-11 h only.** Limited by rain, storms. Keep covers ready outside this window.
 - **Asphalt & surfacing — go 08-11 h only.** Limited by rain or wet surface, storms. Never lay or spray on a wet surface.
@@ -21,7 +21,7 @@ Rain 2 mm (chance up to 92 %) · storms likely · WBGT peak 27.0 °C · gusts 10
 
 **Storms likely from 16:00: finish lifts, roof and asphalt work before then.**
 
-Rain 2 mm (chance up to 91 %) · storms likely · WBGT peak 28.1 °C · gusts 7 m/s at hook height
+Rain 2 mm (chance up to 94 %) · storms likely · WBGT peak 28.1 °C · gusts 7 m/s at hook height
 
 - **Outdoor labour — work/rest needed.** Work/rest cycles 12-13 h: at the peak, 45 min work / 15 min rest each hour. Water every 20 min, shade for breaks.
 - **Concrete pour — go 08-12 h only.** Limited by rain, storms. Keep covers ready outside this window.
@@ -36,7 +36,7 @@ Rain 2 mm (chance up to 91 %) · storms likely · WBGT peak 28.1 °C · gusts 7 
 
 **Storms possible from 14:00: do exposed work in the morning.**
 
-Rain 1 mm (chance up to 68 %) · storms possible · WBGT peak 27.0 °C · gusts 7 m/s at hook height
+Rain 1 mm (chance up to 78 %) · storms possible · WBGT peak 27.0 °C · gusts 7 m/s at hook height
 
 - **Concrete pour — go 08-12 h only.** Limited by rain, storms. Keep covers ready outside this window.
 - **Asphalt & surfacing — go 08-12 h only.** Limited by rain or wet surface, storms. Never lay or spray on a wet surface.
@@ -49,9 +49,9 @@ Rain 1 mm (chance up to 68 %) · storms possible · WBGT peak 27.0 °C · gusts 
 
 ## Outlook
 
-- **Thursday 26 November**: Storms possible from 14:00: do exposed work in the morning. Rain 1 mm (73 %); concrete 4 h go.
-- **Friday 27 November**: Storms likely from 15:00: finish lifts, roof and asphalt work before then. Rain 2 mm (78 %); concrete 4 h go.
-- **Saturday 28 November**: Storms possible from 14:00: do exposed work in the morning. Rain 4 mm (65 %); concrete 2 h go.
+- **Thursday 26 November**: Storms possible from 14:00: do exposed work in the morning. Rain 1 mm (67 %); concrete 4 h go.
+- **Friday 27 November**: Storms likely from 15:00: finish lifts, roof and asphalt work before then. Rain 2 mm (76 %); concrete 4 h go.
+- **Saturday 28 November**: Storms possible from 15:00: do exposed work in the morning. Rain 4 mm (51 %); concrete 2 h go.
 - **Sunday 29 November**: Some limits today: check your trade below. Rain 1 mm (35 %); concrete 8 h go.
 
 *Screening guidance from a weather forecast, not an instruction. The contract specification, the crane manufacturer's limits and the site health-and-safety plan take precedence; check conditions on site (WBGT meter, anemometer, the 30-30 rule for lightning) before each activity. Thresholds used: thresholds.json.*
