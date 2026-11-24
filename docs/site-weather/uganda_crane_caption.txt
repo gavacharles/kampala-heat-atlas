@@ -1,10 +1,10 @@
-Site weather, Uganda: Monday 23 November. Crane lifts, go hours today:
+Site weather, Uganda: Tuesday 24 November. Crane lifts, go hours today:
 
-• Kampala: 08-10
-• Mbarara: 08-13
-• Hoima: 10-13
+• Kampala: 08-11
+• Mbarara: 10-12, 14-15, 16-17
+• Hoima: 08-13
 • Mbale: 08-13
-• Jinja: 09-12, 15-17
+• Jinja: 08-13, 16-17
 • Gulu: all day
 • Arua: all day
 
