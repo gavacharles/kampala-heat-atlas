@@ -1,6 +1,6 @@
 # Site note · Abuja
 
-Issued Tuesday 24 November 2026, 03:15 (Africa/Lagos). Site 9.0765, 7.3986. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Tuesday 24 November 2026, 03:22 (Africa/Lagos). Site 9.0765, 7.3986. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Tuesday 24 November
 

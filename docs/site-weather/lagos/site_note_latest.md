@@ -1,6 +1,6 @@
 # Site note · Lagos
 
-Issued Tuesday 24 November 2026, 03:15 (Africa/Lagos). Site 6.5244, 3.3792. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Tuesday 24 November 2026, 03:22 (Africa/Lagos). Site 6.5244, 3.3792. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Tuesday 24 November
 

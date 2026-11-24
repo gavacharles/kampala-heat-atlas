@@ -1,6 +1,6 @@
 # Site note · Dakar
 
-Issued Tuesday 24 November 2026, 02:16 (Africa/Dakar). Site 14.7167, -17.4677. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Tuesday 24 November 2026, 02:23 (Africa/Dakar). Site 14.7167, -17.4677. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Tuesday 24 November
 
