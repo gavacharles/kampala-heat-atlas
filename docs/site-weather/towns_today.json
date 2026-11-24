@@ -1,5 +1,5 @@
 {
- "issued": "2026-11-24 05:38",
+ "issued": "2026-11-24 06:47",
  "towns": [
   {
    "name": "Central Kampala",
@@ -9,13 +9,13 @@
    "lat": 0.3136,
    "lon": 32.5811,
    "slug": "central-kampala",
-   "issued": "2026-11-24 05:36",
+   "issued": "2026-11-24 06:43",
    "day": "Tuesday 24 November",
    "headline": "Storms possible from 11:00: do exposed work in the morning.",
    "worst": "STOP",
    "facts": {
     "rain_mm": 2.6,
-    "rain_chance": 83,
+    "rain_chance": 78,
     "storm": "possible",
     "storm_from": "11",
     "wbgt_peak": 26.8,
@@ -70,15 +70,15 @@
    "outlook": [
     {
      "day": "Wednesday 25 November",
-     "headline": "Storms possible from 12:00: do exposed work in the morning."
+     "headline": "Storms likely from 12:00: finish lifts, roof and asphalt work before then."
     },
     {
      "day": "Thursday 26 November",
-     "headline": "Storms possible from 11:00: do exposed work in the morning."
+     "headline": "Storms possible from 12:00: do exposed work in the morning."
     },
     {
      "day": "Friday 27 November",
-     "headline": "Storms possible from 10:00: do exposed work in the morning."
+     "headline": "Storms possible from 11:00: do exposed work in the morning."
     }
    ]
   },
@@ -90,13 +90,13 @@
    "lat": -0.6072,
    "lon": 30.6545,
    "slug": "mbarara",
-   "issued": "2026-11-24 05:36",
+   "issued": "2026-11-24 06:43",
    "day": "Tuesday 24 November",
    "headline": "Storms possible from 12:00: do exposed work in the morning.",
    "worst": "STOP",
    "facts": {
     "rain_mm": 5.2,
-    "rain_chance": 90,
+    "rain_chance": 89,
     "storm": "possible",
     "storm_from": "12",
     "wbgt_peak": 24.8,
@@ -159,7 +159,7 @@
     },
     {
      "day": "Friday 27 November",
-     "headline": "Storms possible from 15:00: do exposed work in the morning."
+     "headline": "Storms likely from 15:00: finish lifts, roof and asphalt work before then."
     }
    ]
   },
@@ -171,13 +171,13 @@
    "lat": 1.4331,
    "lon": 31.3524,
    "slug": "hoima",
-   "issued": "2026-11-24 05:36",
+   "issued": "2026-11-24 06:43",
    "day": "Tuesday 24 November",
    "headline": "Storms possible from 14:00: do exposed work in the morning.",
    "worst": "STOP",
    "facts": {
     "rain_mm": 3.1,
-    "rain_chance": 91,
+    "rain_chance": 98,
     "storm": "possible",
     "storm_from": "14",
     "wbgt_peak": 27.4,
@@ -236,11 +236,11 @@
     },
     {
      "day": "Thursday 26 November",
-     "headline": "Storms possible from 14:00: do exposed work in the morning."
+     "headline": "Pour concrete 08-13 h; fast drying limits the rest of the day."
     },
     {
      "day": "Friday 27 November",
-     "headline": "Storms possible from 14:00: do exposed work in the morning."
+     "headline": "Some limits today: check your trade below."
     }
    ]
   },
@@ -252,24 +252,24 @@
    "lat": 1.0821,
    "lon": 34.175,
    "slug": "mbale",
-   "issued": "2026-11-24 05:36",
+   "issued": "2026-11-24 06:43",
    "day": "Tuesday 24 November",
-   "headline": "Storms likely from 15:00: finish lifts, roof and asphalt work before then.",
+   "headline": "Storms possible from 15:00: do exposed work in the morning.",
    "worst": "LIMITED",
    "facts": {
     "rain_mm": 3.7,
-    "rain_chance": 71,
-    "storm": "likely",
+    "rain_chance": 61,
+    "storm": "possible",
     "storm_from": "15",
     "wbgt_peak": 29.6,
     "gust_hook_max": 6.9,
     "go_hours": {
      "labour": 5,
-     "concrete": 4,
-     "asphalt": 4,
-     "crane": 5,
-     "height": 5,
-     "coatings": 4,
+     "concrete": 5,
+     "asphalt": 5,
+     "crane": 6,
+     "height": 6,
+     "coatings": 5,
      "earthworks": 6
     }
    },
@@ -282,27 +282,27 @@
     {
      "trade": "Concrete pour",
      "status": "LIMITED",
-     "label": "go 08-12 h only"
+     "label": "go 08-13 h only"
     },
     {
      "trade": "Asphalt & surfacing",
      "status": "LIMITED",
-     "label": "go 08-12 h only"
+     "label": "go 08-13 h only"
     },
     {
      "trade": "Crane lifts",
      "status": "LIMITED",
-     "label": "go 08-13 h only"
+     "label": "go 08-13 h, 14-15 h only"
     },
     {
      "trade": "Work at height",
      "status": "LIMITED",
-     "label": "go 08-13 h only"
+     "label": "go 08-13 h, 14-15 h only"
     },
     {
      "trade": "Painting & coatings",
      "status": "LIMITED",
-     "label": "go 09-13 h only"
+     "label": "go 09-13 h, 14-15 h only"
     },
     {
      "trade": "Earthworks",
@@ -321,7 +321,7 @@
     },
     {
      "day": "Friday 27 November",
-     "headline": "Storms possible from 14:00: do exposed work in the morning."
+     "headline": "Storms possible from 15:00: do exposed work in the morning."
     }
    ]
   },
@@ -333,10 +333,10 @@
    "lat": 0.4244,
    "lon": 33.2042,
    "slug": "jinja",
-   "issued": "2026-11-24 05:36",
+   "issued": "2026-11-24 06:43",
    "day": "Tuesday 24 November",
    "headline": "Storms possible from 14:00: do exposed work in the morning.",
-   "worst": "STOP",
+   "worst": "LIMITED",
    "facts": {
     "rain_mm": 4.3,
     "rain_chance": 71,
@@ -345,25 +345,25 @@
     "wbgt_peak": 25.6,
     "gust_hook_max": 8.8,
     "go_hours": {
-     "asphalt": 0,
-     "concrete": 3,
+     "concrete": 5,
+     "asphalt": 2,
      "crane": 6,
      "height": 6,
-     "coatings": 3,
+     "coatings": 4,
      "labour": 8,
      "earthworks": 8
     }
    },
    "rows": [
     {
-     "trade": "Asphalt & surfacing",
-     "status": "STOP",
-     "label": "STOP"
-    },
-    {
      "trade": "Concrete pour",
      "status": "LIMITED",
-     "label": "go 08-11 h only"
+     "label": "go 08-12 h, 16-17 h only"
+    },
+    {
+     "trade": "Asphalt & surfacing",
+     "status": "LIMITED",
+     "label": "go 11-12 h, 16-17 h only"
     },
     {
      "trade": "Crane lifts",
@@ -378,7 +378,7 @@
     {
      "trade": "Painting & coatings",
      "status": "LIMITED",
-     "label": "go 10-13 h only"
+     "label": "go 10-13 h, 16-17 h only"
     },
     {
      "trade": "Outdoor labour",
@@ -394,7 +394,7 @@
    "outlook": [
     {
      "day": "Wednesday 25 November",
-     "headline": "Storms possible from 14:00: do exposed work in the morning."
+     "headline": "Storms possible from 11:00: do exposed work in the morning."
     },
     {
      "day": "Thursday 26 November",
@@ -414,13 +414,13 @@
    "lat": 2.7724,
    "lon": 32.2881,
    "slug": "gulu",
-   "issued": "2026-11-24 05:36",
+   "issued": "2026-11-24 06:43",
    "day": "Tuesday 24 November",
    "headline": "Pour concrete 08-11 h; fast drying limits the rest of the day.",
    "worst": "LIMITED",
    "facts": {
     "rain_mm": 0.8,
-    "rain_chance": 32,
+    "rain_chance": 48,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 26.7,
@@ -495,13 +495,13 @@
    "lat": 3.0201,
    "lon": 30.9111,
    "slug": "arua",
-   "issued": "2026-11-24 05:36",
+   "issued": "2026-11-24 06:43",
    "day": "Tuesday 24 November",
    "headline": "Pour concrete 08-11 h; fast drying limits the rest of the day.",
    "worst": "LIMITED",
    "facts": {
     "rain_mm": 1.7,
-    "rain_chance": 39,
+    "rain_chance": 41,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 25.7,
@@ -576,21 +576,21 @@
    "lat": -1.2864,
    "lon": 36.8172,
    "slug": "nairobi",
-   "issued": "2026-11-24 05:30",
+   "issued": "2026-11-24 06:45",
    "day": "Tuesday 24 November",
-   "headline": "Wet day (7 mm): no concrete or asphalt window.",
+   "headline": "Storms possible from 14:00: do exposed work in the morning.",
    "worst": "STOP",
    "facts": {
     "rain_mm": 6.9,
-    "rain_chance": 94,
+    "rain_chance": 100,
     "storm": "possible",
     "storm_from": "14",
     "wbgt_peak": 22.5,
     "gust_hook_max": 12.6,
     "go_hours": {
-     "concrete": 0,
      "asphalt": 0,
      "coatings": 0,
+     "concrete": 1,
      "crane": 7,
      "height": 1,
      "earthworks": 1,
@@ -598,11 +598,6 @@
     }
    },
    "rows": [
-    {
-     "trade": "Concrete pour",
-     "status": "STOP",
-     "label": "STOP"
-    },
     {
      "trade": "Asphalt & surfacing",
      "status": "STOP",
@@ -612,6 +607,11 @@
      "trade": "Painting & coatings",
      "status": "STOP",
      "label": "STOP"
+    },
+    {
+     "trade": "Concrete pour",
+     "status": "LIMITED",
+     "label": "go 08-09 h only"
     },
     {
      "trade": "Crane lifts",
@@ -637,7 +637,7 @@
    "outlook": [
     {
      "day": "Wednesday 25 November",
-     "headline": "Storms likely from 16:00: finish lifts, roof and asphalt work before then."
+     "headline": "Wet day (5 mm): no concrete or asphalt window."
     },
     {
      "day": "Thursday 26 November",
@@ -657,23 +657,23 @@
    "lat": -26.2041,
    "lon": 28.0473,
    "slug": "johannesburg",
-   "issued": "2026-11-24 04:36",
+   "issued": "2026-11-24 05:43",
    "day": "Tuesday 24 November",
-   "headline": "Storms possible from 11:00: do exposed work in the morning.",
+   "headline": "Storms likely from 11:00: finish lifts, roof and asphalt work before then.",
    "worst": "STOP",
    "facts": {
     "rain_mm": 5.4,
-    "rain_chance": 86,
-    "storm": "possible",
+    "rain_chance": 95,
+    "storm": "likely",
     "storm_from": "11",
     "wbgt_peak": 23.6,
     "gust_hook_max": 17.1,
     "go_hours": {
      "asphalt": 0,
-     "concrete": 2,
-     "crane": 4,
-     "height": 4,
-     "coatings": 2,
+     "concrete": 1,
+     "crane": 3,
+     "height": 3,
+     "coatings": 1,
      "earthworks": 0,
      "labour": 9
     }
@@ -687,22 +687,22 @@
     {
      "trade": "Concrete pour",
      "status": "LIMITED",
-     "label": "go 07-09 h only"
+     "label": "go 07-08 h only"
     },
     {
      "trade": "Crane lifts",
      "status": "LIMITED",
-     "label": "go 07-11 h only"
+     "label": "go 07-10 h only"
     },
     {
      "trade": "Work at height",
      "status": "LIMITED",
-     "label": "go 07-11 h only"
+     "label": "go 07-10 h only"
     },
     {
      "trade": "Painting & coatings",
      "status": "LIMITED",
-     "label": "go 09-11 h only"
+     "label": "go 09-10 h only"
     },
     {
      "trade": "Earthworks",
@@ -722,7 +722,7 @@
     },
     {
      "day": "Thursday 26 November",
-     "headline": "Some limits today: check your trade below."
+     "headline": "Storms possible from 16:00: do exposed work in the morning."
     },
     {
      "day": "Friday 27 November",
@@ -738,7 +738,7 @@
    "lat": 24.7136,
    "lon": 46.6753,
    "slug": "riyadh",
-   "issued": "2026-11-24 05:30",
+   "issued": "2026-11-24 06:43",
    "day": "Tuesday 24 November",
    "headline": "Pour concrete 07-12 h; fast drying limits the rest of the day.",
    "worst": "LIMITED",
@@ -819,7 +819,7 @@
    "lat": -1.9441,
    "lon": 30.0619,
    "slug": "kigali",
-   "issued": "2026-11-24 04:30",
+   "issued": "2026-11-24 05:45",
    "day": "Tuesday 24 November",
    "headline": "Storms likely from 15:00: finish lifts, roof and asphalt work before then.",
    "worst": "STOP",
@@ -900,13 +900,13 @@
    "lat": -6.7924,
    "lon": 39.2083,
    "slug": "dar-es-salaam",
-   "issued": "2026-11-24 05:30",
+   "issued": "2026-11-24 06:45",
    "day": "Tuesday 24 November",
    "headline": "Storms possible from 08:00: do exposed work in the morning.",
    "worst": "STOP",
    "facts": {
     "rain_mm": 1.5,
-    "rain_chance": 90,
+    "rain_chance": 89,
     "storm": "possible",
     "storm_from": "08",
     "wbgt_peak": 29.4,
@@ -914,10 +914,10 @@
     "go_hours": {
      "concrete": 0,
      "labour": 2,
-     "asphalt": 2,
-     "crane": 2,
-     "height": 2,
-     "coatings": 2,
+     "asphalt": 3,
+     "crane": 3,
+     "height": 3,
+     "coatings": 3,
      "earthworks": 8
     }
    },
@@ -935,22 +935,22 @@
     {
      "trade": "Asphalt & surfacing",
      "status": "LIMITED",
-     "label": "go 15-17 h only"
+     "label": "go 14-17 h only"
     },
     {
      "trade": "Crane lifts",
      "status": "LIMITED",
-     "label": "go 15-17 h only"
+     "label": "go 14-17 h only"
     },
     {
      "trade": "Work at height",
      "status": "LIMITED",
-     "label": "go 15-17 h only"
+     "label": "go 14-17 h only"
     },
     {
      "trade": "Painting & coatings",
      "status": "LIMITED",
-     "label": "go 15-17 h only"
+     "label": "go 14-17 h only"
     },
     {
      "trade": "Earthworks",
@@ -961,11 +961,11 @@
    "outlook": [
     {
      "day": "Wednesday 25 November",
-     "headline": "Storms possible from 09:00: do exposed work in the morning."
+     "headline": "Storms possible from 08:00: do exposed work in the morning."
     },
     {
      "day": "Thursday 26 November",
-     "headline": "Pour concrete 08-13 h; fast drying limits the rest of the day."
+     "headline": "Storms possible from 08:00: do exposed work in the morning."
     },
     {
      "day": "Friday 27 November",
@@ -981,7 +981,7 @@
    "lat": -6.163,
    "lon": 35.7516,
    "slug": "dodoma",
-   "issued": "2026-11-24 05:30",
+   "issued": "2026-11-24 06:45",
    "day": "Tuesday 24 November",
    "headline": "Pour concrete 08-10 h; fast drying limits the rest of the day.",
    "worst": "LIMITED",
@@ -1062,20 +1062,20 @@
    "lat": -3.3869,
    "lon": 36.683,
    "slug": "arusha",
-   "issued": "2026-11-24 05:31",
+   "issued": "2026-11-24 06:45",
    "day": "Tuesday 24 November",
-   "headline": "Pour concrete 08-12 h; fast drying limits the rest of the day.",
+   "headline": "Pour concrete 08-11 h; fast drying limits the rest of the day.",
    "worst": "LIMITED",
    "facts": {
     "rain_mm": 1.4,
-    "rain_chance": 25,
+    "rain_chance": 51,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 23.3,
     "gust_hook_max": 12.4,
     "go_hours": {
-     "concrete": 4,
-     "asphalt": 5,
+     "concrete": 3,
+     "asphalt": 3,
      "height": 5,
      "coatings": 3,
      "earthworks": 6,
@@ -1087,12 +1087,12 @@
     {
      "trade": "Concrete pour",
      "status": "LIMITED",
-     "label": "go 08-12 h only"
+     "label": "go 08-11 h only"
     },
     {
      "trade": "Asphalt & surfacing",
      "status": "LIMITED",
-     "label": "go 08-13 h only"
+     "label": "go 08-11 h only"
     },
     {
      "trade": "Work at height",
@@ -1127,7 +1127,7 @@
     },
     {
      "day": "Thursday 26 November",
-     "headline": "Pour concrete 08-13 h; rain limits the rest of the day."
+     "headline": "Storms possible from 15:00: do exposed work in the morning."
     },
     {
      "day": "Friday 27 November",
@@ -1143,13 +1143,13 @@
    "lat": -2.5164,
    "lon": 32.9175,
    "slug": "mwanza",
-   "issued": "2026-11-24 05:31",
+   "issued": "2026-11-24 06:45",
    "day": "Tuesday 24 November",
    "headline": "Pour concrete 08-13 h; rain limits the rest of the day.",
    "worst": "LIMITED",
    "facts": {
     "rain_mm": 4.3,
-    "rain_chance": 73,
+    "rain_chance": 59,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 26.6,
@@ -1224,7 +1224,7 @@
    "lat": 25.2048,
    "lon": 55.2708,
    "slug": "dubai",
-   "issued": "2026-11-24 06:30",
+   "issued": "2026-11-24 07:43",
    "day": "Tuesday 24 November",
    "headline": "Pour concrete 07-12 h; fast drying limits the rest of the day.",
    "worst": "LIMITED",
@@ -1233,8 +1233,8 @@
     "rain_chance": 0,
     "storm": "low",
     "storm_from": "",
-    "wbgt_peak": 26.6,
-    "gust_hook_max": 7.5,
+    "wbgt_peak": 26.4,
+    "gust_hook_max": 8.0,
     "go_hours": {
      "concrete": 5,
      "coatings": 8,
@@ -1305,7 +1305,7 @@
    "lat": 24.4539,
    "lon": 54.3773,
    "slug": "abu-dhabi",
-   "issued": "2026-11-24 06:30",
+   "issued": "2026-11-24 07:43",
    "day": "Tuesday 24 November",
    "headline": "Pour concrete 07-10 h; fast drying limits the rest of the day.",
    "worst": "LIMITED",
@@ -1386,7 +1386,7 @@
    "lat": 25.2854,
    "lon": 51.531,
    "slug": "doha",
-   "issued": "2026-11-24 05:30",
+   "issued": "2026-11-24 06:43",
    "day": "Tuesday 24 November",
    "headline": "Pour concrete 07-12 h; fast drying limits the rest of the day.",
    "worst": "LIMITED",
@@ -1395,8 +1395,8 @@
     "rain_chance": 0,
     "storm": "low",
     "storm_from": "",
-    "wbgt_peak": 28.3,
-    "gust_hook_max": 7.8,
+    "wbgt_peak": 28.5,
+    "gust_hook_max": 7.6,
     "go_hours": {
      "labour": 8,
      "concrete": 6,
@@ -1467,7 +1467,7 @@
    "lat": 29.3759,
    "lon": 47.9774,
    "slug": "kuwait-city",
-   "issued": "2026-11-24 05:31",
+   "issued": "2026-11-24 06:43",
    "day": "Tuesday 24 November",
    "headline": "Pour concrete 07-12 h; fast drying limits the rest of the day.",
    "worst": "LIMITED",
@@ -1476,11 +1476,11 @@
     "rain_chance": 0,
     "storm": "low",
     "storm_from": "",
-    "wbgt_peak": 26.4,
-    "gust_hook_max": 6.1,
+    "wbgt_peak": 26.7,
+    "gust_hook_max": 6.2,
     "go_hours": {
      "concrete": 8,
-     "coatings": 8,
+     "coatings": 7,
      "labour": 9,
      "asphalt": 9,
      "crane": 9,
@@ -1497,7 +1497,7 @@
     {
      "trade": "Painting & coatings",
      "status": "LIMITED",
-     "label": "go 08-12 h, 13-17 h only"
+     "label": "go 09-12 h, 13-17 h only"
     },
     {
      "trade": "Outdoor labour",
@@ -1528,7 +1528,7 @@
    "outlook": [
     {
      "day": "Wednesday 25 November",
-     "headline": "Pour concrete 07-12 h; fast drying limits the rest of the day."
+     "headline": "Some limits today: check your trade below."
     },
     {
      "day": "Thursday 26 November",
@@ -1536,7 +1536,7 @@
     },
     {
      "day": "Friday 27 November",
-     "headline": "Pour concrete 07-09 h; fast drying limits the rest of the day."
+     "headline": "Pour concrete 07-10 h; fast drying limits the rest of the day."
     }
    ]
   },
@@ -1548,7 +1548,7 @@
    "lat": 23.588,
    "lon": 58.3829,
    "slug": "muscat",
-   "issued": "2026-11-24 06:31",
+   "issued": "2026-11-24 07:43",
    "day": "Tuesday 24 November",
    "headline": "Pour concrete 07-12 h; fast drying limits the rest of the day.",
    "worst": "LIMITED",
@@ -1629,7 +1629,7 @@
    "lat": 26.2285,
    "lon": 50.586,
    "slug": "manama",
-   "issued": "2026-11-24 05:31",
+   "issued": "2026-11-24 06:43",
    "day": "Tuesday 24 November",
    "headline": "Some limits today: check your trade below.",
    "worst": "LIMITED",
@@ -1638,10 +1638,10 @@
     "rain_chance": 0,
     "storm": "low",
     "storm_from": "",
-    "wbgt_peak": 27.8,
-    "gust_hook_max": 5.5,
+    "wbgt_peak": 28.0,
+    "gust_hook_max": 5.3,
     "go_hours": {
-     "coatings": 7,
+     "coatings": 6,
      "labour": 9,
      "concrete": 9,
      "asphalt": 9,
@@ -1654,7 +1654,7 @@
     {
      "trade": "Painting & coatings",
      "status": "LIMITED",
-     "label": "go 09-12 h, 13-17 h only"
+     "label": "go 09-12 h, 13-16 h only"
     },
     {
      "trade": "Outdoor labour",
@@ -1710,7 +1710,7 @@
    "lat": 21.4858,
    "lon": 39.1925,
    "slug": "jeddah",
-   "issued": "2026-11-24 05:31",
+   "issued": "2026-11-24 06:43",
    "day": "Tuesday 24 November",
    "headline": "Pour concrete 07-12 h; fast drying limits the rest of the day.",
    "worst": "LIMITED",
@@ -1791,7 +1791,7 @@
    "lat": 26.4207,
    "lon": 50.0888,
    "slug": "dammam",
-   "issued": "2026-11-24 05:31",
+   "issued": "2026-11-24 06:44",
    "day": "Tuesday 24 November",
    "headline": "Some limits today: check your trade below.",
    "worst": "LIMITED",
@@ -1800,8 +1800,8 @@
     "rain_chance": 0,
     "storm": "low",
     "storm_from": "",
-    "wbgt_peak": 27.7,
-    "gust_hook_max": 7.0,
+    "wbgt_peak": 27.9,
+    "gust_hook_max": 7.7,
     "go_hours": {
      "crane": 6,
      "height": 6,
@@ -1852,7 +1852,7 @@
    "outlook": [
     {
      "day": "Wednesday 25 November",
-     "headline": "Pour concrete 07-12 h; fast drying limits the rest of the day."
+     "headline": "Some limits today: check your trade below."
     },
     {
      "day": "Thursday 26 November",
@@ -1872,33 +1872,28 @@
    "lat": 6.5244,
    "lon": 3.3792,
    "slug": "lagos",
-   "issued": "2026-11-24 03:36",
+   "issued": "2026-11-24 04:43",
    "day": "Tuesday 24 November",
    "headline": "Heat stress: stop moderate work in the sun 10-13 h.",
-   "worst": "STOP",
+   "worst": "LIMITED",
    "facts": {
     "rain_mm": 0.8,
-    "rain_chance": 95,
+    "rain_chance": 90,
     "storm": "possible",
-    "storm_from": "12",
+    "storm_from": "14",
     "wbgt_peak": 31.7,
     "gust_hook_max": 8.2,
     "go_hours": {
-     "coatings": 0,
      "labour": 1,
-     "concrete": 2,
+     "concrete": 3,
      "asphalt": 2,
-     "crane": 4,
-     "height": 4,
+     "crane": 5,
+     "height": 5,
+     "coatings": 1,
      "earthworks": 8
     }
    },
    "rows": [
-    {
-     "trade": "Painting & coatings",
-     "status": "STOP",
-     "label": "STOP"
-    },
     {
      "trade": "Outdoor labour",
      "status": "LIMITED",
@@ -1907,7 +1902,7 @@
     {
      "trade": "Concrete pour",
      "status": "LIMITED",
-     "label": "go 08-10 h only"
+     "label": "go 08-11 h only"
     },
     {
      "trade": "Asphalt & surfacing",
@@ -1917,12 +1912,17 @@
     {
      "trade": "Crane lifts",
      "status": "LIMITED",
-     "label": "go 08-12 h only"
+     "label": "go 08-13 h only"
     },
     {
      "trade": "Work at height",
      "status": "LIMITED",
-     "label": "go 08-12 h only"
+     "label": "go 08-13 h only"
+    },
+    {
+     "trade": "Painting & coatings",
+     "status": "LIMITED",
+     "label": "go 12-13 h only"
     },
     {
      "trade": "Earthworks",
@@ -1933,7 +1933,7 @@
    "outlook": [
     {
      "day": "Wednesday 25 November",
-     "headline": "Storms possible from 12:00: do exposed work in the morning."
+     "headline": "Storms possible from 11:00: do exposed work in the morning."
     },
     {
      "day": "Thursday 26 November",
@@ -1953,7 +1953,7 @@
    "lat": 9.0765,
    "lon": 7.3986,
    "slug": "abuja",
-   "issued": "2026-11-24 03:36",
+   "issued": "2026-11-24 04:43",
    "day": "Tuesday 24 November",
    "headline": "Pour concrete 08-09 h; fast drying limits the rest of the day.",
    "worst": "LIMITED",
@@ -2034,13 +2034,13 @@
    "lat": 5.6037,
    "lon": -0.187,
    "slug": "accra",
-   "issued": "2026-11-24 02:36",
+   "issued": "2026-11-24 03:43",
    "day": "Tuesday 24 November",
    "headline": "Storms possible from 14:00: do exposed work in the morning.",
    "worst": "LIMITED",
    "facts": {
     "rain_mm": 1.9,
-    "rain_chance": 100,
+    "rain_chance": 96,
     "storm": "possible",
     "storm_from": "14",
     "wbgt_peak": 30.6,
@@ -2095,7 +2095,7 @@
    "outlook": [
     {
      "day": "Wednesday 25 November",
-     "headline": "Storms possible from 14:00: do exposed work in the morning."
+     "headline": "Storms possible from 12:00: do exposed work in the morning."
     },
     {
      "day": "Thursday 26 November",
@@ -2115,7 +2115,7 @@
    "lat": 5.36,
    "lon": -4.0083,
    "slug": "abidjan",
-   "issued": "2026-11-24 02:36",
+   "issued": "2026-11-24 03:43",
    "day": "Tuesday 24 November",
    "headline": "Storms likely from 14:00: finish lifts, roof and asphalt work before then.",
    "worst": "LIMITED",
@@ -2180,7 +2180,7 @@
     },
     {
      "day": "Thursday 26 November",
-     "headline": "Storms possible from 14:00: do exposed work in the morning."
+     "headline": "Storms possible from 12:00: do exposed work in the morning."
     },
     {
      "day": "Friday 27 November",
@@ -2196,7 +2196,7 @@
    "lat": 14.7167,
    "lon": -17.4677,
    "slug": "dakar",
-   "issued": "2026-11-24 02:36",
+   "issued": "2026-11-24 03:43",
    "day": "Tuesday 24 November",
    "headline": "Pour concrete 08-09 h; fast drying limits the rest of the day.",
    "worst": "LIMITED",
@@ -2277,13 +2277,13 @@
    "lat": -33.9249,
    "lon": 18.4241,
    "slug": "cape-town",
-   "issued": "2026-11-24 04:36",
+   "issued": "2026-11-24 05:43",
    "day": "Tuesday 24 November",
    "headline": "Pour concrete 07-12 h; fast drying limits the rest of the day.",
    "worst": "STOP",
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 13,
+    "rain_chance": 15,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 19.9,
@@ -2358,13 +2358,13 @@
    "lat": -29.8587,
    "lon": 31.0218,
    "slug": "durban",
-   "issued": "2026-11-24 04:36",
+   "issued": "2026-11-24 05:43",
    "day": "Tuesday 24 November",
    "headline": "Pour concrete 07-10 h; fast drying limits the rest of the day.",
    "worst": "LIMITED",
    "facts": {
     "rain_mm": 9.1,
-    "rain_chance": 96,
+    "rain_chance": 100,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 29.7,
@@ -2372,10 +2372,10 @@
     "go_hours": {
      "labour": 8,
      "concrete": 3,
-     "asphalt": 4,
+     "asphalt": 5,
      "crane": 3,
      "height": 3,
-     "coatings": 4,
+     "coatings": 6,
      "earthworks": 0
     }
    },
@@ -2393,7 +2393,7 @@
     {
      "trade": "Asphalt & surfacing",
      "status": "LIMITED",
-     "label": "go 08-12 h only"
+     "label": "go 08-12 h, 16-17 h only"
     },
     {
      "trade": "Crane lifts",
@@ -2408,7 +2408,7 @@
     {
      "trade": "Painting & coatings",
      "status": "LIMITED",
-     "label": "go 10-12 h, 13-15 h only"
+     "label": "go 10-12 h, 13-17 h only"
     },
     {
      "trade": "Earthworks",
@@ -2439,13 +2439,13 @@
    "lat": -15.3875,
    "lon": 28.3228,
    "slug": "lusaka",
-   "issued": "2026-11-24 04:36",
+   "issued": "2026-11-24 05:43",
    "day": "Tuesday 24 November",
    "headline": "Pour concrete 08-10 h; fast drying limits the rest of the day.",
    "worst": "LIMITED",
    "facts": {
     "rain_mm": 1.1,
-    "rain_chance": 63,
+    "rain_chance": 50,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 27.4,
@@ -2500,7 +2500,7 @@
    "outlook": [
     {
      "day": "Wednesday 25 November",
-     "headline": "Storms possible from 16:00: do exposed work in the morning."
+     "headline": "Storms possible from 15:00: do exposed work in the morning."
     },
     {
      "day": "Thursday 26 November",
@@ -2520,13 +2520,13 @@
    "lat": -25.9692,
    "lon": 32.5732,
    "slug": "maputo",
-   "issued": "2026-11-24 04:36",
+   "issued": "2026-11-24 05:44",
    "day": "Tuesday 24 November",
    "headline": "Heat stress: stop moderate work in the sun 14-15 h.",
    "worst": "STOP",
    "facts": {
     "rain_mm": 8.8,
-    "rain_chance": 95,
+    "rain_chance": 100,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 31.8,
@@ -2601,24 +2601,24 @@
    "lat": -19.8436,
    "lon": 34.8389,
    "slug": "beira",
-   "issued": "2026-11-24 04:36",
+   "issued": "2026-11-24 05:44",
    "day": "Tuesday 24 November",
    "headline": "Heat stress: stop moderate work in the sun 09-13 h.",
    "worst": "STOP",
    "facts": {
     "rain_mm": 0.1,
-    "rain_chance": 53,
-    "storm": "possible",
-    "storm_from": "14",
+    "rain_chance": 45,
+    "storm": "low",
+    "storm_from": "",
     "wbgt_peak": 31.5,
     "gust_hook_max": 14.6,
     "go_hours": {
      "labour": 0,
      "concrete": 3,
-     "asphalt": 4,
-     "crane": 7,
+     "asphalt": 5,
      "height": 5,
-     "coatings": 7,
+     "crane": 8,
+     "coatings": 8,
      "earthworks": 8
     }
    },
@@ -2636,12 +2636,7 @@
     {
      "trade": "Asphalt & surfacing",
      "status": "LIMITED",
-     "label": "go 08-12 h only"
-    },
-    {
-     "trade": "Crane lifts",
-     "status": "LIMITED",
-     "label": "go 08-13 h, 15-17 h only"
+     "label": "go 08-13 h only"
     },
     {
      "trade": "Work at height",
@@ -2649,9 +2644,14 @@
      "label": "go 08-13 h only"
     },
     {
+     "trade": "Crane lifts",
+     "status": "GO",
+     "label": "no limits"
+    },
+    {
      "trade": "Painting & coatings",
-     "status": "LIMITED",
-     "label": "go 08-13 h, 15-17 h only"
+     "status": "GO",
+     "label": "no limits"
     },
     {
      "trade": "Earthworks",
@@ -2666,7 +2666,7 @@
     },
     {
      "day": "Thursday 26 November",
-     "headline": "Wet day (0 mm): no concrete or asphalt window."
+     "headline": "Storms possible from 09:00: do exposed work in the morning."
     },
     {
      "day": "Friday 27 November",
@@ -2682,13 +2682,13 @@
    "lat": -24.6282,
    "lon": 25.9231,
    "slug": "gaborone",
-   "issued": "2026-11-24 04:36",
+   "issued": "2026-11-24 05:44",
    "day": "Tuesday 24 November",
    "headline": "Storms possible from 11:00: do exposed work in the morning.",
    "worst": "LIMITED",
    "facts": {
     "rain_mm": 0.5,
-    "rain_chance": 52,
+    "rain_chance": 53,
     "storm": "possible",
     "storm_from": "11",
     "wbgt_peak": 28.2,

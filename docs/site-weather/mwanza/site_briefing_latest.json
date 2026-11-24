@@ -2,7 +2,7 @@
  "site": "Mwanza",
  "lat": -2.5164,
  "lon": 32.9175,
- "issued": "2026-11-24 05:31",
+ "issued": "2026-11-24 06:45",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -330,7 +330,7 @@
    ],
    "facts": {
     "rain_mm": 4.3,
-    "rain_chance": 73,
+    "rain_chance": 59,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 26.6,
@@ -402,9 +402,9 @@
      "key": "concrete",
      "trade": "Concrete pour",
      "status": "LIMITED",
-     "label": "go 11-13 h, 14-15 h, 16-17 h only",
-     "go_hours": 4,
-     "windows": "11-13 h, 14-15 h, 16-17 h",
+     "label": "go 10-13 h, 14-15 h, 16-17 h only",
+     "go_hours": 5,
+     "windows": "10-13 h, 14-15 h, 16-17 h",
      "causes": [
       "rain",
       "storms"
@@ -421,7 +421,7 @@
       ],
       [
        10,
-       1
+       0
       ],
       [
        11,
@@ -449,9 +449,9 @@
      "key": "crane",
      "trade": "Crane lifts",
      "status": "LIMITED",
-     "label": "go 11-13 h, 14-17 h only",
-     "go_hours": 5,
-     "windows": "11-13 h, 14-17 h",
+     "label": "go 10-13 h, 14-17 h only",
+     "go_hours": 6,
+     "windows": "10-13 h, 14-17 h",
      "causes": [
       "storms"
      ],
@@ -467,7 +467,7 @@
       ],
       [
        10,
-       1
+       0
       ],
       [
        11,
@@ -495,9 +495,9 @@
      "key": "height",
      "trade": "Work at height",
      "status": "LIMITED",
-     "label": "go 11-12 h, 14-15 h only",
-     "go_hours": 2,
-     "windows": "11-12 h, 14-15 h",
+     "label": "go 10-12 h, 14-15 h only",
+     "go_hours": 3,
+     "windows": "10-12 h, 14-15 h",
      "causes": [
       "rain",
       "storms"
@@ -514,7 +514,7 @@
       ],
       [
        10,
-       1
+       0
       ],
       [
        11,
@@ -546,8 +546,8 @@
      "go_hours": 1,
      "windows": "11-12 h",
      "causes": [
-      "rain",
-      "humidity or dew"
+      "humidity or dew",
+      "rain"
      ],
      "action": "Check the surface is 3 \u00b0C above dew point.",
      "hours": [
@@ -682,16 +682,16 @@
    ],
    "facts": {
     "rain_mm": 9.5,
-    "rain_chance": 72,
+    "rain_chance": 78,
     "storm": "possible",
     "storm_from": "08",
     "wbgt_peak": 26.8,
     "gust_hook_max": 11.8,
     "go_hours": {
      "asphalt": 0,
-     "concrete": 4,
-     "crane": 5,
-     "height": 2,
+     "concrete": 5,
+     "crane": 6,
+     "height": 3,
      "coatings": 1,
      "earthworks": 0,
      "labour": 8
@@ -811,11 +811,11 @@
      "hours": [
       [
        8,
-       2
+       1
       ],
       [
        9,
-       2
+       1
       ],
       [
        10,
@@ -1381,7 +1381,7 @@
    ],
    "facts": {
     "rain_mm": 1.3,
-    "rain_chance": 47,
+    "rain_chance": 40,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 26.3,
@@ -1718,7 +1718,7 @@
    ],
    "facts": {
     "rain_mm": 1.1,
-    "rain_chance": 35,
+    "rain_chance": 40,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 27.4,
@@ -2057,7 +2057,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 9.3,
-    "rain_chance": 55,
+    "rain_chance": 46,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 27.6,

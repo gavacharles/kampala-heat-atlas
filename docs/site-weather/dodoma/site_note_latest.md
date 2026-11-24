@@ -1,6 +1,6 @@
 # Site note · Dodoma
 
-Issued Tuesday 24 November 2026, 05:30 (Africa/Dar_es_Salaam). Site -6.1630, 35.7516. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Tuesday 24 November 2026, 06:45 (Africa/Dar_es_Salaam). Site -6.1630, 35.7516. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Tuesday 24 November
 
@@ -18,7 +18,7 @@ Rain 0 mm (chance up to 31 %) · storms low · WBGT peak 26.7 °C · gusts 16 m/
 
 **Pour concrete 08-09 h; fast drying limits the rest of the day.**
 
-Rain 1 mm (chance up to 20 %) · storms low · WBGT peak 26.0 °C · gusts 16 m/s at hook height
+Rain 1 mm (chance up to 39 %) · storms low · WBGT peak 26.0 °C · gusts 16 m/s at hook height
 
 - **Concrete pour — go 08-09 h only.** Limited by fast drying. Curing cover and windbreaks ready.
 - **Work at height — go with care.** Limited by wind. Work at height with care: watch gusts and the sky.
@@ -29,7 +29,7 @@ Rain 1 mm (chance up to 20 %) · storms low · WBGT peak 26.0 °C · gusts 16 m/
 
 **Pour concrete 08-09 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 45 %) · storms low · WBGT peak 26.1 °C · gusts 16 m/s at hook height
+Rain 0 mm (chance up to 37 %) · storms low · WBGT peak 26.1 °C · gusts 16 m/s at hook height
 
 - **Concrete pour — go 08-09 h only.** Limited by fast drying. Curing cover and windbreaks ready.
 - **Work at height — go with care.** Limited by wind. Work at height with care: watch gusts and the sky.
@@ -38,7 +38,7 @@ Rain 0 mm (chance up to 45 %) · storms low · WBGT peak 26.1 °C · gusts 16 m/
 
 ## Outlook
 
-- **Friday 27 November**: Pour concrete 08-09 h; fast drying limits the rest of the day. Rain 0 mm (16 %); concrete 1 h go.
+- **Friday 27 November**: Pour concrete 08-09 h; fast drying limits the rest of the day. Rain 0 mm (14 %); concrete 1 h go.
 - **Saturday 28 November**: Pour concrete 08-09 h; fast drying limits the rest of the day. Rain 0 mm (18 %); concrete 1 h go.
 - **Sunday 29 November**: Pour concrete 08-10 h; fast drying limits the rest of the day. Rain 0 mm (12 %); concrete 2 h go.
 - **Monday 30 November**: Pour concrete 08-13 h; fast drying limits the rest of the day. Rain 0 mm (18 %); concrete 5 h go.

@@ -1,12 +1,12 @@
 # Site note · Cape Town
 
-Issued Tuesday 24 November 2026, 04:36 (Africa/Johannesburg). Site -33.9249, 18.4241. Working hours 07:00-17:00, lunch break excluded (9 h).
+Issued Tuesday 24 November 2026, 05:43 (Africa/Johannesburg). Site -33.9249, 18.4241. Working hours 07:00-17:00, lunch break excluded (9 h).
 
 ## Tuesday 24 November
 
 **Pour concrete 07-12 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 13 %) · storms low · WBGT peak 19.9 °C · gusts 22 m/s at hook height
+Rain 0 mm (chance up to 15 %) · storms low · WBGT peak 19.9 °C · gusts 22 m/s at hook height
 
 - **Work at height — STOP.** Limited by wind. Keep off roofs and scaffolds.
 - **Concrete pour — go 07-12 h only.** Limited by fast drying. Curing cover and windbreaks ready.
@@ -41,9 +41,9 @@ Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 24.2 °C · gusts 20 m/s
 
 ## Outlook
 
-- **Friday 27 November**: Pour concrete 07-12 h; rain limits the rest of the day. Rain 2 mm (12 %); concrete 8 h go.
-- **Saturday 28 November**: Some limits today: check your trade below. Rain 0 mm (24 %); concrete 9 h go.
-- **Sunday 29 November**: Some limits today: check your trade below. Rain 2 mm (25 %); concrete 9 h go.
+- **Friday 27 November**: Pour concrete 07-12 h; rain limits the rest of the day. Rain 2 mm (13 %); concrete 8 h go.
+- **Saturday 28 November**: Some limits today: check your trade below. Rain 0 mm (27 %); concrete 9 h go.
+- **Sunday 29 November**: Some limits today: check your trade below. Rain 2 mm (24 %); concrete 9 h go.
 - **Monday 30 November**: Pour concrete 07-12 h; fast drying limits the rest of the day. Rain 0 mm (3 %); concrete 5 h go.
 
 *Screening guidance from a weather forecast, not an instruction. The contract specification, the crane manufacturer's limits and the site health-and-safety plan take precedence; check conditions on site (WBGT meter, anemometer, the 30-30 rule for lightning) before each activity. Thresholds used: thresholds.json.*

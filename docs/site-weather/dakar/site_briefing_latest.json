@@ -2,7 +2,7 @@
  "site": "Dakar",
  "lat": 14.7167,
  "lon": -17.4677,
- "issued": "2026-11-24 02:36",
+ "issued": "2026-11-24 03:43",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -661,7 +661,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 0,
+    "rain_chance": 2,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 27.9,
@@ -1004,7 +1004,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 8.5,
-    "rain_chance": 8,
+    "rain_chance": 12,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 26.1,
@@ -1339,7 +1339,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 2.8,
-    "rain_chance": 36,
+    "rain_chance": 29,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 25.0,
@@ -1672,7 +1672,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 24,
+    "rain_chance": 31,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 24.4,
@@ -2005,7 +2005,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 16,
+    "rain_chance": 13,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 25.5,

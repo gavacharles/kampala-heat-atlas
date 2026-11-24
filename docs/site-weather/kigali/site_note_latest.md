@@ -1,6 +1,6 @@
 # Site note · Kigali
 
-Issued Tuesday 24 November 2026, 04:30 (Africa/Kigali). Site -1.9441, 30.0619. Working hours 07:00-17:00, lunch break excluded (9 h).
+Issued Tuesday 24 November 2026, 05:45 (Africa/Kigali). Site -1.9441, 30.0619. Working hours 07:00-17:00, lunch break excluded (9 h).
 
 ## Tuesday 24 November
 
@@ -21,7 +21,7 @@ Rain 4 mm (chance up to 100 %) · storms likely · WBGT peak 24.8 °C · gusts 1
 
 **Storms possible from 13:00: do exposed work in the morning.**
 
-Rain 2 mm (chance up to 96 %) · storms possible · WBGT peak 25.1 °C · gusts 10 m/s at hook height
+Rain 2 mm (chance up to 100 %) · storms possible · WBGT peak 25.1 °C · gusts 10 m/s at hook height
 
 - **Concrete pour — go 07-11 h only.** Limited by rain, storms. Keep covers ready outside this window.
 - **Asphalt & surfacing — go 07-11 h only.** Limited by rain or wet surface, storms. Never lay or spray on a wet surface.
@@ -36,7 +36,7 @@ Rain 2 mm (chance up to 96 %) · storms possible · WBGT peak 25.1 °C · gusts 
 
 **Storms likely from 14:00: finish lifts, roof and asphalt work before then.**
 
-Rain 4 mm (chance up to 99 %) · storms likely · WBGT peak 24.9 °C · gusts 9 m/s at hook height
+Rain 4 mm (chance up to 94 %) · storms likely · WBGT peak 24.9 °C · gusts 9 m/s at hook height
 
 - **Concrete pour — go 07-11 h only.** Limited by rain, storms. Keep covers ready outside this window.
 - **Asphalt & surfacing — go 07-11 h only.** Limited by rain or wet surface, storms. Never lay or spray on a wet surface.
@@ -49,9 +49,9 @@ Rain 4 mm (chance up to 99 %) · storms likely · WBGT peak 24.9 °C · gusts 9 
 
 ## Outlook
 
-- **Friday 27 November**: Storms likely from 14:00: finish lifts, roof and asphalt work before then. Rain 2 mm (97 %); concrete 3 h go.
-- **Saturday 28 November**: Storms likely from 13:00: finish lifts, roof and asphalt work before then. Rain 5 mm (97 %); concrete 3 h go.
-- **Sunday 29 November**: Storms likely from 15:00: finish lifts, roof and asphalt work before then. Rain 2 mm (87 %); concrete 4 h go.
+- **Friday 27 November**: Storms likely from 14:00: finish lifts, roof and asphalt work before then. Rain 2 mm (93 %); concrete 4 h go.
+- **Saturday 28 November**: Storms likely from 15:00: finish lifts, roof and asphalt work before then. Rain 5 mm (94 %); concrete 4 h go.
+- **Sunday 29 November**: Storms likely from 15:00: finish lifts, roof and asphalt work before then. Rain 2 mm (78 %); concrete 4 h go.
 - **Monday 30 November**: Some limits today: check your trade below. Rain 1 mm (48 %); concrete 9 h go.
 
 *Screening guidance from a weather forecast, not an instruction. The contract specification, the crane manufacturer's limits and the site health-and-safety plan take precedence; check conditions on site (WBGT meter, anemometer, the 30-30 rule for lightning) before each activity. Thresholds used: thresholds.json.*

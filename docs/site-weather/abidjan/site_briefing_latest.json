@@ -2,7 +2,7 @@
  "site": "Abidjan",
  "lat": 5.36,
  "lon": -4.0083,
- "issued": "2026-11-24 02:36",
+ "issued": "2026-11-24 03:43",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -83,7 +83,7 @@
       ],
       [
        11,
-       1
+       2
       ],
       [
        12,
@@ -693,7 +693,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 3.3,
-    "rain_chance": 99,
+    "rain_chance": 100,
     "storm": "likely",
     "storm_from": "16",
     "wbgt_peak": 30.7,
@@ -712,7 +712,7 @@
   {
    "date": "2026-11-26",
    "day": "Thursday 26 November",
-   "headline": "Storms possible from 14:00: do exposed work in the morning.",
+   "headline": "Storms possible from 12:00: do exposed work in the morning.",
    "rows": [
     {
      "key": "coatings",
@@ -811,9 +811,9 @@
      "key": "concrete",
      "trade": "Concrete pour",
      "status": "LIMITED",
-     "label": "go 08-11 h only",
-     "go_hours": 3,
-     "windows": "08-11 h",
+     "label": "go 08-10 h only",
+     "go_hours": 2,
+     "windows": "08-10 h",
      "causes": [
       "rain",
       "storms"
@@ -830,11 +830,11 @@
       ],
       [
        10,
-       0
+       1
       ],
       [
        11,
-       1
+       2
       ],
       [
        12,
@@ -905,9 +905,9 @@
      "key": "crane",
      "trade": "Crane lifts",
      "status": "LIMITED",
-     "label": "go 08-13 h only",
-     "go_hours": 5,
-     "windows": "08-13 h",
+     "label": "go 08-12 h only",
+     "go_hours": 4,
+     "windows": "08-12 h",
      "causes": [
       "storms"
      ],
@@ -931,7 +931,7 @@
       ],
       [
        12,
-       0
+       1
       ],
       [
        14,
@@ -1044,17 +1044,17 @@
    "extras": [],
    "facts": {
     "rain_mm": 3.1,
-    "rain_chance": 98,
+    "rain_chance": 92,
     "storm": "possible",
-    "storm_from": "14",
+    "storm_from": "12",
     "wbgt_peak": 29.7,
     "gust_hook_max": 10.8,
     "go_hours": {
      "coatings": 0,
      "labour": 2,
-     "concrete": 3,
+     "concrete": 2,
      "asphalt": 2,
-     "crane": 5,
+     "crane": 4,
      "height": 2,
      "earthworks": 6
     }
@@ -1395,7 +1395,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 2.9,
-    "rain_chance": 95,
+    "rain_chance": 96,
     "storm": "likely",
     "storm_from": "14",
     "wbgt_peak": 30.3,
@@ -1540,7 +1540,7 @@
       ],
       [
        12,
-       2
+       1
       ],
       [
        14,
@@ -1749,7 +1749,7 @@
    ],
    "facts": {
     "rain_mm": 10.8,
-    "rain_chance": 96,
+    "rain_chance": 86,
     "storm": "likely",
     "storm_from": "14",
     "wbgt_peak": 30.8,
@@ -1851,7 +1851,7 @@
       ],
       [
        14,
-       1
+       2
       ],
       [
        15,
@@ -2101,7 +2101,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 1.5,
-    "rain_chance": 86,
+    "rain_chance": 85,
     "storm": "possible",
     "storm_from": "14",
     "wbgt_peak": 30.7,
