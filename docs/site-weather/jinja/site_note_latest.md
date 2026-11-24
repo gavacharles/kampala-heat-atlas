@@ -1,6 +1,6 @@
 # Site note · Jinja
 
-Issued Tuesday 24 November 2026, 05:22 (Africa/Kampala). Site 0.4244, 33.2042. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Tuesday 24 November 2026, 05:36 (Africa/Kampala). Site 0.4244, 33.2042. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Tuesday 24 November
 
