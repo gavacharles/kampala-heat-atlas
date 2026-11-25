@@ -2,13 +2,13 @@
  "site": "Kigali",
  "lat": -1.9441,
  "lon": 30.0619,
- "issued": "2026-11-25 04:31",
+ "issued": "2026-11-25 05:42",
  "working": "07:00-17:00, lunch excluded (9 h)",
  "days": [
   {
    "date": "2026-11-25",
    "day": "Wednesday 25 November",
-   "headline": "Storms likely from 16:00: finish lifts, roof and asphalt work before then.",
+   "headline": "Storms possible from 14:00: do exposed work in the morning.",
    "rows": [
     {
      "key": "concrete",
@@ -49,11 +49,11 @@
       ],
       [
        14,
-       2
+       1
       ],
       [
        15,
-       2
+       1
       ],
       [
        16,
@@ -104,7 +104,7 @@
       ],
       [
        15,
-       2
+       1
       ],
       [
        16,
@@ -158,7 +158,7 @@
       ],
       [
        16,
-       2
+       1
       ]
      ]
     },
@@ -369,9 +369,9 @@
    ],
    "facts": {
     "rain_mm": 1.6,
-    "rain_chance": 76,
-    "storm": "likely",
-    "storm_from": "16",
+    "rain_chance": 70,
+    "storm": "possible",
+    "storm_from": "14",
     "wbgt_peak": 25.8,
     "gust_hook_max": 11.2,
     "go_hours": {
@@ -751,7 +751,7 @@
    ],
    "facts": {
     "rain_mm": 1.6,
-    "rain_chance": 97,
+    "rain_chance": 100,
     "storm": "likely",
     "storm_from": "15",
     "wbgt_peak": 24.9,
@@ -776,9 +776,9 @@
      "key": "concrete",
      "trade": "Concrete pour",
      "status": "LIMITED",
-     "label": "go 07-11 h only",
-     "go_hours": 4,
-     "windows": "07-11 h",
+     "label": "go 07-10 h only",
+     "go_hours": 3,
+     "windows": "07-10 h",
      "causes": [
       "rain",
       "storms"
@@ -799,7 +799,7 @@
       ],
       [
        10,
-       0
+       1
       ],
       [
        11,
@@ -1131,13 +1131,13 @@
    ],
    "facts": {
     "rain_mm": 3.6,
-    "rain_chance": 90,
+    "rain_chance": 95,
     "storm": "likely",
     "storm_from": "14",
     "wbgt_peak": 25.1,
     "gust_hook_max": 9.1,
     "go_hours": {
-     "concrete": 4,
+     "concrete": 3,
      "asphalt": 2,
      "crane": 5,
      "height": 5,
@@ -1512,7 +1512,7 @@
    ],
    "facts": {
     "rain_mm": 6.8,
-    "rain_chance": 96,
+    "rain_chance": 99,
     "storm": "likely",
     "storm_from": "13",
     "wbgt_peak": 26.4,
@@ -1531,7 +1531,7 @@
   {
    "date": "2026-11-29",
    "day": "Sunday 29 November",
-   "headline": "Storms likely from 15:00: finish lifts, roof and asphalt work before then.",
+   "headline": "Storms likely from 16:00: finish lifts, roof and asphalt work before then.",
    "rows": [
     {
      "key": "coatings",
@@ -1779,7 +1779,7 @@
       ],
       [
        15,
-       2
+       1
       ],
       [
        16,
@@ -1892,9 +1892,9 @@
    ],
    "facts": {
     "rain_mm": 9.3,
-    "rain_chance": 84,
+    "rain_chance": 80,
     "storm": "likely",
-    "storm_from": "15",
+    "storm_from": "16",
     "wbgt_peak": 24.3,
     "gust_hook_max": 9.6,
     "go_hours": {
@@ -2270,7 +2270,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 1.2,
-    "rain_chance": 65,
+    "rain_chance": 57,
     "storm": "possible",
     "storm_from": "14",
     "wbgt_peak": 26.2,

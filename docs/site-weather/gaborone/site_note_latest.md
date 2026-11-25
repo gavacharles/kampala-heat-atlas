@@ -1,12 +1,12 @@
 # Site note · Gaborone
 
-Issued Wednesday 25 November 2026, 04:31 (Africa/Gaborone). Site -24.6282, 25.9231. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Wednesday 25 November 2026, 05:43 (Africa/Gaborone). Site -24.6282, 25.9231. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Wednesday 25 November
 
 **Pour concrete 08-11 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 12 %) · storms low · WBGT peak 28.1 °C · gusts 21 m/s at hook height
+Rain 0 mm (chance up to 10 %) · storms low · WBGT peak 28.1 °C · gusts 21 m/s at hook height
 
 - **Outdoor labour — work/rest needed.** Work/rest cycles 10-11 h, 16-17 h: at the peak, 45 min work / 15 min rest each hour. Water every 20 min, shade for breaks.
 - **Concrete pour — go 08-11 h only.** Limited by fast drying. Curing cover and windbreaks ready.
@@ -18,7 +18,7 @@ Rain 0 mm (chance up to 12 %) · storms low · WBGT peak 28.1 °C · gusts 21 m/
 
 **Pour concrete 08-11 h; fast drying limits the rest of the day.**
 
-Rain 1 mm (chance up to 31 %) · storms low · WBGT peak 26.2 °C · gusts 16 m/s at hook height
+Rain 1 mm (chance up to 35 %) · storms low · WBGT peak 26.2 °C · gusts 16 m/s at hook height
 
 - **Asphalt & surfacing — STOP.** Limited by rain or wet surface. No dry window: do not lay or spray.
 - **Concrete pour — go 08-11 h only.** Limited by fast drying. Curing cover and windbreaks ready.
@@ -32,10 +32,10 @@ Rain 1 mm (chance up to 31 %) · storms low · WBGT peak 26.2 °C · gusts 16 m/
 
 **Pour concrete 08-10 h; fast drying limits the rest of the day.**
 
-Rain 9 mm (chance up to 76 %) · storms low · WBGT peak 27.3 °C · gusts 16 m/s at hook height
+Rain 9 mm (chance up to 65 %) · storms low · WBGT peak 27.3 °C · gusts 16 m/s at hook height
 
-- **Concrete pour — go 08-10 h only.** Limited by fast drying. Curing cover and windbreaks ready.
-- **Asphalt & surfacing — go 16-17 h only.** Limited by rain or wet surface. Never lay or spray on a wet surface.
+- **Asphalt & surfacing — STOP.** Limited by rain or wet surface. No dry window: do not lay or spray.
+- **Concrete pour — go 08-10 h only.** Limited by fast drying, rain. Curing cover and windbreaks ready.
 - **Crane lifts — go 08-09 h, 14-17 h only.** Limited by wind. Check the anemometer before each lift.
 - **Work at height — go 15-17 h only.** Limited by wind, rain. Clear roofs and scaffolds before storms.
 - **Painting & coatings — go 08-10 h, 11-13 h, 14-17 h only.** Limited by rain. Check the surface is 3 °C above dew point.
@@ -44,9 +44,9 @@ Rain 9 mm (chance up to 76 %) · storms low · WBGT peak 27.3 °C · gusts 16 m/
 
 ## Outlook
 
-- **Saturday 28 November**: Storms possible from 10:00: do exposed work in the morning. Rain 3 mm (74 %); concrete 0 h go.
-- **Sunday 29 November**: Pour concrete 08-13 h; fast drying limits the rest of the day. Rain 0 mm (17 %); concrete 5 h go.
-- **Monday 30 November**: Some limits today: check your trade below. Rain 0 mm (24 %); concrete 8 h go.
+- **Saturday 28 November**: Storms possible from 09:00: do exposed work in the morning. Rain 3 mm (73 %); concrete 0 h go.
+- **Sunday 29 November**: Pour concrete 08-13 h; fast drying limits the rest of the day. Rain 0 mm (13 %); concrete 5 h go.
+- **Monday 30 November**: Some limits today: check your trade below. Rain 0 mm (18 %); concrete 8 h go.
 - **Tuesday 01 December**: Some limits today: check your trade below. Rain 0 mm (7 %); concrete 8 h go.
 
 *Screening guidance from a weather forecast, not an instruction. The contract specification, the crane manufacturer's limits and the site health-and-safety plan take precedence; check conditions on site (WBGT meter, anemometer, the 30-30 rule for lightning) before each activity. Thresholds used: thresholds.json.*

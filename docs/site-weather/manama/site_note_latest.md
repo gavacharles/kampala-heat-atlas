@@ -1,12 +1,12 @@
 # Site note · Manama
 
-Issued Wednesday 25 November 2026, 05:35 (Asia/Bahrain). Site 26.2285, 50.5860. Working hours 07:00-17:00, lunch break excluded (9 h).
+Issued Wednesday 25 November 2026, 06:43 (Asia/Bahrain). Site 26.2285, 50.5860. Working hours 07:00-17:00, lunch break excluded (9 h).
 
 ## Wednesday 25 November
 
 **Some limits today: check your trade below.**
 
-Rain 0 mm (chance up to 3 %) · storms low · WBGT peak 26.2 °C · gusts 5 m/s at hook height
+Rain 0 mm (chance up to 3 %) · storms low · WBGT peak 26.3 °C · gusts 5 m/s at hook height
 
 - **Painting & coatings — go 10-12 h, 13-17 h only.** Limited by humidity or dew. Check the surface is 3 °C above dew point.
 - **No weather limits:** Outdoor labour, Concrete pour, Asphalt & surfacing, Crane lifts, Work at height, Earthworks.
@@ -16,7 +16,7 @@ Rain 0 mm (chance up to 3 %) · storms low · WBGT peak 26.2 °C · gusts 5 m/s 
 
 **Some limits today: check your trade below.**
 
-Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 25.1 °C · gusts 8 m/s at hook height
+Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 25.0 °C · gusts 8 m/s at hook height
 
 - **Painting & coatings — go 09-12 h, 13-17 h only.** Limited by humidity or dew. Check the surface is 3 °C above dew point.
 - **No weather limits:** Outdoor labour, Concrete pour, Asphalt & surfacing, Crane lifts, Work at height, Earthworks.
@@ -26,16 +26,16 @@ Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 25.1 °C · gusts 8 m/s 
 
 **Some limits today: check your trade below.**
 
-Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 25.1 °C · gusts 11 m/s at hook height
+Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 24.9 °C · gusts 12 m/s at hook height
 
-- **Painting & coatings — go 08-12 h, 13-17 h only.** Limited by humidity or dew. Check the surface is 3 °C above dew point.
+- **Painting & coatings — go 08-12 h, 13-15 h, 16-17 h only.** Limited by humidity or dew. Check the surface is 3 °C above dew point.
 - **No weather limits:** Outdoor labour, Concrete pour, Asphalt & surfacing, Crane lifts, Work at height, Earthworks.
 - Dust: PM2.5 up to 67 µg/m³; damp down haul roads and cutting work; masks for dusty tasks.
 - Dust storm risk (dust up to 143 µg/m³): goggles and masks, secure sheeting and loose materials, stop lifts if the operator loses sight of the load.
 
 ## Outlook
 
-- **Saturday 28 November**: Pour concrete 07-12 h; fast drying limits the rest of the day. Rain 0 mm (0 %); concrete 5 h go.
+- **Saturday 28 November**: Pour concrete 07-12 h; fast drying limits the rest of the day. Rain 0 mm (0 %); concrete 6 h go.
 - **Sunday 29 November**: Some limits today: check your trade below. Rain 0 mm (0 %); concrete 9 h go.
 - **Monday 30 November**: Some limits today: check your trade below. Rain 0 mm (0 %); concrete 9 h go.
 - **Tuesday 01 December**: Some limits today: check your trade below. Rain 0 mm (2 %); concrete 9 h go.

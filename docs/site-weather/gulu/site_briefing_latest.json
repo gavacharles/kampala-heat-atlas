@@ -2,7 +2,7 @@
  "site": "Gulu",
  "lat": 2.7724,
  "lon": 32.2881,
- "issued": "2026-11-25 05:31",
+ "issued": "2026-11-25 06:44",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -326,7 +326,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 20,
+    "rain_chance": 8,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 26.9,
@@ -663,7 +663,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 6,
+    "rain_chance": 4,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 27.2,
@@ -1341,7 +1341,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 18,
+    "rain_chance": 16,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 27.5,
@@ -1678,7 +1678,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 4,
+    "rain_chance": 12,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 26.4,

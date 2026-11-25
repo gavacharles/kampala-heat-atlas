@@ -2,7 +2,7 @@
  "site": "Cape Town",
  "lat": -33.9249,
  "lon": 18.4241,
- "issued": "2026-11-25 04:31",
+ "issued": "2026-11-25 05:42",
  "working": "07:00-17:00, lunch excluded (9 h)",
  "days": [
   {
@@ -1100,7 +1100,7 @@
    ],
    "facts": {
     "rain_mm": 0.3,
-    "rain_chance": 11,
+    "rain_chance": 8,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 22.5,
@@ -1119,7 +1119,7 @@
   {
    "date": "2026-11-28",
    "day": "Saturday 28 November",
-   "headline": "Pour concrete 08-10 h; rain limits the rest of the day.",
+   "headline": "Pour concrete 15-17 h; rain limits the rest of the day.",
    "rows": [
     {
      "key": "asphalt",
@@ -1278,9 +1278,9 @@
      "key": "concrete",
      "trade": "Concrete pour",
      "status": "LIMITED",
-     "label": "go 08-10 h, 13-14 h, 15-17 h only",
-     "go_hours": 5,
-     "windows": "08-10 h, 13-14 h, 15-17 h",
+     "label": "go 13-14 h, 15-17 h only",
+     "go_hours": 3,
+     "windows": "13-14 h, 15-17 h",
      "causes": [
       "rain"
      ],
@@ -1292,11 +1292,11 @@
       ],
       [
        8,
-       0
+       1
       ],
       [
        9,
-       0
+       1
       ],
       [
        10,
@@ -1480,7 +1480,7 @@
    ],
    "facts": {
     "rain_mm": 5.0,
-    "rain_chance": 31,
+    "rain_chance": 55,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 20.1,
@@ -1489,7 +1489,7 @@
      "asphalt": 0,
      "height": 0,
      "coatings": 0,
-     "concrete": 5,
+     "concrete": 3,
      "crane": 1,
      "earthworks": 2,
      "labour": 9
@@ -1855,7 +1855,7 @@
    ],
    "facts": {
     "rain_mm": 3.9,
-    "rain_chance": 43,
+    "rain_chance": 35,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 22.5,

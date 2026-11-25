@@ -2,7 +2,7 @@
  "site": "Dammam",
  "lat": 26.4207,
  "lon": 50.0888,
- "issued": "2026-11-25 05:35",
+ "issued": "2026-11-25 06:43",
  "working": "07:00-17:00, lunch excluded (9 h)",
  "days": [
   {
@@ -357,8 +357,8 @@
     "rain_chance": 0,
     "storm": "low",
     "storm_from": "",
-    "wbgt_peak": 26.6,
-    "gust_hook_max": 6.1,
+    "wbgt_peak": 26.5,
+    "gust_hook_max": 6.3,
     "go_hours": {
      "coatings": 6,
      "labour": 9,
@@ -373,58 +373,8 @@
   {
    "date": "2026-11-26",
    "day": "Thursday 26 November",
-   "headline": "Pour concrete 07-12 h; fast drying limits the rest of the day.",
+   "headline": "Some limits today: check your trade below.",
    "rows": [
-    {
-     "key": "concrete",
-     "trade": "Concrete pour",
-     "status": "LIMITED",
-     "label": "go 07-12 h, 15-17 h only",
-     "go_hours": 7,
-     "windows": "07-12 h, 15-17 h",
-     "causes": [
-      "fast drying"
-     ],
-     "action": "Curing cover and windbreaks ready.",
-     "hours": [
-      [
-       7,
-       0
-      ],
-      [
-       8,
-       0
-      ],
-      [
-       9,
-       0
-      ],
-      [
-       10,
-       0
-      ],
-      [
-       11,
-       0
-      ],
-      [
-       13,
-       1
-      ],
-      [
-       14,
-       1
-      ],
-      [
-       15,
-       0
-      ],
-      [
-       16,
-       0
-      ]
-     ]
-    },
     {
      "key": "crane",
      "trade": "Crane lifts",
@@ -624,6 +574,54 @@
      ]
     },
     {
+     "key": "concrete",
+     "trade": "Concrete pour",
+     "status": "GO",
+     "label": "no limits",
+     "go_hours": 9,
+     "windows": "07-12 h, 13-17 h",
+     "causes": [],
+     "action": "No weather limits.",
+     "hours": [
+      [
+       7,
+       0
+      ],
+      [
+       8,
+       0
+      ],
+      [
+       9,
+       0
+      ],
+      [
+       10,
+       0
+      ],
+      [
+       11,
+       0
+      ],
+      [
+       13,
+       0
+      ],
+      [
+       14,
+       0
+      ],
+      [
+       15,
+       0
+      ],
+      [
+       16,
+       0
+      ]
+     ]
+    },
+    {
      "key": "asphalt",
      "trade": "Asphalt & surfacing",
      "status": "GO",
@@ -728,14 +726,14 @@
     "rain_chance": 0,
     "storm": "low",
     "storm_from": "",
-    "wbgt_peak": 25.7,
-    "gust_hook_max": 9.1,
+    "wbgt_peak": 25.6,
+    "gust_hook_max": 8.5,
     "go_hours": {
-     "concrete": 7,
      "crane": 8,
      "height": 8,
      "coatings": 7,
      "labour": 9,
+     "concrete": 9,
      "asphalt": 9,
      "earthworks": 9
     }
@@ -1096,7 +1094,7 @@
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 25.2,
-    "gust_hook_max": 11.0,
+    "gust_hook_max": 11.6,
     "go_hours": {
      "concrete": 5,
      "coatings": 8,
@@ -1111,15 +1109,15 @@
   {
    "date": "2026-11-28",
    "day": "Saturday 28 November",
-   "headline": "Pour concrete 07-10 h; fast drying limits the rest of the day.",
+   "headline": "Pour concrete 07-11 h; fast drying limits the rest of the day.",
    "rows": [
     {
      "key": "concrete",
      "trade": "Concrete pour",
      "status": "LIMITED",
-     "label": "go 07-10 h, 16-17 h only",
+     "label": "go 07-11 h only",
      "go_hours": 4,
-     "windows": "07-10 h, 16-17 h",
+     "windows": "07-11 h",
      "causes": [
       "fast drying"
      ],
@@ -1139,7 +1137,7 @@
       ],
       [
        10,
-       1
+       0
       ],
       [
        11,
@@ -1159,7 +1157,7 @@
       ],
       [
        16,
-       0
+       1
       ]
      ]
     },
@@ -1460,8 +1458,8 @@
     "rain_chance": 0,
     "storm": "low",
     "storm_from": "",
-    "wbgt_peak": 23.4,
-    "gust_hook_max": 10.6,
+    "wbgt_peak": 24.0,
+    "gust_hook_max": 10.8,
     "go_hours": {
      "concrete": 4,
      "labour": 9,
@@ -1824,7 +1822,7 @@
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 25.2,
-    "gust_hook_max": 6.4,
+    "gust_hook_max": 6.6,
     "go_hours": {
      "labour": 9,
      "concrete": 9,

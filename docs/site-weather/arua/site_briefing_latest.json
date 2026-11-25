@@ -2,7 +2,7 @@
  "site": "Arua",
  "lat": 3.0201,
  "lon": 30.9111,
- "issued": "2026-11-25 05:31",
+ "issued": "2026-11-25 06:44",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -333,7 +333,7 @@
    ],
    "facts": {
     "rain_mm": 1.2,
-    "rain_chance": 43,
+    "rain_chance": 39,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 26.3,
@@ -676,7 +676,7 @@
    ],
    "facts": {
     "rain_mm": 0.3,
-    "rain_chance": 11,
+    "rain_chance": 19,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 26.3,
@@ -1017,7 +1017,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 6,
+    "rain_chance": 7,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 26.3,
@@ -1360,7 +1360,7 @@
    ],
    "facts": {
     "rain_mm": 0.2,
-    "rain_chance": 16,
+    "rain_chance": 27,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 26.3,
@@ -1703,7 +1703,7 @@
    ],
    "facts": {
     "rain_mm": 0.3,
-    "rain_chance": 10,
+    "rain_chance": 17,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 26.5,
@@ -2040,7 +2040,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 10,
+    "rain_chance": 8,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 26.5,

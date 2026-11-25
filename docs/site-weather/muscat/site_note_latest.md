@@ -1,6 +1,6 @@
 # Site note · Muscat
 
-Issued Wednesday 25 November 2026, 06:35 (Asia/Muscat). Site 23.5880, 58.3829. Working hours 07:00-17:00, lunch break excluded (9 h).
+Issued Wednesday 25 November 2026, 07:43 (Asia/Muscat). Site 23.5880, 58.3829. Working hours 07:00-17:00, lunch break excluded (9 h).
 
 ## Wednesday 25 November
 
@@ -31,8 +31,8 @@ Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 26.3 °C · gusts 9 m/s 
 
 ## Outlook
 
-- **Saturday 28 November**: Pour concrete 07-12 h; fast drying limits the rest of the day. Rain 0 mm (2 %); concrete 6 h go.
-- **Sunday 29 November**: Pour concrete 07-12 h; fast drying limits the rest of the day. Rain 0 mm (12 %); concrete 5 h go.
+- **Saturday 28 November**: Pour concrete 07-12 h; fast drying limits the rest of the day. Rain 0 mm (4 %); concrete 6 h go.
+- **Sunday 29 November**: Pour concrete 07-12 h; fast drying limits the rest of the day. Rain 0 mm (7 %); concrete 5 h go.
 - **Monday 30 November**: Pour concrete 07-11 h; fast drying limits the rest of the day. Rain 0 mm (0 %); concrete 4 h go.
 - **Tuesday 01 December**: Pour concrete 07-12 h; fast drying limits the rest of the day. Rain 0 mm (0 %); concrete 5 h go.
 

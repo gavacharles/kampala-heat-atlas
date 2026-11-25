@@ -2,7 +2,7 @@
  "site": "Doha",
  "lat": 25.2854,
  "lon": 51.531,
- "issued": "2026-11-25 05:34",
+ "issued": "2026-11-25 06:42",
  "working": "07:00-17:00, lunch excluded (9 h)",
  "days": [
   {
@@ -357,8 +357,8 @@
     "rain_chance": 0,
     "storm": "low",
     "storm_from": "",
-    "wbgt_peak": 27.8,
-    "gust_hook_max": 7.3,
+    "wbgt_peak": 27.9,
+    "gust_hook_max": 6.6,
     "go_hours": {
      "coatings": 7,
      "labour": 9,
@@ -373,15 +373,15 @@
   {
    "date": "2026-11-26",
    "day": "Thursday 26 November",
-   "headline": "Pour concrete 07-11 h; fast drying limits the rest of the day.",
+   "headline": "Pour concrete 07-12 h; fast drying limits the rest of the day.",
    "rows": [
     {
      "key": "concrete",
      "trade": "Concrete pour",
      "status": "LIMITED",
-     "label": "go 07-11 h only",
-     "go_hours": 4,
-     "windows": "07-11 h",
+     "label": "go 07-12 h only",
+     "go_hours": 5,
+     "windows": "07-12 h",
      "causes": [
       "fast drying"
      ],
@@ -405,7 +405,7 @@
       ],
       [
        11,
-       1
+       0
       ],
       [
        13,
@@ -724,10 +724,10 @@
     "rain_chance": 0,
     "storm": "low",
     "storm_from": "",
-    "wbgt_peak": 25.7,
-    "gust_hook_max": 7.4,
+    "wbgt_peak": 25.8,
+    "gust_hook_max": 7.1,
     "go_hours": {
-     "concrete": 4,
+     "concrete": 5,
      "coatings": 7,
      "labour": 9,
      "asphalt": 9,
@@ -746,9 +746,9 @@
      "key": "concrete",
      "trade": "Concrete pour",
      "status": "LIMITED",
-     "label": "go 07-12 h, 13-14 h, 16-17 h only",
-     "go_hours": 7,
-     "windows": "07-12 h, 13-14 h, 16-17 h",
+     "label": "go 07-12 h, 13-15 h, 16-17 h only",
+     "go_hours": 8,
+     "windows": "07-12 h, 13-15 h, 16-17 h",
      "causes": [
       "fast drying"
      ],
@@ -780,7 +780,7 @@
       ],
       [
        14,
-       1
+       0
       ],
       [
        15,
@@ -796,9 +796,9 @@
      "key": "coatings",
      "trade": "Painting & coatings",
      "status": "LIMITED",
-     "label": "go 09-12 h, 13-17 h only",
-     "go_hours": 7,
-     "windows": "09-12 h, 13-17 h",
+     "label": "go 10-12 h, 13-17 h only",
+     "go_hours": 6,
+     "windows": "10-12 h, 13-17 h",
      "causes": [
       "humidity or dew"
      ],
@@ -810,11 +810,11 @@
       ],
       [
        8,
-       1
+       2
       ],
       [
        9,
-       0
+       1
       ],
       [
        10,
@@ -1091,11 +1091,11 @@
     "rain_chance": 0,
     "storm": "low",
     "storm_from": "",
-    "wbgt_peak": 26.1,
-    "gust_hook_max": 8.0,
+    "wbgt_peak": 26.3,
+    "gust_hook_max": 7.7,
     "go_hours": {
-     "concrete": 7,
-     "coatings": 7,
+     "concrete": 8,
+     "coatings": 6,
      "labour": 9,
      "asphalt": 9,
      "crane": 9,
@@ -1123,7 +1123,7 @@
      "hours": [
       [
        7,
-       1
+       2
       ],
       [
        8,
@@ -1456,8 +1456,8 @@
     "rain_chance": 0,
     "storm": "low",
     "storm_from": "",
-    "wbgt_peak": 25.8,
-    "gust_hook_max": 7.4,
+    "wbgt_peak": 25.7,
+    "gust_hook_max": 8.7,
     "go_hours": {
      "coatings": 7,
      "labour": 9,
@@ -1472,8 +1472,58 @@
   {
    "date": "2026-11-29",
    "day": "Sunday 29 November",
-   "headline": "Some limits today: check your trade below.",
+   "headline": "Pour concrete 07-12 h; fast drying limits the rest of the day.",
    "rows": [
+    {
+     "key": "concrete",
+     "trade": "Concrete pour",
+     "status": "LIMITED",
+     "label": "go 07-12 h, 13-15 h, 16-17 h only",
+     "go_hours": 8,
+     "windows": "07-12 h, 13-15 h, 16-17 h",
+     "causes": [
+      "fast drying"
+     ],
+     "action": "Curing cover and windbreaks ready.",
+     "hours": [
+      [
+       7,
+       0
+      ],
+      [
+       8,
+       0
+      ],
+      [
+       9,
+       0
+      ],
+      [
+       10,
+       0
+      ],
+      [
+       11,
+       0
+      ],
+      [
+       13,
+       0
+      ],
+      [
+       14,
+       0
+      ],
+      [
+       15,
+       1
+      ],
+      [
+       16,
+       0
+      ]
+     ]
+    },
     {
      "key": "coatings",
      "trade": "Painting & coatings",
@@ -1533,54 +1583,6 @@
      "windows": "",
      "causes": [],
      "action": "No heat limits; keep water and shade available.",
-     "hours": [
-      [
-       7,
-       0
-      ],
-      [
-       8,
-       0
-      ],
-      [
-       9,
-       0
-      ],
-      [
-       10,
-       0
-      ],
-      [
-       11,
-       0
-      ],
-      [
-       13,
-       0
-      ],
-      [
-       14,
-       0
-      ],
-      [
-       15,
-       0
-      ],
-      [
-       16,
-       0
-      ]
-     ]
-    },
-    {
-     "key": "concrete",
-     "trade": "Concrete pour",
-     "status": "GO",
-     "label": "no limits",
-     "go_hours": 9,
-     "windows": "07-12 h, 13-17 h",
-     "causes": [],
-     "action": "No weather limits.",
      "hours": [
       [
        7,
@@ -1819,12 +1821,12 @@
     "rain_chance": 0,
     "storm": "low",
     "storm_from": "",
-    "wbgt_peak": 26.7,
-    "gust_hook_max": 7.3,
+    "wbgt_peak": 26.0,
+    "gust_hook_max": 7.5,
     "go_hours": {
+     "concrete": 8,
      "coatings": 8,
      "labour": 9,
-     "concrete": 9,
      "asphalt": 9,
      "crane": 9,
      "height": 9,

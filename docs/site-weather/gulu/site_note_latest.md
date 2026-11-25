@@ -1,12 +1,12 @@
 # Site note · Gulu
 
-Issued Wednesday 25 November 2026, 05:31 (Africa/Kampala). Site 2.7724, 32.2881. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Wednesday 25 November 2026, 06:44 (Africa/Kampala). Site 2.7724, 32.2881. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Wednesday 25 November
 
 **Pour concrete 08-10 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 20 %) · storms low · WBGT peak 26.9 °C · gusts 10 m/s at hook height
+Rain 0 mm (chance up to 8 %) · storms low · WBGT peak 26.9 °C · gusts 10 m/s at hook height
 
 - **Concrete pour — go 08-10 h only.** Limited by fast drying. Curing cover and windbreaks ready.
 - **No weather limits:** Outdoor labour, Asphalt & surfacing, Crane lifts, Work at height, Painting & coatings, Earthworks.
@@ -16,7 +16,7 @@ Rain 0 mm (chance up to 20 %) · storms low · WBGT peak 26.9 °C · gusts 10 m/
 
 **Pour concrete 08-09 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 6 %) · storms low · WBGT peak 27.2 °C · gusts 12 m/s at hook height
+Rain 0 mm (chance up to 4 %) · storms low · WBGT peak 27.2 °C · gusts 12 m/s at hook height
 
 - **Concrete pour — go 08-09 h only.** Limited by fast drying. Curing cover and windbreaks ready.
 - **No weather limits:** Outdoor labour, Asphalt & surfacing, Crane lifts, Work at height, Painting & coatings, Earthworks.
@@ -35,8 +35,8 @@ Rain 0 mm (chance up to 5 %) · storms low · WBGT peak 27.2 °C · gusts 14 m/s
 
 ## Outlook
 
-- **Saturday 28 November**: Pour concrete 08-09 h; fast drying limits the rest of the day. Rain 0 mm (18 %); concrete 1 h go.
-- **Sunday 29 November**: Pour concrete 08-10 h; fast drying limits the rest of the day. Rain 0 mm (4 %); concrete 2 h go.
+- **Saturday 28 November**: Pour concrete 08-09 h; fast drying limits the rest of the day. Rain 0 mm (16 %); concrete 1 h go.
+- **Sunday 29 November**: Pour concrete 08-10 h; fast drying limits the rest of the day. Rain 0 mm (12 %); concrete 2 h go.
 - **Monday 30 November**: Pour concrete 08-10 h; fast drying limits the rest of the day. Rain 0 mm (4 %); concrete 2 h go.
 - **Tuesday 01 December**: Pour concrete 08-11 h; fast drying limits the rest of the day. Rain 0 mm (18 %); concrete 3 h go.
 

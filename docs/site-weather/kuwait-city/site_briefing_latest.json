@@ -2,7 +2,7 @@
  "site": "Kuwait City",
  "lat": 29.3759,
  "lon": 47.9774,
- "issued": "2026-11-25 05:35",
+ "issued": "2026-11-25 06:43",
  "working": "07:00-17:00, lunch excluded (9 h)",
  "days": [
   {
@@ -357,8 +357,8 @@
     "rain_chance": 0,
     "storm": "low",
     "storm_from": "",
-    "wbgt_peak": 26.5,
-    "gust_hook_max": 6.4,
+    "wbgt_peak": 26.7,
+    "gust_hook_max": 6.7,
     "go_hours": {
      "concrete": 8,
      "labour": 9,
@@ -725,8 +725,8 @@
     "rain_chance": 0,
     "storm": "low",
     "storm_from": "",
-    "wbgt_peak": 24.0,
-    "gust_hook_max": 6.3,
+    "wbgt_peak": 23.9,
+    "gust_hook_max": 6.4,
     "go_hours": {
      "concrete": 6,
      "coatings": 8,
@@ -1091,8 +1091,8 @@
     "rain_chance": 0,
     "storm": "low",
     "storm_from": "",
-    "wbgt_peak": 18.6,
-    "gust_hook_max": 9.8,
+    "wbgt_peak": 18.7,
+    "gust_hook_max": 9.7,
     "go_hours": {
      "concrete": 3,
      "labour": 9,
@@ -1455,8 +1455,8 @@
     "rain_chance": 0,
     "storm": "low",
     "storm_from": "",
-    "wbgt_peak": 20.0,
-    "gust_hook_max": 6.7,
+    "wbgt_peak": 20.4,
+    "gust_hook_max": 6.2,
     "go_hours": {
      "labour": 9,
      "concrete": 9,
@@ -1471,19 +1471,17 @@
   {
    "date": "2026-11-29",
    "day": "Sunday 29 November",
-   "headline": "Pour concrete 07-12 h; fast drying limits the rest of the day.",
+   "headline": "Good working day: no weather limits on any trade.",
    "rows": [
     {
-     "key": "concrete",
-     "trade": "Concrete pour",
-     "status": "LIMITED",
-     "label": "go 07-12 h, 13-15 h, 16-17 h only",
-     "go_hours": 8,
-     "windows": "07-12 h, 13-15 h, 16-17 h",
-     "causes": [
-      "fast drying"
-     ],
-     "action": "Curing cover and windbreaks ready.",
+     "key": "labour",
+     "trade": "Outdoor labour",
+     "status": "GO",
+     "label": "no limits",
+     "go_hours": 9,
+     "windows": "",
+     "causes": [],
+     "action": "No heat limits; keep water and shade available.",
      "hours": [
       [
        7,
@@ -1515,7 +1513,7 @@
       ],
       [
        15,
-       1
+       0
       ],
       [
        16,
@@ -1524,14 +1522,14 @@
      ]
     },
     {
-     "key": "labour",
-     "trade": "Outdoor labour",
+     "key": "concrete",
+     "trade": "Concrete pour",
      "status": "GO",
      "label": "no limits",
      "go_hours": 9,
-     "windows": "",
+     "windows": "07-12 h, 13-17 h",
      "causes": [],
-     "action": "No heat limits; keep water and shade available.",
+     "action": "No weather limits.",
      "hours": [
       [
        7,
@@ -1820,11 +1818,11 @@
     "rain_chance": 0,
     "storm": "low",
     "storm_from": "",
-    "wbgt_peak": 22.5,
-    "gust_hook_max": 6.3,
+    "wbgt_peak": 22.9,
+    "gust_hook_max": 6.4,
     "go_hours": {
-     "concrete": 8,
      "labour": 9,
+     "concrete": 9,
      "asphalt": 9,
      "crane": 9,
      "height": 9,

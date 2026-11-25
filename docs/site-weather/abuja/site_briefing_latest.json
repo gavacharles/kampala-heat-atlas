@@ -2,7 +2,7 @@
  "site": "Abuja",
  "lat": 9.0765,
  "lon": 7.3986,
- "issued": "2026-11-25 03:31",
+ "issued": "2026-11-25 04:42",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -1689,7 +1689,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 4,
+    "rain_chance": 2,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 29.4,
