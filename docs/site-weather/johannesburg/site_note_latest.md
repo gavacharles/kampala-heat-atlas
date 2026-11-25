@@ -1,6 +1,6 @@
 # Site note · Johannesburg
 
-Issued Wednesday 25 November 2026, 04:26 (Africa/Johannesburg). Site -26.2041, 28.0473. Working hours 07:00-17:00, lunch break excluded (9 h).
+Issued Wednesday 25 November 2026, 04:31 (Africa/Johannesburg). Site -26.2041, 28.0473. Working hours 07:00-17:00, lunch break excluded (9 h).
 
 ## Wednesday 25 November
 

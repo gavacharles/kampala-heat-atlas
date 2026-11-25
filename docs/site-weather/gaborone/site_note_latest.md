@@ -1,6 +1,6 @@
 # Site note · Gaborone
 
-Issued Wednesday 25 November 2026, 04:26 (Africa/Gaborone). Site -24.6282, 25.9231. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Wednesday 25 November 2026, 04:31 (Africa/Gaborone). Site -24.6282, 25.9231. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Wednesday 25 November
 
