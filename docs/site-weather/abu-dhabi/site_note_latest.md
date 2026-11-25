@@ -1,6 +1,6 @@
 # Site note · Abu Dhabi
 
-Issued Wednesday 25 November 2026, 06:15 (Asia/Dubai). Site 24.4539, 54.3773. Working hours 07:00-17:00, lunch break excluded (9 h).
+Issued Wednesday 25 November 2026, 06:26 (Asia/Dubai). Site 24.4539, 54.3773. Working hours 07:00-17:00, lunch break excluded (9 h).
 
 ## Wednesday 25 November
 
