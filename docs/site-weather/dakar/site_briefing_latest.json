@@ -2,7 +2,7 @@
  "site": "Dakar",
  "lat": 14.7167,
  "lon": -17.4677,
- "issued": "2026-11-26 02:36",
+ "issued": "2026-11-26 03:43",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -334,7 +334,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 1.4,
-    "rain_chance": 61,
+    "rain_chance": 40,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 26.4,
@@ -353,15 +353,61 @@
   {
    "date": "2026-11-27",
    "day": "Friday 27 November",
-   "headline": "Pour concrete 09-13 h; rain limits the rest of the day.",
+   "headline": "Pour concrete 14-17 h; rain limits the rest of the day.",
    "rows": [
+    {
+     "key": "asphalt",
+     "trade": "Asphalt & surfacing",
+     "status": "STOP",
+     "label": "STOP",
+     "go_hours": 0,
+     "windows": "",
+     "causes": [
+      "rain or wet surface"
+     ],
+     "action": "No dry window: do not lay or spray.",
+     "hours": [
+      [
+       8,
+       1
+      ],
+      [
+       9,
+       1
+      ],
+      [
+       10,
+       2
+      ],
+      [
+       11,
+       1
+      ],
+      [
+       12,
+       1
+      ],
+      [
+       14,
+       2
+      ],
+      [
+       15,
+       2
+      ],
+      [
+       16,
+       2
+      ]
+     ]
+    },
     {
      "key": "concrete",
      "trade": "Concrete pour",
      "status": "LIMITED",
-     "label": "go 09-13 h, 14-17 h only",
-     "go_hours": 7,
-     "windows": "09-13 h, 14-17 h",
+     "label": "go 14-17 h only",
+     "go_hours": 3,
+     "windows": "14-17 h",
      "causes": [
       "rain"
      ],
@@ -373,19 +419,19 @@
       ],
       [
        9,
-       0
+       1
       ],
       [
        10,
-       0
+       1
       ],
       [
        11,
-       0
+       1
       ],
       [
        12,
-       0
+       1
       ],
       [
        14,
@@ -398,52 +444,6 @@
       [
        16,
        0
-      ]
-     ]
-    },
-    {
-     "key": "asphalt",
-     "trade": "Asphalt & surfacing",
-     "status": "LIMITED",
-     "label": "go 09-10 h only",
-     "go_hours": 1,
-     "windows": "09-10 h",
-     "causes": [
-      "rain or wet surface"
-     ],
-     "action": "Never lay or spray on a wet surface.",
-     "hours": [
-      [
-       8,
-       1
-      ],
-      [
-       9,
-       0
-      ],
-      [
-       10,
-       2
-      ],
-      [
-       11,
-       1
-      ],
-      [
-       12,
-       1
-      ],
-      [
-       14,
-       2
-      ],
-      [
-       15,
-       2
-      ],
-      [
-       16,
-       2
       ]
      ]
     },
@@ -497,9 +497,9 @@
      "key": "coatings",
      "trade": "Painting & coatings",
      "status": "LIMITED",
-     "label": "go 09-13 h, 14-15 h, 16-17 h only",
-     "go_hours": 6,
-     "windows": "09-13 h, 14-15 h, 16-17 h",
+     "label": "go 14-15 h, 16-17 h only",
+     "go_hours": 2,
+     "windows": "14-15 h, 16-17 h",
      "causes": [
       "rain",
       "humidity or dew"
@@ -512,19 +512,19 @@
       ],
       [
        9,
-       0
+       1
       ],
       [
        10,
-       0
+       1
       ],
       [
        11,
-       0
+       1
       ],
       [
        12,
-       0
+       1
       ],
       [
        14,
@@ -678,16 +678,16 @@
    "extras": [],
    "facts": {
     "rain_mm": 3.2,
-    "rain_chance": 71,
+    "rain_chance": 65,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 26.9,
     "gust_hook_max": 7.5,
     "go_hours": {
-     "concrete": 7,
-     "asphalt": 1,
+     "asphalt": 0,
+     "concrete": 3,
      "height": 7,
-     "coatings": 6,
+     "coatings": 2,
      "earthworks": 7,
      "labour": 8,
      "crane": 8
@@ -1022,7 +1022,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 0.9,
-    "rain_chance": 22,
+    "rain_chance": 25,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 25.2,
@@ -1363,7 +1363,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 4.4,
-    "rain_chance": 45,
+    "rain_chance": 32,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 22.1,
@@ -1708,7 +1708,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 7.7,
-    "rain_chance": 55,
+    "rain_chance": 41,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 23.2,
@@ -2045,7 +2045,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 22,
+    "rain_chance": 10,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 25.5,

@@ -2,7 +2,7 @@
  "site": "Durban",
  "lat": -29.8587,
  "lon": 31.0218,
- "issued": "2026-11-26 04:36",
+ "issued": "2026-11-26 05:43",
  "working": "07:00-17:00, lunch excluded (9 h)",
  "days": [
   {
@@ -360,7 +360,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 1,
+    "rain_chance": 12,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 25.3,
@@ -734,7 +734,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 0,
+    "rain_chance": 2,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 28.8,
@@ -1110,7 +1110,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 6.1,
-    "rain_chance": 83,
+    "rain_chance": 79,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 26.3,
@@ -1483,7 +1483,7 @@
    ],
    "facts": {
     "rain_mm": 0.4,
-    "rain_chance": 72,
+    "rain_chance": 63,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 23.4,
@@ -1848,7 +1848,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 11,
+    "rain_chance": 19,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 24.5,

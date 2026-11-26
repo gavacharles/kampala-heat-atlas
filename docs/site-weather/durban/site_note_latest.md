@@ -1,12 +1,12 @@
 # Site note · Durban
 
-Issued Thursday 26 November 2026, 04:36 (Africa/Johannesburg). Site -29.8587, 31.0218. Working hours 07:00-17:00, lunch break excluded (9 h).
+Issued Thursday 26 November 2026, 05:43 (Africa/Johannesburg). Site -29.8587, 31.0218. Working hours 07:00-17:00, lunch break excluded (9 h).
 
 ## Thursday 26 November
 
 **Pour concrete 07-12 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 1 %) · storms low · WBGT peak 25.3 °C · gusts 16 m/s at hook height
+Rain 0 mm (chance up to 12 %) · storms low · WBGT peak 25.3 °C · gusts 16 m/s at hook height
 
 - **Concrete pour — go 07-12 h, 15-17 h only.** Limited by fast drying. Curing cover and windbreaks ready.
 - **Crane lifts — go 07-11 h, 16-17 h only.** Limited by wind. Check the anemometer before each lift.
@@ -19,7 +19,7 @@ Rain 0 mm (chance up to 1 %) · storms low · WBGT peak 25.3 °C · gusts 16 m/s
 
 **Pour concrete 07-12 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 28.8 °C · gusts 13 m/s at hook height
+Rain 0 mm (chance up to 2 %) · storms low · WBGT peak 28.8 °C · gusts 13 m/s at hook height
 
 - **Outdoor labour — work/rest needed.** Work/rest cycles 11-12 h, 13-16 h: at the peak, 45 min work / 15 min rest each hour. Water every 20 min, shade for breaks.
 - **Concrete pour — go 07-12 h, 14-17 h only.** Limited by fast drying. Curing cover and windbreaks ready.
@@ -33,7 +33,7 @@ Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 28.8 °C · gusts 13 m/s
 
 **Pour concrete 08-09 h; fast drying limits the rest of the day.**
 
-Rain 6 mm (chance up to 83 %) · storms low · WBGT peak 26.3 °C · gusts 18 m/s at hook height
+Rain 6 mm (chance up to 79 %) · storms low · WBGT peak 26.3 °C · gusts 18 m/s at hook height
 
 - **Concrete pour — go 08-09 h only.** Limited by fast drying, rain. Curing cover and windbreaks ready.
 - **Asphalt & surfacing — go 07-12 h only.** Limited by rain or wet surface. Never lay or spray on a wet surface.
@@ -45,8 +45,8 @@ Rain 6 mm (chance up to 83 %) · storms low · WBGT peak 26.3 °C · gusts 18 m/
 
 ## Outlook
 
-- **Sunday 29 November**: Pour concrete 07-09 h; fast drying limits the rest of the day. Rain 0 mm (72 %); concrete 3 h go.
-- **Monday 30 November**: Some limits today: check your trade below. Rain 0 mm (11 %); concrete 9 h go.
+- **Sunday 29 November**: Pour concrete 07-09 h; fast drying limits the rest of the day. Rain 0 mm (63 %); concrete 3 h go.
+- **Monday 30 November**: Some limits today: check your trade below. Rain 0 mm (19 %); concrete 9 h go.
 - **Tuesday 01 December**: Pour concrete 07-10 h; fast drying limits the rest of the day. Rain 0 mm (15 %); concrete 4 h go.
 - **Wednesday 02 December**: Pour concrete 07-12 h; fast drying limits the rest of the day. Rain 2 mm (30 %); concrete 7 h go.
 

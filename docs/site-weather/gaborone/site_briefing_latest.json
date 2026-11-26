@@ -2,7 +2,7 @@
  "site": "Gaborone",
  "lat": -24.6282,
  "lon": 25.9231,
- "issued": "2026-11-26 04:36",
+ "issued": "2026-11-26 05:43",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -332,7 +332,7 @@
    ],
    "facts": {
     "rain_mm": 0.1,
-    "rain_chance": 8,
+    "rain_chance": 7,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 24.9,
@@ -675,7 +675,7 @@
    ],
    "facts": {
     "rain_mm": 4.3,
-    "rain_chance": 55,
+    "rain_chance": 59,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 27.3,
@@ -712,7 +712,7 @@
      "hours": [
       [
        8,
-       2
+       1
       ],
       [
        9,
@@ -792,12 +792,59 @@
      ]
     },
     {
+     "key": "coatings",
+     "trade": "Painting & coatings",
+     "status": "STOP",
+     "label": "STOP",
+     "go_hours": 0,
+     "windows": "",
+     "causes": [
+      "rain",
+      "humidity or dew"
+     ],
+     "action": "Too humid or wet for painting and coatings.",
+     "hours": [
+      [
+       8,
+       1
+      ],
+      [
+       9,
+       2
+      ],
+      [
+       10,
+       2
+      ],
+      [
+       11,
+       2
+      ],
+      [
+       12,
+       2
+      ],
+      [
+       14,
+       1
+      ],
+      [
+       15,
+       1
+      ],
+      [
+       16,
+       1
+      ]
+     ]
+    },
+    {
      "key": "crane",
      "trade": "Crane lifts",
      "status": "LIMITED",
-     "label": "go 08-09 h, 14-17 h only",
-     "go_hours": 4,
-     "windows": "08-09 h, 14-17 h",
+     "label": "go 08-10 h only",
+     "go_hours": 2,
+     "windows": "08-10 h",
      "causes": [
       "storms"
      ],
@@ -809,7 +856,7 @@
       ],
       [
        9,
-       1
+       0
       ],
       [
        10,
@@ -825,15 +872,15 @@
       ],
       [
        14,
-       0
+       1
       ],
       [
        15,
-       0
+       1
       ],
       [
        16,
-       0
+       1
       ]
      ]
     },
@@ -841,12 +888,12 @@
      "key": "height",
      "trade": "Work at height",
      "status": "LIMITED",
-     "label": "go 08-09 h, 14-17 h only",
-     "go_hours": 4,
-     "windows": "08-09 h, 14-17 h",
+     "label": "go 08-09 h only",
+     "go_hours": 1,
+     "windows": "08-09 h",
      "causes": [
-      "rain",
-      "storms"
+      "storms",
+      "rain"
      ],
      "action": "Clear roofs and scaffolds before storms.",
      "hours": [
@@ -872,62 +919,15 @@
       ],
       [
        14,
-       0
-      ],
-      [
-       15,
-       0
-      ],
-      [
-       16,
-       0
-      ]
-     ]
-    },
-    {
-     "key": "coatings",
-     "trade": "Painting & coatings",
-     "status": "LIMITED",
-     "label": "go 14-17 h only",
-     "go_hours": 3,
-     "windows": "14-17 h",
-     "causes": [
-      "rain",
-      "humidity or dew"
-     ],
-     "action": "Check the surface is 3 \u00b0C above dew point.",
-     "hours": [
-      [
-       8,
        1
       ],
       [
-       9,
-       2
-      ],
-      [
-       10,
-       2
-      ],
-      [
-       11,
-       2
-      ],
-      [
-       12,
-       2
-      ],
-      [
-       14,
-       0
-      ],
-      [
        15,
-       0
+       1
       ],
       [
        16,
-       0
+       1
       ]
      ]
     },
@@ -1027,17 +1027,17 @@
    ],
    "facts": {
     "rain_mm": 2.5,
-    "rain_chance": 86,
+    "rain_chance": 75,
     "storm": "possible",
-    "storm_from": "09",
+    "storm_from": "10",
     "wbgt_peak": 27.4,
     "gust_hook_max": 12.6,
     "go_hours": {
      "concrete": 0,
      "asphalt": 0,
-     "crane": 4,
-     "height": 4,
-     "coatings": 3,
+     "coatings": 0,
+     "crane": 2,
+     "height": 1,
      "earthworks": 3,
      "labour": 8
     }
@@ -1366,7 +1366,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 10,
+    "rain_chance": 13,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 27.2,
@@ -1705,7 +1705,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 28,
+    "rain_chance": 27,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 27.0,

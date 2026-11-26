@@ -1,12 +1,12 @@
 # Site note · Nairobi
 
-Issued Thursday 26 November 2026, 05:36 (Africa/Nairobi). Site -1.2864, 36.8172. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Thursday 26 November 2026, 06:42 (Africa/Nairobi). Site -1.2864, 36.8172. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Thursday 26 November
 
 **Storms possible from 16:00: do exposed work in the morning.**
 
-Rain 7 mm (chance up to 86 %) · storms possible · WBGT peak 23.3 °C · gusts 14 m/s at hook height
+Rain 7 mm (chance up to 78 %) · storms possible · WBGT peak 23.3 °C · gusts 14 m/s at hook height
 
 - **Concrete pour — go 08-13 h only.** Limited by rain, storms, fast drying. Curing cover and windbreaks ready.
 - **Asphalt & surfacing — go 08-09 h only.** Limited by rain or wet surface, storms. Never lay or spray on a wet surface.
@@ -19,14 +19,14 @@ Rain 7 mm (chance up to 86 %) · storms possible · WBGT peak 23.3 °C · gusts 
 
 ## Friday 27 November
 
-**Pour concrete 08-09 h; rain limits the rest of the day.**
+**Wet day (4 mm): no concrete or asphalt window.**
 
-Rain 4 mm (chance up to 85 %) · storms low · WBGT peak 23.1 °C · gusts 14 m/s at hook height
+Rain 4 mm (chance up to 76 %) · storms low · WBGT peak 23.1 °C · gusts 14 m/s at hook height
 
+- **Concrete pour — STOP.** Limited by rain, fast drying. No pour window: postpone, or pour under cover.
 - **Asphalt & surfacing — STOP.** Limited by rain or wet surface. No dry window: do not lay or spray.
-- **Concrete pour — go 08-09 h only.** Limited by rain, fast drying. Curing cover and windbreaks ready.
+- **Painting & coatings — STOP.** Limited by rain, humidity or dew. Too humid or wet for painting and coatings.
 - **Work at height — go 10-12 h, 14-15 h only.** Limited by rain, wind. Clear roofs and scaffolds before storms.
-- **Painting & coatings — go 10-11 h only.** Limited by rain, humidity or dew. Check the surface is 3 °C above dew point.
 - **Earthworks — go with care.** Limited by wet ground, rain. Ground soft: protect formation and stockpiles. Ground wet after 8 mm in 24 h.
 - **No weather limits:** Outdoor labour, Crane lifts.
 - UV index up to 9 (very high): hats with neck cover, long sleeves, sunscreen.
@@ -35,7 +35,7 @@ Rain 4 mm (chance up to 85 %) · storms low · WBGT peak 23.1 °C · gusts 14 m/
 
 **Wet day (2 mm): no concrete or asphalt window.**
 
-Rain 2 mm (chance up to 89 %) · storms low · WBGT peak 22.8 °C · gusts 14 m/s at hook height
+Rain 2 mm (chance up to 91 %) · storms low · WBGT peak 22.8 °C · gusts 14 m/s at hook height
 
 - **Concrete pour — STOP.** Limited by rain, fast drying. No pour window: postpone, or pour under cover.
 - **Asphalt & surfacing — STOP.** Limited by rain or wet surface. No dry window: do not lay or spray.
@@ -46,9 +46,9 @@ Rain 2 mm (chance up to 89 %) · storms low · WBGT peak 22.8 °C · gusts 14 m/
 
 ## Outlook
 
-- **Sunday 29 November**: Pour concrete 08-12 h; fast drying limits the rest of the day. Rain 1 mm (57 %); concrete 4 h go.
-- **Monday 30 November**: Pour concrete 08-12 h; fast drying limits the rest of the day. Rain 0 mm (16 %); concrete 4 h go.
-- **Tuesday 01 December**: Storms likely from 14:00: finish lifts, roof and asphalt work before then. Rain 4 mm (86 %); concrete 3 h go.
+- **Sunday 29 November**: Pour concrete 08-12 h; fast drying limits the rest of the day. Rain 1 mm (27 %); concrete 4 h go.
+- **Monday 30 November**: Pour concrete 08-12 h; fast drying limits the rest of the day. Rain 0 mm (4 %); concrete 4 h go.
+- **Tuesday 01 December**: Storms possible from 15:00: do exposed work in the morning. Rain 4 mm (69 %); concrete 3 h go.
 - **Wednesday 02 December**: Wet day (5 mm): no concrete or asphalt window. Rain 5 mm (82 %); concrete 0 h go.
 
 *Screening guidance from a weather forecast, not an instruction. The contract specification, the crane manufacturer's limits and the site health-and-safety plan take precedence; check conditions on site (WBGT meter, anemometer, the 30-30 rule for lightning) before each activity. Thresholds used: thresholds.json.*
