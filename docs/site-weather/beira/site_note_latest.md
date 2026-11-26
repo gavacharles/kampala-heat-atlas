@@ -1,6 +1,6 @@
 # Site note · Beira
 
-Issued Thursday 26 November 2026, 04:15 (Africa/Maputo). Site -19.8436, 34.8389. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Thursday 26 November 2026, 04:33 (Africa/Maputo). Site -19.8436, 34.8389. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Thursday 26 November
 
