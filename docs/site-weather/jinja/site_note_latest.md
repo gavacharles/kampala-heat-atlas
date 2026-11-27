@@ -1,6 +1,6 @@
 # Site note · Jinja
 
-Issued Friday 27 November 2026, 05:30 (Africa/Kampala). Site 0.4244, 33.2042. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Friday 27 November 2026, 06:43 (Africa/Kampala). Site 0.4244, 33.2042. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Friday 27 November
 
@@ -17,7 +17,7 @@ Rain 0 mm (chance up to 27 %) · storms low · WBGT peak 26.3 °C · gusts 10 m/
 
 **Some limits today: check your trade below.**
 
-Rain 0 mm (chance up to 20 %) · storms low · WBGT peak 26.8 °C · gusts 9 m/s at hook height
+Rain 0 mm (chance up to 8 %) · storms low · WBGT peak 26.8 °C · gusts 9 m/s at hook height
 
 - **Crane lifts — go 09-13 h, 14-17 h only.** Limited by poor visibility. Check the anemometer before each lift.
 - **Work at height — go 09-13 h, 14-17 h only.** Limited by poor visibility. Clear roofs and scaffolds before storms.
@@ -30,7 +30,7 @@ Rain 0 mm (chance up to 20 %) · storms low · WBGT peak 26.8 °C · gusts 9 m/s
 
 **Pour concrete 14-17 h; rain limits the rest of the day.**
 
-Rain 1 mm (chance up to 39 %) · storms low · WBGT peak 26.1 °C · gusts 11 m/s at hook height
+Rain 1 mm (chance up to 30 %) · storms low · WBGT peak 26.1 °C · gusts 11 m/s at hook height
 
 - **Concrete pour — go 08-10 h, 11-13 h, 14-17 h only.** Limited by rain. Keep covers ready outside this window.
 - **Asphalt & surfacing — go 08-10 h, 15-17 h only.** Limited by rain or wet surface. Never lay or spray on a wet surface.
@@ -43,8 +43,8 @@ Rain 1 mm (chance up to 39 %) · storms low · WBGT peak 26.1 °C · gusts 11 m/
 
 ## Outlook
 
-- **Monday 30 November**: Some limits today: check your trade below. Rain 0 mm (34 %); concrete 8 h go.
-- **Tuesday 01 December**: Storms possible from 14:00: do exposed work in the morning. Rain 1 mm (53 %); concrete 5 h go.
+- **Monday 30 November**: Some limits today: check your trade below. Rain 0 mm (25 %); concrete 8 h go.
+- **Tuesday 01 December**: Some limits today: check your trade below. Rain 1 mm (43 %); concrete 8 h go.
 - **Wednesday 02 December**: Storms possible from 14:00: do exposed work in the morning. Rain 1 mm (59 %); concrete 4 h go.
 - **Thursday 03 December**: Storms likely from 11:00: finish lifts, roof and asphalt work before then. Rain 15 mm (86 %); concrete 0 h go.
 

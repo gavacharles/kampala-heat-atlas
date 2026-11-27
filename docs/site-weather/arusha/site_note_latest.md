@@ -1,12 +1,12 @@
 # Site note · Arusha
 
-Issued Friday 27 November 2026, 05:30 (Africa/Dar_es_Salaam). Site -3.3869, 36.6830. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Friday 27 November 2026, 06:43 (Africa/Dar_es_Salaam). Site -3.3869, 36.6830. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Friday 27 November
 
 **Pour concrete 08-13 h; fast drying limits the rest of the day.**
 
-Rain 1 mm (chance up to 38 %) · storms low · WBGT peak 24.5 °C · gusts 10 m/s at hook height
+Rain 1 mm (chance up to 21 %) · storms low · WBGT peak 24.5 °C · gusts 10 m/s at hook height
 
 - **Concrete pour — go 08-13 h, 14-15 h, 16-17 h only.** Limited by fast drying. Curing cover and windbreaks ready.
 - **Asphalt & surfacing — go 08-10 h only.** Limited by rain or wet surface. Never lay or spray on a wet surface.
@@ -19,7 +19,7 @@ Rain 1 mm (chance up to 38 %) · storms low · WBGT peak 24.5 °C · gusts 10 m/
 
 **Storms likely from 15:00: finish lifts, roof and asphalt work before then.**
 
-Rain 3 mm (chance up to 84 %) · storms likely · WBGT peak 25.5 °C · gusts 9 m/s at hook height
+Rain 3 mm (chance up to 73 %) · storms likely · WBGT peak 25.5 °C · gusts 9 m/s at hook height
 
 - **Concrete pour — go 08-12 h only.** Limited by rain, storms. Keep covers ready outside this window.
 - **Asphalt & surfacing — go 08-09 h only.** Limited by rain or wet surface, storms. Never lay or spray on a wet surface.
@@ -33,7 +33,7 @@ Rain 3 mm (chance up to 84 %) · storms likely · WBGT peak 25.5 °C · gusts 9 
 
 **Pour concrete 08-13 h; rain limits the rest of the day.**
 
-Rain 2 mm (chance up to 19 %) · storms low · WBGT peak 26.8 °C · gusts 10 m/s at hook height
+Rain 2 mm (chance up to 15 %) · storms low · WBGT peak 26.8 °C · gusts 10 m/s at hook height
 
 - **Concrete pour — go 08-13 h, 15-17 h only.** Limited by rain. Keep covers ready outside this window.
 - **Asphalt & surfacing — go 08-13 h only.** Limited by rain or wet surface. Never lay or spray on a wet surface.
@@ -45,9 +45,9 @@ Rain 2 mm (chance up to 19 %) · storms low · WBGT peak 26.8 °C · gusts 10 m/
 
 ## Outlook
 
-- **Monday 30 November**: Pour concrete 08-12 h; fast drying limits the rest of the day. Rain 0 mm (4 %); concrete 4 h go.
-- **Tuesday 01 December**: Pour concrete 08-12 h; fast drying limits the rest of the day. Rain 0 mm (33 %); concrete 5 h go.
-- **Wednesday 02 December**: Storms possible from 15:00: do exposed work in the morning. Rain 4 mm (55 %); concrete 5 h go.
+- **Monday 30 November**: Pour concrete 08-12 h; fast drying limits the rest of the day. Rain 0 mm (12 %); concrete 4 h go.
+- **Tuesday 01 December**: Pour concrete 08-12 h; fast drying limits the rest of the day. Rain 0 mm (25 %); concrete 5 h go.
+- **Wednesday 02 December**: Storms possible from 15:00: do exposed work in the morning. Rain 4 mm (71 %); concrete 5 h go.
 - **Thursday 03 December**: Pour concrete 08-13 h; fast drying limits the rest of the day. Rain 1 mm (31 %); concrete 5 h go.
 
 *Screening guidance from a weather forecast, not an instruction. The contract specification, the crane manufacturer's limits and the site health-and-safety plan take precedence; check conditions on site (WBGT meter, anemometer, the 30-30 rule for lightning) before each activity. Thresholds used: thresholds.json.*

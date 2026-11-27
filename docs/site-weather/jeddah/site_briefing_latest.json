@@ -2,7 +2,7 @@
  "site": "Jeddah",
  "lat": 21.4858,
  "lon": 39.1925,
- "issued": "2026-11-27 05:30",
+ "issued": "2026-11-27 06:43",
  "working": "07:00-17:00, lunch excluded (9 h)",
  "days": [
   {
@@ -1103,7 +1103,7 @@
    ],
    "facts": {
     "rain_mm": 0.1,
-    "rain_chance": 39,
+    "rain_chance": 49,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 29.6,
@@ -1501,7 +1501,7 @@
   {
    "date": "2026-12-01",
    "day": "Tuesday 01 December",
-   "headline": "Storms likely from 10:00: finish lifts, roof and asphalt work before then.",
+   "headline": "Storms likely from 09:00: finish lifts, roof and asphalt work before then.",
    "rows": [
     {
      "key": "concrete",
@@ -1546,7 +1546,7 @@
       ],
       [
        15,
-       2
+       1
       ],
       [
        16,
@@ -1783,7 +1783,7 @@
       ],
       [
        9,
-       1
+       2
       ],
       [
        10,
@@ -1866,9 +1866,9 @@
    ],
    "facts": {
     "rain_mm": 29.6,
-    "rain_chance": 86,
+    "rain_chance": 81,
     "storm": "likely",
-    "storm_from": "10",
+    "storm_from": "09",
     "wbgt_peak": 27.5,
     "gust_hook_max": 14.2,
     "go_hours": {
@@ -2233,7 +2233,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 1.3,
-    "rain_chance": 49,
+    "rain_chance": 61,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 23.9,

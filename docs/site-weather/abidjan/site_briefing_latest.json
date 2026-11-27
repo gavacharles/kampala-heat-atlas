@@ -2,7 +2,7 @@
  "site": "Abidjan",
  "lat": 5.36,
  "lon": -4.0083,
- "issued": "2026-11-27 02:30",
+ "issued": "2026-11-27 03:43",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -60,9 +60,9 @@
      "key": "concrete",
      "trade": "Concrete pour",
      "status": "LIMITED",
-     "label": "go 08-11 h only",
-     "go_hours": 3,
-     "windows": "08-11 h",
+     "label": "go 08-10 h only",
+     "go_hours": 2,
+     "windows": "08-10 h",
      "causes": [
       "rain",
       "storms"
@@ -79,11 +79,11 @@
       ],
       [
        10,
-       0
+       1
       ],
       [
        11,
-       1
+       2
       ],
       [
        12,
@@ -107,9 +107,9 @@
      "key": "asphalt",
      "trade": "Asphalt & surfacing",
      "status": "LIMITED",
-     "label": "go 08-11 h only",
-     "go_hours": 3,
-     "windows": "08-11 h",
+     "label": "go 08-10 h only",
+     "go_hours": 2,
+     "windows": "08-10 h",
      "causes": [
       "rain or wet surface",
       "storms"
@@ -126,7 +126,7 @@
       ],
       [
        10,
-       0
+       1
       ],
       [
        11,
@@ -154,9 +154,9 @@
      "key": "crane",
      "trade": "Crane lifts",
      "status": "LIMITED",
-     "label": "go 08-13 h only",
-     "go_hours": 5,
-     "windows": "08-13 h",
+     "label": "go 08-12 h only",
+     "go_hours": 4,
+     "windows": "08-12 h",
      "causes": [
       "storms"
      ],
@@ -180,7 +180,7 @@
       ],
       [
        12,
-       0
+       1
       ],
       [
        14,
@@ -200,9 +200,9 @@
      "key": "height",
      "trade": "Work at height",
      "status": "LIMITED",
-     "label": "go 08-11 h, 12-13 h only",
-     "go_hours": 4,
-     "windows": "08-11 h, 12-13 h",
+     "label": "go 08-11 h only",
+     "go_hours": 3,
+     "windows": "08-11 h",
      "causes": [
       "rain",
       "storms"
@@ -227,7 +227,7 @@
       ],
       [
        12,
-       0
+       1
       ],
       [
        14,
@@ -247,9 +247,9 @@
      "key": "coatings",
      "trade": "Painting & coatings",
      "status": "LIMITED",
-     "label": "go 10-11 h, 12-13 h only",
-     "go_hours": 2,
-     "windows": "10-11 h, 12-13 h",
+     "label": "go 10-11 h only",
+     "go_hours": 1,
+     "windows": "10-11 h",
      "causes": [
       "rain",
       "humidity or dew"
@@ -274,7 +274,7 @@
       ],
       [
        12,
-       0
+       1
       ],
       [
        14,
@@ -340,18 +340,18 @@
    "extras": [],
    "facts": {
     "rain_mm": 2.0,
-    "rain_chance": 98,
+    "rain_chance": 100,
     "storm": "likely",
     "storm_from": "14",
     "wbgt_peak": 30.6,
     "gust_hook_max": 9.1,
     "go_hours": {
      "labour": 2,
-     "concrete": 3,
-     "asphalt": 3,
-     "crane": 5,
-     "height": 4,
-     "coatings": 2,
+     "concrete": 2,
+     "asphalt": 2,
+     "crane": 4,
+     "height": 3,
+     "coatings": 1,
      "earthworks": 6
     }
    }
@@ -691,7 +691,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 2.5,
-    "rain_chance": 100,
+    "rain_chance": 98,
     "storm": "likely",
     "storm_from": "14",
     "wbgt_peak": 31.4,
@@ -1042,7 +1042,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 1.6,
-    "rain_chance": 86,
+    "rain_chance": 89,
     "storm": "possible",
     "storm_from": "14",
     "wbgt_peak": 29.6,
@@ -1136,7 +1136,7 @@
       ],
       [
        11,
-       2
+       1
       ],
       [
        12,
@@ -1393,7 +1393,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 3.6,
-    "rain_chance": 88,
+    "rain_chance": 92,
     "storm": "likely",
     "storm_from": "14",
     "wbgt_peak": 31.0,
@@ -1742,7 +1742,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 1.2,
-    "rain_chance": 63,
+    "rain_chance": 59,
     "storm": "possible",
     "storm_from": "14",
     "wbgt_peak": 31.0,
@@ -1761,7 +1761,7 @@
   {
    "date": "2026-12-02",
    "day": "Wednesday 02 December",
-   "headline": "Storms possible from 14:00: do exposed work in the morning.",
+   "headline": "Storms likely from 14:00: finish lifts, roof and asphalt work before then.",
    "rows": [
     {
      "key": "coatings",
@@ -1984,11 +1984,11 @@
       ],
       [
        14,
-       1
+       2
       ],
       [
        15,
-       1
+       2
       ],
       [
        16,
@@ -2093,8 +2093,8 @@
    "extras": [],
    "facts": {
     "rain_mm": 3.9,
-    "rain_chance": 69,
-    "storm": "possible",
+    "rain_chance": 75,
+    "storm": "likely",
     "storm_from": "14",
     "wbgt_peak": 30.3,
     "gust_hook_max": 9.4,

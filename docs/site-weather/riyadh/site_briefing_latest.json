@@ -2,7 +2,7 @@
  "site": "Riyadh",
  "lat": 24.7136,
  "lon": 46.6753,
- "issued": "2026-11-27 05:30",
+ "issued": "2026-11-27 06:43",
  "working": "07:00-17:00, lunch excluded (9 h)",
  "days": [
   {
@@ -1817,7 +1817,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 1,
+    "rain_chance": 2,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 20.2,
@@ -2180,7 +2180,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 6,
+    "rain_chance": 10,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 22.6,

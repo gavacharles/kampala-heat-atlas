@@ -2,7 +2,7 @@
  "site": "Durban",
  "lat": -29.8587,
  "lon": 31.0218,
- "issued": "2026-11-27 04:30",
+ "issued": "2026-11-27 05:43",
  "working": "07:00-17:00, lunch excluded (9 h)",
  "days": [
   {
@@ -362,7 +362,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 0,
+    "rain_chance": 14,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 29.6,
@@ -381,7 +381,7 @@
   {
    "date": "2026-11-28",
    "day": "Saturday 28 November",
-   "headline": "Pour concrete 07-12 h; fast drying limits the rest of the day.",
+   "headline": "Pour concrete 07-12 h; rain limits the rest of the day.",
    "rows": [
     {
      "key": "concrete",
@@ -391,8 +391,8 @@
      "go_hours": 5,
      "windows": "07-12 h",
      "causes": [
-      "fast drying",
-      "rain"
+      "rain",
+      "fast drying"
      ],
      "action": "Curing cover and windbreaks ready.",
      "hours": [
@@ -426,7 +426,7 @@
       ],
       [
        15,
-       1
+       2
       ],
       [
        16,
@@ -438,9 +438,9 @@
      "key": "asphalt",
      "trade": "Asphalt & surfacing",
      "status": "LIMITED",
-     "label": "go 07-12 h, 13-15 h only",
-     "go_hours": 7,
-     "windows": "07-12 h, 13-15 h",
+     "label": "go 07-12 h, 13-14 h only",
+     "go_hours": 6,
+     "windows": "07-12 h, 13-14 h",
      "causes": [
       "rain or wet surface"
      ],
@@ -472,7 +472,7 @@
       ],
       [
        14,
-       0
+       1
       ],
       [
        15,
@@ -738,14 +738,14 @@
    "extras": [],
    "facts": {
     "rain_mm": 15.9,
-    "rain_chance": 99,
+    "rain_chance": 100,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 25.9,
     "gust_hook_max": 19.1,
     "go_hours": {
      "concrete": 5,
-     "asphalt": 7,
+     "asphalt": 6,
      "crane": 5,
      "height": 5,
      "coatings": 7,
@@ -1116,7 +1116,7 @@
    ],
    "facts": {
     "rain_mm": 2.9,
-    "rain_chance": 67,
+    "rain_chance": 74,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 22.9,
@@ -1481,7 +1481,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 25,
+    "rain_chance": 31,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 24.2,
@@ -1850,7 +1850,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 4,
+    "rain_chance": 8,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 25.5,
@@ -2219,7 +2219,7 @@
    ],
    "facts": {
     "rain_mm": 0.9,
-    "rain_chance": 38,
+    "rain_chance": 36,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 29.1,

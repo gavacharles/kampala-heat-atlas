@@ -2,7 +2,7 @@
  "site": "Dodoma",
  "lat": -6.163,
  "lon": 35.7516,
- "issued": "2026-11-27 05:30",
+ "issued": "2026-11-27 06:43",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -330,7 +330,7 @@
    ],
    "facts": {
     "rain_mm": 0.1,
-    "rain_chance": 24,
+    "rain_chance": 31,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 26.7,
@@ -669,7 +669,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 22,
+    "rain_chance": 23,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 25.8,
@@ -1008,7 +1008,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 31,
+    "rain_chance": 25,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 27.6,
@@ -1347,7 +1347,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 24,
+    "rain_chance": 16,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 28.3,
@@ -1686,7 +1686,7 @@
    ],
    "facts": {
     "rain_mm": 0.3,
-    "rain_chance": 37,
+    "rain_chance": 39,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 27.7,
@@ -1715,7 +1715,8 @@
      "go_hours": 1,
      "windows": "08-09 h",
      "causes": [
-      "fast drying"
+      "fast drying",
+      "rain"
      ],
      "action": "Curing cover and windbreaks ready.",
      "hours": [
@@ -2027,7 +2028,7 @@
    ],
    "facts": {
     "rain_mm": 0.6,
-    "rain_chance": 36,
+    "rain_chance": 71,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 27.4,

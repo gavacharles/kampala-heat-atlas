@@ -1,6 +1,6 @@
 # Site note · Abu Dhabi
 
-Issued Friday 27 November 2026, 06:30 (Asia/Dubai). Site 24.4539, 54.3773. Working hours 07:00-17:00, lunch break excluded (9 h).
+Issued Friday 27 November 2026, 07:43 (Asia/Dubai). Site 24.4539, 54.3773. Working hours 07:00-17:00, lunch break excluded (9 h).
 
 ## Friday 27 November
 
@@ -17,7 +17,7 @@ Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 26.8 °C · gusts 10 m/s
 
 **Pour concrete 07-12 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 2 %) · storms low · WBGT peak 26.8 °C · gusts 11 m/s at hook height
+Rain 0 mm (chance up to 4 %) · storms low · WBGT peak 26.8 °C · gusts 11 m/s at hook height
 
 - **Concrete pour — go 07-12 h, 13-15 h, 16-17 h only.** Limited by fast drying. Curing cover and windbreaks ready.
 - **Crane lifts — go 08-12 h, 13-17 h only.** Limited by poor visibility. Check the anemometer before each lift.
@@ -30,7 +30,7 @@ Rain 0 mm (chance up to 2 %) · storms low · WBGT peak 26.8 °C · gusts 11 m/s
 
 **Pour concrete 07-12 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 8 %) · storms low · WBGT peak 27.2 °C · gusts 11 m/s at hook height
+Rain 0 mm (chance up to 20 %) · storms low · WBGT peak 27.2 °C · gusts 11 m/s at hook height
 
 - **Concrete pour — go 07-12 h, 13-15 h only.** Limited by fast drying. Curing cover and windbreaks ready.
 - **Crane lifts — go 10-12 h, 13-17 h only.** Limited by poor visibility. Check the anemometer before each lift.
@@ -41,7 +41,7 @@ Rain 0 mm (chance up to 8 %) · storms low · WBGT peak 27.2 °C · gusts 11 m/s
 
 ## Outlook
 
-- **Monday 30 November**: Pour concrete 07-12 h; fast drying limits the rest of the day. Rain 0 mm (6 %); concrete 6 h go.
+- **Monday 30 November**: Pour concrete 07-12 h; fast drying limits the rest of the day. Rain 0 mm (2 %); concrete 6 h go.
 - **Tuesday 01 December**: Pour concrete 07-12 h; fast drying limits the rest of the day. Rain 0 mm (0 %); concrete 7 h go.
 - **Wednesday 02 December**: Pour concrete 07-12 h; fast drying limits the rest of the day. Rain 0 mm (0 %); concrete 8 h go.
 - **Thursday 03 December**: Pour concrete 07-12 h; fast drying limits the rest of the day. Rain 0 mm (0 %); concrete 5 h go.

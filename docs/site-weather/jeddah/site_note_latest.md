@@ -1,6 +1,6 @@
 # Site note · Jeddah
 
-Issued Friday 27 November 2026, 05:30 (Asia/Riyadh). Site 21.4858, 39.1925. Working hours 07:00-17:00, lunch break excluded (9 h).
+Issued Friday 27 November 2026, 06:43 (Asia/Riyadh). Site 21.4858, 39.1925. Working hours 07:00-17:00, lunch break excluded (9 h).
 
 ## Friday 27 November
 
@@ -32,7 +32,7 @@ Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 28.8 °C · gusts 10 m/s
 
 **Pour concrete 07-10 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 39 %) · storms low · WBGT peak 29.6 °C · gusts 14 m/s at hook height
+Rain 0 mm (chance up to 49 %) · storms low · WBGT peak 29.6 °C · gusts 14 m/s at hook height
 
 - **Outdoor labour — work/rest needed.** Work/rest cycles 11-12 h, 13-17 h: at the peak, 30 min work / 30 min rest. Water every 20 min, shade for breaks.
 - **Concrete pour — go 07-10 h, 15-17 h only.** Limited by fast drying. Curing cover and windbreaks ready.
@@ -46,8 +46,8 @@ Rain 0 mm (chance up to 39 %) · storms low · WBGT peak 29.6 °C · gusts 14 m/
 ## Outlook
 
 - **Monday 30 November**: Pour concrete 07-10 h; fast drying limits the rest of the day. Rain 4 mm (16 %); concrete 4 h go.
-- **Tuesday 01 December**: Storms likely from 10:00: finish lifts, roof and asphalt work before then. Rain 30 mm (86 %); concrete 0 h go.
-- **Wednesday 02 December**: Some limits today: check your trade below. Rain 1 mm (49 %); concrete 9 h go.
+- **Tuesday 01 December**: Storms likely from 09:00: finish lifts, roof and asphalt work before then. Rain 30 mm (81 %); concrete 0 h go.
+- **Wednesday 02 December**: Some limits today: check your trade below. Rain 1 mm (61 %); concrete 9 h go.
 - **Thursday 03 December**: Good working day: no weather limits on any trade. Rain 0 mm (2 %); concrete 9 h go.
 
 *Screening guidance from a weather forecast, not an instruction. The contract specification, the crane manufacturer's limits and the site health-and-safety plan take precedence; check conditions on site (WBGT meter, anemometer, the 30-30 rule for lightning) before each activity. Thresholds used: thresholds.json.*
