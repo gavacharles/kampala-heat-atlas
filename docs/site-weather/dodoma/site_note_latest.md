@@ -1,6 +1,6 @@
 # Site note · Dodoma
 
-Issued Friday 27 November 2026, 05:23 (Africa/Dar_es_Salaam). Site -6.1630, 35.7516. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Friday 27 November 2026, 05:30 (Africa/Dar_es_Salaam). Site -6.1630, 35.7516. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Friday 27 November
 
