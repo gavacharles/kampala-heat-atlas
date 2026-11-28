@@ -1,12 +1,12 @@
 # Site note · Abuja
 
-Issued Saturday 28 November 2026, 03:29 (Africa/Lagos). Site 9.0765, 7.3986. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Saturday 28 November 2026, 04:42 (Africa/Lagos). Site 9.0765, 7.3986. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Saturday 28 November
 
 **Pour concrete 08-10 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 4 %) · storms low · WBGT peak 29.0 °C · gusts 8 m/s at hook height
+Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 29.0 °C · gusts 8 m/s at hook height
 
 - **Outdoor labour — work/rest needed.** Work/rest cycles 11-13 h, 14-17 h: at the peak, 30 min work / 30 min rest. Water every 20 min, shade for breaks.
 - **Concrete pour — go 08-10 h only.** Limited by fast drying. Curing cover and windbreaks ready.
@@ -30,7 +30,7 @@ Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 29.6 °C · gusts 6 m/s 
 
 **Pour concrete 08-11 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 2 %) · storms low · WBGT peak 29.0 °C · gusts 8 m/s at hook height
+Rain 0 mm (chance up to 0 %) · storms low · WBGT peak 29.0 °C · gusts 8 m/s at hook height
 
 - **Outdoor labour — work/rest needed.** Work/rest cycles 12-13 h, 14-16 h: at the peak, 30 min work / 30 min rest. Water every 20 min, shade for breaks.
 - **Concrete pour — go 08-11 h, 12-13 h only.** Limited by fast drying. Curing cover and windbreaks ready.
@@ -40,7 +40,7 @@ Rain 0 mm (chance up to 2 %) · storms low · WBGT peak 29.0 °C · gusts 8 m/s 
 
 ## Outlook
 
-- **Tuesday 01 December**: Some limits today: check your trade below. Rain 0 mm (0 %); concrete 8 h go.
+- **Tuesday 01 December**: Some limits today: check your trade below. Rain 0 mm (2 %); concrete 8 h go.
 - **Wednesday 02 December**: Some limits today: check your trade below. Rain 0 mm (0 %); concrete 0 h go.
 - **Thursday 03 December**: Some limits today: check your trade below. Rain 0 mm (0 %); concrete 0 h go.
 - **Friday 04 December**: Pour concrete 16-17 h; fast drying limits the rest of the day. Rain 0 mm (0 %); concrete 1 h go.

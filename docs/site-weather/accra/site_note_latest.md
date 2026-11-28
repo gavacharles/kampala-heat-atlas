@@ -1,12 +1,12 @@
 # Site note · Accra
 
-Issued Saturday 28 November 2026, 02:29 (Africa/Accra). Site 5.6037, -0.1870. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Saturday 28 November 2026, 03:42 (Africa/Accra). Site 5.6037, -0.1870. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Saturday 28 November
 
 **Storms likely from 15:00: finish lifts, roof and asphalt work before then.**
 
-Rain 1 mm (chance up to 100 %) · storms likely · WBGT peak 30.8 °C · gusts 15 m/s at hook height
+Rain 1 mm (chance up to 96 %) · storms likely · WBGT peak 30.8 °C · gusts 15 m/s at hook height
 
 - **Outdoor labour — work/rest needed.** Work/rest cycles 09-13 h, 14-17 h: at the peak, 15 min work / 45 min rest. Water every 20 min, shade for breaks.
 - **Concrete pour — go 08-11 h only.** Limited by rain, storms, fast drying. Curing cover and windbreaks ready.
@@ -21,7 +21,7 @@ Rain 1 mm (chance up to 100 %) · storms likely · WBGT peak 30.8 °C · gusts 1
 
 **Storms possible from 14:00: do exposed work in the morning.**
 
-Rain 1 mm (chance up to 80 %) · storms possible · WBGT peak 30.1 °C · gusts 14 m/s at hook height
+Rain 1 mm (chance up to 78 %) · storms possible · WBGT peak 30.1 °C · gusts 14 m/s at hook height
 
 - **Outdoor labour — work/rest needed.** Work/rest cycles 09-13 h, 14-17 h: at the peak, 15 min work / 45 min rest. Water every 20 min, shade for breaks.
 - **Concrete pour — go 08-12 h only.** Limited by rain, storms, fast drying. Curing cover and windbreaks ready.
@@ -34,9 +34,9 @@ Rain 1 mm (chance up to 80 %) · storms possible · WBGT peak 30.1 °C · gusts 
 
 ## Monday 30 November
 
-**Storms possible from 14:00: do exposed work in the morning.**
+**Storms likely from 15:00: finish lifts, roof and asphalt work before then.**
 
-Rain 4 mm (chance up to 65 %) · storms possible · WBGT peak 30.5 °C · gusts 13 m/s at hook height
+Rain 4 mm (chance up to 82 %) · storms likely · WBGT peak 30.5 °C · gusts 13 m/s at hook height
 
 - **Outdoor labour — work/rest needed.** Work/rest cycles 10-13 h, 14-16 h: at the peak, 15 min work / 45 min rest. Water every 20 min, shade for breaks.
 - **Concrete pour — go 08-12 h only.** Limited by rain, storms. Keep covers ready outside this window.
@@ -48,9 +48,9 @@ Rain 4 mm (chance up to 65 %) · storms possible · WBGT peak 30.5 °C · gusts 
 
 ## Outlook
 
-- **Tuesday 01 December**: Storms possible from 15:00: do exposed work in the morning. Rain 6 mm (51 %); concrete 6 h go.
-- **Wednesday 02 December**: Storms possible from 15:00: do exposed work in the morning. Rain 5 mm (61 %); concrete 5 h go.
-- **Thursday 03 December**: Storms possible from 15:00: do exposed work in the morning. Rain 3 mm (82 %); concrete 5 h go.
+- **Tuesday 01 December**: Storms likely from 15:00: finish lifts, roof and asphalt work before then. Rain 6 mm (71 %); concrete 4 h go.
+- **Wednesday 02 December**: Storms likely from 15:00: finish lifts, roof and asphalt work before then. Rain 5 mm (73 %); concrete 4 h go.
+- **Thursday 03 December**: Storms likely from 15:00: finish lifts, roof and asphalt work before then. Rain 3 mm (71 %); concrete 4 h go.
 - **Friday 04 December**: Pour concrete 08-13 h; rain limits the rest of the day. Rain 1 mm (63 %); concrete 6 h go.
 
 *Screening guidance from a weather forecast, not an instruction. The contract specification, the crane manufacturer's limits and the site health-and-safety plan take precedence; check conditions on site (WBGT meter, anemometer, the 30-30 rule for lightning) before each activity. Thresholds used: thresholds.json.*

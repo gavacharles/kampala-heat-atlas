@@ -2,7 +2,7 @@
  "site": "Dodoma",
  "lat": -6.163,
  "lon": 35.7516,
- "issued": "2026-11-28 05:29",
+ "issued": "2026-11-28 06:42",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -328,7 +328,7 @@
    ],
    "facts": {
     "rain_mm": 0.1,
-    "rain_chance": 33,
+    "rain_chance": 21,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 26.4,
@@ -668,7 +668,7 @@
    ],
    "facts": {
     "rain_mm": 0.2,
-    "rain_chance": 57,
+    "rain_chance": 53,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 27.5,
@@ -1007,7 +1007,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 33,
+    "rain_chance": 49,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 27.5,
@@ -1346,7 +1346,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 33,
+    "rain_chance": 29,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 27.4,
@@ -1685,7 +1685,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 37,
+    "rain_chance": 43,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 26.7,
@@ -2024,7 +2024,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 20,
+    "rain_chance": 12,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 25.9,

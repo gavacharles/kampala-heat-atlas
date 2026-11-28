@@ -2,7 +2,7 @@
  "site": "Arua",
  "lat": 3.0201,
  "lon": 30.9111,
- "issued": "2026-11-28 05:30",
+ "issued": "2026-11-28 06:43",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -330,7 +330,7 @@
    ],
    "facts": {
     "rain_mm": 0.1,
-    "rain_chance": 20,
+    "rain_chance": 29,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 25.6,
@@ -669,7 +669,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 8,
+    "rain_chance": 10,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 25.5,
@@ -1008,7 +1008,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 6,
+    "rain_chance": 8,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 26.4,
@@ -1352,7 +1352,7 @@
    ],
    "facts": {
     "rain_mm": 0.3,
-    "rain_chance": 12,
+    "rain_chance": 20,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 26.7,
@@ -1693,7 +1693,7 @@
    ],
    "facts": {
     "rain_mm": 0.2,
-    "rain_chance": 24,
+    "rain_chance": 31,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 25.9,
@@ -1749,11 +1749,11 @@
       ],
       [
        14,
-       1
+       2
       ],
       [
        15,
-       1
+       2
       ],
       [
        16,
@@ -1765,9 +1765,9 @@
      "key": "asphalt",
      "trade": "Asphalt & surfacing",
      "status": "LIMITED",
-     "label": "go 08-13 h only",
-     "go_hours": 5,
-     "windows": "08-13 h",
+     "label": "go 08-12 h only",
+     "go_hours": 4,
+     "windows": "08-12 h",
      "causes": [
       "rain or wet surface"
      ],
@@ -1791,7 +1791,7 @@
       ],
       [
        12,
-       0
+       1
       ],
       [
        14,
@@ -1857,9 +1857,9 @@
      "key": "coatings",
      "trade": "Painting & coatings",
      "status": "LIMITED",
-     "label": "go 08-13 h, 14-15 h only",
-     "go_hours": 6,
-     "windows": "08-13 h, 14-15 h",
+     "label": "go 08-13 h only",
+     "go_hours": 5,
+     "windows": "08-13 h",
      "causes": [
       "rain"
      ],
@@ -1887,7 +1887,7 @@
       ],
       [
        14,
-       0
+       1
       ],
       [
        15,
@@ -2037,16 +2037,16 @@
    "extras": [],
    "facts": {
     "rain_mm": 12.3,
-    "rain_chance": 68,
+    "rain_chance": 78,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 26.3,
     "gust_hook_max": 16.0,
     "go_hours": {
      "concrete": 3,
-     "asphalt": 5,
+     "asphalt": 4,
      "height": 7,
-     "coatings": 6,
+     "coatings": 5,
      "earthworks": 7,
      "labour": 8,
      "crane": 8

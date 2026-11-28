@@ -2,14 +2,61 @@
  "site": "Nairobi",
  "lat": -1.2864,
  "lon": 36.8172,
- "issued": "2026-11-28 05:29",
+ "issued": "2026-11-28 06:42",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
    "date": "2026-11-28",
    "day": "Saturday 28 November",
-   "headline": "Pour concrete 08-12 h; fast drying limits the rest of the day.",
+   "headline": "Wet day (2 mm): no concrete or asphalt window.",
    "rows": [
+    {
+     "key": "concrete",
+     "trade": "Concrete pour",
+     "status": "STOP",
+     "label": "STOP",
+     "go_hours": 0,
+     "windows": "",
+     "causes": [
+      "rain",
+      "fast drying"
+     ],
+     "action": "No pour window: postpone, or pour under cover.",
+     "hours": [
+      [
+       8,
+       2
+      ],
+      [
+       9,
+       2
+      ],
+      [
+       10,
+       1
+      ],
+      [
+       11,
+       1
+      ],
+      [
+       12,
+       1
+      ],
+      [
+       14,
+       1
+      ],
+      [
+       15,
+       1
+      ],
+      [
+       16,
+       1
+      ]
+     ]
+    },
     {
      "key": "asphalt",
      "trade": "Asphalt & surfacing",
@@ -41,52 +88,6 @@
       [
        12,
        2
-      ],
-      [
-       14,
-       1
-      ],
-      [
-       15,
-       1
-      ],
-      [
-       16,
-       1
-      ]
-     ]
-    },
-    {
-     "key": "concrete",
-     "trade": "Concrete pour",
-     "status": "LIMITED",
-     "label": "go 08-12 h only",
-     "go_hours": 4,
-     "windows": "08-12 h",
-     "causes": [
-      "fast drying"
-     ],
-     "action": "Curing cover and windbreaks ready.",
-     "hours": [
-      [
-       8,
-       0
-      ],
-      [
-       9,
-       0
-      ],
-      [
-       10,
-       0
-      ],
-      [
-       11,
-       0
-      ],
-      [
-       12,
-       1
       ],
       [
        14,
@@ -336,14 +337,14 @@
    ],
    "facts": {
     "rain_mm": 2.1,
-    "rain_chance": 88,
+    "rain_chance": 100,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 22.2,
     "gust_hook_max": 13.1,
     "go_hours": {
+     "concrete": 0,
      "asphalt": 0,
-     "concrete": 4,
      "height": 1,
      "coatings": 4,
      "earthworks": 4,
@@ -675,7 +676,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 2,
+    "rain_chance": 4,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 22.9,
@@ -1362,7 +1363,7 @@
    ],
    "facts": {
     "rain_mm": 2.3,
-    "rain_chance": 65,
+    "rain_chance": 59,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 23.9,
@@ -1402,11 +1403,11 @@
       ],
       [
        9,
-       1
+       2
       ],
       [
        10,
-       1
+       2
       ],
       [
        11,
@@ -1713,7 +1714,7 @@
    ],
    "facts": {
     "rain_mm": 4.9,
-    "rain_chance": 82,
+    "rain_chance": 89,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 22.9,
@@ -1749,7 +1750,7 @@
      "hours": [
       [
        8,
-       2
+       1
       ],
       [
        9,
@@ -1777,7 +1778,7 @@
       ],
       [
        16,
-       2
+       1
       ]
      ]
     },

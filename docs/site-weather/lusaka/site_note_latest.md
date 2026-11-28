@@ -1,12 +1,12 @@
 # Site note · Lusaka
 
-Issued Saturday 28 November 2026, 04:30 (Africa/Lusaka). Site -15.3875, 28.3228. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Saturday 28 November 2026, 05:42 (Africa/Lusaka). Site -15.3875, 28.3228. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Saturday 28 November
 
 **Wet day (2 mm): no concrete or asphalt window.**
 
-Rain 2 mm (chance up to 73 %) · storms possible · WBGT peak 27.1 °C · gusts 10 m/s at hook height
+Rain 2 mm (chance up to 69 %) · storms possible · WBGT peak 27.1 °C · gusts 10 m/s at hook height
 
 - **Concrete pour — STOP.** Limited by rain, storms. No pour window: postpone, or pour under cover.
 - **Asphalt & surfacing — STOP.** Limited by rain or wet surface, storms. No dry window: do not lay or spray.
@@ -21,7 +21,7 @@ Rain 2 mm (chance up to 73 %) · storms possible · WBGT peak 27.1 °C · gusts 
 
 **Storms likely from 15:00: finish lifts, roof and asphalt work before then.**
 
-Rain 24 mm (chance up to 85 %) · storms likely · WBGT peak 29.3 °C · gusts 13 m/s at hook height
+Rain 24 mm (chance up to 89 %) · storms likely · WBGT peak 29.3 °C · gusts 13 m/s at hook height
 
 - **Outdoor labour — work/rest needed.** Work/rest cycles 11-13 h: at the peak, 30 min work / 30 min rest. Water every 20 min, shade for breaks.
 - **Concrete pour — go 08-11 h only.** Limited by rain, storms. Keep covers ready outside this window.
@@ -36,7 +36,7 @@ Rain 24 mm (chance up to 85 %) · storms likely · WBGT peak 29.3 °C · gusts 1
 
 **Storms likely from 15:00: finish lifts, roof and asphalt work before then.**
 
-Rain 6 mm (chance up to 85 %) · storms likely · WBGT peak 28.7 °C · gusts 11 m/s at hook height
+Rain 6 mm (chance up to 87 %) · storms likely · WBGT peak 28.7 °C · gusts 11 m/s at hook height
 
 - **Earthworks — STOP.** Limited by wet ground, rain. Ground too wet: protect formation, keep plant off soft ground. Ground wet after 24 mm in 24 h.
 - **Outdoor labour — work/rest needed.** Work/rest cycles 11-12 h: at the peak, 45 min work / 15 min rest each hour. Water every 20 min, shade for breaks.
@@ -49,9 +49,9 @@ Rain 6 mm (chance up to 85 %) · storms likely · WBGT peak 28.7 °C · gusts 11
 
 ## Outlook
 
-- **Tuesday 01 December**: Storms likely from 14:00: finish lifts, roof and asphalt work before then. Rain 6 mm (91 %); concrete 3 h go.
-- **Wednesday 02 December**: Storms possible from 15:00: do exposed work in the morning. Rain 2 mm (71 %); concrete 5 h go.
-- **Thursday 03 December**: Pour concrete 08-13 h; rain limits the rest of the day. Rain 3 mm (33 %); concrete 6 h go.
+- **Tuesday 01 December**: Storms likely from 14:00: finish lifts, roof and asphalt work before then. Rain 6 mm (96 %); concrete 3 h go.
+- **Wednesday 02 December**: Storms possible from 15:00: do exposed work in the morning. Rain 2 mm (76 %); concrete 5 h go.
+- **Thursday 03 December**: Storms possible from 15:00: do exposed work in the morning. Rain 3 mm (63 %); concrete 5 h go.
 - **Friday 04 December**: Pour concrete 08-13 h; rain limits the rest of the day. Rain 3 mm (67 %); concrete 5 h go.
 
 *Screening guidance from a weather forecast, not an instruction. The contract specification, the crane manufacturer's limits and the site health-and-safety plan take precedence; check conditions on site (WBGT meter, anemometer, the 30-30 rule for lightning) before each activity. Thresholds used: thresholds.json.*

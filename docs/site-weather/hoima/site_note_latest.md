@@ -1,12 +1,12 @@
 # Site note · Hoima
 
-Issued Saturday 28 November 2026, 05:29 (Africa/Kampala). Site 1.4331, 31.3524. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Saturday 28 November 2026, 06:42 (Africa/Kampala). Site 1.4331, 31.3524. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Saturday 28 November
 
 **Pour concrete 08-13 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 4 %) · storms low · WBGT peak 26.8 °C · gusts 8 m/s at hook height
+Rain 0 mm (chance up to 2 %) · storms low · WBGT peak 26.8 °C · gusts 8 m/s at hook height
 
 - **Concrete pour — go 08-13 h only.** Limited by fast drying. Curing cover and windbreaks ready.
 - **Asphalt & surfacing — go 08-13 h only.** Limited by rain or wet surface. Never lay or spray on a wet surface.
@@ -18,7 +18,7 @@ Rain 0 mm (chance up to 4 %) · storms low · WBGT peak 26.8 °C · gusts 8 m/s 
 
 **Pour concrete 08-13 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 31 %) · storms low · WBGT peak 26.7 °C · gusts 8 m/s at hook height
+Rain 0 mm (chance up to 45 %) · storms low · WBGT peak 26.7 °C · gusts 8 m/s at hook height
 
 - **Concrete pour — go 08-13 h, 16-17 h only.** Limited by fast drying. Curing cover and windbreaks ready.
 - **Asphalt & surfacing — go 08-13 h only.** Limited by rain or wet surface. Never lay or spray on a wet surface.
@@ -32,7 +32,7 @@ Rain 0 mm (chance up to 31 %) · storms low · WBGT peak 26.7 °C · gusts 8 m/s
 
 **Pour concrete 08-13 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 4 %) · storms low · WBGT peak 27.0 °C · gusts 8 m/s at hook height
+Rain 0 mm (chance up to 14 %) · storms low · WBGT peak 27.0 °C · gusts 8 m/s at hook height
 
 - **Concrete pour — go 08-13 h, 14-15 h, 16-17 h only.** Limited by fast drying. Curing cover and windbreaks ready.
 - **Painting & coatings — go 09-13 h, 14-17 h only.** Limited by humidity or dew. Check the surface is 3 °C above dew point.
@@ -41,9 +41,9 @@ Rain 0 mm (chance up to 4 %) · storms low · WBGT peak 27.0 °C · gusts 8 m/s 
 
 ## Outlook
 
-- **Tuesday 01 December**: Pour concrete 08-13 h; fast drying limits the rest of the day. Rain 0 mm (10 %); concrete 5 h go.
-- **Wednesday 02 December**: Pour concrete 08-13 h; fast drying limits the rest of the day. Rain 1 mm (43 %); concrete 7 h go.
-- **Thursday 03 December**: Storms likely from 15:00: finish lifts, roof and asphalt work before then. Rain 3 mm (79 %); concrete 4 h go.
+- **Tuesday 01 December**: Pour concrete 08-13 h; fast drying limits the rest of the day. Rain 0 mm (35 %); concrete 5 h go.
+- **Wednesday 02 December**: Storms possible from 16:00: do exposed work in the morning. Rain 1 mm (57 %); concrete 5 h go.
+- **Thursday 03 December**: Storms likely from 15:00: finish lifts, roof and asphalt work before then. Rain 3 mm (78 %); concrete 4 h go.
 - **Friday 04 December**: Storms likely from 14:00: finish lifts, roof and asphalt work before then. Rain 7 mm (81 %); concrete 2 h go.
 
 *Screening guidance from a weather forecast, not an instruction. The contract specification, the crane manufacturer's limits and the site health-and-safety plan take precedence; check conditions on site (WBGT meter, anemometer, the 30-30 rule for lightning) before each activity. Thresholds used: thresholds.json.*

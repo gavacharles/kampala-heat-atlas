@@ -1,12 +1,12 @@
 # Site note · Jeddah
 
-Issued Saturday 28 November 2026, 05:30 (Asia/Riyadh). Site 21.4858, 39.1925. Working hours 07:00-17:00, lunch break excluded (9 h).
+Issued Saturday 28 November 2026, 06:43 (Asia/Riyadh). Site 21.4858, 39.1925. Working hours 07:00-17:00, lunch break excluded (9 h).
 
 ## Saturday 28 November
 
 **Pour concrete 07-11 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 14 %) · storms low · WBGT peak 29.5 °C · gusts 11 m/s at hook height
+Rain 0 mm (chance up to 24 %) · storms low · WBGT peak 29.5 °C · gusts 11 m/s at hook height
 
 - **Outdoor labour — work/rest needed.** Work/rest cycles 10-12 h, 13-17 h: at the peak, 30 min work / 30 min rest. Water every 20 min, shade for breaks.
 - **Concrete pour — go 07-11 h only.** Limited by fast drying. Curing cover and windbreaks ready.
@@ -19,7 +19,7 @@ Rain 0 mm (chance up to 14 %) · storms low · WBGT peak 29.5 °C · gusts 11 m/
 
 **Pour concrete 07-11 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 6 %) · storms low · WBGT peak 29.6 °C · gusts 13 m/s at hook height
+Rain 0 mm (chance up to 14 %) · storms low · WBGT peak 29.6 °C · gusts 13 m/s at hook height
 
 - **Outdoor labour — work/rest needed.** Work/rest cycles 10-12 h, 13-17 h: at the peak, 30 min work / 30 min rest. Water every 20 min, shade for breaks.
 - **Concrete pour — go 07-11 h only.** Limited by fast drying. Curing cover and windbreaks ready.
@@ -46,8 +46,8 @@ Rain 0 mm (chance up to 18 %) · storms low · WBGT peak 29.1 °C · gusts 20 m/
 
 ## Outlook
 
-- **Tuesday 01 December**: Storms likely from 11:00: finish lifts, roof and asphalt work before then. Rain 10 mm (97 %); concrete 0 h go.
-- **Wednesday 02 December**: Some limits today: check your trade below. Rain 0 mm (43 %); concrete 9 h go.
+- **Tuesday 01 December**: Storms likely from 11:00: finish lifts, roof and asphalt work before then. Rain 10 mm (91 %); concrete 0 h go.
+- **Wednesday 02 December**: Some limits today: check your trade below. Rain 0 mm (45 %); concrete 9 h go.
 - **Thursday 03 December**: Pour concrete 07-11 h; fast drying limits the rest of the day. Rain 0 mm (0 %); concrete 4 h go.
 - **Friday 04 December**: Pour concrete 07-11 h; fast drying limits the rest of the day. Rain 0 mm (0 %); concrete 4 h go.
 

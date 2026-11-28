@@ -2,7 +2,7 @@
  "site": "Dakar",
  "lat": 14.7167,
  "lon": -17.4677,
- "issued": "2026-11-28 02:30",
+ "issued": "2026-11-28 03:43",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -331,7 +331,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 1.1,
-    "rain_chance": 45,
+    "rain_chance": 31,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 25.5,
@@ -350,15 +350,61 @@
   {
    "date": "2026-11-29",
    "day": "Sunday 29 November",
-   "headline": "Some limits today: check your trade below.",
+   "headline": "Pour concrete 08-13 h; rain limits the rest of the day.",
    "rows": [
+    {
+     "key": "concrete",
+     "trade": "Concrete pour",
+     "status": "LIMITED",
+     "label": "go 08-13 h only",
+     "go_hours": 5,
+     "windows": "08-13 h",
+     "causes": [
+      "rain"
+     ],
+     "action": "Keep covers ready outside this window.",
+     "hours": [
+      [
+       8,
+       0
+      ],
+      [
+       9,
+       0
+      ],
+      [
+       10,
+       0
+      ],
+      [
+       11,
+       0
+      ],
+      [
+       12,
+       0
+      ],
+      [
+       14,
+       1
+      ],
+      [
+       15,
+       1
+      ],
+      [
+       16,
+       1
+      ]
+     ]
+    },
     {
      "key": "asphalt",
      "trade": "Asphalt & surfacing",
      "status": "LIMITED",
-     "label": "go 12-13 h, 14-17 h only",
-     "go_hours": 4,
-     "windows": "12-13 h, 14-17 h",
+     "label": "go 12-13 h only",
+     "go_hours": 1,
+     "windows": "12-13 h",
      "causes": [
       "rain or wet surface"
      ],
@@ -386,15 +432,15 @@
       ],
       [
        14,
-       0
+       1
       ],
       [
        15,
-       0
+       1
       ],
       [
        16,
-       0
+       1
       ]
      ]
     },
@@ -448,9 +494,9 @@
      "key": "coatings",
      "trade": "Painting & coatings",
      "status": "LIMITED",
-     "label": "go 12-13 h, 14-17 h only",
-     "go_hours": 4,
-     "windows": "12-13 h, 14-17 h",
+     "label": "go 12-13 h, 14-15 h only",
+     "go_hours": 2,
+     "windows": "12-13 h, 14-15 h",
      "causes": [
       "humidity or dew",
       "rain"
@@ -483,11 +529,11 @@
       ],
       [
        15,
-       0
+       1
       ],
       [
        16,
-       0
+       1
       ]
      ]
     },
@@ -500,50 +546,6 @@
      "windows": "",
      "causes": [],
      "action": "No heat limits; keep water and shade available.",
-     "hours": [
-      [
-       8,
-       0
-      ],
-      [
-       9,
-       0
-      ],
-      [
-       10,
-       0
-      ],
-      [
-       11,
-       0
-      ],
-      [
-       12,
-       0
-      ],
-      [
-       14,
-       0
-      ],
-      [
-       15,
-       0
-      ],
-      [
-       16,
-       0
-      ]
-     ]
-    },
-    {
-     "key": "concrete",
-     "trade": "Concrete pour",
-     "status": "GO",
-     "label": "no limits",
-     "go_hours": 8,
-     "windows": "08-13 h, 14-17 h",
-     "causes": [],
-     "action": "No weather limits.",
      "hours": [
       [
        8,
@@ -671,17 +673,17 @@
    "extras": [],
    "facts": {
     "rain_mm": 4.1,
-    "rain_chance": 49,
+    "rain_chance": 54,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 22.5,
     "gust_hook_max": 11.7,
     "go_hours": {
-     "asphalt": 4,
+     "concrete": 5,
+     "asphalt": 1,
      "height": 7,
-     "coatings": 4,
+     "coatings": 2,
      "labour": 8,
-     "concrete": 8,
      "crane": 8,
      "earthworks": 8
     }
@@ -1015,7 +1017,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 2.3,
-    "rain_chance": 43,
+    "rain_chance": 49,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 23.9,
@@ -1348,7 +1350,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 8,
+    "rain_chance": 6,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 25.5,
@@ -1685,7 +1687,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 2,
+    "rain_chance": 0,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 26.7,

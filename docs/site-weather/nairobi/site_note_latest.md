@@ -1,15 +1,15 @@
 # Site note · Nairobi
 
-Issued Saturday 28 November 2026, 05:29 (Africa/Nairobi). Site -1.2864, 36.8172. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Saturday 28 November 2026, 06:42 (Africa/Nairobi). Site -1.2864, 36.8172. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Saturday 28 November
 
-**Pour concrete 08-12 h; fast drying limits the rest of the day.**
+**Wet day (2 mm): no concrete or asphalt window.**
 
-Rain 2 mm (chance up to 88 %) · storms low · WBGT peak 22.2 °C · gusts 13 m/s at hook height
+Rain 2 mm (chance up to 100 %) · storms low · WBGT peak 22.2 °C · gusts 13 m/s at hook height
 
+- **Concrete pour — STOP.** Limited by rain, fast drying. No pour window: postpone, or pour under cover.
 - **Asphalt & surfacing — STOP.** Limited by rain or wet surface. No dry window: do not lay or spray.
-- **Concrete pour — go 08-12 h only.** Limited by fast drying. Curing cover and windbreaks ready.
 - **Work at height — go 12-13 h only.** Limited by rain, wind. Clear roofs and scaffolds before storms.
 - **Painting & coatings — go 12-13 h, 14-17 h only.** Limited by rain, humidity or dew. Check the surface is 3 °C above dew point.
 - **Earthworks — go 12-13 h, 14-17 h only.** Limited by rain. Protect formation and stockpiles.
@@ -20,7 +20,7 @@ Rain 2 mm (chance up to 88 %) · storms low · WBGT peak 22.2 °C · gusts 13 m/
 
 **Pour concrete 08-12 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 2 %) · storms low · WBGT peak 22.9 °C · gusts 14 m/s at hook height
+Rain 0 mm (chance up to 4 %) · storms low · WBGT peak 22.9 °C · gusts 14 m/s at hook height
 
 - **Concrete pour — go 08-12 h only.** Limited by fast drying. Curing cover and windbreaks ready.
 - **Work at height — go 08-13 h only.** Limited by wind. Clear roofs and scaffolds before storms.
@@ -40,8 +40,8 @@ Rain 0 mm (chance up to 4 %) · storms low · WBGT peak 23.3 °C · gusts 14 m/s
 
 ## Outlook
 
-- **Tuesday 01 December**: Pour concrete 08-10 h; fast drying limits the rest of the day. Rain 2 mm (65 %); concrete 2 h go.
-- **Wednesday 02 December**: Wet day (5 mm): no concrete or asphalt window. Rain 5 mm (82 %); concrete 0 h go.
+- **Tuesday 01 December**: Pour concrete 08-10 h; fast drying limits the rest of the day. Rain 2 mm (59 %); concrete 2 h go.
+- **Wednesday 02 December**: Wet day (5 mm): no concrete or asphalt window. Rain 5 mm (89 %); concrete 0 h go.
 - **Thursday 03 December**: Wet day (4 mm): no concrete or asphalt window. Rain 4 mm (88 %); concrete 0 h go.
 - **Friday 04 December**: Pour concrete 08-13 h; fast drying limits the rest of the day. Rain 2 mm (43 %); concrete 6 h go.
 

@@ -2,7 +2,7 @@
  "site": "Jinja",
  "lat": 0.4244,
  "lon": 33.2042,
- "issued": "2026-11-28 05:30",
+ "issued": "2026-11-28 06:43",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -327,7 +327,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 13,
+    "rain_chance": 16,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 26.4,
@@ -676,7 +676,7 @@
    ],
    "facts": {
     "rain_mm": 2.1,
-    "rain_chance": 41,
+    "rain_chance": 45,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 26.5,
@@ -1022,7 +1022,7 @@
    ],
    "facts": {
     "rain_mm": 0.3,
-    "rain_chance": 18,
+    "rain_chance": 25,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 27.9,
@@ -1368,7 +1368,7 @@
    ],
    "facts": {
     "rain_mm": 0.5,
-    "rain_chance": 25,
+    "rain_chance": 43,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 27.1,
@@ -1819,7 +1819,7 @@
       ],
       [
        16,
-       2
+       1
       ]
      ]
     },
@@ -2061,7 +2061,7 @@
    ],
    "facts": {
     "rain_mm": 5.8,
-    "rain_chance": 76,
+    "rain_chance": 75,
     "storm": "possible",
     "storm_from": "14",
     "wbgt_peak": 25.1,

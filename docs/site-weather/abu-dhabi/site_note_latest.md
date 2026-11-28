@@ -1,12 +1,12 @@
 # Site note · Abu Dhabi
 
-Issued Saturday 28 November 2026, 06:29 (Asia/Dubai). Site 24.4539, 54.3773. Working hours 07:00-17:00, lunch break excluded (9 h).
+Issued Saturday 28 November 2026, 07:42 (Asia/Dubai). Site 24.4539, 54.3773. Working hours 07:00-17:00, lunch break excluded (9 h).
 
 ## Saturday 28 November
 
 **Pour concrete 07-12 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 4 %) · storms low · WBGT peak 27.4 °C · gusts 11 m/s at hook height
+Rain 0 mm (chance up to 8 %) · storms low · WBGT peak 27.4 °C · gusts 11 m/s at hook height
 
 - **Concrete pour — go 07-12 h, 13-15 h, 16-17 h only.** Limited by fast drying. Curing cover and windbreaks ready.
 - **Asphalt & surfacing — go 07-12 h, 13-15 h only.** Limited by rain or wet surface. Never lay or spray on a wet surface.
@@ -20,7 +20,7 @@ Rain 0 mm (chance up to 4 %) · storms low · WBGT peak 27.4 °C · gusts 11 m/s
 
 **Pour concrete 07-12 h; fast drying limits the rest of the day.**
 
-Rain 0 mm (chance up to 20 %) · storms low · WBGT peak 27.5 °C · gusts 11 m/s at hook height
+Rain 0 mm (chance up to 24 %) · storms low · WBGT peak 27.5 °C · gusts 11 m/s at hook height
 
 - **Concrete pour — go 07-12 h, 13-15 h only.** Limited by fast drying. Curing cover and windbreaks ready.
 - **Crane lifts — go 08-12 h, 13-17 h only.** Limited by poor visibility. Check the anemometer before each lift.

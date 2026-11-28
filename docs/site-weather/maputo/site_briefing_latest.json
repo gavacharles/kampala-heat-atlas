@@ -2,7 +2,7 @@
  "site": "Maputo",
  "lat": -25.9692,
  "lon": 32.5732,
- "issued": "2026-11-28 04:30",
+ "issued": "2026-11-28 05:43",
  "working": "08:00-17:00, lunch excluded (8 h)",
  "days": [
   {
@@ -64,8 +64,8 @@
      "go_hours": 2,
      "windows": "08-09 h, 16-17 h",
      "causes": [
-      "rain",
       "fast drying",
+      "rain",
       "storms"
      ],
      "action": "Curing cover and windbreaks ready.",
@@ -108,9 +108,9 @@
      "key": "asphalt",
      "trade": "Asphalt & surfacing",
      "status": "LIMITED",
-     "label": "go 08-11 h only",
-     "go_hours": 3,
-     "windows": "08-11 h",
+     "label": "go 08-12 h only",
+     "go_hours": 4,
+     "windows": "08-12 h",
      "causes": [
       "rain or wet surface",
       "storms"
@@ -131,7 +131,7 @@
       ],
       [
        11,
-       1
+       0
       ],
       [
        12,
@@ -342,7 +342,7 @@
    ],
    "facts": {
     "rain_mm": 6.9,
-    "rain_chance": 69,
+    "rain_chance": 90,
     "storm": "possible",
     "storm_from": "14",
     "wbgt_peak": 30.8,
@@ -350,7 +350,7 @@
     "go_hours": {
      "labour": 3,
      "concrete": 2,
-     "asphalt": 3,
+     "asphalt": 4,
      "crane": 6,
      "height": 6,
      "coatings": 6,
@@ -681,7 +681,7 @@
    "extras": [],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 50,
+    "rain_chance": 75,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 25.9,
@@ -1020,7 +1020,7 @@
    ],
    "facts": {
     "rain_mm": 0.0,
-    "rain_chance": 12,
+    "rain_chance": 6,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 27.2,
@@ -1361,7 +1361,7 @@
    ],
    "facts": {
     "rain_mm": 0.3,
-    "rain_chance": 6,
+    "rain_chance": 12,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 27.9,
@@ -2046,7 +2046,7 @@
    ],
    "facts": {
     "rain_mm": 2.1,
-    "rain_chance": 16,
+    "rain_chance": 27,
     "storm": "low",
     "storm_from": "",
     "wbgt_peak": 31.3,
