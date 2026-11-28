@@ -1,6 +1,6 @@
 # Site note · Arua
 
-Issued Saturday 28 November 2026, 05:15 (Africa/Kampala). Site 3.0201, 30.9111. Working hours 08:00-17:00, lunch break excluded (8 h).
+Issued Saturday 28 November 2026, 05:22 (Africa/Kampala). Site 3.0201, 30.9111. Working hours 08:00-17:00, lunch break excluded (8 h).
 
 ## Saturday 28 November
 
